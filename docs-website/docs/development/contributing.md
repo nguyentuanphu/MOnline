@@ -24,7 +24,7 @@ request without adding an issue.
 ## How to contribute code
 
 1. Fork this project from the original
-   [HNMO HNMO project](https://github.com/nguyentuanphu/HNMO).
+   [HNMO project](https://github.com/nguyentuanphu/HNMO).
 2. Create a feature branch from the master branch.
 3. Commit your changes to your feature branch.
 4. Please test your changes — **don't send AI generated code without testing it

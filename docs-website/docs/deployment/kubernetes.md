@@ -82,9 +82,9 @@ server.
 
   ```bash
   cd src
-  docker build -f Dapr/CentralServer.Host/Dockerfile -t <registry>/hnmo/hnmo-central:<tag> .
-  docker build -f Dapr/GameServer.Host/Dockerfile -t <registry>/hnmo/hnmo-game:<tag> .
-  docker build -f Dapr/AdminPanel.Host/Dockerfile -t <registry>/hnmo/hnmo-admin:<tag> .
+  docker build -f Dapr/CentralServer.Host/Dockerfile -t <registry>/hnmo-central:<tag> .
+  docker build -f Dapr/GameServer.Host/Dockerfile -t <registry>/hnmo-game:<tag> .
+  docker build -f Dapr/AdminPanel.Host/Dockerfile -t <registry>/hnmo-admin:<tag> .
   ```
 
 * **PostgreSQL, RabbitMQ and Redis.** For development and tests, the chart

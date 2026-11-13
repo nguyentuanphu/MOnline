@@ -19,7 +19,7 @@ public class ModalContainerTests
 {
     /// <summary>
     /// Showing and closing a modal doesn't render the content of the container again. In the admin panel, the content
-    /// is the routed page, whose authorization would run again and could recreate the page (see HNMO/HNMO#1338).
+    /// is the routed page, whose authorization would run again and could recreate the page (see HNMO#1338).
     /// </summary>
     [Test]
     public async Task ShowingAndClosingAModal_DoesNotRenderTheContentAgainAsync()

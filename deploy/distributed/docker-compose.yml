@@ -129,7 +129,7 @@ services:
 
   centralServer:
     # Hosts the connect, login, guild, friend and chat servers.
-    image: hnmo/hnmo-central
+    image: hnmo-central
     container_name: centralServer
     restart: unless-stopped
     healthcheck: *hnmo-healthcheck
@@ -169,7 +169,7 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   adminPanel:
-    image: hnmo/hnmo-admin
+    image: hnmo-admin
     container_name: adminPanel
     restart: unless-stopped
     healthcheck: *hnmo-healthcheck
@@ -218,7 +218,7 @@ services:
   # e.g. "docker compose --profile discord up -d". See the documentation for the
   # further settings, like the webhooks and channels, which are added as environment variables.
   discord:
-    image: hnmo/hnmo-discord
+    image: hnmo-discord
     container_name: discord
     restart: unless-stopped
     profiles: [ "discord" ]
@@ -260,7 +260,7 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   gameServer0:
-    image: hnmo/hnmo-game
+    image: hnmo-game
     container_name: gameServer0
     restart: unless-stopped
     healthcheck: *hnmo-healthcheck
@@ -308,7 +308,7 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   gameServer1:
-    image: hnmo/hnmo-game
+    image: hnmo-game
     container_name: gameServer1
     restart: unless-stopped
     healthcheck: *hnmo-healthcheck

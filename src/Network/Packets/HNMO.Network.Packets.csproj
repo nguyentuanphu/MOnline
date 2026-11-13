@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/nguyentuanphu/HNMO/tree/master/src/Network/Packets</RepositoryUrl>
     <PackageProjectUrl>https://github.com/nguyentuanphu/HNMO</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>HNMO HNMO MUOnline Network Packets</PackageTags>
+    <PackageTags>HNMO Network Packets</PackageTags>
     <PackageId>HNMO.Network.Packets</PackageId>
     <Description>This package contains message structs for the HNMO game, which are primarily focused on the english version of Season 6 Episode 3.</Description>
     <PackageVersion>0.11.0</PackageVersion>

@@ -1,6 +1,6 @@
 services:
   hnmo-startup:
-    image: hnmo/hnmo
+    image: hnmo
     container_name: hnmo-startup
     networks:
       - proxy

@@ -35,7 +35,7 @@ These older images expected the basic authentication of nginx with an `.htpasswd
 file, which isn't part of these files anymore — combined with them, the admin
 panel is reachable by **anybody, without a login**.
 
-If you pulled `hnmo/hnmo` before, get the current image first:
+If you pulled `hnmo` before, get the current image first:
 
 ```bash
 docker compose pull

@@ -269,7 +269,7 @@ internal static class LegacyItemExtensions
             }
 
             // Summoner books, which increase the curse damage by their book rise, are calculated differently. Changed
-            // after commit 90a571100: a base value of 0 stays 0, and the reduction applies (see HNMO/HNMO#1301).
+            // after commit 90a571100: a base value of 0 stays 0, and the reduction applies (see HNMO#1301).
             var value = totalAttribute == Stats.TotalEnergy && item.IsBook(out _)
                 ? item.CalculateBookEnergyRequirement(minimumValue)
                 : item.CalculateRequirement(minimumValue, multiplier);

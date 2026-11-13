@@ -10,7 +10,7 @@ services:
       - hnmo-startup
 
   hnmo-startup:
-    image: hnmo/hnmo
+    image: hnmo
     container_name: hnmo-startup
     ports:
       - "127.0.0.1::8080"

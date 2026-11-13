@@ -224,7 +224,7 @@ public class ItemRequirementCalculationTest
     }
 
     /// <summary>
-    /// Tests that an energy requirement of 0 of a book stays 0, as for other items (see HNMO/HNMO#1301).
+    /// Tests that an energy requirement of 0 of a book stays 0, as for other items (see HNMO#1301).
     /// </summary>
     [Test]
     public void BookEnergyRequirementOf0Stays0()
@@ -240,7 +240,7 @@ public class ItemRequirementCalculationTest
 
     /// <summary>
     /// Tests that an energy requirement reduction, e.g. of a harmony option, lowers the energy requirement of a book,
-    /// as for other items (see HNMO/HNMO#1301).
+    /// as for other items (see HNMO#1301).
     /// </summary>
     [Test]
     public void BookEnergyRequirementIsReduced()

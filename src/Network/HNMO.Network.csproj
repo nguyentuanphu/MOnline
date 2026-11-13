@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/nguyentuanphu/HNMO/tree/master/src/Network</RepositoryUrl>
     <PackageProjectUrl>https://github.com/nguyentuanphu/HNMO</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageTags>HNMO HNMO MUOnline Network TCP</PackageTags>
+    <PackageTags>HNMO Network TCP</PackageTags>
     <PackageId>HNMO.Network</PackageId>
     <Description>
       HNMO.Network contains all what's required to connect from and to an HNMO game, connect or chat server. It implements the game network protocol.

@@ -117,7 +117,7 @@ public class ExperienceRateSplitTest
 
     /// <summary>
     /// Verifies that a party member with master levels, which is still below the maximum level (e.g. after a reset),
-    /// gains the same experience as for a solo kill when no other member is in range (see HNMO/HNMO#1360).
+    /// gains the same experience as for a solo kill when no other member is in range (see HNMO#1360).
     /// </summary>
     [Test]
     public async ValueTask LonePartyMemberWithMasterLevelsGainsSoloExperienceAsync()
@@ -226,7 +226,7 @@ public class ExperienceRateSplitTest
 
     /// <summary>
     /// Verifies that the <see cref="IPlayerGainedExperiencePlugIn"/>s get the experience of each party member, as for
-    /// a solo kill. That's how the trainable pets of the Dark Lord gain their share (see HNMO/HNMO#1374).
+    /// a solo kill. That's how the trainable pets of the Dark Lord gain their share (see HNMO#1374).
     /// A member at the maximum level without the master quest gains nothing, so it isn't reported.
     /// </summary>
     /// <param name="isMasterClass">Whether the members gain master experience.</param>

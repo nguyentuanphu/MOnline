@@ -1,7 +1,7 @@
 name: Docker images
 
 # Publishes the Docker images to Docker Hub when the project version (see src/SharedAssemblyInfo.cs)
-# was increased, i.e. when Docker Hub doesn't contain the image hnmo/hnmo with this version yet.
+# was increased, i.e. when Docker Hub doesn't contain the image hnmo with this version yet.
 # The images get the version (e.g. 1.2.3) and 'latest' as tags.
 # The images are only built when they are going to be published.
 # Publishing requires the repository secrets DOCKERHUB_USERNAME and DOCKERHUB_TOKEN.
@@ -25,10 +25,12 @@ jobs:
 
       - name: Check Docker Hub for the project version
         id: check
+        env:
+          DOCKERHUB_NAMESPACE: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
           version=$(grep -oP '^\[assembly: AssemblyVersion\("\K[0-9]+\.[0-9]+\.[0-9]+' src/SharedAssemblyInfo.cs)
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          if curl --silent --fail --location "https://hub.docker.com/v2/repositories/hnmo/hnmo/tags/$version" > /dev/null; then
+          if curl --silent --fail --location "https://hub.docker.com/v2/repositories/$DOCKERHUB_NAMESPACE/hnmo/tags/$version" > /dev/null; then
             echo "Version $version is already published."
             echo "publish=false" >> "$GITHUB_OUTPUT"
           else
@@ -80,5 +82,5 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            hnmo/${{ matrix.image }}:${{ needs.check.outputs.version }}
-            hnmo/${{ matrix.image }}:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.image }}:${{ needs.check.outputs.version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/${{ matrix.image }}:latest

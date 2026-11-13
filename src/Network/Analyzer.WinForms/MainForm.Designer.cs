@@ -461,7 +461,7 @@
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "MainForm";
-            Text = "HNMO HNMO Network Analyzer";
+            Text = "HNMO Network Analyzer";
             ((System.ComponentModel.ISupportInitialize)packetGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)packetBindingSource).EndInit();
             packetInfoGroup.ResumeLayout(false);

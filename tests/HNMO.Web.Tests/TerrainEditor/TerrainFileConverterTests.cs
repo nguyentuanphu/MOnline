@@ -60,7 +60,7 @@ public class TerrainFileConverterTests
 
     /// <summary>
     /// Tests that the client file leaves out the highest bit of the tiles, because the client refuses a file
-    /// with a tile of 128 or more as corrupted. The terrain data of some maps has such tiles (see HNMO/HNMO#1361).
+    /// with a tile of 128 or more as corrupted. The terrain data of some maps has such tiles (see HNMO#1361).
     /// </summary>
     [Test]
     public void ClientFileLeavesOutTheHighestBit()
