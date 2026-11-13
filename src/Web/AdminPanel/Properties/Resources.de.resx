@@ -259,10 +259,10 @@
     <value>Game-Server</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Willkommen im Admin-Panel von OpenMU.</value>
+    <value>Willkommen im Admin-Panel von HNMO.</value>
   </data>
   <data name="OpenMUAdminPanel" xml:space="preserve">
-    <value>OpenMU Admin-Panel</value>
+    <value>HNMO Admin-Panel</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>Über</value>
@@ -1645,7 +1645,7 @@
     <value>Integrierte Beschriftungen verknüpfen</value>
   </data>
   <data name="CaptionsNotLinkedDescription" xml:space="preserve">
-    <value>Die Beschriftungen dieser Konfiguration kennen ihre Quellen noch nicht. Das ist bei Konfigurationen der Fall, die mit einer älteren Version von OpenMU erstellt wurden. Das Verknüpfen ist einmalig erforderlich; danach zeigt diese Seite, welche Übersetzungen hinzugefügt oder aktualisiert werden können.</value>
+    <value>Die Beschriftungen dieser Konfiguration kennen ihre Quellen noch nicht. Das ist bei Konfigurationen der Fall, die mit einer älteren Version von HNMO erstellt wurden. Das Verknüpfen ist einmalig erforderlich; danach zeigt diese Seite, welche Übersetzungen hinzugefügt oder aktualisiert werden können.</value>
   </data>
   <data name="CaptionsLinkedCount" xml:space="preserve">
     <value>{0} Beschriftungen sind mit ihren Quellen verknüpft.</value>
@@ -1759,7 +1759,7 @@
     <value>Neue integrierte Beschriftungen verknüpfen</value>
   </data>
   <data name="CaptionsLinkableDescription" xml:space="preserve">
-    <value>{0} integrierte Beschriftungen sind noch nicht mit ihren Quellen verknüpft, daher können ihre Übersetzungen hier nicht geprüft werden: {1}. Das ist meist der Fall, nachdem ein Update von OpenMU Übersetzungen hinzugefügt hat, z. B. für Gegenstandsnamen. Beim Verknüpfen werden keine Texte geändert.</value>
+    <value>{0} integrierte Beschriftungen sind noch nicht mit ihren Quellen verknüpft, daher können ihre Übersetzungen hier nicht geprüft werden: {1}. Das ist meist der Fall, nachdem ein Update von HNMO Übersetzungen hinzugefügt hat, z. B. für Gegenstandsnamen. Beim Verknüpfen werden keine Texte geändert.</value>
   </data>
   <data name="CaptionsCheckingLinkable" xml:space="preserve">
     <value>Es wird geprüft, ob integrierte Beschriftungen noch nicht verknüpft sind ...</value>

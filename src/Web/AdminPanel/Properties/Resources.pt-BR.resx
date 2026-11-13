@@ -259,10 +259,10 @@
     <value>Servidor de Jogo</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Bem-vindo ao painel de administração do OpenMU.</value>
+    <value>Bem-vindo ao painel de administração do HNMO.</value>
   </data>
   <data name="OpenMUAdminPanel" xml:space="preserve">
-    <value>Painel de administração OpenMU</value>
+    <value>Painel de administração HNMO</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>Sobre</value>
@@ -1817,7 +1817,7 @@
     <value>Vincule as legendas integradas</value>
   </data>
   <data name="CaptionsNotLinkedDescription" xml:space="preserve">
-    <value>As legendas desta configuração ainda não conhecem suas fontes. Esse é o caso das configurações criadas com uma versão mais antiga do OpenMU. A vinculação é necessária uma vez; posteriormente esta página mostra quais traduções podem ser adicionadas ou atualizadas.</value>
+    <value>As legendas desta configuração ainda não conhecem suas fontes. Esse é o caso das configurações criadas com uma versão mais antiga do HNMO. A vinculação é necessária uma vez; posteriormente esta página mostra quais traduções podem ser adicionadas ou atualizadas.</value>
   </data>
   <data name="CaptionsLinkedCount" xml:space="preserve">
     <value>{0} legendas estão vinculadas às suas fontes.</value>
@@ -1871,7 +1871,7 @@
     <value>Vincular novas legendas integradas</value>
   </data>
   <data name="CaptionsLinkableDescription" xml:space="preserve">
-    <value>{0} legendas integradas ainda não estão vinculadas às suas fontes, portanto suas traduções não podem ser revisadas aqui: {1}. Esse geralmente é o caso após uma atualização das traduções adicionadas do OpenMU, por ex. para nomes de itens. A vinculação não altera nenhum texto.</value>
+    <value>{0} legendas integradas ainda não estão vinculadas às suas fontes, portanto suas traduções não podem ser revisadas aqui: {1}. Esse geralmente é o caso após uma atualização das traduções adicionadas do HNMO, por ex. para nomes de itens. A vinculação não altera nenhum texto.</value>
   </data>
   <data name="CaptionsCheckingLinkable" xml:space="preserve">
     <value>Verificando legendas integradas que ainda não estão vinculadas...</value>

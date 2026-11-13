@@ -59,7 +59,7 @@ public class DataInitialization : DataInitializationBase
         season6GmoClient.Language = ClientLanguage.English;
         season6GmoClient.Version = [0x31, 0x30, 0x34, 0x30, 0x34];
         season6GmoClient.Serial = "k1Pk2jcET48mxL3b"u8.ToArray();
-        season6GmoClient.Description = "Season 6 Episode 3 GMO Client";
+        season6GmoClient.Description = "HNMO (classic client)";
 
         var season6OpenSource = this.Context.CreateNew<GameClientDefinition>();
         season6OpenSource.SetGuid(0x204D);
@@ -68,6 +68,6 @@ public class DataInitialization : DataInitializationBase
         season6OpenSource.Language = ClientLanguage.English;
         season6OpenSource.Version = [0x32, 0x30, 0x34, 0x30, 0x34];
         season6OpenSource.Serial = "k1Pk2jcET48mxL3b"u8.ToArray();
-        season6OpenSource.Description = "Season 6 Episode 3 Open Source Client";
+        season6OpenSource.Description = "HNMO";
     }
 }

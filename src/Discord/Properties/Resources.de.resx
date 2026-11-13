@@ -291,7 +291,7 @@
     <value>Zeigt, wie viele Spieler online sind.</value>
   </data>
   <data name="Command_OpenMu_Description" xml:space="preserve">
-    <value>Verwaltet die OpenMU-Integration dieses Discord-Servers.</value>
+    <value>Verwaltet die HNMO-Integration dieses Discord-Servers.</value>
   </data>
   <data name="Command_Rank_Description" xml:space="preserve">
     <value>Zeigt die besten Charaktere.</value>

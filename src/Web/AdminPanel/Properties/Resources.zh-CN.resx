@@ -256,10 +256,10 @@
     <value>游戏服务器</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>欢迎使用 OpenMU 管理后台。</value>
+    <value>欢迎使用 HNMO 管理后台。</value>
   </data>
   <data name="OpenMUAdminPanel" xml:space="preserve">
-    <value>OpenMU 管理后台</value>
+    <value>HNMO 管理后台</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>关于</value>
@@ -1496,7 +1496,7 @@
     <value>关联内置名称</value>
   </data>
   <data name="CaptionsNotLinkedDescription" xml:space="preserve">
-    <value>此配置中的名称尚不知道其来源。使用旧版本 OpenMU 创建的配置都是这种情况。只需关联一次；之后此页面会显示可以添加或更新的翻译。</value>
+    <value>此配置中的名称尚不知道其来源。使用旧版本 HNMO 创建的配置都是这种情况。只需关联一次；之后此页面会显示可以添加或更新的翻译。</value>
   </data>
   <data name="CaptionsLinkedCount" xml:space="preserve">
     <value>已有 {0} 个名称与其来源关联。</value>
@@ -1550,7 +1550,7 @@
     <value>关联新的内置名称</value>
   </data>
   <data name="CaptionsLinkableDescription" xml:space="preserve">
-    <value>有 {0} 个内置名称尚未与其来源关联，因此无法在此检查其翻译：{1}。这通常发生在 OpenMU 更新添加了翻译（例如物品名称）之后。关联操作不会更改任何文本。</value>
+    <value>有 {0} 个内置名称尚未与其来源关联，因此无法在此检查其翻译：{1}。这通常发生在 HNMO 更新添加了翻译（例如物品名称）之后。关联操作不会更改任何文本。</value>
   </data>
   <data name="CaptionsCheckingLinkable" xml:space="preserve">
     <value>正在检查尚未关联的内置名称……</value>
