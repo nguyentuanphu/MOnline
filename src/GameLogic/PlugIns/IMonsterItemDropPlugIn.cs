@@ -1,13 +1,13 @@
-﻿// <copyright file="IMonsterItemDropPlugIn.cs" company="MUnique">
+﻿// <copyright file="IMonsterItemDropPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin interface which is called when a killed monster is about to drop an item.

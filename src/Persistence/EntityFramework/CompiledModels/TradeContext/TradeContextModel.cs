@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForTradeContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForTradeContext
 {
-    [DbContext(typeof(MUnique.OpenMU.Persistence.EntityFramework.TradeContext))]
+    [DbContext(typeof(HNMO.Persistence.EntityFramework.TradeContext))]
     public partial class TradeContextModel : RuntimeModel
     {
         private static readonly bool _useOldBehavior31751 =

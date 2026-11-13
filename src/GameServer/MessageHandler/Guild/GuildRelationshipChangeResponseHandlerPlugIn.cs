@@ -1,16 +1,16 @@
-// <copyright file="GuildRelationshipChangeResponseHandlerPlugIn.cs" company="MUnique">
+// <copyright file="GuildRelationshipChangeResponseHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Guild;
+namespace HNMO.GameServer.MessageHandler.Guild;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Guild;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
-using ViewGuildRelationshipRequestType = MUnique.OpenMU.GameLogic.Views.Guild.GuildRelationshipRequestType;
-using ViewGuildRelationshipType = MUnique.OpenMU.GameLogic.Views.Guild.GuildRelationshipType;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Guild;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
+using ViewGuildRelationshipRequestType = HNMO.GameLogic.Views.Guild.GuildRelationshipRequestType;
+using ViewGuildRelationshipType = HNMO.GameLogic.Views.Guild.GuildRelationshipType;
 
 /// <summary>
 /// Handler for guild relationship change response packets (C1 E6) — the target guild master's answer.

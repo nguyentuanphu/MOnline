@@ -1,8 +1,8 @@
-// <copyright file="MapEditor.razor.cs" company="MUnique">
+// <copyright file="MapEditor.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
@@ -13,10 +13,10 @@ using BlazorInputFile;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// A graphical editor for a <see cref="GameMapDefinition"/>.

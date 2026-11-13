@@ -1,22 +1,22 @@
-﻿// <copyright file="GameContext.cs" company="MUnique">
+﻿// <copyright file="GameContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Diagnostics.Metrics;
 using System.Globalization;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.MiniGames.Kanturu;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 using org.mariuszgromada.math.mxparser;
 

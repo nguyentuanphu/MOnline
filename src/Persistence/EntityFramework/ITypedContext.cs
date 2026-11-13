@@ -1,11 +1,11 @@
-﻿// <copyright file="ITypedContext.cs" company="MUnique">
+﻿// <copyright file="ITypedContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.EntityFrameworkCore.Metadata;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// Interface for a context which is used to edit instances of the <see cref="RootType"/>

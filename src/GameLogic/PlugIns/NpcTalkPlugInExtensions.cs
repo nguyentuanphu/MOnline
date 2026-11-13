@@ -1,10 +1,10 @@
-// <copyright file="NpcTalkPlugInExtensions.cs" company="MUnique">
+// <copyright file="NpcTalkPlugInExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Extension methods for the <see cref="NpcTalkPlugInBase"/>.

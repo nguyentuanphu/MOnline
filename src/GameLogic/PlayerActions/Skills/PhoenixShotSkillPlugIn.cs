@@ -1,11 +1,11 @@
-﻿// <copyright file="PhoenixShotSkillPlugIn.cs" company="MUnique">
+﻿// <copyright file="PhoenixShotSkillPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles the phoenix shot weapon skill of the rage fighter class. Additionally to the attacked target, it will hit up to seven additional targets.

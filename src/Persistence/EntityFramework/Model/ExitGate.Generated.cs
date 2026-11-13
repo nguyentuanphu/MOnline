@@ -1,4 +1,4 @@
-// <copyright file="ExitGate.Generated.cs" company="MUnique">
+// <copyright file="ExitGate.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ExitGate"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ExitGate"/>.
 /// </summary>
 [Table(nameof(ExitGate), Schema = SchemaNames.Configuration)]
-internal partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGate, IIdentifiable
+internal partial class ExitGate : HNMO.DataModel.Configuration.ExitGate, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGat
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition Map
+    public override HNMO.DataModel.Configuration.GameMapDefinition Map
     {
         get => base.Map;set
         {
@@ -55,7 +55,7 @@ internal partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGat
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ExitGate Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ExitGate();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGat
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ExitGate other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ExitGate other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

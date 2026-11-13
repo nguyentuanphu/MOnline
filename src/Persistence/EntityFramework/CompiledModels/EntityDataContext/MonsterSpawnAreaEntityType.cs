@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class MonsterSpawnAreaEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea),
+                "HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea",
+                typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea),
                 baseEntityType,
                 propertyCount: 12,
                 navigationCount: 2,
@@ -32,99 +32,99 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var direction = runtimeEntityType.AddProperty(
                 "Direction",
-                typeof(MUnique.OpenMU.DataModel.Configuration.Direction),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("Direction", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<Direction>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.DataModel.Configuration.Direction),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("Direction", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<Direction>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             direction.SetSentinelFromProviderValue(0);
             direction.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var gameMapId = runtimeEntityType.AddProperty(
                 "GameMapId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("GameMapId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<GameMapId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("GameMapId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<GameMapId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             gameMapId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var maximumHealthOverride = runtimeEntityType.AddProperty(
                 "MaximumHealthOverride",
                 typeof(int?),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("MaximumHealthOverride", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<MaximumHealthOverride>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("MaximumHealthOverride", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<MaximumHealthOverride>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             maximumHealthOverride.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var monsterDefinitionId = runtimeEntityType.AddProperty(
                 "MonsterDefinitionId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("MonsterDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<MonsterDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("MonsterDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetField("<MonsterDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             monsterDefinitionId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var quantity = runtimeEntityType.AddProperty(
                 "Quantity",
                 typeof(short),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("Quantity", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<Quantity>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("Quantity", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<Quantity>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (short)0);
             quantity.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var spawnTrigger = runtimeEntityType.AddProperty(
                 "SpawnTrigger",
-                typeof(MUnique.OpenMU.DataModel.Configuration.SpawnTrigger),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("SpawnTrigger", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<SpawnTrigger>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.DataModel.Configuration.SpawnTrigger),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("SpawnTrigger", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<SpawnTrigger>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             spawnTrigger.SetSentinelFromProviderValue(0);
             spawnTrigger.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var waveNumber = runtimeEntityType.AddProperty(
                 "WaveNumber",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("WaveNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<WaveNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("WaveNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<WaveNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             waveNumber.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var x1 = runtimeEntityType.AddProperty(
                 "X1",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("X1", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<X1>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("X1", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<X1>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             x1.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var x2 = runtimeEntityType.AddProperty(
                 "X2",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("X2", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<X2>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("X2", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<X2>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             x2.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var y1 = runtimeEntityType.AddProperty(
                 "Y1",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("Y1", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<Y1>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("Y1", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<Y1>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             y1.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var y2 = runtimeEntityType.AddProperty(
                 "Y2",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetProperty("Y2", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea).GetField("<Y2>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetProperty("Y2", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MonsterSpawnArea).GetField("<Y2>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             y2.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -151,15 +151,15 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawGameMap = declaringEntityType.AddNavigation("RawGameMap",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("RawGameMap", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("RawGameMap", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             var rawMonsterSpawns = principalEntityType.AddNavigation("RawMonsterSpawns",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition).GetProperty("RawMonsterSpawns", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition).GetField("<RawMonsterSpawns>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition).GetProperty("RawMonsterSpawns", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition).GetField("<RawMonsterSpawns>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -173,8 +173,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawMonsterDefinition = declaringEntityType.AddNavigation("RawMonsterDefinition",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("RawMonsterDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.MonsterDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea).GetProperty("RawMonsterDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

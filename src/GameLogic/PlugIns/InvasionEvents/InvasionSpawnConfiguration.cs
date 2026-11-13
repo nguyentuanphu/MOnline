@@ -1,8 +1,8 @@
-// <copyright file="InvasionSpawnConfiguration.cs" company="MUnique">
+// <copyright file="InvasionSpawnConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using System.ComponentModel.DataAnnotations;
 
@@ -51,14 +51,14 @@ public class InvasionSpawnConfiguration
     /// Gets or sets the monster ID to spawn.
     /// </summary>
     [Required]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MonsterId_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MonsterId_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public ushort MonsterId { get; set; }
 
     /// <summary>
     /// Gets or sets the number of monsters to spawn (1-254).
     /// </summary>
     [Range(1, 254)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_Count_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_Count_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public ushort Count { get; set; }
 
     /// <summary>
@@ -66,20 +66,20 @@ public class InvasionSpawnConfiguration
     /// </summary>
     [Required]
     [MinLength(1)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MapIds_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MapIds_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public IList<ushort> MapIds { get; set; } = [];
 
     /// <summary>
     /// Gets or sets the strategy used to select a map when spawning.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MapStrategy_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_MapStrategy_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public SpawnMapStrategy MapStrategy { get; set; }
 
     /// <summary>
     /// Gets or sets a value indicating whether the death of this monster type
     /// should be announced with a global broadcast message.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_AnnounceDeath_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_AnnounceDeath_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool AnnounceDeath { get; set; }
 
     /// <summary>
@@ -88,7 +88,7 @@ public class InvasionSpawnConfiguration
     /// When set to <c>false</c>, <see cref="MapStrategy"/> is changed to <see cref="SpawnMapStrategy.RandomMap"/>.
     /// This property exists for UI binding and serialization compatibility.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_IsSpawnOnAllMaps_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_IsSpawnOnAllMaps_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool IsSpawnOnAllMaps
     {
         get => this.MapStrategy == SpawnMapStrategy.AllMaps;
@@ -100,7 +100,7 @@ public class InvasionSpawnConfiguration
     /// If <c>null</c>, a random walkable coordinate is used.
     /// </summary>
     [Range(0, 255)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_X_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_X_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public byte? X { get; set; }
 
     /// <summary>
@@ -108,7 +108,7 @@ public class InvasionSpawnConfiguration
     /// If <c>null</c>, a random walkable coordinate is used.
     /// </summary>
     [Range(0, 255)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_Y_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.InvasionSpawnConfiguration_Y_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public byte? Y { get; set; }
 
     /// <inheritdoc />

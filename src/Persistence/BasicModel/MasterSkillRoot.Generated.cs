@@ -1,4 +1,4 @@
-// <copyright file="MasterSkillRoot.Generated.cs" company="MUnique">
+// <copyright file="MasterSkillRoot.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,20 +10,20 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MasterSkillRoot"/>.
 /// </summary>
-public partial class MasterSkillRoot : MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot, IIdentifiable, IConvertibleTo<MasterSkillRoot>
+public partial class MasterSkillRoot : HNMO.DataModel.Configuration.MasterSkillRoot, IIdentifiable, IConvertibleTo<MasterSkillRoot>
 {
     
     
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MasterSkillRoot Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MasterSkillRoot();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -31,7 +31,7 @@ public partial class MasterSkillRoot : MUnique.OpenMU.DataModel.Configuration.Ma
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MasterSkillRoot other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

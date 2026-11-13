@@ -1,12 +1,12 @@
-﻿// <copyright file="PowerUpDefinition.cs" company="MUnique">
+﻿// <copyright file="PowerUpDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Attributes;
+namespace HNMO.DataModel.Attributes;
 
 using System.Globalization;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The power up definition which describes the boost of an target attribute.

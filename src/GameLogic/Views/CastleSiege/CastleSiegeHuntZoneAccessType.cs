@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeHuntZoneAccessType.cs" company="MUnique">
+// <copyright file="CastleSiegeHuntZoneAccessType.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.CastleSiege;
+namespace HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Defines the access mode which the Land of Trials dialog shows to a player.

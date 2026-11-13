@@ -1,8 +1,8 @@
-﻿// <copyright file="AddTransformedCharactersToScope.cs" company="MUnique">
+﻿// <copyright file="AddTransformedCharactersToScope.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Packets.ServerToClient;
+namespace HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// This part contains the custom indexer.
@@ -23,10 +23,10 @@ public readonly ref partial struct AddTransformedCharactersToScopeRef
     }
 
     /// <summary>
-    /// Gets the <see cref="MUnique.OpenMU.Network.Packets.ServerToClient.AddCharactersToScope.CharacterData" /> with the specified character index.
+    /// Gets the <see cref="HNMO.Network.Packets.ServerToClient.AddCharactersToScope.CharacterData" /> with the specified character index.
     /// </summary>
     /// <value>
-    /// The <see cref="MUnique.OpenMU.Network.Packets.ServerToClient.AddCharactersToScope.CharacterData" />.
+    /// The <see cref="HNMO.Network.Packets.ServerToClient.AddCharactersToScope.CharacterData" />.
     /// </value>
     /// <param name="characterIndex">Index ofS the character.</param>
     /// <returns>The character data of the specified index.</returns>

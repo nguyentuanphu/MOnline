@@ -1,14 +1,14 @@
-// <copyright file="GensBattleZonePlugIn.cs" company="MUnique">
+// <copyright file="GensBattleZonePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The rules of the gens battle zone:

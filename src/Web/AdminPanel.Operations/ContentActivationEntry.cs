@@ -1,10 +1,10 @@
-// <copyright file="ContentActivationEntry.cs" company="MUnique">
+// <copyright file="ContentActivationEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// A snapshot of an entry of the content which can be activated and deactivated, see <see cref="ContentActivationOperations"/>.

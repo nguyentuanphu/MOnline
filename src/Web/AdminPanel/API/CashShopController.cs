@@ -1,20 +1,20 @@
-// <copyright file="CashShopController.cs" company="MUnique">
+// <copyright file="CashShopController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>
 /// The public API to show and grant the cash shop coins of accounts, e.g. for a payment provider.

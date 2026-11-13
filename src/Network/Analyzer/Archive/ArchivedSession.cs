@@ -1,8 +1,8 @@
-// <copyright file="ArchivedSession.cs" company="MUnique">
+// <copyright file="ArchivedSession.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer.Archive;
+namespace HNMO.Network.Analyzer.Archive;
 
 using System.ComponentModel;
 using System.Globalization;

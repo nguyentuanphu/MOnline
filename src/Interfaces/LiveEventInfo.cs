@@ -1,8 +1,8 @@
-// <copyright file="LiveEventInfo.cs" company="MUnique">
+// <copyright file="LiveEventInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>A periodic mini game's live schedule on one server.</summary>
 /// <param name="Type">The invariant mini game type name.</param>

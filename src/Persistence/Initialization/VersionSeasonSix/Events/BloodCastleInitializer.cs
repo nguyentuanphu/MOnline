@@ -1,13 +1,13 @@
-﻿// <copyright file="BloodCastleInitializer.cs" company="MUnique">
+﻿// <copyright file="BloodCastleInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Events;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
 /// <summary>
 /// The initializer for the blood castle event.

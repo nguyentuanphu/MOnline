@@ -1,36 +1,36 @@
-﻿// <copyright file="Player.cs" company="MUnique">
+﻿// <copyright file="Player.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System;
 using System.ComponentModel;
 using System.Globalization;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Pet;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.PlayerActions.Trade;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.MuHelper;
-using MUnique.OpenMU.GameLogic.Views.Quest;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Pet;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.PlayerActions.Trade;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.MuHelper;
+using HNMO.GameLogic.Views.Quest;
+using HNMO.GameLogic.Views.World;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

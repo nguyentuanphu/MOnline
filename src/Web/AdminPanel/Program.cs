@@ -1,19 +1,19 @@
-// <copyright file="Program.cs" company="MUnique">
+// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("MUnique.OpenMU.Web.Tests")]
+[assembly: InternalsVisibleTo("HNMO.Web.Tests")]
 
-namespace MUnique.OpenMU.Web.AdminPanel;
+namespace HNMO.Web.AdminPanel;
 
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// The class of the entry point.

@@ -1,14 +1,14 @@
-// <copyright file="ConfigurationSearchIndexCache.cs" company="MUnique">
+// <copyright file="ConfigurationSearchIndexCache.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.Diagnostics;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
 
 /// <summary>
 /// Caches configuration search entries for fast header search navigation.

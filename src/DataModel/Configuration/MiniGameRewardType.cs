@@ -1,8 +1,8 @@
-﻿// <copyright file="MiniGameRewardType.cs" company="MUnique">
+﻿// <copyright file="MiniGameRewardType.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Defines the type of the <see cref="MiniGameReward"/>.

@@ -1,20 +1,20 @@
-﻿// <copyright file="DiscordServiceCollectionExtensions.cs" company="MUnique">
+﻿// <copyright file="DiscordServiceCollectionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Net.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Discord.ChatBridge;
-using MUnique.OpenMU.Discord.Provisioning;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Discord.ChatBridge;
+using HNMO.Discord.Provisioning;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Extensions to add the Discord integration to the services of a host.

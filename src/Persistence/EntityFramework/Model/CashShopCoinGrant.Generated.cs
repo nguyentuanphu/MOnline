@@ -1,4 +1,4 @@
-// <copyright file="CashShopCoinGrant.Generated.cs" company="MUnique">
+// <copyright file="CashShopCoinGrant.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.CashShopCoinGrant"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.CashShopCoinGrant"/>.
 /// </summary>
 [Table(nameof(CashShopCoinGrant), Schema = SchemaNames.AccountData)]
-internal partial class CashShopCoinGrant : MUnique.OpenMU.DataModel.Entities.CashShopCoinGrant, IIdentifiable
+internal partial class CashShopCoinGrant : HNMO.DataModel.Entities.CashShopCoinGrant, IIdentifiable
 {
     
     

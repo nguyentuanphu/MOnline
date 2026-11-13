@@ -1,21 +1,21 @@
-// <copyright file="ScriptedIntelligence.cs" company="MUnique">
+// <copyright file="ScriptedIntelligence.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using System.Threading;
 using System.Threading.Channels;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.PlayerActions.Chat;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.PlayerActions.Chat;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// What the MU Helper AI is to an offline player, this is to a scripted actor: the one place which

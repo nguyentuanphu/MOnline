@@ -1,8 +1,8 @@
-﻿// <copyright file="IChatClient.cs" company="MUnique">
+﻿// <copyright file="IChatClient.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
 /// <summary>
 /// Type of the chat room client update message.

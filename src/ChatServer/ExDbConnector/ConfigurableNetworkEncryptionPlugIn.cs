@@ -1,16 +1,16 @@
-﻿// <copyright file="ConfigurableNetworkEncryptionPlugIn.cs" company="MUnique">
+﻿// <copyright file="ConfigurableNetworkEncryptionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer.ExDbConnector;
+namespace HNMO.ChatServer.ExDbConnector;
 
 using System.ComponentModel.DataAnnotations;
 using System.IO.Pipelines;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Network.Xor;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.Network.Xor;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A configurable network encryption factory plugin which reads the Xor32 key from the ChatServer.cfg file. Only used by the ExDbConnector project.

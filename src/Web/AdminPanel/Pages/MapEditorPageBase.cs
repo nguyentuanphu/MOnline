@@ -1,8 +1,8 @@
-﻿// <copyright file="MapEditorPageBase.cs" company="MUnique">
+﻿// <copyright file="MapEditorPageBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Reflection;
 using System.Threading;
@@ -11,16 +11,16 @@ using Microsoft.AspNetCore.Components.Rendering;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components;
-using MUnique.OpenMU.Web.Shared.Components.MapEditor;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components;
+using HNMO.Web.Shared.Components.MapEditor;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// The base class of the pages, which show an editor for all <see cref="GameConfiguration.Maps"/>.

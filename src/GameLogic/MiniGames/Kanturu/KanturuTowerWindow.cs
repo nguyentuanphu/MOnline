@@ -1,12 +1,12 @@
-// <copyright file="KanturuTowerWindow.cs" company="MUnique">
+// <copyright file="KanturuTowerWindow.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Reads and writes the Tower of Refinement open window. The window is stored in the

@@ -1,4 +1,4 @@
-// <copyright file="AccountAttributeGrant.Generated.cs" company="MUnique">
+// <copyright file="AccountAttributeGrant.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.AccountAttributeGrant"/>.
 /// </summary>
 [Table(nameof(AccountAttributeGrant), Schema = SchemaNames.AccountData)]
-internal partial class AccountAttributeGrant : MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant, IIdentifiable
+internal partial class AccountAttributeGrant : HNMO.DataModel.Entities.AccountAttributeGrant, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class AccountAttributeGrant : MUnique.OpenMU.DataModel.Entities
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Attribute
+    public override HNMO.AttributeSystem.AttributeDefinition Attribute
     {
         get => base.Attribute;set
         {

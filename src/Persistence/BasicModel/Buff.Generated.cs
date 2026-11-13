@@ -1,4 +1,4 @@
-// <copyright file="Buff.Generated.cs" company="MUnique">
+// <copyright file="Buff.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Buff"/>.
 /// </summary>
-public partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIdentifiable, IConvertibleTo<Buff>
+public partial class Buff : HNMO.DataModel.Configuration.Buff, IIdentifiable, IConvertibleTo<Buff>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIdenti
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition MagicEffectDefinition
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition MagicEffectDefinition
     {
         get => base.MagicEffectDefinition;
         set => base.MagicEffectDefinition = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Buff Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Buff Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Buff();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIdenti
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Buff other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Buff other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

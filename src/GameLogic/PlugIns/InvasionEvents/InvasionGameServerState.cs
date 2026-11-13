@@ -1,13 +1,13 @@
-// <copyright file="InvasionGameServerState.cs" company="MUnique">
+// <copyright file="InvasionGameServerState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using System.Collections.Concurrent;
 using System.Linq;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Invasion state that is created for every periodic invasion run.

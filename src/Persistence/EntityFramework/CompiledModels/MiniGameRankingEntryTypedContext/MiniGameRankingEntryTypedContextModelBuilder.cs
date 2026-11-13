@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForMiniGameRankingEntryTypedContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForMiniGameRankingEntryTypedContext
 {
     public partial class MiniGameRankingEntryTypedContextModel
     {

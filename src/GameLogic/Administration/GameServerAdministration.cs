@@ -1,15 +1,15 @@
-// <copyright file="GameServerAdministration.cs" company="MUnique">
+// <copyright file="GameServerAdministration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Administration;
+namespace HNMO.GameLogic.Administration;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>Projects and changes live state without accessing another persistence context.</summary>
 /// <param name="context">The owning game context.</param>

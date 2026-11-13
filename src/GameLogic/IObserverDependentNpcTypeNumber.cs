@@ -1,8 +1,8 @@
-// <copyright file="IObserverDependentNpcTypeNumber.cs" company="MUnique">
+// <copyright file="IObserverDependentNpcTypeNumber.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// Provides observer-dependent flags which are encoded into an NPC's type number when it enters scope.

@@ -1,11 +1,11 @@
-﻿// <copyright file="GameMapsInitializer.cs" company="MUnique">
+﻿// <copyright file="GameMapsInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
 /// <summary>
 /// Initializes the <see cref="GameMapDefinition"/>s.

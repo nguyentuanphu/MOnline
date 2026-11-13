@@ -1,10 +1,10 @@
-﻿// <copyright file="ItemAppearance.cs" company="MUnique">
+﻿// <copyright file="ItemAppearance.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Appearance of an item.

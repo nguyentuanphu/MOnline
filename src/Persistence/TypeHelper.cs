@@ -1,8 +1,8 @@
-﻿// <copyright file="TypeHelper.cs" company="MUnique">
+﻿// <copyright file="TypeHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Collections.Concurrent;
 using System.Reflection;
@@ -12,7 +12,7 @@ using System.Reflection;
 /// </summary>
 public static class TypeHelper
 {
-    private static readonly string ConfigurationNamespace = "MUnique.OpenMU.DataModel.Configuration";
+    private static readonly string ConfigurationNamespace = "HNMO.DataModel.Configuration";
 
     /// <summary>
     /// A cache which holds extended types (Value) for their originating assembly and corresponding base type (Key).

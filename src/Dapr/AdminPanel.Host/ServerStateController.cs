@@ -1,13 +1,13 @@
-﻿// <copyright file="ServerStateController.cs" company="MUnique">
+﻿// <copyright file="ServerStateController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.AdminPanel.Host;
+namespace HNMO.AdminPanel.Host;
 
 using global::Dapr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Dapr.Common;
+using HNMO.Dapr.Common;
 
 /// <summary>
 /// Controller which receives server state updates from the pub/sub component.

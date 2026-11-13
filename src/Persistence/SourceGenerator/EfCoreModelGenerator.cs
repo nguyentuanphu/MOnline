@@ -1,15 +1,15 @@
-﻿// <copyright file="EfCoreModelGenerator.cs" company="MUnique">
+﻿// <copyright file="EfCoreModelGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.SourceGenerator;
+namespace HNMO.Persistence.SourceGenerator;
 
 using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// Source Generator which creates classes of the our entities specifically for the entity framework core.
@@ -20,9 +20,9 @@ public class EfCoreModelGenerator : IIncrementalGenerator, IUnboundSourceGenerat
     /// <summary>
     /// Holds the Assembly-Name which is the target of this generator.
     /// </summary>
-    internal const string TargetAssemblyName = "MUnique.OpenMU.Persistence.EntityFramework";
+    internal const string TargetAssemblyName = "HNMO.Persistence.EntityFramework";
 
-    private const string GameConfigurationFullName = "MUnique.OpenMU.DataModel.Configuration.GameConfiguration";
+    private const string GameConfigurationFullName = "HNMO.DataModel.Configuration.GameConfiguration";
 
     private static readonly Type[] IgnoredTypes = { typeof(SimpleElement) };
 
@@ -32,18 +32,18 @@ public class EfCoreModelGenerator : IIncrementalGenerator, IUnboundSourceGenerat
     /// </summary>
     private static readonly (string TypeName, bool StandaloneForEntityOnly)[] StandaloneTypes =
     {
-        ("MUnique.OpenMU.DataModel.Configuration.CharacterClass", false),
-        ("MUnique.OpenMU.DataModel.Configuration.DropItemGroup", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemOption", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet", true),
-        ("MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition", false),
-        ("MUnique.OpenMU.DataModel.Configuration.Skill", false),
-        ("MUnique.OpenMU.DataModel.Configuration.GameMapDefinition", false),
+        ("HNMO.DataModel.Configuration.CharacterClass", false),
+        ("HNMO.DataModel.Configuration.DropItemGroup", false),
+        ("HNMO.DataModel.Configuration.Items.IncreasableItemOption", false),
+        ("HNMO.DataModel.Configuration.Items.ItemDefinition", false),
+        ("HNMO.DataModel.Configuration.Items.ItemOption", false),
+        ("HNMO.DataModel.Configuration.Items.ItemOptionType", false),
+        ("HNMO.DataModel.Configuration.Items.ItemOptionDefinition", false),
+        ("HNMO.DataModel.Configuration.Items.ItemSetGroup", false),
+        ("HNMO.DataModel.Configuration.Items.ItemOfItemSet", true),
+        ("HNMO.DataModel.Configuration.MasterSkillDefinition", false),
+        ("HNMO.DataModel.Configuration.Skill", false),
+        ("HNMO.DataModel.Configuration.GameMapDefinition", false),
     };
 
     /// <inheritdoc />
@@ -96,10 +96,10 @@ public class EfCoreModelGenerator : IIncrementalGenerator, IUnboundSourceGenerat
 
             var classSource = $@"{string.Format(ModelGeneratorHelper.FileHeaderTemplate, className)}
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// The Entity Framework Core implementation of <see cref=""{type.FullName}""/>.
@@ -191,11 +191,11 @@ internal partial class {className} : {fullName}, IIdentifiable
 
             var source = $@"{string.Format(ModelGeneratorHelper.FileHeaderTemplate, joinTypeName)}
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.EntityFramework;
+using HNMO.Persistence;
+using HNMO.Persistence.EntityFramework;
 
 [Table(nameof({joinTypeName}), Schema = {(ModelGeneratorHelper.IsConfigurationType(propertyInfo.ReflectedType) ? "SchemaNames.Configuration" : "SchemaNames.AccountData")})]
 internal partial class {joinTypeName}
@@ -275,12 +275,12 @@ internal partial class {propertyInfo.ReflectedType.Name}
 
 #nullable enable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.Runtime.CompilerServices;
 
 /// <summary>
-/// Converts the objects of this persistence model to the objects of the <see cref=""MUnique.OpenMU.Persistence.BasicModel""/>.
+/// Converts the objects of this persistence model to the objects of the <see cref=""HNMO.Persistence.BasicModel""/>.
 /// The references between the objects are preserved.
 /// </summary>
 internal sealed class BasicModelConverter
@@ -444,11 +444,11 @@ internal sealed class BasicModelConverter
 
         var source = $@"{string.Format(ModelGeneratorHelper.FileHeaderTemplate, "ExtendedTypeContext")}
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// DbContext which sets all extended base types to ignore.

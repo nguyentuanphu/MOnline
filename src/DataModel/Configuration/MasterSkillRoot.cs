@@ -1,8 +1,8 @@
-﻿// <copyright file="MasterSkillRoot.cs" company="MUnique">
+﻿// <copyright file="MasterSkillRoot.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
 /// <summary>
 /// The root of a master skill tree. One character can have more than one root.

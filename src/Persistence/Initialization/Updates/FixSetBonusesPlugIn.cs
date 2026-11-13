@@ -1,13 +1,13 @@
-﻿// <copyright file="FixSetBonusesPlugIn.cs" company="MUnique">
+﻿// <copyright file="FixSetBonusesPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This updates adds the new <see cref="SystemConfiguration"/> with default settings.
@@ -51,7 +51,7 @@ public abstract class FixSetBonusesPlugIn : UpdatePlugInBase
     /// The <see cref="FixSetBonusesPlugIn"/> for season 6.
     /// </summary>
     [PlugIn]
-    [Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
     [Guid("F858E471-B76D-4AAF-8886-8DEB45BC1AB8")]
     public class Season6 : FixSetBonusesPlugIn
     {
@@ -63,7 +63,7 @@ public abstract class FixSetBonusesPlugIn : UpdatePlugInBase
     /// The <see cref="FixSetBonusesPlugIn"/> for version 0.95d.
     /// </summary>
     [PlugIn]
-    [Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
     [Guid("3D0201C3-D956-4BDD-9D57-3F6FD921EDF7")]
     public class V095d : FixSetBonusesPlugIn
     {
@@ -75,7 +75,7 @@ public abstract class FixSetBonusesPlugIn : UpdatePlugInBase
     /// The <see cref="FixSetBonusesPlugIn"/> for version 0.75.
     /// </summary>
     [PlugIn]
-    [Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSetBonusesPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
     [Guid("2E009ADF-1580-4E03-BA59-C9C51DC109BA")]
     public class V075 : FixSetBonusesPlugIn
     {

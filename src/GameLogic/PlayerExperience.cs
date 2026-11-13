@@ -1,13 +1,13 @@
-// <copyright file="PlayerExperience.cs" company="MUnique">
+// <copyright file="PlayerExperience.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.World;
 using Nito.AsyncEx;
 
 /// <summary>

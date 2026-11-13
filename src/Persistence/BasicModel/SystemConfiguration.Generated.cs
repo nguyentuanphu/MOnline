@@ -1,4 +1,4 @@
-// <copyright file="SystemConfiguration.Generated.cs" company="MUnique">
+// <copyright file="SystemConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="SystemConfiguration"/>.
 /// </summary>
-public partial class SystemConfiguration : MUnique.OpenMU.DataModel.Configuration.SystemConfiguration, IIdentifiable, IConvertibleTo<SystemConfiguration>
+public partial class SystemConfiguration : HNMO.DataModel.Configuration.SystemConfiguration, IIdentifiable, IConvertibleTo<SystemConfiguration>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class SystemConfiguration : MUnique.OpenMU.DataModel.Configuratio
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.SystemConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.SystemConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new SystemConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class SystemConfiguration : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.SystemConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.SystemConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

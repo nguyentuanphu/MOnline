@@ -1,4 +1,4 @@
-// <copyright file="GuildMember.Generated.cs" company="MUnique">
+// <copyright file="GuildMember.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.GuildMember"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.GuildMember"/>.
 /// </summary>
 [Table(nameof(GuildMember), Schema = SchemaNames.AccountData)]
-internal partial class GuildMember : MUnique.OpenMU.DataModel.Entities.GuildMember, IIdentifiable
+internal partial class GuildMember : HNMO.DataModel.Entities.GuildMember, IIdentifiable
 {
     /// <inheritdoc />
     public GuildMember()

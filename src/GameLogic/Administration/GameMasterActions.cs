@@ -1,15 +1,15 @@
-// <copyright file="GameMasterActions.cs" company="MUnique">
+// <copyright file="GameMasterActions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Administration;
+namespace HNMO.GameLogic.Administration;
 
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.World;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
 
 /// <summary>GM actions shared by chat commands and the live administration channel.</summary>
 /// <remarks>The administration channel serializes player mutations with the player's persistence lock. Chat commands retain their packet handler context; acquiring a second player's lock there would violate the lock order.</remarks>

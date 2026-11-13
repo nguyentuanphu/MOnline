@@ -1,15 +1,15 @@
-// <copyright file="AddCashShopUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddCashShopUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CashShop;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CashShop;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the cash shop configuration with the packages of the cash shop script
@@ -21,7 +21,7 @@ using MUnique.OpenMU.PlugIns;
 /// products which don't have an item yet.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCashShopUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCashShopUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCashShopUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCashShopUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("C6B9A9DB-FFA6-4C66-B9E7-43166A06B2D5")]
 public class AddCashShopUpdatePlugIn : UpdatePlugInBase
 {

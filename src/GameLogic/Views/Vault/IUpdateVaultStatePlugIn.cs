@@ -1,8 +1,8 @@
-﻿// <copyright file="IUpdateVaultStatePlugIn.cs" company="MUnique">
+﻿// <copyright file="IUpdateVaultStatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Vault;
+namespace HNMO.GameLogic.Views.Vault;
 
 /// <summary>
 /// Interface of a view whose implementation updates the vault state on client side.

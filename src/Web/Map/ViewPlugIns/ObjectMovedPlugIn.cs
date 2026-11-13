@@ -1,15 +1,15 @@
-﻿// <copyright file="ObjectMovedPlugIn.cs" company="MUnique">
+﻿// <copyright file="ObjectMovedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.ViewPlugIns;
+namespace HNMO.Web.Map.ViewPlugIns;
 
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
+using HNMO.Web.Map.Map;
 
 /// <summary>
 /// Implementation of <see cref="IObjectMovedPlugIn"/> which uses the javascript map app.

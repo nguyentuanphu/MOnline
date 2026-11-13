@@ -1,21 +1,21 @@
-﻿// <copyright file="InitializerBase.cs" company="MUnique">
+﻿// <copyright file="InitializerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// Base class for an <see cref="IInitializer"/>.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.Persistence.Initialization.IInitializer" />
+/// <seealso cref="HNMO.Persistence.Initialization.IInitializer" />
 public abstract class InitializerBase : IInitializer
 {
     /// <summary>

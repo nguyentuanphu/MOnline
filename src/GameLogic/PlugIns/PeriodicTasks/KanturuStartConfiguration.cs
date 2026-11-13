@@ -1,10 +1,10 @@
-﻿// <copyright file="KanturuStartConfiguration.cs" company="MUnique">
+﻿// <copyright file="KanturuStartConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
-using MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+using HNMO.GameLogic.MiniGames.Kanturu;
 
 /// <summary>
 /// The Kanturu event start configuration.
@@ -65,6 +65,6 @@ public class KanturuStartConfiguration : MiniGameStartConfiguration
     /// game configuration is known. The <see cref="MiniGames.Kanturu.KanturuContext"/> falls
     /// back to <see cref="KanturuEventDefinition.CreateDefault"/> in that case.
     /// </remarks>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.KanturuStartConfiguration_EventDefinition_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources), Order = 202)]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.KanturuStartConfiguration_EventDefinition_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources), Order = 202)]
     public KanturuEventDefinition? EventDefinition { get; set; }
 }

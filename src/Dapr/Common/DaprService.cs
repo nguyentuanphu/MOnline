@@ -1,19 +1,19 @@
-﻿// <copyright file="DaprService.cs" company="MUnique">
+﻿// <copyright file="DaprService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-using MUnique.OpenMU.Dapr.Common.HealthChecks;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Telemetry;
+using HNMO.Dapr.Common.HealthChecks;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework;
+using HNMO.Persistence.EntityFramework.Json;
+using HNMO.PlugIns;
+using HNMO.Telemetry;
 
 /// <summary>
 /// Helper class to create an <see cref="WebApplicationBuilder"/> which predefined common

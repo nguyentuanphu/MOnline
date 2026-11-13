@@ -1,8 +1,8 @@
-// <copyright file="MiniGameConstants.cs" company="MUnique">
+// <copyright file="MiniGameConstants.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
 /// <summary>
 /// The constants which the mini game initializers and the corresponding updates share.

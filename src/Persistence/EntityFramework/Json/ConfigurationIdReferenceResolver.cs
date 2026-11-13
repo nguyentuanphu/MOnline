@@ -1,12 +1,12 @@
-﻿// <copyright file="ConfigurationIdReferenceResolver.cs" company="MUnique">
+﻿// <copyright file="ConfigurationIdReferenceResolver.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Json;
+namespace HNMO.Persistence.EntityFramework.Json;
 
 using System.Collections.Concurrent;
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// A reference resolver which resolves them by looking at the objects occurring in the <see cref="GameConfiguration" />.

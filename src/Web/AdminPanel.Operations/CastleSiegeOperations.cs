@@ -1,15 +1,15 @@
-// <copyright file="CastleSiegeOperations.cs" company="MUnique">
+// <copyright file="CastleSiegeOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>Audited Castle Siege operations using the existing in-process administration service.</summary>
 /// <param name="siege">The Castle Siege service.</param>

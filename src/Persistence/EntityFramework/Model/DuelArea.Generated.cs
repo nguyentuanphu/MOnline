@@ -1,4 +1,4 @@
-// <copyright file="DuelArea.Generated.cs" company="MUnique">
+// <copyright file="DuelArea.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.DuelArea"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.DuelArea"/>.
 /// </summary>
 [Table(nameof(DuelArea), Schema = SchemaNames.Configuration)]
-internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelArea, IIdentifiable
+internal partial class DuelArea : HNMO.DataModel.Configuration.DuelArea, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelAre
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate FirstPlayerGate
+    public override HNMO.DataModel.Configuration.ExitGate FirstPlayerGate
     {
         get => base.FirstPlayerGate;set
         {
@@ -71,7 +71,7 @@ internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelAre
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate SecondPlayerGate
+    public override HNMO.DataModel.Configuration.ExitGate SecondPlayerGate
     {
         get => base.SecondPlayerGate;set
         {
@@ -97,7 +97,7 @@ internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelAre
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate SpectatorsGate
+    public override HNMO.DataModel.Configuration.ExitGate SpectatorsGate
     {
         get => base.SpectatorsGate;set
         {
@@ -107,7 +107,7 @@ internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelAre
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.DuelArea Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.DuelArea Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new DuelArea();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -115,7 +115,7 @@ internal partial class DuelArea : MUnique.OpenMU.DataModel.Configuration.DuelAre
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.DuelArea other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.DuelArea other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

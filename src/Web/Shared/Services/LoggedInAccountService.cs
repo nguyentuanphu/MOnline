@@ -1,15 +1,15 @@
-﻿// <copyright file="LoggedInAccountService.cs" company="MUnique">
+﻿// <copyright file="LoggedInAccountService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.Extensions.Caching.Memory;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Offline;
+using HNMO.Interfaces;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>
 /// Services for the <see cref="LoggedInAccount"/> page.

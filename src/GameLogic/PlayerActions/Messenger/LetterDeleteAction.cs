@@ -1,11 +1,11 @@
-﻿// <copyright file="LetterDeleteAction.cs" company="MUnique">
+﻿// <copyright file="LetterDeleteAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Messenger;
+namespace HNMO.GameLogic.PlayerActions.Messenger;
 
-using MUnique.OpenMU.GameLogic.Views.Messenger;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Views.Messenger;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to delete a letter.

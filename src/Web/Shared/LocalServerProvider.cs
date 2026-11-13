@@ -1,11 +1,11 @@
-﻿// <copyright file="LocalServerProvider.cs" company="MUnique">
+﻿// <copyright file="LocalServerProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared;
+namespace HNMO.Web.Shared;
 
 using System.ComponentModel;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An implementation of a <see cref="IServerProvider"/> which just forwards an available (local) list of <see cref="IManageableServer"/>s.

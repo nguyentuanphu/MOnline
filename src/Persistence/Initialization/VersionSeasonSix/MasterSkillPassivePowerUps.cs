@@ -1,13 +1,13 @@
-﻿// <copyright file="MasterSkillPassivePowerUps.cs" company="MUnique">
+﻿// <copyright file="MasterSkillPassivePowerUps.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// Creates the <see cref="MasterSkillDefinition.PassivePowerUps"/> of the season 6 master skills.

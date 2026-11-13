@@ -1,4 +1,4 @@
-// <copyright file="BasicModelConverter.Generated.cs" company="MUnique">
+// <copyright file="BasicModelConverter.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -12,12 +12,12 @@
 
 #nullable enable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.Runtime.CompilerServices;
 
 /// <summary>
-/// Converts the objects of this persistence model to the objects of the <see cref="MUnique.OpenMU.Persistence.BasicModel"/>.
+/// Converts the objects of this persistence model to the objects of the <see cref="HNMO.Persistence.BasicModel"/>.
 /// The references between the objects are preserved.
 /// </summary>
 internal sealed class BasicModelConverter
@@ -180,7 +180,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in unlockedCharacterClassesItems)
             {
-                target.UnlockedCharacterClasses.Add((MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
+                target.UnlockedCharacterClasses.Add((HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
             }
         }
 
@@ -188,7 +188,7 @@ internal sealed class BasicModelConverter
         target.State = source.State;
         target.TimeZone = source.TimeZone;
         target.VaultPassword = source.VaultPassword;
-        target.Vault = (MUnique.OpenMU.DataModel.Entities.ItemStorage)this.ConvertObject(source.Vault)!;
+        target.Vault = (HNMO.DataModel.Entities.ItemStorage)this.ConvertObject(source.Vault)!;
         target.IsVaultExtended = source.IsVaultExtended;
         target.WCoinC = source.WCoinC;
         target.WCoinP = source.WCoinP;
@@ -200,7 +200,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in charactersItems)
             {
-                target.Characters.Add((MUnique.OpenMU.DataModel.Entities.Character)this.ConvertObject(item)!);
+                target.Characters.Add((HNMO.DataModel.Entities.Character)this.ConvertObject(item)!);
             }
         }
 
@@ -208,7 +208,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributesItems)
             {
-                target.Attributes.Add((MUnique.OpenMU.AttributeSystem.StatAttribute)this.ConvertObject(item)!);
+                target.Attributes.Add((HNMO.AttributeSystem.StatAttribute)this.ConvertObject(item)!);
             }
         }
 
@@ -216,7 +216,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributeGrantsItems)
             {
-                target.AttributeGrants.Add((MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant)this.ConvertObject(item)!);
+                target.AttributeGrants.Add((HNMO.DataModel.Entities.AccountAttributeGrant)this.ConvertObject(item)!);
             }
         }
 
@@ -233,7 +233,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.AccountAttributeGrant();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Attribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
+        target.Attribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
         target.Value = source.Value;
         target.ValidUntil = source.ValidUntil;
         return target;
@@ -271,7 +271,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.AppearanceData();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.CharacterClass = (MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(source.CharacterClass)!;
+        target.CharacterClass = (HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(source.CharacterClass)!;
         target.CharacterStatus = source.CharacterStatus;
         target.Pose = source.Pose;
         target.FullAncientSetEquipped = source.FullAncientSetEquipped;
@@ -279,7 +279,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in equippedItemsItems)
             {
-                target.EquippedItems.Add((MUnique.OpenMU.DataModel.Entities.ItemAppearance)this.ConvertObject(item)!);
+                target.EquippedItems.Add((HNMO.DataModel.Entities.ItemAppearance)this.ConvertObject(item)!);
             }
         }
 
@@ -341,9 +341,9 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.AttributeRelationship(source.TargetAttribute, source.InputOperand, source.InputAttribute, source.AggregateType);
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.TargetAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
-        target.InputAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.InputAttribute)!;
-        target.OperandAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.OperandAttribute)!;
+        target.TargetAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
+        target.InputAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.InputAttribute)!;
+        target.OperandAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.OperandAttribute)!;
         target.InputOperator = source.InputOperator;
         target.InputOperand = source.InputOperand;
         target.AggregateType = source.AggregateType;
@@ -360,7 +360,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.AttributeRequirement();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Attribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
+        target.Attribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
         target.MinimumValue = source.MinimumValue;
         target.MinimumItemLevel = source.MinimumItemLevel;
         return target;
@@ -381,9 +381,9 @@ internal sealed class BasicModelConverter
         target.LeftTeamSpawnPointY = source.LeftTeamSpawnPointY;
         target.RightTeamSpawnPointX = source.RightTeamSpawnPointX;
         target.RightTeamSpawnPointY = source.RightTeamSpawnPointY;
-        target.Ground = (MUnique.OpenMU.DataModel.Configuration.Rectangle)this.ConvertObject(source.Ground)!;
-        target.LeftGoal = (MUnique.OpenMU.DataModel.Configuration.Rectangle)this.ConvertObject(source.LeftGoal)!;
-        target.RightGoal = (MUnique.OpenMU.DataModel.Configuration.Rectangle)this.ConvertObject(source.RightGoal)!;
+        target.Ground = (HNMO.DataModel.Configuration.Rectangle)this.ConvertObject(source.Ground)!;
+        target.LeftGoal = (HNMO.DataModel.Configuration.Rectangle)this.ConvertObject(source.LeftGoal)!;
+        target.RightGoal = (HNMO.DataModel.Configuration.Rectangle)this.ConvertObject(source.RightGoal)!;
         return target;
     }
 
@@ -397,7 +397,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.Buff();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.MagicEffectDefinition = (MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.MagicEffectDefinition)!;
+        target.MagicEffectDefinition = (HNMO.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.MagicEffectDefinition)!;
         target.MinimumLevel = source.MinimumLevel;
         target.MaximumLevel = source.MaximumLevel;
         return target;
@@ -444,7 +444,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in packagesItems)
             {
-                target.Packages.Add((MUnique.OpenMU.DataModel.Configuration.CashShopPackage)this.ConvertObject(item)!);
+                target.Packages.Add((HNMO.DataModel.Configuration.CashShopPackage)this.ConvertObject(item)!);
             }
         }
 
@@ -472,7 +472,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in productsItems)
             {
-                target.Products.Add((MUnique.OpenMU.DataModel.Configuration.CashShopProduct)this.ConvertObject(item)!);
+                target.Products.Add((HNMO.DataModel.Configuration.CashShopProduct)this.ConvertObject(item)!);
             }
         }
 
@@ -492,7 +492,7 @@ internal sealed class BasicModelConverter
         target.ProductSequence = source.ProductSequence;
         target.PriceSequence = source.PriceSequence;
         target.Price = source.Price;
-        target.ItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
+        target.ItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
         target.ItemLevel = source.ItemLevel;
         target.Quantity = source.Quantity;
         target.Duration = source.Duration;
@@ -533,7 +533,7 @@ internal sealed class BasicModelConverter
         target.CrownHoldTimeSeconds = source.CrownHoldTimeSeconds;
         target.RegisterMinLevel = source.RegisterMinLevel;
         target.RegisterMinMembers = source.RegisterMinMembers;
-        target.SignOfLordItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.SignOfLordItemDefinition)!;
+        target.SignOfLordItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.SignOfLordItemDefinition)!;
         target.SignOfLordItemLevel = source.SignOfLordItemLevel;
         target.ParticipantRewardMinSeconds = source.ParticipantRewardMinSeconds;
         target.MaxAttackingGuilds = source.MaxAttackingGuilds;
@@ -544,14 +544,14 @@ internal sealed class BasicModelConverter
         target.GateRepairCostPerHealthPoint = source.GateRepairCostPerHealthPoint;
         target.StatueRepairCostPerHealthPoint = source.StatueRepairCostPerHealthPoint;
         target.RepairCostPerUpgradeLevel = source.RepairCostPerUpgradeLevel;
-        target.CastleSiegeMapDefinition = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.CastleSiegeMapDefinition)!;
-        target.LandOfTrialsMapDefinition = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.LandOfTrialsMapDefinition)!;
-        target.RewardItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.RewardItemDefinition)!;
+        target.CastleSiegeMapDefinition = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.CastleSiegeMapDefinition)!;
+        target.LandOfTrialsMapDefinition = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.LandOfTrialsMapDefinition)!;
+        target.RewardItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.RewardItemDefinition)!;
         if (source.StateSchedule is { } stateScheduleItems)
         {
             foreach (var item in stateScheduleItems)
             {
-                target.StateSchedule.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry)this.ConvertObject(item)!);
+                target.StateSchedule.Add((HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry)this.ConvertObject(item)!);
             }
         }
 
@@ -559,7 +559,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in npcDefinitionsItems)
             {
-                target.NpcDefinitions.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition)this.ConvertObject(item)!);
+                target.NpcDefinitions.Add((HNMO.DataModel.Configuration.CastleSiegeNpcDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -567,7 +567,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in gateDefenseUpgradesItems)
             {
-                target.GateDefenseUpgrades.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
+                target.GateDefenseUpgrades.Add((HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -575,7 +575,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in gateLifeUpgradesItems)
             {
-                target.GateLifeUpgrades.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
+                target.GateLifeUpgrades.Add((HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -583,7 +583,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in statueDefenseUpgradesItems)
             {
-                target.StatueDefenseUpgrades.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
+                target.StatueDefenseUpgrades.Add((HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -591,7 +591,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in statueLifeUpgradesItems)
             {
-                target.StatueLifeUpgrades.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
+                target.StatueLifeUpgrades.Add((HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -599,7 +599,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in statueRegenUpgradesItems)
             {
-                target.StatueRegenUpgrades.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
+                target.StatueRegenUpgrades.Add((HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -607,7 +607,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attackMachineZonesItems)
             {
-                target.AttackMachineZones.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(item)!);
+                target.AttackMachineZones.Add((HNMO.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -615,12 +615,12 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in defenseMachineZonesItems)
             {
-                target.DefenseMachineZones.Add((MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(item)!);
+                target.DefenseMachineZones.Add((HNMO.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(item)!);
             }
         }
 
-        target.DefenseRespawnArea = (MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(source.DefenseRespawnArea)!;
-        target.AttackRespawnArea = (MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(source.AttackRespawnArea)!;
+        target.DefenseRespawnArea = (HNMO.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(source.DefenseRespawnArea)!;
+        target.AttackRespawnArea = (HNMO.DataModel.Configuration.CastleSiegeZoneDefinition)this.ConvertObject(source.AttackRespawnArea)!;
         return target;
     }
 
@@ -645,7 +645,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in npcStatesItems)
             {
-                target.NpcStates.Add((MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState)this.ConvertObject(item)!);
+                target.NpcStates.Add((HNMO.DataModel.Entities.CastleSiegeNpcState)this.ConvertObject(item)!);
             }
         }
 
@@ -653,7 +653,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in guildsItems)
             {
-                target.Guilds.Add((MUnique.OpenMU.DataModel.Entities.CastleSiegeGuild)this.ConvertObject(item)!);
+                target.Guilds.Add((HNMO.DataModel.Entities.CastleSiegeGuild)this.ConvertObject(item)!);
             }
         }
 
@@ -705,7 +705,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.CastleSiegeNpcDefinition();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.MonsterDefinition = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.MonsterDefinition)!;
+        target.MonsterDefinition = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.MonsterDefinition)!;
         target.InstanceId = source.InstanceId;
         target.IsPersistedToDatabase = source.IsPersistedToDatabase;
         target.DefaultSide = source.DefaultSide;
@@ -811,14 +811,14 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Name = source.Name;
-        target.CharacterClass = (MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(source.CharacterClass)!;
+        target.CharacterClass = (HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(source.CharacterClass)!;
         target.CharacterSlot = source.CharacterSlot;
         target.CreateDate = source.CreateDate;
         target.Experience = source.Experience;
         target.MasterExperience = source.MasterExperience;
         target.LevelUpPoints = source.LevelUpPoints;
         target.MasterLevelUpPoints = source.MasterLevelUpPoints;
-        target.CurrentMap = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.CurrentMap)!;
+        target.CurrentMap = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.CurrentMap)!;
         target.PositionX = source.PositionX;
         target.PositionY = source.PositionY;
         target.PlayerKillCount = source.PlayerKillCount;
@@ -837,25 +837,25 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributesItems)
             {
-                target.Attributes.Add((MUnique.OpenMU.AttributeSystem.StatAttribute)this.ConvertObject(item)!);
+                target.Attributes.Add((HNMO.AttributeSystem.StatAttribute)this.ConvertObject(item)!);
             }
         }
 
-        SetCharacterLetters(target, (System.Collections.Generic.IList<MUnique.OpenMU.Interfaces.LetterHeader>)this.ConvertObject(source.Letters)!);
+        SetCharacterLetters(target, (System.Collections.Generic.IList<HNMO.Interfaces.LetterHeader>)this.ConvertObject(source.Letters)!);
         if (source.LearnedSkills is { } learnedSkillsItems)
         {
             foreach (var item in learnedSkillsItems)
             {
-                target.LearnedSkills.Add((MUnique.OpenMU.DataModel.Entities.SkillEntry)this.ConvertObject(item)!);
+                target.LearnedSkills.Add((HNMO.DataModel.Entities.SkillEntry)this.ConvertObject(item)!);
             }
         }
 
-        target.Inventory = (MUnique.OpenMU.DataModel.Entities.ItemStorage)this.ConvertObject(source.Inventory)!;
+        target.Inventory = (HNMO.DataModel.Entities.ItemStorage)this.ConvertObject(source.Inventory)!;
         if (source.DropItemGroups is { } dropItemGroupsItems)
         {
             foreach (var item in dropItemGroupsItems)
             {
-                target.DropItemGroups.Add((MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
+                target.DropItemGroups.Add((HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -863,7 +863,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in questStatesItems)
             {
-                target.QuestStates.Add((MUnique.OpenMU.DataModel.Entities.CharacterQuestState)this.ConvertObject(item)!);
+                target.QuestStates.Add((HNMO.DataModel.Entities.CharacterQuestState)this.ConvertObject(item)!);
             }
         }
 
@@ -887,7 +887,7 @@ internal sealed class BasicModelConverter
         target.CanGetCreated = source.CanGetCreated;
         target.LevelRequirementByCreation = source.LevelRequirementByCreation;
         target.CreationAllowedFlag = source.CreationAllowedFlag;
-        target.NextGenerationClass = (MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(source.NextGenerationClass)!;
+        target.NextGenerationClass = (HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(source.NextGenerationClass)!;
         target.IsMasterClass = source.IsMasterClass;
         target.LevelWarpRequirementReductionPercent = source.LevelWarpRequirementReductionPercent;
         target.FruitCalculation = source.FruitCalculation;
@@ -895,7 +895,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in statAttributesItems)
             {
-                target.StatAttributes.Add((MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition)this.ConvertObject(item)!);
+                target.StatAttributes.Add((HNMO.DataModel.Configuration.StatAttributeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -903,7 +903,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributeCombinationsItems)
             {
-                target.AttributeCombinations.Add((MUnique.OpenMU.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
+                target.AttributeCombinations.Add((HNMO.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
             }
         }
 
@@ -911,12 +911,12 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in baseAttributeValuesItems)
             {
-                target.BaseAttributeValues.Add((MUnique.OpenMU.AttributeSystem.ConstValueAttribute)this.ConvertObject(item)!);
+                target.BaseAttributeValues.Add((HNMO.AttributeSystem.ConstValueAttribute)this.ConvertObject(item)!);
             }
         }
 
-        target.HomeMap = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.HomeMap)!;
-        target.ComboDefinition = (MUnique.OpenMU.DataModel.Configuration.SkillComboDefinition)this.ConvertObject(source.ComboDefinition)!;
+        target.HomeMap = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.HomeMap)!;
+        target.ComboDefinition = (HNMO.DataModel.Configuration.SkillComboDefinition)this.ConvertObject(source.ComboDefinition)!;
         return target;
     }
 
@@ -932,13 +932,13 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.Group = source.Group;
         target.ClientActionPerformed = source.ClientActionPerformed;
-        target.LastFinishedQuest = (MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(source.LastFinishedQuest)!;
-        target.ActiveQuest = (MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(source.ActiveQuest)!;
+        target.LastFinishedQuest = (HNMO.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(source.LastFinishedQuest)!;
+        target.ActiveQuest = (HNMO.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(source.ActiveQuest)!;
         if (source.RequirementStates is { } requirementStatesItems)
         {
             foreach (var item in requirementStatesItems)
             {
-                target.RequirementStates.Add((MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState)this.ConvertObject(item)!);
+                target.RequirementStates.Add((HNMO.DataModel.Entities.QuestMonsterKillRequirementState)this.ConvertObject(item)!);
             }
         }
 
@@ -965,7 +965,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in endpointsItems)
             {
-                target.Endpoints.Add((MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint)this.ConvertObject(item)!);
+                target.Endpoints.Add((HNMO.DataModel.Configuration.ChatServerEndpoint)this.ConvertObject(item)!);
             }
         }
 
@@ -983,7 +983,7 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.NetworkPort = source.NetworkPort;
-        target.Client = (MUnique.OpenMU.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
+        target.Client = (HNMO.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
         return target;
     }
 
@@ -997,7 +997,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.CombinationBonusRequirement();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.OptionType = (MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
+        target.OptionType = (HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
         target.SubOptionType = source.SubOptionType;
         target.MinimumCount = source.MinimumCount;
         return target;
@@ -1050,7 +1050,7 @@ internal sealed class BasicModelConverter
         // ConfigurationId has no setter.
         target.ServerId = source.ServerId;
         target.Description = source.Description;
-        target.Client = (MUnique.OpenMU.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
+        target.Client = (HNMO.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
         target.DisconnectOnUnknownPacket = source.DisconnectOnUnknownPacket;
         target.MaximumReceiveSize = source.MaximumReceiveSize;
         target.ClientListenerPort = source.ClientListenerPort;
@@ -1077,7 +1077,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ConstValueAttribute(source.Value, source.Definition, source.AggregateType);
         this._converted.Add(source, target);
         target.Id = source.Id;
-        SetConstValueAttributeDefinition(target, (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Definition)!);
+        SetConstValueAttributeDefinition(target, (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Definition)!);
         SetConstValueAttributeValue(target, source.Value);
         SetConstValueAttributeAggregateType(target, source.AggregateType);
         return target;
@@ -1114,7 +1114,7 @@ internal sealed class BasicModelConverter
         target.Chance = source.Chance;
         target.MinimumMonsterLevel = source.MinimumMonsterLevel;
         target.MaximumMonsterLevel = source.MaximumMonsterLevel;
-        target.Monster = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
+        target.Monster = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
         target.ItemLevel = source.ItemLevel;
         target.ItemType = source.ItemType;
         target.ExcellentOptionsAddChance = source.ExcellentOptionsAddChance;
@@ -1123,7 +1123,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleItemsItems)
             {
-                target.PossibleItems.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
+                target.PossibleItems.Add((HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1141,9 +1141,9 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Index = source.Index;
-        target.FirstPlayerGate = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.FirstPlayerGate)!;
-        target.SecondPlayerGate = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.SecondPlayerGate)!;
-        target.SpectatorsGate = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.SpectatorsGate)!;
+        target.FirstPlayerGate = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.FirstPlayerGate)!;
+        target.SecondPlayerGate = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.SecondPlayerGate)!;
+        target.SpectatorsGate = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.SpectatorsGate)!;
         return target;
     }
 
@@ -1161,12 +1161,12 @@ internal sealed class BasicModelConverter
         target.EntranceFee = source.EntranceFee;
         target.MinimumCharacterLevel = source.MinimumCharacterLevel;
         target.MaximumSpectatorsPerDuelRoom = source.MaximumSpectatorsPerDuelRoom;
-        target.Exit = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.Exit)!;
+        target.Exit = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.Exit)!;
         if (source.DuelAreas is { } duelAreasItems)
         {
             foreach (var item in duelAreasItems)
             {
-                target.DuelAreas.Add((MUnique.OpenMU.DataModel.Configuration.DuelArea)this.ConvertObject(item)!);
+                target.DuelAreas.Add((HNMO.DataModel.Configuration.DuelArea)this.ConvertObject(item)!);
             }
         }
 
@@ -1183,7 +1183,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.EnterGate();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.TargetGate = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.TargetGate)!;
+        target.TargetGate = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.TargetGate)!;
         target.LevelRequirement = source.LevelRequirement;
         target.Number = source.Number;
         target.X1 = source.X1;
@@ -1204,7 +1204,7 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Direction = source.Direction;
-        target.Map = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.Map)!;
+        target.Map = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.Map)!;
         target.IsSpawnGate = source.IsSpawnGate;
         target.X1 = source.X1;
         target.Y1 = source.Y1;
@@ -1288,12 +1288,12 @@ internal sealed class BasicModelConverter
         target.DamagePerOneItemDurability = source.DamagePerOneItemDurability;
         target.DamagePerOnePetDurability = source.DamagePerOnePetDurability;
         target.HitsPerOneItemDurability = source.HitsPerOneItemDurability;
-        target.DuelConfiguration = (MUnique.OpenMU.DataModel.Configuration.DuelConfiguration)this.ConvertObject(source.DuelConfiguration)!;
+        target.DuelConfiguration = (HNMO.DataModel.Configuration.DuelConfiguration)this.ConvertObject(source.DuelConfiguration)!;
         if (source.JewelMixes is { } jewelMixesItems)
         {
             foreach (var item in jewelMixesItems)
             {
-                target.JewelMixes.Add((MUnique.OpenMU.DataModel.Configuration.JewelMix)this.ConvertObject(item)!);
+                target.JewelMixes.Add((HNMO.DataModel.Configuration.JewelMix)this.ConvertObject(item)!);
             }
         }
 
@@ -1301,7 +1301,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in warpListItems)
             {
-                target.WarpList.Add((MUnique.OpenMU.DataModel.Configuration.WarpInfo)this.ConvertObject(item)!);
+                target.WarpList.Add((HNMO.DataModel.Configuration.WarpInfo)this.ConvertObject(item)!);
             }
         }
 
@@ -1309,7 +1309,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in dropItemGroupsItems)
             {
-                target.DropItemGroups.Add((MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
+                target.DropItemGroups.Add((HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -1317,7 +1317,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in skillsItems)
             {
-                target.Skills.Add((MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(item)!);
+                target.Skills.Add((HNMO.DataModel.Configuration.Skill)this.ConvertObject(item)!);
             }
         }
 
@@ -1325,7 +1325,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in characterClassesItems)
             {
-                target.CharacterClasses.Add((MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
+                target.CharacterClasses.Add((HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
             }
         }
 
@@ -1333,7 +1333,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemsItems)
             {
-                target.Items.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
+                target.Items.Add((HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1341,7 +1341,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemLevelBonusTablesItems)
             {
-                target.ItemLevelBonusTables.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(item)!);
+                target.ItemLevelBonusTables.Add((HNMO.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(item)!);
             }
         }
 
@@ -1349,7 +1349,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemStatProfilesItems)
             {
-                target.ItemStatProfiles.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile)this.ConvertObject(item)!);
+                target.ItemStatProfiles.Add((HNMO.DataModel.Configuration.Items.ItemStatProfile)this.ConvertObject(item)!);
             }
         }
 
@@ -1357,7 +1357,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemPriceDefinitionsItems)
             {
-                target.ItemPriceDefinitions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition)this.ConvertObject(item)!);
+                target.ItemPriceDefinitions.Add((HNMO.DataModel.Configuration.Items.ItemPriceDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1365,7 +1365,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemSlotTypesItems)
             {
-                target.ItemSlotTypes.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType)this.ConvertObject(item)!);
+                target.ItemSlotTypes.Add((HNMO.DataModel.Configuration.Items.ItemSlotType)this.ConvertObject(item)!);
             }
         }
 
@@ -1373,7 +1373,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemOptionsItems)
             {
-                target.ItemOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(item)!);
+                target.ItemOptions.Add((HNMO.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1381,7 +1381,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemOptionTypesItems)
             {
-                target.ItemOptionTypes.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
+                target.ItemOptionTypes.Add((HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
             }
         }
 
@@ -1389,7 +1389,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemSetGroupsItems)
             {
-                target.ItemSetGroups.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(item)!);
+                target.ItemSetGroups.Add((HNMO.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -1397,7 +1397,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemOptionCombinationBonusesItems)
             {
-                target.ItemOptionCombinationBonuses.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus)this.ConvertObject(item)!);
+                target.ItemOptionCombinationBonuses.Add((HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus)this.ConvertObject(item)!);
             }
         }
 
@@ -1405,7 +1405,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in mapsItems)
             {
-                target.Maps.Add((MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(item)!);
+                target.Maps.Add((HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1413,7 +1413,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in monstersItems)
             {
-                target.Monsters.Add((MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(item)!);
+                target.Monsters.Add((HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1421,7 +1421,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributesItems)
             {
-                target.Attributes.Add((MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(item)!);
+                target.Attributes.Add((HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1429,7 +1429,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in magicEffectsItems)
             {
-                target.MagicEffects.Add((MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(item)!);
+                target.MagicEffects.Add((HNMO.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1437,7 +1437,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in masterSkillRootsItems)
             {
-                target.MasterSkillRoots.Add((MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot)this.ConvertObject(item)!);
+                target.MasterSkillRoots.Add((HNMO.DataModel.Configuration.MasterSkillRoot)this.ConvertObject(item)!);
             }
         }
 
@@ -1445,7 +1445,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in globalAttributeCombinationsItems)
             {
-                target.GlobalAttributeCombinations.Add((MUnique.OpenMU.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
+                target.GlobalAttributeCombinations.Add((HNMO.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
             }
         }
 
@@ -1453,7 +1453,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in globalBaseAttributeValuesItems)
             {
-                target.GlobalBaseAttributeValues.Add((MUnique.OpenMU.AttributeSystem.ConstValueAttribute)this.ConvertObject(item)!);
+                target.GlobalBaseAttributeValues.Add((HNMO.AttributeSystem.ConstValueAttribute)this.ConvertObject(item)!);
             }
         }
 
@@ -1461,7 +1461,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in plugInConfigurationsItems)
             {
-                target.PlugInConfigurations.Add((MUnique.OpenMU.PlugIns.PlugInConfiguration)this.ConvertObject(item)!);
+                target.PlugInConfigurations.Add((HNMO.PlugIns.PlugInConfiguration)this.ConvertObject(item)!);
             }
         }
 
@@ -1469,12 +1469,12 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in miniGameDefinitionsItems)
             {
-                target.MiniGameDefinitions.Add((MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition)this.ConvertObject(item)!);
+                target.MiniGameDefinitions.Add((HNMO.DataModel.Configuration.MiniGameDefinition)this.ConvertObject(item)!);
             }
         }
 
-        target.CastleSiegeConfiguration = (MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration)this.ConvertObject(source.CastleSiegeConfiguration)!;
-        target.CashShopConfiguration = (MUnique.OpenMU.DataModel.Configuration.CashShopConfiguration)this.ConvertObject(source.CashShopConfiguration)!;
+        target.CastleSiegeConfiguration = (HNMO.DataModel.Configuration.CastleSiegeConfiguration)this.ConvertObject(source.CastleSiegeConfiguration)!;
+        target.CashShopConfiguration = (HNMO.DataModel.Configuration.CashShopConfiguration)this.ConvertObject(source.CashShopConfiguration)!;
         return target;
     }
 
@@ -1497,7 +1497,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in terrainVariantsItems)
             {
-                target.TerrainVariants.Add((MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant)this.ConvertObject(item)!);
+                target.TerrainVariants.Add((HNMO.DataModel.Configuration.GameMapTerrainVariant)this.ConvertObject(item)!);
             }
         }
 
@@ -1505,7 +1505,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in monsterSpawnsItems)
             {
-                target.MonsterSpawns.Add((MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea)this.ConvertObject(item)!);
+                target.MonsterSpawns.Add((HNMO.DataModel.Configuration.MonsterSpawnArea)this.ConvertObject(item)!);
             }
         }
 
@@ -1513,19 +1513,19 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in enterGatesItems)
             {
-                target.EnterGates.Add((MUnique.OpenMU.DataModel.Configuration.EnterGate)this.ConvertObject(item)!);
+                target.EnterGates.Add((HNMO.DataModel.Configuration.EnterGate)this.ConvertObject(item)!);
             }
         }
 
         target.ExpMultiplier = source.ExpMultiplier;
         target.Discriminator = source.Discriminator;
-        target.SafezoneMap = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.SafezoneMap)!;
-        target.BattleZone = (MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition)this.ConvertObject(source.BattleZone)!;
+        target.SafezoneMap = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.SafezoneMap)!;
+        target.BattleZone = (HNMO.DataModel.Configuration.BattleZoneDefinition)this.ConvertObject(source.BattleZone)!;
         if (source.ExitGates is { } exitGatesItems)
         {
             foreach (var item in exitGatesItems)
             {
-                target.ExitGates.Add((MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(item)!);
+                target.ExitGates.Add((HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(item)!);
             }
         }
 
@@ -1533,7 +1533,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in dropItemGroupsItems)
             {
-                target.DropItemGroups.Add((MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
+                target.DropItemGroups.Add((HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -1541,7 +1541,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in mapRequirementsItems)
             {
-                target.MapRequirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
+                target.MapRequirements.Add((HNMO.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -1549,7 +1549,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in characterPowerUpDefinitionsItems)
             {
-                target.CharacterPowerUpDefinitions.Add((MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
+                target.CharacterPowerUpDefinitions.Add((HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1587,7 +1587,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in mapsItems)
             {
-                target.Maps.Add((MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(item)!);
+                target.Maps.Add((HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1608,13 +1608,13 @@ internal sealed class BasicModelConverter
         target.Description = source.Description;
         target.ExperienceRate = source.ExperienceRate;
         target.PvpEnabled = source.PvpEnabled;
-        target.ServerConfiguration = (MUnique.OpenMU.DataModel.Configuration.GameServerConfiguration)this.ConvertObject(source.ServerConfiguration)!;
-        target.GameConfiguration = (MUnique.OpenMU.DataModel.Configuration.GameConfiguration)this.ConvertObject(source.GameConfiguration)!;
+        target.ServerConfiguration = (HNMO.DataModel.Configuration.GameServerConfiguration)this.ConvertObject(source.ServerConfiguration)!;
+        target.GameConfiguration = (HNMO.DataModel.Configuration.GameConfiguration)this.ConvertObject(source.GameConfiguration)!;
         if (source.Endpoints is { } endpointsItems)
         {
             foreach (var item in endpointsItems)
             {
-                target.Endpoints.Add((MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint)this.ConvertObject(item)!);
+                target.Endpoints.Add((HNMO.DataModel.Configuration.GameServerEndpoint)this.ConvertObject(item)!);
             }
         }
 
@@ -1622,7 +1622,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in joinRequirementsItems)
             {
-                target.JoinRequirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
+                target.JoinRequirements.Add((HNMO.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -1641,7 +1641,7 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.AlternativePublishedPort = source.AlternativePublishedPort;
         target.NetworkPort = source.NetworkPort;
-        target.Client = (MUnique.OpenMU.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
+        target.Client = (HNMO.DataModel.Configuration.GameClientDefinition)this.ConvertObject(source.Client)!;
         return target;
     }
 
@@ -1714,7 +1714,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in membersItems)
             {
-                target.Members.Add((MUnique.OpenMU.DataModel.Entities.GuildMember)this.ConvertObject(item)!);
+                target.Members.Add((HNMO.DataModel.Entities.GuildMember)this.ConvertObject(item)!);
             }
         }
 
@@ -1722,8 +1722,8 @@ internal sealed class BasicModelConverter
         target.Logo = source.Logo;
         target.Score = source.Score;
         target.Notice = source.Notice;
-        target.Hostility = (MUnique.OpenMU.Interfaces.Guild)this.ConvertObject(source.Hostility)!;
-        target.AllianceGuild = (MUnique.OpenMU.Interfaces.Guild)this.ConvertObject(source.AllianceGuild)!;
+        target.Hostility = (HNMO.Interfaces.Guild)this.ConvertObject(source.Hostility)!;
+        target.AllianceGuild = (HNMO.Interfaces.Guild)this.ConvertObject(source.AllianceGuild)!;
         return target;
     }
 
@@ -1779,14 +1779,14 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in levelDependentOptionsItems)
             {
-                target.LevelDependentOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel)this.ConvertObject(item)!);
+                target.LevelDependentOptions.Add((HNMO.DataModel.Configuration.Items.ItemOptionOfLevel)this.ConvertObject(item)!);
             }
         }
 
         target.Number = source.Number;
         target.SubOptionType = source.SubOptionType;
-        target.OptionType = (MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
-        target.PowerUpDefinition = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
+        target.OptionType = (HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
+        target.PowerUpDefinition = (HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
         return target;
     }
 
@@ -1801,7 +1801,7 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.ItemSlot = source.ItemSlot;
-        target.Definition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Definition)!;
+        target.Definition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Definition)!;
         target.Durability = source.Durability;
         target.Level = source.Level;
         target.HasSkill = source.HasSkill;
@@ -1809,7 +1809,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemOptionsItems)
             {
-                target.ItemOptions.Add((MUnique.OpenMU.DataModel.Entities.ItemOptionLink)this.ConvertObject(item)!);
+                target.ItemOptions.Add((HNMO.DataModel.Entities.ItemOptionLink)this.ConvertObject(item)!);
             }
         }
 
@@ -1817,13 +1817,13 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemSetGroupsItems)
             {
-                target.ItemSetGroups.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet)this.ConvertObject(item)!);
+                target.ItemSetGroups.Add((HNMO.DataModel.Configuration.Items.ItemOfItemSet)this.ConvertObject(item)!);
             }
         }
 
         target.SocketCount = source.SocketCount;
         target.StorePrice = source.StorePrice;
-        target.StorePriceItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.StorePriceItemDefinition)!;
+        target.StorePriceItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.StorePriceItemDefinition)!;
         target.StorePriceCoinType = source.StorePriceCoinType;
         target.PetExperience = source.PetExperience;
         return target;
@@ -1840,13 +1840,13 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.ItemSlot = source.ItemSlot;
-        target.Definition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Definition)!;
+        target.Definition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Definition)!;
         target.Level = source.Level;
         if (source.VisibleOptions is { } visibleOptionsItems)
         {
             foreach (var item in visibleOptionsItems)
             {
-                target.VisibleOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
+                target.VisibleOptions.Add((HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
             }
         }
 
@@ -1863,8 +1863,8 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ItemBasePowerUpDefinition();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.TargetAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
-        target.BonusPerLevelTable = (MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(source.BonusPerLevelTable)!;
+        target.TargetAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
+        target.BonusPerLevelTable = (HNMO.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(source.BonusPerLevelTable)!;
         target.BaseValue = source.BaseValue;
         target.AggregateType = source.AggregateType;
         return target;
@@ -1883,7 +1883,7 @@ internal sealed class BasicModelConverter
         target.Number = source.Number;
         target.Name = source.Name;
         target.ItemCraftingHandlerClassName = source.ItemCraftingHandlerClassName;
-        target.SimpleCraftingSettings = (MUnique.OpenMU.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings)this.ConvertObject(source.SimpleCraftingSettings)!;
+        target.SimpleCraftingSettings = (HNMO.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings)this.ConvertObject(source.SimpleCraftingSettings)!;
         return target;
     }
 
@@ -1901,7 +1901,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleItemsItems)
             {
-                target.PossibleItems.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
+                target.PossibleItems.Add((HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -1911,7 +1911,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requiredItemOptionsItems)
             {
-                target.RequiredItemOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
+                target.RequiredItemOptions.Add((HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(item)!);
             }
         }
 
@@ -1935,7 +1935,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ItemCraftingResultItem();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.ItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
+        target.ItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
         target.RandomMinimumLevel = source.RandomMinimumLevel;
         target.RandomMaximumLevel = source.RandomMaximumLevel;
         target.Durability = source.Durability;
@@ -1955,8 +1955,8 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Number = source.Number;
-        target.ItemSlot = (MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType)this.ConvertObject(source.ItemSlot)!;
-        target.StatProfile = (MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile)this.ConvertObject(source.StatProfile)!;
+        target.ItemSlot = (HNMO.DataModel.Configuration.Items.ItemSlotType)this.ConvertObject(source.ItemSlot)!;
+        target.StatProfile = (HNMO.DataModel.Configuration.Items.ItemStatProfile)this.ConvertObject(source.StatProfile)!;
         target.ExcellentBonus = source.ExcellentBonus;
         target.ExcellentRaisesLevel = source.ExcellentRaisesLevel;
         target.Width = source.Width;
@@ -1981,16 +1981,16 @@ internal sealed class BasicModelConverter
         target.Durability = source.Durability;
         target.Group = source.Group;
         target.Value = source.Value;
-        target.PriceDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition)this.ConvertObject(source.PriceDefinition)!;
+        target.PriceDefinition = (HNMO.DataModel.Configuration.Items.ItemPriceDefinition)this.ConvertObject(source.PriceDefinition)!;
         target.PetExperienceFormula = source.PetExperienceFormula;
-        target.ConsumeEffect = (MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.ConsumeEffect)!;
+        target.ConsumeEffect = (HNMO.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.ConsumeEffect)!;
         target.MaximumSockets = source.MaximumSockets;
-        target.Skill = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
+        target.Skill = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
         if (source.QualifiedCharacters is { } qualifiedCharactersItems)
         {
             foreach (var item in qualifiedCharactersItems)
             {
-                target.QualifiedCharacters.Add((MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
+                target.QualifiedCharacters.Add((HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
             }
         }
 
@@ -1998,7 +1998,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleItemSetGroupsItems)
             {
-                target.PossibleItemSetGroups.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(item)!);
+                target.PossibleItemSetGroups.Add((HNMO.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -2006,7 +2006,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleItemOptionsItems)
             {
-                target.PossibleItemOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(item)!);
+                target.PossibleItemOptions.Add((HNMO.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2014,7 +2014,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requirementsItems)
             {
-                target.Requirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
+                target.Requirements.Add((HNMO.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -2022,7 +2022,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in basePowerUpAttributesItems)
             {
-                target.BasePowerUpAttributes.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemBasePowerUpDefinition)this.ConvertObject(item)!);
+                target.BasePowerUpAttributes.Add((HNMO.DataModel.Configuration.Items.ItemBasePowerUpDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2030,7 +2030,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in dropItemsItems)
             {
-                target.DropItems.Add((MUnique.OpenMU.DataModel.Configuration.ItemDropItemGroup)this.ConvertObject(item)!);
+                target.DropItems.Add((HNMO.DataModel.Configuration.ItemDropItemGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -2057,7 +2057,7 @@ internal sealed class BasicModelConverter
         target.Chance = source.Chance;
         target.MinimumMonsterLevel = source.MinimumMonsterLevel;
         target.MaximumMonsterLevel = source.MaximumMonsterLevel;
-        target.Monster = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
+        target.Monster = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
         target.ItemLevel = source.ItemLevel;
         target.ItemType = source.ItemType;
         target.ExcellentOptionsAddChance = source.ExcellentOptionsAddChance;
@@ -2066,7 +2066,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleItemsItems)
             {
-                target.PossibleItems.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
+                target.PossibleItems.Add((HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2089,7 +2089,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in bonusPerLevelItems)
             {
-                target.BonusPerLevel.Add((MUnique.OpenMU.DataModel.Configuration.Items.LevelBonus)this.ConvertObject(item)!);
+                target.BonusPerLevel.Add((HNMO.DataModel.Configuration.Items.LevelBonus)this.ConvertObject(item)!);
             }
         }
 
@@ -2122,9 +2122,9 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.AncientSetDiscriminator = source.AncientSetDiscriminator;
-        target.ItemSetGroup = (MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(source.ItemSetGroup)!;
-        target.ItemDefinition = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
-        target.BonusOption = (MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(source.BonusOption)!;
+        target.ItemSetGroup = (HNMO.DataModel.Configuration.Items.ItemSetGroup)this.ConvertObject(source.ItemSetGroup)!;
+        target.ItemDefinition = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.ItemDefinition)!;
+        target.BonusOption = (HNMO.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(source.BonusOption)!;
         // Name has no setter.
         return target;
     }
@@ -2141,8 +2141,8 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.Number = source.Number;
         target.SubOptionType = source.SubOptionType;
-        target.OptionType = (MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
-        target.PowerUpDefinition = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
+        target.OptionType = (HNMO.DataModel.Configuration.Items.ItemOptionType)this.ConvertObject(source.OptionType)!;
+        target.PowerUpDefinition = (HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
         return target;
     }
 
@@ -2163,11 +2163,11 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requirementsItems)
             {
-                target.Requirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement)this.ConvertObject(item)!);
+                target.Requirements.Add((HNMO.DataModel.Configuration.Items.CombinationBonusRequirement)this.ConvertObject(item)!);
             }
         }
 
-        target.Bonus = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.Bonus)!;
+        target.Bonus = (HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.Bonus)!;
         return target;
     }
 
@@ -2189,7 +2189,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in possibleOptionsItems)
             {
-                target.PossibleOptions.Add((MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(item)!);
+                target.PossibleOptions.Add((HNMO.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(item)!);
             }
         }
 
@@ -2206,7 +2206,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ItemOptionLink();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.ItemOption = (MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(source.ItemOption)!;
+        target.ItemOption = (HNMO.DataModel.Configuration.Items.IncreasableItemOption)this.ConvertObject(source.ItemOption)!;
         target.Level = source.Level;
         target.Index = source.Index;
         return target;
@@ -2224,7 +2224,7 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.Level = source.Level;
         target.RequiredItemLevel = source.RequiredItemLevel;
-        target.PowerUpDefinition = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
+        target.PowerUpDefinition = (HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(source.PowerUpDefinition)!;
         return target;
     }
 
@@ -2260,7 +2260,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in pricePerLevelItems)
             {
-                target.PricePerLevel.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelPrice)this.ConvertObject(item)!);
+                target.PricePerLevel.Add((HNMO.DataModel.Configuration.Items.ItemLevelPrice)this.ConvertObject(item)!);
             }
         }
 
@@ -2281,7 +2281,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ItemRequirementFormula();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Attribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
+        target.Attribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
         target.KeepBase = source.KeepBase;
         target.Add = source.Add;
         target.LevelWeight = source.LevelWeight;
@@ -2305,12 +2305,12 @@ internal sealed class BasicModelConverter
         target.CountDistinct = source.CountDistinct;
         target.MinimumItemCount = source.MinimumItemCount;
         target.SetLevel = source.SetLevel;
-        target.Options = (MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(source.Options)!;
+        target.Options = (HNMO.DataModel.Configuration.Items.ItemOptionDefinition)this.ConvertObject(source.Options)!;
         if (source.Items is { } itemsItems)
         {
             foreach (var item in itemsItems)
             {
-                target.Items.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet)this.ConvertObject(item)!);
+                target.Items.Add((HNMO.DataModel.Configuration.Items.ItemOfItemSet)this.ConvertObject(item)!);
             }
         }
 
@@ -2357,7 +2357,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in statTermsItems)
             {
-                target.StatTerms.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemStatTerms)this.ConvertObject(item)!);
+                target.StatTerms.Add((HNMO.DataModel.Configuration.Items.ItemStatTerms)this.ConvertObject(item)!);
             }
         }
 
@@ -2365,7 +2365,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requirementFormulasItems)
             {
-                target.RequirementFormulas.Add((MUnique.OpenMU.DataModel.Configuration.Items.ItemRequirementFormula)this.ConvertObject(item)!);
+                target.RequirementFormulas.Add((HNMO.DataModel.Configuration.Items.ItemRequirementFormula)this.ConvertObject(item)!);
             }
         }
 
@@ -2382,9 +2382,9 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.ItemStatTerms();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Attribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
+        target.Attribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
         target.TableState = source.TableState;
-        target.Table = (MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(source.Table)!;
+        target.Table = (HNMO.DataModel.Configuration.Items.ItemLevelBonusTable)this.ConvertObject(source.Table)!;
         target.ExcellentState = source.ExcellentState;
         target.ExcellentTimes = source.ExcellentTimes;
         target.ExcellentAdd = source.ExcellentAdd;
@@ -2412,7 +2412,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in itemsItems)
             {
-                target.Items.Add((MUnique.OpenMU.DataModel.Entities.Item)this.ConvertObject(item)!);
+                target.Items.Add((HNMO.DataModel.Entities.Item)this.ConvertObject(item)!);
             }
         }
 
@@ -2431,8 +2431,8 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Number = source.Number;
-        target.SingleJewel = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.SingleJewel)!;
-        target.MixedJewel = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.MixedJewel)!;
+        target.SingleJewel = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.SingleJewel)!;
+        target.MixedJewel = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.MixedJewel)!;
         return target;
     }
 
@@ -2446,11 +2446,11 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.LetterBody();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Header = (MUnique.OpenMU.Interfaces.LetterHeader)this.ConvertObject(source.Header)!;
+        target.Header = (HNMO.Interfaces.LetterHeader)this.ConvertObject(source.Header)!;
         target.Message = source.Message;
         target.Rotation = source.Rotation;
         target.Animation = source.Animation;
-        target.SenderAppearance = (MUnique.OpenMU.DataModel.Entities.AppearanceData)this.ConvertObject(source.SenderAppearance)!;
+        target.SenderAppearance = (HNMO.DataModel.Entities.AppearanceData)this.ConvertObject(source.SenderAppearance)!;
         return target;
     }
 
@@ -2521,15 +2521,15 @@ internal sealed class BasicModelConverter
         target.DurationDependsOnTargetLevel = source.DurationDependsOnTargetLevel;
         target.MonsterTargetLevelDivisor = source.MonsterTargetLevelDivisor;
         target.PlayerTargetLevelDivisor = source.PlayerTargetLevelDivisor;
-        target.Chance = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Chance)!;
-        target.ChancePvp = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.ChancePvp)!;
-        target.Duration = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Duration)!;
-        target.DurationPvp = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.DurationPvp)!;
+        target.Chance = (HNMO.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Chance)!;
+        target.ChancePvp = (HNMO.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.ChancePvp)!;
+        target.Duration = (HNMO.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Duration)!;
+        target.DurationPvp = (HNMO.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.DurationPvp)!;
         if (source.PowerUpDefinitions is { } powerUpDefinitionsItems)
         {
             foreach (var item in powerUpDefinitionsItems)
             {
-                target.PowerUpDefinitions.Add((MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
+                target.PowerUpDefinitions.Add((HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2537,7 +2537,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in powerUpDefinitionsPvpItems)
             {
-                target.PowerUpDefinitionsPvp.Add((MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
+                target.PowerUpDefinitionsPvp.Add((HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2554,12 +2554,12 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.MasterSkillDefinition();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Root = (MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot)this.ConvertObject(source.Root)!;
+        target.Root = (HNMO.DataModel.Configuration.MasterSkillRoot)this.ConvertObject(source.Root)!;
         if (source.RequiredMasterSkills is { } requiredMasterSkillsItems)
         {
             foreach (var item in requiredMasterSkillsItems)
             {
-                target.RequiredMasterSkills.Add((MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(item)!);
+                target.RequiredMasterSkills.Add((HNMO.DataModel.Configuration.Skill)this.ConvertObject(item)!);
             }
         }
 
@@ -2568,17 +2568,17 @@ internal sealed class BasicModelConverter
         target.MinimumLevel = source.MinimumLevel;
         target.ValueFormula = source.ValueFormula;
         target.DisplayValueFormula = source.DisplayValueFormula;
-        target.TargetAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
+        target.TargetAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
         target.Aggregation = source.Aggregation;
         if (source.PassivePowerUps is { } passivePowerUpsItems)
         {
             foreach (var item in passivePowerUpsItems)
             {
-                target.PassivePowerUps.Add((MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
+                target.PassivePowerUps.Add((HNMO.DataModel.Attributes.PowerUpDefinition)this.ConvertObject(item)!);
             }
         }
 
-        target.ReplacedSkill = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.ReplacedSkill)!;
+        target.ReplacedSkill = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.ReplacedSkill)!;
         target.ExtendsDuration = source.ExtendsDuration;
         return target;
     }
@@ -2614,13 +2614,13 @@ internal sealed class BasicModelConverter
         target.MinimumTargetLevel = source.MinimumTargetLevel;
         target.NumberOfKills = source.NumberOfKills;
         target.MultiplyKillsByPlayers = source.MultiplyKillsByPlayers;
-        target.TargetDefinition = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.TargetDefinition)!;
-        target.SpawnArea = (MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea)this.ConvertObject(source.SpawnArea)!;
+        target.TargetDefinition = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.TargetDefinition)!;
+        target.SpawnArea = (HNMO.DataModel.Configuration.MonsterSpawnArea)this.ConvertObject(source.SpawnArea)!;
         if (source.TerrainChanges is { } terrainChangesItems)
         {
             foreach (var item in terrainChangesItems)
             {
-                target.TerrainChanges.Add((MUnique.OpenMU.DataModel.Configuration.MiniGameTerrainChange)this.ConvertObject(item)!);
+                target.TerrainChanges.Add((HNMO.DataModel.Configuration.MiniGameTerrainChange)this.ConvertObject(item)!);
             }
         }
 
@@ -2659,14 +2659,14 @@ internal sealed class BasicModelConverter
         target.EntranceFee = source.EntranceFee;
         target.ArePlayerKillersAllowedToEnter = source.ArePlayerKillersAllowedToEnter;
         target.AllowParty = source.AllowParty;
-        target.Entrance = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.Entrance)!;
-        target.TicketItem = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.TicketItem)!;
-        target.FreeTicketItem = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.FreeTicketItem)!;
+        target.Entrance = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.Entrance)!;
+        target.TicketItem = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.TicketItem)!;
+        target.FreeTicketItem = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.FreeTicketItem)!;
         if (source.Rewards is { } rewardsItems)
         {
             foreach (var item in rewardsItems)
             {
-                target.Rewards.Add((MUnique.OpenMU.DataModel.Configuration.MiniGameReward)this.ConvertObject(item)!);
+                target.Rewards.Add((HNMO.DataModel.Configuration.MiniGameReward)this.ConvertObject(item)!);
             }
         }
 
@@ -2674,7 +2674,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in spawnWavesItems)
             {
-                target.SpawnWaves.Add((MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave)this.ConvertObject(item)!);
+                target.SpawnWaves.Add((HNMO.DataModel.Configuration.MiniGameSpawnWave)this.ConvertObject(item)!);
             }
         }
 
@@ -2682,7 +2682,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in changeEventsItems)
             {
-                target.ChangeEvents.Add((MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent)this.ConvertObject(item)!);
+                target.ChangeEvents.Add((HNMO.DataModel.Configuration.MiniGameChangeEvent)this.ConvertObject(item)!);
             }
         }
 
@@ -2703,8 +2703,8 @@ internal sealed class BasicModelConverter
         target.Timestamp = source.Timestamp;
         target.Score = source.Score;
         target.Rank = source.Rank;
-        target.Character = (MUnique.OpenMU.DataModel.Entities.Character)this.ConvertObject(source.Character)!;
-        target.MiniGame = (MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition)this.ConvertObject(source.MiniGame)!;
+        target.Character = (HNMO.DataModel.Entities.Character)this.ConvertObject(source.Character)!;
+        target.MiniGame = (HNMO.DataModel.Configuration.MiniGameDefinition)this.ConvertObject(source.MiniGame)!;
         return target;
     }
 
@@ -2722,8 +2722,8 @@ internal sealed class BasicModelConverter
         target.RewardType = source.RewardType;
         target.RewardAmount = source.RewardAmount;
         target.RequiredSuccess = source.RequiredSuccess;
-        target.ItemReward = (MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(source.ItemReward)!;
-        target.RequiredKill = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.RequiredKill)!;
+        target.ItemReward = (HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(source.ItemReward)!;
+        target.RequiredKill = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.RequiredKill)!;
         return target;
     }
 
@@ -2775,7 +2775,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.MonsterAttribute();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.AttributeDefinition = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.AttributeDefinition)!;
+        target.AttributeDefinition = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.AttributeDefinition)!;
         target.Value = source.Value;
         return target;
     }
@@ -2805,13 +2805,13 @@ internal sealed class BasicModelConverter
         target.NpcWindow = source.NpcWindow;
         target.ObjectKind = source.ObjectKind;
         target.IntelligenceTypeName = source.IntelligenceTypeName;
-        target.AttackSkill = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.AttackSkill)!;
-        target.MerchantStore = (MUnique.OpenMU.DataModel.Entities.ItemStorage)this.ConvertObject(source.MerchantStore)!;
+        target.AttackSkill = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.AttackSkill)!;
+        target.MerchantStore = (HNMO.DataModel.Entities.ItemStorage)this.ConvertObject(source.MerchantStore)!;
         if (source.ItemCraftings is { } itemCraftingsItems)
         {
             foreach (var item in itemCraftingsItems)
             {
-                target.ItemCraftings.Add((MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting)this.ConvertObject(item)!);
+                target.ItemCraftings.Add((HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting)this.ConvertObject(item)!);
             }
         }
 
@@ -2819,7 +2819,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in dropItemGroupsItems)
             {
-                target.DropItemGroups.Add((MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
+                target.DropItemGroups.Add((HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(item)!);
             }
         }
 
@@ -2827,7 +2827,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributesItems)
             {
-                target.Attributes.Add((MUnique.OpenMU.DataModel.Configuration.MonsterAttribute)this.ConvertObject(item)!);
+                target.Attributes.Add((HNMO.DataModel.Configuration.MonsterAttribute)this.ConvertObject(item)!);
             }
         }
 
@@ -2835,7 +2835,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in questsItems)
             {
-                target.Quests.Add((MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(item)!);
+                target.Quests.Add((HNMO.DataModel.Configuration.Quests.QuestDefinition)this.ConvertObject(item)!);
             }
         }
 
@@ -2843,7 +2843,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in buffsItems)
             {
-                target.Buffs.Add((MUnique.OpenMU.DataModel.Configuration.Buff)this.ConvertObject(item)!);
+                target.Buffs.Add((HNMO.DataModel.Configuration.Buff)this.ConvertObject(item)!);
             }
         }
 
@@ -2860,8 +2860,8 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.MonsterSpawnArea();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.MonsterDefinition = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.MonsterDefinition)!;
-        target.GameMap = (MUnique.OpenMU.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.GameMap)!;
+        target.MonsterDefinition = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.MonsterDefinition)!;
+        target.GameMap = (HNMO.DataModel.Configuration.GameMapDefinition)this.ConvertObject(source.GameMap)!;
         target.X1 = source.X1;
         target.Y1 = source.Y1;
         target.X2 = source.X2;
@@ -2903,8 +2903,8 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.PowerUpDefinition();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.TargetAttribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
-        target.Boost = (MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Boost)!;
+        target.TargetAttribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.TargetAttribute)!;
+        target.Boost = (HNMO.DataModel.Attributes.PowerUpDefinitionValue)this.ConvertObject(source.Boost)!;
         return target;
     }
 
@@ -2918,12 +2918,12 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.PowerUpDefinitionValue();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        SetPowerUpDefinitionValueConstantValue(target, (MUnique.OpenMU.AttributeSystem.SimpleElement)this.ConvertObject(source.ConstantValue)!);
+        SetPowerUpDefinitionValueConstantValue(target, (HNMO.AttributeSystem.SimpleElement)this.ConvertObject(source.ConstantValue)!);
         if (source.RelatedValues is { } relatedValuesItems)
         {
             foreach (var item in relatedValuesItems)
             {
-                target.RelatedValues.Add((MUnique.OpenMU.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
+                target.RelatedValues.Add((HNMO.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
             }
         }
 
@@ -2941,7 +2941,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.QuestDefinition();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.QuestGiver = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.QuestGiver)!;
+        target.QuestGiver = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.QuestGiver)!;
         target.Name = source.Name;
         target.Group = source.Group;
         target.Number = source.Number;
@@ -2952,12 +2952,12 @@ internal sealed class BasicModelConverter
         target.RequiredStartMoney = source.RequiredStartMoney;
         target.MinimumCharacterLevel = source.MinimumCharacterLevel;
         target.MaximumCharacterLevel = source.MaximumCharacterLevel;
-        target.QualifiedCharacter = (MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(source.QualifiedCharacter)!;
+        target.QualifiedCharacter = (HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(source.QualifiedCharacter)!;
         if (source.RequiredMonsterKills is { } requiredMonsterKillsItems)
         {
             foreach (var item in requiredMonsterKillsItems)
             {
-                target.RequiredMonsterKills.Add((MUnique.OpenMU.DataModel.Configuration.Quests.QuestMonsterKillRequirement)this.ConvertObject(item)!);
+                target.RequiredMonsterKills.Add((HNMO.DataModel.Configuration.Quests.QuestMonsterKillRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -2965,7 +2965,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requiredItemsItems)
             {
-                target.RequiredItems.Add((MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement)this.ConvertObject(item)!);
+                target.RequiredItems.Add((HNMO.DataModel.Configuration.Quests.QuestItemRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -2973,7 +2973,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in rewardsItems)
             {
-                target.Rewards.Add((MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward)this.ConvertObject(item)!);
+                target.Rewards.Add((HNMO.DataModel.Configuration.Quests.QuestReward)this.ConvertObject(item)!);
             }
         }
 
@@ -2990,8 +2990,8 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.QuestItemRequirement();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Item = (MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Item)!;
-        target.DropItemGroup = (MUnique.OpenMU.DataModel.Configuration.DropItemGroup)this.ConvertObject(source.DropItemGroup)!;
+        target.Item = (HNMO.DataModel.Configuration.Items.ItemDefinition)this.ConvertObject(source.Item)!;
+        target.DropItemGroup = (HNMO.DataModel.Configuration.DropItemGroup)this.ConvertObject(source.DropItemGroup)!;
         target.MinimumNumber = source.MinimumNumber;
         return target;
     }
@@ -3006,7 +3006,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.QuestMonsterKillRequirement();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Monster = (MUnique.OpenMU.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
+        target.Monster = (HNMO.DataModel.Configuration.MonsterDefinition)this.ConvertObject(source.Monster)!;
         target.MinimumNumber = source.MinimumNumber;
         return target;
     }
@@ -3021,7 +3021,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.QuestMonsterKillRequirementState();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Requirement = (MUnique.OpenMU.DataModel.Configuration.Quests.QuestMonsterKillRequirement)this.ConvertObject(source.Requirement)!;
+        target.Requirement = (HNMO.DataModel.Configuration.Quests.QuestMonsterKillRequirement)this.ConvertObject(source.Requirement)!;
         target.KillCount = source.KillCount;
         return target;
     }
@@ -3038,9 +3038,9 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.RewardType = source.RewardType;
         target.Value = source.Value;
-        target.ItemReward = (MUnique.OpenMU.DataModel.Entities.Item)this.ConvertObject(source.ItemReward)!;
-        target.AttributeReward = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.AttributeReward)!;
-        target.SkillReward = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.SkillReward)!;
+        target.ItemReward = (HNMO.DataModel.Entities.Item)this.ConvertObject(source.ItemReward)!;
+        target.AttributeReward = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.AttributeReward)!;
+        target.SkillReward = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.SkillReward)!;
         return target;
     }
 
@@ -3081,7 +3081,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requiredItemsItems)
             {
-                target.RequiredItems.Add((MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem)this.ConvertObject(item)!);
+                target.RequiredItems.Add((HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem)this.ConvertObject(item)!);
             }
         }
 
@@ -3089,7 +3089,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in resultItemsItems)
             {
-                target.ResultItems.Add((MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem)this.ConvertObject(item)!);
+                target.ResultItems.Add((HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem)this.ConvertObject(item)!);
             }
         }
 
@@ -3123,7 +3123,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in requirementsItems)
             {
-                target.Requirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
+                target.Requirements.Add((HNMO.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -3131,7 +3131,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in consumeRequirementsItems)
             {
-                target.ConsumeRequirements.Add((MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
+                target.ConsumeRequirements.Add((HNMO.DataModel.Configuration.Items.AttributeRequirement)this.ConvertObject(item)!);
             }
         }
 
@@ -3139,7 +3139,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in attributeRelationshipsItems)
             {
-                target.AttributeRelationships.Add((MUnique.OpenMU.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
+                target.AttributeRelationships.Add((HNMO.AttributeSystem.AttributeRelationship)this.ConvertObject(item)!);
             }
         }
 
@@ -3151,19 +3151,19 @@ internal sealed class BasicModelConverter
         target.TargetRestriction = source.TargetRestriction;
         target.MovesToTarget = source.MovesToTarget;
         target.MovesTarget = source.MovesTarget;
-        target.ElementalModifierTarget = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.ElementalModifierTarget)!;
+        target.ElementalModifierTarget = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.ElementalModifierTarget)!;
         target.SkipElementalModifier = source.SkipElementalModifier;
-        target.MagicEffectDef = (MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.MagicEffectDef)!;
+        target.MagicEffectDef = (HNMO.DataModel.Configuration.MagicEffectDefinition)this.ConvertObject(source.MagicEffectDef)!;
         if (source.QualifiedCharacters is { } qualifiedCharactersItems)
         {
             foreach (var item in qualifiedCharactersItems)
             {
-                target.QualifiedCharacters.Add((MUnique.OpenMU.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
+                target.QualifiedCharacters.Add((HNMO.DataModel.Configuration.CharacterClass)this.ConvertObject(item)!);
             }
         }
 
-        target.MasterDefinition = (MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition)this.ConvertObject(source.MasterDefinition)!;
-        target.AreaSkillSettings = (MUnique.OpenMU.DataModel.Configuration.AreaSkillSettings)this.ConvertObject(source.AreaSkillSettings)!;
+        target.MasterDefinition = (HNMO.DataModel.Configuration.MasterSkillDefinition)this.ConvertObject(source.MasterDefinition)!;
+        target.AreaSkillSettings = (HNMO.DataModel.Configuration.AreaSkillSettings)this.ConvertObject(source.AreaSkillSettings)!;
         target.NumberOfHitsPerAttack = source.NumberOfHitsPerAttack;
         return target;
     }
@@ -3184,7 +3184,7 @@ internal sealed class BasicModelConverter
         {
             foreach (var item in stepsItems)
             {
-                target.Steps.Add((MUnique.OpenMU.DataModel.Configuration.SkillComboStep)this.ConvertObject(item)!);
+                target.Steps.Add((HNMO.DataModel.Configuration.SkillComboStep)this.ConvertObject(item)!);
             }
         }
 
@@ -3203,7 +3203,7 @@ internal sealed class BasicModelConverter
         target.Id = source.Id;
         target.Order = source.Order;
         target.IsFinalStep = source.IsFinalStep;
-        target.Skill = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
+        target.Skill = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
         return target;
     }
 
@@ -3217,7 +3217,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.SkillEntry();
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Skill = (MUnique.OpenMU.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
+        target.Skill = (HNMO.DataModel.Configuration.Skill)this.ConvertObject(source.Skill)!;
         target.Level = source.Level;
         return target;
     }
@@ -3233,7 +3233,7 @@ internal sealed class BasicModelConverter
         this._converted.Add(source, target);
         target.Id = source.Id;
         target.Value = source.Value;
-        SetBaseAttributeDefinition(target, (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Definition)!);
+        SetBaseAttributeDefinition(target, (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Definition)!);
         // AggregateType has no setter.
         return target;
     }
@@ -3248,7 +3248,7 @@ internal sealed class BasicModelConverter
         var target = new BasicModel.StatAttributeDefinition(source.Attribute, source.BaseValue, source.IncreasableByPlayer);
         this._converted.Add(source, target);
         target.Id = source.Id;
-        target.Attribute = (MUnique.OpenMU.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
+        target.Attribute = (HNMO.AttributeSystem.AttributeDefinition)this.ConvertObject(source.Attribute)!;
         target.BaseValue = source.BaseValue;
         target.IncreasableByPlayer = source.IncreasableByPlayer;
         return target;
@@ -3292,25 +3292,25 @@ internal sealed class BasicModelConverter
         target.Name = source.Name;
         target.Costs = source.Costs;
         target.LevelRequirement = source.LevelRequirement;
-        target.Gate = (MUnique.OpenMU.DataModel.Configuration.ExitGate)this.ConvertObject(source.Gate)!;
+        target.Gate = (HNMO.DataModel.Configuration.ExitGate)this.ConvertObject(source.Gate)!;
         return target;
     }
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_Definition")]
-    private static extern void SetBaseAttributeDefinition(MUnique.OpenMU.AttributeSystem.BaseAttribute target, MUnique.OpenMU.AttributeSystem.AttributeDefinition value);
+    private static extern void SetBaseAttributeDefinition(HNMO.AttributeSystem.BaseAttribute target, HNMO.AttributeSystem.AttributeDefinition value);
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_Letters")]
-    private static extern void SetCharacterLetters(MUnique.OpenMU.DataModel.Entities.Character target, System.Collections.Generic.IList<MUnique.OpenMU.Interfaces.LetterHeader> value);
+    private static extern void SetCharacterLetters(HNMO.DataModel.Entities.Character target, System.Collections.Generic.IList<HNMO.Interfaces.LetterHeader> value);
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_AggregateType")]
-    private static extern void SetConstValueAttributeAggregateType(MUnique.OpenMU.AttributeSystem.ConstValueAttribute target, MUnique.OpenMU.AttributeSystem.AggregateType value);
+    private static extern void SetConstValueAttributeAggregateType(HNMO.AttributeSystem.ConstValueAttribute target, HNMO.AttributeSystem.AggregateType value);
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_Definition")]
-    private static extern void SetConstValueAttributeDefinition(MUnique.OpenMU.AttributeSystem.ConstValueAttribute target, MUnique.OpenMU.AttributeSystem.AttributeDefinition value);
+    private static extern void SetConstValueAttributeDefinition(HNMO.AttributeSystem.ConstValueAttribute target, HNMO.AttributeSystem.AttributeDefinition value);
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_Value")]
-    private static extern void SetConstValueAttributeValue(MUnique.OpenMU.AttributeSystem.ConstValueAttribute target, System.Single value);
+    private static extern void SetConstValueAttributeValue(HNMO.AttributeSystem.ConstValueAttribute target, System.Single value);
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "set_ConstantValue")]
-    private static extern void SetPowerUpDefinitionValueConstantValue(MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue target, MUnique.OpenMU.AttributeSystem.SimpleElement value);
+    private static extern void SetPowerUpDefinitionValueConstantValue(HNMO.DataModel.Attributes.PowerUpDefinitionValue target, HNMO.AttributeSystem.SimpleElement value);
 }

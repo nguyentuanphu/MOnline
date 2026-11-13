@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -14,7 +14,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class MiniGameSpawnWaveEntityType
@@ -22,8 +22,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameSpawnWave",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameSpawnWave),
+                "HNMO.Persistence.EntityFramework.Model.MiniGameSpawnWave",
+                typeof(HNMO.Persistence.EntityFramework.Model.MiniGameSpawnWave),
                 baseEntityType,
                 propertyCount: 7,
                 foreignKeyCount: 1,
@@ -33,20 +33,20 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameSpawnWave).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameSpawnWave).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameSpawnWave).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameSpawnWave).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var description = runtimeEntityType.AddProperty(
                 "Description",
-                typeof(MUnique.OpenMU.Interfaces.LocalizedString),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetProperty("Description", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetField("<Description>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
-            description.SetValueConverter(new ValueConverter<MUnique.OpenMU.Interfaces.LocalizedString, string>(
+                typeof(HNMO.Interfaces.LocalizedString),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetProperty("Description", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetField("<Description>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+            description.SetValueConverter(new ValueConverter<HNMO.Interfaces.LocalizedString, string>(
                 string (LocalizedString value) => value.Value ?? string.Empty,
                 LocalizedString (string value) => new LocalizedString(value)));
             description.SetSentinelFromProviderValue("");
@@ -55,17 +55,17 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var endTime = runtimeEntityType.AddProperty(
                 "EndTime",
                 typeof(TimeSpan),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetProperty("EndTime", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetField("<EndTime>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetProperty("EndTime", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetField("<EndTime>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: new TimeSpan(0, 0, 0, 0, 0));
             endTime.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var message = runtimeEntityType.AddProperty(
                 "Message",
-                typeof(MUnique.OpenMU.Interfaces.LocalizedString),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetProperty("Message", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetField("<Message>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
-            message.SetValueConverter(new ValueConverter<MUnique.OpenMU.Interfaces.LocalizedString, string>(
+                typeof(HNMO.Interfaces.LocalizedString),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetProperty("Message", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetField("<Message>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+            message.SetValueConverter(new ValueConverter<HNMO.Interfaces.LocalizedString, string>(
                 string (LocalizedString value) => value.Value ?? string.Empty,
                 LocalizedString (string value) => new LocalizedString(value)));
             message.SetSentinelFromProviderValue("");
@@ -80,16 +80,16 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var startTime = runtimeEntityType.AddProperty(
                 "StartTime",
                 typeof(TimeSpan),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetProperty("StartTime", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetField("<StartTime>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetProperty("StartTime", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetField("<StartTime>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: new TimeSpan(0, 0, 0, 0, 0));
             startTime.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var waveNumber = runtimeEntityType.AddProperty(
                 "WaveNumber",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetProperty("WaveNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave).GetField("<WaveNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetProperty("WaveNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameSpawnWave).GetField("<WaveNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             waveNumber.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -113,9 +113,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawSpawnWaves = principalEntityType.AddNavigation("RawSpawnWaves",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameSpawnWave>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawSpawnWaves", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawSpawnWaves>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.MiniGameSpawnWave>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawSpawnWaves", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawSpawnWaves>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

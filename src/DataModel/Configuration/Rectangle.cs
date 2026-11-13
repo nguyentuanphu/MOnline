@@ -1,10 +1,10 @@
-﻿// <copyright file="Rectangle.cs" company="MUnique">
+﻿// <copyright file="Rectangle.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a rectangle.
@@ -40,6 +40,6 @@ public partial class Rectangle
             return $"{this.X1} / {this.Y1}";
         }
 
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.RectangleSummary, this.X1, this.Y1, this.X2, this.Y2);
+        return string.Format(HNMO.DataModel.Properties.Resources.RectangleSummary, this.X1, this.Y1, this.X2, this.Y2);
     }
 }

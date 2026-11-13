@@ -1,4 +1,4 @@
-﻿namespace MUnique.OpenMU.ClientLauncher
+﻿namespace HNMO.ClientLauncher
 {
     partial class ClientSettingsDialog
     {

@@ -1,8 +1,8 @@
 ﻿@page "/config-updates"
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
-@using MUnique.OpenMU.DataModel
-@using MUnique.OpenMU.DataModel.Configuration
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.DataModel
+@using HNMO.DataModel.Configuration
+@using HNMO.Web.AdminPanel.Properties
 
 <PageTitle>HNMO: @typeof(ConfigurationUpdate).GetPluralizedTypeCaption()</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@typeof(ConfigurationUpdate).GetPluralizedTypeCaption()" />

@@ -1,11 +1,11 @@
-﻿// <copyright file="CharacterExtensions.cs" company="MUnique">
+﻿// <copyright file="CharacterExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic.Attributes;
 using Nito.Disposables.Internals;
 
 /// <summary>

@@ -1,8 +1,8 @@
-// <copyright file="AllianceDetails.cs" company="MUnique">
+// <copyright file="AllianceDetails.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Models;
+namespace HNMO.Web.Shared.Models;
 
 /// <summary>
 /// Data transfer object for the admin panel alliance page.

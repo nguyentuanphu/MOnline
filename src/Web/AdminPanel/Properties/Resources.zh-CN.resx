@@ -258,7 +258,7 @@
   <data name="WelcomeMessage" xml:space="preserve">
     <value>欢迎使用 HNMO 管理后台。</value>
   </data>
-  <data name="OpenMUAdminPanel" xml:space="preserve">
+  <data name="HNMOAdminPanel" xml:space="preserve">
     <value>HNMO 管理后台</value>
   </data>
   <data name="About" xml:space="preserve">
@@ -2337,7 +2337,7 @@
     <value>创建频道和身份组</value>
   </data>
   <data name="DiscordSetUpServerText" xml:space="preserve">
-    <value>创建机器人使用的身份组、分类和频道，与 Discord 中的 /openmu setup 命令相同。已有内容会保留，可随时重复执行。机器人需要“管理频道”和“管理身份组”权限。</value>
+    <value>创建机器人使用的身份组、分类和频道，与 Discord 中的 /hnmo setup 命令相同。已有内容会保留，可随时重复执行。机器人需要“管理频道”和“管理身份组”权限。</value>
   </data>
   <data name="DiscordSetUpServerNeedsBot" xml:space="preserve">
     <value>机器人必须已连接并加入该 Discord 服务器。</value>

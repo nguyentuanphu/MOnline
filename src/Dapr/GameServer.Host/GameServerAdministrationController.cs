@@ -1,14 +1,14 @@
-// <copyright file="GameServerAdministrationController.cs" company="MUnique">
+// <copyright file="GameServerAdministrationController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.Host;
+namespace HNMO.GameServer.Host;
 
 using System.Text.Json.Nodes;
 using System.Threading;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Dapr.Common;
+using HNMO.Interfaces;
 
 /// <summary>Internal request/response administration; never subscribe live writes to pub/sub.</summary>
 /// <param name="server">The owning game server.</param>

@@ -1,16 +1,16 @@
-// <copyright file="MultiLookupField.razor.cs" company="MUnique">
+// <copyright file="MultiLookupField.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Lookup field which allows to select multiple objects which will be stored in a bound <see cref="IList{TObject}"/>.

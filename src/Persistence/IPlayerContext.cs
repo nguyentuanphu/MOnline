@@ -1,13 +1,13 @@
-﻿// <copyright file="IPlayerContext.cs" company="MUnique">
+﻿// <copyright file="IPlayerContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Threading;
 using System.Threading.Tasks;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Persistence context which is used by in-game players.

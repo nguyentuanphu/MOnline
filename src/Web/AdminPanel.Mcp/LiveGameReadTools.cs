@@ -1,8 +1,8 @@
-// <copyright file="LiveGameReadTools.cs" company="MUnique">
+// <copyright file="LiveGameReadTools.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Mcp;
+namespace HNMO.Web.AdminPanel.Mcp;
 
 using System.ComponentModel;
 using System.Text.Json.Nodes;
@@ -10,8 +10,8 @@ using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModelContextProtocol.Server;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Interfaces;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Thin MCP adapters for authorized live game administration.</summary>
 [McpServerToolType]

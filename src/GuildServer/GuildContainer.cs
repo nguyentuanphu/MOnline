@@ -1,13 +1,13 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="GuildContainer.cs" company="MUnique">
+// <copyright file="GuildContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace MUnique.OpenMU.GuildServer;
+namespace HNMO.GuildServer;
 
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// This is a container Class which holds a Guild object, and a list of all guild members

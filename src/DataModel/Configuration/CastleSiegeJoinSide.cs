@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeJoinSide.cs" company="MUnique">
+// <copyright file="CastleSiegeJoinSide.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Defines the side (defending or attacking) a guild or NPC belongs to in the castle siege.

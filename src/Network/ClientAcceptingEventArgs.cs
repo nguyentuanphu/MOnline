@@ -1,8 +1,8 @@
-﻿// <copyright file="ClientAcceptingEventArgs.cs" company="MUnique">
+﻿// <copyright file="ClientAcceptingEventArgs.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.ComponentModel;
 using System.Net.Sockets;

@@ -1,10 +1,10 @@
-// <copyright file="IChatCommandListViewPlugIn.cs" company="MUnique">
+// <copyright file="IChatCommandListViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views;
+namespace HNMO.GameLogic.Views;
 
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+using HNMO.GameLogic.PlugIns.ChatCommands;
 
 /// <summary>
 /// Interface of a view whose client can show the available chat commands to the player.

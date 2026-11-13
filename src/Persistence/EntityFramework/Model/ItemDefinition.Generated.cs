@@ -1,4 +1,4 @@
-// <copyright file="ItemDefinition.Generated.cs" company="MUnique">
+// <copyright file="ItemDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemDefinition"/>.
 /// </summary>
 [Table(nameof(ItemDefinition), Schema = SchemaNames.Configuration)]
-internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, IIdentifiable
+internal partial class ItemDefinition : HNMO.DataModel.Configuration.Items.ItemDefinition, IIdentifiable
 {
     /// <inheritdoc />
     public ItemDefinition()
@@ -40,7 +40,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> Requirements => base.Requirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> Requirements => base.Requirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
 
     /// <summary>
     /// Gets the raw collection of <see cref="BasePowerUpAttributes" />.
@@ -49,7 +49,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemBasePowerUpDefinition> BasePowerUpAttributes => base.BasePowerUpAttributes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemBasePowerUpDefinition, ItemBasePowerUpDefinition>(this.RawBasePowerUpAttributes);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemBasePowerUpDefinition> BasePowerUpAttributes => base.BasePowerUpAttributes ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemBasePowerUpDefinition, ItemBasePowerUpDefinition>(this.RawBasePowerUpAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="DropItems" />.
@@ -58,7 +58,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ItemDropItemGroup> DropItems => base.DropItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ItemDropItemGroup, ItemDropItemGroup>(this.RawDropItems);
+    public override ICollection<HNMO.DataModel.Configuration.ItemDropItemGroup> DropItems => base.DropItems ??= new CollectionAdapter<HNMO.DataModel.Configuration.ItemDropItemGroup, ItemDropItemGroup>(this.RawDropItems);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="ItemSlot"/>.
@@ -77,7 +77,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType ItemSlot
+    public override HNMO.DataModel.Configuration.Items.ItemSlotType ItemSlot
     {
         get => base.ItemSlot;set
         {
@@ -103,7 +103,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile StatProfile
+    public override HNMO.DataModel.Configuration.Items.ItemStatProfile StatProfile
     {
         get => base.StatProfile;set
         {
@@ -129,7 +129,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition PriceDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemPriceDefinition PriceDefinition
     {
         get => base.PriceDefinition;set
         {
@@ -155,7 +155,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition ConsumeEffect
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition ConsumeEffect
     {
         get => base.ConsumeEffect;set
         {
@@ -181,7 +181,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Skill
+    public override HNMO.DataModel.Configuration.Skill Skill
     {
         get => base.Skill;set
         {
@@ -191,7 +191,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -199,7 +199,7 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -225,8 +225,8 @@ internal partial class ItemDefinition : MUnique.OpenMU.DataModel.Configuration.I
 
     protected void InitJoinCollections()
     {
-        this.QualifiedCharacters = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, ItemDefinitionCharacterClass>(this.JoinedQualifiedCharacters, joinEntity => joinEntity.CharacterClass, entity => new ItemDefinitionCharacterClass { ItemDefinition = this, ItemDefinitionId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
-        this.PossibleItemSetGroups = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup, ItemDefinitionItemSetGroup>(this.JoinedPossibleItemSetGroups, joinEntity => joinEntity.ItemSetGroup, entity => new ItemDefinitionItemSetGroup { ItemDefinition = this, ItemDefinitionId = this.Id, ItemSetGroup = (ItemSetGroup)entity, ItemSetGroupId = ((ItemSetGroup)entity).Id});
-        this.PossibleItemOptions = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition, ItemDefinitionItemOptionDefinition>(this.JoinedPossibleItemOptions, joinEntity => joinEntity.ItemOptionDefinition, entity => new ItemDefinitionItemOptionDefinition { ItemDefinition = this, ItemDefinitionId = this.Id, ItemOptionDefinition = (ItemOptionDefinition)entity, ItemOptionDefinitionId = ((ItemOptionDefinition)entity).Id});
+        this.QualifiedCharacters = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, ItemDefinitionCharacterClass>(this.JoinedQualifiedCharacters, joinEntity => joinEntity.CharacterClass, entity => new ItemDefinitionCharacterClass { ItemDefinition = this, ItemDefinitionId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
+        this.PossibleItemSetGroups = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemSetGroup, ItemDefinitionItemSetGroup>(this.JoinedPossibleItemSetGroups, joinEntity => joinEntity.ItemSetGroup, entity => new ItemDefinitionItemSetGroup { ItemDefinition = this, ItemDefinitionId = this.Id, ItemSetGroup = (ItemSetGroup)entity, ItemSetGroupId = ((ItemSetGroup)entity).Id});
+        this.PossibleItemOptions = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionDefinition, ItemDefinitionItemOptionDefinition>(this.JoinedPossibleItemOptions, joinEntity => joinEntity.ItemOptionDefinition, entity => new ItemDefinitionItemOptionDefinition { ItemDefinition = this, ItemDefinitionId = this.Id, ItemOptionDefinition = (ItemOptionDefinition)entity, ItemOptionDefinitionId = ((ItemOptionDefinition)entity).Id});
     }
 }

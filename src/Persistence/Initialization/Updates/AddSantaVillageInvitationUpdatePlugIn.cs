@@ -1,22 +1,22 @@
-// <copyright file="AddSantaVillageInvitationUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddSantaVillageInvitationUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the invitation to the santa village and a spawn gate to the santa village,
 /// where the invitation warps the player to.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddSantaVillageInvitationUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddSantaVillageInvitationUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddSantaVillageInvitationUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddSantaVillageInvitationUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("0C5DDB62-C6A7-4D54-8E6A-DB6831CB3366")]
 public class AddSantaVillageInvitationUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,10 +1,10 @@
-// <copyright file="ZenShopCurrencyExchange.cs" company="MUnique">
+// <copyright file="ZenShopCurrencyExchange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Pays prices in zen, by transferring the zen of the inventory of the buyer to the one of the seller.

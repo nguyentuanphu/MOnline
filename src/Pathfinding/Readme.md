@@ -20,7 +20,7 @@ because the expected open list lengths and estimated costs are always different.
 The implementation can be used in a scoped way, which means that the pathfinder
 is only used for a scoped area of the map. This is useful if you want to calculate
 paths very quickly and you know that the path is only needed in a small area.
-You can read about that on my blog post: [Optimized Pathfinding](https://munique.net/optimizing-pathfinding/).
+You can read about that on my blog post: [Optimized Pathfinding](https://github.com/nguyentuanphu/HNMO).
 
 ## Safezones
 
@@ -33,7 +33,7 @@ highest bit.
 ## Pre-Calculation
 
 In the sub-folder PreCalculation includes a pathfinder which makes use of
-pre-calculated paths. It's not used yet by OpenMU and needs some further testing.
+pre-calculated paths. It's not used yet by HNMO and needs some further testing.
 
 For more information, visit <http://www.gamedev.net/page/resources/_/technical/artificial-intelligence/precalculated-pathfinding-revisited-r1939>.
 

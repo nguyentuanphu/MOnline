@@ -1,14 +1,14 @@
-// <copyright file="CollectionListAdapter.cs" company="MUnique">
+// <copyright file="CollectionListAdapter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.ItemDrops;
+namespace HNMO.Web.AdminPanel.Components.ItemDrops;
 
 using System.Collections;
 
 /// <summary>
 /// Adapts a <see cref="ICollection{T}"/> to a <see cref="IList{T}"/>, so that it can be used
-/// with components which require a list, e.g. the <see cref="MUnique.OpenMU.Web.Shared.Components.Form.MultiLookupField{TObject}"/>.
+/// with components which require a list, e.g. the <see cref="HNMO.Web.Shared.Components.Form.MultiLookupField{TObject}"/>.
 /// All modifications are passed through to the underlying collection.
 /// </summary>
 /// <typeparam name="T">The type of the elements.</typeparam>

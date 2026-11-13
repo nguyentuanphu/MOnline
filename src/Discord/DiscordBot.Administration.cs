@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordBot.Administration.cs" company="MUnique">
+﻿// <copyright file="DiscordBot.Administration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
 using System.Net;
@@ -10,8 +10,8 @@ using global::Discord;
 using global::Discord.Net;
 using global::Discord.WebSocket;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Discord.ChatBridge;
-using MUnique.OpenMU.Discord.Provisioning;
+using HNMO.Discord.ChatBridge;
+using HNMO.Discord.Provisioning;
 
 /// <summary>
 /// The part of the <see cref="DiscordBot"/> which the admin panel uses to show its state and to set up a Discord server.
@@ -87,7 +87,7 @@ public sealed partial class DiscordBot
     }
 
     /// <summary>
-    /// Sets up the roles, categories and channels of the layout on a Discord server, like <c>/openmu setup</c>.
+    /// Sets up the roles, categories and channels of the layout on a Discord server, like <c>/hnmo setup</c>.
     /// </summary>
     /// <param name="discordServerId">The identifier of the Discord server.</param>
     /// <returns>The result, or <c>null</c>, if the bot isn't connected or isn't in the Discord server.</returns>

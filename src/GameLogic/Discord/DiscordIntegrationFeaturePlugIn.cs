@@ -1,11 +1,11 @@
-﻿// <copyright file="DiscordIntegrationFeaturePlugIn.cs" company="MUnique">
+﻿// <copyright file="DiscordIntegrationFeaturePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Discord;
+namespace HNMO.GameLogic.Discord;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The Discord integration of the game client: it tells clients which ask for it how the server is connected

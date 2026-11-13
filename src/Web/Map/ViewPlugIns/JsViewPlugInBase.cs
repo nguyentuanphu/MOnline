@@ -1,8 +1,8 @@
-﻿// <copyright file="JsViewPlugInBase.cs" company="MUnique">
+﻿// <copyright file="JsViewPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.ViewPlugIns;
+namespace HNMO.Web.Map.ViewPlugIns;
 
 using Microsoft.JSInterop;
 
@@ -52,7 +52,7 @@ public abstract class JsViewPlugInBase
     /// <param name="args">The parameters for the function call.</param>
     /// <returns>The <see cref="ValueTask"/> of this async operation.</returns>
     /// <remarks>
-    /// The map controller passes a <see cref="MUnique.OpenMU.Web.Map.Map.JsInteropQueue"/> as <see cref="JsRuntime"/>,
+    /// The map controller passes a <see cref="HNMO.Web.Map.Map.JsInteropQueue"/> as <see cref="JsRuntime"/>,
     /// so this returns without waiting for the browser, which delivers or drops the call on its own.
     /// </remarks>
     protected async ValueTask InvokeAsync(params object[] args)

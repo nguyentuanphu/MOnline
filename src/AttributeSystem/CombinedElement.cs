@@ -1,8 +1,8 @@
-﻿// <copyright file="CombinedElement.cs" company="MUnique">
+﻿// <copyright file="CombinedElement.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.AttributeSystem;
+namespace HNMO.AttributeSystem;
 
 /// <summary>
 /// An element which combines two elements into one.

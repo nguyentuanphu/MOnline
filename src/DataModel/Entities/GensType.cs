@@ -1,8 +1,8 @@
-// <copyright file="GensType.cs" company="MUnique">
+// <copyright file="GensType.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// The gens (family) of a player.

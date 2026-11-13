@@ -1,15 +1,15 @@
-﻿// <copyright file="GuildChangePublisher.cs" company="MUnique">
+﻿// <copyright file="GuildChangePublisher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using global::Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GuildServer;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
-using MUnique.OpenMU.ServerClients;
+using HNMO.GuildServer;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Model;
+using HNMO.ServerClients;
 
 /// <summary>
 /// Publisher for guild changes over Dapr.

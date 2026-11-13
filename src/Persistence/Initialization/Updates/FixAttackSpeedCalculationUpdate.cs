@@ -1,27 +1,27 @@
-﻿// <copyright file="FixAttackSpeedCalculationUpdate.cs" company="MUnique">
+﻿// <copyright file="FixAttackSpeedCalculationUpdate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
-using static MUnique.OpenMU.Persistence.Initialization.CharacterClasses.CharacterClassHelper;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.Network.Packets;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
+using static HNMO.Persistence.Initialization.CharacterClasses.CharacterClassHelper;
 
 /// <summary>
 /// This adds attributes and relations for attack speed. Adds effects for Ale and Potion of Soul.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixAttackSpeedCalculationUpdate_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixAttackSpeedCalculationUpdate_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixAttackSpeedCalculationUpdate_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixAttackSpeedCalculationUpdate_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("F9977AA7-F52A-4F42-BD6C-98DE700B5980")]
 public class FixAttackSpeedCalculationUpdate : UpdatePlugInBase
 {

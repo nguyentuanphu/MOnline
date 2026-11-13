@@ -1,11 +1,11 @@
-// <copyright file="ItemRegistrationFeaturePlugIn.cs" company="MUnique">
+// <copyright file="ItemRegistrationFeaturePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ItemRegistration;
+namespace HNMO.GameLogic.PlugIns.ItemRegistration;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Feature plugin providing configuration for item registration NPCs.

@@ -1,8 +1,8 @@
-﻿// <copyright file="ImperialGuardianDay.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianDay.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Events;
 
 /// <summary>
 /// The day of the week of the imperial guardian event, as it's used by the event and the game client.

@@ -1,11 +1,11 @@
-﻿// <copyright file="ResetConfiguration.cs" company="MUnique">
+﻿// <copyright file="ResetConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Resets;
+namespace HNMO.GameLogic.Resets;
 
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Configuration of the Reset System.
@@ -46,13 +46,13 @@ public class ResetConfiguration
     /// <summary>
     /// Gets or sets the required item for a reset.
     /// </summary>
-    [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetConfiguration_RequiredResetItem_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetConfiguration_RequiredResetItem_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public ItemDefinition? RequiredResetItem { get; set; }
 
     /// <summary>
     /// Gets or sets the item costs per reset range.
     /// </summary>
-    [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetConfiguration_ItemCostTiers_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetConfiguration_ItemCostTiers_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     [MemberOfAggregate]
     [ScaffoldColumn(true)]
     public ICollection<ResetItemCostTier> ItemCostTiers { get; set; } = [];
@@ -88,7 +88,7 @@ public class ResetConfiguration
     /// <summary>
     /// Gets or sets the points granted per reset range.
     /// </summary>
-    [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetConfiguration_PointsTiers_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetConfiguration_PointsTiers_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     [MemberOfAggregate]
     [ScaffoldColumn(true)]
     public ICollection<ResetPointTier> PointsTiers { get; set; } = [];
@@ -113,13 +113,13 @@ public class ResetConfiguration
         /// <summary>
         /// Gets or sets the minimum reset count at which this tier applies.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetPointTier_MinimumResetCount_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetPointTier_MinimumResetCount_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public int MinimumResetCount { get; set; }
 
         /// <summary>
         /// Gets or sets the points granted for this tier.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetPointTier_PointsGranted_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetPointTier_PointsGranted_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public int PointsGranted { get; set; }
     }
 
@@ -131,13 +131,13 @@ public class ResetConfiguration
         /// <summary>
         /// Gets or sets the minimum reset count at which this tier applies.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetItemCostTier_MinimumResetCount_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetItemCostTier_MinimumResetCount_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public int MinimumResetCount { get; set; }
 
         /// <summary>
         /// Gets or sets the required item amount for this tier.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ResetItemCostTier_RequiredItemAmount_Name), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ResetItemCostTier_RequiredItemAmount_Name), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public int RequiredItemAmount { get; set; }
     }
 }

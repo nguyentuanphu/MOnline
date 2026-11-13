@@ -1,4 +1,4 @@
-// <copyright file="Skill.Generated.cs" company="MUnique">
+// <copyright file="Skill.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Skill"/>.
 /// </summary>
-public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIdentifiable, IConvertibleTo<Skill>
+public partial class Skill : HNMO.DataModel.Configuration.Skill, IIdentifiable, IConvertibleTo<Skill>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> Requirements
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> Requirements
     {
-        get => base.Requirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
+        get => base.Requirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
         protected set
         {
             this.Requirements.Clear();
@@ -54,9 +54,9 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> ConsumeRequirements
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> ConsumeRequirements
     {
-        get => base.ConsumeRequirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawConsumeRequirements);
+        get => base.ConsumeRequirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawConsumeRequirements);
         protected set
         {
             this.ConsumeRequirements.Clear();
@@ -75,9 +75,9 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> AttributeRelationships
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> AttributeRelationships
     {
-        get => base.AttributeRelationships ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeRelationships);
+        get => base.AttributeRelationships ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeRelationships);
         protected set
         {
             this.AttributeRelationships.Clear();
@@ -96,9 +96,9 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CharacterClass> QualifiedCharacters
+    public override ICollection<HNMO.DataModel.Configuration.CharacterClass> QualifiedCharacters
     {
-        get => base.QualifiedCharacters ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawQualifiedCharacters);
+        get => base.QualifiedCharacters ??= new CollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawQualifiedCharacters);
         protected set
         {
             this.QualifiedCharacters.Clear();
@@ -121,7 +121,7 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition ElementalModifierTarget
+    public override HNMO.AttributeSystem.AttributeDefinition ElementalModifierTarget
     {
         get => base.ElementalModifierTarget;
         set => base.ElementalModifierTarget = value;
@@ -139,7 +139,7 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition MagicEffectDef
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition MagicEffectDef
     {
         get => base.MagicEffectDef;
         set => base.MagicEffectDef = value;
@@ -157,7 +157,7 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition MasterDefinition
+    public override HNMO.DataModel.Configuration.MasterSkillDefinition MasterDefinition
     {
         get => base.MasterDefinition;
         set => base.MasterDefinition = value;
@@ -175,14 +175,14 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.AreaSkillSettings AreaSkillSettings
+    public override HNMO.DataModel.Configuration.AreaSkillSettings AreaSkillSettings
     {
         get => base.AreaSkillSettings;
         set => base.AreaSkillSettings = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Skill Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Skill();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -190,7 +190,7 @@ public partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIden
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Skill other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Skill other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

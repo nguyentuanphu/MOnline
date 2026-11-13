@@ -1,16 +1,16 @@
-// <copyright file="BotChaosMachineHandler.cs" company="MUnique">
+// <copyright file="BotChaosMachineHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Lets a bot upgrade its worn gear from +9 up to +15 at the Chaos Goblin, like a player: it walks up to

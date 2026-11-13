@@ -1,13 +1,13 @@
-// <copyright file="CashShopVersionPlugIn.cs" company="MUnique">
+// <copyright file="CashShopVersionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CashShop;
+namespace HNMO.GameLogic.CashShop;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.CashShop;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.CashShop;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Shows the versions of the cash shop script and banner to the player when it enters the game.

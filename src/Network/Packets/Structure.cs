@@ -1,8 +1,8 @@
-// <copyright file="Structure.cs" company="MUnique">
+// <copyright file="Structure.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Packets;
+namespace HNMO.Network.Packets;
 
 using System.Xml.Serialization;
 
@@ -10,7 +10,7 @@ using System.Xml.Serialization;
 /// Defines a structure which can be defined as packet header or part of a packet.
 /// </summary>
 [Serializable]
-[XmlType(Namespace = "http://www.munique.net/OpenMU/PacketDefinitions")]
+[XmlType(Namespace = "https://github.com/nguyentuanphu/HNMO/PacketDefinitions")]
 public class Structure
 {
     /// <summary>

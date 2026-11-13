@@ -1,15 +1,15 @@
-﻿// <copyright file="ShowVaultPlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowVaultPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Vault;
+namespace HNMO.GameServer.RemoteView.Vault;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.GameLogic.Views.Vault;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.GameLogic.Views.Vault;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowVaultPlugIn"/> which is forwarding everything to the game client with specific data packets.

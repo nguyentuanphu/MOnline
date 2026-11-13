@@ -1,13 +1,13 @@
-// <copyright file="AdminOperationExceptionFilter.cs" company="MUnique">
+// <copyright file="AdminOperationExceptionFilter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Returns only explicitly safe operational errors through the public HTTP API.</summary>
 public sealed class AdminOperationExceptionFilter : IExceptionFilter

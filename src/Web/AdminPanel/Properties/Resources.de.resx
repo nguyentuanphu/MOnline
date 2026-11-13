@@ -261,7 +261,7 @@
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Willkommen im Admin-Panel von HNMO.</value>
   </data>
-  <data name="OpenMUAdminPanel" xml:space="preserve">
+  <data name="HNMOAdminPanel" xml:space="preserve">
     <value>HNMO Admin-Panel</value>
   </data>
   <data name="About" xml:space="preserve">
@@ -2257,7 +2257,7 @@
     <value>Kanäle und Rollen erstellen</value>
   </data>
   <data name="DiscordSetUpServerText" xml:space="preserve">
-    <value>Erstellt die Rollen, Kategorien und Kanäle, die der Bot verwendet, wie /openmu setup in Discord. Was schon existiert, bleibt erhalten, du kannst es also jederzeit wiederholen. Der Bot braucht dafür die Berechtigungen Kanäle verwalten und Rollen verwalten.</value>
+    <value>Erstellt die Rollen, Kategorien und Kanäle, die der Bot verwendet, wie /hnmo setup in Discord. Was schon existiert, bleibt erhalten, du kannst es also jederzeit wiederholen. Der Bot braucht dafür die Berechtigungen Kanäle verwalten und Rollen verwalten.</value>
   </data>
   <data name="DiscordSetUpServerNeedsBot" xml:space="preserve">
     <value>Der Bot muss verbunden und im Discord-Server sein.</value>

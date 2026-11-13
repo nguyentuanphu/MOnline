@@ -1,8 +1,8 @@
-﻿// <copyright file="Setup.razor.cs" company="MUnique">
+﻿// <copyright file="Setup.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.IO;
 
@@ -11,10 +11,10 @@ using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
 
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Components;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Components;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// The set up page.

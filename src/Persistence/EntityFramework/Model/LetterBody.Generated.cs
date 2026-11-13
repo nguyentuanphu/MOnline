@@ -1,4 +1,4 @@
-// <copyright file="LetterBody.Generated.cs" company="MUnique">
+// <copyright file="LetterBody.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.LetterBody"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.LetterBody"/>.
 /// </summary>
 [Table(nameof(LetterBody), Schema = SchemaNames.AccountData)]
-internal partial class LetterBody : MUnique.OpenMU.DataModel.Entities.LetterBody, IIdentifiable
+internal partial class LetterBody : HNMO.DataModel.Entities.LetterBody, IIdentifiable
 {
     
     
@@ -41,7 +41,7 @@ internal partial class LetterBody : MUnique.OpenMU.DataModel.Entities.LetterBody
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.Interfaces.LetterHeader Header
+    public override HNMO.Interfaces.LetterHeader Header
     {
         get => base.Header;set
         {
@@ -67,7 +67,7 @@ internal partial class LetterBody : MUnique.OpenMU.DataModel.Entities.LetterBody
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Entities.AppearanceData SenderAppearance
+    public override HNMO.DataModel.Entities.AppearanceData SenderAppearance
     {
         get => base.SenderAppearance;set
         {

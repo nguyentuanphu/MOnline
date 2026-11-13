@@ -1,8 +1,8 @@
-// <copyright file="Program.cs" company="MUnique">
+// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.LoginProbe;
+namespace HNMO.Network.LoginProbe;
 
 using System;
 using System.Buffers;
@@ -15,11 +15,11 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging.Abstractions;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.Packets.ConnectServer;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Network.Xor;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.Packets.ConnectServer;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.Network.Xor;
 using Pipelines.Sockets.Unofficial;
 
 /// <summary>
@@ -29,7 +29,7 @@ using Pipelines.Sockets.Unofficial;
 /// </summary>
 /// <remarks>
 /// Meant to be driven from test scripts. It speaks the protocol through the server's own network
-/// stack (<c>MUnique.OpenMU.Network</c>), so it stays correct when the encryption or the packet
+/// stack (<c>HNMO.Network</c>), so it stays correct when the encryption or the packet
 /// layout changes.
 /// </remarks>
 public static class Program
@@ -76,7 +76,7 @@ public static class Program
 
     private static void Usage()
     {
-        Console.Error.WriteLine("usage: MUnique.OpenMU.Network.LoginProbe --account <name> [--host 127.0.0.1]");
+        Console.Error.WriteLine("usage: HNMO.Network.LoginProbe --account <name> [--host 127.0.0.1]");
         Console.Error.WriteLine("       [--connect-port 44406] [--server 0] [--hold <seconds>]");
         Console.Error.WriteLine();
         Console.Error.WriteLine($"The password is read from the environment variable {PasswordVariableName};");

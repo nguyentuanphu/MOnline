@@ -1,8 +1,8 @@
-﻿// <copyright file="PlugInProxyGenerator.cs" company="MUnique">
+﻿// <copyright file="PlugInProxyGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns.Generators;
+namespace HNMO.PlugIns.Generators;
 
 using System.Collections.Immutable;
 using System.Linq;
@@ -26,9 +26,9 @@ using Microsoft.CodeAnalysis.Text;
 [Generator]
 public class PlugInProxyGenerator : IIncrementalGenerator
 {
-    private const string PlugInPointAttributeFullName = "MUnique.OpenMU.PlugIns.PlugInPointAttribute";
+    private const string PlugInPointAttributeFullName = "HNMO.PlugIns.PlugInPointAttribute";
 
-    private const string StrategyPlugInInterfaceName = "MUnique.OpenMU.PlugIns.IStrategyPlugIn<TKey>";
+    private const string StrategyPlugInInterfaceName = "HNMO.PlugIns.IStrategyPlugIn<TKey>";
 
     private const string CancelEventArgsFullName = "System.ComponentModel.CancelEventArgs";
 
@@ -183,12 +183,12 @@ public class PlugInProxyGenerator : IIncrementalGenerator
         builder.AppendLine("/// <summary>");
         builder.Append("/// The generated proxy of the plugin point <see cref=\"").Append(model.InterfaceName.Replace('<', '{').Replace('>', '}')).AppendLine("\"/>.");
         builder.AppendLine("/// </summary>");
-        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"MUnique.OpenMU.PlugIns.Generators.PlugInProxyGenerator\", \"1.0\")]");
+        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"HNMO.PlugIns.Generators.PlugInProxyGenerator\", \"1.0\")]");
         builder.Append("internal sealed class ").Append(model.ProxyName)
-            .Append(" : global::MUnique.OpenMU.PlugIns.PlugInContainerBase<").Append(model.InterfaceName).Append(">, ")
+            .Append(" : global::HNMO.PlugIns.PlugInContainerBase<").Append(model.InterfaceName).Append(">, ")
             .AppendLine(model.InterfaceName);
         builder.AppendLine("{");
-        builder.Append("    public ").Append(model.ProxyName).AppendLine("(global::MUnique.OpenMU.PlugIns.PlugInManager manager)");
+        builder.Append("    public ").Append(model.ProxyName).AppendLine("(global::HNMO.PlugIns.PlugInManager manager)");
         builder.AppendLine("        : base(manager)");
         builder.AppendLine("    {");
         builder.AppendLine("    }");
@@ -202,7 +202,7 @@ public class PlugInProxyGenerator : IIncrementalGenerator
         builder.AppendLine("    [global::System.Runtime.CompilerServices.ModuleInitializer]");
         builder.AppendLine("    internal static void Register()");
         builder.AppendLine("    {");
-        builder.Append("        global::MUnique.OpenMU.PlugIns.PlugInProxyRegistry.Register<").Append(model.InterfaceName).Append(">(manager => new ")
+        builder.Append("        global::HNMO.PlugIns.PlugInProxyRegistry.Register<").Append(model.InterfaceName).Append(">(manager => new ")
             .Append(model.ProxyName).AppendLine("(manager));");
         builder.AppendLine("    }");
         builder.AppendLine("}");

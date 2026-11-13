@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class CastleSiegeNpcStateEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeNpcState",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeNpcState),
+                "HNMO.Persistence.EntityFramework.Model.CastleSiegeNpcState",
+                typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeNpcState),
                 baseEntityType,
                 propertyCount: 8,
                 foreignKeyCount: 1,
@@ -31,11 +31,11 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -48,48 +48,48 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var currentHp = runtimeEntityType.AddProperty(
                 "CurrentHp",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("CurrentHp", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<CurrentHp>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("CurrentHp", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<CurrentHp>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             currentHp.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var defenseLevel = runtimeEntityType.AddProperty(
                 "DefenseLevel",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("DefenseLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<DefenseLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("DefenseLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<DefenseLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             defenseLevel.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var instanceId = runtimeEntityType.AddProperty(
                 "InstanceId",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("InstanceId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<InstanceId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("InstanceId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<InstanceId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             instanceId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var lifeLevel = runtimeEntityType.AddProperty(
                 "LifeLevel",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("LifeLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<LifeLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("LifeLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<LifeLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             lifeLevel.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var monsterNumber = runtimeEntityType.AddProperty(
                 "MonsterNumber",
                 typeof(short),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("MonsterNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<MonsterNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("MonsterNumber", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<MonsterNumber>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (short)0);
             monsterNumber.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var regenLevel = runtimeEntityType.AddProperty(
                 "RegenLevel",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetProperty("RegenLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState).GetField("<RegenLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetProperty("RegenLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.CastleSiegeNpcState).GetField("<RegenLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             regenLevel.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -117,9 +117,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawNpcStates = principalEntityType.AddNavigation("RawNpcStates",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeNpcState>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeData).GetProperty("RawNpcStates", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeData).GetField("<RawNpcStates>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeNpcState>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeData).GetProperty("RawNpcStates", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeData).GetField("<RawNpcStates>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

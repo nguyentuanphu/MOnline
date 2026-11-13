@@ -1,8 +1,8 @@
-﻿// <copyright file="Guild.cs" company="MUnique">
+﻿// <copyright file="Guild.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// A guild is a group of players who like to play together.

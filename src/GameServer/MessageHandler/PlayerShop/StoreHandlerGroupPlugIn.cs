@@ -1,12 +1,12 @@
-﻿// <copyright file="StoreHandlerGroupPlugIn.cs" company="MUnique">
+﻿// <copyright file="StoreHandlerGroupPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.PlayerShop;
+namespace HNMO.GameServer.MessageHandler.PlayerShop;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for player store related packets.

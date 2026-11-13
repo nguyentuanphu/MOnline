@@ -1,13 +1,13 @@
-﻿// <copyright file="QuestMonsterKillCountPlugIn.cs" company="MUnique">
+﻿// <copyright file="QuestMonsterKillCountPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin increases the monster kill count of the quest state of active quests.

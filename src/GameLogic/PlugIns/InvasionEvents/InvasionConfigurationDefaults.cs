@@ -1,10 +1,10 @@
-// <copyright file="InvasionConfigurationDefaults.cs" company="MUnique">
+// <copyright file="InvasionConfigurationDefaults.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Provides ready-to-use default configurations for the built-in invasion types.

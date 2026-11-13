@@ -1,12 +1,12 @@
-// <copyright file="SetItemPriceAction.cs" company="MUnique">
+// <copyright file="SetItemPriceAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.PlayerStore;
+namespace HNMO.GameLogic.PlayerActions.PlayerStore;
 
-using MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
+using HNMO.GameLogic.PlayerShopCurrencies;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.PlayerShop;
 
 /// <summary>
 /// Action to set the price of an item of the player store.

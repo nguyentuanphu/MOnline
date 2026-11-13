@@ -1,8 +1,8 @@
-﻿// <copyright file="DatabaseSnapshotService.cs" company="MUnique">
+﻿// <copyright file="DatabaseSnapshotService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.IO;
 using System.IO.Compression;
@@ -11,7 +11,7 @@ using System.Threading;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
+using HNMO.Persistence.EntityFramework.AdminAuth;
 using Npgsql;
 
 /// <summary>

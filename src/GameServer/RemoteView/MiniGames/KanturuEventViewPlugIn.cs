@@ -1,15 +1,15 @@
-﻿// <copyright file="KanturuEventViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="KanturuEventViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.MiniGames;
+namespace HNMO.GameServer.RemoteView.MiniGames;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
-using MUnique.OpenMU.GameServer.Properties;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.MiniGames.Kanturu;
+using HNMO.GameServer.Properties;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Sends Kanturu-specific state/result/HUD packets (0xD1 group) to the client.

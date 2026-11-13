@@ -1,11 +1,11 @@
-// <copyright file="GuildServerInMemoryContext.cs" company="MUnique">
+// <copyright file="GuildServerInMemoryContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.BasicModel;
+using HNMO.Persistence.BasicModel;
 
 /// <summary>
 /// In-memory context implementation for <see cref="IGuildServerContext"/>.
@@ -60,7 +60,7 @@ public class GuildServerInMemoryContext : InMemoryContext, IGuildServerContext
     public async ValueTask<IReadOnlyDictionary<Guid, string>> GetGuildMasterNamesAsync(CancellationToken cancellationToken = default)
     {
         var members = (await this.Provider.GetRepository<GuildMember>().GetAllAsync(cancellationToken).ConfigureAwait(false))
-            .Where(member => member.Status == MUnique.OpenMU.Interfaces.GuildPosition.GuildMaster);
+            .Where(member => member.Status == HNMO.Interfaces.GuildPosition.GuildMaster);
         var characters = await this.Provider.GetRepository<Character>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return members
             .Select(m => (m.GuildId, Name: characters.FirstOrDefault(c => c.Id == m.Id)?.Name))

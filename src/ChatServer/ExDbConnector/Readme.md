@@ -1,12 +1,12 @@
 ﻿# ChatServer ExDB Connector
 
-This isn't directly a part of the OpenMU project. It's more like a side product
+This isn't directly a part of the HNMO project. It's more like a side product
 to make the ChatServer available to users of the 'classical' private MU Servers.
 They have - or maybe had :) - the problem that they are bound to use the
-original closed source ChatServer of Webzen, if they get it working at all.
+original closed source ChatServer of the original developers, if they get it working at all.
 
-So to offer an open source alternative to the original ChatServer of Webzen,
-you can use this project to connect the OpenMU-ChatServer with your 'classic'
+So to offer an open source alternative to the original ChatServer of the original developers,
+you can use this project to connect the HNMO-ChatServer with your 'classic'
 ExDB server.
 
 ## Configuration
@@ -33,7 +33,7 @@ will not be able to connect.
 It's the same XOR32 key which is used for the 0xC1 packet encryption from game
 client to game server.
 
-You can't edit this key at the original ChatServer of Webzen, that's the reason
+You can't edit this key at the original ChatServer of the original developers, that's the reason
 why it's pretty hard to get the ChatServer working on a private server.
 
 ## Communication between ExDB-Server and ChatServer

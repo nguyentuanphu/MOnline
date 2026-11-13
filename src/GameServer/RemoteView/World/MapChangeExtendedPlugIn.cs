@@ -1,15 +1,15 @@
-﻿// <copyright file="MapChangeExtendedPlugIn.cs" company="MUnique">
+﻿// <copyright file="MapChangeExtendedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The extended implementation of the <see cref="IMapChangePlugIn"/> which sends the <see cref="MapChangedExtended"/>

@@ -1,8 +1,8 @@
-﻿// <copyright file="IUnboundSourceGenerator.cs" company="MUnique">
+﻿// <copyright file="IUnboundSourceGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.SourceGenerator;
+namespace HNMO.Persistence.SourceGenerator;
 
 /// <summary>
 /// Interface for a generator which generates sources without depending on a context.

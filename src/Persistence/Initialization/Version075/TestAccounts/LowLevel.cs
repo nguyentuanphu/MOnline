@@ -1,14 +1,14 @@
-﻿// <copyright file="LowLevel.cs" company="MUnique">
+﻿// <copyright file="LowLevel.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version075.TestAccounts;
+namespace HNMO.Persistence.Initialization.Version075.TestAccounts;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.CharacterClasses;
 
 /// <summary>
 /// Initializer for an account with low level characters.

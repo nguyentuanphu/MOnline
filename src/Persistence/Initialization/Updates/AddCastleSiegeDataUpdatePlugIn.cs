@@ -1,14 +1,14 @@
-// <copyright file="AddCastleSiegeDataUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddCastleSiegeDataUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the Castle Siege configuration and persistent state to an existing Season 6 database.
@@ -21,7 +21,7 @@ using MUnique.OpenMU.PlugIns;
 /// are preserved and re-running stays a no-op.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCastleSiegeDataUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCastleSiegeDataUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCastleSiegeDataUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCastleSiegeDataUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("CD201E33-37C9-4C85-95CC-16042B28E974")]
 public class AddCastleSiegeDataUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,12 +1,12 @@
-// <copyright file="MapObjectStyleService.cs" company="MUnique">
+// <copyright file="MapObjectStyleService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Provides CSS class and inline style computation for map objects

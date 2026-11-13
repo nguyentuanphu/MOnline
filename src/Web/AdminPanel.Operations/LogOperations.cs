@@ -1,8 +1,8 @@
-// <copyright file="LogOperations.cs" company="MUnique">
+// <copyright file="LogOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Globalization;
 using System.IO;
@@ -11,8 +11,8 @@ using System.Text;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>Provides bounded local log inspection and audited minimum-level changes.</summary>
 /// <param name="logging">The existing logging configuration service.</param>

@@ -1,18 +1,18 @@
-// <copyright file="BotGenerator.cs" company="MUnique">
+// <copyright file="BotGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Linq;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Resets;
-using MUnique.OpenMU.Persistence;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Resets;
+using HNMO.Persistence;
 
 /// <summary>
 /// Generates and maintains the persistent population of bot accounts and their characters.

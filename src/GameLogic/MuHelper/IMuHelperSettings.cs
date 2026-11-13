@@ -1,8 +1,8 @@
-// <copyright file="IMuHelperSettings.cs" company="MUnique">
+// <copyright file="IMuHelperSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MuHelper;
+namespace HNMO.GameLogic.MuHelper;
 
 /// <summary>
 /// The Mu Helper player settings.

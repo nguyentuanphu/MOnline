@@ -1,11 +1,11 @@
-﻿// <copyright file="HideChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="HideChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles hide commands.

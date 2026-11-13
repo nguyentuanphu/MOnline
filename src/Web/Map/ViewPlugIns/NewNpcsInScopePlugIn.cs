@@ -1,13 +1,13 @@
-﻿// <copyright file="NewNpcsInScopePlugIn.cs" company="MUnique">
+﻿// <copyright file="NewNpcsInScopePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.ViewPlugIns;
+namespace HNMO.Web.Map.ViewPlugIns;
 
 using Microsoft.JSInterop;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views.World;
+using HNMO.Web.Map.Map;
 
 /// <summary>
 /// Implementation of <see cref="INewNpcsInScopePlugIn"/> which uses the javascript map app.

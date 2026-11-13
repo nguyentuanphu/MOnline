@@ -1,8 +1,8 @@
-﻿// <copyright file="ItemTable.razor.cs" company="MUnique">
+﻿// <copyright file="ItemTable.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
@@ -10,12 +10,12 @@ using System.Globalization;
 using System.Linq.Expressions;
 using System.Reflection;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Form.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
+using HNMO.DataModel;
+using HNMO.DataModel.Composition;
+using HNMO.Persistence;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Form.Modal;
+using HNMO.Web.Shared.Components.Modal;
 
 /// <summary>
 /// A component that shows a collection of <typeparamref name="TItem"/> in a table.
@@ -87,7 +87,7 @@ public partial class ItemTable<TItem>
     {
         base.OnInitialized();
         this._isEditable = typeof(TItem).Namespace
-                              ?.StartsWith(nameof(MUnique), StringComparison.InvariantCulture)
+                              ?.StartsWith(nameof(HNMO), StringComparison.InvariantCulture)
                           ?? false;
         var isMemberOfAggregate = this.ValueExpression!.IsAccessToMemberOfAggregate();
         this._isInlineEditable = this._isEditable && isMemberOfAggregate && this.ValueExpression!.ScaffoldColumn();
@@ -131,7 +131,7 @@ public partial class ItemTable<TItem>
         var parameters = new ModalParameters();
         parameters.Add(nameof(ModalCreateNew<TItem>.PersistenceContext), this.PersistenceContext);
 
-        var modal = this._modal.Show<ModalObjectMultiSelection<TItem>>(string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.SelectType, typeof(TItem).GetTypeCaption()), parameters);
+        var modal = this._modal.Show<ModalObjectMultiSelection<TItem>>(string.Format(HNMO.Web.Shared.Properties.Resources.SelectType, typeof(TItem).GetTypeCaption()), parameters);
         var result = await modal.Result.ConfigureAwait(false);
         if (result.Cancelled || result.Data is not IList<TItem> items)
         {
@@ -174,7 +174,7 @@ public partial class ItemTable<TItem>
             DisableBackgroundCancel = true,
         };
 
-        var modal = this._modal.Show<ModalCreateNew<TItem>>(string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.CreateType, typeof(TItem).GetTypeCaption()), parameters, options);
+        var modal = this._modal.Show<ModalCreateNew<TItem>>(string.Format(HNMO.Web.Shared.Properties.Resources.CreateType, typeof(TItem).GetTypeCaption()), parameters, options);
         var result = await modal.Result.ConfigureAwait(false);
         if (result.Cancelled)
         {

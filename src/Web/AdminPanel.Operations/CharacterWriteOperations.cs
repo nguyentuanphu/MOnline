@@ -1,23 +1,23 @@
-// <copyright file="CharacterWriteOperations.cs" company="MUnique">
+// <copyright file="CharacterWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Runtime.ExceptionServices;
 using System.Security.Cryptography;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.AttributeSystem;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Edits offline characters under an exclusive login-server reservation.</summary>
 /// <param name="persistence">The persistence provider.</param>

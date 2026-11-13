@@ -1,17 +1,17 @@
-﻿// <copyright file="Orbs.cs" company="MUnique">
+﻿// <copyright file="Orbs.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Properties;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// Initializes orb items which are used to learn skills.

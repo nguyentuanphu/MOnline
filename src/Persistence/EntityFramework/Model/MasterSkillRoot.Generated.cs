@@ -1,4 +1,4 @@
-// <copyright file="MasterSkillRoot.Generated.cs" company="MUnique">
+// <copyright file="MasterSkillRoot.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,22 +10,22 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MasterSkillRoot"/>.
 /// </summary>
 [Table(nameof(MasterSkillRoot), Schema = SchemaNames.Configuration)]
-internal partial class MasterSkillRoot : MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot, IIdentifiable
+internal partial class MasterSkillRoot : HNMO.DataModel.Configuration.MasterSkillRoot, IIdentifiable
 {
     
     
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MasterSkillRoot Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MasterSkillRoot();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -33,7 +33,7 @@ internal partial class MasterSkillRoot : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MasterSkillRoot other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

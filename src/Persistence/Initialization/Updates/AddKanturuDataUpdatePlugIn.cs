@@ -1,14 +1,14 @@
-﻿// <copyright file="AddKanturuDataUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddKanturuDataUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the Kanturu Refinery Tower event configuration to an existing Season 6 database.
@@ -23,7 +23,7 @@ using MUnique.OpenMU.PlugIns;
 /// are preserved and re-running stays a no-op.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddKanturuDataUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddKanturuDataUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddKanturuDataUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddKanturuDataUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("3F1B7A64-9C2E-4D58-B0A7-5E6C8D19F204")]
 public class AddKanturuDataUpdatePlugIn : UpdatePlugInBase
 {

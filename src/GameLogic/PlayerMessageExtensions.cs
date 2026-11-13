@@ -1,12 +1,12 @@
-// <copyright file="PlayerMessageExtensions.cs" company="MUnique">
+// <copyright file="PlayerMessageExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Properties;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Properties;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Extensions to show (localized) messages to a <see cref="Player"/>.

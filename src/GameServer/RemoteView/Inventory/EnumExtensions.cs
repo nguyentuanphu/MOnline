@@ -1,14 +1,14 @@
-﻿// <copyright file="EnumExtensions.cs" company="MUnique">
+﻿// <copyright file="EnumExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Inventory;
+namespace HNMO.GameServer.RemoteView.Inventory;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.PlayerShop;
+using HNMO.Network.Packets;
+using HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// Extension methods to convert enum values.

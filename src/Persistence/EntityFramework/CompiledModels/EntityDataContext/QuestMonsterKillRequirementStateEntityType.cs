@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class QuestMonsterKillRequirementStateEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState),
+                "HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState",
+                typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState),
                 baseEntityType,
                 propertyCount: 4,
                 navigationCount: 1,
@@ -32,11 +32,11 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -49,16 +49,16 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var killCount = runtimeEntityType.AddProperty(
                 "KillCount",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState).GetProperty("KillCount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState).GetField("<KillCount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Entities.QuestMonsterKillRequirementState).GetProperty("KillCount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Entities.QuestMonsterKillRequirementState).GetField("<KillCount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             killCount.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var requirementId = runtimeEntityType.AddProperty(
                 "RequirementId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("RequirementId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetField("<RequirementId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("RequirementId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetField("<RequirementId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             requirementId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -85,9 +85,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRequirementStates = principalEntityType.AddNavigation("RawRequirementStates",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CharacterQuestState).GetProperty("RawRequirementStates", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CharacterQuestState).GetField("<RawRequirementStates>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CharacterQuestState).GetProperty("RawRequirementStates", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CharacterQuestState).GetField("<RawRequirementStates>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -101,8 +101,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRequirement = declaringEntityType.AddNavigation("RawRequirement",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirement),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("RawRequirement", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirement),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.QuestMonsterKillRequirementState).GetProperty("RawRequirement", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

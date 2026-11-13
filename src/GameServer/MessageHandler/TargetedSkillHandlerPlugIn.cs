@@ -1,17 +1,17 @@
-﻿// <copyright file="TargetedSkillHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="TargetedSkillHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Implements the targeted skill packet handler.

@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForAccountContext
 {
     [EntityFrameworkInternal]
     public partial class LetterHeaderEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader),
+                "HNMO.Persistence.EntityFramework.Model.LetterHeader",
+                typeof(HNMO.Persistence.EntityFramework.Model.LetterHeader),
                 baseEntityType,
                 propertyCount: 6,
                 navigationCount: 1,
@@ -32,51 +32,51 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Interfaces.LetterHeader).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Interfaces.LetterHeader).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var letterDate = runtimeEntityType.AddProperty(
                 "LetterDate",
                 typeof(DateTime),
-                propertyInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetProperty("LetterDate", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetField("<LetterDate>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Interfaces.LetterHeader).GetProperty("LetterDate", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Interfaces.LetterHeader).GetField("<LetterDate>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
             letterDate.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var readFlag = runtimeEntityType.AddProperty(
                 "ReadFlag",
                 typeof(bool),
-                propertyInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetProperty("ReadFlag", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetField("<ReadFlag>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Interfaces.LetterHeader).GetProperty("ReadFlag", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Interfaces.LetterHeader).GetField("<ReadFlag>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: false);
             readFlag.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var receiverId = runtimeEntityType.AddProperty(
                 "ReceiverId",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader).GetProperty("ReceiverId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader).GetField("<ReceiverId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.LetterHeader).GetProperty("ReceiverId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.LetterHeader).GetField("<ReceiverId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             receiverId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var senderName = runtimeEntityType.AddProperty(
                 "SenderName",
                 typeof(string),
-                propertyInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetProperty("SenderName", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetField("<SenderName>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Interfaces.LetterHeader).GetProperty("SenderName", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Interfaces.LetterHeader).GetField("<SenderName>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             senderName.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var subject = runtimeEntityType.AddProperty(
                 "Subject",
                 typeof(string),
-                propertyInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetProperty("Subject", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Interfaces.LetterHeader).GetField("<Subject>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Interfaces.LetterHeader).GetProperty("Subject", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Interfaces.LetterHeader).GetField("<Subject>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             subject.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -101,15 +101,15 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
             var receiver = declaringEntityType.AddNavigation("Receiver",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Character),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader).GetProperty("Receiver", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.Character),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.LetterHeader).GetProperty("Receiver", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             var rawLetters = principalEntityType.AddNavigation("RawLetters",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.IList<MUnique.OpenMU.Persistence.EntityFramework.Model.LetterHeader>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Character).GetProperty("RawLetters", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Character).GetField("<RawLetters>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.IList<HNMO.Persistence.EntityFramework.Model.LetterHeader>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.Character).GetProperty("RawLetters", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.Character).GetField("<RawLetters>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

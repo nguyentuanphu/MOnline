@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemOfItemSet.cs" company="MUnique">
+﻿// <copyright file="ItemOfItemSet.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines additional bonus options for this item of a set.
@@ -21,7 +21,7 @@ public partial class ItemOfItemSet
     /// </summary>
     /// <remarks>
     /// Only relevant to ancient sets. One item can only be in one ancient set with the same discriminator.
-    /// The original mu online protocol supports up to two different ancient sets per item - with discriminator values 1 and 2.
+    /// The original HNMO protocol supports up to two different ancient sets per item - with discriminator values 1 and 2.
     /// E.g. a 'Warrior Leather' set would have a discriminator value of 1, the 'Anonymous Leather' set would have 2.
     /// </remarks>
     public int AncientSetDiscriminator { get; set; }

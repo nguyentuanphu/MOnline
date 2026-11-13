@@ -1,11 +1,11 @@
-// <copyright file="OfflineRespawnPlugIn.cs" company="MUnique">
+// <copyright file="OfflineRespawnPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
 using System.Threading.Tasks;
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.GameLogic.Views.World;
 
 /// <summary>
 /// Simulates a respawn response for an offline character.

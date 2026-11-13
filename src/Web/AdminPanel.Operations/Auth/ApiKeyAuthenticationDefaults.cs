@@ -1,8 +1,8 @@
-// <copyright file="ApiKeyAuthenticationDefaults.cs" company="MUnique">
+// <copyright file="ApiKeyAuthenticationDefaults.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -14,7 +14,7 @@ public static class ApiKeyAuthenticationDefaults
     /// <summary>
     /// Gets the name of the authentication scheme.
     /// </summary>
-    internal const string AuthenticationScheme = "OpenMU.ApiKey";
+    internal const string AuthenticationScheme = "HNMO.ApiKey";
 
     /// <summary>
     /// Gets the authentication schemes which are accepted by the public API: an API key for external
@@ -36,12 +36,12 @@ public static class ApiKeyAuthenticationDefaults
     /// <summary>
     /// Gets the claim type which holds the configured name of the API client.
     /// </summary>
-    public static string ClientNameClaimType => "openmu:api-client";
+    public static string ClientNameClaimType => "hnmo:api-client";
 
     /// <summary>
     /// Gets the claim type which holds the persistent, unique identifier of the API key.
     /// </summary>
-    public static string ClientIdClaimType => "openmu:api-client-id";
+    public static string ClientIdClaimType => "hnmo:api-client-id";
 
     /// <summary>
     /// Gets the path prefix of the public API. Requests below it get a status code instead of a

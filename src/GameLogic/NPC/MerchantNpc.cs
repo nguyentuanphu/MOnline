@@ -1,8 +1,8 @@
-﻿// <copyright file="MerchantNpc.cs" company="MUnique">
+﻿// <copyright file="MerchantNpc.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
 /// <summary>
 /// The implemented class of a merchant, which is a non-player-character which

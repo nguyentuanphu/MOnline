@@ -1,11 +1,11 @@
-﻿// <copyright file="CreateCharacterAction.cs" company="MUnique">
+﻿// <copyright file="CreateCharacterAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Character;
+namespace HNMO.GameLogic.PlayerActions.Character;
 
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Character;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Character;
 
 /// <summary>
 /// Action to create a new character in the character selection screen.

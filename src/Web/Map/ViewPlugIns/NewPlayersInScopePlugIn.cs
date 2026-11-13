@@ -1,14 +1,14 @@
-﻿// <copyright file="NewPlayersInScopePlugIn.cs" company="MUnique">
+﻿// <copyright file="NewPlayersInScopePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.ViewPlugIns;
+namespace HNMO.Web.Map.ViewPlugIns;
 
 using System.Collections.Concurrent;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.World;
+using HNMO.Web.Map.Map;
 
 /// <summary>
 /// Implementation of <see cref="INewPlayersInScopePlugIn"/> which uses the javascript map app.

@@ -1,10 +1,10 @@
-// <copyright file="MuHelperZenCostCalculator.cs" company="MUnique">
+// <copyright file="MuHelperZenCostCalculator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MuHelper;
+namespace HNMO.GameLogic.MuHelper;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Calculates the Zen cost for the MU Helper and offline player based on the

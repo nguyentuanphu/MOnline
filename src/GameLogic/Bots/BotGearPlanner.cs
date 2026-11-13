@@ -1,14 +1,14 @@
-// <copyright file="BotGearPlanner.cs" company="MUnique">
+// <copyright file="BotGearPlanner.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Collections.Concurrent;
 using System.Runtime.CompilerServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Plans how many stat points a bot keeps for the requirements of its gear, so the weighted split of

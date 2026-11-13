@@ -1,4 +1,4 @@
-// <copyright file="GameServerEndpoint.Generated.cs" company="MUnique">
+// <copyright file="GameServerEndpoint.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.GameServerEndpoint"/>.
 /// </summary>
 [Table(nameof(GameServerEndpoint), Schema = SchemaNames.Configuration)]
-internal partial class GameServerEndpoint : MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint, IIdentifiable
+internal partial class GameServerEndpoint : HNMO.DataModel.Configuration.GameServerEndpoint, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class GameServerEndpoint : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameClientDefinition Client
+    public override HNMO.DataModel.Configuration.GameClientDefinition Client
     {
         get => base.Client;set
         {
@@ -55,7 +55,7 @@ internal partial class GameServerEndpoint : MUnique.OpenMU.DataModel.Configurati
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameServerEndpoint Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameServerEndpoint();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class GameServerEndpoint : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameServerEndpoint other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

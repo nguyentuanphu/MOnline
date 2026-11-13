@@ -261,7 +261,7 @@
   <data name="WelcomeMessage" xml:space="preserve">
     <value>Bem-vindo ao painel de administração do HNMO.</value>
   </data>
-  <data name="OpenMUAdminPanel" xml:space="preserve">
+  <data name="HNMOAdminPanel" xml:space="preserve">
     <value>Painel de administração HNMO</value>
   </data>
   <data name="About" xml:space="preserve">
@@ -2345,7 +2345,7 @@
     <value>Crie canais e funções</value>
   </data>
   <data name="DiscordSetUpServerText" xml:space="preserve">
-    <value>Cria as funções, categorias e canais que o bot usa, como a configuração /openmu no Discord. O que já existe é mantido, então você pode fazer novamente a qualquer momento. O bot precisa das permissões Gerenciar canais e Gerenciar funções para isso.</value>
+    <value>Cria as funções, categorias e canais que o bot usa, como a configuração /hnmo no Discord. O que já existe é mantido, então você pode fazer novamente a qualquer momento. O bot precisa das permissões Gerenciar canais e Gerenciar funções para isso.</value>
   </data>
   <data name="DiscordSetUpServerNeedsBot" xml:space="preserve">
     <value>O bot deve estar conectado e no servidor Discord.</value>

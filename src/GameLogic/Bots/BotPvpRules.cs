@@ -1,8 +1,8 @@
-// <copyright file="BotPvpRules.cs" company="MUnique">
+// <copyright file="BotPvpRules.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 /// <summary>
 /// The single source of truth for when a server-side bot may attack a player.

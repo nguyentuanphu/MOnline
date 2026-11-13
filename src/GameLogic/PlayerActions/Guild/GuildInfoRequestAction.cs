@@ -1,10 +1,10 @@
-﻿// <copyright file="GuildInfoRequestAction.cs" company="MUnique">
+﻿// <copyright file="GuildInfoRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Guild;
+namespace HNMO.GameLogic.PlayerActions.Guild;
 
-using MUnique.OpenMU.GameLogic.Views.Guild;
+using HNMO.GameLogic.Views.Guild;
 
 /// <summary>
 /// Action to request the information (name, symbol) of a guild.

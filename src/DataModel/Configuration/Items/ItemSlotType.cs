@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemSlotType.cs" company="MUnique">
+﻿// <copyright file="ItemSlotType.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The item slot type. Each of this may have one or more actual item slots.

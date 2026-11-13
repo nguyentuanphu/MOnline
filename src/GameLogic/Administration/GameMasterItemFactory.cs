@@ -1,11 +1,11 @@
-// <copyright file="GameMasterItemFactory.cs" company="MUnique">
+// <copyright file="GameMasterItemFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Administration;
+namespace HNMO.GameLogic.Administration;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
 
 /// <summary>Shared item construction for GM commands and live administration.</summary>
 public static class GameMasterItemFactory

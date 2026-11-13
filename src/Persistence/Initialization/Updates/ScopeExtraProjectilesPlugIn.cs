@@ -1,16 +1,16 @@
-// <copyright file="ScopeExtraProjectilesPlugIn.cs" company="MUnique">
+// <copyright file="ScopeExtraProjectilesPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update scopes the extra projectiles per skill. The generic pool stays global,
@@ -18,7 +18,7 @@ using MUnique.OpenMU.PlugIns;
 /// to the triple shot skill and no longer leaks into other multi-projectile skills like multi shot.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.ScopeExtraProjectilesPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.ScopeExtraProjectilesPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.ScopeExtraProjectilesPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.ScopeExtraProjectilesPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("F2A9C4E7-8B3D-4F1A-9E6C-7D2B5A8C3E41")]
 public class ScopeExtraProjectilesPlugIn : UpdatePlugInBase
 {

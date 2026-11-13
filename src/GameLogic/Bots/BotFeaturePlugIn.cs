@@ -1,24 +1,24 @@
-// <copyright file="BotFeaturePlugIn.cs" company="MUnique">
+// <copyright file="BotFeaturePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Collections.Concurrent;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Feature plugin that spawns and maintains server-side bots.
 /// Appears in the "Feature Plugins" section of the admin panel next to the MU Helper and reset features.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotFeaturePlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotFeaturePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.BotFeaturePlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.BotFeaturePlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("6F3A2B91-7C4E-4D88-9A1F-2E5C0B7A4D63")]
 public class BotFeaturePlugIn : IFeaturePlugIn, IPeriodicTaskPlugIn, ISupportCustomConfiguration<BotConfiguration>, ISupportDefaultCustomConfiguration
 {

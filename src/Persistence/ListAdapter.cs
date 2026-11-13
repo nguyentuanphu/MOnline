@@ -1,8 +1,8 @@
-﻿// <copyright file="ListAdapter.cs" company="MUnique">
+﻿// <copyright file="ListAdapter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// A collection adapter which adapts a <see cref="ICollection{TEfCore}"/> to an <see cref="ICollection{TClass}"/>,

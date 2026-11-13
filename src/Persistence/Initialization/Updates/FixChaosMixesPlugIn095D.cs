@@ -1,19 +1,19 @@
-﻿// <copyright file="FixChaosMixesPlugIn095D.cs" company="MUnique">
+﻿// <copyright file="FixChaosMixesPlugIn095D.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes the Chaos Weapon, First Wings, Dinorant, and Item Level Upgrade craftings' settings.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInBase_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInBase_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInBase_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInBase_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("68BC1F35-FC9A-468F-89FB-0940485AC107")]
 public class FixChaosMixesPlugIn095D : FixChaosMixesPlugInBase
 {

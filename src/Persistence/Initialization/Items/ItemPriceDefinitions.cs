@@ -1,12 +1,12 @@
-// <copyright file="ItemPriceDefinitions.cs" company="MUnique">
+// <copyright file="ItemPriceDefinitions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Items;
+namespace HNMO.Persistence.Initialization.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Creates the <see cref="ItemPriceDefinition"/>s and assigns them to the items which don't have one yet.

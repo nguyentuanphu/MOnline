@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class MiniGameRewardEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward),
+                "HNMO.Persistence.EntityFramework.Model.MiniGameReward",
+                typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward),
                 baseEntityType,
                 propertyCount: 8,
                 navigationCount: 2,
@@ -32,19 +32,19 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var itemRewardId = runtimeEntityType.AddProperty(
                 "ItemRewardId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("ItemRewardId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetField("<ItemRewardId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("ItemRewardId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetField("<ItemRewardId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             itemRewardId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -57,40 +57,40 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rank = runtimeEntityType.AddProperty(
                 "Rank",
                 typeof(int?),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetProperty("Rank", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetField("<Rank>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetProperty("Rank", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetField("<Rank>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             rank.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var requiredKillId = runtimeEntityType.AddProperty(
                 "RequiredKillId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RequiredKillId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetField("<RequiredKillId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RequiredKillId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetField("<RequiredKillId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             requiredKillId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var requiredSuccess = runtimeEntityType.AddProperty(
                 "RequiredSuccess",
-                typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameSuccessFlags),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetProperty("RequiredSuccess", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetField("<RequiredSuccess>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.DataModel.Configuration.MiniGameSuccessFlags),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetProperty("RequiredSuccess", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetField("<RequiredSuccess>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             requiredSuccess.SetSentinelFromProviderValue(0);
             requiredSuccess.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var rewardAmount = runtimeEntityType.AddProperty(
                 "RewardAmount",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetProperty("RewardAmount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetField("<RewardAmount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetProperty("RewardAmount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetField("<RewardAmount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             rewardAmount.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var rewardType = runtimeEntityType.AddProperty(
                 "RewardType",
-                typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameRewardType),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetProperty("RewardType", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameReward).GetField("<RewardType>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.DataModel.Configuration.MiniGameRewardType),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetProperty("RewardType", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameReward).GetField("<RewardType>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             rewardType.SetSentinelFromProviderValue(0);
             rewardType.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -119,8 +119,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawItemReward = declaringEntityType.AddNavigation("RawItemReward",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.DropItemGroup),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RawItemReward", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.DropItemGroup),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RawItemReward", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -135,9 +135,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRewards = principalEntityType.AddNavigation("RawRewards",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawRewards", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawRewards>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.MiniGameReward>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawRewards", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawRewards>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -151,8 +151,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRequiredKill = declaringEntityType.AddNavigation("RawRequiredKill",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RawRequiredKill", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.MonsterDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameReward).GetProperty("RawRequiredKill", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

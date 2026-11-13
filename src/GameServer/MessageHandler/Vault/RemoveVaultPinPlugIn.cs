@@ -1,14 +1,14 @@
-﻿// <copyright file="RemoveVaultPinPlugIn.cs" company="MUnique">
+﻿// <copyright file="RemoveVaultPinPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Vault;
+namespace HNMO.GameServer.MessageHandler.Vault;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Vault;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Vault;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for vault pin remove packets (0x83, 0x02 identifier).

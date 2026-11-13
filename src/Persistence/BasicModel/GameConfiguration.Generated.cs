@@ -1,4 +1,4 @@
-// <copyright file="GameConfiguration.Generated.cs" company="MUnique">
+// <copyright file="GameConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GameConfiguration"/>.
 /// </summary>
-public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.GameConfiguration, IIdentifiable, IConvertibleTo<GameConfiguration>
+public partial class GameConfiguration : HNMO.DataModel.Configuration.GameConfiguration, IIdentifiable, IConvertibleTo<GameConfiguration>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.JewelMix> JewelMixes
+    public override ICollection<HNMO.DataModel.Configuration.JewelMix> JewelMixes
     {
-        get => base.JewelMixes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.JewelMix, JewelMix>(this.RawJewelMixes);
+        get => base.JewelMixes ??= new CollectionAdapter<HNMO.DataModel.Configuration.JewelMix, JewelMix>(this.RawJewelMixes);
         protected set
         {
             this.JewelMixes.Clear();
@@ -54,9 +54,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.WarpInfo> WarpList
+    public override ICollection<HNMO.DataModel.Configuration.WarpInfo> WarpList
     {
-        get => base.WarpList ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.WarpInfo, WarpInfo>(this.RawWarpList);
+        get => base.WarpList ??= new CollectionAdapter<HNMO.DataModel.Configuration.WarpInfo, WarpInfo>(this.RawWarpList);
         protected set
         {
             this.WarpList.Clear();
@@ -75,9 +75,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DropItemGroup> DropItemGroups
+    public override ICollection<HNMO.DataModel.Configuration.DropItemGroup> DropItemGroups
     {
-        get => base.DropItemGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
+        get => base.DropItemGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
         protected set
         {
             this.DropItemGroups.Clear();
@@ -96,9 +96,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Skill> Skills
+    public override ICollection<HNMO.DataModel.Configuration.Skill> Skills
     {
-        get => base.Skills ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Skill, Skill>(this.RawSkills);
+        get => base.Skills ??= new CollectionAdapter<HNMO.DataModel.Configuration.Skill, Skill>(this.RawSkills);
         protected set
         {
             this.Skills.Clear();
@@ -117,9 +117,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CharacterClass> CharacterClasses
+    public override ICollection<HNMO.DataModel.Configuration.CharacterClass> CharacterClasses
     {
-        get => base.CharacterClasses ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawCharacterClasses);
+        get => base.CharacterClasses ??= new CollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawCharacterClasses);
         protected set
         {
             this.CharacterClasses.Clear();
@@ -138,9 +138,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition> Items
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemDefinition> Items
     {
-        get => base.Items ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawItems);
+        get => base.Items ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawItems);
         protected set
         {
             this.Items.Clear();
@@ -159,9 +159,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable> ItemLevelBonusTables
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemLevelBonusTable> ItemLevelBonusTables
     {
-        get => base.ItemLevelBonusTables ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable, ItemLevelBonusTable>(this.RawItemLevelBonusTables);
+        get => base.ItemLevelBonusTables ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemLevelBonusTable, ItemLevelBonusTable>(this.RawItemLevelBonusTables);
         protected set
         {
             this.ItemLevelBonusTables.Clear();
@@ -180,9 +180,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile> ItemStatProfiles
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemStatProfile> ItemStatProfiles
     {
-        get => base.ItemStatProfiles ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile, ItemStatProfile>(this.RawItemStatProfiles);
+        get => base.ItemStatProfiles ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemStatProfile, ItemStatProfile>(this.RawItemStatProfiles);
         protected set
         {
             this.ItemStatProfiles.Clear();
@@ -201,9 +201,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition> ItemPriceDefinitions
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemPriceDefinition> ItemPriceDefinitions
     {
-        get => base.ItemPriceDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition, ItemPriceDefinition>(this.RawItemPriceDefinitions);
+        get => base.ItemPriceDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemPriceDefinition, ItemPriceDefinition>(this.RawItemPriceDefinitions);
         protected set
         {
             this.ItemPriceDefinitions.Clear();
@@ -222,9 +222,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType> ItemSlotTypes
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemSlotType> ItemSlotTypes
     {
-        get => base.ItemSlotTypes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType, ItemSlotType>(this.RawItemSlotTypes);
+        get => base.ItemSlotTypes ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemSlotType, ItemSlotType>(this.RawItemSlotTypes);
         protected set
         {
             this.ItemSlotTypes.Clear();
@@ -243,9 +243,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition> ItemOptions
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionDefinition> ItemOptions
     {
-        get => base.ItemOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition, ItemOptionDefinition>(this.RawItemOptions);
+        get => base.ItemOptions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionDefinition, ItemOptionDefinition>(this.RawItemOptions);
         protected set
         {
             this.ItemOptions.Clear();
@@ -264,9 +264,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType> ItemOptionTypes
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionType> ItemOptionTypes
     {
-        get => base.ItemOptionTypes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawItemOptionTypes);
+        get => base.ItemOptionTypes ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawItemOptionTypes);
         protected set
         {
             this.ItemOptionTypes.Clear();
@@ -285,9 +285,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup> ItemSetGroups
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemSetGroup> ItemSetGroups
     {
-        get => base.ItemSetGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup, ItemSetGroup>(this.RawItemSetGroups);
+        get => base.ItemSetGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemSetGroup, ItemSetGroup>(this.RawItemSetGroups);
         protected set
         {
             this.ItemSetGroups.Clear();
@@ -306,9 +306,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus> ItemOptionCombinationBonuses
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus> ItemOptionCombinationBonuses
     {
-        get => base.ItemOptionCombinationBonuses ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus, ItemOptionCombinationBonus>(this.RawItemOptionCombinationBonuses);
+        get => base.ItemOptionCombinationBonuses ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus, ItemOptionCombinationBonus>(this.RawItemOptionCombinationBonuses);
         protected set
         {
             this.ItemOptionCombinationBonuses.Clear();
@@ -327,9 +327,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.GameMapDefinition> Maps
+    public override ICollection<HNMO.DataModel.Configuration.GameMapDefinition> Maps
     {
-        get => base.Maps ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.GameMapDefinition, GameMapDefinition>(this.RawMaps);
+        get => base.Maps ??= new CollectionAdapter<HNMO.DataModel.Configuration.GameMapDefinition, GameMapDefinition>(this.RawMaps);
         protected set
         {
             this.Maps.Clear();
@@ -348,9 +348,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterDefinition> Monsters
+    public override ICollection<HNMO.DataModel.Configuration.MonsterDefinition> Monsters
     {
-        get => base.Monsters ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterDefinition, MonsterDefinition>(this.RawMonsters);
+        get => base.Monsters ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterDefinition, MonsterDefinition>(this.RawMonsters);
         protected set
         {
             this.Monsters.Clear();
@@ -369,9 +369,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeDefinition> Attributes
+    public override ICollection<HNMO.AttributeSystem.AttributeDefinition> Attributes
     {
-        get => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeDefinition, AttributeDefinition>(this.RawAttributes);
+        get => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeDefinition, AttributeDefinition>(this.RawAttributes);
         protected set
         {
             this.Attributes.Clear();
@@ -390,9 +390,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition> MagicEffects
+    public override ICollection<HNMO.DataModel.Configuration.MagicEffectDefinition> MagicEffects
     {
-        get => base.MagicEffects ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition, MagicEffectDefinition>(this.RawMagicEffects);
+        get => base.MagicEffects ??= new CollectionAdapter<HNMO.DataModel.Configuration.MagicEffectDefinition, MagicEffectDefinition>(this.RawMagicEffects);
         protected set
         {
             this.MagicEffects.Clear();
@@ -411,9 +411,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot> MasterSkillRoots
+    public override ICollection<HNMO.DataModel.Configuration.MasterSkillRoot> MasterSkillRoots
     {
-        get => base.MasterSkillRoots ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot, MasterSkillRoot>(this.RawMasterSkillRoots);
+        get => base.MasterSkillRoots ??= new CollectionAdapter<HNMO.DataModel.Configuration.MasterSkillRoot, MasterSkillRoot>(this.RawMasterSkillRoots);
         protected set
         {
             this.MasterSkillRoots.Clear();
@@ -432,9 +432,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> GlobalAttributeCombinations
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> GlobalAttributeCombinations
     {
-        get => base.GlobalAttributeCombinations ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawGlobalAttributeCombinations);
+        get => base.GlobalAttributeCombinations ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawGlobalAttributeCombinations);
         protected set
         {
             this.GlobalAttributeCombinations.Clear();
@@ -453,9 +453,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.ConstValueAttribute> GlobalBaseAttributeValues
+    public override ICollection<HNMO.AttributeSystem.ConstValueAttribute> GlobalBaseAttributeValues
     {
-        get => base.GlobalBaseAttributeValues ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawGlobalBaseAttributeValues);
+        get => base.GlobalBaseAttributeValues ??= new CollectionAdapter<HNMO.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawGlobalBaseAttributeValues);
         protected set
         {
             this.GlobalBaseAttributeValues.Clear();
@@ -474,9 +474,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.PlugIns.PlugInConfiguration> PlugInConfigurations
+    public override ICollection<HNMO.PlugIns.PlugInConfiguration> PlugInConfigurations
     {
-        get => base.PlugInConfigurations ??= new CollectionAdapter<MUnique.OpenMU.PlugIns.PlugInConfiguration, PlugInConfiguration>(this.RawPlugInConfigurations);
+        get => base.PlugInConfigurations ??= new CollectionAdapter<HNMO.PlugIns.PlugInConfiguration, PlugInConfiguration>(this.RawPlugInConfigurations);
         protected set
         {
             this.PlugInConfigurations.Clear();
@@ -495,9 +495,9 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition> MiniGameDefinitions
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameDefinition> MiniGameDefinitions
     {
-        get => base.MiniGameDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition, MiniGameDefinition>(this.RawMiniGameDefinitions);
+        get => base.MiniGameDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameDefinition, MiniGameDefinition>(this.RawMiniGameDefinitions);
         protected set
         {
             this.MiniGameDefinitions.Clear();
@@ -520,7 +520,7 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.DuelConfiguration DuelConfiguration
+    public override HNMO.DataModel.Configuration.DuelConfiguration DuelConfiguration
     {
         get => base.DuelConfiguration;
         set => base.DuelConfiguration = value;
@@ -538,7 +538,7 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration CastleSiegeConfiguration
+    public override HNMO.DataModel.Configuration.CastleSiegeConfiguration CastleSiegeConfiguration
     {
         get => base.CastleSiegeConfiguration;
         set => base.CastleSiegeConfiguration = value;
@@ -556,14 +556,14 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CashShopConfiguration CashShopConfiguration
+    public override HNMO.DataModel.Configuration.CashShopConfiguration CashShopConfiguration
     {
         get => base.CashShopConfiguration;
         set => base.CashShopConfiguration = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -571,7 +571,7 @@ public partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

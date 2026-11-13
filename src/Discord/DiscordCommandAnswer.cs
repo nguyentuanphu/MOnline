@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordCommandAnswer.cs" company="MUnique">
+﻿// <copyright file="DiscordCommandAnswer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 /// <summary>
 /// The answer of a personal command, which is only shown to the user who used it.

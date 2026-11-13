@@ -1,10 +1,10 @@
-﻿// <copyright file="SimpleCraftingSettings.cs" company="MUnique">
+﻿// <copyright file="SimpleCraftingSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
+namespace HNMO.DataModel.Configuration.ItemCrafting;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Crafting settings for the simple item crafting handler.

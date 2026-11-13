@@ -1,8 +1,8 @@
-﻿// <copyright file="BaseStatAttribute.cs" company="MUnique">
+﻿// <copyright file="BaseStatAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.AttributeSystem;
+namespace HNMO.AttributeSystem;
 
 /// <summary>
 /// An attribute which represents an increasable stat attribute (e.g. by level-up points).

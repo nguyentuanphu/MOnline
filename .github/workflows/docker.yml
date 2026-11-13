@@ -1,7 +1,7 @@
 name: Docker images
 
 # Publishes the Docker images to Docker Hub when the project version (see src/SharedAssemblyInfo.cs)
-# was increased, i.e. when Docker Hub doesn't contain the image munique/openmu with this version yet.
+# was increased, i.e. when Docker Hub doesn't contain the image hnmo/hnmo with this version yet.
 # The images get the version (e.g. 1.2.3) and 'latest' as tags.
 # The images are only built when they are going to be published.
 # Publishing requires the repository secrets DOCKERHUB_USERNAME and DOCKERHUB_TOKEN.
@@ -28,7 +28,7 @@ jobs:
         run: |
           version=$(grep -oP '^\[assembly: AssemblyVersion\("\K[0-9]+\.[0-9]+\.[0-9]+' src/SharedAssemblyInfo.cs)
           echo "version=$version" >> "$GITHUB_OUTPUT"
-          if curl --silent --fail --location "https://hub.docker.com/v2/repositories/munique/openmu/tags/$version" > /dev/null; then
+          if curl --silent --fail --location "https://hub.docker.com/v2/repositories/hnmo/hnmo/tags/$version" > /dev/null; then
             echo "Version $version is already published."
             echo "publish=false" >> "$GITHUB_OUTPUT"
           else
@@ -46,15 +46,15 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - image: openmu
+          - image: hnmo
             dockerfile: src/Startup/Dockerfile
-          - image: openmu-admin
+          - image: hnmo-admin
             dockerfile: src/Dapr/AdminPanel.Host/Dockerfile
-          - image: openmu-central
+          - image: hnmo-central
             dockerfile: src/Dapr/CentralServer.Host/Dockerfile
-          - image: openmu-game
+          - image: hnmo-game
             dockerfile: src/Dapr/GameServer.Host/Dockerfile
-          - image: openmu-discord
+          - image: hnmo-discord
             dockerfile: src/Dapr/Discord.Host/Dockerfile
 
     steps:
@@ -80,5 +80,5 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
-            munique/${{ matrix.image }}:${{ needs.check.outputs.version }}
-            munique/${{ matrix.image }}:latest
+            hnmo/${{ matrix.image }}:${{ needs.check.outputs.version }}
+            hnmo/${{ matrix.image }}:latest

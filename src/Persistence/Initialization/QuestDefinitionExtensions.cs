@@ -1,15 +1,15 @@
-// <copyright file="QuestDefinitionExtensions.cs" company="MUnique">
+// <copyright file="QuestDefinitionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Extension methods to make quest creation easier.

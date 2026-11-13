@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class AttributeRequirementEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement),
+                "HNMO.Persistence.EntityFramework.Model.AttributeRequirement",
+                typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement),
                 baseEntityType,
                 propertyCount: 9,
                 navigationCount: 1,
@@ -32,19 +32,19 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var attributeId = runtimeEntityType.AddProperty(
                 "AttributeId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("AttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement).GetField("<AttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("AttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement).GetField("<AttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             attributeId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -69,16 +69,16 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var minimumItemLevel = runtimeEntityType.AddProperty(
                 "MinimumItemLevel",
                 typeof(byte?),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement).GetProperty("MinimumItemLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement).GetField("<MinimumItemLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.Items.AttributeRequirement).GetProperty("MinimumItemLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.Items.AttributeRequirement).GetField("<MinimumItemLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             minimumItemLevel.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var minimumValue = runtimeEntityType.AddProperty(
                 "MinimumValue",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement).GetProperty("MinimumValue", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement).GetField("<MinimumValue>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.Items.AttributeRequirement).GetProperty("MinimumValue", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.Items.AttributeRequirement).GetField("<MinimumValue>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             minimumValue.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -128,8 +128,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawAttribute = declaringEntityType.AddNavigation("RawAttribute",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("RawAttribute", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.AttributeDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRequirement).GetProperty("RawAttribute", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -144,9 +144,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawMapRequirements = principalEntityType.AddNavigation("RawMapRequirements",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition).GetProperty("RawMapRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition).GetField("<RawMapRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRequirement>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition).GetProperty("RawMapRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition).GetField("<RawMapRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -161,9 +161,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawJoinRequirements = principalEntityType.AddNavigation("RawJoinRequirements",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerDefinition).GetProperty("RawJoinRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerDefinition).GetField("<RawJoinRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRequirement>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerDefinition).GetProperty("RawJoinRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerDefinition).GetField("<RawJoinRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -178,9 +178,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRequirements = principalEntityType.AddNavigation("RawRequirements",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemDefinition).GetProperty("RawRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemDefinition).GetField("<RawRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRequirement>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemDefinition).GetProperty("RawRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemDefinition).GetField("<RawRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -195,9 +195,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawConsumeRequirements = principalEntityType.AddNavigation("RawConsumeRequirements",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Skill).GetProperty("RawConsumeRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Skill).GetField("<RawConsumeRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRequirement>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.Skill).GetProperty("RawConsumeRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.Skill).GetField("<RawConsumeRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -212,9 +212,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawRequirements = principalEntityType.AddNavigation("RawRequirements",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRequirement>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Skill).GetProperty("RawRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.Skill).GetField("<RawRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRequirement>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.Skill).GetProperty("RawRequirements", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.Skill).GetField("<RawRequirements>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

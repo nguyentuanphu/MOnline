@@ -1,12 +1,12 @@
-﻿// <copyright file="OptionExtensions.cs" company="MUnique">
+﻿// <copyright file="OptionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Items;
+namespace HNMO.Persistence.Initialization.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Extensions to get <see cref="ItemOptionDefinition"/>s of the <see cref="GameConfiguration"/>.

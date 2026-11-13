@@ -1,12 +1,12 @@
-// <copyright file="CashShopCoinCaption.cs" company="MUnique">
+// <copyright file="CashShopCoinCaption.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Provides the captions of the cash shop coin types.

@@ -1,10 +1,10 @@
-﻿// <copyright file="SetPetBehaviourRequestAction.cs" company="MUnique">
+﻿// <copyright file="SetPetBehaviourRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Action which requests to set a new behaviour for an equipped pet.

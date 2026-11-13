@@ -1,4 +1,4 @@
-// <copyright file="AppearanceData.Generated.cs" company="MUnique">
+// <copyright file="AppearanceData.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.AppearanceData"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.AppearanceData"/>.
 /// </summary>
 [Table(nameof(AppearanceData), Schema = SchemaNames.AccountData)]
-internal partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.AppearanceData, IIdentifiable
+internal partial class AppearanceData : HNMO.DataModel.Entities.AppearanceData, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.Appear
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.ItemAppearance> EquippedItems => base.EquippedItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.ItemAppearance, ItemAppearance>(this.RawEquippedItems);
+    public override ICollection<HNMO.DataModel.Entities.ItemAppearance> EquippedItems => base.EquippedItems ??= new CollectionAdapter<HNMO.DataModel.Entities.ItemAppearance, ItemAppearance>(this.RawEquippedItems);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="CharacterClass"/>.
@@ -54,7 +54,7 @@ internal partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.Appear
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass CharacterClass
+    public override HNMO.DataModel.Configuration.CharacterClass CharacterClass
     {
         get => base.CharacterClass;set
         {

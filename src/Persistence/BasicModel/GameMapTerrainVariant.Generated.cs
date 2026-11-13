@@ -1,4 +1,4 @@
-// <copyright file="GameMapTerrainVariant.Generated.cs" company="MUnique">
+// <copyright file="GameMapTerrainVariant.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GameMapTerrainVariant"/>.
 /// </summary>
-public partial class GameMapTerrainVariant : MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant, IIdentifiable, IConvertibleTo<GameMapTerrainVariant>
+public partial class GameMapTerrainVariant : HNMO.DataModel.Configuration.GameMapTerrainVariant, IIdentifiable, IConvertibleTo<GameMapTerrainVariant>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class GameMapTerrainVariant : MUnique.OpenMU.DataModel.Configurat
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameMapTerrainVariant Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameMapTerrainVariant();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class GameMapTerrainVariant : MUnique.OpenMU.DataModel.Configurat
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameMapTerrainVariant other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

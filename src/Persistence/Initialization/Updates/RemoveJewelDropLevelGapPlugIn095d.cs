@@ -1,18 +1,18 @@
-﻿// <copyright file="RemoveJewelDropLevelGapPlugIn095d.cs" company="MUnique">
+﻿// <copyright file="RemoveJewelDropLevelGapPlugIn095d.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update removes the existing drop level gap condition for jewels and similar items that should always drop.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.RemoveJewelDropLevelGapPlugInBase_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.RemoveJewelDropLevelGapPlugInBase_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.RemoveJewelDropLevelGapPlugInBase_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.RemoveJewelDropLevelGapPlugInBase_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6614E91E-5749-478A-96A4-3240E7C1280E")]
 public class RemoveJewelDropLevelGapPlugIn095D : RemoveJewelDropLevelGapPlugInBase
 {

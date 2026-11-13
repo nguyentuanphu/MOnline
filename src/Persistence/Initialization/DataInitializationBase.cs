@@ -1,27 +1,27 @@
-﻿// <copyright file="DataInitializationBase.cs" company="MUnique">
+﻿// <copyright file="DataInitializationBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
 using System.ComponentModel.Design;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
-using MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
-using MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
-using MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.GameLogic.Resets;
-using MUnique.OpenMU.GameServer.MessageHandler;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.MiniGames.Doppelganger;
+using HNMO.GameLogic.MiniGames.Kanturu;
+using HNMO.GameLogic.PlayerActions.ItemConsumeActions;
+using HNMO.GameLogic.PlayerShopCurrencies;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.Resets;
+using HNMO.GameServer.MessageHandler;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Updates;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Class to manage data initialization.

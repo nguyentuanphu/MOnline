@@ -1,8 +1,8 @@
-﻿// <copyright file="ManagableServerRegistry.cs" company="MUnique">
+﻿// <copyright file="ManagableServerRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System.Collections.Concurrent;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using global::Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// A registry for all <see cref="IManageableServer"/>s in the system.

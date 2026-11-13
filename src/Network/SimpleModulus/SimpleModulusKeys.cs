@@ -1,8 +1,8 @@
-// <copyright file="SimpleModulusKeys.cs" company="MUnique">
+// <copyright file="SimpleModulusKeys.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.SimpleModulus;
+namespace HNMO.Network.SimpleModulus;
 
 /// <summary>
 /// Class to hold encryption keys for the simple modulus algorithm.

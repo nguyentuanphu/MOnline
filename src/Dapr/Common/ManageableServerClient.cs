@@ -1,14 +1,14 @@
-﻿// <copyright file="ManageableServerClient.cs" company="MUnique">
+﻿// <copyright file="ManageableServerClient.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using global::Dapr.Client;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// A client to control a <seealso cref="IManageableServer"/>.
@@ -16,7 +16,7 @@ using MUnique.OpenMU.Interfaces;
 /// <remarks>
 /// The commands are published to all processes, and only the process which hosts the server executes them.
 /// </remarks>
-/// <seealso cref="MUnique.OpenMU.Interfaces.IManageableServer" />
+/// <seealso cref="HNMO.Interfaces.IManageableServer" />
 public class ManageableServerClient : IManageableServer
 {
     private ServerState _serverState;

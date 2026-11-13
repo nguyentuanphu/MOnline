@@ -1,13 +1,13 @@
-// <copyright file="BotProgression.cs" company="MUnique">
+// <copyright file="BotProgression.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// The shared progression rules of server-side bots: how a bot of a given class invests its stat

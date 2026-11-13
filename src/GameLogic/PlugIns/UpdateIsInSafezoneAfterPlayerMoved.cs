@@ -1,12 +1,12 @@
-﻿// <copyright file="UpdateIsInSafezoneAfterPlayerMoved.cs" company="MUnique">
+﻿// <copyright file="UpdateIsInSafezoneAfterPlayerMoved.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Attributes;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Updates the <see cref="Stats.IsInSafezone"/> and <see cref="Stats.IsResting"/> attributes.

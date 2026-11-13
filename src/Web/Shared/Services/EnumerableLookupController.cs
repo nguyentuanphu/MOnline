@@ -1,11 +1,11 @@
-// <copyright file="EnumerableLookupController.cs" company="MUnique">
+// <copyright file="EnumerableLookupController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.Collections;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// A <see cref="ILookupController"/> which will return objects of an

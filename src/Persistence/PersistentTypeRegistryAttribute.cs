@@ -1,14 +1,14 @@
-// <copyright file="PersistentTypeRegistryAttribute.cs" company="MUnique">
+// <copyright file="PersistentTypeRegistryAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Diagnostics.CodeAnalysis;
 
 /// <summary>
 /// Marks an assembly which contains a <see cref="IPersistentTypeRegistry"/> of its persistent types.
-/// It's added by the <c>PersistentTypeRegistryGenerator</c> of the <c>MUnique.OpenMU.Persistence.Generators</c> project,
+/// It's added by the <c>PersistentTypeRegistryGenerator</c> of the <c>HNMO.Persistence.Generators</c> project,
 /// for assemblies which are marked with the <see cref="GeneratePersistentTypeRegistryAttribute"/>.
 /// </summary>
 [AttributeUsage(AttributeTargets.Assembly)]

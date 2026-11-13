@@ -1,11 +1,11 @@
-// <copyright file="ZenConsumptionHandler.cs" company="MUnique">
+// <copyright file="ZenConsumptionHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.Views.MuHelper;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.Views.MuHelper;
 
 /// <summary>
 /// Handles the periodic Zen consumption for the offline player.

@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegeLifeStoneConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="CastleSiegeLifeStoneConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.GameLogic.CastleSiege.Actions;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.GameLogic.CastleSiege.Actions;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Consumes a Life Stone only after it was successfully placed during Castle Siege.

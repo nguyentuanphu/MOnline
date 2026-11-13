@@ -1,18 +1,18 @@
-// <copyright file="FixEventItemsDropFromMonstersUpdatePlugIn095d.cs" company="MUnique">
+// <copyright file="FixEventItemsDropFromMonstersUpdatePlugIn095d.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes event items that have DropsFromMonsters set to true,
 /// but should use dedicated DropItemGroups instead.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixEventItemsDropFromMonstersUpdatePlugIn095d_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixEventItemsDropFromMonstersUpdatePlugIn095d_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixEventItemsDropFromMonstersUpdatePlugIn095d_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixEventItemsDropFromMonstersUpdatePlugIn095d_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("B9C6D3E2-4F5A-6B7C-8D9E-0F1A2B3C4D5E")]
 public class FixEventItemsDropFromMonstersUpdatePlugIn095d : FixEventItemsDropFromMonstersUpdatePlugInBase
 {

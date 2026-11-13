@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class GameServerConfigurationGameMapDefinitionEntityType
@@ -19,8 +19,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition),
+                "HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition",
+                typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition),
                 baseEntityType,
                 propertyCount: 2,
                 navigationCount: 2,
@@ -31,8 +31,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var gameServerConfigurationId = runtimeEntityType.AddProperty(
                 "GameServerConfigurationId",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameServerConfigurationId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameServerConfigurationId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameServerConfigurationId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameServerConfigurationId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 afterSaveBehavior: PropertySaveBehavior.Throw,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             gameServerConfigurationId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
@@ -40,8 +40,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var gameMapDefinitionId = runtimeEntityType.AddProperty(
                 "GameMapDefinitionId",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameMapDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameMapDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameMapDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameMapDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 afterSaveBehavior: PropertySaveBehavior.Throw,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             gameMapDefinitionId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
@@ -67,9 +67,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var gameMapDefinition = declaringEntityType.AddNavigation("GameMapDefinition",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameMapDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameMapDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameMapDefinition>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.GameMapDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameMapDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameMapDefinition>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -85,16 +85,16 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var gameServerConfiguration = declaringEntityType.AddNavigation("GameServerConfiguration",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfiguration),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameServerConfiguration", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameServerConfiguration>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfiguration),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetProperty("GameServerConfiguration", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition).GetField("<GameServerConfiguration>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             var joinedMaps = principalEntityType.AddNavigation("JoinedMaps",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfiguration).GetProperty("JoinedMaps", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.GameServerConfiguration).GetField("<JoinedMaps>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.GameServerConfigurationGameMapDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfiguration).GetProperty("JoinedMaps", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.GameServerConfiguration).GetField("<JoinedMaps>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationPatch.cs" company="MUnique">
+// <copyright file="ConfigurationPatch.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Collections;
 using System.ComponentModel.DataAnnotations;
@@ -11,11 +11,11 @@ using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Threading;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>Restricts configuration patches to known model fields and explicit references.</summary>
 internal static class ConfigurationPatch
@@ -239,7 +239,7 @@ internal static class ConfigurationPatch
     /// <param name="property">The configuration property.</param>
     internal static bool IsReferenceCollection(PropertyInfo property) => property.PropertyType.IsGenericType
         && property.PropertyType.GetGenericTypeDefinition() == typeof(ICollection<>)
-        && !property.IsDefined(typeof(MUnique.OpenMU.DataModel.Composition.MemberOfAggregateAttribute))
+        && !property.IsDefined(typeof(HNMO.DataModel.Composition.MemberOfAggregateAttribute))
         && IsReference(property.PropertyType.GetGenericArguments()[0]);
 
     private static bool IsReference(Type type) => GameConfigurationHelper.Enumerables.ContainsKey(type) && type != typeof(PlugInConfiguration);

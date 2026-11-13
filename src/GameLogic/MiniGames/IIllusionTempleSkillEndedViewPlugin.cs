@@ -1,10 +1,10 @@
-// <copyright file="IIllusionTempleSkillEndedViewPlugin.cs" company="MUnique">
+// <copyright file="IIllusionTempleSkillEndedViewPlugin.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Interface of a view whose implementation informs about a special illusion temple skill (210 to 213)

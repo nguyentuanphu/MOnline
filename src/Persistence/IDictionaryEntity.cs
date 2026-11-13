@@ -1,8 +1,8 @@
-﻿// <copyright file="IDictionaryEntity.cs" company="MUnique">
+﻿// <copyright file="IDictionaryEntity.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// Interface for a dictionary entry of the dictionary adapter.

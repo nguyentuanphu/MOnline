@@ -1,10 +1,10 @@
-// <copyright file="ShopPrice.cs" company="MUnique">
+// <copyright file="ShopPrice.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// The price of an item in a player shop.

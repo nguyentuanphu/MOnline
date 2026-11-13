@@ -1,11 +1,11 @@
-﻿// <copyright file="IMapController.cs" company="MUnique">
+﻿// <copyright file="IMapController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.GameLogic;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Controller which contains the logic for the shown game map.

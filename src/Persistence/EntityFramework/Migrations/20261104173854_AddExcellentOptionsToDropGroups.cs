@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     /// <inheritdoc />
     public partial class AddExcellentOptionsToDropGroups : Migration

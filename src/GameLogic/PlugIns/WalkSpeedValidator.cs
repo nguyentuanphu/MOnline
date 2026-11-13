@@ -1,8 +1,8 @@
-// <copyright file="WalkSpeedValidator.cs" company="MUnique">
+// <copyright file="WalkSpeedValidator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// The pure math of the walk speed check: the distance of the walk steps which the server executed

@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -14,7 +14,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class MiniGameChangeEventEntityType
@@ -22,8 +22,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent),
+                "HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent",
+                typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent),
                 baseEntityType,
                 propertyCount: 11,
                 navigationCount: 3,
@@ -34,20 +34,20 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var description = runtimeEntityType.AddProperty(
                 "Description",
-                typeof(MUnique.OpenMU.Interfaces.LocalizedString),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Description", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<Description>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
-            description.SetValueConverter(new ValueConverter<MUnique.OpenMU.Interfaces.LocalizedString, string>(
+                typeof(HNMO.Interfaces.LocalizedString),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Description", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<Description>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+            description.SetValueConverter(new ValueConverter<HNMO.Interfaces.LocalizedString, string>(
                 string (LocalizedString value) => value.Value ?? string.Empty,
                 LocalizedString (string value) => new LocalizedString(value)));
             description.SetSentinelFromProviderValue("");
@@ -56,17 +56,17 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var index = runtimeEntityType.AddProperty(
                 "Index",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Index", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<Index>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Index", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<Index>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             index.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var message = runtimeEntityType.AddProperty(
                 "Message",
-                typeof(MUnique.OpenMU.Interfaces.LocalizedString),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Message", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<Message>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
-            message.SetValueConverter(new ValueConverter<MUnique.OpenMU.Interfaces.LocalizedString, string>(
+                typeof(HNMO.Interfaces.LocalizedString),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Message", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<Message>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+            message.SetValueConverter(new ValueConverter<HNMO.Interfaces.LocalizedString, string>(
                 string (LocalizedString value) => value.Value ?? string.Empty,
                 LocalizedString (string value) => new LocalizedString(value)));
             message.SetSentinelFromProviderValue("");
@@ -81,48 +81,48 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var minimumTargetLevel = runtimeEntityType.AddProperty(
                 "MinimumTargetLevel",
                 typeof(short?),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("MinimumTargetLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<MinimumTargetLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("MinimumTargetLevel", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<MinimumTargetLevel>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             minimumTargetLevel.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var multiplyKillsByPlayers = runtimeEntityType.AddProperty(
                 "MultiplyKillsByPlayers",
                 typeof(bool),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("MultiplyKillsByPlayers", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<MultiplyKillsByPlayers>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("MultiplyKillsByPlayers", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<MultiplyKillsByPlayers>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: false);
             multiplyKillsByPlayers.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var numberOfKills = runtimeEntityType.AddProperty(
                 "NumberOfKills",
                 typeof(short),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("NumberOfKills", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<NumberOfKills>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("NumberOfKills", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<NumberOfKills>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (short)0);
             numberOfKills.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var spawnAreaId = runtimeEntityType.AddProperty(
                 "SpawnAreaId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("SpawnAreaId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<SpawnAreaId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("SpawnAreaId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<SpawnAreaId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             spawnAreaId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var target = runtimeEntityType.AddProperty(
                 "Target",
-                typeof(MUnique.OpenMU.DataModel.Configuration.KillTarget),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent).GetField("<Target>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.DataModel.Configuration.KillTarget),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetProperty("Target", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.MiniGameChangeEvent).GetField("<Target>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             target.SetSentinelFromProviderValue(0);
             target.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var targetDefinitionId = runtimeEntityType.AddProperty(
                 "TargetDefinitionId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("TargetDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<TargetDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("TargetDefinitionId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetField("<TargetDefinitionId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             targetDefinitionId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -153,9 +153,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawChangeEvents = principalEntityType.AddNavigation("RawChangeEvents",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawChangeEvents", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawChangeEvents>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetProperty("RawChangeEvents", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameDefinition).GetField("<RawChangeEvents>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -171,8 +171,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawSpawnArea = declaringEntityType.AddNavigation("RawSpawnArea",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterSpawnArea),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("RawSpawnArea", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.MonsterSpawnArea),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("RawSpawnArea", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -186,8 +186,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawTargetDefinition = declaringEntityType.AddNavigation("RawTargetDefinition",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterDefinition),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("RawTargetDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.MonsterDefinition),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MiniGameChangeEvent).GetProperty("RawTargetDefinition", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

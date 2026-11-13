@@ -1,12 +1,12 @@
-﻿// <copyright file="ClientLanguage.cs" company="MUnique">
+﻿// <copyright file="ClientLanguage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.PlugIns;
+namespace HNMO.Network.PlugIns;
 
 /// <summary>
 /// The language of the client.
-/// Webzen released clients to different countries, with slightly different network protocol, mostly different header values.
+/// the original developers released clients to different countries, with slightly different network protocol, mostly different header values.
 /// </summary>
 public enum ClientLanguage
 {

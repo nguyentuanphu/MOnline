@@ -117,16 +117,16 @@ Some short notes about the client:
 
 ### Adding Points
 
-* For code, see [AddMasterPointAction](https://github.com/MUnique/OpenMU/tree/master/src/GameLogic/PlayerActions/Character/AddMasterPointAction.cs).
+* For code, see [AddMasterPointAction](https://github.com/nguyentuanphu/HNMO/tree/master/src/GameLogic/PlayerActions/Character/AddMasterPointAction.cs).
 * Request Packet: [C1F352 - Add Master Skill Point](Packets/C1-F3-52-AddMasterSkillPoint_by-client.md)
 * Response Packet: [C1F352 - Master skill level update](Packets/C1-F3-52-MasterSkillLevelUpdate_by-server.md)
 
 ### Sending Master Stats (F3 50)
 
-* For code, see [UpdateMasterStatsPlugIn](https://github.com/MUnique/OpenMU/tree/master/src/GameServer/RemoteView/Character/UpdateMasterStatsPlugIn.cs).
+* For code, see [UpdateMasterStatsPlugIn](https://github.com/nguyentuanphu/HNMO/tree/master/src/GameServer/RemoteView/Character/UpdateMasterStatsPlugIn.cs).
 * Request Packet: [C2F350 - Master Stats Update](Packets/C1-F3-50-MasterStatsUpdate_by-server.md)
 
 ### Sending Master Skills (F3 53)
 
-* For code, see [UpdateMasterSkillsPlugIn](https://github.com/MUnique/OpenMU/tree/master/src/GameServer/RemoteView/Character/UpdateMasterSkillsPlugIn.cs).
+* For code, see [UpdateMasterSkillsPlugIn](https://github.com/nguyentuanphu/HNMO/tree/master/src/GameServer/RemoteView/Character/UpdateMasterSkillsPlugIn.cs).
 * Packet: [C2F353 - Master Skill List](Packets/C2-F3-53-MasterSkillList_by-server.md)

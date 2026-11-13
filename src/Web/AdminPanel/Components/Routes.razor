@@ -1,4 +1,4 @@
-﻿@using MUnique.OpenMU.Web.AdminPanel.Pages
+﻿@using HNMO.Web.AdminPanel.Pages
 
 <Router AppAssembly="@typeof(Program).Assembly" NotFoundPage="@typeof(Pages.NotFound)">
   <Found Context="routeData">
@@ -15,7 +15,7 @@
           }
         </NotAuthorized>
         <Authorizing>
-          <div class="p-4">@MUnique.OpenMU.Web.AdminPanel.Properties.Resources.Loading</div>
+          <div class="p-4">@HNMO.Web.AdminPanel.Properties.Resources.Loading</div>
         </Authorizing>
       </AuthorizeRouteView>
       <FocusOnNavigate RouteData="routeData" Selector="h1"/>

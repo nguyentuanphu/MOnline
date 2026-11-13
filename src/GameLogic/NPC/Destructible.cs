@@ -1,11 +1,11 @@
-﻿// <copyright file="Destructible.cs" company="MUnique">
+﻿// <copyright file="Destructible.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The implementation of a destructible, which can attack players.

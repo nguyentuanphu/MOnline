@@ -1,14 +1,14 @@
-﻿// <copyright file="TerrainController.cs" company="MUnique">
+﻿// <copyright file="TerrainController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Controller for all map related functions.

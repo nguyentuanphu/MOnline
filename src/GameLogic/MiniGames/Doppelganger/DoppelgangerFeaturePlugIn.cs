@@ -1,11 +1,11 @@
-﻿// <copyright file="DoppelgangerFeaturePlugIn.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerFeaturePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
+namespace HNMO.GameLogic.MiniGames.Doppelganger;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The feature plug-in of the doppelganger event. Its configuration describes the run of the event,

@@ -1,4 +1,4 @@
-// <copyright file="JewelMix.Generated.cs" company="MUnique">
+// <copyright file="JewelMix.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.JewelMix"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.JewelMix"/>.
 /// </summary>
 [Table(nameof(JewelMix), Schema = SchemaNames.Configuration)]
-internal partial class JewelMix : MUnique.OpenMU.DataModel.Configuration.JewelMix, IIdentifiable
+internal partial class JewelMix : HNMO.DataModel.Configuration.JewelMix, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class JewelMix : MUnique.OpenMU.DataModel.Configuration.JewelMi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition SingleJewel
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition SingleJewel
     {
         get => base.SingleJewel;set
         {
@@ -71,7 +71,7 @@ internal partial class JewelMix : MUnique.OpenMU.DataModel.Configuration.JewelMi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition MixedJewel
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition MixedJewel
     {
         get => base.MixedJewel;set
         {
@@ -81,7 +81,7 @@ internal partial class JewelMix : MUnique.OpenMU.DataModel.Configuration.JewelMi
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.JewelMix Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.JewelMix Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new JewelMix();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -89,7 +89,7 @@ internal partial class JewelMix : MUnique.OpenMU.DataModel.Configuration.JewelMi
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.JewelMix other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.JewelMix other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

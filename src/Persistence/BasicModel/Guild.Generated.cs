@@ -1,4 +1,4 @@
-// <copyright file="Guild.Generated.cs" company="MUnique">
+// <copyright file="Guild.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Guild"/>.
 /// </summary>
-public partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentifiable, IConvertibleTo<Guild>
+public partial class Guild : HNMO.DataModel.Entities.Guild, IIdentifiable, IConvertibleTo<Guild>
 {
     
     
@@ -30,9 +30,9 @@ public partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentifia
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.GuildMember> Members
+    public override ICollection<HNMO.DataModel.Entities.GuildMember> Members
     {
-        get => base.Members ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.GuildMember, GuildMember>(this.RawMembers);
+        get => base.Members ??= new CollectionAdapter<HNMO.DataModel.Entities.GuildMember, GuildMember>(this.RawMembers);
         protected set
         {
             this.Members.Clear();
@@ -55,7 +55,7 @@ public partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentifia
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.Interfaces.Guild Hostility
+    public override HNMO.Interfaces.Guild Hostility
     {
         get => base.Hostility;
         set => base.Hostility = value;
@@ -73,7 +73,7 @@ public partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentifia
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.Interfaces.Guild AllianceGuild
+    public override HNMO.Interfaces.Guild AllianceGuild
     {
         get => base.AllianceGuild;
         set => base.AllianceGuild = value;

@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeCrown.cs" company="MUnique">
+// <copyright file="CastleSiegeCrown.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+namespace HNMO.GameLogic.CastleSiege.NPC;
 
-using MUnique.OpenMU.GameLogic.CastleSiege.Intelligence;
+using HNMO.GameLogic.CastleSiege.Intelligence;
 
 /// <summary>
 /// The interactive Castle Siege Crown.

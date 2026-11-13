@@ -1,8 +1,8 @@
-﻿// <copyright file="IndexedLinkedList{T}.cs" company="MUnique">
+﻿// <copyright file="IndexedLinkedList{T}.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Pathfinding;
+namespace HNMO.Pathfinding;
 
 /// <summary>
 /// An indexed linked list which implements <see cref="IPriorityQueue{T}"/>.

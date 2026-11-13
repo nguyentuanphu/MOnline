@@ -1,13 +1,13 @@
-﻿// <copyright file="ConnectServerConfigurationViewItem.cs" company="MUnique">
+﻿// <copyright file="ConnectServerConfigurationViewItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.ConnectServer;
+namespace HNMO.Web.AdminPanel.Components.ConnectServer;
 
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
 
 /// <summary>
 /// A view item for the <see cref="ConnectServerDefinition"/>.
@@ -39,7 +39,7 @@ public class ConnectServerConfigurationViewItem
     /// Gets or sets the description of the server.
     /// </summary>
     /// <remarks>
-    /// Will be displayed in the server list in the admin panel as <see cref="P:MUnique.OpenMU.Interfaces.IManageableServer.Description" />.
+    /// Will be displayed in the server list in the admin panel as <see cref="P:HNMO.Interfaces.IManageableServer.Description" />.
     /// </remarks>
     [Required]
     public string Description
@@ -110,7 +110,7 @@ public class ConnectServerConfigurationViewItem
     }
 
     /// <summary>
-    /// Gets or sets a value indicating whether the <see cref="P:MUnique.OpenMU.DataModel.Configuration.ConnectServerDefinition.MaxConnectionsPerAddress" /> should be checked.
+    /// Gets or sets a value indicating whether the <see cref="P:HNMO.DataModel.Configuration.ConnectServerDefinition.MaxConnectionsPerAddress" /> should be checked.
     /// </summary>
     public bool CheckMaxConnectionsPerAddress
     {

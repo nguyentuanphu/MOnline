@@ -1,12 +1,12 @@
-// <copyright file="CreationPanelService.cs" company="MUnique">
+// <copyright file="CreationPanelService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Properties;
+using HNMO.DataModel;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Properties;
 
 /// <summary>
 /// A circuit-scoped service that holds the currently active <see cref="CreationSession"/>.

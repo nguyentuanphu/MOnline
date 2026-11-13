@@ -1,20 +1,20 @@
-// <copyright file="AddProtectionTalismansUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddProtectionTalismansUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the Talisman of Guardian (13/81), which protects from the death penalty,
 /// and the Talisman of Item Protection (13/82), which keeps the durability of the equipped items.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddProtectionTalismansUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddProtectionTalismansUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddProtectionTalismansUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddProtectionTalismansUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("CDE78D33-BDAF-4E0B-BEA4-29DC58F5D72A")]
 public class AddProtectionTalismansUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,12 +1,12 @@
-﻿// <copyright file="ValueTable.razor.cs" company="MUnique">
+﻿// <copyright file="ValueTable.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// A component which shows a collection of <typeparamref name="TValue"/> in a table.

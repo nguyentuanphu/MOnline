@@ -1,13 +1,13 @@
-// <copyright file="ScriptedPlayer.cs" company="MUnique">
+// <copyright file="ScriptedPlayer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Views;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A scripted actor: a connection-less player which enters the world as an existing account's
@@ -15,7 +15,7 @@ using MUnique.OpenMU.PlugIns;
 /// </summary>
 /// <remarks>
 /// It derives from <see cref="Player"/> and NOT from
-/// <see cref="MUnique.OpenMU.GameLogic.Offline.OfflinePlayer"/> on purpose: the bot code treats
+/// <see cref="HNMO.GameLogic.Offline.OfflinePlayer"/> on purpose: the bot code treats
 /// offline players as one of its own (<c>BotSelfDefensePlugIn</c> only registers an aggressor which
 /// is <c>not OfflinePlayer</c>, the mini-game handler skips offline party leaders, and the admin
 /// panel lists them as offline accounts). An actor has to be a human stand-in, so it repeats the
@@ -99,9 +99,9 @@ public class ScriptedPlayer : Player
         this.Account = account;
         this.AccountLoginName = account.LoginName;
 
-        await this.PlayerState.TryAdvanceToAsync(MUnique.OpenMU.GameLogic.PlayerState.LoginScreen).ConfigureAwait(false);
-        await this.PlayerState.TryAdvanceToAsync(MUnique.OpenMU.GameLogic.PlayerState.Authenticated).ConfigureAwait(false);
-        await this.PlayerState.TryAdvanceToAsync(MUnique.OpenMU.GameLogic.PlayerState.CharacterSelection).ConfigureAwait(false);
+        await this.PlayerState.TryAdvanceToAsync(HNMO.GameLogic.PlayerState.LoginScreen).ConfigureAwait(false);
+        await this.PlayerState.TryAdvanceToAsync(HNMO.GameLogic.PlayerState.Authenticated).ConfigureAwait(false);
+        await this.PlayerState.TryAdvanceToAsync(HNMO.GameLogic.PlayerState.CharacterSelection).ConfigureAwait(false);
 
         await this.GameContext.AddPlayerAsync(this).ConfigureAwait(false);
 
@@ -110,7 +110,7 @@ public class ScriptedPlayer : Player
         // player does) only earns an "already on map" warning in the log.
         await this.SetSelectedCharacterAsync(character).ConfigureAwait(false);
 
-        if (this.PlayerState.CurrentState != MUnique.OpenMU.GameLogic.PlayerState.EnteredWorld)
+        if (this.PlayerState.CurrentState != HNMO.GameLogic.PlayerState.EnteredWorld)
         {
             this.Logger.LogError(
                 "Actor {LoginName} did not enter the world; it is in state {State}.",

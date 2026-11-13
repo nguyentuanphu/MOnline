@@ -24,19 +24,19 @@ COPY Directory.Build.props .
 COPY Startup/*.csproj Startup/
 COPY Persistence/**/*.csproj Persistence/
 
-RUN dotnet restore "Startup/MUnique.OpenMU.Startup.csproj"
+RUN dotnet restore "Startup/HNMO.Startup.csproj"
 
 COPY . .
 
 WORKDIR /src/Startup
 
-RUN dotnet build "MUnique.OpenMU.Startup.csproj" \
+RUN dotnet build "HNMO.Startup.csproj" \
     -c Release \
     -o /app/build \
     -p:ci=true
 
 FROM build AS publish
-RUN dotnet publish "MUnique.OpenMU.Startup.csproj" \
+RUN dotnet publish "HNMO.Startup.csproj" \
     -c Release \
     -o /app/publish \
     -p:ci=true
@@ -54,4 +54,4 @@ RUN mkdir -p /app/logs /app/data-protection-keys && chmod 777 /app/logs /app/dat
 ARG APP_UID=1000
 USER ${APP_UID}
 
-ENTRYPOINT ["dotnet", "MUnique.OpenMU.Startup.dll", "-autostart"]
+ENTRYPOINT ["dotnet", "HNMO.Startup.dll", "-autostart"]

@@ -1,15 +1,15 @@
-// <copyright file="KanturuNightmareRunner.cs" company="MUnique">
+// <copyright file="KanturuNightmareRunner.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Runs the Nightmare boss fight: spawn wait, health-phase teleports with minion

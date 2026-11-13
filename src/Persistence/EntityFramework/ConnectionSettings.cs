@@ -1,8 +1,8 @@
-﻿// <copyright file="ConnectionSettings.cs" company="MUnique">
+﻿// <copyright file="ConnectionSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Runtime.Serialization;
 using System.Xml.Serialization;
@@ -11,8 +11,8 @@ using System.Xml.Serialization;
 /// The database connection settings xml serialization class.
 /// </summary>
 [Serializable]
-[XmlType(AnonymousType = true, Namespace = "http://www.munique.net/ConnectionSettings")]
-[XmlRoot(Namespace = "http://www.munique.net/ConnectionSettings", IsNullable = false)]
+[XmlType(AnonymousType = true, Namespace = "https://github.com/nguyentuanphu/HNMO/ConnectionSettings")]
+[XmlRoot(Namespace = "https://github.com/nguyentuanphu/HNMO/ConnectionSettings", IsNullable = false)]
 public class ConnectionSettings : IDeserializationCallback
 {
     /// <summary>

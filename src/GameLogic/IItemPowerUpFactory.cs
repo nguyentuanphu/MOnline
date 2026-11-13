@@ -1,12 +1,12 @@
-﻿// <copyright file="IItemPowerUpFactory.cs" company="MUnique">
+﻿// <copyright file="IItemPowerUpFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// A Factory for power ups which are provided by equipped items.

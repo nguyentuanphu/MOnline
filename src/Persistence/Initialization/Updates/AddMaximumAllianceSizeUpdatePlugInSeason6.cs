@@ -1,14 +1,14 @@
-// <copyright file="AddMaximumAllianceSizeUpdatePlugInSeason6.cs" company="MUnique">
+// <copyright file="AddMaximumAllianceSizeUpdatePlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the <see cref="Stats.MaximumAllianceSize"/> global base attribute
@@ -17,7 +17,7 @@ using MUnique.OpenMU.PlugIns;
 /// receive this attribute.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMaximumAllianceSizeUpdatePlugInSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMaximumAllianceSizeUpdatePlugInSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMaximumAllianceSizeUpdatePlugInSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMaximumAllianceSizeUpdatePlugInSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("2C2743B0-1305-47BF-85D9-09F6CA64AD54")]
 public class AddMaximumAllianceSizeUpdatePlugInSeason6 : UpdatePlugInBase
 {

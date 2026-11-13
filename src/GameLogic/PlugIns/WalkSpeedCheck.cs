@@ -1,12 +1,12 @@
-// <copyright file="WalkSpeedCheck.cs" company="MUnique">
+// <copyright file="WalkSpeedCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Records server-executed walk steps and evaluates their pace over a sliding window.

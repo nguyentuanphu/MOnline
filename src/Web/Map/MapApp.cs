@@ -1,15 +1,15 @@
-﻿// <copyright file="MapApp.cs" company="MUnique">
+﻿// <copyright file="MapApp.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map;
+namespace HNMO.Web.Map;
 
 using System.Threading;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.Web.Map.Map;
 
 /// <summary>
 /// The admin panel host class which provides a web server over ASP.NET Core Kestrel.
@@ -73,7 +73,7 @@ public sealed class MapApp : IHostedService, IDisposable
         app.UseStaticFiles();
         app.UseAntiforgery();
 
-        app.MapRazorComponents<MUnique.OpenMU.Web.Map.App>()
+        app.MapRazorComponents<HNMO.Web.Map.App>()
             .AddInteractiveServerRenderMode();
         app.MapControllers();
 

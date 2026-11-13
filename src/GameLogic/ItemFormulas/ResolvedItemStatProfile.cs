@@ -1,11 +1,11 @@
-// <copyright file="ResolvedItemStatProfile.cs" company="MUnique">
+// <copyright file="ResolvedItemStatProfile.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.ItemFormulas;
+namespace HNMO.GameLogic.ItemFormulas;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// The item formulas of an item definition: its <see cref="ItemDefinition.StatProfile"/> laid over the profile named

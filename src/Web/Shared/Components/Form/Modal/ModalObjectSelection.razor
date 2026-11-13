@@ -1,10 +1,10 @@
 ﻿@typeparam TItem
 
-@using MUnique.OpenMU.Web.Shared.Components.Modal
+@using HNMO.Web.Shared.Components.Modal
 
 <EditForm Model="@this">
   <CascadingValue Value="@this.PersistenceContext">
-    <LookupField TObject="TItem" @bind-Value="@Item" Label="@(MUnique.OpenMU.DataModel.ModelResourceProvider.GetTypeCaption<TItem>())"/>
+    <LookupField TObject="TItem" @bind-Value="@Item" Label="@(HNMO.DataModel.ModelResourceProvider.GetTypeCaption<TItem>())"/>
   </CascadingValue>
 
   <div class="form-actions">

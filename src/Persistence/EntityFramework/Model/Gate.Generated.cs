@@ -1,4 +1,4 @@
-// <copyright file="Gate.Generated.cs" company="MUnique">
+// <copyright file="Gate.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Gate"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Gate"/>.
 /// </summary>
 [Table(nameof(Gate), Schema = SchemaNames.Configuration)]
-internal partial class Gate : MUnique.OpenMU.DataModel.Configuration.Gate, IIdentifiable
+internal partial class Gate : HNMO.DataModel.Configuration.Gate, IIdentifiable
 {
     
     
@@ -29,7 +29,7 @@ internal partial class Gate : MUnique.OpenMU.DataModel.Configuration.Gate, IIden
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Gate Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Gate Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Gate();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -37,7 +37,7 @@ internal partial class Gate : MUnique.OpenMU.DataModel.Configuration.Gate, IIden
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Gate other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Gate other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

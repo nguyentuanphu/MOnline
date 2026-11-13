@@ -1,12 +1,12 @@
-// <copyright file="KanturuMayaWideAttacker.cs" company="MUnique">
+// <copyright file="KanturuMayaWideAttacker.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Runs Maya's wide area attack: broadcast, damage, and the pendant kill.

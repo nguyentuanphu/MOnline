@@ -4,7 +4,7 @@
 @using Microsoft.AspNetCore.Builder
 @using Microsoft.Extensions.Options
 
-@inherits NotifyableInputBase<MUnique.OpenMU.Interfaces.LocalizedString>
+@inherits NotifyableInputBase<HNMO.Interfaces.LocalizedString>
 
 @inject IOptions<RequestLocalizationOptions> LocalizationOptions
 
@@ -14,7 +14,7 @@
   @foreach (var culture in this.LocalizationOptions.Value.SupportedUICultures ?? [])
   {
     <div class="mb-1 localized-value">
-      <input id="@(MUnique.OpenMU.Interfaces.LocalizedString.NeutralLanguageCode == culture.TwoLetterISOLanguageName ? this.FieldIdentifier.FieldName : this.FieldIdentifier.FieldName + "_" + culture.Name)"
+      <input id="@(HNMO.Interfaces.LocalizedString.NeutralLanguageCode == culture.TwoLetterISOLanguageName ? this.FieldIdentifier.FieldName : this.FieldIdentifier.FieldName + "_" + culture.Name)"
              class="@(this.GetInputClass(culture))"
              value="@GetValueForCulture(culture)"
              @onchange="(e => SetValueForCulture(culture, e.Value?.ToString()))"
@@ -49,13 +49,13 @@
     }
 
     /// <inheritdoc />
-    protected override bool TryParseValueFromString(string? value, [MaybeNullWhen(false)] out MUnique.OpenMU.Interfaces.LocalizedString result, [NotNullWhen(false)] out string? validationErrorMessage)
+    protected override bool TryParseValueFromString(string? value, [MaybeNullWhen(false)] out HNMO.Interfaces.LocalizedString result, [NotNullWhen(false)] out string? validationErrorMessage)
     {
-        if (value is not null && value.Contains(MUnique.OpenMU.Interfaces.LocalizedString.Separator, StringComparison.Ordinal))
+        if (value is not null && value.Contains(HNMO.Interfaces.LocalizedString.Separator, StringComparison.Ordinal))
         {
             result = new(string.Empty);
             validationErrorMessage = string.Empty;
-            // validationErrorMessage = string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.TheValueMustNotContain, culMUnique.OpenMU.Interfaces.LocalizedString.Separator);
+            // validationErrorMessage = string.Format(HNMO.Web.Shared.Properties.Resources.TheValueMustNotContain, culHNMO.Interfaces.LocalizedString.Separator);
             return false;
         }
 
@@ -83,11 +83,11 @@
           && this._validationMessageStore is not null
           && newValue is not null
           && existingError is null
-          && newValue.Contains(OpenMU.Interfaces.LocalizedString.Separator, StringComparison.Ordinal))
+          && newValue.Contains(HNMO.Interfaces.LocalizedString.Separator, StringComparison.Ordinal))
       {
             this._validationMessageStore.Add(
               this.FieldIdentifier,
-              string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.TheValueMustNotContain, culture.Name, MUnique.OpenMU.Interfaces.LocalizedString.Separator));
+              string.Format(HNMO.Web.Shared.Properties.Resources.TheValueMustNotContain, culture.Name, HNMO.Interfaces.LocalizedString.Separator));
 
         // Notify the EditContext that validation state changed
         this.EditContext.NotifyValidationStateChanged();

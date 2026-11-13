@@ -1,20 +1,20 @@
-﻿// <copyright file="AddRageFighterAncientSetsUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddRageFighterAncientSetsUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the ancient sets of the rage fighter's Sacred items, Vega and Chamer,
 /// which the season 6 client already knows.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddRageFighterAncientSetsUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddRageFighterAncientSetsUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddRageFighterAncientSetsUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddRageFighterAncientSetsUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("3C129EEE-F920-4502-B1EC-38E920CF736E")]
 public class AddRageFighterAncientSetsUpdatePlugIn : UpdatePlugInBase
 {

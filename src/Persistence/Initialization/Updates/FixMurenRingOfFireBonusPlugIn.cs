@@ -1,15 +1,15 @@
-﻿// <copyright file="FixMurenRingOfFireBonusPlugIn.cs" company="MUnique">
+﻿// <copyright file="FixMurenRingOfFireBonusPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update gives the Ring of Fire of the Muren ancient set its energy bonus, which was initialized as vitality.
@@ -21,7 +21,7 @@ using MUnique.OpenMU.PlugIns;
 /// Items which were created before keep the bonus option they were created with.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixMurenRingOfFireBonusPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixMurenRingOfFireBonusPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixMurenRingOfFireBonusPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixMurenRingOfFireBonusPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6E276910-8475-41E2-8085-978EA007C68B")]
 public class FixMurenRingOfFireBonusPlugIn : UpdatePlugInBase
 {

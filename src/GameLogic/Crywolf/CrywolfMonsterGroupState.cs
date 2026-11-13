@@ -1,11 +1,11 @@
-﻿// <copyright file="CrywolfMonsterGroupState.cs" company="MUnique">
+﻿// <copyright file="CrywolfMonsterGroupState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// The state of a group of the army of Balgass during an event.

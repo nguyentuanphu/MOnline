@@ -1,13 +1,13 @@
-﻿// <copyright file="WanderingMerchantsPlugIn.cs" company="MUnique">
+﻿// <copyright file="WanderingMerchantsPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.WanderingMerchants;
+namespace HNMO.GameLogic.PlugIns.WanderingMerchants;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugins spawns and moves the wandering merchants.

@@ -1,18 +1,18 @@
-// <copyright file="LiveGameOperations.cs" company="MUnique">
+// <copyright file="LiveGameOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Administration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Administration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Authorizes, previews and audits live GM actions on their owning game server.</summary>
 /// <param name="servers">The server registry.</param>

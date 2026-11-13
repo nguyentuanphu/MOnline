@@ -1,12 +1,12 @@
-﻿// <copyright file="GuildWarAnswerAction.cs" company="MUnique">
+﻿// <copyright file="GuildWarAnswerAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Guild;
+namespace HNMO.GameLogic.PlayerActions.Guild;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.Views.Guild;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.Views.Guild;
 
 /// <summary>
 /// Action to handle the response of the requested guild master about the guild war.

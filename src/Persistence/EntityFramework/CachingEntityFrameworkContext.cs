@@ -1,12 +1,12 @@
-﻿// <copyright file="CachingEntityFrameworkContext.cs" company="MUnique">
+﻿// <copyright file="CachingEntityFrameworkContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Implementation of <see cref="IContext"/> for the entity framework <see cref="PersistenceContextProvider"/>.

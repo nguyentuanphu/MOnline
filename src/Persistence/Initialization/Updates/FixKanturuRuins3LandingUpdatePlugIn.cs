@@ -1,13 +1,13 @@
-// <copyright file="FixKanturuRuins3LandingUpdatePlugIn.cs" company="MUnique">
+// <copyright file="FixKanturuRuins3LandingUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Narrows the seeded Kanturu Ruins 3 landing area to walkable terrain.

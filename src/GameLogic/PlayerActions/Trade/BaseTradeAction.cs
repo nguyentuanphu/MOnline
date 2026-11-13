@@ -1,12 +1,12 @@
-﻿// <copyright file="BaseTradeAction.cs" company="MUnique">
+﻿// <copyright file="BaseTradeAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Trade;
+namespace HNMO.GameLogic.PlayerActions.Trade;
 
 using System.Diagnostics.Metrics;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to cancel a trade.

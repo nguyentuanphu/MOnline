@@ -1,19 +1,19 @@
-﻿// <copyright file="TalkNpcAction.cs" company="MUnique">
+﻿// <copyright file="TalkNpcAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions;
+namespace HNMO.GameLogic.PlayerActions;
 
-using MUnique.OpenMU.GameLogic.Crywolf;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlayerActions.Quests;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.GameLogic.Views.Quest;
-using MUnique.OpenMU.GameLogic.Views.Vault;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Crywolf;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlayerActions.Quests;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.GameLogic.Views.Quest;
+using HNMO.GameLogic.Views.Vault;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to talk to a npc.

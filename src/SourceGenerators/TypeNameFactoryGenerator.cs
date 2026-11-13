@@ -1,8 +1,8 @@
-// <copyright file="TypeNameFactoryGenerator.cs" company="MUnique">
+// <copyright file="TypeNameFactoryGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.SourceGenerators;
+namespace HNMO.SourceGenerators;
 
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
@@ -22,7 +22,7 @@ using Microsoft.CodeAnalysis.Text;
 [Generator]
 public class TypeNameFactoryGenerator : IIncrementalGenerator
 {
-    private const string TypeNameFactoryAttributeFullName = "MUnique.OpenMU.Annotations.TypeNameFactoryAttribute";
+    private const string TypeNameFactoryAttributeFullName = "HNMO.Annotations.TypeNameFactoryAttribute";
 
     private static readonly SymbolDisplayFormat TypeFormat = SymbolDisplayFormat.FullyQualifiedFormat
         .AddMiscellaneousOptions(SymbolDisplayMiscellaneousOptions.IncludeNullableReferenceTypeModifier);

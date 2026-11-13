@@ -1,14 +1,14 @@
-﻿// <copyright file="CharInfoChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="CharInfoChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.IO;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles charinfo commands.

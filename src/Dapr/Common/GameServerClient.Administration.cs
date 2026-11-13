@@ -1,12 +1,12 @@
-// <copyright file="GameServerClient.Administration.cs" company="MUnique">
+// <copyright file="GameServerClient.Administration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>The confirmed live administration part of the remote game server client.</summary>
 public sealed partial class GameServerClient : IGameServerAdministration

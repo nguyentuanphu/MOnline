@@ -1,17 +1,17 @@
-// <copyright file="Quests.cs" company="MUnique">
+// <copyright file="Quests.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameServer.MessageHandler.Quests;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameServer.MessageHandler.Quests;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
 /// <summary>
 /// Data Initialization for quests.

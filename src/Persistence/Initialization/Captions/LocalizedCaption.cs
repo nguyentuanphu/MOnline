@@ -1,12 +1,12 @@
-// <copyright file="LocalizedCaption.cs" company="MUnique">
+// <copyright file="LocalizedCaption.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Captions;
+namespace HNMO.Persistence.Initialization.Captions;
 
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
 
 /// <summary>
 /// A <see cref="LocalizedString"/> property value of an object of the configuration.

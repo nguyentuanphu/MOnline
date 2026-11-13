@@ -1,20 +1,20 @@
-﻿// <copyright file="ItemChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="ItemChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Administration;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Administration;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles gm item command.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.IChatCommandPlugIn" />
+/// <seealso cref="HNMO.GameLogic.PlugIns.ChatCommands.IChatCommandPlugIn" />
 [Guid("ABFE2440-E765-4F17-A588-BD9AE3799887")]
 [PlugIn]
 [Display(Name = nameof(PlugInResources.ItemChatCommandPlugIn_Name), Description = nameof(PlugInResources.ItemChatCommandPlugIn_Description), ResourceType = typeof(PlugInResources))]

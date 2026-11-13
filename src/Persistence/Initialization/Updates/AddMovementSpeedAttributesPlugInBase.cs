@@ -1,26 +1,26 @@
-// <copyright file="AddMovementSpeedAttributesPlugInBase.cs" company="MUnique">
+// <copyright file="AddMovementSpeedAttributesPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using AtlansMap = MUnique.OpenMU.Persistence.Initialization.Version075.Maps.Atlans;
-using Doppelgaenger3Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Doppelgaenger3;
-using Kalima1Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima1;
-using Kalima2Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima2;
-using Kalima3Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima3;
-using Kalima4Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima4;
-using Kalima5Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima5;
-using Kalima6Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima6;
-using Kalima7Map = MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps.Kalima7;
+using HNMO.AttributeSystem;
+using HNMO.DataModel;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Skills;
+using AtlansMap = HNMO.Persistence.Initialization.Version075.Maps.Atlans;
+using Doppelgaenger3Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Doppelgaenger3;
+using Kalima1Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima1;
+using Kalima2Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima2;
+using Kalima3Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima3;
+using Kalima4Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima4;
+using Kalima5Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima5;
+using Kalima6Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima6;
+using Kalima7Map = HNMO.Persistence.Initialization.VersionSeasonSix.Maps.Kalima7;
 
 /// <summary>
 /// Adds movement speed attributes and configuration values.

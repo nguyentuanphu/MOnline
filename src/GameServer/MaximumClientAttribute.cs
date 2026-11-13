@@ -1,11 +1,11 @@
-﻿// <copyright file="MaximumClientAttribute.cs" company="MUnique">
+﻿// <copyright file="MaximumClientAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// Attribute to mark an implemented <see cref="IViewPlugIn"/> with a specific (inclusive) maximum client version.

@@ -1,19 +1,19 @@
-// <copyright file="ActorRegistry.cs" company="MUnique">
+// <copyright file="ActorRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic.Offline;
+using HNMO.GameLogic.Offline;
 
 /// <summary>
 /// The actors of this process.
 /// </summary>
 /// <remarks>
 /// Spawning takes the account the way a real client does - through
-/// <see cref="MUnique.OpenMU.Interfaces.ILoginServer.TryLoginAsync"/>, which is the cross-server
+/// <see cref="HNMO.Interfaces.ILoginServer.TryLoginAsync"/>, which is the cross-server
 /// lock - and additionally scans the target game server's players for the same login name, because
 /// population bots and offline sessions bypass the login server. Both checks and the insertion run
 /// under one lock, so two concurrent spawns of one account yield exactly one actor. The lock is

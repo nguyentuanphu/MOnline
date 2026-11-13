@@ -1,8 +1,8 @@
-﻿// <copyright file="ThemeController.cs" company="MUnique">
+﻿// <copyright file="ThemeController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,7 +16,7 @@ public class ThemeController : Controller
     /// <summary>
     /// Gets the name of the cookie that stores the selected theme.
     /// </summary>
-    public static string CookieName { get; } = "OpenMU.Theme";
+    public static string CookieName { get; } = "HNMO.Theme";
 
     /// <summary>
     /// Gets the default theme used when no cookie is present.

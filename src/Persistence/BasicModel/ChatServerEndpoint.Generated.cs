@@ -1,4 +1,4 @@
-// <copyright file="ChatServerEndpoint.Generated.cs" company="MUnique">
+// <copyright file="ChatServerEndpoint.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ChatServerEndpoint"/>.
 /// </summary>
-public partial class ChatServerEndpoint : MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint, IIdentifiable, IConvertibleTo<ChatServerEndpoint>
+public partial class ChatServerEndpoint : HNMO.DataModel.Configuration.ChatServerEndpoint, IIdentifiable, IConvertibleTo<ChatServerEndpoint>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class ChatServerEndpoint : MUnique.OpenMU.DataModel.Configuration
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameClientDefinition Client
+    public override HNMO.DataModel.Configuration.GameClientDefinition Client
     {
         get => base.Client;
         set => base.Client = value;

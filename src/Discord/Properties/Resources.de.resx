@@ -290,7 +290,7 @@
   <data name="Command_Online_Description" xml:space="preserve">
     <value>Zeigt, wie viele Spieler online sind.</value>
   </data>
-  <data name="Command_OpenMu_Description" xml:space="preserve">
+  <data name="Command_Hnmo_Description" xml:space="preserve">
     <value>Verwaltet die HNMO-Integration dieses Discord-Servers.</value>
   </data>
   <data name="Command_Rank_Description" xml:space="preserve">

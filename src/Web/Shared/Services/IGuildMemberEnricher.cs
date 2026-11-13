@@ -1,10 +1,10 @@
-// <copyright file="IGuildMemberEnricher.cs" company="MUnique">
+// <copyright file="IGuildMemberEnricher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.Web.Shared.Models;
+using HNMO.Web.Shared.Models;
 
 /// <summary>
 /// Enriches guild members with character and account data, which lives in a separate

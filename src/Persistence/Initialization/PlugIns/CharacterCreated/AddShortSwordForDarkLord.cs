@@ -1,13 +1,13 @@
-﻿// <copyright file="AddShortSwordForDarkLord.cs" company="MUnique">
+﻿// <copyright file="AddShortSwordForDarkLord.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.PlugIns.CharacterCreated;
+namespace HNMO.Persistence.Initialization.PlugIns.CharacterCreated;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds a short sword to a created dark lord character.

@@ -1,24 +1,24 @@
-// <copyright file="FinishRageFighterMasterTreePlugIn.cs" company="MUnique">
+// <copyright file="FinishRageFighterMasterTreePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update completes the rage fighter master tree and fixes some of its skill values.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FinishRageFighterMasterTreePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FinishRageFighterMasterTreePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FinishRageFighterMasterTreePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FinishRageFighterMasterTreePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("2DAE95BC-AE08-45E8-942A-9F61AE1C277B")]
 public class FinishRageFighterMasterTreePlugIn : UpdatePlugInBase
 {

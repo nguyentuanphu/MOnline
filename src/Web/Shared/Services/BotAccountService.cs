@@ -1,13 +1,13 @@
-// <copyright file="BotAccountService.cs" company="MUnique">
+// <copyright file="BotAccountService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.Extensions.Caching.Memory;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Bots;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Bots;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Service for the bot player table on the <c>LoggedIn</c> page.

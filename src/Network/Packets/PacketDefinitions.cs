@@ -1,8 +1,8 @@
-// <copyright file="PacketDefinitions.cs" company="MUnique">
+// <copyright file="PacketDefinitions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Packets;
+namespace HNMO.Network.Packets;
 
 using System.IO;
 using System.Xml;
@@ -19,7 +19,7 @@ public class PacketDefinitions
     /// <summary>
     /// The XML namespace for this class.
     /// </summary>
-    internal const string XmlNamespace = "http://www.munique.net/OpenMU/PacketDefinitions";
+    internal const string XmlNamespace = "https://github.com/nguyentuanphu/HNMO/PacketDefinitions";
 
     /// <summary>
     /// Gets or sets the description.

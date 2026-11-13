@@ -1,12 +1,12 @@
-// <copyright file="ResetFruitConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="ResetFruitConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Views.Character;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Base class of the consume handlers of the reset fruits of the in-game shop.

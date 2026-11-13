@@ -1,16 +1,16 @@
-﻿// <copyright file="TransientItemCraftingRequiredItem.cs" company="MUnique">
+﻿// <copyright file="TransientItemCraftingRequiredItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
+namespace HNMO.GameLogic.PlayerActions.Craftings;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Transient implementation of <see cref="ItemCraftingRequiredItem"/>.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem" />
+/// <seealso cref="HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem" />
 internal sealed class TransientItemCraftingRequiredItem : ItemCraftingRequiredItem
 {
     /// <summary>

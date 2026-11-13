@@ -1,8 +1,8 @@
-// <copyright file="PlugInPointCaption.cs" company="MUnique">
+// <copyright file="PlugInPointCaption.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.Globalization;
 using System.Resources;
@@ -12,7 +12,7 @@ public static class PlugInPointCaption
 {
     // The original English attribute text is the key. If it changes, update the resource key
     // as well; until translated, new or changed extension point text falls back to English.
-    private static readonly ResourceManager ResourceManager = new("MUnique.OpenMU.Web.Shared.Properties.PlugInPointResources", typeof(PlugInPointCaption).Assembly);
+    private static readonly ResourceManager ResourceManager = new("HNMO.Web.Shared.Properties.PlugInPointResources", typeof(PlugInPointCaption).Assembly);
 
     /// <summary>Gets translated metadata, preserving unknown external plugin text.</summary>
     /// <param name="text">The original extension point name or description.</param>

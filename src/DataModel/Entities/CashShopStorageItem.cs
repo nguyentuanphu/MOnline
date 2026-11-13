@@ -1,8 +1,8 @@
-// <copyright file="CashShopStorageItem.cs" company="MUnique">
+// <copyright file="CashShopStorageItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// An item in the cash shop storage of an account, which was bought or received as gift,

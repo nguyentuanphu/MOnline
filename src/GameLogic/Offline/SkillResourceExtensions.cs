@@ -1,10 +1,10 @@
-// <copyright file="SkillResourceExtensions.cs" company="MUnique">
+// <copyright file="SkillResourceExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Extensions to check the resources of a player for a skill, without consuming them.

@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegePendingRewardPlugIn.cs" company="MUnique">
+// <copyright file="CastleSiegePendingRewardPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Delivers pending Castle Siege participant rewards when a character enters the game.

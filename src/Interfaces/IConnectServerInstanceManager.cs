@@ -1,8 +1,8 @@
-﻿// <copyright file="IConnectServerInstanceManager.cs" company="MUnique">
+﻿// <copyright file="IConnectServerInstanceManager.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// Interface for an instance which manages connect servers.

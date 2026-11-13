@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Persistence.Initialization.Properties {
+namespace HNMO.Persistence.Initialization.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MUnique.OpenMU.Persistence.Initialization.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources", typeof(PlugInResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HNMO.Persistence.Initialization.Properties.PlugInResources", typeof(PlugInResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

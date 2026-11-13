@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeZoneDefinition.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeZoneDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CastleSiegeZoneDefinition"/>.
 /// </summary>
 [Table(nameof(CastleSiegeZoneDefinition), Schema = SchemaNames.Configuration)]
-internal partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, IIdentifiable
+internal partial class CastleSiegeZoneDefinition : HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, IIdentifiable
 {
     
     
@@ -29,7 +29,7 @@ internal partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Conf
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeZoneDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -37,7 +37,7 @@ internal partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Conf
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeZoneDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

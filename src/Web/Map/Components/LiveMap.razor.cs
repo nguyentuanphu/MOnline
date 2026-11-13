@@ -1,11 +1,11 @@
-﻿// <copyright file="LiveMap.razor.cs" company="MUnique">
+﻿// <copyright file="LiveMap.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Components;
+namespace HNMO.Web.Map.Components;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.Web.Map.Map;
 using Nito.AsyncEx;
 
 /// <summary>

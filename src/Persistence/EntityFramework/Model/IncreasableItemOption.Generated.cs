@@ -1,4 +1,4 @@
-// <copyright file="IncreasableItemOption.Generated.cs" company="MUnique">
+// <copyright file="IncreasableItemOption.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.IncreasableItemOption"/>.
 /// </summary>
 [Table(nameof(IncreasableItemOption), Schema = SchemaNames.Configuration)]
-internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption, IIdentifiable
+internal partial class IncreasableItemOption : HNMO.DataModel.Configuration.Items.IncreasableItemOption, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configur
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel> LevelDependentOptions => base.LevelDependentOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel, ItemOptionOfLevel>(this.RawLevelDependentOptions);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionOfLevel> LevelDependentOptions => base.LevelDependentOptions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionOfLevel, ItemOptionOfLevel>(this.RawLevelDependentOptions);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="OptionType"/>.
@@ -54,7 +54,7 @@ internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType OptionType
+    public override HNMO.DataModel.Configuration.Items.ItemOptionType OptionType
     {
         get => base.OptionType;set
         {
@@ -80,7 +80,7 @@ internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition PowerUpDefinition
+    public override HNMO.DataModel.Attributes.PowerUpDefinition PowerUpDefinition
     {
         get => base.PowerUpDefinition;set
         {
@@ -90,7 +90,7 @@ internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configur
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.IncreasableItemOption Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new IncreasableItemOption();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -98,7 +98,7 @@ internal partial class IncreasableItemOption : MUnique.OpenMU.DataModel.Configur
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.IncreasableItemOption other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

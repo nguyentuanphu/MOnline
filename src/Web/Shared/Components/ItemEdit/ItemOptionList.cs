@@ -1,13 +1,13 @@
-﻿// <copyright file="ItemOptionList.cs" company="MUnique">
+﻿// <copyright file="ItemOptionList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.ItemEdit;
+namespace HNMO.Web.Shared.Components.ItemEdit;
 
 using System.Collections;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

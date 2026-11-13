@@ -1,10 +1,10 @@
-// <copyright file="IIllusionTempleScoreTableViewPlugIn.cs" company="MUnique">
+// <copyright file="IIllusionTempleScoreTableViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Interface of a view whose implementation informs about the result of an illusion temple event.

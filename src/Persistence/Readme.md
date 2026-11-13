@@ -1,4 +1,4 @@
-﻿# MUnique.OpenMU.Persistence
+﻿# HNMO.Persistence
 
 This project contains the main interface of the data persistence layer, [**IPersistenceContextProvider**](IPersistenceContextProvider.cs).
 All application logic just uses the "contexts" provided by the PersistentContextProvider.
@@ -11,10 +11,10 @@ derived from the DataModel (e.g. subfolder *EntityFramework/Model*).
 
 There are currently two implementations:
 
-1. *MUnique.OpenMU.Persistence.EntityFramework*: Implements it by using the
+1. *HNMO.Persistence.EntityFramework*: Implements it by using the
    Entity Framework Core.
 
-2. *MUnique.OpenMU.Persistence.InMemory*: For testing and demo purposes. Changes
+2. *HNMO.Persistence.InMemory*: For testing and demo purposes. Changes
    are directly "persistent" to all contexts of the same IPersistenceContextProvider.
    All application logic uses the contexts provided by the InMemoryPersistentContextProvider,
    until the application closes, of course.

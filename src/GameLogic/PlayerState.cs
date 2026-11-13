@@ -1,8 +1,8 @@
-﻿// <copyright file="PlayerState.cs" company="MUnique">
+﻿// <copyright file="PlayerState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// The states of a player, used by the <see cref="ITrader.PlayerState"/>.

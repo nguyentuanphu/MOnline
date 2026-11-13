@@ -1,23 +1,23 @@
-// <copyright file="FixFireScreamRequirementsUpdatePlugIn.cs" company="MUnique">
+// <copyright file="FixFireScreamRequirementsUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update corrects the energy and leadership requirements of the fire scream skill to 150 and 70.
 /// They were swapped, so a dark lord with less than 150 leadership could learn the skill but not use it.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixFireScreamRequirementsUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixFireScreamRequirementsUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixFireScreamRequirementsUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixFireScreamRequirementsUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("35E4FFDD-A427-4B0F-86F6-610233AFAC82")]
 public class FixFireScreamRequirementsUpdatePlugIn : UpdatePlugInBase
 {

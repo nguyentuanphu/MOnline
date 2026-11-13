@@ -1,19 +1,19 @@
-﻿// <copyright file="FixIgnoreDefenseSkillUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="FixIgnoreDefenseSkillUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update sets the right settings for the ignore defense skill.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixIgnoreDefenseSkillUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixIgnoreDefenseSkillUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixIgnoreDefenseSkillUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixIgnoreDefenseSkillUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("8DEC7BC2-E6A0-4E46-B123-C92CB43B9ED5")]
 public class FixIgnoreDefenseSkillUpdatePlugIn : UpdatePlugInBase
 {

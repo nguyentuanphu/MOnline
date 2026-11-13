@@ -1,13 +1,13 @@
-﻿// <copyright file="IncreaseStatsAction.cs" company="MUnique">
+﻿// <copyright file="IncreaseStatsAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Character;
+namespace HNMO.GameLogic.PlayerActions.Character;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Character;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to increase stat attributes.

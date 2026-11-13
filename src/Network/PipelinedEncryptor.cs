@@ -1,11 +1,11 @@
-﻿// <copyright file="PipelinedEncryptor.cs" company="MUnique">
+﻿// <copyright file="PipelinedEncryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.IO.Pipelines;
-using MUnique.OpenMU.Network.SimpleModulus;
+using HNMO.Network.SimpleModulus;
 
 /// <summary>
 /// Default server implementation of a <see cref="IPipelinedEncryptor"/>.

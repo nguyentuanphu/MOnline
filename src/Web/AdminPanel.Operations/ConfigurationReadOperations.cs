@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationReadOperations.cs" company="MUnique">
+// <copyright file="ConfigurationReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Collections;
 using System.Globalization;
@@ -10,12 +10,12 @@ using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.PlugIns;
 
 /// <summary>Provides bounded, discoverable read access to the game configuration.</summary>
 public sealed class ConfigurationReadOperations(IDataSource<GameConfiguration> configurations, IAdminReadModel readModel, IPersistenceContextProvider persistence)

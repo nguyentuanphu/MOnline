@@ -1,8 +1,8 @@
-// <copyright file="TerrainEditMode.cs" company="MUnique">
+// <copyright file="TerrainEditMode.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.TerrainEditor;
+namespace HNMO.Web.Shared.Components.TerrainEditor;
 
 /// <summary>
 /// Defines how the selected attributes are applied to the edited tiles of the <see cref="TerrainEditor"/>.

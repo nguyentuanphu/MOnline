@@ -1,4 +1,4 @@
-// <copyright file="MasterSkillDefinition.Generated.cs" company="MUnique">
+// <copyright file="MasterSkillDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MasterSkillDefinition"/>.
 /// </summary>
 [Table(nameof(MasterSkillDefinition), Schema = SchemaNames.Configuration)]
-internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition, IIdentifiable
+internal partial class MasterSkillDefinition : HNMO.DataModel.Configuration.MasterSkillDefinition, IIdentifiable
 {
     /// <inheritdoc />
     public MasterSkillDefinition()
@@ -40,7 +40,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition> PassivePowerUps => base.PassivePowerUps ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPassivePowerUps);
+    public override ICollection<HNMO.DataModel.Attributes.PowerUpDefinition> PassivePowerUps => base.PassivePowerUps ??= new CollectionAdapter<HNMO.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPassivePowerUps);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Root"/>.
@@ -59,7 +59,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot Root
+    public override HNMO.DataModel.Configuration.MasterSkillRoot Root
     {
         get => base.Root;set
         {
@@ -85,7 +85,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition TargetAttribute
+    public override HNMO.AttributeSystem.AttributeDefinition TargetAttribute
     {
         get => base.TargetAttribute;set
         {
@@ -111,7 +111,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill ReplacedSkill
+    public override HNMO.DataModel.Configuration.Skill ReplacedSkill
     {
         get => base.ReplacedSkill;set
         {
@@ -121,7 +121,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MasterSkillDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MasterSkillDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -129,7 +129,7 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MasterSkillDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -155,6 +155,6 @@ internal partial class MasterSkillDefinition : MUnique.OpenMU.DataModel.Configur
 
     protected void InitJoinCollections()
     {
-        this.RequiredMasterSkills = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Skill, MasterSkillDefinitionSkill>(this.JoinedRequiredMasterSkills, joinEntity => joinEntity.Skill, entity => new MasterSkillDefinitionSkill { MasterSkillDefinition = this, MasterSkillDefinitionId = this.Id, Skill = (Skill)entity, SkillId = ((Skill)entity).Id});
+        this.RequiredMasterSkills = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Skill, MasterSkillDefinitionSkill>(this.JoinedRequiredMasterSkills, joinEntity => joinEntity.Skill, entity => new MasterSkillDefinitionSkill { MasterSkillDefinition = this, MasterSkillDefinitionId = this.Id, Skill = (Skill)entity, SkillId = ((Skill)entity).Id});
     }
 }

@@ -1,15 +1,15 @@
-﻿// <copyright file="CashShopActions.cs" company="MUnique">
+﻿// <copyright file="CashShopActions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.CashShop;
+namespace HNMO.GameLogic.PlayerActions.CashShop;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using MUnique.OpenMU.GameLogic.CashShop;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.CashShop;
-using MUnique.OpenMU.Persistence;
+using HNMO.GameLogic.CashShop;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.CashShop;
+using HNMO.Persistence;
 
 /// <summary>
 /// The actions of a player in the cash shop.

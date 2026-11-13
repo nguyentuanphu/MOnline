@@ -1,12 +1,12 @@
-﻿// <copyright file="TradeButtonAction.cs" company="MUnique">
+﻿// <copyright file="TradeButtonAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Trade;
+namespace HNMO.GameLogic.PlayerActions.Trade;
 
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Trade;
-using MUnique.OpenMU.Persistence;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Trade;
+using HNMO.Persistence;
 
 /// <summary>
 /// Action to change the trade button state.

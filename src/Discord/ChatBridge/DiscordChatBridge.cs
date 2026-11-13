@@ -1,19 +1,19 @@
-﻿// <copyright file="DiscordChatBridge.cs" company="MUnique">
+﻿// <copyright file="DiscordChatBridge.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 using System.ComponentModel;
 using System.Globalization;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The chat bridge between the game and Discord: It mirrors the guild, alliance and world chat

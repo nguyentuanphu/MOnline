@@ -1,4 +1,4 @@
-// <copyright file="ItemCraftingResultItem.Generated.cs" company="MUnique">
+// <copyright file="ItemCraftingResultItem.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem"/>.
 /// </summary>
 [Table(nameof(ItemCraftingResultItem), Schema = SchemaNames.Configuration)]
-internal partial class ItemCraftingResultItem : MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem, IIdentifiable
+internal partial class ItemCraftingResultItem : HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class ItemCraftingResultItem : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition ItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition ItemDefinition
     {
         get => base.ItemDefinition;set
         {
@@ -55,7 +55,7 @@ internal partial class ItemCraftingResultItem : MUnique.OpenMU.DataModel.Configu
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemCraftingResultItem();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class ItemCraftingResultItem : MUnique.OpenMU.DataModel.Configu
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

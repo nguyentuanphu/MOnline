@@ -1,8 +1,8 @@
-// <copyright file="ObjectTypeFilter.cs" company="MUnique">
+// <copyright file="ObjectTypeFilter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
 /// <summary>
 /// Defines the available object type filters for the map object list.

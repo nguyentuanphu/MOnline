@@ -1,15 +1,15 @@
-// <copyright file="CastleSiegeGate.cs" company="MUnique">
+// <copyright file="CastleSiegeGate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+namespace HNMO.GameLogic.CastleSiege.NPC;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege.Intelligence;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege.Intelligence;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.Views.CastleSiege;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An attackable Castle Siege gate.

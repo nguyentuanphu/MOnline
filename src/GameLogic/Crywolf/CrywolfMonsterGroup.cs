@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfMonsterGroup.cs" company="MUnique">
+﻿// <copyright file="CrywolfMonsterGroup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// A group of the army of Balgass, which is led by a Dark Elf.

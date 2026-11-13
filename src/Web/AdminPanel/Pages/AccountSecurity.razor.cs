@@ -1,17 +1,17 @@
-// <copyright file="AccountSecurity.razor.cs" company="MUnique">
+// <copyright file="AccountSecurity.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared.Components.Toast;
 
 /// <summary>
 /// The page at which a user manages the second factor of its own account.

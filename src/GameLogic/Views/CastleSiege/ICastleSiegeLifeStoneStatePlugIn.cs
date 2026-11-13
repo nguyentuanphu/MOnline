@@ -1,8 +1,8 @@
-// <copyright file="ICastleSiegeLifeStoneStatePlugIn.cs" company="MUnique">
+// <copyright file="ICastleSiegeLifeStoneStatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.CastleSiege;
+namespace HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// A view which updates the creation state of a Castle Siege Life Stone.

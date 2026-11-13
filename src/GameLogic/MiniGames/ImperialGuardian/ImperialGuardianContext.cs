@@ -1,14 +1,14 @@
-﻿// <copyright file="ImperialGuardianContext.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
+namespace HNMO.GameLogic.MiniGames.ImperialGuardian;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// The context of an imperial guardian event game.

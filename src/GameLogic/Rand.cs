@@ -1,8 +1,8 @@
-﻿// <copyright file="Rand.cs" company="MUnique">
+﻿// <copyright file="Rand.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// A static class to provide random functions by encapsulating the default Randomizer <see cref="System.Random"/>.

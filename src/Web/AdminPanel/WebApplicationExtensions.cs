@@ -1,8 +1,8 @@
-﻿// <copyright file="WebApplicationExtensions.cs" company="MUnique">
+﻿// <copyright file="WebApplicationExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel;
+namespace HNMO.Web.AdminPanel;
 
 using System.IO;
 using Microsoft.AspNetCore.Builder;
@@ -11,23 +11,23 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Persistence.Initialization.Captions;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.Telemetry;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Components;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Services;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Models;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Network.Analyzer;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Persistence.Initialization.Captions;
+using HNMO.Persistence.Initialization.Updates;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.Telemetry;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Components;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Services;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Models;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Extensions for the <see cref="WebApplicationBuilder"/>.
@@ -181,8 +181,8 @@ public static class WebApplicationExtensions
     {
         return services.AddControllers(options =>
             {
-                options.Filters.Add<MUnique.OpenMU.Web.AdminPanel.API.AdminOperationExceptionFilter>();
-                options.Conventions.Add(new MUnique.OpenMU.Web.AdminPanel.API.AccountDownloadAuthorizationConvention());
+                options.Filters.Add<HNMO.Web.AdminPanel.API.AdminOperationExceptionFilter>();
+                options.Conventions.Add(new HNMO.Web.AdminPanel.API.AccountDownloadAuthorizationConvention());
             })
             .ConfigureApplicationPartManager(setup =>
                 setup.FeatureProviders.Add(new GenericControllerFeatureProvider()));

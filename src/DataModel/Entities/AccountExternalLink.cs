@@ -1,8 +1,8 @@
-﻿// <copyright file="AccountExternalLink.cs" company="MUnique">
+﻿// <copyright file="AccountExternalLink.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// A link of an <see cref="Account"/> to a user of an external service, e.g. Discord.

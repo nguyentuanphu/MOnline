@@ -1,11 +1,11 @@
-// <copyright file="ModalService.cs" company="MUnique">
+// <copyright file="ModalService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Modal;
 
 /// <summary>
 /// Default implementation of <see cref="IModalService"/>.

@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordBot.cs" company="MUnique">
+﻿// <copyright file="DiscordBot.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.ComponentModel;
 using System.Globalization;
@@ -11,11 +11,11 @@ using System.Threading;
 using global::Discord;
 using global::Discord.WebSocket;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Discord.ChatBridge;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.Discord.Provisioning;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Discord.ChatBridge;
+using HNMO.Discord.Properties;
+using HNMO.Discord.Provisioning;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The Discord bot. It shows the status of the game servers, answers the slash commands,
@@ -32,7 +32,7 @@ public sealed partial class DiscordBot : IManageableServer, IDiscordMessenger, I
     /// <summary>
     /// The name of the command which administrates the integration.
     /// </summary>
-    internal const string AdministrationCommandName = "openmu";
+    internal const string AdministrationCommandName = "hnmo";
 
     /// <summary>
     /// The name of the sub command which sets up the Discord server.
@@ -373,7 +373,7 @@ public sealed partial class DiscordBot : IManageableServer, IDiscordMessenger, I
     {
         return new SlashCommandBuilder()
             .WithName(AdministrationCommandName)
-            .WithDescription(this._commands.Text(nameof(Resources.Command_OpenMu_Description)))
+            .WithDescription(this._commands.Text(nameof(Resources.Command_Hnmo_Description)))
             .WithDefaultMemberPermissions(GuildPermission.Administrator)
             .WithContextTypes(InteractionContextType.Guild)
             .AddOption(new SlashCommandOptionBuilder()

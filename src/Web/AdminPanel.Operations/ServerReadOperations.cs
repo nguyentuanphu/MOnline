@@ -1,19 +1,19 @@
-// <copyright file="ServerReadOperations.cs" company="MUnique">
+// <copyright file="ServerReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Diagnostics;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Offline;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Reads server health, statistics and live players in either deployment.</summary>
 public sealed class ServerReadOperations(

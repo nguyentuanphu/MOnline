@@ -308,7 +308,7 @@ the party experience bonus applies. Parties re-form every hour.
 
 A player may invite a bot into their own party: it accepts after a human-like
 pause of a few seconds, as long as it is not in the middle of an errand. There is
-no level gate — just like OpenMU's own party action, a bot accepts an inviter of
+no level gate — just like HNMO's own party action, a bot accepts an inviter of
 any level, since it is the player who invites, and once it joins it stays for the
 whole session. A living player takes precedence over the bot's own company
 — a bot hunting with other bots leaves them for the inviter, and breaks that bot

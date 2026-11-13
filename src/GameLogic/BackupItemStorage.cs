@@ -1,8 +1,8 @@
-﻿// <copyright file="BackupItemStorage.cs" company="MUnique">
+﻿// <copyright file="BackupItemStorage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// A storage which keeps items backed up - to be able to revert them after cancellation of an action.

@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemOptionCombinationBonus.cs" company="MUnique">
+﻿// <copyright file="ItemOptionCombinationBonus.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.DataModel.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Defines a bonus which gets granted when the equipped items

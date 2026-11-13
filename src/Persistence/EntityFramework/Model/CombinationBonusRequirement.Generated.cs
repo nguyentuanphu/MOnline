@@ -1,4 +1,4 @@
-// <copyright file="CombinationBonusRequirement.Generated.cs" company="MUnique">
+// <copyright file="CombinationBonusRequirement.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.CombinationBonusRequirement"/>.
 /// </summary>
 [Table(nameof(CombinationBonusRequirement), Schema = SchemaNames.Configuration)]
-internal partial class CombinationBonusRequirement : MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement, IIdentifiable
+internal partial class CombinationBonusRequirement : HNMO.DataModel.Configuration.Items.CombinationBonusRequirement, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class CombinationBonusRequirement : MUnique.OpenMU.DataModel.Co
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType OptionType
+    public override HNMO.DataModel.Configuration.Items.ItemOptionType OptionType
     {
         get => base.OptionType;set
         {
@@ -55,7 +55,7 @@ internal partial class CombinationBonusRequirement : MUnique.OpenMU.DataModel.Co
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.CombinationBonusRequirement Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CombinationBonusRequirement();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class CombinationBonusRequirement : MUnique.OpenMU.DataModel.Co
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.CombinationBonusRequirement other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

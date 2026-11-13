@@ -1,10 +1,10 @@
-// <copyright file="MapDragState.cs" company="MUnique">
+// <copyright file="MapDragState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Stores the state required for dragging and resizing map objects.

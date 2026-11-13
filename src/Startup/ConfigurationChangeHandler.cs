@@ -1,15 +1,15 @@
-﻿// <copyright file="ConfigurationChangeHandler.cs" company="MUnique">
+﻿// <copyright file="ConfigurationChangeHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using Microsoft.Extensions.DependencyInjection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An implementation of <see cref="IConfigurationChangePublisher"/> which directly handles the changes

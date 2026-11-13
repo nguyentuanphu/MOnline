@@ -1,11 +1,11 @@
-// <copyright file="GensTypeExtensions.cs" company="MUnique">
+// <copyright file="GensTypeExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Gens;
+namespace HNMO.GameServer.RemoteView.Gens;
 
-using GensType = MUnique.OpenMU.DataModel.Entities.GensType;
-using PacketGensType = MUnique.OpenMU.Network.Packets.ServerToClient.GensType;
+using GensType = HNMO.DataModel.Entities.GensType;
+using PacketGensType = HNMO.Network.Packets.ServerToClient.GensType;
 
 /// <summary>
 /// Extensions to convert the <see cref="GensType"/> into the one of the packets.

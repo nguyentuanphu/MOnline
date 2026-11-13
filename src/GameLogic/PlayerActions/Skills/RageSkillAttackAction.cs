@@ -1,12 +1,12 @@
-﻿// <copyright file="RageSkillAttackAction.cs" company="MUnique">
+﻿// <copyright file="RageSkillAttackAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Action for rage attacks.

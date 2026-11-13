@@ -1,8 +1,8 @@
-﻿// <copyright file="DoppelgangerResult.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
+namespace HNMO.GameLogic.MiniGames.Doppelganger;
 
 /// <summary>
 /// The result of the doppelganger event for a player, matching the values expected by the client.

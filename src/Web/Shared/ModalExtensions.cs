@@ -1,11 +1,11 @@
-﻿// <copyright file="ModalExtensions.cs" company="MUnique">
+﻿// <copyright file="ModalExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared;
+namespace HNMO.Web.Shared;
 
-using MUnique.OpenMU.Web.Shared.Components;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components;
+using HNMO.Web.Shared.Components.Modal;
 
 /// <summary>
 /// Extension methods for the <see cref="IModalService"/>.

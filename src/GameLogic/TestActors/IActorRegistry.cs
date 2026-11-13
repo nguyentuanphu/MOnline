@@ -1,8 +1,8 @@
-// <copyright file="IActorRegistry.cs" company="MUnique">
+// <copyright file="IActorRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 /// <summary>
 /// Keeps the actors of this process, keyed by the login name of the account they animate.

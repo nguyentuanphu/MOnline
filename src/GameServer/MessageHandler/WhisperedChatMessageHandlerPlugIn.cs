@@ -1,12 +1,12 @@
-﻿// <copyright file="WhisperedChatMessageHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="WhisperedChatMessageHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for whispered chat messages.

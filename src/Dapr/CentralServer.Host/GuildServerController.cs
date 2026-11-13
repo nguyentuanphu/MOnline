@@ -1,18 +1,18 @@
-﻿// <copyright file="GuildServerController.cs" company="MUnique">
+﻿// <copyright file="GuildServerController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Collections.Immutable;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.ServerClients;
+using HNMO.Interfaces;
+using HNMO.ServerClients;
 
 /// <summary>
 /// Controller which handles external requests coming from other dapr applications,
-/// most probably <see cref="MUnique.OpenMU.ServerClients.GuildServer"/>.
+/// most probably <see cref="HNMO.ServerClients.GuildServer"/>.
 /// </summary>
 [ApiController]
 [Route(CentralServer.GuildServerRoute)]

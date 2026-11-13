@@ -1,17 +1,17 @@
-﻿// <copyright file="SymbolOfKundunStackedPlugIn.cs" company="MUnique">
+﻿// <copyright file="SymbolOfKundunStackedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin transforms a stack of symbol of kundun into a lost map.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SymbolOfKundunStackedPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SymbolOfKundunStackedPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SymbolOfKundunStackedPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.SymbolOfKundunStackedPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("F07A9CED-F43E-4824-9587-F5C3C3187A13")]
 public sealed class SymbolOfKundunStackedPlugIn : IItemStackedPlugIn
 {

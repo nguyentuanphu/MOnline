@@ -1,10 +1,10 @@
-// <copyright file="IGuildService.cs" company="MUnique">
+// <copyright file="IGuildService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.Web.Shared.Models;
+using HNMO.Web.Shared.Models;
 
 /// <summary>
 /// Service for guild information in the admin panel, beyond the paged listing covered by <see cref="IDataService{T}"/>.

@@ -1,14 +1,14 @@
-﻿// <copyright file="MagicEffectsList.cs" company="MUnique">
+﻿// <copyright file="MagicEffectsList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Views.World;
 
 /// <summary>
 /// The list of magic effects of a player instance. Automatically applies the power-ups of the effects to the player.

@@ -1,8 +1,8 @@
-﻿// <copyright file="MainForm.cs" company="MUnique">
+﻿// <copyright file="MainForm.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer;
+namespace HNMO.Network.Analyzer;
 
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -13,8 +13,8 @@ using System.Runtime.Versioning;
 using System.Windows.Forms;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 using Zuby.ADGV;
 
 /// <summary>

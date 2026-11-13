@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
-    xmlns:pd="http://www.munique.net/OpenMU/PacketDefinitions"
+    xmlns:pd="https://github.com/nguyentuanphu/HNMO/PacketDefinitions"
 >
   <xsl:param name="resultFileName" />
   <xsl:param name="subNamespace" />
@@ -9,7 +9,7 @@
   <xsl:include href="Common.xslt" />
 
   <xsl:template match="pd:PacketDefinitions">
-    <xsl:text>// &lt;copyright file="</xsl:text><xsl:value-of select="$resultFileName"/><xsl:text>" company="MUnique"&gt;
+    <xsl:text>// &lt;copyright file="</xsl:text><xsl:value-of select="$resultFileName"/><xsl:text>" company="HNMO"&gt;
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // &lt;/copyright&gt;
 
@@ -21,7 +21,7 @@
 // &lt;/auto-generated&gt;
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Network.Packets.Tests</xsl:text>
+namespace HNMO.Network.Packets.Tests</xsl:text>
     <xsl:if test="$subNamespace">
       <xsl:text>.</xsl:text>
       <xsl:value-of select="$subNamespace"/>
@@ -32,7 +32,7 @@ namespace MUnique.OpenMU.Network.Packets.Tests</xsl:text>
 using System;
 using System.Text;
 using NUnit.Framework;
-using MUnique.OpenMU.Network.Packets</xsl:text>
+using HNMO.Network.Packets</xsl:text>
     <xsl:if test="$subNamespace">
       <xsl:text>.</xsl:text>
       <xsl:value-of select="$subNamespace"/>

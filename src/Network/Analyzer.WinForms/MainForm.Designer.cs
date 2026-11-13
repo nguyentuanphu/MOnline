@@ -1,4 +1,4 @@
-﻿namespace MUnique.OpenMU.Network.Analyzer
+﻿namespace HNMO.Network.Analyzer
 {
     partial class MainForm
     {
@@ -461,7 +461,7 @@
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             Name = "MainForm";
-            Text = "MUnique OpenMU Network Analyzer";
+            Text = "HNMO HNMO Network Analyzer";
             ((System.ComponentModel.ISupportInitialize)packetGridView).EndInit();
             ((System.ComponentModel.ISupportInitialize)packetBindingSource).EndInit();
             packetInfoGroup.ResumeLayout(false);

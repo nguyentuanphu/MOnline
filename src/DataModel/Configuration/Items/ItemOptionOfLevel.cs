@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemOptionOfLevel.cs" company="MUnique">
+﻿// <copyright file="ItemOptionOfLevel.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Attributes;
+using HNMO.Annotations;
+using HNMO.DataModel.Attributes;
 
 /// <summary>
 /// The item option, depending on the specified item level.
@@ -32,6 +32,6 @@ public partial class ItemOptionOfLevel
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.LevelValueSummary, this.Level, this.PowerUpDefinition);
+        return string.Format(HNMO.DataModel.Properties.Resources.LevelValueSummary, this.Level, this.PowerUpDefinition);
     }
 }

@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordChatPostResult.cs" company="MUnique">
+﻿// <copyright file="DiscordChatPostResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 /// <summary>
 /// The result of sending a message from Discord to the game.

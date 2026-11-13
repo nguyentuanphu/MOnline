@@ -1,11 +1,11 @@
-// <copyright file="RedDragonInvasionPlugIn.cs" company="MUnique">
+// <copyright file="RedDragonInvasionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Enables the Red Dragon Invasion feature.

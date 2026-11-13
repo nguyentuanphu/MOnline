@@ -1,14 +1,14 @@
-﻿// <copyright file="FriendServer.cs" company="MUnique">
+﻿// <copyright file="FriendServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.FriendServer;
+namespace HNMO.FriendServer;
 
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// The friend server which manages the friend list with chat and letter system.

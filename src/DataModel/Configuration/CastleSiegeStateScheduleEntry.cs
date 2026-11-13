@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeStateScheduleEntry.cs" company="MUnique">
+// <copyright file="CastleSiegeStateScheduleEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a scheduled transition to a specific <see cref="CastleSiegeState"/> at a given day and time.

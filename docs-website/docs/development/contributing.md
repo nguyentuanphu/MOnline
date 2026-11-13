@@ -1,7 +1,7 @@
 ---
 title: Contributing
 sidebar_position: 4
-description: How to contribute code, documentation and other things to OpenMU.
+description: How to contribute code, documentation and other things to HNMO.
 ---
 
 # Contributing
@@ -24,7 +24,7 @@ request without adding an issue.
 ## How to contribute code
 
 1. Fork this project from the original
-   [MUnique OpenMU project](https://github.com/MUnique/OpenMU).
+   [HNMO HNMO project](https://github.com/nguyentuanphu/HNMO).
 2. Create a feature branch from the master branch.
 3. Commit your changes to your feature branch.
 4. Please test your changes — **don't send AI generated code without testing it
@@ -45,7 +45,7 @@ Please use markdown files/syntax for this purpose.
 ## Contributing to this documentation
 
 The site you are reading lives in the
-[`docs-website/`](https://github.com/MUnique/OpenMU/tree/master/docs-website)
+[`docs-website/`](https://github.com/nguyentuanphu/HNMO/tree/master/docs-website)
 folder of the repository. Every page has an *Edit this page* link at the bottom
 which takes you straight to the right file.
 
@@ -64,4 +64,4 @@ else.
 ## Questions
 
 If you have questions, don't hesitate to ask in our
-[Discord channel](https://discord.gg/2u5Agkd) or by submitting an issue.
+the project's issue tracker or by submitting an issue.

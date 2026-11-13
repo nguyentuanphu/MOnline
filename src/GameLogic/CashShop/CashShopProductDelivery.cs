@@ -1,11 +1,11 @@
-// <copyright file="CashShopProductDelivery.cs" company="MUnique">
+// <copyright file="CashShopProductDelivery.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CashShop;
+namespace HNMO.GameLogic.CashShop;
 
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Selects how a cash shop product is delivered when a player uses it from the cash shop storage.

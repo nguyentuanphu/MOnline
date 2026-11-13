@@ -1,14 +1,14 @@
-﻿// <copyright file="ModelExtensions.cs" company="MUnique">
+﻿// <copyright file="ModelExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// Extensions for <see cref="INavigation"/>s.

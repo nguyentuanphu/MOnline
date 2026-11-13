@@ -1,11 +1,11 @@
-// <copyright file="CastleSiegeNpcRuntime.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcRuntime.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Holds the runtime state of a configured Castle Siege NPC.

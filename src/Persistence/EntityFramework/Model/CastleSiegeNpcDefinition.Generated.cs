@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeNpcDefinition.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CastleSiegeNpcDefinition"/>.
 /// </summary>
 [Table(nameof(CastleSiegeNpcDefinition), Schema = SchemaNames.Configuration)]
-internal partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition, IIdentifiable
+internal partial class CastleSiegeNpcDefinition : HNMO.DataModel.Configuration.CastleSiegeNpcDefinition, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition MonsterDefinition
+    public override HNMO.DataModel.Configuration.MonsterDefinition MonsterDefinition
     {
         get => base.MonsterDefinition;set
         {
@@ -55,7 +55,7 @@ internal partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Confi
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeNpcDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeNpcDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Confi
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeNpcDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

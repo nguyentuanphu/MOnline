@@ -1,16 +1,16 @@
-﻿// <copyright file="ViewPlugInContainer.cs" company="MUnique">
+﻿// <copyright file="ViewPlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.ComponentModel.Design;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin container which selects plugin based on the provided version/season metadata.

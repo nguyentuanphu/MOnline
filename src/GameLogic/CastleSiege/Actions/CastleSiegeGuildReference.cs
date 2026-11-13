@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeGuildReference.cs" company="MUnique">
+// <copyright file="CastleSiegeGuildReference.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.Actions;
+namespace HNMO.GameLogic.CastleSiege.Actions;
 
 /// <summary>
 /// A Castle Siege guild identity spanning runtime and persistent identifiers.

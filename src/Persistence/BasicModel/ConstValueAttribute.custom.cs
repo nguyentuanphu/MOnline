@@ -1,16 +1,16 @@
-﻿// <copyright file="ConstValueAttribute.custom.cs" company="MUnique">
+﻿// <copyright file="ConstValueAttribute.custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
-/// A plain implementation of <see cref="MUnique.OpenMU.AttributeSystem.ConstValueAttribute"/>.
+/// A plain implementation of <see cref="HNMO.AttributeSystem.ConstValueAttribute"/>.
 /// </summary>
-public partial class ConstValueAttribute : MUnique.OpenMU.DataModel.IAssignable
+public partial class ConstValueAttribute : HNMO.DataModel.IAssignable
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ConstValueAttribute"/> class
@@ -54,9 +54,9 @@ public partial class ConstValueAttribute : MUnique.OpenMU.DataModel.IAssignable
     public new float Value => base.Value;
 
     /// <inheritdoc />
-    public void AssignValuesOf(object other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public void AssignValuesOf(object other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
-        if (other is not MUnique.OpenMU.AttributeSystem.ConstValueAttribute value)
+        if (other is not HNMO.AttributeSystem.ConstValueAttribute value)
         {
             throw new ArgumentException("Expected a constant attribute.", nameof(other));
         }

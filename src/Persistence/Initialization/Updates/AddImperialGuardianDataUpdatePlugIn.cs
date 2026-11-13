@@ -1,15 +1,15 @@
-﻿// <copyright file="AddImperialGuardianDataUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddImperialGuardianDataUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the imperial guardian event configuration to an existing Season 6 database.

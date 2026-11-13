@@ -1,10 +1,10 @@
-﻿// <copyright file="LogoutAction.cs" company="MUnique">
+﻿// <copyright file="LogoutAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions;
+namespace HNMO.GameLogic.PlayerActions;
 
-using MUnique.OpenMU.GameLogic.Views.Login;
+using HNMO.GameLogic.Views.Login;
 
 /// <summary>
 /// Action to log the player out of the game.

@@ -1,8 +1,8 @@
-﻿// <copyright file="ConfigurationTypeRepository.cs" company="MUnique">
+﻿// <copyright file="ConfigurationTypeRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Collections;
 using System.Collections.Concurrent;
@@ -10,10 +10,10 @@ using System.IO;
 using System.Threading;
 using Microsoft.Extensions.Logging;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Json;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// A repository which gets its data from the <see cref="EntityDataContext.CurrentGameConfiguration"/>, without additionally touching the database.

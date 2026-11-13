@@ -1,8 +1,8 @@
-﻿// <copyright file="FriendOnlineStateChangedArguments.cs" company="MUnique">
+﻿// <copyright file="FriendOnlineStateChangedArguments.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ServerClients;
+namespace HNMO.ServerClients;
 
 /// <summary>
 /// The arguments for a friend online state change.

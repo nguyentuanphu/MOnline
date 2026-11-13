@@ -1,18 +1,18 @@
-// <copyright file="AttributeRelationship.Custom.cs" company="MUnique">
+// <copyright file="AttributeRelationship.Custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.AttributeSystem.AttributeRelationship"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.AttributeSystem.AttributeRelationship"/>.
 /// </summary>
 internal partial class AttributeRelationship :
     IAssignable,
-    IAssignable<MUnique.OpenMU.AttributeSystem.AttributeRelationship>,
-    ICloneable<MUnique.OpenMU.AttributeSystem.AttributeRelationship>
+    IAssignable<HNMO.AttributeSystem.AttributeRelationship>,
+    ICloneable<HNMO.AttributeSystem.AttributeRelationship>
 {
     /// <inheritdoc />
     public virtual AttributeSystem.AttributeRelationship Clone(DataModel.Configuration.GameConfiguration gameConfiguration)

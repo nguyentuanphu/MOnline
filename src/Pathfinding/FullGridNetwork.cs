@@ -1,8 +1,8 @@
-﻿// <copyright file="FullGridNetwork.cs" company="MUnique">
+﻿// <copyright file="FullGridNetwork.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Pathfinding;
+namespace HNMO.Pathfinding;
 
 /// <summary>
 /// Network which is built of a two-dimensional grid of nodes where

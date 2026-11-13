@@ -1,4 +1,4 @@
-// <copyright file="GameConfiguration.Generated.cs" company="MUnique">
+// <copyright file="GameConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.GameConfiguration"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.GameConfiguration"/>.
 /// </summary>
 [Table(nameof(GameConfiguration), Schema = SchemaNames.Configuration)]
-internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuration.GameConfiguration, IIdentifiable
+internal partial class GameConfiguration : HNMO.DataModel.Configuration.GameConfiguration, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.JewelMix> JewelMixes => base.JewelMixes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.JewelMix, JewelMix>(this.RawJewelMixes);
+    public override ICollection<HNMO.DataModel.Configuration.JewelMix> JewelMixes => base.JewelMixes ??= new CollectionAdapter<HNMO.DataModel.Configuration.JewelMix, JewelMix>(this.RawJewelMixes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="WarpList" />.
@@ -44,7 +44,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.WarpInfo> WarpList => base.WarpList ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.WarpInfo, WarpInfo>(this.RawWarpList);
+    public override ICollection<HNMO.DataModel.Configuration.WarpInfo> WarpList => base.WarpList ??= new CollectionAdapter<HNMO.DataModel.Configuration.WarpInfo, WarpInfo>(this.RawWarpList);
 
     /// <summary>
     /// Gets the raw collection of <see cref="DropItemGroups" />.
@@ -53,7 +53,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DropItemGroup> DropItemGroups => base.DropItemGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
+    public override ICollection<HNMO.DataModel.Configuration.DropItemGroup> DropItemGroups => base.DropItemGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Skills" />.
@@ -62,7 +62,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Skill> Skills => base.Skills ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Skill, Skill>(this.RawSkills);
+    public override ICollection<HNMO.DataModel.Configuration.Skill> Skills => base.Skills ??= new CollectionAdapter<HNMO.DataModel.Configuration.Skill, Skill>(this.RawSkills);
 
     /// <summary>
     /// Gets the raw collection of <see cref="CharacterClasses" />.
@@ -71,7 +71,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CharacterClass> CharacterClasses => base.CharacterClasses ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawCharacterClasses);
+    public override ICollection<HNMO.DataModel.Configuration.CharacterClass> CharacterClasses => base.CharacterClasses ??= new CollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawCharacterClasses);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Items" />.
@@ -80,7 +80,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition> Items => base.Items ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawItems);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemDefinition> Items => base.Items ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawItems);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemLevelBonusTables" />.
@@ -89,7 +89,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable> ItemLevelBonusTables => base.ItemLevelBonusTables ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable, ItemLevelBonusTable>(this.RawItemLevelBonusTables);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemLevelBonusTable> ItemLevelBonusTables => base.ItemLevelBonusTables ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemLevelBonusTable, ItemLevelBonusTable>(this.RawItemLevelBonusTables);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemStatProfiles" />.
@@ -98,7 +98,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile> ItemStatProfiles => base.ItemStatProfiles ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemStatProfile, ItemStatProfile>(this.RawItemStatProfiles);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemStatProfile> ItemStatProfiles => base.ItemStatProfiles ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemStatProfile, ItemStatProfile>(this.RawItemStatProfiles);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemPriceDefinitions" />.
@@ -107,7 +107,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition> ItemPriceDefinitions => base.ItemPriceDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemPriceDefinition, ItemPriceDefinition>(this.RawItemPriceDefinitions);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemPriceDefinition> ItemPriceDefinitions => base.ItemPriceDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemPriceDefinition, ItemPriceDefinition>(this.RawItemPriceDefinitions);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemSlotTypes" />.
@@ -116,7 +116,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType> ItemSlotTypes => base.ItemSlotTypes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType, ItemSlotType>(this.RawItemSlotTypes);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemSlotType> ItemSlotTypes => base.ItemSlotTypes ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemSlotType, ItemSlotType>(this.RawItemSlotTypes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemOptions" />.
@@ -125,7 +125,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition> ItemOptions => base.ItemOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition, ItemOptionDefinition>(this.RawItemOptions);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionDefinition> ItemOptions => base.ItemOptions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionDefinition, ItemOptionDefinition>(this.RawItemOptions);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemOptionTypes" />.
@@ -134,7 +134,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType> ItemOptionTypes => base.ItemOptionTypes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawItemOptionTypes);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionType> ItemOptionTypes => base.ItemOptionTypes ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawItemOptionTypes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemSetGroups" />.
@@ -143,7 +143,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup> ItemSetGroups => base.ItemSetGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup, ItemSetGroup>(this.RawItemSetGroups);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemSetGroup> ItemSetGroups => base.ItemSetGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemSetGroup, ItemSetGroup>(this.RawItemSetGroups);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ItemOptionCombinationBonuses" />.
@@ -152,7 +152,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus> ItemOptionCombinationBonuses => base.ItemOptionCombinationBonuses ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus, ItemOptionCombinationBonus>(this.RawItemOptionCombinationBonuses);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus> ItemOptionCombinationBonuses => base.ItemOptionCombinationBonuses ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus, ItemOptionCombinationBonus>(this.RawItemOptionCombinationBonuses);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Maps" />.
@@ -161,7 +161,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.GameMapDefinition> Maps => base.Maps ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.GameMapDefinition, GameMapDefinition>(this.RawMaps);
+    public override ICollection<HNMO.DataModel.Configuration.GameMapDefinition> Maps => base.Maps ??= new CollectionAdapter<HNMO.DataModel.Configuration.GameMapDefinition, GameMapDefinition>(this.RawMaps);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Monsters" />.
@@ -170,7 +170,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterDefinition> Monsters => base.Monsters ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterDefinition, MonsterDefinition>(this.RawMonsters);
+    public override ICollection<HNMO.DataModel.Configuration.MonsterDefinition> Monsters => base.Monsters ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterDefinition, MonsterDefinition>(this.RawMonsters);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Attributes" />.
@@ -179,7 +179,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeDefinition> Attributes => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeDefinition, AttributeDefinition>(this.RawAttributes);
+    public override ICollection<HNMO.AttributeSystem.AttributeDefinition> Attributes => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeDefinition, AttributeDefinition>(this.RawAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="MagicEffects" />.
@@ -188,7 +188,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition> MagicEffects => base.MagicEffects ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition, MagicEffectDefinition>(this.RawMagicEffects);
+    public override ICollection<HNMO.DataModel.Configuration.MagicEffectDefinition> MagicEffects => base.MagicEffects ??= new CollectionAdapter<HNMO.DataModel.Configuration.MagicEffectDefinition, MagicEffectDefinition>(this.RawMagicEffects);
 
     /// <summary>
     /// Gets the raw collection of <see cref="MasterSkillRoots" />.
@@ -197,7 +197,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot> MasterSkillRoots => base.MasterSkillRoots ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MasterSkillRoot, MasterSkillRoot>(this.RawMasterSkillRoots);
+    public override ICollection<HNMO.DataModel.Configuration.MasterSkillRoot> MasterSkillRoots => base.MasterSkillRoots ??= new CollectionAdapter<HNMO.DataModel.Configuration.MasterSkillRoot, MasterSkillRoot>(this.RawMasterSkillRoots);
 
     /// <summary>
     /// Gets the raw collection of <see cref="GlobalAttributeCombinations" />.
@@ -206,7 +206,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> GlobalAttributeCombinations => base.GlobalAttributeCombinations ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawGlobalAttributeCombinations);
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> GlobalAttributeCombinations => base.GlobalAttributeCombinations ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawGlobalAttributeCombinations);
 
     /// <summary>
     /// Gets the raw collection of <see cref="GlobalBaseAttributeValues" />.
@@ -215,7 +215,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.ConstValueAttribute> GlobalBaseAttributeValues => base.GlobalBaseAttributeValues ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawGlobalBaseAttributeValues);
+    public override ICollection<HNMO.AttributeSystem.ConstValueAttribute> GlobalBaseAttributeValues => base.GlobalBaseAttributeValues ??= new CollectionAdapter<HNMO.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawGlobalBaseAttributeValues);
 
     /// <summary>
     /// Gets the raw collection of <see cref="PlugInConfigurations" />.
@@ -224,7 +224,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.PlugIns.PlugInConfiguration> PlugInConfigurations => base.PlugInConfigurations ??= new CollectionAdapter<MUnique.OpenMU.PlugIns.PlugInConfiguration, PlugInConfiguration>(this.RawPlugInConfigurations);
+    public override ICollection<HNMO.PlugIns.PlugInConfiguration> PlugInConfigurations => base.PlugInConfigurations ??= new CollectionAdapter<HNMO.PlugIns.PlugInConfiguration, PlugInConfiguration>(this.RawPlugInConfigurations);
 
     /// <summary>
     /// Gets the raw collection of <see cref="MiniGameDefinitions" />.
@@ -233,7 +233,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition> MiniGameDefinitions => base.MiniGameDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition, MiniGameDefinition>(this.RawMiniGameDefinitions);
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameDefinition> MiniGameDefinitions => base.MiniGameDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameDefinition, MiniGameDefinition>(this.RawMiniGameDefinitions);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="DuelConfiguration"/>.
@@ -252,7 +252,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.DuelConfiguration DuelConfiguration
+    public override HNMO.DataModel.Configuration.DuelConfiguration DuelConfiguration
     {
         get => base.DuelConfiguration;set
         {
@@ -278,7 +278,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration CastleSiegeConfiguration
+    public override HNMO.DataModel.Configuration.CastleSiegeConfiguration CastleSiegeConfiguration
     {
         get => base.CastleSiegeConfiguration;set
         {
@@ -304,7 +304,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CashShopConfiguration CashShopConfiguration
+    public override HNMO.DataModel.Configuration.CashShopConfiguration CashShopConfiguration
     {
         get => base.CashShopConfiguration;set
         {
@@ -314,7 +314,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -322,7 +322,7 @@ internal partial class GameConfiguration : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

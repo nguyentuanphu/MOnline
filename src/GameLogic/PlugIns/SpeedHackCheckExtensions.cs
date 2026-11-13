@@ -1,10 +1,10 @@
-// <copyright file="SpeedHackCheckExtensions.cs" company="MUnique">
+// <copyright file="SpeedHackCheckExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Extensions for running the attack speed check at accepted attack points.

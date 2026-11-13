@@ -1,13 +1,13 @@
-﻿// <copyright file="FieldMonsterSpawnsUpdatePlugInSeason6.cs" company="MUnique">
+﻿// <copyright file="FieldMonsterSpawnsUpdatePlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Replaces the automatic monster spawns of Devias, Noria and Elvenland with the Season 6 layout,
@@ -19,7 +19,7 @@ using MUnique.OpenMU.PlugIns;
 /// server owner may have customized. Spawns of other monsters, NPCs and spawns with another trigger are kept.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FieldMonsterSpawnsUpdatePlugInSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FieldMonsterSpawnsUpdatePlugInSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FieldMonsterSpawnsUpdatePlugInSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FieldMonsterSpawnsUpdatePlugInSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("5B20A974-D2AA-4B49-ADF6-2B5F97D15828")]
 public class FieldMonsterSpawnsUpdatePlugInSeason6 : FieldMonsterSpawnsUpdatePlugInBase
 {

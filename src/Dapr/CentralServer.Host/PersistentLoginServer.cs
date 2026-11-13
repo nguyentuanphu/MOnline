@@ -1,12 +1,12 @@
-﻿// <copyright file="PersistentLoginServer.cs" company="MUnique">
+﻿// <copyright file="PersistentLoginServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using global::Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An implementation of a <see cref="ILoginServer"/> which persists the login state in a dapr state store.

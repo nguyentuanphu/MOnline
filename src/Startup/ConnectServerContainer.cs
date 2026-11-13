@@ -1,18 +1,18 @@
-﻿// <copyright file="ConnectServerContainer.cs" company="MUnique">
+﻿// <copyright file="ConnectServerContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System.Collections;
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.ConnectServer;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Initialization;
+using HNMO.ConnectServer;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.Initialization;
 
 /// <summary>
 /// A container which keeps all <see cref="Interfaces.IConnectServer"/>s in one <see cref="IHostedService"/>.

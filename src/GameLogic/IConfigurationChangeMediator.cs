@@ -1,8 +1,8 @@
-﻿// <copyright file="IConfigurationChangeMediator.cs" company="MUnique">
+﻿// <copyright file="IConfigurationChangeMediator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// A mediator which notifies about configuration changes for registered instances.

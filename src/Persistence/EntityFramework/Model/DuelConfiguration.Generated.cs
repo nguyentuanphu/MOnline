@@ -1,4 +1,4 @@
-// <copyright file="DuelConfiguration.Generated.cs" company="MUnique">
+// <copyright file="DuelConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.DuelConfiguration"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.DuelConfiguration"/>.
 /// </summary>
 [Table(nameof(DuelConfiguration), Schema = SchemaNames.Configuration)]
-internal partial class DuelConfiguration : MUnique.OpenMU.DataModel.Configuration.DuelConfiguration, IIdentifiable
+internal partial class DuelConfiguration : HNMO.DataModel.Configuration.DuelConfiguration, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class DuelConfiguration : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DuelArea> DuelAreas => base.DuelAreas ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DuelArea, DuelArea>(this.RawDuelAreas);
+    public override ICollection<HNMO.DataModel.Configuration.DuelArea> DuelAreas => base.DuelAreas ??= new CollectionAdapter<HNMO.DataModel.Configuration.DuelArea, DuelArea>(this.RawDuelAreas);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Exit"/>.
@@ -54,7 +54,7 @@ internal partial class DuelConfiguration : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate Exit
+    public override HNMO.DataModel.Configuration.ExitGate Exit
     {
         get => base.Exit;set
         {
@@ -64,7 +64,7 @@ internal partial class DuelConfiguration : MUnique.OpenMU.DataModel.Configuratio
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.DuelConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.DuelConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new DuelConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -72,7 +72,7 @@ internal partial class DuelConfiguration : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.DuelConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.DuelConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

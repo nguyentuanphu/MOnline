@@ -1,4 +1,4 @@
-// <copyright file="ItemSetGroup.Generated.cs" company="MUnique">
+// <copyright file="ItemSetGroup.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ItemSetGroup"/>.
 /// </summary>
-public partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup, IIdentifiable, IConvertibleTo<ItemSetGroup>
+public partial class ItemSetGroup : HNMO.DataModel.Configuration.Items.ItemSetGroup, IIdentifiable, IConvertibleTo<ItemSetGroup>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Items
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet> Items
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOfItemSet> Items
     {
-        get => base.Items ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItems);
+        get => base.Items ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItems);
         protected set
         {
             this.Items.Clear();
@@ -58,14 +58,14 @@ public partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Items
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition Options
+    public override HNMO.DataModel.Configuration.Items.ItemOptionDefinition Options
     {
         get => base.Options;
         set => base.Options = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemSetGroup Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemSetGroup();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -73,7 +73,7 @@ public partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Items
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemSetGroup other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

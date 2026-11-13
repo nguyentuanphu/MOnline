@@ -1,19 +1,19 @@
-// <copyright file="ChatCommandListViewPlugIn.cs" company="MUnique">
+// <copyright file="ChatCommandListViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameServer.RemoteView.Character;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
-using PacketValueReference = MUnique.OpenMU.Network.Packets.ServerToClient.ChatCommandValueReference;
-using ValueReference = MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ChatCommandValueReference;
+using HNMO.GameLogic.PlugIns.ChatCommands;
+using HNMO.GameLogic.Views;
+using HNMO.GameServer.RemoteView.Character;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
+using PacketValueReference = HNMO.Network.Packets.ServerToClient.ChatCommandValueReference;
+using ValueReference = HNMO.GameLogic.PlugIns.ChatCommands.ChatCommandValueReference;
 
 /// <summary>
 /// The default implementation of the <see cref="IChatCommandListViewPlugIn"/> which sends

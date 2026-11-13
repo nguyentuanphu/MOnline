@@ -1,11 +1,11 @@
-﻿// <copyright file="MiniGameSpawnWave.cs" company="MUnique">
+﻿// <copyright file="MiniGameSpawnWave.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Defines a spawn wave of a <see cref="MiniGameDefinition"/>.
@@ -41,6 +41,6 @@ public partial class MiniGameSpawnWave
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.WaveSummary, this.WaveNumber, this.Description);
+        return string.Format(HNMO.DataModel.Properties.Resources.WaveSummary, this.WaveNumber, this.Description);
     }
 }

@@ -1,22 +1,22 @@
-﻿// <copyright file="InfinityArrowSkillOnQuestCompletionPlugIn.cs" company="MUnique">
+﻿// <copyright file="InfinityArrowSkillOnQuestCompletionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameServer.MessageHandler.Quests;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameServer.MessageHandler.Quests;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the infinity arrow skill as quest reward for 'Gain Hero Status (Muse Elf)'.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.InfinityArrowSkillOnQuestCompletionPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.InfinityArrowSkillOnQuestCompletionPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.InfinityArrowSkillOnQuestCompletionPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.InfinityArrowSkillOnQuestCompletionPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("A78B7540-75AC-494C-9AEC-BC943D929C98")]
 public class InfinityArrowSkillOnQuestCompletionPlugIn : UpdatePlugInBase
 {

@@ -1,23 +1,23 @@
-// <copyright file="SpeedHackDetectPlugIn.cs" company="MUnique">
+// <copyright file="SpeedHackDetectPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A feature plugin that provides configuration and acts as a trigger control for speedhack anti-cheat checks.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("A95A8D2F-A0C3-442E-995C-005B5C1B42D2")]
 public class SpeedHackDetectPlugIn : IFeaturePlugIn, ISupportCustomConfiguration<SpeedHackDetectConfiguration>, ISupportDefaultCustomConfiguration, ISpeedHackCheatCheckPlugIn, IAttackSpeedCheckPlugIn, IPingCheckPlugIn, IWalkRequestValidationPlugIn, IWalkStepPlugIn, IMovementStateResetPlugIn
 {

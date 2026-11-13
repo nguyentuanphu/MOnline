@@ -1,24 +1,24 @@
-﻿// <copyright file="FixJeweleryPetsDamageCalcsPlugInSeason6.cs" company="MUnique">
+﻿// <copyright file="FixJeweleryPetsDamageCalcsPlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes jewelery items and pet options related to damage, and jewelery resistance values.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixJeweleryPetsDamageCalcsPlugInSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixJeweleryPetsDamageCalcsPlugInSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixJeweleryPetsDamageCalcsPlugInSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixJeweleryPetsDamageCalcsPlugInSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("DD5B0424-89DB-4DE4-A1BB-B294F2C1FCE6")]
 public class FixJeweleryPetsDamageCalcsPlugInSeason6 : FixJeweleryPetsDamageCalcsPlugInBase
 {

@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordServerCheck.cs" company="MUnique">
+﻿// <copyright file="DiscordServerCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 /// <summary>
 /// The result of checking the Discord server whose channels receive the notifications and the status,

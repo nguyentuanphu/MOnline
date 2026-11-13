@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- 
-  This is the SkillTree Definition File of OpenMU. 
+  This is the SkillTree Definition File of HNMO. 
   The Name-Tag is not really used. Its just there for easier understanding of the File.
   The IDs are from each Skill of the Skill.txt.
   ReqID defines the Skill which is needed to be able to add points to this skill. Min Lvl of the needed skill is 10. If more than 1 ReqID is defined only one of this skills need to be lvl10.

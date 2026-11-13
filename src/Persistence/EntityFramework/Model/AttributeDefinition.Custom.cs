@@ -1,18 +1,18 @@
-// <copyright file="AttributeDefinition.Custom.cs" company="MUnique">
+// <copyright file="AttributeDefinition.Custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.AttributeSystem.AttributeDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.AttributeSystem.AttributeDefinition"/>.
 /// </summary>
 internal partial class AttributeDefinition :
     IAssignable,
-    IAssignable<MUnique.OpenMU.AttributeSystem.AttributeDefinition>,
-    ICloneable<MUnique.OpenMU.AttributeSystem.AttributeDefinition>
+    IAssignable<HNMO.AttributeSystem.AttributeDefinition>,
+    ICloneable<HNMO.AttributeSystem.AttributeDefinition>
 {
     /// <inheritdoc />
     public virtual AttributeSystem.AttributeDefinition Clone(DataModel.Configuration.GameConfiguration gameConfiguration)

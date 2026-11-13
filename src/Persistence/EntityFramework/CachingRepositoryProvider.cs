@@ -1,12 +1,12 @@
-﻿// <copyright file="CachingRepositoryProvider.cs" company="MUnique">
+﻿// <copyright file="CachingRepositoryProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Json;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// A repository provider which utilizes repositories which use the entity framework core to do data access.

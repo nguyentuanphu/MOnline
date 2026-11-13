@@ -1,11 +1,11 @@
-﻿// <copyright file="InMemoryEventPublisher.cs" company="MUnique">
+﻿// <copyright file="InMemoryEventPublisher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An <see cref="IEventPublisher"/> which publishes directly to the available started servers in this application.

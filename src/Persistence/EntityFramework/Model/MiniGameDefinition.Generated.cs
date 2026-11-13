@@ -1,4 +1,4 @@
-// <copyright file="MiniGameDefinition.Generated.cs" company="MUnique">
+// <copyright file="MiniGameDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MiniGameDefinition"/>.
 /// </summary>
 [Table(nameof(MiniGameDefinition), Schema = SchemaNames.Configuration)]
-internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition, IIdentifiable
+internal partial class MiniGameDefinition : HNMO.DataModel.Configuration.MiniGameDefinition, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameReward> Rewards => base.Rewards ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameReward, MiniGameReward>(this.RawRewards);
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameReward> Rewards => base.Rewards ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameReward, MiniGameReward>(this.RawRewards);
 
     /// <summary>
     /// Gets the raw collection of <see cref="SpawnWaves" />.
@@ -44,7 +44,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave> SpawnWaves => base.SpawnWaves ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave, MiniGameSpawnWave>(this.RawSpawnWaves);
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameSpawnWave> SpawnWaves => base.SpawnWaves ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameSpawnWave, MiniGameSpawnWave>(this.RawSpawnWaves);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ChangeEvents" />.
@@ -53,7 +53,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent> ChangeEvents => base.ChangeEvents ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent, MiniGameChangeEvent>(this.RawChangeEvents);
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameChangeEvent> ChangeEvents => base.ChangeEvents ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameChangeEvent, MiniGameChangeEvent>(this.RawChangeEvents);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Entrance"/>.
@@ -72,7 +72,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate Entrance
+    public override HNMO.DataModel.Configuration.ExitGate Entrance
     {
         get => base.Entrance;set
         {
@@ -98,7 +98,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition TicketItem
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition TicketItem
     {
         get => base.TicketItem;set
         {
@@ -124,7 +124,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition FreeTicketItem
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition FreeTicketItem
     {
         get => base.FreeTicketItem;set
         {
@@ -134,7 +134,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MiniGameDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MiniGameDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -142,7 +142,7 @@ internal partial class MiniGameDefinition : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MiniGameDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,12 +1,12 @@
-// <copyright file="BotSkillHandler.cs" company="MUnique">
+// <copyright file="BotSkillHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 /// <summary>
 /// Lets a bot learn skills like a real player: by looting the orb or scroll from the ground and

@@ -1,18 +1,18 @@
-﻿// <copyright file="CastleSiegePlugIn.cs" company="MUnique">
+﻿// <copyright file="CastleSiegePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Drives the weekly Castle Siege state cycle.

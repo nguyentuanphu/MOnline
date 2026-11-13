@@ -1,8 +1,8 @@
-﻿// <copyright file="MaximumDistanceOfXorYHeuristic.cs" company="MUnique">
+﻿// <copyright file="MaximumDistanceOfXorYHeuristic.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Pathfinding;
+namespace HNMO.Pathfinding;
 
 /// <summary>
 /// A heuristic which takes the maximum distance value between the x-axis or the y-axis.

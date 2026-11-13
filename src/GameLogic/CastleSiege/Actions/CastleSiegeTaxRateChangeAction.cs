@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeTaxRateChangeAction.cs" company="MUnique">
+// <copyright file="CastleSiegeTaxRateChangeAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.Actions;
+namespace HNMO.GameLogic.CastleSiege.Actions;
 
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
+using HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Changes one of the Castle Siege tax rates.

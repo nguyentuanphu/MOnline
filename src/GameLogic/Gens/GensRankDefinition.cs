@@ -1,8 +1,8 @@
-// <copyright file="GensRankDefinition.cs" company="MUnique">
+// <copyright file="GensRankDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
 /// <summary>
 /// The requirements of a gens rank.

@@ -1,10 +1,10 @@
-﻿// <copyright file="CrywolfItemIdentifier.cs" company="MUnique">
+﻿// <copyright file="CrywolfItemIdentifier.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Identifies an item definition by its group and number, e.g. a jewel which drops less often while the crywolf fortress is occupied.

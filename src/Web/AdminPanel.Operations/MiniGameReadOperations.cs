@@ -1,13 +1,13 @@
-// <copyright file="MiniGameReadOperations.cs" company="MUnique">
+// <copyright file="MiniGameReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Reads the leaderboards of the mini games, like Blood Castle, Devil Square and Chaos Castle.

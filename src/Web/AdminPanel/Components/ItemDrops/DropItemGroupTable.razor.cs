@@ -1,16 +1,16 @@
-// <copyright file="DropItemGroupTable.razor.cs" company="MUnique">
+// <copyright file="DropItemGroupTable.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.ItemDrops;
+namespace HNMO.Web.AdminPanel.Components.ItemDrops;
 
 using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// A compact, inline editable table of <see cref="DropItemGroup"/>s.

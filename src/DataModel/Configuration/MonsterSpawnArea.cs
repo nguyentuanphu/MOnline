@@ -1,11 +1,11 @@
-// <copyright file="MonsterSpawnArea.cs" company="MUnique">
+// <copyright file="MonsterSpawnArea.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Validation;
+using HNMO.Annotations;
+using HNMO.DataModel.Validation;
 
 /// <summary>
 /// Defines the trigger when a monster spawns.
@@ -133,12 +133,12 @@ public partial class MonsterSpawnArea : IMapArea
     {
         var isPoint = this.IsPoint();
         var result = isPoint
-            ? string.Format(MUnique.OpenMU.DataModel.Properties.Resources.SpawnPointSummary, this.MonsterDefinition?.Designation, this.Quantity, this.X1, this.Y1)
-            : string.Format(MUnique.OpenMU.DataModel.Properties.Resources.SpawnAreaSummary, this.MonsterDefinition?.Designation, this.Quantity, this.X1, this.Y1, this.X2, this.Y2);
+            ? string.Format(HNMO.DataModel.Properties.Resources.SpawnPointSummary, this.MonsterDefinition?.Designation, this.Quantity, this.X1, this.Y1)
+            : string.Format(HNMO.DataModel.Properties.Resources.SpawnAreaSummary, this.MonsterDefinition?.Designation, this.Quantity, this.X1, this.Y1, this.X2, this.Y2);
 
         if (this.SpawnTrigger == SpawnTrigger.AutomaticDuringWave || this.SpawnTrigger == SpawnTrigger.OnceAtWaveStart)
         {
-            result += string.Format(MUnique.OpenMU.DataModel.Properties.Resources.SpawnWaveSummary, this.WaveNumber);
+            result += string.Format(HNMO.DataModel.Properties.Resources.SpawnWaveSummary, this.WaveNumber);
         }
 
         return result;

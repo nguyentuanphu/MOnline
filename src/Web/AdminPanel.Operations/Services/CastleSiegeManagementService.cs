@@ -1,14 +1,14 @@
-// <copyright file="CastleSiegeManagementService.cs" company="MUnique">
+// <copyright file="CastleSiegeManagementService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Provides the administration panel with safe access to in-process Castle Siege game servers.

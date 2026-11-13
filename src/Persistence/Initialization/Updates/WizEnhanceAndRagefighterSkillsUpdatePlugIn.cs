@@ -1,22 +1,22 @@
-﻿// <copyright file="WizEnhanceAndRagefighterSkillsUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="WizEnhanceAndRagefighterSkillsUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update sets the right settings for the chain lightning skill.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.WizEnhanceAndRagefighterSkillsUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.WizEnhanceAndRagefighterSkillsUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.WizEnhanceAndRagefighterSkillsUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.WizEnhanceAndRagefighterSkillsUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("426497DB-A1D7-4EC5-BE6A-C8AEABC288E2")]
 public class WizEnhanceAndRagefighterSkillsUpdatePlugIn : UpdatePlugInBase
 {

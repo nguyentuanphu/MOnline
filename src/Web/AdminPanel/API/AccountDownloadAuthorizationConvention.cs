@@ -1,15 +1,15 @@
-// <copyright file="AccountDownloadAuthorizationConvention.cs" company="MUnique">
+// <copyright file="AccountDownloadAuthorizationConvention.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Requires the <see cref="AdminRole.Operator"/> role for the json download of accounts.

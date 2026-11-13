@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemSetGroup.cs" company="MUnique">
+﻿// <copyright file="ItemSetGroup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Defines an item set group. With (partial) completion of the set, additional options are getting applied.

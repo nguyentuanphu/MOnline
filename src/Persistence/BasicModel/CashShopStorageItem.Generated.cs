@@ -1,4 +1,4 @@
-// <copyright file="CashShopStorageItem.Generated.cs" company="MUnique">
+// <copyright file="CashShopStorageItem.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CashShopStorageItem"/>.
 /// </summary>
-public partial class CashShopStorageItem : MUnique.OpenMU.DataModel.Entities.CashShopStorageItem, IIdentifiable, IConvertibleTo<CashShopStorageItem>
+public partial class CashShopStorageItem : HNMO.DataModel.Entities.CashShopStorageItem, IIdentifiable, IConvertibleTo<CashShopStorageItem>
 {
     
     

@@ -1,13 +1,13 @@
-﻿// <copyright file="GameServerDefinition.cs" company="MUnique">
+﻿// <copyright file="GameServerDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
 using System.Globalization;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Defines the configuration of a game server.
@@ -28,7 +28,7 @@ public partial class GameServerDefinition
 
     /// <summary>
     /// Gets or sets the experience rate for the specific server.
-    /// Be aware that this multiplies with the <see cref="MUnique.OpenMU.DataModel.Configuration.GameConfiguration.ExperienceRate"/>.
+    /// Be aware that this multiplies with the <see cref="HNMO.DataModel.Configuration.GameConfiguration.ExperienceRate"/>.
     /// </summary>
     public float ExperienceRate { get; set; }
 

@@ -1,11 +1,11 @@
-// <copyright file="ItemExchangeField.cs" company="MUnique">
+// <copyright file="ItemExchangeField.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations.ItemExchange;
+namespace HNMO.Web.AdminPanel.Operations.ItemExchange;
 
 using System.Text.Json;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// An item field of the exchange file.

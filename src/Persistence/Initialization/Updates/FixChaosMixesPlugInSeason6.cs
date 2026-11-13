@@ -1,25 +1,25 @@
-﻿// <copyright file="FixChaosMixesPlugInSeason6.cs" company="MUnique">
+﻿// <copyright file="FixChaosMixesPlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions.Craftings;
+using HNMO.Network;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes the Chaos Weapon, First Wings, Dinorant, Item Level Upgrade, Second Wings, Third Wings, Cape, SD Potions, Guardian Option, and Secromicon crafting settings; Blue Fenrir (Protect) damage decrease option value; Wizard's Ring wizardry option; lvl 380 item guardian options for Summoner and Rage Fighter.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixChaosMixesPlugInSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("EFD7EA69-56AE-48A3-ACE2-1C3B5B87780A")]
 public class FixChaosMixesPlugInSeason6 : FixChaosMixesPlugInBase
 {

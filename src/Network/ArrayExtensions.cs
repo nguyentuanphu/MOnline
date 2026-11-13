@@ -1,8 +1,8 @@
-﻿// <copyright file="ArrayExtensions.cs" company="MUnique">
+﻿// <copyright file="ArrayExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 /// <summary>
 /// Extensions for arrays.

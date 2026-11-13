@@ -1,8 +1,8 @@
-// <copyright file="StartupCancelledException.cs" company="MUnique">
+// <copyright file="StartupCancelledException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 /// <summary>
 /// Exception that is thrown when the user declines an update which is required to start the server.

@@ -1,8 +1,8 @@
-// <copyright file="GensAbuse.cs" company="MUnique">
+// <copyright file="GensAbuse.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// The count of the recent kills of a gens member by another gens member,

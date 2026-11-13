@@ -1,12 +1,12 @@
-﻿// <copyright file="MagicEffectDefinition.cs" company="MUnique">
+﻿// <copyright file="MagicEffectDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.DataModel.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Magic Effect Definition. It can be an effect from a consumed item, a buff, or the result of an attack skill.

@@ -1,12 +1,12 @@
-// <copyright file="BootstrapAdminUserProvider.cs" company="MUnique">
+// <copyright file="BootstrapAdminUserProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Provides the configured bootstrap user, which exists without a database.

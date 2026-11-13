@@ -1,13 +1,13 @@
-// <copyright file="CashShopCoinService.cs" company="MUnique">
+// <copyright file="CashShopCoinService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
 
 /// <summary>
 /// Shows and grants the cash shop coins of accounts.

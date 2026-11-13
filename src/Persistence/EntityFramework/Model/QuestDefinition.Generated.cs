@@ -1,4 +1,4 @@
-// <copyright file="QuestDefinition.Generated.cs" company="MUnique">
+// <copyright file="QuestDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Quests.QuestDefinition"/>.
 /// </summary>
 [Table(nameof(QuestDefinition), Schema = SchemaNames.Configuration)]
-internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition, IIdentifiable
+internal partial class QuestDefinition : HNMO.DataModel.Configuration.Quests.QuestDefinition, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Quests.QuestMonsterKillRequirement> RequiredMonsterKills => base.RequiredMonsterKills ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Quests.QuestMonsterKillRequirement, QuestMonsterKillRequirement>(this.RawRequiredMonsterKills);
+    public override ICollection<HNMO.DataModel.Configuration.Quests.QuestMonsterKillRequirement> RequiredMonsterKills => base.RequiredMonsterKills ??= new CollectionAdapter<HNMO.DataModel.Configuration.Quests.QuestMonsterKillRequirement, QuestMonsterKillRequirement>(this.RawRequiredMonsterKills);
 
     /// <summary>
     /// Gets the raw collection of <see cref="RequiredItems" />.
@@ -44,7 +44,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement> RequiredItems => base.RequiredItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement, QuestItemRequirement>(this.RawRequiredItems);
+    public override ICollection<HNMO.DataModel.Configuration.Quests.QuestItemRequirement> RequiredItems => base.RequiredItems ??= new CollectionAdapter<HNMO.DataModel.Configuration.Quests.QuestItemRequirement, QuestItemRequirement>(this.RawRequiredItems);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Rewards" />.
@@ -53,7 +53,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward> Rewards => base.Rewards ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward, QuestReward>(this.RawRewards);
+    public override ICollection<HNMO.DataModel.Configuration.Quests.QuestReward> Rewards => base.Rewards ??= new CollectionAdapter<HNMO.DataModel.Configuration.Quests.QuestReward, QuestReward>(this.RawRewards);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="QuestGiver"/>.
@@ -72,7 +72,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition QuestGiver
+    public override HNMO.DataModel.Configuration.MonsterDefinition QuestGiver
     {
         get => base.QuestGiver;set
         {
@@ -98,7 +98,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass QualifiedCharacter
+    public override HNMO.DataModel.Configuration.CharacterClass QualifiedCharacter
     {
         get => base.QualifiedCharacter;set
         {
@@ -108,7 +108,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Quests.QuestDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new QuestDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -116,7 +116,7 @@ internal partial class QuestDefinition : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Quests.QuestDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,8 +1,8 @@
-﻿// <copyright file="IPacketHandler{T}.cs" company="MUnique">
+﻿// <copyright file="IPacketHandler{T}.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer.PacketHandler;
+namespace HNMO.ConnectServer.PacketHandler;
 
 /// <summary>
 /// The interface for a packet handler with a type which is passed as context argument.

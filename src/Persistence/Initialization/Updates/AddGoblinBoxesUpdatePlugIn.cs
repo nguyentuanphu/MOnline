@@ -1,14 +1,14 @@
-// <copyright file="AddGoblinBoxesUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddGoblinBoxesUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.CashShop;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.CashShop;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the Gold Key, Silver Key, the sealed and opened Golden Box and Silver Box, the goblin
@@ -16,7 +16,7 @@ using MUnique.OpenMU.PlugIns;
 /// which contain the keys on sale.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddGoblinBoxesUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddGoblinBoxesUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddGoblinBoxesUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddGoblinBoxesUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6926D991-53CF-47E5-8A5C-FA55D3D56D75")]
 public class AddGoblinBoxesUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,12 +1,12 @@
 ---
 title: Overview
 sidebar_position: 1
-description: Choosing a deployment variant for your OpenMU server.
+description: Choosing a deployment variant for your HNMO server.
 ---
 
 # Deployment overview
 
-The recommended way to deploy OpenMU is through Docker. Depending on the scale
+The recommended way to deploy HNMO is through Docker. Depending on the scale
 you need, there are multiple ways to do that.
 
 | | [All-in-one](all-in-one.md) | [All-in-one with Traefik](all-in-one-traefik.md) | [Distributed](distributed.md) |
@@ -20,7 +20,7 @@ you need, there are multiple ways to do that.
 ## All-in-one
 
 The [all-in-one deployment](all-in-one.md) is recommended if you want to host on
-a small machine with a low amount of players. All kinds of OpenMU subsystems
+a small machine with a low amount of players. All kinds of HNMO subsystems
 (connect server, game server, login server, admin panel, …) run in one process.
 
 **Pros**
@@ -41,7 +41,7 @@ a small machine with a low amount of players. All kinds of OpenMU subsystems
 
 The [all-in-one with Traefik deployment](all-in-one-traefik.md) is recommended if
 you want to host on a small machine with a low amount of players **and** want to
-host your MU Online website on the same machine.
+host your HNMO website on the same machine.
 
 Once Traefik works as a reverse proxy, you can handle multiple websites without
 changing the default port for HTTP/HTTPS connections. By adding a few labels to
@@ -61,10 +61,10 @@ to the correct website.
 :::warning[Experimental]
 The distributed deployment works, but it's experimental and has some
 [known limitations](distributed.md#known-limitations). Feel free to contribute —
-see the [open issues with the `distributed-deployment` label](https://github.com/MUnique/OpenMU/issues?q=is%3Aissue%20state%3Aopen%20label%3Adistributed-deployment).
+see the [open issues with the `distributed-deployment` label](https://github.com/nguyentuanphu/HNMO/issues?q=is%3Aissue%20state%3Aopen%20label%3Adistributed-deployment).
 :::
 
-It is also possible to host OpenMU in a [distributed](distributed.md) way. This
+It is also possible to host HNMO in a [distributed](distributed.md) way. This
 introduces a lot more complexity and you should know what you are doing. The
 communication between the subsystems is handled with [Dapr](https://dapr.io/).
 

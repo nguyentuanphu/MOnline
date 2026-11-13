@@ -1,15 +1,15 @@
-﻿// <copyright file="ShowAvailableQuestsPlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowAvailableQuestsPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Quest;
+namespace HNMO.GameServer.RemoteView.Quest;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions.Quests;
-using MUnique.OpenMU.GameLogic.Views.Quest;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions.Quests;
+using HNMO.GameLogic.Views.Quest;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowAvailableQuestsPlugIn"/> which is forwarding everything to the game client with specific data packets.

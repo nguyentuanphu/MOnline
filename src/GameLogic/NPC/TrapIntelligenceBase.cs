@@ -1,12 +1,12 @@
-﻿// <copyright file="TrapIntelligenceBase.cs" company="MUnique">
+﻿// <copyright file="TrapIntelligenceBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
 using System.Diagnostics;
 using System.Threading;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// An abstract trap AI.

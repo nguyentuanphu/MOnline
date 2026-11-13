@@ -1,15 +1,15 @@
-﻿// <copyright file="ItemExtensions.cs" company="MUnique">
+﻿// <copyright file="ItemExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.ItemFormulas;
-using MUnique.OpenMU.Persistence;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.ItemFormulas;
+using HNMO.Persistence;
 
 /// <summary>
 /// Extension methods for <see cref="Item"/>.

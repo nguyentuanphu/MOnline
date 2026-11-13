@@ -1,11 +1,11 @@
-﻿// <copyright file="DataUpdateService.cs" company="MUnique">
+﻿// <copyright file="DataUpdateService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Service which applies updates of previously initialized data by a <see cref="IDataInitializationPlugIn"/>.

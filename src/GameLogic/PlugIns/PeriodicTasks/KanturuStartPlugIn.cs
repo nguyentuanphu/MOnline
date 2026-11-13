@@ -1,19 +1,19 @@
-﻿// <copyright file="KanturuStartPlugIn.cs" company="MUnique">
+﻿// <copyright file="KanturuStartPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.MiniGames.Kanturu;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin enables the periodic start of the Kanturu Refinery Tower event.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.KanturuStartPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.KanturuStartPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.KanturuStartPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.KanturuStartPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("A8F3C2D1-9E74-4ECB-8963-08A3697278C4")]
 public sealed class KanturuStartPlugIn : MiniGameStartBasePlugIn<KanturuStartConfiguration, KanturuGameServerState>
 {

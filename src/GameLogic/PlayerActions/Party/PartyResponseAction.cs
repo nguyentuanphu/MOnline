@@ -1,10 +1,10 @@
-// <copyright file="PartyResponseAction.cs" company="MUnique">
+// <copyright file="PartyResponseAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Party;
+namespace HNMO.GameLogic.PlayerActions.Party;
 
-using MUnique.OpenMU.GameLogic;
+using HNMO.GameLogic;
 
 /// <summary>
 /// The party response action.

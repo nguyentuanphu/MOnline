@@ -1,10 +1,10 @@
-// <copyright file="ChatCommandViewItem.cs" company="MUnique">
+// <copyright file="ChatCommandViewItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Models;
+namespace HNMO.Web.Shared.Models;
 
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+using HNMO.GameLogic.PlugIns.ChatCommands;
 
 /// <summary>
 /// A chat command, as it's shown on the chat commands page.

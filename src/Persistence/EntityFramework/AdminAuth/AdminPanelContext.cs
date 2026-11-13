@@ -1,12 +1,12 @@
-// <copyright file="AdminPanelContext.cs" company="MUnique">
+// <copyright file="AdminPanelContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
+namespace HNMO.Persistence.EntityFramework.AdminAuth;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// The context which holds the users of the admin panel.

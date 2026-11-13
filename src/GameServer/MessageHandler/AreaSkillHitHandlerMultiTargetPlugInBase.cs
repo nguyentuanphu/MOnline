@@ -1,16 +1,16 @@
-﻿// <copyright file="AreaSkillHitHandlerMultiTargetPlugInBase.cs" company="MUnique">
+﻿// <copyright file="AreaSkillHitHandlerMultiTargetPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.World;
 
 /// <summary>
 /// Base implementation for a skill hit plugin where the message contains multiple target ids.

@@ -1,13 +1,13 @@
-﻿// <copyright file="MoveMonsterChatCommand.cs" company="MUnique">
+﻿// <copyright file="MoveMonsterChatCommand.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Chat command to instantly move a monster to specific coordinates.

@@ -1,13 +1,13 @@
-// <copyright file="MiniGameChangeEventProcessor.cs" company="MUnique">
+// <copyright file="MiniGameChangeEventProcessor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Tracks and applies the <see cref="MiniGameChangeEvent"/>s of a mini game.

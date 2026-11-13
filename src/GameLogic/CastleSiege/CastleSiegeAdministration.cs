@@ -1,11 +1,11 @@
-// <copyright file="CastleSiegeAdministration.cs" company="MUnique">
+// <copyright file="CastleSiegeAdministration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege.NPC;
 
 /// <summary>
 /// Provides serialized administrative operations and read-only status snapshots for one Castle Siege plug-in.

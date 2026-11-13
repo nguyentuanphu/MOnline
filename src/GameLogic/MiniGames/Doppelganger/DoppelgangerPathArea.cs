@@ -1,10 +1,10 @@
-﻿// <copyright file="DoppelgangerPathArea.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerPathArea.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
+namespace HNMO.GameLogic.MiniGames.Doppelganger;
 
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// A rectangular area of the path, which the monsters of the doppelganger event walk

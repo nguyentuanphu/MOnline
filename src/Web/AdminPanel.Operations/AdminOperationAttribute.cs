@@ -1,10 +1,10 @@
-// <copyright file="AdminOperationAttribute.cs" company="MUnique">
+// <copyright file="AdminOperationAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Declares the minimum role of a UI independent admin operation.</summary>
 [AttributeUsage(AttributeTargets.Method)]

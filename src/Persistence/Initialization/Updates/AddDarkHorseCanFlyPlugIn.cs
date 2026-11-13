@@ -1,15 +1,15 @@
-﻿// <copyright file="AddDarkHorseCanFlyPlugIn.cs" company="MUnique">
+﻿// <copyright file="AddDarkHorseCanFlyPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update lets the Dark Horse fly: it gets the <see cref="Stats.CanFly"/> power-up, which the

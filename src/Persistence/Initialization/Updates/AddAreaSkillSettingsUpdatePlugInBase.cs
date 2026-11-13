@@ -1,11 +1,11 @@
-// <copyright file="AddAreaSkillSettingsUpdatePlugInBase.cs" company="MUnique">
+// <copyright file="AddAreaSkillSettingsUpdatePlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// This update adds the area skill settings for skills like evil spirit, so that they work properly again.

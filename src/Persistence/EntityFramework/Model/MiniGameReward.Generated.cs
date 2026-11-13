@@ -1,4 +1,4 @@
-// <copyright file="MiniGameReward.Generated.cs" company="MUnique">
+// <copyright file="MiniGameReward.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MiniGameReward"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MiniGameReward"/>.
 /// </summary>
 [Table(nameof(MiniGameReward), Schema = SchemaNames.Configuration)]
-internal partial class MiniGameReward : MUnique.OpenMU.DataModel.Configuration.MiniGameReward, IIdentifiable
+internal partial class MiniGameReward : HNMO.DataModel.Configuration.MiniGameReward, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class MiniGameReward : MUnique.OpenMU.DataModel.Configuration.M
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.DropItemGroup ItemReward
+    public override HNMO.DataModel.Configuration.DropItemGroup ItemReward
     {
         get => base.ItemReward;set
         {
@@ -71,7 +71,7 @@ internal partial class MiniGameReward : MUnique.OpenMU.DataModel.Configuration.M
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition RequiredKill
+    public override HNMO.DataModel.Configuration.MonsterDefinition RequiredKill
     {
         get => base.RequiredKill;set
         {
@@ -81,7 +81,7 @@ internal partial class MiniGameReward : MUnique.OpenMU.DataModel.Configuration.M
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameReward Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MiniGameReward Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MiniGameReward();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -89,7 +89,7 @@ internal partial class MiniGameReward : MUnique.OpenMU.DataModel.Configuration.M
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MiniGameReward other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MiniGameReward other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

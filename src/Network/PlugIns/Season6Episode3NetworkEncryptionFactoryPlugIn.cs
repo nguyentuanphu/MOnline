@@ -1,16 +1,16 @@
-﻿// <copyright file="Season6Episode3NetworkEncryptionFactoryPlugIn.cs" company="MUnique">
+﻿// <copyright file="Season6Episode3NetworkEncryptionFactoryPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.PlugIns;
+namespace HNMO.Network.PlugIns;
 
 using System.ComponentModel.DataAnnotations;
 using System.IO.Pipelines;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.SimpleModulus;
-using MUnique.OpenMU.Network.Xor;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network;
+using HNMO.Network.SimpleModulus;
+using HNMO.Network.Xor;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin which provides network encryptors and decryptors for english game clients of season 6 episode 3, version 1.04d.

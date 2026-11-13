@@ -1,21 +1,21 @@
-﻿// <copyright file="ItemBoxDroppedPlugIn.cs" company="MUnique">
+﻿// <copyright file="ItemBoxDroppedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
-using static MUnique.OpenMU.GameLogic.PlugIns.IItemDropPlugIn;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Character;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
+using static HNMO.GameLogic.PlugIns.IItemDropPlugIn;
 
 /// <summary>
 /// This plugin handles the drop of an item box, e.g. box of kundun.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ItemBoxDroppedPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ItemBoxDroppedPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ItemBoxDroppedPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.ItemBoxDroppedPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("3D15D55D-EEFE-4B5F-89B1-6934AB3F0BEE")]
 public sealed class ItemBoxDroppedPlugIn : IItemDropPlugIn
 {

@@ -1,4 +1,4 @@
-﻿// <copyright file="ServerToClientPacketsRef.cs" company="MUnique">
+﻿// <copyright file="ServerToClientPacketsRef.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,7 +10,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Network.Packets.ServerToClient;
+namespace HNMO.Network.Packets.ServerToClient;
 
 using System;
 using static System.Buffers.Binary.BinaryPrimitives;
@@ -22044,7 +22044,7 @@ public readonly ref struct GuildInfoRef
 
 
 /// <summary>
-/// Is sent by the server when: After a guild has been created. However, in OpenMU, we just send the GuildInformations075 message, because it works just the same.
+/// Is sent by the server when: After a guild has been created. However, in HNMO, we just send the GuildInformations075 message, because it works just the same.
 /// Causes reaction on client side: The players which belong to the guild are shown as guild players.
 /// </summary>
 public readonly ref struct SingleGuildInformation075Ref

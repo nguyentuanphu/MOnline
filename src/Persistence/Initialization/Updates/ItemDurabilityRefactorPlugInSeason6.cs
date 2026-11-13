@@ -1,17 +1,17 @@
-// <copyright file="ItemDurabilityRefactorPlugInSeason6.cs" company="MUnique">
+// <copyright file="ItemDurabilityRefactorPlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update resets some game configuration values which are used for item durability reduction. It also fixes the master skill tree durability reduction skills.

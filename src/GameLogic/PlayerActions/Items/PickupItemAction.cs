@@ -1,16 +1,16 @@
-﻿// <copyright file="PickupItemAction.cs" company="MUnique">
+﻿// <copyright file="PickupItemAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
 using System.Runtime.CompilerServices;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to pick up an item from the floor.

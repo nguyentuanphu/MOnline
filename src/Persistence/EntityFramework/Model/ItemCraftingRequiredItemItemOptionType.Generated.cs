@@ -1,4 +1,4 @@
-// <copyright file="ItemCraftingRequiredItemItemOptionType.Generated.cs" company="MUnique">
+// <copyright file="ItemCraftingRequiredItemItemOptionType.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,11 +10,11 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.EntityFramework;
+using HNMO.Persistence;
+using HNMO.Persistence.EntityFramework;
 
 [Table(nameof(ItemCraftingRequiredItemItemOptionType), Schema = SchemaNames.Configuration)]
 internal partial class ItemCraftingRequiredItemItemOptionType

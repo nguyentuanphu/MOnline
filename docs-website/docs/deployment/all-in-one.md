@@ -1,12 +1,12 @@
 ---
 title: All-in-one
 sidebar_position: 2
-description: Deploy OpenMU with docker compose, nginx and certbot.
+description: Deploy HNMO with docker compose, nginx and certbot.
 ---
 
 # All-in-one deployment
 
-All kinds of OpenMU subsystems (connect server, game server, login server, admin
+All kinds of HNMO subsystems (connect server, game server, login server, admin
 panel, …) run in one process, next to a PostgreSQL container and an nginx
 container which acts as reverse proxy.
 
@@ -17,25 +17,25 @@ See [the git install guide](https://github.com/git-guides/install-git).
 ## Clone the repository
 
 ```bash
-git clone https://github.com/MUnique/OpenMU.git
+git clone https://github.com/nguyentuanphu/HNMO.git
 ```
 
-It creates a new folder `OpenMU` with the repository contents inside.
+It creates a new folder `HNMO` with the repository contents inside.
 
 ## Navigate to the docker compose files
 
 ```bash
-cd OpenMU/deploy/all-in-one
+cd HNMO/deploy/all-in-one
 ```
 
-:::warning[Use OpenMU 0.9.12 or newer]
+:::warning[Use HNMO 0.9.12 or newer]
 The deployment files on `master` rely on the [built-in login](../admin-panel/authentication.md)
 of the admin panel, which the docker images up to version 0.9.10 don't have yet.
 These older images expected the basic authentication of nginx with an `.htpasswd`
 file, which isn't part of these files anymore — combined with them, the admin
 panel is reachable by **anybody, without a login**.
 
-If you pulled `munique/openmu` before, get the current image first:
+If you pulled `hnmo/hnmo` before, get the current image first:
 
 ```bash
 docker compose pull
@@ -103,7 +103,7 @@ It makes sense to add a cron job (e.g. once a week) on your host machine for tha
 
 `docker-compose.monitoring.yml` adds an observability backend, the `otel-lgtm`
 container ([grafana/otel-lgtm](https://github.com/grafana/docker-otel-lgtm)) with
-an OpenTelemetry collector, Loki, Prometheus, Tempo and Grafana. OpenMU then
+an OpenTelemetry collector, Loki, Prometheus, Tempo and Grafana. HNMO then
 exports its logs, metrics and traces with
 [OpenTelemetry](https://opentelemetry.io/) (OTLP), and Grafana is available under
 `/grafana/` with the login of the admin panel — see
@@ -128,7 +128,7 @@ address of Grafana, e.g. `https://example.org/grafana/`.
 The container needs roughly 0.5–1 GB of additional memory and keeps its data in
 the `otel-lgtm-data` volume. It's meant for smaller setups; for a bigger one, run
 the components separately or use a hosted service, and point the
-`OTEL_EXPORTER_OTLP_ENDPOINT` environment variable of the `openmu-startup`
+`OTEL_EXPORTER_OTLP_ENDPOINT` environment variable of the `hnmo-startup`
 container to it. As in the
 [distributed deployment](distributed.md#otel_exporter_otlp_endpoint), the other
 standard OpenTelemetry variables work as well. The log levels of the export are
@@ -146,7 +146,7 @@ your containers run on docker at your local machine, you can simply go to
 :::danger[Create a user before you expose the server]
 Until the first admin panel user exists, the panel is reachable without a login.
 Create one on the [Users page](../admin-panel/users.md), or configure a bootstrap
-user with `OPENMU_ADMIN_USER` and `OPENMU_ADMIN_PASSWORD` before the first start
+user with `HNMO_ADMIN_USER` and `HNMO_ADMIN_PASSWORD` before the first start
 — see [Signing in](../admin-panel/authentication.md).
 :::
 
@@ -154,5 +154,5 @@ If you want to run another game version, go to the
 [Setup page](../admin-panel/setup.md) through the navigation menu, where you can
 select your desired game version, the number of game servers (just the data of
 it), and whether test accounts should be created. Click *Install*, wait a bit
-until the database is set up and filled with the data, and OpenMU is ready to
+until the database is set up and filled with the data, and HNMO is ready to
 use.

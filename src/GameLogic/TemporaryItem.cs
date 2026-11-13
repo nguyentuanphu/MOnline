@@ -1,16 +1,16 @@
-﻿// <copyright file="TemporaryItem.cs" company="MUnique">
+﻿// <copyright file="TemporaryItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence;
 
 /// <summary>
 /// A temporary item which is not persistent (yet).
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.DataModel.Entities.Item" />
+/// <seealso cref="HNMO.DataModel.Entities.Item" />
 public sealed class TemporaryItem : Item
 {
     /// <summary>

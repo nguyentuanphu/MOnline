@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegeGuildCommandAction.cs" company="MUnique">
+// <copyright file="CastleSiegeGuildCommandAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.Actions;
+namespace HNMO.GameLogic.CastleSiege.Actions;
 
 using System.Runtime.CompilerServices;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Validates and delivers a directional guild command issued by a Castle Siege alliance master.

@@ -2,11 +2,11 @@
 
 This project contains all what's required to create a so-called "Attribute System".
 I'm sure it could be helpful also for other games, even other kind of games,
-because it's pretty generic and not bound to MU Online or RPGs in general.
+because it's pretty generic and not bound to HNMO or RPGs in general.
 
 ## What is it?
 
-In OpenMU, every object which attacks and is attackable (interface IAttackable),
+In HNMO, every object which attacks and is attackable (interface IAttackable),
 has an instance of an Attribute System. This Attribute System contains all attributes
 of this entity.
 
@@ -47,7 +47,7 @@ usually persisted to the database for a specific player.
 
 In case of this server project, these relationships are all defined the
 configuration for each character class. For some examples you can have a look
-at the CharacterClassInitialization of the MUnique.OpenMU.Persistence.Initialization
+at the CharacterClassInitialization of the HNMO.Persistence.Initialization
 project.
 
 ## Tests

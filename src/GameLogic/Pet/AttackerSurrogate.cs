@@ -1,13 +1,13 @@
-﻿// <copyright file="AttackerSurrogate.cs" company="MUnique">
+﻿// <copyright file="AttackerSurrogate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Pet;
+namespace HNMO.GameLogic.Pet;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Views;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A surrogate for an <see cref="Player"/> which exposes the attack attributes

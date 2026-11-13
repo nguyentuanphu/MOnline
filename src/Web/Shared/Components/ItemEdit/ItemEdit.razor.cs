@@ -1,17 +1,17 @@
-// <copyright file="ItemEdit.razor.cs" company="MUnique">
+// <copyright file="ItemEdit.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.ItemEdit;
+namespace HNMO.Web.Shared.Components.ItemEdit;
 
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
 
 /// <summary>
 /// Specialized editor for an item.

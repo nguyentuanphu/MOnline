@@ -1,21 +1,21 @@
-// <copyright file="AddKalimaTicketUpdatePlugIn.cs" company="MUnique">
+// <copyright file="AddKalimaTicketUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CashShop;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CashShop;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the kalima ticket and puts the packages of the in-game shop which contain it on sale.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddKalimaTicketUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddKalimaTicketUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddKalimaTicketUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddKalimaTicketUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("4FD0B2EB-2DCF-4066-B75E-0E13236F728B")]
 public class AddKalimaTicketUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,11 +1,11 @@
-﻿// <copyright file="ConnectServerDefinition.cs" company="MUnique">
+﻿// <copyright file="ConnectServerDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The definition of a connect server.
@@ -122,7 +122,7 @@ public partial class ConnectServerDefinition : IConnectServerSettings
         this.MaximumReceiveSize = 6;
         this.Timeout = new TimeSpan(0, 1, 0);
         this.CurrentPatchVersion = new byte[] { 1, 3, 0x2B };
-        this.PatchAddress = "patch.muonline.webzen.com";
+        this.PatchAddress = "localhost";
         this.MaxConnectionsPerAddress = 30;
         this.CheckMaxConnectionsPerAddress = true;
         this.MaxConnections = 10000;

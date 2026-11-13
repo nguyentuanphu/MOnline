@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations.AdminPanel
+namespace HNMO.Persistence.EntityFramework.Migrations.AdminPanel
 {
     /// <inheritdoc />
     public partial class AddApiKeyToolGroups : Migration

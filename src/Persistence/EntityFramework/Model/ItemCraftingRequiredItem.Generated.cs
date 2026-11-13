@@ -1,4 +1,4 @@
-// <copyright file="ItemCraftingRequiredItem.Generated.cs" company="MUnique">
+// <copyright file="ItemCraftingRequiredItem.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem"/>.
 /// </summary>
 [Table(nameof(ItemCraftingRequiredItem), Schema = SchemaNames.Configuration)]
-internal partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, IIdentifiable
+internal partial class ItemCraftingRequiredItem : HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, IIdentifiable
 {
     /// <inheritdoc />
     public ItemCraftingRequiredItem()
@@ -34,7 +34,7 @@ internal partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Confi
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemCraftingRequiredItem();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -42,7 +42,7 @@ internal partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Confi
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -68,7 +68,7 @@ internal partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Confi
 
     protected void InitJoinCollections()
     {
-        this.PossibleItems = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, ItemCraftingRequiredItemItemDefinition>(this.JoinedPossibleItems, joinEntity => joinEntity.ItemDefinition, entity => new ItemCraftingRequiredItemItemDefinition { ItemCraftingRequiredItem = this, ItemCraftingRequiredItemId = this.Id, ItemDefinition = (ItemDefinition)entity, ItemDefinitionId = ((ItemDefinition)entity).Id});
-        this.RequiredItemOptions = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType, ItemCraftingRequiredItemItemOptionType>(this.JoinedRequiredItemOptions, joinEntity => joinEntity.ItemOptionType, entity => new ItemCraftingRequiredItemItemOptionType { ItemCraftingRequiredItem = this, ItemCraftingRequiredItemId = this.Id, ItemOptionType = (ItemOptionType)entity, ItemOptionTypeId = ((ItemOptionType)entity).Id});
+        this.PossibleItems = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemDefinition, ItemCraftingRequiredItemItemDefinition>(this.JoinedPossibleItems, joinEntity => joinEntity.ItemDefinition, entity => new ItemCraftingRequiredItemItemDefinition { ItemCraftingRequiredItem = this, ItemCraftingRequiredItemId = this.Id, ItemDefinition = (ItemDefinition)entity, ItemDefinitionId = ((ItemDefinition)entity).Id});
+        this.RequiredItemOptions = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionType, ItemCraftingRequiredItemItemOptionType>(this.JoinedRequiredItemOptions, joinEntity => joinEntity.ItemOptionType, entity => new ItemCraftingRequiredItemItemOptionType { ItemCraftingRequiredItem = this, ItemCraftingRequiredItemId = this.Id, ItemOptionType = (ItemOptionType)entity, ItemOptionTypeId = ((ItemOptionType)entity).Id});
     }
 }

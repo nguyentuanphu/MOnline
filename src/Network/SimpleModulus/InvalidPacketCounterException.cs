@@ -1,8 +1,8 @@
-﻿// <copyright file="InvalidPacketCounterException.cs" company="MUnique">
+﻿// <copyright file="InvalidPacketCounterException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.SimpleModulus;
+namespace HNMO.Network.SimpleModulus;
 
 /// <summary>
 /// This exception occurs when the received packet counter (a value between 0 and 255) doesn't match the expectation of the <see cref="PipelinedSimpleModulusDecryptor"/>.

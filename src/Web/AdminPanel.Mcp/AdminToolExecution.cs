@@ -1,12 +1,12 @@
-// <copyright file="AdminToolExecution.cs" company="MUnique">
+// <copyright file="AdminToolExecution.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Mcp;
+namespace HNMO.Web.AdminPanel.Mcp;
 
 using System.Text.Json.Nodes;
 using ModelContextProtocol;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Returns safe operational messages while leaving unexpected exception details to the SDK.</summary>
 internal static class AdminToolExecution

@@ -1,8 +1,8 @@
-// <copyright file="AdminAuditEntry.cs" company="MUnique">
+// <copyright file="AdminAuditEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.AdminAuth;
+namespace HNMO.Persistence.AdminAuth;
 
 /// <summary>A durable record of an attempted administrative action. Pending means its outcome is unknown.</summary>
 public sealed class AdminAuditEntry

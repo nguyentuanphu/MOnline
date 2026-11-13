@@ -1,12 +1,12 @@
-// <copyright file="FriendServerInMemoryContext.cs" company="MUnique">
+// <copyright file="FriendServerInMemoryContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.BasicModel;
-using Friend = MUnique.OpenMU.Interfaces.Friend;
+using HNMO.Interfaces;
+using HNMO.Persistence.BasicModel;
+using Friend = HNMO.Interfaces.Friend;
 
 /// <summary>
 /// In-memory context implementation for <see cref="IFriendServerContext"/>.
@@ -25,7 +25,7 @@ public class FriendServerInMemoryContext : InMemoryContext, IFriendServerContext
     /// <inheritdoc/>
     public async ValueTask<Friend> CreateNewFriendAsync(string characterName, string friendName)
     {
-        var friend = this.CreateNew<MUnique.OpenMU.Interfaces.Friend>();
+        var friend = this.CreateNew<HNMO.Interfaces.Friend>();
         friend.FriendId = (await this.Provider.GetRepository<Character>().GetAllAsync().ConfigureAwait(false)).FirstOrDefault(character => character.Name == friendName)?.Id ?? Guid.Empty;
         friend.CharacterId = (await this.Provider.GetRepository<Character>().GetAllAsync().ConfigureAwait(false)).FirstOrDefault(character => character.Name == characterName)?.Id ?? Guid.Empty;
         return friend;

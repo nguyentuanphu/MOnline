@@ -1,4 +1,4 @@
-// <copyright file="ItemOptionOfLevel.Generated.cs" company="MUnique">
+// <copyright file="ItemOptionOfLevel.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemOptionOfLevel"/>.
 /// </summary>
 [Table(nameof(ItemOptionOfLevel), Schema = SchemaNames.Configuration)]
-internal partial class ItemOptionOfLevel : MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel, IIdentifiable
+internal partial class ItemOptionOfLevel : HNMO.DataModel.Configuration.Items.ItemOptionOfLevel, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class ItemOptionOfLevel : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition PowerUpDefinition
+    public override HNMO.DataModel.Attributes.PowerUpDefinition PowerUpDefinition
     {
         get => base.PowerUpDefinition;set
         {
@@ -55,7 +55,7 @@ internal partial class ItemOptionOfLevel : MUnique.OpenMU.DataModel.Configuratio
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemOptionOfLevel Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemOptionOfLevel();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class ItemOptionOfLevel : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionOfLevel other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemOptionOfLevel other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

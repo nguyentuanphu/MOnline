@@ -1,8 +1,8 @@
-﻿// <copyright file="ConnectionConfigurator.cs" company="MUnique">
+﻿// <copyright file="ConnectionConfigurator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;

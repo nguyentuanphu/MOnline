@@ -1,13 +1,13 @@
-﻿// <copyright file="MiniGameStartBasePlugIn.cs" company="MUnique">
+﻿// <copyright file="MiniGameStartBasePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.PlayerActions.MiniGames;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This base plugin allows you to implement mini game starts.

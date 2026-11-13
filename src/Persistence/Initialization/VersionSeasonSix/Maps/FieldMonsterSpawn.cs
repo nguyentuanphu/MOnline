@@ -1,8 +1,8 @@
-﻿// <copyright file="FieldMonsterSpawn.cs" company="MUnique">
+﻿// <copyright file="FieldMonsterSpawn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
 /// <summary>
 /// An automatic monster spawn on a field map, which is shared between the map initializer and

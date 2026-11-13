@@ -1,12 +1,12 @@
-﻿// <copyright file="ChatCommandPlugInBase.cs" company="MUnique">
+﻿// <copyright file="ChatCommandPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The base of every chat command plug in.
@@ -233,7 +233,7 @@ public abstract class ChatCommandPlugInBase<T> : IChatCommandPlugIn
         return attribute;
     }
 
-    private async ValueTask<bool> ChangeAccountStateAsync(Player gameMaster, Func<MUnique.OpenMU.Persistence.IPlayerContext, ValueTask<Account?>> accountSelector, AccountState accountState)
+    private async ValueTask<bool> ChangeAccountStateAsync(Player gameMaster, Func<HNMO.Persistence.IPlayerContext, ValueTask<Account?>> accountSelector, AccountState accountState)
     {
         using var context = gameMaster.GameContext.PersistenceContextProvider.CreateNewPlayerContext(gameMaster.GameContext.Configuration);
         var account = await accountSelector(context).ConfigureAwait(false);

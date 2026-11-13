@@ -1,13 +1,13 @@
-﻿// <copyright file="ImperialGuardianMonsterIntelligence.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianMonsterIntelligence.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
+namespace HNMO.GameLogic.MiniGames.ImperialGuardian;
 
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// The intelligence of the monsters of the imperial guardian event.

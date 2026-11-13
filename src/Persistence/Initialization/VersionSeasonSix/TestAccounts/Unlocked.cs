@@ -1,12 +1,12 @@
-﻿// <copyright file="Unlocked.cs" company="MUnique">
+﻿// <copyright file="Unlocked.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.TestAccounts;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.TestAccounts;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Initializes a test account with all character classes unlocked, so they can be created.

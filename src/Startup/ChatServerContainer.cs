@@ -1,14 +1,14 @@
-﻿// <copyright file="ChatServerContainer.cs" company="MUnique">
+﻿// <copyright file="ChatServerContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Initialization;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Persistence.Initialization;
 
 /// <summary>
 /// A container which takes care of the <see cref="Interfaces.IChatServer"/>.

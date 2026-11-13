@@ -1,4 +1,4 @@
-// <copyright file="BattleZoneDefinition.Generated.cs" company="MUnique">
+// <copyright file="BattleZoneDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="BattleZoneDefinition"/>.
 /// </summary>
-public partial class BattleZoneDefinition : MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition, IIdentifiable, IConvertibleTo<BattleZoneDefinition>
+public partial class BattleZoneDefinition : HNMO.DataModel.Configuration.BattleZoneDefinition, IIdentifiable, IConvertibleTo<BattleZoneDefinition>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class BattleZoneDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Rectangle Ground
+    public override HNMO.DataModel.Configuration.Rectangle Ground
     {
         get => base.Ground;
         set => base.Ground = value;
@@ -55,7 +55,7 @@ public partial class BattleZoneDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Rectangle LeftGoal
+    public override HNMO.DataModel.Configuration.Rectangle LeftGoal
     {
         get => base.LeftGoal;
         set => base.LeftGoal = value;
@@ -73,14 +73,14 @@ public partial class BattleZoneDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Rectangle RightGoal
+    public override HNMO.DataModel.Configuration.Rectangle RightGoal
     {
         get => base.RightGoal;
         set => base.RightGoal = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.BattleZoneDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new BattleZoneDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -88,7 +88,7 @@ public partial class BattleZoneDefinition : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.BattleZoneDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

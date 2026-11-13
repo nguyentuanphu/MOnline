@@ -1,14 +1,14 @@
-﻿// <copyright file="DrainLifeSkillPlugIn.cs" company="MUnique">
+﻿// <copyright file="DrainLifeSkillPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles the drain life skill of the summoner class. Additionally to the attacked target, it regains life for damage dealt.

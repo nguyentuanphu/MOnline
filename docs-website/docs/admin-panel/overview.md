@@ -1,7 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
-description: What the OpenMU admin panel is, how to open it and how it is structured.
+description: What the HNMO admin panel is, how to open it and how it is structured.
 ---
 
 # The admin panel
@@ -49,7 +49,7 @@ with `-adminpanel:disabled`.
 |---|---|
 | [Dashboard](#dashboard) | The start page: statistics about the servers, players, accounts and guilds |
 | [Setup](setup.md) | Create, reinstall and update the database; choose the game version |
-| [Configuration updates](configuration-updates.md) | Apply configuration data updates which come with new OpenMU versions |
+| [Configuration updates](configuration-updates.md) | Apply configuration data updates which come with new HNMO versions |
 | [Servers](servers.md) | Start/stop listeners, player counts, add servers, global messages |
 | [Accounts](accounts.md) | Search, create, ban and edit accounts |
 | [Online accounts](online-accounts.md) | Who is logged in, disconnect players, offline sessions |

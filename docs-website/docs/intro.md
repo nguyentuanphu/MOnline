@@ -1,18 +1,18 @@
 ---
 id: intro
-title: OpenMU Documentation
+title: HNMO Documentation
 sidebar_label: Introduction
 sidebar_position: 1
 slug: /
-description: Documentation for the OpenMU project - an open source MU Online server.
+description: Documentation for the HNMO project - an open source HNMO server.
 ---
 
-# OpenMU Documentation
+# HNMO Documentation
 
-OpenMU is an easy to use, extendable and customizable server for the MMORPG
-*MU Online*. The server supports multiple versions of the game; the main focus is
+HNMO is an easy to use, extendable and customizable server for the MMORPG
+*HNMO*. The server supports multiple versions of the game; the main focus is
 Season 6 Episode 3 using the ENG (english) protocol. Additionally, the long-term
-focus is on the [open source client](https://github.com/sven-n/MuMain), which
+focus is on the HNMO desktop client, which
 supports a slightly extended network protocol.
 
 The code is a complete rewrite from scratch. It is not based on pre-existing
@@ -33,7 +33,7 @@ current state with the available docker image — see
 | … host a server for other players | [Deployment overview](deployment/overview.md) |
 | … configure my server (rates, items, monsters, …) | [Admin Panel](admin-panel/overview.md) |
 | … build and debug the server myself | [Run from source](getting-started/from-source.md) |
-| … understand how OpenMU works internally | [Architecture](development/architecture.md) |
+| … understand how HNMO works internally | [Architecture](development/architecture.md) |
 | … contribute | [Contributing](development/contributing.md) |
 
 ## Used technologies
@@ -53,7 +53,7 @@ is used.
 
 ## Gameplay differences to the original server
 
-This project does not have the goal to copy the original MU Online server
+This project does not have the goal to copy the original HNMO server
 behaviour to 100 %. That is not entirely possible, because the original server is
 written in another programming language and has a completely different
 architecture. In some points we make our life easier, in other points we try to
@@ -68,7 +68,7 @@ does at some places.
 For example, distributed stat points always have an effect, while in the original
 server effects might get rounded down: when 4 points of strength give 1 base
 damage, the original server doesn't calculate a fraction of 1 damage for 3
-points, while OpenMU calculates 0.75 damage. This damage then has an effect in
+points, while HNMO calculates 0.75 damage. This damage then has an effect in
 further calculations.
 
 ### Countdown when changing character or sub-server
@@ -80,7 +80,7 @@ that's really annoying and see no real value in it, so we don't use a countdown.
 
 ## Getting help
 
-* [Discord](https://discord.gg/2u5Agkd) — the fastest way to ask a question
-* [GitHub issues](https://github.com/MUnique/OpenMU/issues) — bugs and feature
+* the project's issue tracker — the fastest way to ask a question
+* [GitHub issues](https://github.com/nguyentuanphu/HNMO/issues) — bugs and feature
   requests
-* [Blog](https://munique.net) — background articles about the development
+* [Blog](https://github.com/nguyentuanphu/HNMO) — background articles about the development

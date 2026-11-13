@@ -1,15 +1,15 @@
 ---
 title: Distributed
 sidebar_position: 4
-description: Hosting OpenMU as multiple containers which communicate through Dapr.
+description: Hosting HNMO as multiple containers which communicate through Dapr.
 ---
 
 # Distributed deployment
 
 :::warning[Experimental]
-This way of hosting OpenMU works, but it's experimental and has some
+This way of hosting HNMO works, but it's experimental and has some
 [known limitations](#known-limitations). Feel free to contribute — see the
-[open issues with the `distributed-deployment` label](https://github.com/MUnique/OpenMU/issues?q=is%3Aissue%20state%3Aopen%20label%3Adistributed-deployment).
+[open issues with the `distributed-deployment` label](https://github.com/nguyentuanphu/HNMO/issues?q=is%3Aissue%20state%3Aopen%20label%3Adistributed-deployment).
 
 It also requires a good understanding of distributed systems and more resources
 (CPU, RAM, disk, network) than the [all-in-one deployment](all-in-one.md).
@@ -47,7 +47,7 @@ For observability, all subsystems and their Dapr sidecars send logs, metrics and
 [OpenTelemetry](https://opentelemetry.io/) to the `otel-lgtm` container, which
 bundles an OpenTelemetry collector, Loki, Prometheus, Tempo and Grafana.
 
-Before starting Compose, set `OPENMU_GAME_SERVER_APP_TOKEN` in your private `.env`
+Before starting Compose, set `HNMO_GAME_SERVER_APP_TOKEN` in your private `.env`
 file to a strong random value (for example, `openssl rand -hex 32`). The game
 servers and their Dapr sidecars receive this as `APP_API_TOKEN`. Internal live
 administration requests without a matching sidecar token are rejected, including
@@ -63,8 +63,8 @@ see [Kubernetes](kubernetes.md).
 ### Clone the repository and navigate to the compose files
 
 ```bash
-git clone https://github.com/MUnique/OpenMU.git
-cd OpenMU/deploy/distributed
+git clone https://github.com/nguyentuanphu/HNMO.git
+cd HNMO/deploy/distributed
 ```
 
 ### Option A — for local testing
@@ -162,7 +162,7 @@ its own process:
 
 ## Health endpoints
 
-Every OpenMU container answers on port 8080:
+Every HNMO container answers on port 8080:
 
 * `/health/live` — healthy as long as the process runs. Use it for liveness
   probes, which restart a process. It doesn't depend on the database, because a
@@ -194,7 +194,7 @@ which `docker compose ps` shows.
 
 ## Environment variables
 
-The OpenMU images used in this docker compose consider the following environment
+The HNMO images used in this docker compose consider the following environment
 variables.
 
 ### `ASPNETCORE_ENVIRONMENT`
@@ -259,7 +259,7 @@ The log levels follow the usual .NET configuration. By default, everything from
 `Debug` is exported and everything from `Information` is written to the console,
 except the framework logs (`Microsoft.*`), which start at `Warning`. To change
 it, set for example `Logging__LogLevel__Default` or
-`Logging__LogLevel__MUnique.OpenMU.GameLogic`.
+`Logging__LogLevel__HNMO.GameLogic`.
 
 See [Startup parameters and environment variables](startup-parameters.md) for the
 variables which apply to every deployment.
@@ -270,5 +270,5 @@ The `otel-lgtm` container ([grafana/otel-lgtm](https://github.com/grafana/docker
 is meant for development, demo and test environments. It keeps its data in the
 `otel-lgtm-data` volume. For a bigger production setup, run an OpenTelemetry
 collector, Loki, Prometheus, Tempo and Grafana as separate services, or use a
-hosted service, and point `OTEL_EXPORTER_OTLP_ENDPOINT` of the OpenMU services
+hosted service, and point `OTEL_EXPORTER_OTLP_ENDPOINT` of the HNMO services
 and the tracing endpoint in `dapr-components/config.yaml` to it.

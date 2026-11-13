@@ -1,12 +1,12 @@
-﻿// <copyright file="AddLorenMarketRaulJewelBundlePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddLorenMarketRaulJewelBundlePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update makes Jeweler Raul (546) of the Loren Market open the jewel bundle window, like Lahap,
@@ -17,7 +17,7 @@ using MUnique.OpenMU.PlugIns;
 /// A window which was already configured for Raul is kept.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddLorenMarketRaulJewelBundlePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddLorenMarketRaulJewelBundlePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddLorenMarketRaulJewelBundlePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddLorenMarketRaulJewelBundlePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("e7b6839b-c932-4b28-8ffd-f7b9658b1ce3")]
 public class AddLorenMarketRaulJewelBundlePlugIn : UpdatePlugInBase
 {

@@ -1,12 +1,12 @@
-﻿// <copyright file="AddRingOfWarriorLevel40ForNewCharacters.cs" company="MUnique">
+﻿// <copyright file="AddRingOfWarriorLevel40ForNewCharacters.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.PlugIns.CharacterCreated;
+namespace HNMO.Persistence.Initialization.PlugIns.CharacterCreated;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the ring, which can be dropped at level 40.

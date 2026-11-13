@@ -1,12 +1,12 @@
-﻿// <copyright file="QuestGroupHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="QuestGroupHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Quests;
+namespace HNMO.GameServer.MessageHandler.Quests;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for quest packets (0xF6 identifier).

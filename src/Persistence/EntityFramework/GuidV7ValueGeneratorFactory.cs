@@ -1,8 +1,8 @@
-// <copyright file="GuidV7ValueGeneratorFactory.cs" company="MUnique">
+// <copyright file="GuidV7ValueGeneratorFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.ValueGeneration;

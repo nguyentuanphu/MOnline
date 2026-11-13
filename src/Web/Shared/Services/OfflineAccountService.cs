@@ -1,12 +1,12 @@
-// <copyright file="OfflineAccountService.cs" company="MUnique">
+// <copyright file="OfflineAccountService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlugIns.ChatCommands;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Service for the offline player table on the <c>LoggedIn</c> page.

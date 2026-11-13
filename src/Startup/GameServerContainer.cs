@@ -1,22 +1,22 @@
-﻿// <copyright file="GameServerContainer.cs" company="MUnique">
+﻿// <copyright file="GameServerContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameServer;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer.Archive;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Initialization;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameServer;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Analyzer.Archive;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence;
+using HNMO.Persistence.Initialization;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A container which keeps all <see cref="IGameServer"/>s in one <see cref="IHostedService"/>.

@@ -1,8 +1,8 @@
 @inherits EditBase
 
-@using MUnique.OpenMU.DataModel.Entities
-@using MUnique.OpenMU.Web.AdminPanel.Components.Layout
-@using MUnique.OpenMU.Web.Shared.Components.ItemEdit
+@using HNMO.DataModel.Entities
+@using HNMO.Web.AdminPanel.Components.Layout
+@using HNMO.Web.Shared.Components.ItemEdit
 
 <EditShell Model="@this.Model" ModelType="@this.Type" PersistenceContext="@this.PersistenceContext" IsOwningContext="@this.IsOwningContext" DownloadMarkup="@this.DownloadMarkup" EditorsMarkup="@this.GetEditorsMarkup()">
     @if (this.Type == typeof(Item))

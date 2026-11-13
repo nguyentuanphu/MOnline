@@ -1,13 +1,13 @@
-﻿// <copyright file="ServerContainerBase.cs" company="MUnique">
+﻿// <copyright file="ServerContainerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// Base class for a server container, which reacts on database recreations.

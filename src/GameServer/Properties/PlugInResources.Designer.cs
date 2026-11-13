@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.GameServer.Properties {
+namespace HNMO.GameServer.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MUnique.OpenMU.GameServer.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MUnique.OpenMU.GameServer.Properties.PlugInResources", typeof(PlugInResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HNMO.GameServer.Properties.PlugInResources", typeof(PlugInResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

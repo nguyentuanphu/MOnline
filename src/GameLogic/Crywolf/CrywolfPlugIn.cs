@@ -1,20 +1,20 @@
-﻿// <copyright file="CrywolfPlugIn.cs" company="MUnique">
+﻿// <copyright file="CrywolfPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The plugin of the crywolf event, in which the players defend the crywolf fortress against the army of Balgass.

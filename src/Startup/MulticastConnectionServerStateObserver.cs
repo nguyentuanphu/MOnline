@@ -1,18 +1,18 @@
-﻿// <copyright file="MulticastConnectionServerStateObserver.cs" company="MUnique">
+﻿// <copyright file="MulticastConnectionServerStateObserver.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System.Collections.Concurrent;
 using System.Net;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An implementation of a <see cref="IGameServerStateObserver"/> which forwards registrations to multiple state observers,
 /// e.g when there are multiple connect servers defined for the same game client.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.Interfaces.IGameServerStateObserver" />
+/// <seealso cref="HNMO.Interfaces.IGameServerStateObserver" />
 internal class MulticastConnectionServerStateObserver : IGameServerStateObserver
 {
     private readonly MemorizingObserver _memorizingObserver = new();

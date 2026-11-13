@@ -1,16 +1,16 @@
-﻿// <copyright file="AppearanceSerializerExtended.cs" company="MUnique">
+﻿// <copyright file="AppearanceSerializerExtended.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Collections.Concurrent;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Extended serializer for the appearance of a player.

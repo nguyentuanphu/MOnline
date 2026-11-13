@@ -1,15 +1,15 @@
-// <copyright file="SimpleModulusKeySerializer.cs" company="MUnique">
+// <copyright file="SimpleModulusKeySerializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.SimpleModulus;
+namespace HNMO.Network.SimpleModulus;
 
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using static System.Buffers.Binary.BinaryPrimitives;
 
 /// <summary>
-/// Serializer to load/save the simple modulus keys into files in the original format of Webzen.
+/// Serializer to load/save the simple modulus keys into files in the original format of the original developers.
 /// </summary>
 public class SimpleModulusKeySerializer
 {

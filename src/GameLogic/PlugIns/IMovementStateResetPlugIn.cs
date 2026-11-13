@@ -1,11 +1,11 @@
-// <copyright file="IMovementStateResetPlugIn.cs" company="MUnique">
+// <copyright file="IMovementStateResetPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin point which is called when the movement state of a player is reset, e.g. after a teleport.

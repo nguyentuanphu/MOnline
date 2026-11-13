@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationSearchIndexer.cs" company="MUnique">
+// <copyright file="ConfigurationSearchIndexer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.Collections;
 using System.Collections.Concurrent;
@@ -10,11 +10,11 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Text;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// Handles the heavy lifting of building the configuration search index.
@@ -222,7 +222,7 @@ internal sealed class ConfigurationSearchIndexer
 
     private static string? GetEditUrlForObject(object item)
     {
-        if (item is MUnique.OpenMU.PlugIns.PlugInConfiguration plugInConfiguration)
+        if (item is HNMO.PlugIns.PlugInConfiguration plugInConfiguration)
         {
             return $"/plugins?id={plugInConfiguration.GetId()}";
         }

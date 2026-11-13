@@ -1,15 +1,15 @@
-﻿// <copyright file="ConfigurationChangeListener.cs" company="MUnique">
+﻿// <copyright file="ConfigurationChangeListener.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Collections;
 using System.IO;
 using Microsoft.EntityFrameworkCore.Metadata;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Class which listens to changes within the <see cref="GameConfiguration"/>,

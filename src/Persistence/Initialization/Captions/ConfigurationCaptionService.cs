@@ -1,16 +1,16 @@
-// <copyright file="ConfigurationCaptionService.cs" company="MUnique">
+// <copyright file="ConfigurationCaptionService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Captions;
+namespace HNMO.Persistence.Initialization.Captions;
 
 using System.Collections.Concurrent;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
-using MUnique.OpenMU.Persistence.InMemory;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Updates;
+using HNMO.Persistence.InMemory;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Service to keep the captions of the configuration in sync with their sources,
@@ -106,7 +106,7 @@ public class ConfigurationCaptionService
     /// <summary>
     /// Finds the built-in captions of the configuration which are not linked to their sources yet,
     /// but would be linked by <see cref="LinkBuiltInCaptionsAsync"/>. That's the case for configurations which were
-    /// linked before an update of OpenMU added new sources, e.g. for item names. Nothing is changed.
+    /// linked before an update of HNMO added new sources, e.g. for item names. Nothing is changed.
     /// </summary>
     /// <returns>The number of linkable captions by the type name of their owner, e.g. "ItemDefinition".</returns>
     public async ValueTask<IReadOnlyDictionary<string, int>> FindLinkableCaptionsAsync()

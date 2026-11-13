@@ -1,11 +1,11 @@
-// <copyright file="CastleSiegeNpcListHandlerBase.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcListHandlerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.CastleSiege;
+namespace HNMO.GameServer.MessageHandler.CastleSiege;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.CastleSiege.Actions;
+using HNMO.GameLogic;
+using HNMO.GameLogic.CastleSiege.Actions;
 
 /// <summary>
 /// Base packet handler for Castle Siege defense-structure lists.

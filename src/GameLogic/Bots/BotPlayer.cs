@@ -1,11 +1,11 @@
-// <copyright file="BotPlayer.cs" company="MUnique">
+// <copyright file="BotPlayer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Offline;
+using HNMO.GameLogic.Offline;
 
 /// <summary>
 /// A connection-less bot player. It reuses the whole offline-player intelligence (combat, buffs,
@@ -36,7 +36,7 @@ public sealed class BotPlayer : OfflinePlayer
         : base(gameContext)
     {
         // File the bot's log entries under its own runtime category
-        // (MUnique.OpenMU.GameLogic.Bots.BotPlayer), so a single Serilog MinimumLevel.Override can
+        // (HNMO.GameLogic.Bots.BotPlayer), so a single Serilog MinimumLevel.Override can
         // silence or surface bot logging without touching real players, who keep the base Player category.
         this.Logger = new RuntimeCategoryLogger<Player>(gameContext.LoggerFactory, this);
     }

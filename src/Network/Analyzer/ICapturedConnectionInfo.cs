@@ -1,11 +1,11 @@
-// <copyright file="ICapturedConnectionInfo.cs" company="MUnique">
+// <copyright file="ICapturedConnectionInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer;
+namespace HNMO.Network.Analyzer;
 
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Interfaces;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// Information about a connection of a server, whose traffic can be captured.

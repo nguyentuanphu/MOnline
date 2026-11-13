@@ -1,19 +1,19 @@
-﻿// <copyright file="AddCrestOfMonarchDropGroupUpdateSeason6.cs" company="MUnique">
+﻿// <copyright file="AddCrestOfMonarchDropGroupUpdateSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the Crest of Monarch drop item group for the Icarus map.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCrestOfMonarchDropGroupUpdateSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCrestOfMonarchDropGroupUpdateSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCrestOfMonarchDropGroupUpdateSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCrestOfMonarchDropGroupUpdateSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("FF14A478-3EA8-4C41-A298-8E6698D5973D")]
 public class AddCrestOfMonarchDropGroupUpdateSeason6 : UpdatePlugInBase
 {

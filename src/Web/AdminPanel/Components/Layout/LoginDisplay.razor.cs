@@ -1,13 +1,13 @@
-// <copyright file="LoginDisplay.razor.cs" company="MUnique">
+// <copyright file="LoginDisplay.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.Layout;
+namespace HNMO.Web.AdminPanel.Components.Layout;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Pages;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Pages;
 
 /// <summary>
 /// Shows the currently signed in user and allows to sign out.

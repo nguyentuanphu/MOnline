@@ -1,10 +1,10 @@
-// <copyright file="ILookupController.cs" company="MUnique">
+// <copyright file="ILookupController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// Interface for a lookup controller which provides methods to find objects by some text and type.

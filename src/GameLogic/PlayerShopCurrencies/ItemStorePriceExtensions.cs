@@ -1,8 +1,8 @@
-// <copyright file="ItemStorePriceExtensions.cs" company="MUnique">
+// <copyright file="ItemStorePriceExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
 /// <summary>
 /// Extensions to get and set the price of an item in a player shop.

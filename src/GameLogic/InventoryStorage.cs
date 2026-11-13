@@ -1,14 +1,14 @@
-﻿// <copyright file="InventoryStorage.cs" company="MUnique">
+﻿// <copyright file="InventoryStorage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.PlugIns;
-using static MUnique.OpenMU.DataModel.InventoryConstants;
+using HNMO.DataModel;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views.World;
+using HNMO.PlugIns;
+using static HNMO.DataModel.InventoryConstants;
 
 /// <summary>
 /// The storage of an inventory of a player, which also contains equippable slots. This class also manages the powerups which get created by equipped items.

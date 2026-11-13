@@ -1,8 +1,8 @@
-// <copyright file="NetworkArchiveController.cs" company="MUnique">
+// <copyright file="NetworkArchiveController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.API;
+namespace HNMO.Web.API;
 
 using System.Globalization;
 using System.IO;
@@ -10,8 +10,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network.Analyzer.Archive;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
+using HNMO.Network.Analyzer.Archive;
+using HNMO.Web.AdminPanel.Auth;
 
 /// <summary>
 /// Controller which offers the archived sessions of the observed accounts as a download.

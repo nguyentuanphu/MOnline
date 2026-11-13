@@ -1,10 +1,10 @@
-﻿// <copyright file="Storage.cs" company="MUnique">
+﻿// <copyright file="Storage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// This class wraps the access to the IItemStorage of an character.

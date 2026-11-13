@@ -1,11 +1,11 @@
-// <copyright file="CastleSiegeStatueIntelligence.cs" company="MUnique">
+// <copyright file="CastleSiegeStatueIntelligence.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.Intelligence;
+namespace HNMO.GameLogic.CastleSiege.Intelligence;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+using HNMO.GameLogic.CastleSiege.NPC;
 
 /// <summary>
 /// Regenerates the health of an upgraded Guardian Statue.

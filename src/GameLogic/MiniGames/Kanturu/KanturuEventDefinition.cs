@@ -1,12 +1,12 @@
-﻿// <copyright file="KanturuEventDefinition.cs" company="MUnique">
+﻿// <copyright file="KanturuEventDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.GameLogic.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.Properties;
 
 /// <summary>
 /// The definition of the Kanturu Refinery Tower event. It describes the whole run of the
@@ -14,7 +14,7 @@ using MUnique.OpenMU.GameLogic.Properties;
 /// </summary>
 /// <remarks>
 /// It's configured at the Kanturu start plug-in, see
-/// <c>MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks.KanturuStartConfiguration</c>.
+/// <c>HNMO.GameLogic.PlugIns.PeriodicTasks.KanturuStartConfiguration</c>.
 /// The values of <see cref="CreateDefault"/> describe the season 6 event.
 /// </remarks>
 public class KanturuEventDefinition
@@ -111,7 +111,7 @@ public class KanturuEventDefinition
     public TimeSpan VictoryCinematicDuration { get; set; } = TimeSpan.FromSeconds(2);
 
     /// <summary>
-    /// Gets or sets the areas whose <see cref="MUnique.OpenMU.DataModel.Configuration.TerrainAttributeType.NoGround"/>
+    /// Gets or sets the areas whose <see cref="HNMO.DataModel.Configuration.TerrainAttributeType.NoGround"/>
     /// attribute is removed when the Nightmare boss has been defeated, so that the players can
     /// walk to the Elphis area.
     /// </summary>

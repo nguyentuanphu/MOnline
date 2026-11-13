@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemCraftAction.cs" company="MUnique">
+﻿// <copyright file="ItemCraftAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// The action to craft items with crafting NPCs.

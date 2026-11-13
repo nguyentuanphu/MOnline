@@ -1,20 +1,20 @@
-// <copyright file="SkillListField.razor.cs" company="MUnique">
+// <copyright file="SkillListField.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.Diagnostics.CodeAnalysis;
 using System.Linq.Expressions;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Components.Form.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Properties;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Components.Form.Modal;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Properties;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// A component that displays and allows editing a character's skill list, including the master skill tree.

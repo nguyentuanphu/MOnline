@@ -1,12 +1,12 @@
-// <copyright file="FieldCaption.cs" company="MUnique">
+// <copyright file="FieldCaption.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>Resolves field names consistently for validation messages and form labels.</summary>
 public static class FieldCaption

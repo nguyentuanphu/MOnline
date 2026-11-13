@@ -1,15 +1,15 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="ItemUpgradeConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="ItemUpgradeConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An item consume handler which upgrades the target item.

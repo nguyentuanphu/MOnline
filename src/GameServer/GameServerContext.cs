@@ -1,18 +1,18 @@
-﻿// <copyright file="GameServerContext.cs" company="MUnique">
+﻿// <copyright file="GameServerContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

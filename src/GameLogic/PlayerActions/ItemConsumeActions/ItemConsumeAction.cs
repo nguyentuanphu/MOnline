@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemConsumeAction.cs" company="MUnique">
+﻿// <copyright file="ItemConsumeAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Action to consume an item.

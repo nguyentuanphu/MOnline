@@ -1,14 +1,14 @@
-﻿// <copyright file="CultureSelector.razor.cs" company="MUnique">
+﻿// <copyright file="CultureSelector.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components;
+namespace HNMO.Web.Shared.Components;
 
 using System.Globalization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Options;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// A selection component for supported UI-Cultures (languages).

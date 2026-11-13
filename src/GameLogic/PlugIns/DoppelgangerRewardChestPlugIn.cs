@@ -1,13 +1,13 @@
-﻿// <copyright file="DoppelgangerRewardChestPlugIn.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerRewardChestPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames.Doppelganger;
+using HNMO.GameLogic.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Opens the reward chests of the doppelganger event, when a player talks to them.

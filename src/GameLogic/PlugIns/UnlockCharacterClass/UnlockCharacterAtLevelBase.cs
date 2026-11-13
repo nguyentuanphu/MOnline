@@ -1,8 +1,8 @@
-﻿// <copyright file="UnlockCharacterAtLevelBase.cs" company="MUnique">
+﻿// <copyright file="UnlockCharacterAtLevelBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.UnlockCharacterClass;
+namespace HNMO.GameLogic.PlugIns.UnlockCharacterClass;
 
 /// <summary>
 /// Unlocks the a character class as soon as the first character of an account reaches a certain level.

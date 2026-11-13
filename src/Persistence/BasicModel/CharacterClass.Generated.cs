@@ -1,4 +1,4 @@
-// <copyright file="CharacterClass.Generated.cs" company="MUnique">
+// <copyright file="CharacterClass.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CharacterClass"/>.
 /// </summary>
-public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.CharacterClass, IIdentifiable, IConvertibleTo<CharacterClass>
+public partial class CharacterClass : HNMO.DataModel.Configuration.CharacterClass, IIdentifiable, IConvertibleTo<CharacterClass>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition> StatAttributes
+    public override ICollection<HNMO.DataModel.Configuration.StatAttributeDefinition> StatAttributes
     {
-        get => base.StatAttributes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition, StatAttributeDefinition>(this.RawStatAttributes);
+        get => base.StatAttributes ??= new CollectionAdapter<HNMO.DataModel.Configuration.StatAttributeDefinition, StatAttributeDefinition>(this.RawStatAttributes);
         protected set
         {
             this.StatAttributes.Clear();
@@ -54,9 +54,9 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> AttributeCombinations
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> AttributeCombinations
     {
-        get => base.AttributeCombinations ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeCombinations);
+        get => base.AttributeCombinations ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeCombinations);
         protected set
         {
             this.AttributeCombinations.Clear();
@@ -75,9 +75,9 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.ConstValueAttribute> BaseAttributeValues
+    public override ICollection<HNMO.AttributeSystem.ConstValueAttribute> BaseAttributeValues
     {
-        get => base.BaseAttributeValues ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawBaseAttributeValues);
+        get => base.BaseAttributeValues ??= new CollectionAdapter<HNMO.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawBaseAttributeValues);
         protected set
         {
             this.BaseAttributeValues.Clear();
@@ -100,7 +100,7 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass NextGenerationClass
+    public override HNMO.DataModel.Configuration.CharacterClass NextGenerationClass
     {
         get => base.NextGenerationClass;
         set => base.NextGenerationClass = value;
@@ -118,7 +118,7 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition HomeMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition HomeMap
     {
         get => base.HomeMap;
         set => base.HomeMap = value;
@@ -136,14 +136,14 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.SkillComboDefinition ComboDefinition
+    public override HNMO.DataModel.Configuration.SkillComboDefinition ComboDefinition
     {
         get => base.ComboDefinition;
         set => base.ComboDefinition = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CharacterClass Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CharacterClass();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -151,7 +151,7 @@ public partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.Cha
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CharacterClass other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CharacterClass other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

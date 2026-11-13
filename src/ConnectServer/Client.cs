@@ -1,16 +1,16 @@
-﻿// <copyright file="Client.cs" company="MUnique">
+﻿// <copyright file="Client.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer;
+namespace HNMO.ConnectServer;
 
 using System.Buffers;
 using System.Net;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.ConnectServer.PacketHandler;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ConnectServer;
+using HNMO.ConnectServer.PacketHandler;
+using HNMO.Network;
+using HNMO.Network.Packets.ConnectServer;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

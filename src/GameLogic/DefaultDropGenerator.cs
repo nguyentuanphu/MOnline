@@ -1,11 +1,11 @@
-// <copyright file="DefaultDropGenerator.cs" company="MUnique">
+// <copyright file="DefaultDropGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 using Nito.AsyncEx;
 
 /// <summary>

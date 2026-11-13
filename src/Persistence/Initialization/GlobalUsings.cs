@@ -1,4 +1,4 @@
-﻿// <copyright file="GlobalUsings.cs" company="MUnique">
+﻿// <copyright file="GlobalUsings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -8,9 +8,9 @@ global using System.ComponentModel.DataAnnotations;
 
 global using Microsoft.Extensions.Logging;
 
-global using MUnique.OpenMU.DataModel;
-global using MUnique.OpenMU.DataModel.Configuration;
-global using MUnique.OpenMU.DataModel.Entities;
-global using MUnique.OpenMU.GameLogic.Properties;
-global using MUnique.OpenMU.Persistence.Initialization.Properties;
-global using PlugInResources = MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources;
+global using HNMO.DataModel;
+global using HNMO.DataModel.Configuration;
+global using HNMO.DataModel.Entities;
+global using HNMO.GameLogic.Properties;
+global using HNMO.Persistence.Initialization.Properties;
+global using PlugInResources = HNMO.Persistence.Initialization.Properties.PlugInResources;

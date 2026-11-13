@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Persistence.Initialization.Properties {
+namespace HNMO.Persistence.Initialization.Properties {
     using System;
 
 
@@ -31,7 +31,7 @@ namespace MUnique.OpenMU.Persistence.Initialization.Properties {
         public static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("MUnique.OpenMU.Persistence.Initialization.Properties.WarpNames", typeof(WarpNames).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("HNMO.Persistence.Initialization.Properties.WarpNames", typeof(WarpNames).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

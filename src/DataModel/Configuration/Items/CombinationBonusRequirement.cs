@@ -1,10 +1,10 @@
-﻿// <copyright file="CombinationBonusRequirement.cs" company="MUnique">
+﻿// <copyright file="CombinationBonusRequirement.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a requirement of existing item options on the equipped items of a character.
@@ -30,6 +30,6 @@ public partial class CombinationBonusRequirement
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.OptionRequirementSummary, this.OptionType, this.SubOptionType, this.MinimumCount);
+        return string.Format(HNMO.DataModel.Properties.Resources.OptionRequirementSummary, this.OptionType, this.SubOptionType, this.MinimumCount);
     }
 }

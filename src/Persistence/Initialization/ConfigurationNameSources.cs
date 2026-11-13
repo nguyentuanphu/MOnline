@@ -1,12 +1,12 @@
-// <copyright file="ConfigurationNameSources.cs" company="MUnique">
+// <copyright file="ConfigurationNameSources.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
 using System.Runtime.CompilerServices;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Registers the resources of the built-in configuration names as sources of <see cref="LocalizedString"/>s,

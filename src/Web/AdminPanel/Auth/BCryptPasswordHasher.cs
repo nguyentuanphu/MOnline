@@ -1,11 +1,11 @@
-// <copyright file="BCryptPasswordHasher.cs" company="MUnique">
+// <copyright file="BCryptPasswordHasher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using Microsoft.AspNetCore.Identity;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// An <see cref="IPasswordHasher{TUser}"/> which uses BCrypt, like the rest of this project does.

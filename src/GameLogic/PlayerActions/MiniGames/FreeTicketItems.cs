@@ -1,10 +1,10 @@
-// <copyright file="FreeTicketItems.cs" company="MUnique">
+// <copyright file="FreeTicketItems.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Finds the <see cref="MiniGameDefinition.FreeTicketItem"/> of a mini game, which allows to enter it at any level instead of its regular ticket.

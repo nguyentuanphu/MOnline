@@ -1,8 +1,8 @@
-// <copyright file="AdminMcpExtensions.cs" company="MUnique">
+// <copyright file="AdminMcpExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Mcp;
+namespace HNMO.Web.AdminPanel.Mcp;
 
 using System.Globalization;
 using System.Net;
@@ -18,14 +18,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using ModelContextProtocol;
 using ModelContextProtocol.Protocol;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Registers and maps the opt-in MCP endpoint in either admin host.</summary>
 public static class AdminMcpExtensions
 {
-    private const string RateLimitPolicy = "OpenMU.Mcp";
+    private const string RateLimitPolicy = "HNMO.Mcp";
 
     /// <summary>Registers MCP when explicitly enabled by configuration.</summary>
     /// <param name="services">The service collection, including admin authentication and read operations.</param>
@@ -35,7 +35,7 @@ public static class AdminMcpExtensions
     {
         var options = new AdminMcpOptions();
         configuration.GetSection("AdminPanel:Mcp").Bind(options);
-        if (bool.TryParse(Environment.GetEnvironmentVariable("OPENMU_MCP_ENABLED"), out var enabled))
+        if (bool.TryParse(Environment.GetEnvironmentVariable("HNMO_MCP_ENABLED"), out var enabled))
         {
             options.Enabled = enabled;
         }
@@ -117,7 +117,7 @@ public static class AdminMcpExtensions
                     {
                         IsError = true,
                         Content = [new TextContentBlock { Text = $"An error occurred invoking '{name}': {ex.Message}" }],
-                        Meta = new JsonObject { ["openmu/errorKind"] = kind.ToString() },
+                        Meta = new JsonObject { ["hnmo/errorKind"] = kind.ToString() },
                     };
                 }
             });

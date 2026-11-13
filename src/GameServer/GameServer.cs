@@ -1,31 +1,31 @@
-﻿// <copyright file="GameServer.cs" company="MUnique">
+﻿// <copyright file="GameServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Discord;
-using MUnique.OpenMU.GameLogic.ItemFormulas;
-using MUnique.OpenMU.GameLogic.Properties;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.GameLogic.Views.Login;
-using MUnique.OpenMU.GameLogic.Views.Messenger;
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.Analyzer.Archive;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Discord;
+using HNMO.GameLogic.ItemFormulas;
+using HNMO.GameLogic.Properties;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.GameLogic.Views.Login;
+using HNMO.GameLogic.Views.Messenger;
+using HNMO.GameServer.RemoteView;
+using HNMO.Interfaces;
+using HNMO.Network.Analyzer;
+using HNMO.Network.Analyzer.Archive;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

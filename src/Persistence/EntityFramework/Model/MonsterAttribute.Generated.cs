@@ -1,4 +1,4 @@
-// <copyright file="MonsterAttribute.Generated.cs" company="MUnique">
+// <copyright file="MonsterAttribute.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MonsterAttribute"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MonsterAttribute"/>.
 /// </summary>
 [Table(nameof(MonsterAttribute), Schema = SchemaNames.Configuration)]
-internal partial class MonsterAttribute : MUnique.OpenMU.DataModel.Configuration.MonsterAttribute, IIdentifiable
+internal partial class MonsterAttribute : HNMO.DataModel.Configuration.MonsterAttribute, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class MonsterAttribute : MUnique.OpenMU.DataModel.Configuration
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition AttributeDefinition
+    public override HNMO.AttributeSystem.AttributeDefinition AttributeDefinition
     {
         get => base.AttributeDefinition;set
         {
@@ -55,7 +55,7 @@ internal partial class MonsterAttribute : MUnique.OpenMU.DataModel.Configuration
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterAttribute Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MonsterAttribute Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MonsterAttribute();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class MonsterAttribute : MUnique.OpenMU.DataModel.Configuration
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MonsterAttribute other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MonsterAttribute other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

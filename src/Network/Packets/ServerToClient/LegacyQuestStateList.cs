@@ -1,8 +1,8 @@
-﻿// <copyright file="LegacyQuestStateList.cs" company="MUnique">
+﻿// <copyright file="LegacyQuestStateList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Packets.ServerToClient;
+namespace HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// This part implements the indexer and size calculation for the message.
@@ -14,13 +14,13 @@ public readonly ref partial struct LegacyQuestStateListRef
     private const int ArrayStartIndex = 4;
 
     /// <summary>
-    /// Gets or sets the <see cref="MUnique.OpenMU.Network.Packets.LegacyQuestState" /> at the specified index.
+    /// Gets or sets the <see cref="HNMO.Network.Packets.LegacyQuestState" /> at the specified index.
     /// </summary>
     /// <value>
-    /// The <see cref="MUnique.OpenMU.Network.Packets.LegacyQuestState" />.
+    /// The <see cref="HNMO.Network.Packets.LegacyQuestState" />.
     /// </value>
     /// <param name="index">The index.</param>
-    /// <returns>The <see cref="MUnique.OpenMU.Network.Packets.LegacyQuestState" /> at the specified index.</returns>
+    /// <returns>The <see cref="HNMO.Network.Packets.LegacyQuestState" /> at the specified index.</returns>
     public LegacyQuestState this[int index]
     {
         get => (LegacyQuestState)this._data.Slice(this.GetArrayIndex(index)).GetByteValue(BitsPerState, this.GetShift(index));

@@ -1,13 +1,13 @@
-﻿// <copyright file="BloodCastleArchangelTalkPlugIn.cs" company="MUnique">
+﻿// <copyright file="BloodCastleArchangelTalkPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles talking to the Archangel in the blood castle event, where players hand in the quest item to win the event.

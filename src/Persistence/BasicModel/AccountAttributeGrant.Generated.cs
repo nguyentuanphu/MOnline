@@ -1,4 +1,4 @@
-// <copyright file="AccountAttributeGrant.Generated.cs" company="MUnique">
+// <copyright file="AccountAttributeGrant.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="AccountAttributeGrant"/>.
 /// </summary>
-public partial class AccountAttributeGrant : MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant, IIdentifiable, IConvertibleTo<AccountAttributeGrant>
+public partial class AccountAttributeGrant : HNMO.DataModel.Entities.AccountAttributeGrant, IIdentifiable, IConvertibleTo<AccountAttributeGrant>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class AccountAttributeGrant : MUnique.OpenMU.DataModel.Entities.A
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Attribute
+    public override HNMO.AttributeSystem.AttributeDefinition Attribute
     {
         get => base.Attribute;
         set => base.Attribute = value;

@@ -1,16 +1,16 @@
-﻿// <copyright file="AccountLinkService.cs" company="MUnique">
+﻿// <copyright file="AccountLinkService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.AccountLinking;
+namespace HNMO.GameLogic.AccountLinking;
 
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// Links accounts to users of external services, e.g. Discord.

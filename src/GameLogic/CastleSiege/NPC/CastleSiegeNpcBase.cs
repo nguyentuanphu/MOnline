@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeNpcBase.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+namespace HNMO.GameLogic.CastleSiege.NPC;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Base class for non-attackable Castle Siege NPCs which own an intelligence instance.

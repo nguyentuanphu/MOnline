@@ -1,4 +1,4 @@
-// <copyright file="Item.Generated.cs" company="MUnique">
+// <copyright file="Item.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.Item"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.Item"/>.
 /// </summary>
 [Table(nameof(Item), Schema = SchemaNames.AccountData)]
-internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiable
+internal partial class Item : HNMO.DataModel.Entities.Item, IIdentifiable
 {
     /// <inheritdoc />
     public Item()
@@ -40,7 +40,7 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.ItemOptionLink> ItemOptions => base.ItemOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.ItemOptionLink, ItemOptionLink>(this.RawItemOptions);
+    public override ICollection<HNMO.DataModel.Entities.ItemOptionLink> ItemOptions => base.ItemOptions ??= new CollectionAdapter<HNMO.DataModel.Entities.ItemOptionLink, ItemOptionLink>(this.RawItemOptions);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Definition"/>.
@@ -59,7 +59,7 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition Definition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition Definition
     {
         get => base.Definition;set
         {
@@ -85,7 +85,7 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition StorePriceItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition StorePriceItemDefinition
     {
         get => base.StorePriceItemDefinition;set
         {
@@ -95,7 +95,7 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Entities.Item Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Entities.Item Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Item();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -103,7 +103,7 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Entities.Item other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Entities.Item other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -129,6 +129,6 @@ internal partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifia
 
     protected void InitJoinCollections()
     {
-        this.ItemSetGroups = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet, ItemItemOfItemSet>(this.JoinedItemSetGroups, joinEntity => joinEntity.ItemOfItemSet, entity => new ItemItemOfItemSet { Item = this, ItemId = this.Id, ItemOfItemSet = (ItemOfItemSet)entity, ItemOfItemSetId = ((ItemOfItemSet)entity).Id});
+        this.ItemSetGroups = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOfItemSet, ItemItemOfItemSet>(this.JoinedItemSetGroups, joinEntity => joinEntity.ItemOfItemSet, entity => new ItemItemOfItemSet { Item = this, ItemId = this.Id, ItemOfItemSet = (ItemOfItemSet)entity, ItemOfItemSetId = ((ItemOfItemSet)entity).Id});
     }
 }

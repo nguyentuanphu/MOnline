@@ -13,7 +13,7 @@ XSLT transformation that generates C# test code from XML packet definitions. Fea
 - Validates field boundaries to prevent buffer overruns
 - Generates syntactically correct C# test code with proper naming
 
-### 2. `tests/MUnique.OpenMU.Network.Packets.Tests/`
+### 2. `tests/HNMO.Network.Packets.Tests/`
 New test project that:
 - Automatically generates test files during build (when `ci` is not set)
 - Integrates with existing test infrastructure (NUnit, StyleCop, etc.)
@@ -73,7 +73,7 @@ The tests run automatically as part of the normal build and test process. No man
 
 To run tests manually:
 ```bash
-dotnet test tests/MUnique.OpenMU.Network.Packets.Tests/
+dotnet test tests/HNMO.Network.Packets.Tests/
 ```
 
 If the project was already built and nothing changed since, add `--no-build` to

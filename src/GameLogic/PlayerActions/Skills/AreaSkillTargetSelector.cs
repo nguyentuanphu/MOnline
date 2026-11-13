@@ -1,14 +1,14 @@
-// <copyright file="AreaSkillTargetSelector.cs" company="MUnique">
+// <copyright file="AreaSkillTargetSelector.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Selects the targets of area skills at cast time.

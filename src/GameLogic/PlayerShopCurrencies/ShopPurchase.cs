@@ -1,10 +1,10 @@
-// <copyright file="ShopPurchase.cs" company="MUnique">
+// <copyright file="ShopPurchase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// The purchase of an item from a player shop, for which the price is paid.

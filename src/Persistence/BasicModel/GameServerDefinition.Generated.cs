@@ -1,4 +1,4 @@
-// <copyright file="GameServerDefinition.Generated.cs" company="MUnique">
+// <copyright file="GameServerDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GameServerDefinition"/>.
 /// </summary>
-public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configuration.GameServerDefinition, IIdentifiable, IConvertibleTo<GameServerDefinition>
+public partial class GameServerDefinition : HNMO.DataModel.Configuration.GameServerDefinition, IIdentifiable, IConvertibleTo<GameServerDefinition>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configurati
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint> Endpoints
+    public override ICollection<HNMO.DataModel.Configuration.GameServerEndpoint> Endpoints
     {
-        get => base.Endpoints ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.GameServerEndpoint, GameServerEndpoint>(this.RawEndpoints);
+        get => base.Endpoints ??= new CollectionAdapter<HNMO.DataModel.Configuration.GameServerEndpoint, GameServerEndpoint>(this.RawEndpoints);
         protected set
         {
             this.Endpoints.Clear();
@@ -54,9 +54,9 @@ public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configurati
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> JoinRequirements
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> JoinRequirements
     {
-        get => base.JoinRequirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawJoinRequirements);
+        get => base.JoinRequirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawJoinRequirements);
         protected set
         {
             this.JoinRequirements.Clear();
@@ -79,7 +79,7 @@ public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameServerConfiguration ServerConfiguration
+    public override HNMO.DataModel.Configuration.GameServerConfiguration ServerConfiguration
     {
         get => base.ServerConfiguration;
         set => base.ServerConfiguration = value;
@@ -97,14 +97,14 @@ public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameConfiguration GameConfiguration
+    public override HNMO.DataModel.Configuration.GameConfiguration GameConfiguration
     {
         get => base.GameConfiguration;
         set => base.GameConfiguration = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameServerDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameServerDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameServerDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -112,7 +112,7 @@ public partial class GameServerDefinition : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameServerDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameServerDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,8 +1,8 @@
-﻿// <copyright file="MiniGameEntranceOpenedEvent.cs" company="MUnique">
+﻿// <copyright file="MiniGameEntranceOpenedEvent.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// The entrance of a mini game opened, e.g. of Blood Castle.

@@ -1,18 +1,18 @@
-﻿// <copyright file="PetBehaviourChangedViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="PetBehaviourChangedViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Pet;
+namespace HNMO.GameServer.RemoteView.Pet;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Pet;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Pet;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the chat view which is forwarding everything to the game client which specific data packets.

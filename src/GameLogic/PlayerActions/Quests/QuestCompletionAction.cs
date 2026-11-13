@@ -1,16 +1,16 @@
-﻿// <copyright file="QuestCompletionAction.cs" company="MUnique">
+﻿// <copyright file="QuestCompletionAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Quests;
+namespace HNMO.GameLogic.PlayerActions.Quests;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.Quest;
-using MUnique.OpenMU.Persistence;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.Quest;
+using HNMO.Persistence;
 
 /// <summary>
 /// A player action which implements the completion of a quest.

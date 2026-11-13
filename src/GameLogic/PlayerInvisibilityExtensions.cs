@@ -1,10 +1,10 @@
-// <copyright file="PlayerInvisibilityExtensions.cs" company="MUnique">
+// <copyright file="PlayerInvisibilityExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Extensions to add and remove the invisibility effect of a <see cref="Player"/>.

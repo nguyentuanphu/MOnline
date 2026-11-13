@@ -1,13 +1,13 @@
-﻿// <copyright file="AddChargeForRageFighter.cs" company="MUnique">
+﻿// <copyright file="AddChargeForRageFighter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.PlugIns.CharacterCreated;
+namespace HNMO.Persistence.Initialization.PlugIns.CharacterCreated;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the Charge skill to a created rage fighter character.

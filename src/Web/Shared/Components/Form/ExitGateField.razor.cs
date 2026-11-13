@@ -1,13 +1,13 @@
-﻿// <copyright file="ExitGateField.razor.cs" company="MUnique">
+﻿// <copyright file="ExitGateField.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Field for an <see cref="ExitGate"/> property.

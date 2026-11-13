@@ -1,10 +1,10 @@
-﻿// <copyright file="EnterGate.cs" company="MUnique">
+﻿// <copyright file="EnterGate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a gate which a player can enter to move to another <see cref="ExitGate"/>.
@@ -31,6 +31,6 @@ public partial class EnterGate : Gate
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.EnterGateSummary, base.ToString(), this.Number, this.LevelRequirement, this.TargetGate);
+        return string.Format(HNMO.DataModel.Properties.Resources.EnterGateSummary, base.ToString(), this.Number, this.LevelRequirement, this.TargetGate);
     }
 }

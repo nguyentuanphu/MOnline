@@ -1,8 +1,8 @@
-﻿// <copyright file="Constants.cs" company="MUnique">
+﻿// <copyright file="Constants.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version075.Items;
+namespace HNMO.Persistence.Initialization.Version075.Items;
 
 /// <summary>
 /// Constants for this game version.

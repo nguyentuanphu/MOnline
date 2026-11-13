@@ -1,11 +1,11 @@
-﻿// <copyright file="MerchantStores.cs" company="MUnique">
+﻿// <copyright file="MerchantStores.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version075;
+namespace HNMO.Persistence.Initialization.Version075;
 
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.Initialization.Items;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.Initialization.Items;
 
 /// <summary>
 /// The initialization of all NPCs, which are no monsters.

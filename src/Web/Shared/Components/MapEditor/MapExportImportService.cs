@@ -1,12 +1,12 @@
-// <copyright file="MapExportImportService.cs" company="MUnique">
+// <copyright file="MapExportImportService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
 using System.Text.Json;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
 
 /// <summary>
 /// Handles the export and import of map object data,

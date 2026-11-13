@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForAccountContext
 {
-    [DbContext(typeof(MUnique.OpenMU.Persistence.EntityFramework.AccountContext))]
+    [DbContext(typeof(HNMO.Persistence.EntityFramework.AccountContext))]
     public partial class AccountContextModel : RuntimeModel
     {
         private static readonly bool _useOldBehavior31751 =

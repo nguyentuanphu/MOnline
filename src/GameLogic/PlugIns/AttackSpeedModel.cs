@@ -1,11 +1,11 @@
-// <copyright file="AttackSpeedModel.cs" company="MUnique">
+// <copyright file="AttackSpeedModel.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Resolves the minimum delay between two attacks from the common attack/magic speed

@@ -1,11 +1,11 @@
-﻿// <copyright file="MonsterExtensions.cs" company="MUnique">
+﻿// <copyright file="MonsterExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Extensions.ModelBuilder;
+namespace HNMO.Persistence.EntityFramework.Extensions.ModelBuilder;
 
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// Extensions for the <see cref="MonsterDefinition"/>-related <see cref="EntityTypeBuilder"/>s.

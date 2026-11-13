@@ -1,8 +1,8 @@
-﻿// <copyright file="ItemConstants.cs" company="MUnique">
+﻿// <copyright file="ItemConstants.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// A central place to keep item identifiers, so we can keep track of them.

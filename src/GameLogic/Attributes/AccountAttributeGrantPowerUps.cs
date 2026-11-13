@@ -1,11 +1,11 @@
-// <copyright file="AccountAttributeGrantPowerUps.cs" company="MUnique">
+// <copyright file="AccountAttributeGrantPowerUps.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Attributes;
+namespace HNMO.GameLogic.Attributes;
 
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The power-ups of the valid <see cref="Account.AttributeGrants"/> of an account, which are applied to

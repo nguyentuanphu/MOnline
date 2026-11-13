@@ -1,11 +1,11 @@
-// <copyright file="PeriodicInvasionConfiguration.cs" company="MUnique">
+// <copyright file="PeriodicInvasionConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using System.ComponentModel.DataAnnotations;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Configuration data for a periodic invasion event.
@@ -29,12 +29,12 @@ public class PeriodicInvasionConfiguration : PeriodicTaskConfiguration
     /// When <c>true</c>, every mob in the invasion is placed on the same randomly-selected map
     /// rather than distributing across maps per their individual configurations.
     /// </summary>
-    [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PeriodicInvasionConfiguration_ForceSingleMap_Name), Order = 100, ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.PeriodicInvasionConfiguration_ForceSingleMap_Name), Order = 100, ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool ForceSingleMap { get; set; }
 
     /// <summary>
     /// Gets or sets the monster spawns for this invasion.
     /// </summary>
-    [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PeriodicInvasionConfiguration_Mobs_Name), Order = 101, ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.PeriodicInvasionConfiguration_Mobs_Name), Order = 101, ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public IList<InvasionSpawnConfiguration> Mobs { get; set; } = [];
 }

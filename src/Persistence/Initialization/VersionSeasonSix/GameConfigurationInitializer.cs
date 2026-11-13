@@ -1,18 +1,18 @@
-﻿// <copyright file="GameConfigurationInitializer.cs" company="MUnique">
+﻿// <copyright file="GameConfigurationInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
 using System.Reflection;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
 /// <summary>
 /// Initializes the <see cref="GameConfiguration"/>.

@@ -1,10 +1,10 @@
-﻿// <copyright file="BlessJewelConsumeHandlerPlugInConfiguration.cs" company="MUnique">
+﻿// <copyright file="BlessJewelConsumeHandlerPlugInConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// The configuration for the <see cref="BlessJewelConsumeHandlerPlugIn"/>.
@@ -14,6 +14,6 @@ public class BlessJewelConsumeHandlerPlugInConfiguration : UpgradeItemLevelConfi
     /// <summary>
     /// Gets or sets the items which can be repaired by consuming a bless on them.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BlessJewelConsumeHandlerPlugInConfiguration_RepairTargetItems_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.BlessJewelConsumeHandlerPlugInConfiguration_RepairTargetItems_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public ICollection<ItemDefinition> RepairTargetItems { get; set; } = new List<ItemDefinition>();
 }

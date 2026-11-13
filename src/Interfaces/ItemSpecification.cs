@@ -1,8 +1,8 @@
-// <copyright file="ItemSpecification.cs" company="MUnique">
+// <copyright file="ItemSpecification.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>A structured item request, independent of chat command parsing and persistence.</summary>
 /// <param name="Group">The item group.</param>

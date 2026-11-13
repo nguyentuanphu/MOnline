@@ -1,12 +1,12 @@
-// <copyright file="AddCraftingBonusPercentageAttributePlugInBase.cs" company="MUnique">
+// <copyright file="AddCraftingBonusPercentageAttributePlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// This update adds the <see cref="Stats.CraftingBonusPercentage"/> attribute, so that it can be

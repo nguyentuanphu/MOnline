@@ -1,4 +1,4 @@
-// <copyright file="QuestItemRequirement.Generated.cs" company="MUnique">
+// <copyright file="QuestItemRequirement.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="QuestItemRequirement"/>.
 /// </summary>
-public partial class QuestItemRequirement : MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement, IIdentifiable, IConvertibleTo<QuestItemRequirement>
+public partial class QuestItemRequirement : HNMO.DataModel.Configuration.Quests.QuestItemRequirement, IIdentifiable, IConvertibleTo<QuestItemRequirement>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class QuestItemRequirement : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition Item
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition Item
     {
         get => base.Item;
         set => base.Item = value;
@@ -55,14 +55,14 @@ public partial class QuestItemRequirement : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.DropItemGroup DropItemGroup
+    public override HNMO.DataModel.Configuration.DropItemGroup DropItemGroup
     {
         get => base.DropItemGroup;
         set => base.DropItemGroup = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Quests.QuestItemRequirement Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new QuestItemRequirement();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -70,7 +70,7 @@ public partial class QuestItemRequirement : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Quests.QuestItemRequirement other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Quests.QuestItemRequirement other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

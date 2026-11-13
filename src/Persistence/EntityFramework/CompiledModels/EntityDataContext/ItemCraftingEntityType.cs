@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -14,7 +14,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class ItemCraftingEntityType
@@ -22,8 +22,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting),
+                "HNMO.Persistence.EntityFramework.Model.ItemCrafting",
+                typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting),
                 baseEntityType,
                 propertyCount: 6,
                 navigationCount: 1,
@@ -34,19 +34,19 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var itemCraftingHandlerClassName = runtimeEntityType.AddProperty(
                 "ItemCraftingHandlerClassName",
                 typeof(string),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("ItemCraftingHandlerClassName", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<ItemCraftingHandlerClassName>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                propertyInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("ItemCraftingHandlerClassName", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<ItemCraftingHandlerClassName>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             itemCraftingHandlerClassName.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var monsterDefinitionId = runtimeEntityType.AddProperty(
@@ -57,10 +57,10 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
 
             var name = runtimeEntityType.AddProperty(
                 "Name",
-                typeof(MUnique.OpenMU.Interfaces.LocalizedString),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("Name", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<Name>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
-            name.SetValueConverter(new ValueConverter<MUnique.OpenMU.Interfaces.LocalizedString, string>(
+                typeof(HNMO.Interfaces.LocalizedString),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("Name", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<Name>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+            name.SetValueConverter(new ValueConverter<HNMO.Interfaces.LocalizedString, string>(
                 string (LocalizedString value) => value.Value ?? string.Empty,
                 LocalizedString (string value) => new LocalizedString(value)));
             name.SetSentinelFromProviderValue("");
@@ -69,16 +69,16 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var number = runtimeEntityType.AddProperty(
                 "Number",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("Number", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<Number>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetProperty("Number", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting).GetField("<Number>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             number.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var simpleCraftingSettingsId = runtimeEntityType.AddProperty(
                 "SimpleCraftingSettingsId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("SimpleCraftingSettingsId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting).GetField("<SimpleCraftingSettingsId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("SimpleCraftingSettingsId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting).GetField("<SimpleCraftingSettingsId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             simpleCraftingSettingsId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -106,9 +106,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawItemCraftings = principalEntityType.AddNavigation("RawItemCraftings",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterDefinition).GetProperty("RawItemCraftings", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.MonsterDefinition).GetField("<RawItemCraftings>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.ItemCrafting>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterDefinition).GetProperty("RawItemCraftings", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.MonsterDefinition).GetField("<RawItemCraftings>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -124,8 +124,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawSimpleCraftingSettings = declaringEntityType.AddNavigation("RawSimpleCraftingSettings",
                 runtimeForeignKey,
                 onDependent: true,
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.SimpleCraftingSettings),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("RawSimpleCraftingSettings", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.Persistence.EntityFramework.Model.SimpleCraftingSettings),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.ItemCrafting).GetProperty("RawSimpleCraftingSettings", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

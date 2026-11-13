@@ -1,11 +1,11 @@
-﻿// <copyright file="MapChangedExtendedConnectionExtensions.cs" company="MUnique">
+﻿// <copyright file="MapChangedExtendedConnectionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// Sends the <see cref="MapChangedExtended"/> packet of the extended client.

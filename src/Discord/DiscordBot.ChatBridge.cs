@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordBot.ChatBridge.cs" company="MUnique">
+﻿// <copyright file="DiscordBot.ChatBridge.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Collections.Concurrent;
 using System.Globalization;
@@ -11,11 +11,11 @@ using System.Threading;
 using global::Discord;
 using global::Discord.WebSocket;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Discord.ChatBridge;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.Discord.Provisioning;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Entities;
+using HNMO.Discord.ChatBridge;
+using HNMO.Discord.Properties;
+using HNMO.Discord.Provisioning;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The part of the <see cref="DiscordBot"/> which runs the chat bridge between the game and Discord.

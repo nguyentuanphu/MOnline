@@ -1,13 +1,13 @@
-// <copyright file="GameConfigurationDataSource.cs" company="MUnique">
+// <copyright file="GameConfigurationDataSource.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Collections;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Provider which provides the latest <see cref="GameConfiguration"/> and

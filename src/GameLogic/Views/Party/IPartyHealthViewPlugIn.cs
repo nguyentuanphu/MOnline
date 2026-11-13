@@ -1,8 +1,8 @@
-﻿// <copyright file="IPartyHealthViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="IPartyHealthViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Party;
+namespace HNMO.GameLogic.Views.Party;
 
 /// <summary>
 /// The view plugin for party information.

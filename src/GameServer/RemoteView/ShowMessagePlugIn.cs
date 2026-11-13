@@ -1,13 +1,13 @@
-﻿// <copyright file="ShowMessagePlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowMessagePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowMessagePlugIn"/> which is forwarding everything to the game client with specific data packets.
@@ -26,7 +26,7 @@ public class ShowMessagePlugIn : IShowMessagePlugIn
     public ShowMessagePlugIn(RemotePlayer player) => this._player = player;
 
     /// <inheritdoc/>
-    public async ValueTask ShowMessageAsync(string message, OpenMU.Interfaces.MessageType messageType)
+    public async ValueTask ShowMessageAsync(string message, HNMO.Interfaces.MessageType messageType)
     {
         if (string.IsNullOrEmpty(message))
         {
@@ -65,7 +65,7 @@ public class ShowMessagePlugIn : IShowMessagePlugIn
         await this._player.Connection.SendServerMessageAsync(ConvertMessageType(messageType), content).ConfigureAwait(false);
     }
 
-    private static ServerMessage.MessageType ConvertMessageType(OpenMU.Interfaces.MessageType messageType)
+    private static ServerMessage.MessageType ConvertMessageType(HNMO.Interfaces.MessageType messageType)
     {
         return messageType switch
         {

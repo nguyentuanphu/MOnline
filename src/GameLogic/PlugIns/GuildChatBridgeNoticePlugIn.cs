@@ -1,13 +1,13 @@
-﻿// <copyright file="GuildChatBridgeNoticePlugIn.cs" company="MUnique">
+﻿// <copyright file="GuildChatBridgeNoticePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Tells players when they enter the game, if the chat of their guild or alliance is mirrored

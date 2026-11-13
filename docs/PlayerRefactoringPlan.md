@@ -64,16 +64,16 @@ Concrete smells worth calling out, because they drive the design below:
    they can lose `virtual` when they move.)
 2. **Source compatibility is a convenience here, not a hard rule.** Breaking
    changes are acceptable at this stage of the project (§8.3), so this is only
-   about avoiding pointless churn. OpenMU compiles custom plugins from source at
+   about avoiding pointless churn. HNMO compiles custom plugins from source at
    server start (see `PlugIns/Readme.md`); keeping every extension class in the
-   **same namespace** (`MUnique.OpenMU.GameLogic`) means `player.Foo()` call
+   **same namespace** (`HNMO.GameLogic`) means `player.Foo()` call
    sites — inside the repository and in third-party plugin sources — keep
    compiling without a new `using`. That is free, and it is why extension methods
    are the cheapest tool here (`ShowLocalizedBlueMessageAsync` alone has ~208
    call sites).
 3. **The persistence lock contract** documented at `Player.cs:1885-1910` must
    survive verbatim: re-entrancy per async flow, and no cross-player lock
-   acquisition ordering cycles. `tests/MUnique.OpenMU.Tests/PersistenceLockTest.cs`
+   acquisition ordering cycles. `tests/HNMO.Tests/PersistenceLockTest.cs`
    guards this.
 4. **Plugin point method signatures may only return `void`, `Task` or `ValueTask`.**
    `PlugInProxyTypeGenerator` (lines 132-138) only generates aggregation code for
@@ -118,7 +118,7 @@ These are small, self-contained, and unblock the rest.
 `PlugInContainerBase` builds `ActivePlugIns`. Needed for the enter-world sequence
 where the client expects stats → inventory → skills → key config → quests.
 Alternative if ordering is unwanted: keep the ordered core in code and expose only
-"before"/"after" hooks. `tests/MUnique.OpenMU.PlugIns.Tests` covers this project
+"before"/"after" hooks. `tests/HNMO.PlugIns.Tests` covers this project
 well, so the change is cheap to verify.
 
 **(b) Per-player state for plugins.** Extracted plugins need per-player state
@@ -372,10 +372,10 @@ Gaps to fill in phase 0 (characterization tests, written against current behavio
 5. Temporary storage restore with and without a backup inventory.
 6. Durability: defensive item, weapon, pet, ammunition consumption to zero.
 
-Per phase: `dotnet build src/MUnique.OpenMU.sln` and
-`dotnet test tests/MUnique.OpenMU.Tests --no-build` (the build was just done;
+Per phase: `dotnet build src/HNMO.sln` and
+`dotnet test tests/HNMO.Tests --no-build` (the build was just done;
 build again after any further code change). For phases 3 and 5, also run
-`tests/MUnique.OpenMU.GameLogic.Benchmarks` before/after — plugin points on the
+`tests/HNMO.GameLogic.Benchmarks` before/after — plugin points on the
 per-hit and per-kill paths add an iteration over the plugin proxy list.
 
 ## 8. Risks and open questions
@@ -406,7 +406,7 @@ per-hit and per-kill paths add an iteration over the plugin proxy list.
    toggleable in the admin panel for existing databases, add an
    `IConfigurationUpdatePlugIn` in the same PR.
 5. **Extension method namespace.** All extension classes must stay in
-   `MUnique.OpenMU.GameLogic` (constraint §2.2).
+   `HNMO.GameLogic` (constraint §2.2).
 6. **Per-hit plugin overhead.** `GetPlugInPoint<T>()` returns a proxy iterating
    all active plugins; on `HitAsync` this runs for every hit of every attacker.
    Benchmark before committing to P8.

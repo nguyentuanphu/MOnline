@@ -1,8 +1,8 @@
-// <copyright file="TypeNameFactoryAttribute.cs" company="MUnique">
+// <copyright file="TypeNameFactoryAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Annotations;
+namespace HNMO.Annotations;
 
 /// <summary>
 /// Marks a static partial method which creates an object of a type which is specified by its full name,

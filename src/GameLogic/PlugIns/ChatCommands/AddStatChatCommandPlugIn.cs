@@ -1,12 +1,12 @@
-﻿// <copyright file="AddStatChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="AddStatChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions.Character;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions.Character;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles the command to add stat points.

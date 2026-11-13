@@ -1,14 +1,14 @@
-﻿// <copyright file="Guild.cs" company="MUnique">
+﻿// <copyright file="Guild.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// A guild is a group of players who like to play together.
 /// </summary>
 [AggregateRoot]
-public class Guild : OpenMU.Interfaces.Guild
+public class Guild : HNMO.Interfaces.Guild
 {
     /// <summary>
     /// Gets or sets the identifier.

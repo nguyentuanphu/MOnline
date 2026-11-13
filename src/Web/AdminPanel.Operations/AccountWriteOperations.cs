@@ -1,18 +1,18 @@
-// <copyright file="AccountWriteOperations.cs" company="MUnique">
+// <copyright file="AccountWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.API;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.API;
 
 /// <summary>Creates accounts and changes offline accounts without exposing credentials.</summary>
 /// <param name="persistence">The persistence provider.</param>

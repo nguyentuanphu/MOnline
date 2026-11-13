@@ -1,12 +1,12 @@
-﻿// <copyright file="DiscordChatCommands.cs" company="MUnique">
+﻿// <copyright file="DiscordChatCommands.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Discord.Properties;
+using HNMO.DataModel.Entities;
+using HNMO.Discord.Properties;
 
 /// <summary>
 /// The slash commands of the chat bridge, and their answers.

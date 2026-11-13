@@ -1,16 +1,16 @@
-﻿// <copyright file="AccountRepository.cs" company="MUnique">
+﻿// <copyright file="AccountRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Linq;
 using System.Threading;
 using BCrypt.Net;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Json;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// Repository for accounts.

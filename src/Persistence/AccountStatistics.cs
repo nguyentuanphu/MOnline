@@ -1,8 +1,8 @@
-// <copyright file="AccountStatistics.cs" company="MUnique">
+// <copyright file="AccountStatistics.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// Statistics about the player accounts, e.g. for the dashboard of the admin panel.

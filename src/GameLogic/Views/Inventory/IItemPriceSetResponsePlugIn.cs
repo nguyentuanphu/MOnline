@@ -1,10 +1,10 @@
-﻿// <copyright file="IItemPriceSetResponsePlugIn.cs" company="MUnique">
+﻿// <copyright file="IItemPriceSetResponsePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Inventory;
+namespace HNMO.GameLogic.Views.Inventory;
 
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
+using HNMO.GameLogic.Views.PlayerShop;
 
 /// <summary>
 /// Interface of a view whose implementation informs about the result of setting the item price in the personal shop.

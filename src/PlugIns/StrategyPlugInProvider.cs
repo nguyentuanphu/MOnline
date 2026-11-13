@@ -1,8 +1,8 @@
-﻿// <copyright file="StrategyPlugInProvider.cs" company="MUnique">
+﻿// <copyright file="StrategyPlugInProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns;
+namespace HNMO.PlugIns;
 
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.Extensions.Logging;
@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 /// </summary>
 /// <typeparam name="TKey">The type of the key.</typeparam>
 /// <typeparam name="TPlugIn">The type of the plugin.</typeparam>
-/// <seealso cref="MUnique.OpenMU.PlugIns.IStrategyPlugInProvider{TKey, TPlugIn}" />
+/// <seealso cref="HNMO.PlugIns.IStrategyPlugInProvider{TKey, TPlugIn}" />
 /// <seealso cref="IPlugInContainer{TPlugIn}" />
 public class StrategyPlugInProvider<TKey, TPlugIn> : PlugInContainerBase<TPlugIn>, IStrategyPlugInProvider<TKey, TPlugIn>
     where TPlugIn : class, IStrategyPlugIn<TKey>

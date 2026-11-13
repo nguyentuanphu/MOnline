@@ -1,11 +1,11 @@
-﻿// <copyright file="Quest220.cs" company="MUnique">
+﻿// <copyright file="Quest220.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.TestAccounts;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.TestAccounts;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Initializer for an account to test the level 220 quests.

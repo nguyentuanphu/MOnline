@@ -1,4 +1,4 @@
-// <copyright file="CashShopPackage.Generated.cs" company="MUnique">
+// <copyright file="CashShopPackage.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CashShopPackage"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CashShopPackage"/>.
 /// </summary>
 [Table(nameof(CashShopPackage), Schema = SchemaNames.Configuration)]
-internal partial class CashShopPackage : MUnique.OpenMU.DataModel.Configuration.CashShopPackage, IIdentifiable
+internal partial class CashShopPackage : HNMO.DataModel.Configuration.CashShopPackage, IIdentifiable
 {
     
     
@@ -35,10 +35,10 @@ internal partial class CashShopPackage : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CashShopProduct> Products => base.Products ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CashShopProduct, CashShopProduct>(this.RawProducts);
+    public override ICollection<HNMO.DataModel.Configuration.CashShopProduct> Products => base.Products ??= new CollectionAdapter<HNMO.DataModel.Configuration.CashShopProduct, CashShopProduct>(this.RawProducts);
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CashShopPackage Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CashShopPackage Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CashShopPackage();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -46,7 +46,7 @@ internal partial class CashShopPackage : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CashShopPackage other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CashShopPackage other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

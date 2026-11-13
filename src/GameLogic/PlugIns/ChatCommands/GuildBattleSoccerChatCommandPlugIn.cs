@@ -1,13 +1,13 @@
-﻿// <copyright file="GuildBattleSoccerChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="GuildBattleSoccerChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions.Guild;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions.Guild;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles guild battle soccer requests.

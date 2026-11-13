@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeNpcDefinition.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CastleSiegeNpcDefinition"/>.
 /// </summary>
-public partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition, IIdentifiable, IConvertibleTo<CastleSiegeNpcDefinition>
+public partial class CastleSiegeNpcDefinition : HNMO.DataModel.Configuration.CastleSiegeNpcDefinition, IIdentifiable, IConvertibleTo<CastleSiegeNpcDefinition>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition MonsterDefinition
+    public override HNMO.DataModel.Configuration.MonsterDefinition MonsterDefinition
     {
         get => base.MonsterDefinition;
         set => base.MonsterDefinition = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeNpcDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeNpcDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class CastleSiegeNpcDefinition : MUnique.OpenMU.DataModel.Configu
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeNpcDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,13 +1,13 @@
-﻿// <copyright file="LoginStateCleanup.cs" company="MUnique">
+﻿// <copyright file="LoginStateCleanup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.ServerClients;
+using HNMO.ServerClients;
 
 /// <summary>
 /// A <see cref="IHostedService"/> which cleans up logged in accounts of

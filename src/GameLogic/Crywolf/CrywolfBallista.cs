@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfBallista.cs" company="MUnique">
+﻿// <copyright file="CrywolfBallista.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// A ballista of the army of Balgass, which bombards a point of the fortress.

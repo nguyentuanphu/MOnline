@@ -1,12 +1,12 @@
-﻿// <copyright file="UpdateDuelScorePlugIn.cs" company="MUnique">
+﻿// <copyright file="UpdateDuelScorePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Duel;
+namespace HNMO.GameLogic.PlayerActions.Duel;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin increases the score of the duel result, when a kill occurred.

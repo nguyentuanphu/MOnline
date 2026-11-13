@@ -1,4 +1,4 @@
-// <copyright file="Character.Generated.cs" company="MUnique">
+// <copyright file="Character.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Character"/>.
 /// </summary>
-public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, IIdentifiable, IConvertibleTo<Character>
+public partial class Character : HNMO.DataModel.Entities.Character, IIdentifiable, IConvertibleTo<Character>
 {
     
     
@@ -30,9 +30,9 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.StatAttribute> Attributes
+    public override ICollection<HNMO.AttributeSystem.StatAttribute> Attributes
     {
-        get => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
+        get => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
         protected set
         {
             this.Attributes.Clear();
@@ -51,9 +51,9 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override IList<MUnique.OpenMU.Interfaces.LetterHeader> Letters
+    public override IList<HNMO.Interfaces.LetterHeader> Letters
     {
-        get => base.Letters ??= new ListAdapter<MUnique.OpenMU.Interfaces.LetterHeader, LetterHeader>(this.RawLetters);
+        get => base.Letters ??= new ListAdapter<HNMO.Interfaces.LetterHeader, LetterHeader>(this.RawLetters);
         protected set
         {
             this.Letters.Clear();
@@ -72,9 +72,9 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.SkillEntry> LearnedSkills
+    public override ICollection<HNMO.DataModel.Entities.SkillEntry> LearnedSkills
     {
-        get => base.LearnedSkills ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.SkillEntry, SkillEntry>(this.RawLearnedSkills);
+        get => base.LearnedSkills ??= new CollectionAdapter<HNMO.DataModel.Entities.SkillEntry, SkillEntry>(this.RawLearnedSkills);
         protected set
         {
             this.LearnedSkills.Clear();
@@ -93,9 +93,9 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DropItemGroup> DropItemGroups
+    public override ICollection<HNMO.DataModel.Configuration.DropItemGroup> DropItemGroups
     {
-        get => base.DropItemGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
+        get => base.DropItemGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
         protected set
         {
             this.DropItemGroups.Clear();
@@ -114,9 +114,9 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CharacterQuestState> QuestStates
+    public override ICollection<HNMO.DataModel.Entities.CharacterQuestState> QuestStates
     {
-        get => base.QuestStates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CharacterQuestState, CharacterQuestState>(this.RawQuestStates);
+        get => base.QuestStates ??= new CollectionAdapter<HNMO.DataModel.Entities.CharacterQuestState, CharacterQuestState>(this.RawQuestStates);
         protected set
         {
             this.QuestStates.Clear();
@@ -139,7 +139,7 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass CharacterClass
+    public override HNMO.DataModel.Configuration.CharacterClass CharacterClass
     {
         get => base.CharacterClass;
         set => base.CharacterClass = value;
@@ -157,7 +157,7 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition CurrentMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition CurrentMap
     {
         get => base.CurrentMap;
         set => base.CurrentMap = value;
@@ -175,7 +175,7 @@ public partial class Character : MUnique.OpenMU.DataModel.Entities.Character, II
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage Inventory
+    public override HNMO.DataModel.Entities.ItemStorage Inventory
     {
         get => base.Inventory;
         set => base.Inventory = value;

@@ -1,18 +1,18 @@
-// <copyright file="RecordingViewPlugInContainer.cs" company="MUnique">
+// <copyright file="RecordingViewPlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.World;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The "client" of a <see cref="ScriptedPlayer"/>: instead of sending packets, every view call it

@@ -1,13 +1,13 @@
-﻿// <copyright file="PlayerInMemoryContext.cs" company="MUnique">
+﻿// <copyright file="PlayerInMemoryContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
-using MUnique.OpenMU.Persistence.BasicModel;
+using HNMO.Persistence.BasicModel;
 using Nito.AsyncEx;
 
 /// <summary>
@@ -28,14 +28,14 @@ public class PlayerInMemoryContext : InMemoryContext, IPlayerContext
     }
 
     /// <inheritdoc/>
-    public async ValueTask<MUnique.OpenMU.DataModel.Entities.LetterBody?> GetLetterBodyByHeaderIdAsync(Guid headerId, CancellationToken cancellationToken = default)
+    public async ValueTask<HNMO.DataModel.Entities.LetterBody?> GetLetterBodyByHeaderIdAsync(Guid headerId, CancellationToken cancellationToken = default)
     {
         var allLetters = await this.Provider.GetRepository<LetterBody>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return allLetters.FirstOrDefault(body => body.Header.Id == headerId);
     }
 
     /// <inheritdoc/>
-    public async ValueTask<MUnique.OpenMU.DataModel.Entities.AccountState?> AuthenticateAsync(string loginName, string password, CancellationToken cancellationToken = default)
+    public async ValueTask<HNMO.DataModel.Entities.AccountState?> AuthenticateAsync(string loginName, string password, CancellationToken cancellationToken = default)
     {
         var allAccounts = await this.Provider.GetRepository<Account>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         var account = allAccounts.FirstOrDefault(a => a.LoginName == loginName && BCrypt.Net.BCrypt.Verify(password, a.PasswordHash));
@@ -43,21 +43,21 @@ public class PlayerInMemoryContext : InMemoryContext, IPlayerContext
     }
 
     /// <inheritdoc/>
-    public async ValueTask<MUnique.OpenMU.DataModel.Entities.Account?> GetAccountByLoginNameAsync(string loginName, string password, CancellationToken cancellationToken = default)
+    public async ValueTask<HNMO.DataModel.Entities.Account?> GetAccountByLoginNameAsync(string loginName, string password, CancellationToken cancellationToken = default)
     {
         var allAccounts = await this.Provider.GetRepository<Account>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return allAccounts.FirstOrDefault(account => account.LoginName == loginName && BCrypt.Net.BCrypt.Verify(password, account.PasswordHash));
     }
 
     /// <inheritdoc/>
-    public async ValueTask<MUnique.OpenMU.DataModel.Entities.Account?> GetAccountByLoginNameAsync(string loginName, CancellationToken cancellationToken = default)
+    public async ValueTask<HNMO.DataModel.Entities.Account?> GetAccountByLoginNameAsync(string loginName, CancellationToken cancellationToken = default)
     {
         var allAccounts = await this.Provider.GetRepository<Account>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return allAccounts.FirstOrDefault(account => account.LoginName == loginName);
     }
 
     /// <inheritdoc/>
-    public async ValueTask<IEnumerable<MUnique.OpenMU.DataModel.Entities.Account>> GetAccountsOrderedByLoginNameAsync(int skip, int count, CancellationToken cancellationToken = default)
+    public async ValueTask<IEnumerable<HNMO.DataModel.Entities.Account>> GetAccountsOrderedByLoginNameAsync(int skip, int count, CancellationToken cancellationToken = default)
     {
         var allAccounts = await this.Provider.GetRepository<Account>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return allAccounts.OrderBy(a => a.LoginName).Skip(skip).Take(count);
@@ -71,7 +71,7 @@ public class PlayerInMemoryContext : InMemoryContext, IPlayerContext
         return new AccountStatistics(
             accounts.Count,
             accounts.Count(a => a.RegistrationDate >= registeredSince),
-            accounts.Count(a => a.State is MUnique.OpenMU.DataModel.Entities.AccountState.Banned or MUnique.OpenMU.DataModel.Entities.AccountState.TemporarilyBanned),
+            accounts.Count(a => a.State is HNMO.DataModel.Entities.AccountState.Banned or HNMO.DataModel.Entities.AccountState.TemporarilyBanned),
             accounts.Sum(a => a.Characters.Count));
     }
 
@@ -102,7 +102,7 @@ public class PlayerInMemoryContext : InMemoryContext, IPlayerContext
     }
 
     /// <inheritdoc/>
-    public async ValueTask<IEnumerable<MUnique.OpenMU.DataModel.Entities.Account>> SearchAccountsAsync(string searchTerm, int skip, int count, CancellationToken cancellationToken = default)
+    public async ValueTask<IEnumerable<HNMO.DataModel.Entities.Account>> SearchAccountsAsync(string searchTerm, int skip, int count, CancellationToken cancellationToken = default)
     {
         var allAccounts = await this.Provider.GetRepository<Account>().GetAllAsync(cancellationToken).ConfigureAwait(false);
         return allAccounts

@@ -1,13 +1,13 @@
-﻿// <copyright file="BasicMonsterIntelligence.cs" company="MUnique">
+﻿// <copyright file="BasicMonsterIntelligence.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
 using System.Diagnostics;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Attributes;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// A basic monster AI which is pretty basic.

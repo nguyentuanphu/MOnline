@@ -1,4 +1,4 @@
-// <copyright file="AttributeRequirement.Generated.cs" company="MUnique">
+// <copyright file="AttributeRequirement.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.AttributeRequirement"/>.
 /// </summary>
 [Table(nameof(AttributeRequirement), Schema = SchemaNames.Configuration)]
-internal partial class AttributeRequirement : MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, IIdentifiable
+internal partial class AttributeRequirement : HNMO.DataModel.Configuration.Items.AttributeRequirement, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class AttributeRequirement : MUnique.OpenMU.DataModel.Configura
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Attribute
+    public override HNMO.AttributeSystem.AttributeDefinition Attribute
     {
         get => base.Attribute;set
         {
@@ -55,7 +55,7 @@ internal partial class AttributeRequirement : MUnique.OpenMU.DataModel.Configura
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.AttributeRequirement Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new AttributeRequirement();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class AttributeRequirement : MUnique.OpenMU.DataModel.Configura
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.AttributeRequirement other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,11 +1,11 @@
-﻿// <copyright file="FieldMonsterSpawnsUpdatePlugInBase.cs" company="MUnique">
+﻿// <copyright file="FieldMonsterSpawnsUpdatePlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Version075.Maps;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Version075.Maps;
 
 /// <summary>
 /// Removes the monster spawns which the initialization data of version 0.75 defined twice in

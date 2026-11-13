@@ -1,8 +1,8 @@
-﻿// <copyright file="IMemoryRepository.cs" company="MUnique">
+﻿// <copyright file="IMemoryRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 /// <summary>
 /// Interface for a memory repository, which allows to modify its stored items.

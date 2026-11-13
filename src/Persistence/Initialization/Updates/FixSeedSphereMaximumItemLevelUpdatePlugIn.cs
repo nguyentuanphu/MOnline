@@ -1,13 +1,13 @@
-// <copyright file="FixSeedSphereMaximumItemLevelUpdatePlugIn.cs" company="MUnique">
+// <copyright file="FixSeedSphereMaximumItemLevelUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update sets the maximum item level of the seed spheres to the highest option number of their element.
@@ -15,7 +15,7 @@ using MUnique.OpenMU.PlugIns;
 /// prevented creating seed spheres with any other option, e.g. with the item chat command.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSeedSphereMaximumItemLevelUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixSeedSphereMaximumItemLevelUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSeedSphereMaximumItemLevelUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixSeedSphereMaximumItemLevelUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6A7C74F3-FD49-4013-BDC3-103B3D9E65E4")]
 public class FixSeedSphereMaximumItemLevelUpdatePlugIn : UpdatePlugInBase
 {

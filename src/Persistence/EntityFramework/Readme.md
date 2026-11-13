@@ -6,7 +6,7 @@ be possible that the migrations are only working on PostgreSQL, too.
 
 ## Entity Model
 
-It's important to note, that the object model of MUnique.OpenMU.DataModel is not
+It's important to note, that the object model of HNMO.DataModel is not
 directly used. Instead, every class of the model gets inherited to be used with
 EF-Core.
 We did this because the application code should not be aware of the boilerplate
@@ -64,7 +64,7 @@ The different contexts (identified by their full class name) can use different
 database users. These are configured in the [ConnectionSettings.xml](ConnectionSettings.xml)
 file.
 
-During install, only the user for the MUnique.OpenMU.Persistence.EntityFramework.EntityDataContext
+During install, only the user for the HNMO.Persistence.EntityFramework.EntityDataContext
 should exist, the other user and their rights will be created by this user.
 So this user should have the required rights to grant this rights.
 
@@ -122,8 +122,8 @@ wouldn't work.
 The repositories of Accounts and GameConfiguration objects load their objects
 (and all dependencies) in one go - by using some JSON functions of PostgreSQL.
 You can read about it
-[here](https://munique.net/loading-complex-data-with-postgresql-json-functions/)
-and [here](https://github.com/MUnique/OpenMU/issues/10).
+[here](https://github.com/nguyentuanphu/HNMO)
+and [here](https://github.com/nguyentuanphu/HNMO/issues/10).
 
 ### Context management
 

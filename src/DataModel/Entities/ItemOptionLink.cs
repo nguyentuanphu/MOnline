@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemOptionLink.cs" company="MUnique">
+﻿// <copyright file="ItemOptionLink.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// This class defines a link between the item and the concrete item option which the actual item instance possess.

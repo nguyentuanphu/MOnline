@@ -1,16 +1,16 @@
-﻿// <copyright file="ChatRoomCreatedPlugIn.cs" company="MUnique">
+﻿// <copyright file="ChatRoomCreatedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Messenger;
+namespace HNMO.GameServer.RemoteView.Messenger;
 
 using System.Net;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.Messenger;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.Messenger;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IChatRoomCreatedPlugIn"/> which is forwarding everything to the game client with specific data packets.

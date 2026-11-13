@@ -1,11 +1,11 @@
-﻿// <copyright file="IWorldObserver.cs" company="MUnique">
+﻿// <copyright file="IWorldObserver.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Interface of an world observer.

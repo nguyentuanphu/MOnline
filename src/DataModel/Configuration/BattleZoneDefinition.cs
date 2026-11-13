@@ -1,10 +1,10 @@
-﻿// <copyright file="BattleZoneDefinition.cs" company="MUnique">
+﻿// <copyright file="BattleZoneDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a battle zone.
@@ -58,6 +58,6 @@ public partial class BattleZoneDefinition
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.BattleZoneSummary, ModelResourceProvider.GetEnumCaption(this.Type.GetType(), this.Type));
+        return string.Format(HNMO.DataModel.Properties.Resources.BattleZoneSummary, ModelResourceProvider.GetEnumCaption(this.Type.GetType(), this.Type));
     }
 }

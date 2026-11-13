@@ -1,4 +1,4 @@
-// <copyright file="CharacterClass.Generated.cs" company="MUnique">
+// <copyright file="CharacterClass.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CharacterClass"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CharacterClass"/>.
 /// </summary>
 [Table(nameof(CharacterClass), Schema = SchemaNames.Configuration)]
-internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.CharacterClass, IIdentifiable
+internal partial class CharacterClass : HNMO.DataModel.Configuration.CharacterClass, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition> StatAttributes => base.StatAttributes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition, StatAttributeDefinition>(this.RawStatAttributes);
+    public override ICollection<HNMO.DataModel.Configuration.StatAttributeDefinition> StatAttributes => base.StatAttributes ??= new CollectionAdapter<HNMO.DataModel.Configuration.StatAttributeDefinition, StatAttributeDefinition>(this.RawStatAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="AttributeCombinations" />.
@@ -44,7 +44,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> AttributeCombinations => base.AttributeCombinations ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeCombinations);
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> AttributeCombinations => base.AttributeCombinations ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeCombinations);
 
     /// <summary>
     /// Gets the raw collection of <see cref="BaseAttributeValues" />.
@@ -53,7 +53,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.ConstValueAttribute> BaseAttributeValues => base.BaseAttributeValues ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawBaseAttributeValues);
+    public override ICollection<HNMO.AttributeSystem.ConstValueAttribute> BaseAttributeValues => base.BaseAttributeValues ??= new CollectionAdapter<HNMO.AttributeSystem.ConstValueAttribute, ConstValueAttribute>(this.RawBaseAttributeValues);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="NextGenerationClass"/>.
@@ -72,7 +72,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass NextGenerationClass
+    public override HNMO.DataModel.Configuration.CharacterClass NextGenerationClass
     {
         get => base.NextGenerationClass;set
         {
@@ -98,7 +98,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition HomeMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition HomeMap
     {
         get => base.HomeMap;set
         {
@@ -124,7 +124,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.SkillComboDefinition ComboDefinition
+    public override HNMO.DataModel.Configuration.SkillComboDefinition ComboDefinition
     {
         get => base.ComboDefinition;set
         {
@@ -134,7 +134,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CharacterClass Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CharacterClass();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -142,7 +142,7 @@ internal partial class CharacterClass : MUnique.OpenMU.DataModel.Configuration.C
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CharacterClass other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CharacterClass other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

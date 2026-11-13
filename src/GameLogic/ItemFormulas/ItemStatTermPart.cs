@@ -1,10 +1,10 @@
-// <copyright file="ItemStatTermPart.cs" company="MUnique">
+// <copyright file="ItemStatTermPart.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.ItemFormulas;
+namespace HNMO.GameLogic.ItemFormulas;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// The excellent or the ancient part of the terms of an attribute in an item stat profile:

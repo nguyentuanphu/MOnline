@@ -1,8 +1,8 @@
-// <copyright file="MapHost.cs" company="MUnique">
+// <copyright file="MapHost.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// A game server which hosts a game map for the players of other game servers.

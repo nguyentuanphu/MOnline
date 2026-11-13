@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "MUnique.OpenMU.Startup": {
+    "HNMO.Startup": {
       "commandName": "Project",
       "commandLineArgs": "-autostart -resolveIp:local",
       "applicationUrl": "http://localhost",

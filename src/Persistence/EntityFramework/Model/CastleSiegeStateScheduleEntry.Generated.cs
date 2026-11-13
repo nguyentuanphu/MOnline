@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeStateScheduleEntry.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeStateScheduleEntry.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry"/>.
 /// </summary>
 [Table(nameof(CastleSiegeStateScheduleEntry), Schema = SchemaNames.Configuration)]
-internal partial class CastleSiegeStateScheduleEntry : MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry, IIdentifiable
+internal partial class CastleSiegeStateScheduleEntry : HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry, IIdentifiable
 {
     
     
@@ -29,7 +29,7 @@ internal partial class CastleSiegeStateScheduleEntry : MUnique.OpenMU.DataModel.
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeStateScheduleEntry();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -37,7 +37,7 @@ internal partial class CastleSiegeStateScheduleEntry : MUnique.OpenMU.DataModel.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

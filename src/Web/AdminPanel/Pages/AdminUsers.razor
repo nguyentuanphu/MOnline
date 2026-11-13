@@ -1,6 +1,6 @@
 @page "/users"
-@using MUnique.OpenMU.Persistence.AdminAuth
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Persistence.AdminAuth
+@using HNMO.Web.AdminPanel.Properties
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 
 @{
@@ -37,7 +37,7 @@ else
                                 @onchange="@(args => this.OnRoleChangedAsync(user, args.Value?.ToString()))">
                             @foreach (var role in AdminRoles.All)
                             {
-                                <option value="@role">@MUnique.OpenMU.Web.AdminPanel.Auth.RoleCaption.Get(role)</option>
+                                <option value="@role">@HNMO.Web.AdminPanel.Auth.RoleCaption.Get(role)</option>
                             }
                         </select>
                     </td>

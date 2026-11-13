@@ -1,4 +1,4 @@
-// <copyright file="Skill.Generated.cs" company="MUnique">
+// <copyright file="Skill.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Skill"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Skill"/>.
 /// </summary>
 [Table(nameof(Skill), Schema = SchemaNames.Configuration)]
-internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IIdentifiable
+internal partial class Skill : HNMO.DataModel.Configuration.Skill, IIdentifiable
 {
     /// <inheritdoc />
     public Skill()
@@ -40,7 +40,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> Requirements => base.Requirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> Requirements => base.Requirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawRequirements);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ConsumeRequirements" />.
@@ -49,7 +49,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> ConsumeRequirements => base.ConsumeRequirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawConsumeRequirements);
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> ConsumeRequirements => base.ConsumeRequirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawConsumeRequirements);
 
     /// <summary>
     /// Gets the raw collection of <see cref="AttributeRelationships" />.
@@ -58,7 +58,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.AttributeRelationship> AttributeRelationships => base.AttributeRelationships ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeRelationships);
+    public override ICollection<HNMO.AttributeSystem.AttributeRelationship> AttributeRelationships => base.AttributeRelationships ??= new CollectionAdapter<HNMO.AttributeSystem.AttributeRelationship, AttributeRelationship>(this.RawAttributeRelationships);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="ElementalModifierTarget"/>.
@@ -77,7 +77,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition ElementalModifierTarget
+    public override HNMO.AttributeSystem.AttributeDefinition ElementalModifierTarget
     {
         get => base.ElementalModifierTarget;set
         {
@@ -103,7 +103,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition MagicEffectDef
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition MagicEffectDef
     {
         get => base.MagicEffectDef;set
         {
@@ -129,7 +129,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MasterSkillDefinition MasterDefinition
+    public override HNMO.DataModel.Configuration.MasterSkillDefinition MasterDefinition
     {
         get => base.MasterDefinition;set
         {
@@ -155,7 +155,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.AreaSkillSettings AreaSkillSettings
+    public override HNMO.DataModel.Configuration.AreaSkillSettings AreaSkillSettings
     {
         get => base.AreaSkillSettings;set
         {
@@ -165,7 +165,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Skill Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Skill();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -173,7 +173,7 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Skill other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Skill other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -199,6 +199,6 @@ internal partial class Skill : MUnique.OpenMU.DataModel.Configuration.Skill, IId
 
     protected void InitJoinCollections()
     {
-        this.QualifiedCharacters = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, SkillCharacterClass>(this.JoinedQualifiedCharacters, joinEntity => joinEntity.CharacterClass, entity => new SkillCharacterClass { Skill = this, SkillId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
+        this.QualifiedCharacters = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, SkillCharacterClass>(this.JoinedQualifiedCharacters, joinEntity => joinEntity.CharacterClass, entity => new SkillCharacterClass { Skill = this, SkillId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
     }
 }

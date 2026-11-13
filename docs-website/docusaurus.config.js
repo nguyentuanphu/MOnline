@@ -10,23 +10,23 @@ import {themes as prismThemes} from "prism-react-renderer";
  * The base url of the deployed site. Can be overridden by an environment
  * variable, so that a fork or a preview deployment doesn"t need a code change.
  */
-const siteUrl = process.env.DOCS_URL ?? "https://docs.munique.net";
+const siteUrl = process.env.DOCS_URL ?? "https://github.com/nguyentuanphu/HNMO";
 const baseUrl = process.env.DOCS_BASE_URL ?? "/";
 
-const githubRepo = "https://github.com/MUnique/OpenMU";
+const githubRepo = "https://github.com/nguyentuanphu/HNMO";
 
 /** @type {import("@docusaurus/types").Config} */
 const config = {
-  title: "OpenMU",
-  tagline: "An easy to use, extendable and customizable MU Online server",
-  // Placeholder icon - replace with a real OpenMU logo when there is one.
+  title: "HNMO",
+  tagline: "An easy to use, extendable and customizable HNMO server",
+  // Placeholder icon - replace with a real HNMO logo when there is one.
   favicon: "img/favicon.svg",
 
   url: siteUrl,
   baseUrl,
 
-  organizationName: "MUnique",
-  projectName: "OpenMU",
+  organizationName: "HNMO",
+  projectName: "HNMO",
 
   // A broken link is a bug, and it should fail the build instead of shipping a
   // dead link to the readers.
@@ -90,9 +90,9 @@ highlightSearchTermsOnTargetPage: true,
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: "OpenMU",
+        title: "HNMO",
         logo: {
-          alt: "OpenMU",
+          alt: "HNMO",
           src: "img/favicon.svg",
         },
         items: [
@@ -108,7 +108,7 @@ highlightSearchTermsOnTargetPage: true,
             label: "Admin Panel",
           },
           {
-            href: "https://discord.gg/2u5Agkd",
+            href: "the project's issue tracker",
             label: "Discord",
             position: "right",
           },
@@ -134,8 +134,8 @@ highlightSearchTermsOnTargetPage: true,
           {
             title: "Community",
             items: [
-              {label: "Discord", href: "https://discord.gg/2u5Agkd"},
-              {label: "Blog", href: "https://munique.net"},
+              {label: "Discord", href: "the project's issue tracker"},
+              {label: "Blog", href: "https://github.com/nguyentuanphu/HNMO"},
             ],
           },
           {
@@ -150,7 +150,7 @@ highlightSearchTermsOnTargetPage: true,
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} MUnique. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} HNMO. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

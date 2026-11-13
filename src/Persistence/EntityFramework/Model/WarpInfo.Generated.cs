@@ -1,4 +1,4 @@
-// <copyright file="WarpInfo.Generated.cs" company="MUnique">
+// <copyright file="WarpInfo.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.WarpInfo"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.WarpInfo"/>.
 /// </summary>
 [Table(nameof(WarpInfo), Schema = SchemaNames.Configuration)]
-internal partial class WarpInfo : MUnique.OpenMU.DataModel.Configuration.WarpInfo, IIdentifiable
+internal partial class WarpInfo : HNMO.DataModel.Configuration.WarpInfo, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class WarpInfo : MUnique.OpenMU.DataModel.Configuration.WarpInf
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate Gate
+    public override HNMO.DataModel.Configuration.ExitGate Gate
     {
         get => base.Gate;set
         {
@@ -55,7 +55,7 @@ internal partial class WarpInfo : MUnique.OpenMU.DataModel.Configuration.WarpInf
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.WarpInfo Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.WarpInfo Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new WarpInfo();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class WarpInfo : MUnique.OpenMU.DataModel.Configuration.WarpInf
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.WarpInfo other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.WarpInfo other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

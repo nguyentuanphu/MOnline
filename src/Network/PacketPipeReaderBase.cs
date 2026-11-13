@@ -1,15 +1,15 @@
-﻿// <copyright file="PacketPipeReaderBase.cs" company="MUnique">
+﻿// <copyright file="PacketPipeReaderBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.Buffers;
 using System.IO.Pipelines;
 using Pipelines.Sockets.Unofficial;
 
 /// <summary>
-/// Base class for all classes which read mu online data packets from a <see cref="PipeReader"/>.
+/// Base class for all classes which read game data packets from a <see cref="PipeReader"/>.
 /// </summary>
 /// <remarks>
 /// Things to consider here:
@@ -26,9 +26,9 @@ public abstract class PacketPipeReaderBase
     protected PipeReader Source { get; set; } = null!; // will be set in derived classes
 
     /// <summary>
-    /// Reads the mu online packet.
+    /// Reads the game packet.
     /// </summary>
-    /// <param name="packet">The mu online packet.</param>
+    /// <param name="packet">The game packet.</param>
     /// <returns><see langword="true" />, if the flush was successful or not required.<see langword="false" />, if the pipe reader is completed and no longer reading data.</returns>
     protected abstract ValueTask<bool> ReadPacketAsync(ReadOnlySequence<byte> packet);
 

@@ -1,13 +1,13 @@
-﻿// <copyright file="SetupService.cs" company="MUnique">
+﻿// <copyright file="SetupService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

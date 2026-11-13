@@ -1,4 +1,4 @@
-// <copyright file="DropItemGroup.Generated.cs" company="MUnique">
+// <copyright file="DropItemGroup.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.DropItemGroup"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.DropItemGroup"/>.
 /// </summary>
 [Table(nameof(DropItemGroup), Schema = SchemaNames.Configuration)]
-internal partial class DropItemGroup : MUnique.OpenMU.DataModel.Configuration.DropItemGroup, IIdentifiable
+internal partial class DropItemGroup : HNMO.DataModel.Configuration.DropItemGroup, IIdentifiable
 {
     /// <inheritdoc />
     public DropItemGroup()
@@ -50,7 +50,7 @@ internal partial class DropItemGroup : MUnique.OpenMU.DataModel.Configuration.Dr
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition Monster
+    public override HNMO.DataModel.Configuration.MonsterDefinition Monster
     {
         get => base.Monster;set
         {
@@ -60,7 +60,7 @@ internal partial class DropItemGroup : MUnique.OpenMU.DataModel.Configuration.Dr
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.DropItemGroup Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.DropItemGroup Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new DropItemGroup();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -68,7 +68,7 @@ internal partial class DropItemGroup : MUnique.OpenMU.DataModel.Configuration.Dr
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.DropItemGroup other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.DropItemGroup other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -94,6 +94,6 @@ internal partial class DropItemGroup : MUnique.OpenMU.DataModel.Configuration.Dr
 
     protected void InitJoinCollections()
     {
-        this.PossibleItems = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, DropItemGroupItemDefinition>(this.JoinedPossibleItems, joinEntity => joinEntity.ItemDefinition, entity => new DropItemGroupItemDefinition { DropItemGroup = this, DropItemGroupId = this.Id, ItemDefinition = (ItemDefinition)entity, ItemDefinitionId = ((ItemDefinition)entity).Id});
+        this.PossibleItems = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemDefinition, DropItemGroupItemDefinition>(this.JoinedPossibleItems, joinEntity => joinEntity.ItemDefinition, entity => new DropItemGroupItemDefinition { DropItemGroup = this, DropItemGroupId = this.Id, ItemDefinition = (ItemDefinition)entity, ItemDefinitionId = ((ItemDefinition)entity).Id});
     }
 }

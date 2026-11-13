@@ -1,18 +1,18 @@
-﻿// <copyright file="SocketSystem.cs" company="MUnique">
+﻿// <copyright file="SocketSystem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions.Craftings;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Initialization of seeds, spheres and seed spheres, their possible options, the adaption of the socket items
@@ -669,7 +669,7 @@ public class SocketSystem : InitializerBase
         seed.MinimumItemLevel = 0;
         seed.MaximumItemLevel = 15;
         seed.NpcPriceDivisor = 200000;
-        seed.Reference = OpenMU.GameLogic.PlayerActions.Craftings.SeedSphereCrafting.SeedReference;
+        seed.Reference = HNMO.GameLogic.PlayerActions.Craftings.SeedSphereCrafting.SeedReference;
         craftingSettings.RequiredItems.Add(seed);
         foreach (var itemDefinition in this.GetSeeds())
         {
@@ -680,7 +680,7 @@ public class SocketSystem : InitializerBase
         sphere.MinimumAmount = 1;
         sphere.MaximumAmount = 1;
         sphere.NpcPriceDivisor = 200000;
-        sphere.Reference = OpenMU.GameLogic.PlayerActions.Craftings.SeedSphereCrafting.SphereReference;
+        sphere.Reference = HNMO.GameLogic.PlayerActions.Craftings.SeedSphereCrafting.SphereReference;
         craftingSettings.RequiredItems.Add(sphere);
         foreach (var itemDefinition in this.GetSpheres())
         {
@@ -730,7 +730,7 @@ public class SocketSystem : InitializerBase
         seedSphere.MaximumAmount = 1;
         seedSphere.MinimumItemLevel = 0;
         seedSphere.MaximumItemLevel = 15;
-        seedSphere.Reference = OpenMU.GameLogic.PlayerActions.Craftings.MountSeedSphereCrafting.SeedSphereReference;
+        seedSphere.Reference = HNMO.GameLogic.PlayerActions.Craftings.MountSeedSphereCrafting.SeedSphereReference;
         this.GameConfiguration.Items
             .Where(item => item.Group == 12)
             .Where(item => item.Number >= SeedSphereNumberStart)
@@ -745,7 +745,7 @@ public class SocketSystem : InitializerBase
         socketItem.MaximumItemLevel = 15;
         socketItem.FailResult = MixResult.StaysAsIs;
         socketItem.SuccessResult = MixResult.StaysAsIs;
-        socketItem.Reference = OpenMU.GameLogic.PlayerActions.Craftings.MountSeedSphereCrafting.SocketItemReference;
+        socketItem.Reference = HNMO.GameLogic.PlayerActions.Craftings.MountSeedSphereCrafting.SocketItemReference;
         this.GameConfiguration.Items.Where(item => item.MaximumSockets > 0).ForEach(socketItem.PossibleItems.Add);
         craftingSettings.RequiredItems.Add(socketItem);
 
@@ -784,7 +784,7 @@ public class SocketSystem : InitializerBase
         socketItem.MaximumItemLevel = 15;
         socketItem.FailResult = MixResult.StaysAsIs;
         socketItem.SuccessResult = MixResult.StaysAsIs;
-        socketItem.Reference = OpenMU.GameLogic.PlayerActions.Craftings.RemoveSeedSphereCrafting.SocketItemReference;
+        socketItem.Reference = HNMO.GameLogic.PlayerActions.Craftings.RemoveSeedSphereCrafting.SocketItemReference;
         this.GameConfiguration.Items.Where(item => item.MaximumSockets > 0).ForEach(socketItem.PossibleItems.Add);
         craftingSettings.RequiredItems.Add(socketItem);
 

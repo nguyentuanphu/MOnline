@@ -1,11 +1,11 @@
-﻿// <copyright file="IDataInitializationPlugIn.cs" company="MUnique">
+﻿// <copyright file="IDataInitializationPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An interface for a plug in which provides initial data.

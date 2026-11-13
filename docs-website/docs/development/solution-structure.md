@@ -1,12 +1,12 @@
 ---
 title: Solution structure
 sidebar_position: 2
-description: What lives in which project of the OpenMU solution.
+description: What lives in which project of the HNMO solution.
 ---
 
 # Solution structure
 
-The solution is at `src/MUnique.OpenMU.sln`. Each project has a `Readme.md` next
+The solution is at `src/HNMO.sln`. Each project has a `Readme.md` next
 to its code with the details; this page is the map.
 
 ## Servers and game logic
@@ -28,11 +28,11 @@ to its code with the details; this page is the map.
 
 | Project | Contents |
 |---|---|
-| `Network` | The MU Online network protocol, connections, encryption — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Network/Readme.md) |
+| `Network` | The game network protocol, connections, encryption — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Network/Readme.md) |
 | `Network/Packets` | The packet definitions; the packet markdown documentation is generated from their XML |
-| `AttributeSystem` | The attribute/power-up system used for damage and stat calculation — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/AttributeSystem/Readme.md) |
-| `Pathfinding` | Pathfinding for monsters and NPCs — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Pathfinding/Readme.md) |
-| `PlugIns` | The plugin infrastructure — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/PlugIns/Readme.md) |
+| `AttributeSystem` | The attribute/power-up system used for damage and stat calculation — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/AttributeSystem/Readme.md) |
+| `Pathfinding` | Pathfinding for monsters and NPCs — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Pathfinding/Readme.md) |
+| `PlugIns` | The plugin infrastructure — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/PlugIns/Readme.md) |
 | `Annotations` / `SourceGenerators` | Attributes and source generators used across the solution |
 
 ## Data
@@ -40,10 +40,10 @@ to its code with the details; this page is the map.
 | Project | Contents |
 |---|---|
 | `DataModel` | The entities and the configuration classes — this is what the admin panel edits |
-| `Persistence` | The persistence abstractions (contexts, repositories) — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Persistence/Readme.md) |
-| `Persistence/EntityFramework` | The EF Core + PostgreSQL implementation — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Persistence/EntityFramework/Readme.md) |
+| `Persistence` | The persistence abstractions (contexts, repositories) — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Persistence/Readme.md) |
+| `Persistence/EntityFramework` | The EF Core + PostgreSQL implementation — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Persistence/EntityFramework/Readme.md) |
 | `Persistence.Generators` | Source generators for the persistent data classes, e.g. the json converters which load the data of the EF Core implementation |
-| `Persistence/Initialization` | The data initialization per game version — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Persistence/Initialization/Readme.md) |
+| `Persistence/Initialization` | The data initialization per game version — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Persistence/Initialization/Readme.md) |
 
 ## Web
 
@@ -59,17 +59,17 @@ to its code with the details; this page is the map.
 | Project | Contents |
 |---|---|
 | `ClientLauncher` | The launcher which starts the game client with your server's address |
-| `Network/Analyzer` | The platform independent part of the network analysis: captured connections and their packet analysis — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Network/Analyzer/Readme.md) |
-| `Network/Analyzer.WinForms` | The tool which captures the traffic between client and server by acting as a proxy — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/Network/Analyzer.WinForms/Readme.md) |
-| `ClientErrorLogDecryptor` | Decrypts the client's error logs — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/ClientErrorLogDecryptor/Readme.md) |
+| `Network/Analyzer` | The platform independent part of the network analysis: captured connections and their packet analysis — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Network/Analyzer/Readme.md) |
+| `Network/Analyzer.WinForms` | The tool which captures the traffic between client and server by acting as a proxy — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/Network/Analyzer.WinForms/Readme.md) |
+| `ClientErrorLogDecryptor` | Decrypts the client's error logs — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/ClientErrorLogDecryptor/Readme.md) |
 | `SimpleModulusKeyGenerator` | Generates keys for the SimpleModulus encryption |
-| `ChatServer/ExDbConnector` | Connector for the ExDB protocol — [Readme](https://github.com/MUnique/OpenMU/blob/master/src/ChatServer/ExDbConnector/Readme.md) |
+| `ChatServer/ExDbConnector` | Connector for the ExDB protocol — [Readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/ChatServer/ExDbConnector/Readme.md) |
 
 ## Tests
 
 The tests are in the `tests/` folder, one project per area
-(`MUnique.OpenMU.GameLogic.Benchmarks`, `MUnique.OpenMU.Network.Tests`,
-`MUnique.OpenMU.Persistence.Initialization.Tests`, …). Run them with:
+(`HNMO.GameLogic.Benchmarks`, `HNMO.Network.Tests`,
+`HNMO.Persistence.Initialization.Tests`, …). Run them with:
 
 ```bash
 dotnet test
@@ -77,15 +77,15 @@ dotnet test
 
 `dotnet test` builds before it runs the tests. If you run several test projects
 or filters without changing code, build once with
-`dotnet build src/MUnique.OpenMU.sln` and add `--no-build` to the later runs,
+`dotnet build src/HNMO.sln` and add `--no-build` to the later runs,
 keeping the same `-c` configuration.
 
 See also
-[Packet structure tests](https://github.com/MUnique/OpenMU/blob/master/docs/PacketStructureTests.md).
+[Packet structure tests](https://github.com/nguyentuanphu/HNMO/blob/master/docs/PacketStructureTests.md).
 
 ## This documentation
 
 The site you are reading is built with [Docusaurus](https://docusaurus.io/) from
 the `docs-website/` folder — see its
-[README](https://github.com/MUnique/OpenMU/blob/master/docs-website/README.md)
+[README](https://github.com/nguyentuanphu/HNMO/blob/master/docs-website/README.md)
 for how to run it locally and how it is deployed.

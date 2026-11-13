@@ -1,13 +1,13 @@
-// <copyright file="ConfigurationCaptions.cs" company="MUnique">
+// <copyright file="ConfigurationCaptions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Captions;
+namespace HNMO.Persistence.Initialization.Captions;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Compares the captions of a configuration with their sources (see <see cref="LocalizedString.SourceKey"/>)

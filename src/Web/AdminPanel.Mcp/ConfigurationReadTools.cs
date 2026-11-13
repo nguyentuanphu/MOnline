@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationReadTools.cs" company="MUnique">
+// <copyright file="ConfigurationReadTools.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Mcp;
+namespace HNMO.Web.AdminPanel.Mcp;
 
 using System.ComponentModel;
 using System.Text.Json.Nodes;
@@ -10,7 +10,7 @@ using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModelContextProtocol.Server;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Configuration and offline character tools with shared authorization and preview safeguards.</summary>
 [McpServerToolType]

@@ -1,16 +1,16 @@
-﻿// <copyright file="EditConnectionServer.razor.cs" company="MUnique">
+﻿// <copyright file="EditConnectionServer.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
+using HNMO.DataModel.Configuration;
+using HNMO.Web.AdminPanel.Auth;
 
 /// <summary>
-/// Edit page for the <see cref="MUnique.OpenMU.Web.AdminPanel.Components.ConnectServer.ConnectServerConfiguration"/>.
+/// Edit page for the <see cref="HNMO.Web.AdminPanel.Components.ConnectServer.ConnectServerConfiguration"/>.
 /// </summary>
 [Route("/edit-connectionServer/{id:guid}")]
 [Authorize(Policy = AdminPolicies.Administrator)]

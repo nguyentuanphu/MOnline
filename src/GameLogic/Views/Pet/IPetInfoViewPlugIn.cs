@@ -1,10 +1,10 @@
-﻿// <copyright file="IPetInfoViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="IPetInfoViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Pet;
+namespace HNMO.GameLogic.Views.Pet;
 
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.PlayerActions.Items;
 
 /// <summary>
 /// Interface of a view whose implementation informs about the pet information about an item in the inventory.

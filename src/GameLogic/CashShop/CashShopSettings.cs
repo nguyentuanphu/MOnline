@@ -1,8 +1,8 @@
-// <copyright file="CashShopSettings.cs" company="MUnique">
+// <copyright file="CashShopSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CashShop;
+namespace HNMO.GameLogic.CashShop;
 
 /// <summary>
 /// The settings of the cash shop, which are configured at the <see cref="CashShopFeaturePlugIn"/>.

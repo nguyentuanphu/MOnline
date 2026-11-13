@@ -1,23 +1,23 @@
-// <copyright file="FinishSummonerMasterTreePlugIn.cs" company="MUnique">
+// <copyright file="FinishSummonerMasterTreePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.VersionSeasonSix;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update completes the summoner master tree and fixes some of its skill values.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FinishSummonerMasterTreePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FinishSummonerMasterTreePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FinishSummonerMasterTreePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FinishSummonerMasterTreePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("4A1F9B2C-3D6E-4F70-A8B9-1C2D3E4F5A6B")]
 public class FinishSummonerMasterTreePlugIn : UpdatePlugInBase
 {

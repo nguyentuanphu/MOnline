@@ -1,14 +1,14 @@
-// <copyright file="GensActions.cs" company="MUnique">
+// <copyright file="GensActions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Gens;
+namespace HNMO.GameLogic.PlayerActions.Gens;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Gens;
-using MUnique.OpenMU.GameLogic.Views.Gens;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Gens;
+using HNMO.GameLogic.Views.Gens;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The actions of a player to join and leave a gens at the gens npcs.

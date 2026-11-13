@@ -1,4 +1,4 @@
-// <copyright file="CashShopProduct.Generated.cs" company="MUnique">
+// <copyright file="CashShopProduct.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CashShopProduct"/>.
 /// </summary>
-public partial class CashShopProduct : MUnique.OpenMU.DataModel.Configuration.CashShopProduct, IIdentifiable, IConvertibleTo<CashShopProduct>
+public partial class CashShopProduct : HNMO.DataModel.Configuration.CashShopProduct, IIdentifiable, IConvertibleTo<CashShopProduct>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class CashShopProduct : MUnique.OpenMU.DataModel.Configuration.Ca
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition ItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition ItemDefinition
     {
         get => base.ItemDefinition;
         set => base.ItemDefinition = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CashShopProduct Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CashShopProduct Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CashShopProduct();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class CashShopProduct : MUnique.OpenMU.DataModel.Configuration.Ca
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CashShopProduct other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CashShopProduct other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

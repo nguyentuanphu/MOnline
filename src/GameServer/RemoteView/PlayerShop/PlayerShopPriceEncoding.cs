@@ -1,12 +1,12 @@
-// <copyright file="PlayerShopPriceEncoding.cs" company="MUnique">
+// <copyright file="PlayerShopPriceEncoding.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.PlayerShop;
+namespace HNMO.GameServer.RemoteView.PlayerShop;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.PlayerShopCurrencies;
 
 /// <summary>
 /// Encodes and decodes the prices of player shop items in the fields of the extended client protocol:

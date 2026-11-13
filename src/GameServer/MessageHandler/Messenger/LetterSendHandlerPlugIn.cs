@@ -1,17 +1,17 @@
-﻿// <copyright file="LetterSendHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="LetterSendHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Messenger;
+namespace HNMO.GameServer.MessageHandler.Messenger;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Messenger;
-using MUnique.OpenMU.GameLogic.Properties;
-using MUnique.OpenMU.GameLogic.Views.Messenger;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
-using PlugInResources = MUnique.OpenMU.GameServer.Properties.PlugInResources;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Messenger;
+using HNMO.GameLogic.Properties;
+using HNMO.GameLogic.Views.Messenger;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
+using PlugInResources = HNMO.GameServer.Properties.PlugInResources;
 
 /// <summary>
 /// Handler for letter send packets.

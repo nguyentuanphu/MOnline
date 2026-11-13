@@ -1,8 +1,8 @@
-// <copyright file="LocalizedStringJsonConverter.cs" company="MUnique">
+// <copyright file="LocalizedStringJsonConverter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 using System.Text.Json;
 using System.Text.Json.Serialization;

@@ -1,4 +1,4 @@
-// <copyright file="Buff.Generated.cs" company="MUnique">
+// <copyright file="Buff.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Buff"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Buff"/>.
 /// </summary>
 [Table(nameof(Buff), Schema = SchemaNames.Configuration)]
-internal partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIdentifiable
+internal partial class Buff : HNMO.DataModel.Configuration.Buff, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIden
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition MagicEffectDefinition
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition MagicEffectDefinition
     {
         get => base.MagicEffectDefinition;set
         {
@@ -55,7 +55,7 @@ internal partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIden
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Buff Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Buff Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Buff();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class Buff : MUnique.OpenMU.DataModel.Configuration.Buff, IIden
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Buff other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Buff other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

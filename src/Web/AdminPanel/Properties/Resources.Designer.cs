@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Web.AdminPanel.Properties {
+namespace HNMO.Web.AdminPanel.Properties {
     using System;
 
 
@@ -36,7 +36,7 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MUnique.OpenMU.Web.AdminPanel.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HNMO.Web.AdminPanel.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -976,7 +976,7 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to {0} built-in captions are not linked to their sources yet, so their translations can&apos;t be reviewed here: {1}. That&apos;s usually the case after an update of OpenMU added translations, e.g. for item names. Linking doesn&apos;t change any texts..
+        ///   Looks up a localized string similar to {0} built-in captions are not linked to their sources yet, so their translations can&apos;t be reviewed here: {1}. That&apos;s usually the case after an update of HNMO added translations, e.g. for item names. Linking doesn&apos;t change any texts..
         /// </summary>
         public static string CaptionsLinkableDescription {
             get {
@@ -1057,7 +1057,7 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to The captions of this configuration don&apos;t know their sources yet. That&apos;s the case for configurations which were created with an older version of OpenMU. Linking is required once; afterwards this page shows which translations can be added or updated..
+        ///   Looks up a localized string similar to The captions of this configuration don&apos;t know their sources yet. That&apos;s the case for configurations which were created with an older version of HNMO. Linking is required once; afterwards this page shows which translations can be added or updated..
         /// </summary>
         public static string CaptionsNotLinkedDescription {
             get {
@@ -4444,7 +4444,7 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Creates the roles, categories and channels which the bot uses, like /openmu setup in Discord. What already exists is kept, so you can do it again at any time. The bot needs the permissions Manage Channels and Manage Roles for it..
+        ///   Looks up a localized string similar to Creates the roles, categories and channels which the bot uses, like /hnmo setup in Discord. What already exists is kept, so you can do it again at any time. The bot needs the permissions Manage Channels and Manage Roles for it..
         /// </summary>
         public static string DiscordSetUpServerText {
             get {
@@ -6757,11 +6757,11 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to OpenMU AdminPanel.
+        ///   Looks up a localized string similar to HNMO AdminPanel.
         /// </summary>
-        public static string OpenMUAdminPanel {
+        public static string HNMOAdminPanel {
             get {
-                return ResourceManager.GetString("OpenMUAdminPanel", resourceCulture);
+                return ResourceManager.GetString("HNMOAdminPanel", resourceCulture);
             }
         }
 
@@ -8188,7 +8188,7 @@ namespace MUnique.OpenMU.Web.AdminPanel.Properties {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Welcome to the admin panel of OpenMU..
+        ///   Looks up a localized string similar to Welcome to the admin panel of HNMO..
         /// </summary>
         public static string WelcomeMessage {
             get {

@@ -4,9 +4,9 @@
 @page "/network-analyzer/player/{ServerId:int}/{PlayerName}"
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 
-@using MUnique.OpenMU.Network.Analyzer
-@using MUnique.OpenMU.Web.AdminPanel.Components.NetworkAnalyzer
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Network.Analyzer
+@using HNMO.Web.AdminPanel.Components.NetworkAnalyzer
+@using HNMO.Web.AdminPanel.Properties
 
 <PageTitle>HNMO: @Resources.NetworkAnalyzer</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@Resources.NetworkAnalyzer"/>

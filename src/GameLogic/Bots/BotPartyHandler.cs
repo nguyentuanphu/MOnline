@@ -1,10 +1,10 @@
-// <copyright file="BotPartyHandler.cs" company="MUnique">
+// <copyright file="BotPartyHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.GameLogic.Offline;
+using HNMO.GameLogic.Offline;
 
 /// <summary>
 /// Lets a server-side bot party up with players who invite it (enabled by
@@ -18,7 +18,7 @@ using MUnique.OpenMU.GameLogic.Offline;
 /// when the presence rotation or a fault restart stops it. Safeguards keep it believable: no acceptance while
 /// the bot is on an errand (shopping trip) or has unfinished business (revenge), and
 /// the invitation is re-validated when the delay has passed - the inviter may have joined another
-/// party or left. There is no level gate, matching OpenMU's own party action: it is the player who
+/// party or left. There is no level gate, matching HNMO's own party action: it is the player who
 /// invites.
 /// </summary>
 internal static class BotPartyHandler

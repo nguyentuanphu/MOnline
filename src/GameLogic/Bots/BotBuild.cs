@@ -1,10 +1,10 @@
-// <copyright file="BotBuild.cs" company="MUnique">
+// <copyright file="BotBuild.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Single place for bot build variants.

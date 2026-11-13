@@ -1,12 +1,12 @@
-﻿// <copyright file="GameServerMapInitializer.cs" company="MUnique">
+﻿// <copyright file="GameServerMapInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
 
 /// <summary>
 /// A game map initializer which takes aspects of the <see cref="GameServer"/> into account.

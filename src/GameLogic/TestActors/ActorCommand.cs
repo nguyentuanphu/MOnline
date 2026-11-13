@@ -1,8 +1,8 @@
-// <copyright file="ActorCommand.cs" company="MUnique">
+// <copyright file="ActorCommand.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 /// <summary>
 /// One thing a scenario tells an actor to do. Commands are executed by the actor's own

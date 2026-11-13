@@ -1,19 +1,19 @@
-// <copyright file="CombatHandler.cs" company="MUnique">
+// <copyright file="CombatHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Bots;
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Bots;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Handles combat logic including target selection, attacks, combo attacks, and skill usage.

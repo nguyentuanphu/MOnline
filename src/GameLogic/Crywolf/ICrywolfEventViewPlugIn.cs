@@ -1,12 +1,12 @@
-﻿// <copyright file="ICrywolfEventViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="ICrywolfEventViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The view plugin interface of the crywolf event.

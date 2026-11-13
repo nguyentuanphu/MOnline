@@ -1,8 +1,8 @@
-﻿// <copyright file="AsyncDisposable.cs" company="MUnique">
+﻿// <copyright file="AsyncDisposable.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// Base class for classes which want to implement <see cref="IAsyncDisposable"/>.

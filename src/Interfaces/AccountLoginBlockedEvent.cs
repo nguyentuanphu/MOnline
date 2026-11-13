@@ -1,8 +1,8 @@
-﻿// <copyright file="AccountLoginBlockedEvent.cs" company="MUnique">
+﻿// <copyright file="AccountLoginBlockedEvent.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// Somebody tried to log into an account with the correct password, while the account was already logged in.

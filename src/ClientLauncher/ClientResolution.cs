@@ -1,11 +1,11 @@
-﻿// <copyright file="ClientResolution.cs" company="MUnique">
+﻿// <copyright file="ClientResolution.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ClientLauncher;
+namespace HNMO.ClientLauncher;
 
 /// <summary>
-/// The available mu online client screen resolutions.
+/// The available game client screen resolutions.
 /// </summary>
 public class ClientResolution
 {

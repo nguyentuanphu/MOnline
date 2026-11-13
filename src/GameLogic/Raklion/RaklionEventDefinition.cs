@@ -1,8 +1,8 @@
-﻿// <copyright file="RaklionEventDefinition.cs" company="MUnique">
+﻿// <copyright file="RaklionEventDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Raklion;
+namespace HNMO.GameLogic.Raklion;
 
 /// <summary>
 /// Describes the run of the raklion event.

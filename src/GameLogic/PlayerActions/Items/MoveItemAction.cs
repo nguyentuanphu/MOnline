@@ -1,17 +1,17 @@
-﻿// <copyright file="MoveItemAction.cs" company="MUnique">
+﻿// <copyright file="MoveItemAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
 using System.ComponentModel;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.Trade;
-using static MUnique.OpenMU.DataModel.InventoryConstants;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.Trade;
+using static HNMO.DataModel.InventoryConstants;
 
 /// <summary>
 /// Action to move an item between <see cref="Storages"/> or the same storage.

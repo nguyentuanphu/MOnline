@@ -1,16 +1,16 @@
-﻿// <copyright file="QuestBase.cs" company="MUnique">
+﻿// <copyright file="QuestBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.TestAccounts;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.TestAccounts;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
 /// <summary>
 /// Base initializer for an account to test quests.

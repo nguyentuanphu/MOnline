@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Web.Shared.Properties {
+namespace HNMO.Web.Shared.Properties {
     using System;
     
     
@@ -28,7 +28,7 @@ namespace MUnique.OpenMU.Web.Shared.Properties {
         public static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("MUnique.OpenMU.Web.Shared.Properties.Resources", typeof(Resources).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("HNMO.Web.Shared.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

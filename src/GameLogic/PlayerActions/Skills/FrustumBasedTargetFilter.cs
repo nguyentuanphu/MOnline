@@ -1,11 +1,11 @@
-﻿// <copyright file="FrustumBasedTargetFilter.cs" company="MUnique">
+﻿// <copyright file="FrustumBasedTargetFilter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Numerics;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// A target filter which will be executed when an area skill is about to hit its targets.

@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordChatBridgeSettings.cs" company="MUnique">
+﻿// <copyright file="DiscordChatBridgeSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 /// <summary>
 /// The settings of the chat bridge between the game and Discord.

@@ -1,14 +1,14 @@
-﻿// <copyright file="EventQuestStateRequestHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="EventQuestStateRequestHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Quests;
+namespace HNMO.GameServer.MessageHandler.Quests;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Quest;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Quest;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for event quest state request packets (0xF6, 0x21 identifier).

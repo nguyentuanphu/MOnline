@@ -1,13 +1,13 @@
-// <copyright file="GuildReadOperations.cs" company="MUnique">
+// <copyright file="GuildReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Reads guilds, membership and relationships without returning tracked entities.</summary>
 public sealed class GuildReadOperations(IPersistenceContextProvider persistence)
@@ -37,7 +37,7 @@ public sealed class GuildReadOperations(IPersistenceContextProvider persistence)
     {
         using var context = persistence.CreateNewGuildContext();
         var id = await context.GetPersistentGuildIdByNameAsync(name).ConfigureAwait(false);
-        var guild = id is { } guildId ? await context.GetByIdAsync<MUnique.OpenMU.DataModel.Entities.Guild>(guildId, cancellationToken).ConfigureAwait(false) : null;
+        var guild = id is { } guildId ? await context.GetByIdAsync<HNMO.DataModel.Entities.Guild>(guildId, cancellationToken).ConfigureAwait(false) : null;
         if (guild is null)
         {
             throw new ArgumentException("Guild not found. Use guilds_search to find its exact name.", nameof(name));

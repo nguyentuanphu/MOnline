@@ -1,15 +1,15 @@
-﻿// <copyright file="DataInitialization.cs" company="MUnique">
+﻿// <copyright file="DataInitialization.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.TestAccounts;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence.Initialization.VersionSeasonSix.TestAccounts;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Provides initial data for Season 6 Episode 3.

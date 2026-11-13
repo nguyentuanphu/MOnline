@@ -1,12 +1,12 @@
-// <copyright file="BuiltInItemStatProfiles.cs" company="MUnique">
+// <copyright file="BuiltInItemStatProfiles.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Items;
+namespace HNMO.Persistence.Initialization.Items;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// The built-in item stat profiles: the item formulas as the game logic computes them,

@@ -1,14 +1,14 @@
-// <copyright file="RemoveAllianceGuildHandlerPlugIn.cs" company="MUnique">
+// <copyright file="RemoveAllianceGuildHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Guild;
+namespace HNMO.GameServer.MessageHandler.Guild;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Guild;
-using MUnique.OpenMU.PlugIns;
-using RemoveAllianceGuildRequest = MUnique.OpenMU.Network.Packets.ClientToServer.RemoveAllianceGuildRequest;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Guild;
+using HNMO.PlugIns;
+using RemoveAllianceGuildRequest = HNMO.Network.Packets.ClientToServer.RemoveAllianceGuildRequest;
 
 /// <summary>
 /// Handler for remove alliance guild request packets (C1 EB 01).

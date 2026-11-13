@@ -1,8 +1,8 @@
-﻿// <copyright file="ByteSpanExtensions.cs" company="MUnique">
+﻿// <copyright file="ByteSpanExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Packets;
+namespace HNMO.Network.Packets;
 
 /// <summary>
 /// Extensions for byte spans to read and write data.

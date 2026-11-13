@@ -1,10 +1,10 @@
-﻿// <copyright file="GuildMembership.cs" company="MUnique">
+﻿// <copyright file="GuildMembership.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The membership of a character in a guild.

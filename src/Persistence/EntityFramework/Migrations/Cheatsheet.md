@@ -9,9 +9,9 @@ Here are my notes about how to (re-)generate entity framework core migrations.
 
 * Open Package Manager Console
 
-* Select default project *MUnique.OpenMU.Persistence.EntityFramework*
+* Select default project *HNMO.Persistence.EntityFramework*
 
-* Set the startup project to *MUnique.OpenMU.Persistence.EntityFramework*
+* Set the startup project to *HNMO.Persistence.EntityFramework*
 
 * Run this command (replace *[Name]* by the name of the migration):
   > Add-Migration *[Name]* -context EntityDataContext
@@ -21,7 +21,7 @@ Here are my notes about how to (re-)generate entity framework core migrations.
 
 ## Replacing the initial migration
 
-Replacing the initial migration is only allowed until a stable version of OpenMU
+Replacing the initial migration is only allowed until a stable version of HNMO
 is released. After that, just new migrations should be added.
 
 * Delete *00000000000000_Initial* and *EntityDataContextModelSnapshot*

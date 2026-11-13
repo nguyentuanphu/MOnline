@@ -1,10 +1,10 @@
-﻿// <copyright file="GameMapTerrainVariant.cs" company="MUnique">
+﻿// <copyright file="GameMapTerrainVariant.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines an alternative terrain of a map, which replaces its <see cref="GameMapDefinition.TerrainData"/>

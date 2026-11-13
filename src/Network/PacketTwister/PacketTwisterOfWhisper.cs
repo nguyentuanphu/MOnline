@@ -1,8 +1,8 @@
-// <copyright file="PacketTwisterOfWhisper.cs" company="MUnique">
+// <copyright file="PacketTwisterOfWhisper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.PacketTwister;
+namespace HNMO.Network.PacketTwister;
 
 /// <summary>
 /// PacketTwister implementation for packets of 'Whisper' type.

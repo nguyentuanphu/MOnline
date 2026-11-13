@@ -1,10 +1,10 @@
-﻿// <copyright file="CharacterQuestState.cs" company="MUnique">
+﻿// <copyright file="CharacterQuestState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.DataModel.Configuration.Quests;
+using HNMO.DataModel.Configuration.Quests;
 
 /// <summary>
 /// Keeps the progress state of a started quest.

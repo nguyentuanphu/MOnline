@@ -1,20 +1,20 @@
-﻿// <copyright file="PlugInController.cs" company="MUnique">
+﻿// <copyright file="PlugInController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.Shared.Components.Form.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Models;
-using MUnique.OpenMU.Web.Shared.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.PlugIns;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.Shared.Components.Form.Modal;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Models;
+using HNMO.Web.Shared.Properties;
 
 /// <summary>
 /// A scoped controller to manage plugins.

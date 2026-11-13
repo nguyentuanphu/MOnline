@@ -1,11 +1,11 @@
-// <copyright file="ByDataSourceReferenceHandler.cs" company="MUnique">
+// <copyright file="ByDataSourceReferenceHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// A reference handler which uses a <see cref="IDataSource{T}"/> to resolve references.

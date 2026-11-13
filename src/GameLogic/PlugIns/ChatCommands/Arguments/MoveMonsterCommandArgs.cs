@@ -1,8 +1,8 @@
-﻿// <copyright file="MoveMonsterCommandArgs.cs" company="MUnique">
+﻿// <copyright file="MoveMonsterCommandArgs.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
+namespace HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
 
 /// <summary>
 /// Arguments used by <see cref="MoveMonsterChatCommand"/> and others which just require an X and Y coordinate of a game map.

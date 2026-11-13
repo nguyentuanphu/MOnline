@@ -1,16 +1,16 @@
-// <copyright file="BotBuffHandler.cs" company="MUnique">
+// <copyright file="BotBuffHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Runtime.CompilerServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.PlayerActions.Quests;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.PlayerActions.Quests;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Lets a bot claim the free buff a dialog NPC offers new players (e.g. the Elf Soldier, which grants

@@ -1,8 +1,8 @@
-﻿// <copyright file="IMapFactory.cs" company="MUnique">
+﻿// <copyright file="IMapFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
 /// <summary>
 /// An interface for a map factory.

@@ -1,12 +1,12 @@
-// <copyright file="DatabaseHealthCheck.cs" company="MUnique">
+// <copyright file="DatabaseHealthCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common.HealthChecks;
+namespace HNMO.Dapr.Common.HealthChecks;
 
 using System.Threading;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using MUnique.OpenMU.Persistence.EntityFramework;
+using HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// Checks if the database is reachable, up to date and contains a game configuration.

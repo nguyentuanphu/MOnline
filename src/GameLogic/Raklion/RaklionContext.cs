@@ -1,15 +1,15 @@
-﻿// <copyright file="RaklionContext.cs" company="MUnique">
+﻿// <copyright file="RaklionContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Raklion;
+namespace HNMO.GameLogic.Raklion;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Properties;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Properties;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The context of the raklion event of a game server.

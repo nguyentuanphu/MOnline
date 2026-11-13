@@ -1,8 +1,8 @@
-// <copyright file="SkillAnimationCounterStrategyBase.cs" company="MUnique">
+// <copyright file="SkillAnimationCounterStrategyBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.AnimationCounters;
+namespace HNMO.GameLogic.PlugIns.AnimationCounters;
 
 /// <summary>
 /// The base class of a <see cref="ISkillAnimationCounterStrategy"/>, which implements the usual behavior of the client:

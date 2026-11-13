@@ -57,10 +57,10 @@ running, so several calls in a row repeat the same build. Don't do that:
   changed since that build:
 
   ```bash
-  dotnet build src/MUnique.OpenMU.sln
-  dotnet test tests/MUnique.OpenMU.Tests --no-build
-  dotnet test tests/MUnique.OpenMU.Network.Tests --no-build
-  dotnet test tests/MUnique.OpenMU.Network.Tests --no-build --filter "FullyQualifiedName~Foo"
+  dotnet build src/HNMO.sln
+  dotnet test tests/HNMO.Tests --no-build
+  dotnet test tests/HNMO.Network.Tests --no-build
+  dotnet test tests/HNMO.Network.Tests --no-build --filter "FullyQualifiedName~Foo"
   ```
 
 * Run the tests with the same `-c` / `-p:` options as the build — `--no-build`
@@ -69,7 +69,7 @@ running, so several calls in a row repeat the same build. Don't do that:
   package change, including changes to files that feed code generators.
   `--no-build` against a stale build tests the old code.
 * Prefer one `dotnet test` call over several where possible, e.g.
-  `dotnet test src/MUnique.OpenMU.sln --no-build` for the whole solution, or
+  `dotnet test src/HNMO.sln --no-build` for the whole solution, or
   `--filter` to narrow a run instead of rebuilding for each test class.
 
 ## Branch and pull request conventions

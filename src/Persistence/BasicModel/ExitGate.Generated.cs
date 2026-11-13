@@ -1,4 +1,4 @@
-// <copyright file="ExitGate.Generated.cs" company="MUnique">
+// <copyright file="ExitGate.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ExitGate"/>.
 /// </summary>
-public partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGate, IIdentifiable, IConvertibleTo<ExitGate>
+public partial class ExitGate : HNMO.DataModel.Configuration.ExitGate, IIdentifiable, IConvertibleTo<ExitGate>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGate,
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition Map
+    public override HNMO.DataModel.Configuration.GameMapDefinition Map
     {
         get => base.Map;
         set => base.Map = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ExitGate Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ExitGate();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class ExitGate : MUnique.OpenMU.DataModel.Configuration.ExitGate,
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ExitGate other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ExitGate other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

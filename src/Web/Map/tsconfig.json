@@ -7,7 +7,7 @@
     "preserveConstEnums": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "outFile": "wwwroot/js/MUnique.OpenMU.Web.Map.js",
+    "outFile": "wwwroot/js/HNMO.Web.Map.js",
     "sourceMap": true,
     "jsx": "react",
     "target": "es5",

@@ -1,8 +1,8 @@
-﻿// <copyright file="GuildChatTarget.cs" company="MUnique">
+﻿// <copyright file="GuildChatTarget.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 /// <summary>
 /// The guild or alliance whose chat a guild master can bind.

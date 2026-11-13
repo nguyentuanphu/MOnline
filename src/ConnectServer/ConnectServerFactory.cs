@@ -1,11 +1,11 @@
-﻿// <copyright file="ConnectServerFactory.cs" company="MUnique">
+﻿// <copyright file="ConnectServerFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer;
+namespace HNMO.ConnectServer;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The connect server factory.
@@ -30,7 +30,7 @@ public class ConnectServerFactory
     /// <returns>
     /// The new connect server instance.
     /// </returns>
-    public OpenMU.Interfaces.IConnectServer CreateConnectServer(IConnectServerSettings settings)
+    public HNMO.Interfaces.IConnectServer CreateConnectServer(IConnectServerSettings settings)
     {
         return new ConnectServer(settings, this._loggerFactory);
     }

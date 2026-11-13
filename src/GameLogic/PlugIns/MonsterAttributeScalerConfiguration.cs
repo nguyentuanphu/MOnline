@@ -1,8 +1,8 @@
-// <copyright file="MonsterAttributeScalerConfiguration.cs" company="MUnique">
+// <copyright file="MonsterAttributeScalerConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// Configuration for the <see cref="MonsterAttributeScaler"/>.
@@ -20,7 +20,7 @@ public class MonsterAttributeScalerConfiguration
     /// Gets or sets the percentage applied to all stats at once.
     /// When set above 0, cascades to all individual fields.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_ScaleAllPercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_ScaleAllPercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float ScaleAllPercentage
     {
         get => this._scaleAllPercentage;
@@ -41,7 +41,7 @@ public class MonsterAttributeScalerConfiguration
     /// <summary>
     /// Gets or sets the percentage by which monster damage (MinPhysBaseDmg, MaxPhysBaseDmg) is increased.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DamagePercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DamagePercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float DamagePercentage
     {
         get => this.ScaleAllActive ? this._scaleAllPercentage : this._damagePercentage;
@@ -51,7 +51,7 @@ public class MonsterAttributeScalerConfiguration
     /// <summary>
     /// Gets or sets the percentage by which the monster attack rate is increased.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_AttackRatePercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_AttackRatePercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float AttackRatePercentage
     {
         get => this.ScaleAllActive ? this._scaleAllPercentage : this._attackRatePercentage;
@@ -61,7 +61,7 @@ public class MonsterAttributeScalerConfiguration
     /// <summary>
     /// Gets or sets the percentage by which monster defense rate is increased.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DefenseRatePercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DefenseRatePercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float DefenseRatePercentage
     {
         get => this.ScaleAllActive ? this._scaleAllPercentage : this._defenseRatePercentage;
@@ -71,7 +71,7 @@ public class MonsterAttributeScalerConfiguration
     /// <summary>
     /// Gets or sets the percentage by which monster defense is increased.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DefensePercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_DefensePercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float DefensePercentage
     {
         get => this.ScaleAllActive ? this._scaleAllPercentage : this._defensePercentage;
@@ -81,7 +81,7 @@ public class MonsterAttributeScalerConfiguration
     /// <summary>
     /// Gets or sets the percentage by which monster maximum health is increased.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_HealthPercentage_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.MonsterAttributeScalerConfiguration_HealthPercentage_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public float HealthPercentage
     {
         get => this.ScaleAllActive ? this._scaleAllPercentage : this._healthPercentage;

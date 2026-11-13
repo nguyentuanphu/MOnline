@@ -22,12 +22,12 @@ test the server, submit issues or suggestions, packet descriptions or
 documentations about the concepts and mechanics of the game itself. Please use
 markdown files/syntax for this purpose.
 
-If you have questions about that, don't hesitate to ask in our [discord channel](https://discord.gg/2u5Agkd)
+If you have questions about that, don't hesitate to ask in our the project's issue tracker
 or by submitting an issue.
 
 ## How to contribute code
 
-1. fork this project from the original MUnique OpenMU Project.
+1. fork this project from the original HNMO HNMO Project.
 2. create a feature branch from the master branch
 3. commit your changes to your feature branch
 4. please test your changes, don't send AI generated code without testing it yourself

@@ -1,17 +1,17 @@
-﻿// <copyright file="DoppelgangerEventViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerEventViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.MiniGames;
+namespace HNMO.GameServer.RemoteView.MiniGames;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
-using DoppelgangerResult = MUnique.OpenMU.GameLogic.MiniGames.Doppelganger.DoppelgangerResult;
+using HNMO.GameLogic;
+using HNMO.GameLogic.MiniGames.Doppelganger;
+using HNMO.GameLogic.Views;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
+using DoppelgangerResult = HNMO.GameLogic.MiniGames.Doppelganger.DoppelgangerResult;
 
 /// <summary>
 /// The default implementation of the <see cref="IDoppelgangerEventViewPlugIn"/> which

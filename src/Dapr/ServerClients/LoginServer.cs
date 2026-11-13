@@ -1,12 +1,12 @@
-﻿// <copyright file="LoginServer.cs" company="MUnique">
+﻿// <copyright file="LoginServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ServerClients;
+namespace HNMO.ServerClients;
 
 using Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Implementation of an <see cref="ILoginServer"/> which accesses the login server remotely over Dapr.

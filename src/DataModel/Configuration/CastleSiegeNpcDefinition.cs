@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeNpcDefinition.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a castle siege NPC instance, including its spawn location, side, and persistence settings.
@@ -50,6 +50,6 @@ public partial class CastleSiegeNpcDefinition
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.CastleNpcSummary, this.MonsterDefinition, this.InstanceId, this.SpawnX, this.SpawnY);
+        return string.Format(HNMO.DataModel.Properties.Resources.CastleNpcSummary, this.MonsterDefinition, this.InstanceId, this.SpawnX, this.SpawnY);
     }
 }

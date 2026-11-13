@@ -1,15 +1,15 @@
-﻿// <copyright file="SecretStoreDatabaseConnectionSettingsProvider.cs" company="MUnique">
+﻿// <copyright file="SecretStoreDatabaseConnectionSettingsProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System.Threading;
 using global::Dapr;
 using global::Dapr.Client;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.EntityFramework;
+using HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// Implementation of <see cref="IDatabaseConnectionSettingProvider"/> which retrieves the settings from the

@@ -1,12 +1,12 @@
-﻿// <copyright file="SimpleItemCraftingHandler.cs" company="MUnique">
+﻿// <copyright file="SimpleItemCraftingHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// The simple item crafting handler which can be configured to handle the most crafting requirements.

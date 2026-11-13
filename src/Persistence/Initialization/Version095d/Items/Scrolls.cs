@@ -1,17 +1,17 @@
-﻿// <copyright file="Scrolls.cs" company="MUnique">
+﻿// <copyright file="Scrolls.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version095d.Items;
+namespace HNMO.Persistence.Initialization.Version095d.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Properties;
 
 /// <summary>
 /// Initializer for scroll items which allow a character to learn <see cref="Skill"/>s.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.Persistence.Initialization.InitializerBase" />
+/// <seealso cref="HNMO.Persistence.Initialization.InitializerBase" />
 public class Scrolls : Version075.Items.Scrolls
 {
     /// <summary>

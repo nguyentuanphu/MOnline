@@ -1,16 +1,16 @@
-// <copyright file="EditAccount.razor.cs" company="MUnique">
+// <copyright file="EditAccount.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.Shared.Components.Form;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.Shared.Components.Form;
 
 /// <summary>
 /// The edit page for account data.

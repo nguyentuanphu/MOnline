@@ -1,4 +1,4 @@
-// <copyright file="ChatServerDefinition.Generated.cs" company="MUnique">
+// <copyright file="ChatServerDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ChatServerDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ChatServerDefinition"/>.
 /// </summary>
 [Table(nameof(ChatServerDefinition), Schema = SchemaNames.Configuration)]
-internal partial class ChatServerDefinition : MUnique.OpenMU.DataModel.Configuration.ChatServerDefinition, IIdentifiable
+internal partial class ChatServerDefinition : HNMO.DataModel.Configuration.ChatServerDefinition, IIdentifiable
 {
     
     
@@ -35,10 +35,10 @@ internal partial class ChatServerDefinition : MUnique.OpenMU.DataModel.Configura
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint> Endpoints => base.Endpoints ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint, ChatServerEndpoint>(this.RawEndpoints);
+    public override ICollection<HNMO.DataModel.Configuration.ChatServerEndpoint> Endpoints => base.Endpoints ??= new CollectionAdapter<HNMO.DataModel.Configuration.ChatServerEndpoint, ChatServerEndpoint>(this.RawEndpoints);
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ChatServerDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ChatServerDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ChatServerDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -46,7 +46,7 @@ internal partial class ChatServerDefinition : MUnique.OpenMU.DataModel.Configura
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ChatServerDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ChatServerDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

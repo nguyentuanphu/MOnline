@@ -1,14 +1,14 @@
-// <copyright file="BotsController.cs" company="MUnique">
+// <copyright file="BotsController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Bots;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Bots;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The <c>bots</c> command of the control endpoint: switches the server's own population bots on and

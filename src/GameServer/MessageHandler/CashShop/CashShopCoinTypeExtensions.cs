@@ -1,10 +1,10 @@
-// <copyright file="CashShopCoinTypeExtensions.cs" company="MUnique">
+// <copyright file="CashShopCoinTypeExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.CashShop;
+namespace HNMO.GameServer.MessageHandler.CashShop;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Extensions to convert the coin types of the cash shop script, which the client sends.

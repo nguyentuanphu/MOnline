@@ -1,14 +1,14 @@
-// <copyright file="ServerAnnouncementsPlugIn.cs" company="MUnique">
+// <copyright file="ServerAnnouncementsPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Shows a configured list of announcements to all players of a game server, one after another

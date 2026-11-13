@@ -1,15 +1,15 @@
-// <copyright file="AllianceListRequestHandlerPlugIn.cs" company="MUnique">
+// <copyright file="AllianceListRequestHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Guild;
+namespace HNMO.GameServer.MessageHandler.Guild;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for alliance list request packets (C1 E9).

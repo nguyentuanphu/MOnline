@@ -1,10 +1,10 @@
-﻿// <copyright file="MerchantSpawnState.cs" company="MUnique">
+﻿// <copyright file="MerchantSpawnState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.WanderingMerchants;
+namespace HNMO.GameLogic.PlugIns.WanderingMerchants;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Spawn state of a wandering merchant.

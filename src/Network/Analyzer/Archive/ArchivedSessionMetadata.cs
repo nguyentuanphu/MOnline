@@ -1,11 +1,11 @@
-// <copyright file="ArchivedSessionMetadata.cs" company="MUnique">
+// <copyright file="ArchivedSessionMetadata.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer.Archive;
+namespace HNMO.Network.Analyzer.Archive;
 
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Interfaces;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// The metadata of an archived session, which is saved next to the captured packets.

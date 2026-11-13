@@ -1,4 +1,4 @@
-// <copyright file="StatAttribute.Generated.cs" company="MUnique">
+// <copyright file="StatAttribute.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.AttributeSystem.StatAttribute"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.AttributeSystem.StatAttribute"/>.
 /// </summary>
 [Table(nameof(StatAttribute), Schema = SchemaNames.AccountData)]
-internal partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttribute, IIdentifiable
+internal partial class StatAttribute : HNMO.AttributeSystem.StatAttribute, IIdentifiable
 {
     /// <inheritdoc />
     public StatAttribute()
@@ -28,7 +28,7 @@ internal partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttrib
     }
 
     /// <inheritdoc />
-    public StatAttribute(MUnique.OpenMU.AttributeSystem.AttributeDefinition definition, System.Single baseValue)
+    public StatAttribute(HNMO.AttributeSystem.AttributeDefinition definition, System.Single baseValue)
         : base(definition, baseValue)
     {
 
@@ -57,7 +57,7 @@ internal partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttrib
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Definition
+    public override HNMO.AttributeSystem.AttributeDefinition Definition
     {
         get => base.Definition;protected set
         {

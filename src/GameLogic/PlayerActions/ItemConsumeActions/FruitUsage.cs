@@ -1,8 +1,8 @@
-﻿// <copyright file="FruitUsage.cs" company="MUnique">
+﻿// <copyright file="FruitUsage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 /// <summary>
 /// Defines how the fruit is used. Only applies, if the the item is a fruit.

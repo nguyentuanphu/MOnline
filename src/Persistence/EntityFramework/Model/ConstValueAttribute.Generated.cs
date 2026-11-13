@@ -1,4 +1,4 @@
-// <copyright file="ConstValueAttribute.Generated.cs" company="MUnique">
+// <copyright file="ConstValueAttribute.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,20 +10,20 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.AttributeSystem.ConstValueAttribute"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.AttributeSystem.ConstValueAttribute"/>.
 /// </summary>
 [Table(nameof(ConstValueAttribute), Schema = SchemaNames.Configuration)]
-internal partial class ConstValueAttribute : MUnique.OpenMU.AttributeSystem.ConstValueAttribute, IIdentifiable
+internal partial class ConstValueAttribute : HNMO.AttributeSystem.ConstValueAttribute, IIdentifiable
 {
     
     /// <inheritdoc />
-    public ConstValueAttribute(System.Single value, MUnique.OpenMU.AttributeSystem.AttributeDefinition definition, MUnique.OpenMU.AttributeSystem.AggregateType aggregateType)
+    public ConstValueAttribute(System.Single value, HNMO.AttributeSystem.AttributeDefinition definition, HNMO.AttributeSystem.AggregateType aggregateType)
         : base(value, definition, aggregateType)
     {
 
@@ -52,7 +52,7 @@ internal partial class ConstValueAttribute : MUnique.OpenMU.AttributeSystem.Cons
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Definition
+    public override HNMO.AttributeSystem.AttributeDefinition Definition
     {
         get => base.Definition;protected set
         {

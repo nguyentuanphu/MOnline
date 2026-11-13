@@ -1,8 +1,8 @@
-﻿// <copyright file="CharacterName.cs" company="MUnique">
+﻿// <copyright file="CharacterName.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 // ReSharper disable UnusedAutoPropertyAccessor.Local They're used by the entity framework core (reflection).
 using System.ComponentModel.DataAnnotations.Schema;

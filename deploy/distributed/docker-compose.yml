@@ -3,7 +3,7 @@ volumes:
   dbdata:
   otel-lgtm-data:
 
-# Every OpenMU service gets a dapr sidecar in its own container. The service reaches its sidecar
+# Every HNMO service gets a dapr sidecar in its own container. The service reaches its sidecar
 # through the DAPR_HTTP_ENDPOINT and DAPR_GRPC_ENDPOINT, the sidecar reaches the service through
 # its -app-channel-address. This way, each of them can be restarted without breaking the other one,
 # e.g. when a game server process ends to apply a changed configuration.
@@ -23,9 +23,9 @@ x-dapr-sidecar: &dapr-sidecar
   volumes:
     - "./dapr-components/:/components"
 
-# The OpenMU services report on /health/ready whether they can do their work, e.g. that the database is
+# The HNMO services report on /health/ready whether they can do their work, e.g. that the database is
 # installed. Nothing waits for it, because the central and game servers aren't ready before the setup.
-x-openmu-healthcheck: &openmu-healthcheck
+x-hnmo-healthcheck: &hnmo-healthcheck
   test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/health/ready"]
   interval: 10s
   timeout: 5s
@@ -47,7 +47,7 @@ services:
   otel-lgtm:
     # OpenTelemetry collector, Loki (logs), Prometheus (metrics), Tempo (traces) and Grafana in one container.
     # It's intended for development, demo and testing environments. For bigger production setups,
-    # replace it by dedicated deployments of these components - the OpenMU services just need the OTLP endpoint.
+    # replace it by dedicated deployments of these components - the HNMO services just need the OTLP endpoint.
     image: grafana/otel-lgtm:0.35.0
     container_name: otel-lgtm
     restart: always
@@ -115,7 +115,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_PASSWORD: ${DB_ADMIN_PW:-admin}
-      POSTGRES_DB: ${DB_NAME:-openmu}
+      POSTGRES_DB: ${DB_NAME:-hnmo}
       POSTGRES_USER: ${DB_ADMIN_USER:-postgres}
     ports:
       - "5432"
@@ -129,10 +129,10 @@ services:
 
   centralServer:
     # Hosts the connect, login, guild, friend and chat servers.
-    image: munique/openmu-central
+    image: hnmo/hnmo-central
     container_name: centralServer
     restart: unless-stopped
-    healthcheck: *openmu-healthcheck
+    healthcheck: *hnmo-healthcheck
     build:
       context: ../../src
       dockerfile: Dapr/CentralServer.Host/Dockerfile
@@ -169,10 +169,10 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   adminPanel:
-    image: munique/openmu-admin
+    image: hnmo/hnmo-admin
     container_name: adminPanel
     restart: unless-stopped
-    healthcheck: *openmu-healthcheck
+    healthcheck: *hnmo-healthcheck
     build:
       context: ../../src
       dockerfile: Dapr/AdminPanel.Host/Dockerfile
@@ -194,10 +194,10 @@ services:
       DB_ADMIN_PW: ${DB_ADMIN_PW:-}
       # Optional bootstrap admin panel user. Without it, the admin panel is reachable
       # without a login until the first user has been created within the panel itself.
-      OPENMU_ADMIN_USER: ${OPENMU_ADMIN_USER:-}
-      OPENMU_ADMIN_PASSWORD: ${OPENMU_ADMIN_PASSWORD:-}
+      HNMO_ADMIN_USER: ${HNMO_ADMIN_USER:-}
+      HNMO_ADMIN_PASSWORD: ${HNMO_ADMIN_PASSWORD:-}
       # Optional base32 TOTP secret, if the bootstrap user should require a second factor.
-      OPENMU_ADMIN_TOTP_SECRET: ${OPENMU_ADMIN_TOTP_SECRET:-}
+      HNMO_ADMIN_TOTP_SECRET: ${HNMO_ADMIN_TOTP_SECRET:-}
       # website authenticates itself at the public API under /api.
     volumes:
       - adminpanel-keys:/app/data-protection-keys
@@ -218,11 +218,11 @@ services:
   # e.g. "docker compose --profile discord up -d". See the documentation for the
   # further settings, like the webhooks and channels, which are added as environment variables.
   discord:
-    image: munique/openmu-discord
+    image: hnmo/hnmo-discord
     container_name: discord
     restart: unless-stopped
     profiles: [ "discord" ]
-    healthcheck: *openmu-healthcheck
+    healthcheck: *hnmo-healthcheck
     build:
       context: ../../src
       dockerfile: Dapr/Discord.Host/Dockerfile
@@ -260,10 +260,10 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   gameServer0:
-    image: munique/openmu-game
+    image: hnmo/hnmo-game
     container_name: gameServer0
     restart: unless-stopped
-    healthcheck: *openmu-healthcheck
+    healthcheck: *hnmo-healthcheck
     # The game server saves and disconnects its players when it stops, which may take a while.
     stop_grace_period: 60s
     build:
@@ -274,7 +274,7 @@ services:
       - "45901:45901"
       - "45902:45902"
     environment:
-      APP_API_TOKEN: ${OPENMU_GAME_SERVER_APP_TOKEN:?Set OPENMU_GAME_SERVER_APP_TOKEN to a strong random token}
+      APP_API_TOKEN: ${HNMO_GAME_SERVER_APP_TOKEN:?Set HNMO_GAME_SERVER_APP_TOKEN to a strong random token}
       GS_ID: 0
       DAPR_HTTP_ENDPOINT: http://gameServer0-dapr:3500
       DAPR_GRPC_ENDPOINT: http://gameServer0-dapr:50001
@@ -298,7 +298,7 @@ services:
     <<: *dapr-sidecar
     container_name: gameserver0_dapr
     environment:
-      APP_API_TOKEN: ${OPENMU_GAME_SERVER_APP_TOKEN:?Set OPENMU_GAME_SERVER_APP_TOKEN to a strong random token}
+      APP_API_TOKEN: ${HNMO_GAME_SERVER_APP_TOKEN:?Set HNMO_GAME_SERVER_APP_TOKEN to a strong random token}
       POD_NAME: gameServer0
     command: [ "./daprd", "-app-id", "game-server-0", "-app-port", "8080",
                 "-app-channel-address", "gameServer0",
@@ -308,10 +308,10 @@ services:
                 "-placement-host-address", "dapr-placement:50006"  ]
 
   gameServer1:
-    image: munique/openmu-game
+    image: hnmo/hnmo-game
     container_name: gameServer1
     restart: unless-stopped
-    healthcheck: *openmu-healthcheck
+    healthcheck: *hnmo-healthcheck
     # The game server saves and disconnects its players when it stops, which may take a while.
     stop_grace_period: 60s
     build:
@@ -322,7 +322,7 @@ services:
       - "45903:45903"
       - "45904:45904"
     environment:
-      APP_API_TOKEN: ${OPENMU_GAME_SERVER_APP_TOKEN:?Set OPENMU_GAME_SERVER_APP_TOKEN to a strong random token}
+      APP_API_TOKEN: ${HNMO_GAME_SERVER_APP_TOKEN:?Set HNMO_GAME_SERVER_APP_TOKEN to a strong random token}
       GS_ID: 1
       DAPR_HTTP_ENDPOINT: http://gameServer1-dapr:3500
       DAPR_GRPC_ENDPOINT: http://gameServer1-dapr:50001
@@ -346,7 +346,7 @@ services:
     <<: *dapr-sidecar
     container_name: gameserver1_dapr
     environment:
-      APP_API_TOKEN: ${OPENMU_GAME_SERVER_APP_TOKEN:?Set OPENMU_GAME_SERVER_APP_TOKEN to a strong random token}
+      APP_API_TOKEN: ${HNMO_GAME_SERVER_APP_TOKEN:?Set HNMO_GAME_SERVER_APP_TOKEN to a strong random token}
       POD_NAME: gameServer1
     command: [ "./daprd", "-app-id", "game-server-1", "-app-port", "8080",
                 "-app-channel-address", "gameServer1",

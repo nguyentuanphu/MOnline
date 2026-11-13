@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemPriceDefinition.cs" company="MUnique">
+﻿// <copyright file="ItemPriceDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Defines how the price of an item is calculated, if it differs from the automatic price calculation of equipment.

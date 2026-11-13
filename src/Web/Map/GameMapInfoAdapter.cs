@@ -1,12 +1,12 @@
-﻿// <copyright file="GameMapInfoAdapter.cs" company="MUnique">
+﻿// <copyright file="GameMapInfoAdapter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map;
+namespace HNMO.Web.Map;
 
 using System.Collections.Concurrent;
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Adapter which takes an <see cref="GameMap"/> and adapts it to a <see cref="IGameMapInfo"/>.

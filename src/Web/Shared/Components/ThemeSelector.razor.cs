@@ -1,15 +1,15 @@
-// <copyright file="ThemeSelector.razor.cs" company="MUnique">
+// <copyright file="ThemeSelector.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components;
+namespace HNMO.Web.Shared.Components;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 /// <summary>
 /// A toggle component which switches between the light and dark UI themes.
-/// Persists the selection by calling the <see cref="MUnique.OpenMU.Web.Shared.Services.ThemeController"/>
+/// Persists the selection by calling the <see cref="HNMO.Web.Shared.Services.ThemeController"/>
 /// (cookie-based, mirrors the <see cref="CultureSelector"/> approach).
 /// </summary>
 public partial class ThemeSelector : IAsyncDisposable

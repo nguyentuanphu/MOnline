@@ -1,18 +1,18 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer.ExDbConnector;
+namespace HNMO.ChatServer.ExDbConnector;
 
 using System.ComponentModel.Design;
 using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
-using MUnique.OpenMU.ChatServer;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.ChatServer;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 using Serilog;
 using Serilog.Debugging;
 

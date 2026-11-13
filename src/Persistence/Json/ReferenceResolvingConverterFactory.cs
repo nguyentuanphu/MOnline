@@ -1,8 +1,8 @@
-﻿// <copyright file="ReferenceResolvingConverterFactory.cs" company="MUnique">
+﻿// <copyright file="ReferenceResolvingConverterFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Json;
+namespace HNMO.Persistence.Json;
 
 using System.Collections.Concurrent;
 using System.Text.Json;
@@ -32,7 +32,7 @@ public class ReferenceResolvingConverterFactory : JsonConverterFactory
         !objectType.IsEnum
         && !objectType.IsGenericType
         && objectType.IsAssignableTo(typeof(IIdentifiable))
-        && (objectType.Namespace?.StartsWith("MUnique.OpenMU.", StringComparison.InvariantCulture) ?? false);
+        && (objectType.Namespace?.StartsWith("HNMO.", StringComparison.InvariantCulture) ?? false);
 
     /// <inheritdoc />
     public override JsonConverter CreateConverter(Type typeToConvert, JsonSerializerOptions options)

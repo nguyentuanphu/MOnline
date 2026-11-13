@@ -1,10 +1,10 @@
-﻿// <copyright file="ChangeMuHelperStateAction.cs" company="MUnique">
+﻿// <copyright file="ChangeMuHelperStateAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MuHelper;
+namespace HNMO.GameLogic.PlayerActions.MuHelper;
 
-using MUnique.OpenMU.GameLogic.MuHelper;
+using HNMO.GameLogic.MuHelper;
 
 /// <summary>
 /// Action to change the MU Helper state.

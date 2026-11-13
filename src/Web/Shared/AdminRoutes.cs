@@ -1,10 +1,10 @@
-// <copyright file="AdminRoutes.cs" company="MUnique">
+// <copyright file="AdminRoutes.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared;
+namespace HNMO.Web.Shared;
 
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Centralized route templates of the admin panel. Pages and link components

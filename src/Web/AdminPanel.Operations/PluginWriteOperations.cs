@@ -1,17 +1,17 @@
-// <copyright file="PluginWriteOperations.cs" company="MUnique">
+// <copyright file="PluginWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Security.Cryptography;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.PlugIns;
 
 /// <summary>Changes installed plugins with preview, audit and strict custom-field validation.</summary>
 /// <param name="persistence">The persistence provider.</param>

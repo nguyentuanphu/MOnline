@@ -1,4 +1,4 @@
-// <copyright file="GameClientDefinition.Generated.cs" company="MUnique">
+// <copyright file="GameClientDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GameClientDefinition"/>.
 /// </summary>
-public partial class GameClientDefinition : MUnique.OpenMU.DataModel.Configuration.GameClientDefinition, IIdentifiable, IConvertibleTo<GameClientDefinition>
+public partial class GameClientDefinition : HNMO.DataModel.Configuration.GameClientDefinition, IIdentifiable, IConvertibleTo<GameClientDefinition>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class GameClientDefinition : MUnique.OpenMU.DataModel.Configurati
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameClientDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameClientDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameClientDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class GameClientDefinition : MUnique.OpenMU.DataModel.Configurati
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameClientDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameClientDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

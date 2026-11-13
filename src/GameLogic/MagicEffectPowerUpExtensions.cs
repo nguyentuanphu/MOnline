@@ -1,12 +1,12 @@
-// <copyright file="MagicEffectPowerUpExtensions.cs" company="MUnique">
+// <copyright file="MagicEffectPowerUpExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Extensions which create the power-ups of magic effects for a <see cref="Player"/>,

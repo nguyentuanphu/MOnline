@@ -1,14 +1,14 @@
-﻿// <copyright file="RemotePlayerConnectionInfo.cs" company="MUnique">
+﻿// <copyright file="RemotePlayerConnectionInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.GameServer.RemoteView;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Analyzer;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// The <see cref="ICapturedConnectionInfo"/> of a <see cref="RemotePlayer"/>.

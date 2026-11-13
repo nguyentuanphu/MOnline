@@ -1,18 +1,18 @@
-﻿// <copyright file="AttributeDefinition.Custom.cs" company="MUnique">
+﻿// <copyright file="AttributeDefinition.Custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
-/// A plain implementation of <see cref="MUnique.OpenMU.AttributeSystem.AttributeDefinition"/>.
+/// A plain implementation of <see cref="HNMO.AttributeSystem.AttributeDefinition"/>.
 /// </summary>
 public partial class AttributeDefinition :
     IAssignable,
-    IAssignable<MUnique.OpenMU.AttributeSystem.AttributeDefinition>,
-    ICloneable<MUnique.OpenMU.AttributeSystem.AttributeDefinition>
+    IAssignable<HNMO.AttributeSystem.AttributeDefinition>,
+    ICloneable<HNMO.AttributeSystem.AttributeDefinition>
 {
     /// <inheritdoc />
     public virtual AttributeSystem.AttributeDefinition Clone(DataModel.Configuration.GameConfiguration gameConfiguration)

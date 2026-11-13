@@ -1,13 +1,13 @@
-﻿// <copyright file="NpcBuffRequestAction.cs" company="MUnique">
+﻿// <copyright file="NpcBuffRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Quests;
+namespace HNMO.GameLogic.PlayerActions.Quests;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action which applies the <see cref="Buff"/>s of the currently opened NPC.

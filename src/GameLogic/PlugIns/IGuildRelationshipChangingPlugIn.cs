@@ -1,13 +1,13 @@
-// <copyright file="IGuildRelationshipChangingPlugIn.cs" company="MUnique">
+// <copyright file="IGuildRelationshipChangingPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Plugins which are called when the master of a guild requests to change the relationship to another guild, e.g. to create an alliance.

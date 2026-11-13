@@ -1,12 +1,12 @@
-﻿// <copyright file="HarmonyJewelConsumeHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="HarmonyJewelConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The consume handler for the harmony jewel.
@@ -32,7 +32,7 @@ public class HarmonyJewelConsumeHandlerPlugIn : ItemUpgradeConsumeHandlerPlugIn
     {
         if (item.IsAncient())
         {
-            // Until S16E2 ancient and socket items couldn't have harmony options: https://muonline.webzen.com/en/gameinfo/guide/detail/117
+            // Until S16E2 ancient and socket items couldn't have harmony options: (the original game guide)
             return false;
         }
 

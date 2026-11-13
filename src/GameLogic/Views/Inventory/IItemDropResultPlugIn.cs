@@ -1,8 +1,8 @@
-﻿// <copyright file="IItemDropResultPlugIn.cs" company="MUnique">
+﻿// <copyright file="IItemDropResultPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Inventory;
+namespace HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Interface of a view whose implementation informs about an item which got dropped from the inventory (or not).

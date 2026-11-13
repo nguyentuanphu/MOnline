@@ -1,10 +1,10 @@
-// <copyright file="IIllusionTempleSkillPointUpdateViewPlugin.cs" company="MUnique">
+// <copyright file="IIllusionTempleSkillPointUpdateViewPlugin.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Interface of a view whose implementation informs a player about his current skill point balance

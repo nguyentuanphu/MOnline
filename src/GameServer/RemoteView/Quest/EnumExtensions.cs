@@ -1,11 +1,11 @@
-﻿// <copyright file="EnumExtensions.cs" company="MUnique">
+﻿// <copyright file="EnumExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Quest;
+namespace HNMO.GameServer.RemoteView.Quest;
 
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// Extensions to convert enum values.

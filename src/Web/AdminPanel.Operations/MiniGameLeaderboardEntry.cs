@@ -1,8 +1,8 @@
-// <copyright file="MiniGameLeaderboardEntry.cs" company="MUnique">
+// <copyright file="MiniGameLeaderboardEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 /// <summary>
 /// An entry of a mini game leaderboard.

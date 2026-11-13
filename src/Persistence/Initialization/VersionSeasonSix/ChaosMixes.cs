@@ -1,16 +1,16 @@
-﻿// <copyright file="ChaosMixes.cs" company="MUnique">
+﻿// <copyright file="ChaosMixes.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Craftings;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
 /// <summary>
 /// Initializer for chaos mixes.

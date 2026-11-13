@@ -1,13 +1,13 @@
-﻿// <copyright file="GameConfigurationInitializer.cs" company="MUnique">
+﻿// <copyright file="GameConfigurationInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version075;
+namespace HNMO.Persistence.Initialization.Version075;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Version075.Items;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Version075.Items;
 
 /// <summary>
 /// Initializes the <see cref="GameConfiguration"/>.

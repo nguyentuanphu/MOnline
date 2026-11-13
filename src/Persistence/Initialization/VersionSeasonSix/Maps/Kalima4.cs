@@ -1,15 +1,15 @@
-﻿// <copyright file="Kalima4.cs" company="MUnique">
+﻿// <copyright file="Kalima4.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Properties;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// The initialization for the Kalima 4 map.

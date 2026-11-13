@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.AttributeSystem;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForAccountContext
 {
     [EntityFrameworkInternal]
     public partial class AttributeRelationshipEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship),
+                "HNMO.Persistence.EntityFramework.Model.AttributeRelationship",
+                typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship),
                 baseEntityType,
                 propertyCount: 8,
                 foreignKeyCount: 1,
@@ -31,51 +31,51 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var aggregateType = runtimeEntityType.AddProperty(
                 "AggregateType",
-                typeof(MUnique.OpenMU.AttributeSystem.AggregateType),
-                propertyInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetProperty("AggregateType", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetField("<AggregateType>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.AttributeSystem.AggregateType),
+                propertyInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetProperty("AggregateType", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetField("<AggregateType>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             aggregateType.SetSentinelFromProviderValue(0);
             aggregateType.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var inputAttributeId = runtimeEntityType.AddProperty(
                 "InputAttributeId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("InputAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<InputAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("InputAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<InputAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             inputAttributeId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var inputOperand = runtimeEntityType.AddProperty(
                 "InputOperand",
                 typeof(float),
-                propertyInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetProperty("InputOperand", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetField("<InputOperand>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetProperty("InputOperand", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetField("<InputOperand>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0f);
             inputOperand.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var inputOperator = runtimeEntityType.AddProperty(
                 "InputOperator",
-                typeof(MUnique.OpenMU.AttributeSystem.InputOperator),
-                propertyInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetProperty("InputOperator", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship).GetField("<InputOperator>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(HNMO.AttributeSystem.InputOperator),
+                propertyInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetProperty("InputOperator", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.AttributeSystem.AttributeRelationship).GetField("<InputOperator>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
             inputOperator.SetSentinelFromProviderValue(0);
             inputOperator.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var operandAttributeId = runtimeEntityType.AddProperty(
                 "OperandAttributeId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("OperandAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<OperandAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("OperandAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<OperandAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             operandAttributeId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -88,8 +88,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
             var targetAttributeId = runtimeEntityType.AddProperty(
                 "TargetAttributeId",
                 typeof(Guid?),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("TargetAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<TargetAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetProperty("TargetAttributeId", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.AttributeRelationship).GetField("<TargetAttributeId>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 nullable: true);
             targetAttributeId.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -113,9 +113,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountCo
             var rawRelatedValues = principalEntityType.AddNavigation("RawRelatedValues",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.AttributeRelationship>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.PowerUpDefinitionValue).GetProperty("RawRelatedValues", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.PowerUpDefinitionValue).GetField("<RawRelatedValues>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.AttributeRelationship>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.PowerUpDefinitionValue).GetProperty("RawRelatedValues", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.PowerUpDefinitionValue).GetField("<RawRelatedValues>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }

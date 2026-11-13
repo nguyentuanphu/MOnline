@@ -1,13 +1,13 @@
 // -----------------------------------------------------------------------
-// <copyright file="RefineStoneUpgradeConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="RefineStoneUpgradeConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Consume handler for a Refine Stone which increases the item option of <see cref="ItemOptionTypes.HarmonyOption"/>.

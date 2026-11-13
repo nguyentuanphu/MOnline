@@ -1,8 +1,8 @@
-﻿// <copyright file="JsonDownloadController.cs" company="MUnique">
+﻿// <copyright file="JsonDownloadController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.IO;
 using System.Text.Json;
@@ -11,9 +11,9 @@ using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// Controller to retrieve data as json.

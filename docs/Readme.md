@@ -43,8 +43,8 @@ can be searched and navigated.
   test boundaries, execution commands and the client/server smoke checklist
 
 * [Progress](Progress.md): the implementation progress of the packet handlers.
-  See also the [normal skill progress](https://github.com/MUnique/OpenMU/projects/9)
-  and the [master skill progress](https://github.com/MUnique/OpenMU/projects/10)
+  See also the [normal skill progress](https://github.com/nguyentuanphu/HNMO/projects/9)
+  and the [master skill progress](https://github.com/nguyentuanphu/HNMO/projects/10)
 
 * [Player refactoring plan](PlayerRefactoringPlan.md): an internal plan for the
   refactoring of the player class
@@ -54,7 +54,7 @@ can be searched and navigated.
 
 * [Item price rules concept](ItemPriceRulesConcept.md): the concept for
   data-driven item price rules
-  ([#75](https://github.com/MUnique/OpenMU/issues/75))
+  ([#75](https://github.com/nguyentuanphu/HNMO/issues/75))
 
 * [architecture overview.png](architecture%20overview.png): the big picture,
   explained on the

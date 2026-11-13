@@ -1,11 +1,11 @@
-﻿// <copyright file="InMemoryRepositoryProvider.cs" company="MUnique">
+﻿// <copyright file="InMemoryRepositoryProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.BasicModel;
+using HNMO.Persistence.BasicModel;
 
 /// <summary>
 /// A repository provider which creates new in-memory repositories on-demand.

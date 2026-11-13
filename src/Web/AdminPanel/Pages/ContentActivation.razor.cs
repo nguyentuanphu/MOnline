@@ -1,8 +1,8 @@
-﻿// <copyright file="ContentActivation.razor.cs" company="MUnique">
+﻿// <copyright file="ContentActivation.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Globalization;
 using System.Text.Json.Nodes;
@@ -11,13 +11,13 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Page which allows to activate and deactivate the content of the game configuration in batches,

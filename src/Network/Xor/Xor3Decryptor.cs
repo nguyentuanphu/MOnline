@@ -1,8 +1,8 @@
-﻿// <copyright file="Xor3Decryptor.cs" company="MUnique">
+﻿// <copyright file="Xor3Decryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Xor;
+namespace HNMO.Network.Xor;
 
 /// <summary>
 /// A decryptor which XOR-decrypts data using a 3-byte key.

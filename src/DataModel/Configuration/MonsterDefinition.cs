@@ -1,14 +1,14 @@
-// <copyright file="MonsterDefinition.cs" company="MUnique">
+// <copyright file="MonsterDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Type of the window which will be openend when talking to the npc.

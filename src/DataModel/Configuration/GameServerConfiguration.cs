@@ -1,10 +1,10 @@
-﻿// <copyright file="GameServerConfiguration.cs" company="MUnique">
+﻿// <copyright file="GameServerConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines the game server configuration.
@@ -26,6 +26,6 @@ public partial class GameServerConfiguration
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.GameServerConfigSummary, this.MaximumPlayers); // TODO Add Description field
+        return string.Format(HNMO.DataModel.Properties.Resources.GameServerConfigSummary, this.MaximumPlayers); // TODO Add Description field
     }
 }

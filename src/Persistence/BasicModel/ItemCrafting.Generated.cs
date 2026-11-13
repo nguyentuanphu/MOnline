@@ -1,4 +1,4 @@
-// <copyright file="ItemCrafting.Generated.cs" company="MUnique">
+// <copyright file="ItemCrafting.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ItemCrafting"/>.
 /// </summary>
-public partial class ItemCrafting : MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting, IIdentifiable, IConvertibleTo<ItemCrafting>
+public partial class ItemCrafting : HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting, IIdentifiable, IConvertibleTo<ItemCrafting>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class ItemCrafting : MUnique.OpenMU.DataModel.Configuration.ItemC
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings SimpleCraftingSettings
+    public override HNMO.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings SimpleCraftingSettings
     {
         get => base.SimpleCraftingSettings;
         set => base.SimpleCraftingSettings = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemCrafting();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class ItemCrafting : MUnique.OpenMU.DataModel.Configuration.ItemC
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

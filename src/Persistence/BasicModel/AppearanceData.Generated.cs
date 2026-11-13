@@ -1,4 +1,4 @@
-// <copyright file="AppearanceData.Generated.cs" company="MUnique">
+// <copyright file="AppearanceData.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="AppearanceData"/>.
 /// </summary>
-public partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.AppearanceData, IIdentifiable, IConvertibleTo<AppearanceData>
+public partial class AppearanceData : HNMO.DataModel.Entities.AppearanceData, IIdentifiable, IConvertibleTo<AppearanceData>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.Appearan
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.ItemAppearance> EquippedItems
+    public override ICollection<HNMO.DataModel.Entities.ItemAppearance> EquippedItems
     {
-        get => base.EquippedItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.ItemAppearance, ItemAppearance>(this.RawEquippedItems);
+        get => base.EquippedItems ??= new CollectionAdapter<HNMO.DataModel.Entities.ItemAppearance, ItemAppearance>(this.RawEquippedItems);
         protected set
         {
             this.EquippedItems.Clear();
@@ -58,7 +58,7 @@ public partial class AppearanceData : MUnique.OpenMU.DataModel.Entities.Appearan
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass CharacterClass
+    public override HNMO.DataModel.Configuration.CharacterClass CharacterClass
     {
         get => base.CharacterClass;
         set => base.CharacterClass = value;

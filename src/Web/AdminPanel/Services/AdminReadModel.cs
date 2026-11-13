@@ -1,12 +1,12 @@
-// <copyright file="AdminReadModel.cs" company="MUnique">
+// <copyright file="AdminReadModel.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Persistence.Initialization.Updates;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Adapts the panel's existing search cache and dashboard data for read operations.</summary>
 public sealed class AdminReadModel(ConfigurationSearchIndexCache search, OnlinePlayerHistory history, DataUpdateService updates) : IAdminReadModel

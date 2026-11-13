@@ -1,21 +1,21 @@
-// <copyright file="BotNavigator.cs" company="MUnique">
+// <copyright file="BotNavigator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Buffers;
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.Pathfinding;
+using HNMO.Persistence;
 
 /// <summary>
 /// Drives a bot's high-level navigation. It picks a hunting ground that suits the bot's level from

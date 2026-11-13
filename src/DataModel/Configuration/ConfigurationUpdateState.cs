@@ -1,8 +1,8 @@
-﻿// <copyright file="ConfigurationUpdateState.cs" company="MUnique">
+﻿// <copyright file="ConfigurationUpdateState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Describes the current update state of the configuration.

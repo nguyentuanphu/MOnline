@@ -1,14 +1,14 @@
-﻿// <copyright file="FenrirUpgradeCrafting.cs" company="MUnique">
+﻿// <copyright file="FenrirUpgradeCrafting.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
+namespace HNMO.GameLogic.PlayerActions.Craftings;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// A crafting to upgrade a Red Fenrir to a Blue or Black one.

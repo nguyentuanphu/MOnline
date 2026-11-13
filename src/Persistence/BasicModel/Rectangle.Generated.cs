@@ -1,4 +1,4 @@
-// <copyright file="Rectangle.Generated.cs" company="MUnique">
+// <copyright file="Rectangle.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Rectangle"/>.
 /// </summary>
-public partial class Rectangle : MUnique.OpenMU.DataModel.Configuration.Rectangle, IIdentifiable, IConvertibleTo<Rectangle>
+public partial class Rectangle : HNMO.DataModel.Configuration.Rectangle, IIdentifiable, IConvertibleTo<Rectangle>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class Rectangle : MUnique.OpenMU.DataModel.Configuration.Rectangl
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Rectangle Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Rectangle Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Rectangle();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class Rectangle : MUnique.OpenMU.DataModel.Configuration.Rectangl
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Rectangle other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Rectangle other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

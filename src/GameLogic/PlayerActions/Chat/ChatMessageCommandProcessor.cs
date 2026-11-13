@@ -1,10 +1,10 @@
-﻿// <copyright file="ChatMessageCommandProcessor.cs" company="MUnique">
+﻿// <copyright file="ChatMessageCommandProcessor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Chat;
+namespace HNMO.GameLogic.PlayerActions.Chat;
 
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+using HNMO.GameLogic.PlugIns.ChatCommands;
 
 /// <summary>
 /// A chat message processor which handles chat commands.

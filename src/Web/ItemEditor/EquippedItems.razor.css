@@ -1,7 +1,7 @@
 ﻿.equipped-container {
     --boxSize: 42px;
     --storageColumns: 8;
-    background-image: url('/_content/MUnique.OpenMU.Web.ItemEditor/img/equipment_back.png');
+    background-image: url('/_content/HNMO.Web.ItemEditor/img/equipment_back.png');
     width: 325px;
     height: 323px;
     display: flex;

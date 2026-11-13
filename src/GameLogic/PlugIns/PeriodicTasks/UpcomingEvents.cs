@@ -1,13 +1,13 @@
-﻿// <copyright file="UpcomingEvents.cs" company="MUnique">
+﻿// <copyright file="UpcomingEvents.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Determines the upcoming events, like mini games and invasions, from the schedules of the active plugins.

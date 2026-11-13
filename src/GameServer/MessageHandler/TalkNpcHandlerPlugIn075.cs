@@ -1,13 +1,13 @@
-﻿// <copyright file="TalkNpcHandlerPlugIn075.cs" company="MUnique">
+﻿// <copyright file="TalkNpcHandlerPlugIn075.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for talk npc request packets.

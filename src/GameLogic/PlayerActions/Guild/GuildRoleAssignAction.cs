@@ -1,12 +1,12 @@
-// <copyright file="GuildRoleAssignAction.cs" company="MUnique">
+// <copyright file="GuildRoleAssignAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Guild;
+namespace HNMO.GameLogic.PlayerActions.Guild;
 
 using System.Collections.Immutable;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to assign a role (assistant master, battle master, normal member) to a guild member.

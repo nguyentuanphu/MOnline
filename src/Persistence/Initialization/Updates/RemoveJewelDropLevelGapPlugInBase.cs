@@ -1,11 +1,11 @@
-﻿// <copyright file="RemoveJewelDropLevelGapPlugInBase.cs" company="MUnique">
+﻿// <copyright file="RemoveJewelDropLevelGapPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Items;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Items;
 
 /// <summary>
 /// This update removes the existing drop level gap condition for jewels and similar items that should always drop.

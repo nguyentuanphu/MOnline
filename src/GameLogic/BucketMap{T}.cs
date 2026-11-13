@@ -1,10 +1,10 @@
-﻿// <copyright file="BucketMap{T}.cs" company="MUnique">
+﻿// <copyright file="BucketMap{T}.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// A two-dimensional map of buckets.

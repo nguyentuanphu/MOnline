@@ -1,12 +1,12 @@
-﻿// <copyright file="CreationAutoFields.cs" company="MUnique">
+﻿// <copyright file="CreationAutoFields.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.Reflection;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// A razor component which automatically generates input fields for all properties for the type of the enclosing form model,

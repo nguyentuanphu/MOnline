@@ -1,12 +1,12 @@
-// <copyright file="StartMiniGameEventChatCommandPlugInBase.cs" company="MUnique">
+// <copyright file="StartMiniGameEventChatCommandPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Administration;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.Administration;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Base class for the game master chat commands which (re-)start a mini game event.

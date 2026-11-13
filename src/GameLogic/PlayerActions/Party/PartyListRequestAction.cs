@@ -1,11 +1,11 @@
-﻿// <copyright file="PartyListRequestAction.cs" company="MUnique">
+﻿// <copyright file="PartyListRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Party;
+namespace HNMO.GameLogic.PlayerActions.Party;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Party;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Party;
 
 /// <summary>
 /// Action to request the party list.

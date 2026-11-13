@@ -1,8 +1,8 @@
-﻿// <copyright file="EntityFrameworkContextBase.cs" company="MUnique">
+﻿// <copyright file="EntityFrameworkContextBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Collections;
 using System.Collections.Concurrent;
@@ -14,8 +14,8 @@ using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration;
 using Nito.AsyncEx;
 using Nito.Disposables;
 

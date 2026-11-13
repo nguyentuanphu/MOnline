@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordPermissionOverwrite.cs" company="MUnique">
+﻿// <copyright file="DiscordPermissionOverwrite.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.Provisioning;
+namespace HNMO.Discord.Provisioning;
 
 /// <summary>
 /// An overwrite of the permissions of a channel, for a role or a user.

@@ -1,13 +1,13 @@
-﻿// <copyright file="ChatCommandTypeExtensions.cs" company="MUnique">
+﻿// <copyright file="ChatCommandTypeExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Globalization;
 using System.Reflection;
 using System.Resources;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Extension methods regarding chat command types.

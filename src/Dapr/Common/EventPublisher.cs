@@ -1,13 +1,13 @@
-﻿// <copyright file="EventPublisher.cs" company="MUnique">
+﻿// <copyright file="EventPublisher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using global::Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.ServerClients;
+using HNMO.Interfaces;
+using HNMO.ServerClients;
 
 /// <summary>
 /// Implementation of a <see cref="IEventPublisher"/> which publishes the events

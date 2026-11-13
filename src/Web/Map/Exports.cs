@@ -1,8 +1,8 @@
-﻿// <copyright file="Exports.cs" company="MUnique">
+﻿// <copyright file="Exports.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map;
+namespace HNMO.Web.Map;
 
 using System.Collections.Immutable;
 
@@ -18,7 +18,7 @@ public static class Exports
         .. Web.Shared.Exports.Scripts,
         $"{GetPrefix()}/js/system-production.js",
         $"{GetPrefix()}/js/map-launcher.js",
-        $"{GetPrefix()}/js/MUnique.OpenMU.Web.Map.js",
+        $"{GetPrefix()}/js/HNMO.Web.Map.js",
         $"{GetPrefix()}/js/Stats.js",
     ];
 
@@ -36,7 +36,7 @@ public static class Exports
     /// </summary>
     public static ImmutableList<string> Stylesheets { get; } = [
         .. Web.Shared.Exports.Stylesheets,
-        $"{GetPrefix()}/MUnique.OpenMU.Web.Map.styles.css",
+        $"{GetPrefix()}/HNMO.Web.Map.styles.css",
     ];
 
     private static string GetPrefix() => $"_content/{typeof(Exports).Namespace}";

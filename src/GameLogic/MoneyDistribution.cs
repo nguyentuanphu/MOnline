@@ -1,10 +1,10 @@
-// <copyright file="MoneyDistribution.cs" company="MUnique">
+// <copyright file="MoneyDistribution.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Splits a money drop between players and hands it over to them.

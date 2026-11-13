@@ -1,15 +1,15 @@
-// <copyright file="ConnectServerListUpdater.cs" company="MUnique">
+// <copyright file="ConnectServerListUpdater.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Net;
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.ServerClients;
-using ConnectServer = MUnique.OpenMU.ConnectServer.ConnectServer;
+using HNMO.ServerClients;
+using ConnectServer = HNMO.ConnectServer.ConnectServer;
 
 /// <summary>
 /// A <see cref="IHostedService"/> which keeps the server lists of the connect servers

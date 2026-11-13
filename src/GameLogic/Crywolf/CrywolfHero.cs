@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfHero.cs" company="MUnique">
+﻿// <copyright file="CrywolfHero.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// A hero of the crywolf event, which is one of the players with the highest scores.

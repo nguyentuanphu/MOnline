@@ -1,11 +1,11 @@
-﻿// <copyright file="UpdatePlugInBase.cs" company="MUnique">
+﻿// <copyright file="UpdatePlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Abstract base class for a <see cref="IConfigurationUpdatePlugIn"/>.

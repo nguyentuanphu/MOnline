@@ -1,8 +1,8 @@
-﻿// <copyright file="QuestConstants.cs" company="MUnique">
+﻿// <copyright file="QuestConstants.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Quests;
+namespace HNMO.GameServer.MessageHandler.Quests;
 
 /// <summary>
 /// Static class which holds some constant values about quests.

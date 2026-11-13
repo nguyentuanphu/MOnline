@@ -1,13 +1,13 @@
-// <copyright file="BotJewelHandler.cs" company="MUnique">
+// <copyright file="BotJewelHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions.ItemConsumeActions;
+using HNMO.GameLogic.PlayerActions.Items;
 
 /// <summary>
 /// Lets a bot invest its looted jewels into its own gear like a real player would: after a shopping

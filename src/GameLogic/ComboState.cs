@@ -1,14 +1,14 @@
-﻿// <copyright file="ComboState.cs" company="MUnique">
+﻿// <copyright file="ComboState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// Defines a state in the <see cref="ComboStateMachine"/>.
 /// It includes data about the <see cref="RequiredSkill"/> to achieve this state.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.GameLogic.State" />
+/// <seealso cref="HNMO.GameLogic.State" />
 public class ComboState : State
 {
     /// <summary>

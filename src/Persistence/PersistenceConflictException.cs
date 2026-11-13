@@ -1,8 +1,8 @@
-// <copyright file="PersistenceConflictException.cs" company="MUnique">
+// <copyright file="PersistenceConflictException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>Reports a persistence rejection which is known not to have committed the requested change.</summary>
 /// <param name="innerException">The provider's constraint or concurrency rejection.</param>

@@ -1,14 +1,14 @@
-﻿// <copyright file="DiscordAccountCommands.cs" company="MUnique">
+﻿// <copyright file="DiscordAccountCommands.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.GameLogic.AccountLinking;
+using HNMO.DataModel.Entities;
+using HNMO.Discord.Properties;
+using HNMO.GameLogic.AccountLinking;
 
 /// <summary>
 /// The slash commands with which Discord users link themselves to their game account.

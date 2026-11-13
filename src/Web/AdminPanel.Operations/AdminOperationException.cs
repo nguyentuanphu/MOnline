@@ -1,8 +1,8 @@
-// <copyright file="AdminOperationException.cs" company="MUnique">
+// <copyright file="AdminOperationException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 /// <summary>An operational error whose fixed message is safe to show to a caller.</summary>
 /// <param name="message">The safe error message.</param>

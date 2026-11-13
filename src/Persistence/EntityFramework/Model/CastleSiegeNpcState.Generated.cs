@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeNpcState.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcState.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.CastleSiegeNpcState"/>.
 /// </summary>
 [Table(nameof(CastleSiegeNpcState), Schema = SchemaNames.AccountData)]
-internal partial class CastleSiegeNpcState : MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState, IIdentifiable
+internal partial class CastleSiegeNpcState : HNMO.DataModel.Entities.CastleSiegeNpcState, IIdentifiable
 {
     
     

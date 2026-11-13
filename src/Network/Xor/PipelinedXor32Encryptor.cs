@@ -1,8 +1,8 @@
-﻿// <copyright file="PipelinedXor32Encryptor.cs" company="MUnique">
+﻿// <copyright file="PipelinedXor32Encryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Xor;
+namespace HNMO.Network.Xor;
 
 using System.Buffers;
 using System.IO.Pipelines;
@@ -54,10 +54,10 @@ public class PipelinedXor32Encryptor : PacketPipeReaderBase, IPipelinedEncryptor
     }
 
     /// <summary>
-    /// Reads the mu online packet.
+    /// Reads the game packet.
     /// Encrypts the packet and writes it into the target.
     /// </summary>
-    /// <param name="packet">The mu online packet.</param>
+    /// <param name="packet">The game packet.</param>
     /// <returns><see langword="true" />, if the flush was successful or not required.<see langword="false" />, if the pipe reader is completed and no longer reading data.</returns>
     protected override async ValueTask<bool> ReadPacketAsync(ReadOnlySequence<byte> packet)
     {

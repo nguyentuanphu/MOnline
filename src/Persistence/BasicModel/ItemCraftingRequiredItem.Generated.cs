@@ -1,4 +1,4 @@
-// <copyright file="ItemCraftingRequiredItem.Generated.cs" company="MUnique">
+// <copyright file="ItemCraftingRequiredItem.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ItemCraftingRequiredItem"/>.
 /// </summary>
-public partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, IIdentifiable, IConvertibleTo<ItemCraftingRequiredItem>
+public partial class ItemCraftingRequiredItem : HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, IIdentifiable, IConvertibleTo<ItemCraftingRequiredItem>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition> PossibleItems
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemDefinition> PossibleItems
     {
-        get => base.PossibleItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawPossibleItems);
+        get => base.PossibleItems ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemDefinition, ItemDefinition>(this.RawPossibleItems);
         protected set
         {
             this.PossibleItems.Clear();
@@ -54,9 +54,9 @@ public partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType> RequiredItemOptions
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOptionType> RequiredItemOptions
     {
-        get => base.RequiredItemOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawRequiredItemOptions);
+        get => base.RequiredItemOptions ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionType, ItemOptionType>(this.RawRequiredItemOptions);
         protected set
         {
             this.RequiredItemOptions.Clear();
@@ -68,7 +68,7 @@ public partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configu
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemCraftingRequiredItem();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -76,7 +76,7 @@ public partial class ItemCraftingRequiredItem : MUnique.OpenMU.DataModel.Configu
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

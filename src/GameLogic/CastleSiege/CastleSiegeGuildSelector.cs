@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegeGuildSelector.cs" company="MUnique">
+// <copyright file="CastleSiegeGuildSelector.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Selects the guilds which participate in the next Castle Siege battle.

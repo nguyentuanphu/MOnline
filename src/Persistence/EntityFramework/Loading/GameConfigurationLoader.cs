@@ -1,8 +1,8 @@
-// <copyright file="GameConfigurationLoader.cs" company="MUnique">
+// <copyright file="GameConfigurationLoader.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Loading;
+namespace HNMO.Persistence.EntityFramework.Loading;
 
 using System.Data.Common;
 using System.Threading;
@@ -23,7 +23,7 @@ internal sealed partial class GameConfigurationLoader
     /// The name of the <see cref="AppContext"/> switch which disables this loader.
     /// When it's set, the game configuration is loaded by the <see cref="Json.GameConfigurationJsonObjectLoader"/>.
     /// </summary>
-    public const string DisableSwitch = "MUnique.OpenMU.Persistence.DisableGameConfigurationLoader";
+    public const string DisableSwitch = "HNMO.Persistence.DisableGameConfigurationLoader";
 
     /// <summary>
     /// Gets a value indicating whether this loader is enabled.

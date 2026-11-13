@@ -1,14 +1,14 @@
-// <copyright file="BotMasterHandler.cs" company="MUnique">
+// <copyright file="BotMasterHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlayerActions.Character;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlayerActions.Character;
 
 /// <summary>
 /// Handles the third-generation ("master") stage of a bot's career: the evolution into the master
