@@ -1,10 +1,10 @@
-﻿// <copyright file="CraftingRequiredItemLink.cs" company="MUnique">
+﻿// <copyright file="CraftingRequiredItemLink.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.ItemCrafting;
 
 /// <summary>
 /// Defines which actual items of the <see cref="Player.TemporaryStorage"/> are fulfilling a specific item requirement.

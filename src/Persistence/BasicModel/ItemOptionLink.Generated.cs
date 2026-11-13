@@ -1,4 +1,4 @@
-// <copyright file="ItemOptionLink.Generated.cs" company="MUnique">
+// <copyright file="ItemOptionLink.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ItemOptionLink"/>.
 /// </summary>
-public partial class ItemOptionLink : MUnique.OpenMU.DataModel.Entities.ItemOptionLink, IIdentifiable, IConvertibleTo<ItemOptionLink>
+public partial class ItemOptionLink : HNMO.DataModel.Entities.ItemOptionLink, IIdentifiable, IConvertibleTo<ItemOptionLink>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class ItemOptionLink : MUnique.OpenMU.DataModel.Entities.ItemOpti
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.IncreasableItemOption ItemOption
+    public override HNMO.DataModel.Configuration.Items.IncreasableItemOption ItemOption
     {
         get => base.ItemOption;
         set => base.ItemOption = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Entities.ItemOptionLink Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Entities.ItemOptionLink Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemOptionLink();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class ItemOptionLink : MUnique.OpenMU.DataModel.Entities.ItemOpti
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Entities.ItemOptionLink other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Entities.ItemOptionLink other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

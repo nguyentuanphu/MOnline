@@ -1,10 +1,10 @@
-﻿// <copyright file="CharacterClassExtensions.cs" company="MUnique">
+﻿// <copyright file="CharacterClassExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Quest;
+namespace HNMO.GameServer.RemoteView.Quest;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Extension methods for <see cref="CharacterClass"/>.

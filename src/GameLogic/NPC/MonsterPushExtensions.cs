@@ -1,11 +1,11 @@
-﻿// <copyright file="MonsterPushExtensions.cs" company="MUnique">
+﻿// <copyright file="MonsterPushExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Attributes;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Extensions to push players away from monsters, like the knock-back of the monster skills of the original game.

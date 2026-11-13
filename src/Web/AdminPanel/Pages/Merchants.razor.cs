@@ -1,8 +1,8 @@
-﻿// <copyright file="Merchants.razor.cs" company="MUnique">
+﻿// <copyright file="Merchants.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.ComponentModel;
 using System.Threading;
@@ -11,13 +11,13 @@ using Microsoft.AspNetCore.Components.QuickGrid;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Razor page which shows objects of the specified type in a grid.

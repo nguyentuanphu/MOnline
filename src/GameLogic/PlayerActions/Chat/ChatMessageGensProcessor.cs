@@ -1,13 +1,13 @@
-// <copyright file="ChatMessageGensProcessor.cs" company="MUnique">
+// <copyright file="ChatMessageGensProcessor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Chat;
+namespace HNMO.GameLogic.PlayerActions.Chat;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.Gens;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Gens;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Chat message processor for the messages to the members of the own gens (prefix <c>$</c>).

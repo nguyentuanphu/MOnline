@@ -1,10 +1,10 @@
-﻿// <copyright file="IViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="IViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views;
+namespace HNMO.GameLogic.Views;
 
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A marker interface for all view plugins, managed by a <see cref="IPlugInContainer{IViewPlugIn}"/>.

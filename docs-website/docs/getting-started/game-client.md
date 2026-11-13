@@ -1,13 +1,13 @@
 ---
 title: Connect a game client
 sidebar_position: 4
-description: How to point a MU Online client at your OpenMU server.
+description: How to point an HNMO client at your HNMO server.
 ---
 
 # Connect a game client
 
-OpenMU does not ship a game client. Check the FAQs of
-[our Discord](https://discord.gg/2u5Agkd) for where to get one.
+HNMO does not ship a game client. Check the FAQs of
+the project's issue tracker for where to get one.
 
 ## Using the client launcher
 
@@ -15,7 +15,7 @@ The client needs to be started in a way that makes it connect to your server. Ou
 launcher does that:
 
 1. Download
-   [MUnique.OpenMU.ClientLauncher v0.9.6.zip](https://github.com/MUnique/OpenMU/releases/download/v0.9.0/MUnique.OpenMU.ClientLauncher_0.9.6.zip).
+   [HNMO.ClientLauncher v0.9.6.zip](https://github.com/nguyentuanphu/HNMO/releases/download/v0.9.0/HNMO.ClientLauncher_0.9.6.zip).
 2. Install the [.NET 10 runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
    or higher.
 3. Start the launcher, enter the host/IP and port of your connect server, and
@@ -28,7 +28,7 @@ A freshly initialized database contains **two** connect servers:
 | Port | Client |
 |---|---|
 | 44405 | The original client |
-| 44406 | The [open source client](https://github.com/sven-n/MuMain), which supports a slightly extended protocol |
+| 44406 | The HNMO desktop client, which supports a slightly extended protocol |
 
 Both connect servers lead to the same game servers. If you connect through the
 "wrong" port, it may currently still work — you will just get warnings in the

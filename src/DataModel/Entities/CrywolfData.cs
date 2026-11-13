@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfData.cs" company="MUnique">
+﻿// <copyright file="CrywolfData.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// Persistent state of the crywolf event, stored as a single row, like the original game does it.

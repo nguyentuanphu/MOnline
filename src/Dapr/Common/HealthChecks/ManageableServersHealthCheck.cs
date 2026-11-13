@@ -1,12 +1,12 @@
-// <copyright file="ManageableServersHealthCheck.cs" company="MUnique">
+// <copyright file="ManageableServersHealthCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common.HealthChecks;
+namespace HNMO.Dapr.Common.HealthChecks;
 
 using System.Threading;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Reports the states of the <see cref="IManageableServer"/>s of this process.

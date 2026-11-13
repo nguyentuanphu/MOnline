@@ -1,11 +1,11 @@
-﻿// <copyright file="ForceWaveStrengSkillAction.cs" company="MUnique">
+﻿// <copyright file="ForceWaveStrengSkillAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The Force Wave Strengthener skill action.
@@ -22,7 +22,7 @@ public class ForceWaveStrengSkillAction : ForceSkillAction
     public override async ValueTask PerformSkillAsync(Player player, IAttackable target, ushort skillId)
     {
         // Originally, force wave strengthener could be used on top of force or force wave skills.
-        // In OpenMU, you can only use it with force wave (which means a scepter with skill must be equipped).
+        // In HNMO, you can only use it with force wave (which means a scepter with skill must be equipped).
         // This simplifies code at the expense of not allowing usage of FWS with any weapon (or fists).
         // Since a Lord Emperor will likely be wearing a skilled scepter as a weapon, this is acceptable.
         // It also makes the skill name more accurate :-).

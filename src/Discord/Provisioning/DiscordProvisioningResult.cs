@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordProvisioningResult.cs" company="MUnique">
+﻿// <copyright file="DiscordProvisioningResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.Provisioning;
+namespace HNMO.Discord.Provisioning;
 
 /// <summary>
 /// The result of the <see cref="DiscordServerProvisioner"/>.

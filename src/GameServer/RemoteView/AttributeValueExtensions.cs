@@ -1,8 +1,8 @@
-﻿// <copyright file="AttributeValueExtensions.cs" company="MUnique">
+﻿// <copyright file="AttributeValueExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 /// <summary>
 /// Extensions to convert attribute values for packets.

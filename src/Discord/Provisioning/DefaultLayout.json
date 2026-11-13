@@ -1,5 +1,5 @@
 ﻿{
-  // The default layout of the Discord server of an OpenMU game server.
+  // The default layout of the Discord server of an HNMO game server.
   // Existing roles, categories and channels are adopted by their name; the missing ones are created.
   "roles": [
     { "key": "gm", "name": "GM", "color": "#E67E22", "isHoisted": true },

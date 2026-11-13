@@ -1,4 +1,4 @@
-﻿// <copyright file="ConnectServerPacketsRef.cs" company="MUnique">
+﻿// <copyright file="ConnectServerPacketsRef.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,7 +10,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Network.Packets.ConnectServer;
+namespace HNMO.Network.Packets.ConnectServer;
 
 using System;
 using static System.Buffers.Binary.BinaryPrimitives;

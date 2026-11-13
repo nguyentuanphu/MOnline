@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordConfigurationService.cs" company="MUnique">
+﻿// <copyright file="DiscordConfigurationService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.IO;
 using System.Text;
@@ -14,7 +14,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
-using MUnique.OpenMU.Discord;
+using HNMO.Discord;
 using Nito.AsyncEx;
 
 /// <summary>

@@ -1,7 +1,7 @@
 ---
 title: Ports
 sidebar_position: 1
-description: The TCP ports used by OpenMU.
+description: The TCP ports used by HNMO.
 ---
 
 # Ports
@@ -16,7 +16,7 @@ monitoring tools are defined in the docker compose files of the
 | Port | Server | Notes |
 |---|---|---|
 | 44405 | Connect server | Default connection port for the original client |
-| 44406 | Connect server | Port for the [open source client](https://github.com/sven-n/MuMain) |
+| 44406 | Connect server | Port for the HNMO desktop client |
 | 45901 | Game server 1 | |
 | 45902 | Game server 2 | |
 | 45903 | Game server 3 | |
@@ -31,7 +31,7 @@ reports.
 
 ### Why not 55901 and following?
 
-Earlier versions of OpenMU used the ports 55901 and following for the game
+Earlier versions of HNMO used the ports 55901 and following for the game
 servers, and 55980 for the chat server. These are within the *dynamic* port range
 (49152 – 65535), from which operating systems like Windows pick the local ports
 of outgoing connections. After the system has been running for a while, one of

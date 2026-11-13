@@ -1,7 +1,7 @@
-﻿@using MUnique.OpenMU.DataModel
-@using MUnique.OpenMU.DataModel.Configuration.Items
-@using MUnique.OpenMU.GameLogic
-@using MUnique.OpenMU.Web.Shared.Services
+﻿@using HNMO.DataModel
+@using HNMO.DataModel.Configuration.Items
+@using HNMO.GameLogic
+@using HNMO.Web.Shared.Services
 
 @if (this._viewModel is null)
 {
@@ -52,9 +52,9 @@
         @if (this._viewModel.AncientBonus is { } ancientBonus)
         {
             <div class="mb-3">
-                <label for="ancientBonusLevel">@MUnique.OpenMU.Web.Shared.Properties.Resources.AncientOptionLevel: </label>
+                <label for="ancientBonusLevel">@HNMO.Web.Shared.Properties.Resources.AncientOptionLevel: </label>
                 <InputNumber id="ancientBonusLevel" class="form-control" min="1" max="2" @bind-Value="@ancientBonus.Level" />
-                <span>@MUnique.OpenMU.Web.Shared.Properties.Resources.Bonus: @ancientBonus</span>
+                <span>@HNMO.Web.Shared.Properties.Resources.Bonus: @ancientBonus</span>
             </div>
         }
     }
@@ -194,7 +194,7 @@
     
     @if (this._viewModel.PossibleGuardianOption is { })
     {
-        <BooleanField Label=@MUnique.OpenMU.Web.Shared.Properties.Resources.HasGuardianOption @bind-Value="@this._viewModel.HasGuardianOption" />
+        <BooleanField Label=@HNMO.Web.Shared.Properties.Resources.HasGuardianOption @bind-Value="@this._viewModel.HasGuardianOption" />
     }
 
     <ValidationSummary />

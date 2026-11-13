@@ -1,8 +1,8 @@
-// <copyright file="AdminUserSecretProtector.cs" company="MUnique">
+// <copyright file="AdminUserSecretProtector.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Logging;
@@ -27,7 +27,7 @@ public class AdminUserSecretProtector
     /// <param name="logger">The logger.</param>
     public AdminUserSecretProtector(IDataProtectionProvider dataProtectionProvider, ILogger<AdminUserSecretProtector> logger)
     {
-        this._protector = dataProtectionProvider.CreateProtector("MUnique.OpenMU.AdminPanel.AdminUserSecrets.v1");
+        this._protector = dataProtectionProvider.CreateProtector("HNMO.AdminPanel.AdminUserSecrets.v1");
         this._logger = logger;
     }
 

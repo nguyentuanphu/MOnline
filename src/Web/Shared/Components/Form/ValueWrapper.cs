@@ -1,8 +1,8 @@
-// <copyright file="ValueWrapper.cs" company="MUnique">
+// <copyright file="ValueWrapper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

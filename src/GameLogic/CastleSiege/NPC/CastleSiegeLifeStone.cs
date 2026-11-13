@@ -1,16 +1,16 @@
-// <copyright file="CastleSiegeLifeStone.cs" company="MUnique">
+// <copyright file="CastleSiegeLifeStone.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+namespace HNMO.GameLogic.CastleSiege.NPC;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views.CastleSiege;
+using HNMO.GameLogic.Views.World;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An attackable, guild-owned Life Stone which heals nearby allies after its creation phase.
@@ -118,11 +118,11 @@ public sealed class CastleSiegeLifeStone : AttackableNpcBase, IObserverDependent
     /// <inheritdoc />
     public ushort GetTypeNumberFlags(Player observer)
     {
-        // MuMain reserves bits 4-6 of the high byte for the build stage and bit 7 for the friendly marker.
+        // The desktop client reserves bits 4-6 of the high byte for the build stage and bit 7 for the friendly marker.
         var flags = (ushort)((this.BuildTime & 0x07) << BuildStageBitShift);
 
         // Healing is side-scoped by the Castle Siege specification, so every allied guild must record the stone.
-        // MuMain additionally filters the healing particle by guild mark, showing feedback for each observer's guild.
+        // The desktop client additionally filters the healing particle by guild mark, showing feedback for each observer's guild.
         if (this.Context.GetTrackedPlayerJoinSide(observer) == this.JoinSide)
         {
             flags |= ObserverFriendlyFlag;

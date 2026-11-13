@@ -1,12 +1,12 @@
-// <copyright file="BotWingHandler.cs" company="MUnique">
+// <copyright file="BotWingHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Offline;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Offline;
 
 /// <summary>
 /// Grants a bot its wings at the classic level milestones, like a player who saves up for them:

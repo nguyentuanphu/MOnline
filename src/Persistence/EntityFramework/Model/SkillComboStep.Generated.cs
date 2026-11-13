@@ -1,4 +1,4 @@
-// <copyright file="SkillComboStep.Generated.cs" company="MUnique">
+// <copyright file="SkillComboStep.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.SkillComboStep"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.SkillComboStep"/>.
 /// </summary>
 [Table(nameof(SkillComboStep), Schema = SchemaNames.Configuration)]
-internal partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.SkillComboStep, IIdentifiable
+internal partial class SkillComboStep : HNMO.DataModel.Configuration.SkillComboStep, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.S
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Skill
+    public override HNMO.DataModel.Configuration.Skill Skill
     {
         get => base.Skill;set
         {
@@ -55,7 +55,7 @@ internal partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.S
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.SkillComboStep Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.SkillComboStep Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new SkillComboStep();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.S
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.SkillComboStep other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.SkillComboStep other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,8 +1,8 @@
-﻿// <copyright file="Extensions.cs" company="MUnique">
+﻿// <copyright file="Extensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System.Text.Json.Serialization;
 using System.Threading;
@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Dapr.Common.HealthChecks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.EntityFramework;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Dapr.Common.HealthChecks;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Persistence;
+using HNMO.Persistence.EntityFramework;
+using HNMO.PlugIns;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

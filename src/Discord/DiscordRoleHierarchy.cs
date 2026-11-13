@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordRoleHierarchy.cs" company="MUnique">
+﻿// <copyright file="DiscordRoleHierarchy.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 /// <summary>
 /// Determines if the bot can give a role, by the order of the roles on a Discord server.

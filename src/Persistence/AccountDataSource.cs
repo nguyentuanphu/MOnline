@@ -1,15 +1,15 @@
-// <copyright file="AccountDataSource.cs" company="MUnique">
+// <copyright file="AccountDataSource.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Collections;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Implementation of a <see cref="IDataSource{Account}"/>.

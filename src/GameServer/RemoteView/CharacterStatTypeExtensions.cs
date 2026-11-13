@@ -1,12 +1,12 @@
-﻿// <copyright file="CharacterStatTypeExtensions.cs" company="MUnique">
+﻿// <copyright file="CharacterStatTypeExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Network.Packets;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.Network.Packets;
 
 /// <summary>
 /// Extensions for <see cref="CharacterStatAttribute"/>.

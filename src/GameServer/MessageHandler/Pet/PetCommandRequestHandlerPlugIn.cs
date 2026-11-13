@@ -1,15 +1,15 @@
-﻿// <copyright file="PetCommandRequestHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="PetCommandRequestHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Pet;
+namespace HNMO.GameServer.MessageHandler.Pet;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for pet command request packets.

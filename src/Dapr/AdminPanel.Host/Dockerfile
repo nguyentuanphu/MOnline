@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:10.0-alpine AS base
 WORKDIR /app
 
-# OpenMU uses localized texts, which require the culture data of ICU.
+# HNMO uses localized texts, which require the culture data of ICU.
 # The alpine images don't contain it and run in the globalization-invariant mode by default.
 # tzdata provides the IANA time zones (e.g. Europe/Berlin), which the alpine images don't contain either.
 RUN apk add --no-cache icu-libs tzdata
@@ -12,14 +12,14 @@ FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:10.0-alpine AS build
 WORKDIR /src
 COPY ["Directory.Packages.props", "."]
 COPY ["Directory.Build.props", "."]
-COPY ["Dapr/AdminPanel.Host/MUnique.OpenMU.AdminPanel.Host.csproj", "Dapr/AdminPanel.Host/"]
-RUN dotnet restore "Dapr/AdminPanel.Host/MUnique.OpenMU.AdminPanel.Host.csproj"
+COPY ["Dapr/AdminPanel.Host/HNMO.AdminPanel.Host.csproj", "Dapr/AdminPanel.Host/"]
+RUN dotnet restore "Dapr/AdminPanel.Host/HNMO.AdminPanel.Host.csproj"
 COPY . .
 WORKDIR "/src/Dapr/AdminPanel.Host"
-RUN dotnet build "MUnique.OpenMU.AdminPanel.Host.csproj" -c Release -o /app/build -p:ci=true
+RUN dotnet build "HNMO.AdminPanel.Host.csproj" -c Release -o /app/build -p:ci=true
 
 FROM build AS publish
-RUN dotnet publish "MUnique.OpenMU.AdminPanel.Host.csproj" -c Release -o /app/publish -p:ci=true
+RUN dotnet publish "HNMO.AdminPanel.Host.csproj" -c Release -o /app/publish -p:ci=true
 
 FROM base AS final
 WORKDIR /app
@@ -28,4 +28,4 @@ COPY --from=publish /app/publish .
 # key ring, which protects the admin panel sessions, needs a writable directory.
 RUN mkdir -p /app/data-protection-keys && chmod 777 /app/data-protection-keys
 USER $APP_UID
-ENTRYPOINT ["dotnet", "MUnique.OpenMU.AdminPanel.Host.dll"]
+ENTRYPOINT ["dotnet", "HNMO.AdminPanel.Host.dll"]

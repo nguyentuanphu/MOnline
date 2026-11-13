@@ -1,15 +1,15 @@
-// <copyright file="DeferredHitScheduler.cs" company="MUnique">
+// <copyright file="DeferredHitScheduler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Executes the hits of one area skill attack over time. Immediate hits are applied

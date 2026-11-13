@@ -1,14 +1,14 @@
 ---
 title: Configuration updates
 sidebar_position: 3
-description: Apply the configuration data updates which ship with new OpenMU versions.
+description: Apply the configuration data updates which ship with new HNMO versions.
 ---
 
 # Configuration updates
 
 **Navigation:** *System → Updates* — route `/config-updates`
 
-OpenMU is under active development, and new versions regularly bring changes to
+HNMO is under active development, and new versions regularly bring changes to
 the **game configuration data**: a corrected monster stat, a new drop item group,
 a new plugin configuration, a fixed quest.
 
@@ -71,12 +71,12 @@ apply updates; apply them here.
 
 ## On a new database
 
-A new database already contains the changes of OpenMU's own updates, because the
+A new database already contains the changes of HNMO's own updates, because the
 initialization creates the current configuration. It therefore marks them as
 applied, and this page starts empty.
 
 Plugins can bring configuration updates too, for example one which adds the
-plugin's own item. Their changes are not part of OpenMU's initialization, so such
+plugin's own item. Their changes are not part of HNMO's initialization, so such
 an update declares `RunsOnNewDatabase`, and a new database applies it right away,
 after the updates it depends on. On an existing database it is listed here like
 any other update.

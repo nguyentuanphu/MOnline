@@ -1,17 +1,17 @@
-﻿// <copyright file="BaseInvasionPlugIn.cs" company="MUnique">
+﻿// <copyright file="BaseInvasionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.GameLogic.Properties;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.Properties;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Base class for invasion plugins.

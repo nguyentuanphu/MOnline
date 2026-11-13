@@ -1,11 +1,11 @@
-// <copyright file="UnconfiguredAdminAuditRepository.cs" company="MUnique">
+// <copyright file="UnconfiguredAdminAuditRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Prevents actions when a host has not installed a durable audit repository.</summary>
 internal sealed class UnconfiguredAdminAuditRepository : IAdminAuditRepository

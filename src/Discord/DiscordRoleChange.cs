@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordRoleChange.cs" company="MUnique">
+﻿// <copyright file="DiscordRoleChange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 /// <summary>
 /// A change of the link of a Discord user, after which the bot updates the role of linked players.

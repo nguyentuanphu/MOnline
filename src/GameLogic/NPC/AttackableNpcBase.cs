@@ -1,19 +1,19 @@
-﻿// <copyright file="AttackableNpcBase.cs" company="MUnique">
+﻿// <copyright file="AttackableNpcBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An abstract base class for an <see cref="IAttackable"/> <see cref="NonPlayerCharacter"/>.

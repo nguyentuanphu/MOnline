@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemSlotType.custom.cs" company="MUnique">
+﻿// <copyright file="ItemSlotType.custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
 /// <summary>
-/// A plain implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemSlotType"/>.
+/// A plain implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemSlotType"/>.
 /// </summary>
 public partial class ItemSlotType
 {

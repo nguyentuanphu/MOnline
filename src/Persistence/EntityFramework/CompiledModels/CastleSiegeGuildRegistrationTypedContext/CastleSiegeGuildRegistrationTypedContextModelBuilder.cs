@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForCastleSiegeGuildRegistrationTypedContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForCastleSiegeGuildRegistrationTypedContext
 {
     public partial class CastleSiegeGuildRegistrationTypedContextModel
     {

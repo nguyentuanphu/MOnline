@@ -1,15 +1,15 @@
-﻿// <copyright file="ConfigurationChangeController.cs" company="MUnique">
+﻿// <copyright file="ConfigurationChangeController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.Host;
+namespace HNMO.GameServer.Host;
 
 using global::Dapr;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Dapr.Common;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The API controller which handles the calls of the <see cref="ConfigurationChangePublisher"/>

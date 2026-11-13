@@ -1,15 +1,15 @@
-﻿// <copyright file="EnumSelect.razor.cs" company="MUnique">
+﻿// <copyright file="EnumSelect.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.Reflection;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
 /// A dropdown selection component for enum values of <typeparamref name="TValue" />.
@@ -33,7 +33,7 @@ public partial class EnumSelect<TValue> : NotifyableInputBase<TValue>
         }
 
         result = default;
-        validationErrorMessage = string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.InvalidField, this.FieldIdentifier.Model.GetType().GetPropertyCaption(this.FieldIdentifier.FieldName));
+        validationErrorMessage = string.Format(HNMO.Web.Shared.Properties.Resources.InvalidField, this.FieldIdentifier.Model.GetType().GetPropertyCaption(this.FieldIdentifier.FieldName));
         return false;
     }
 

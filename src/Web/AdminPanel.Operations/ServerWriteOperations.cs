@@ -1,13 +1,13 @@
-// <copyright file="ServerWriteOperations.cs" company="MUnique">
+// <copyright file="ServerWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Interfaces;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Operates listeners and sends messages through the shared server interfaces.</summary>
 /// <param name="servers">The server registry.</param>

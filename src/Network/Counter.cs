@@ -1,8 +1,8 @@
-﻿// <copyright file="Counter.cs" company="MUnique">
+﻿// <copyright file="Counter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 /// <summary>
 /// Used as C3/C4 Packet Counter, and Skill Count.

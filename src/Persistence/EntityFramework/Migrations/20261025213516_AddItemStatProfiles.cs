@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     /// <summary>
     /// Adds the item stat profiles and the item formula fields. Existing configurations get the drop level bonuses

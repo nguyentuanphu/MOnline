@@ -1,15 +1,15 @@
-// <copyright file="GensRelationshipRulesPlugIn.cs" company="MUnique">
+// <copyright file="GensRelationshipRulesPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The rules of the gens for parties, guilds and alliances:

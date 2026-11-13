@@ -1,8 +1,8 @@
-// <copyright file="KanturuWaveGroup.cs" company="MUnique">
+// <copyright file="KanturuWaveGroup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 /// <summary>
 /// One wave of the Kanturu event. All phases of a wave share a single countdown

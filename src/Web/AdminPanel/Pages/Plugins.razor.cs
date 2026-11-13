@@ -1,12 +1,12 @@
-// <copyright file="Plugins.razor.cs" company="MUnique">
+// <copyright file="Plugins.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Web.Shared.Models;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Web.Shared.Models;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Code-behind for the <see cref="Plugins"/> page.

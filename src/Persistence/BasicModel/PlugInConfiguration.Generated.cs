@@ -1,4 +1,4 @@
-// <copyright file="PlugInConfiguration.Generated.cs" company="MUnique">
+// <copyright file="PlugInConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="PlugInConfiguration"/>.
 /// </summary>
-public partial class PlugInConfiguration : MUnique.OpenMU.PlugIns.PlugInConfiguration, IIdentifiable, IConvertibleTo<PlugInConfiguration>
+public partial class PlugInConfiguration : HNMO.PlugIns.PlugInConfiguration, IIdentifiable, IConvertibleTo<PlugInConfiguration>
 {
     
     /// <summary>

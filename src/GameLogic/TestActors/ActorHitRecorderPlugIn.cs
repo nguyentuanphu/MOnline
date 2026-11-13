@@ -1,18 +1,18 @@
-// <copyright file="ActorHitRecorderPlugIn.cs" company="MUnique">
+// <copyright file="ActorHitRecorderPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
+using HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// Records every hit an actor deals or receives, with the attribution the client views do not carry.
 /// </summary>
 /// <remarks>
-/// <see cref="MUnique.OpenMU.GameLogic.Views.World.IShowHitPlugIn"/> only tells the victim how much
+/// <see cref="HNMO.GameLogic.Views.World.IShowHitPlugIn"/> only tells the victim how much
 /// damage it took - not who dealt it - so this plugin point is the only place where attacker and
 /// victim are both known. It is therefore the single source of <c>hit</c> events: neither the
 /// recording view container nor a command result appends one, so a hit is recorded exactly once per
@@ -24,7 +24,7 @@ using MUnique.OpenMU.GameLogic.PlugIns;
 /// exists exactly when actors can.
 /// </para>
 /// </remarks>
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ActorHitRecorderPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.ActorHitRecorderPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.ActorHitRecorderPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.ActorHitRecorderPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("2A7C4B18-6E5D-4C93-9F21-8D0B6A3E57C4")]
 public class ActorHitRecorderPlugIn : IAttackableGotHitPlugIn
 {

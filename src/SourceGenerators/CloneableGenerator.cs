@@ -1,8 +1,8 @@
-﻿// <copyright file="CloneableGenerator.cs" company="MUnique">
+﻿// <copyright file="CloneableGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.SourceGenerators;
+namespace HNMO.SourceGenerators;
 
 using System.Collections.Immutable;
 using System.Diagnostics;
@@ -18,7 +18,7 @@ using Microsoft.CodeAnalysis.Text;
 [Generator]
 public class CloneableGenerator : IIncrementalGenerator
 {
-    private const string CloneableAttributeFullName = "MUnique.OpenMU.Annotations.CloneableAttribute";
+    private const string CloneableAttributeFullName = "HNMO.Annotations.CloneableAttribute";
 
     private const string CloneableAttributeName = "CloneableAttribute";
 
@@ -97,7 +97,7 @@ public class CloneableGenerator : IIncrementalGenerator
         var isInheritedClonable = declaredClassSymbol.BaseType?.GetAttributes().Any(a => a.AttributeClass?.Name == CloneableAttributeName) ?? false;
 
         sb.AppendLine($"""
-                        // <copyright file="{className}_Cloneable.cs" company="MUnique">
+                        // <copyright file="{className}_Cloneable.cs" company="HNMO">
                         // Licensed under the MIT License. See LICENSE file in the project root for full license information.
                         // </copyright>
 
@@ -105,8 +105,8 @@ public class CloneableGenerator : IIncrementalGenerator
 
                         using System;
                         using System.Collections.Generic;
-                        using MUnique.OpenMU.DataModel;
-                        using MUnique.OpenMU.DataModel.Configuration;
+                        using HNMO.DataModel;
+                        using HNMO.DataModel.Configuration;
 
                         /// <inheritdoc />
                         public partial class {className} : IAssignable, IAssignable<{className}>, ICloneable<{className}>

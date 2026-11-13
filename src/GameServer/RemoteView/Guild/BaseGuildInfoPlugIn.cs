@@ -1,13 +1,13 @@
-﻿// <copyright file="BaseGuildInfoPlugIn.cs" company="MUnique">
+﻿// <copyright file="BaseGuildInfoPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Guild;
+namespace HNMO.GameServer.RemoteView.Guild;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Abstract base class for a <see cref="IShowGuildInfoPlugIn" /> which allows to cache serialized guild infos.

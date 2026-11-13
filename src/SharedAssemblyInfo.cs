@@ -1,4 +1,4 @@
-﻿// <copyright file="SharedAssemblyInfo.cs" company="MUnique">
+﻿// <copyright file="SharedAssemblyInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -9,9 +9,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("MUnique")]
-[assembly: AssemblyProduct("OpenMU")]
-[assembly: AssemblyCopyright("Copyright © MUnique 2025")]
+[assembly: AssemblyCompany("HNMO")]
+[assembly: AssemblyProduct("HNMO")]
+[assembly: AssemblyCopyright("Copyright © HNMO 2025")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

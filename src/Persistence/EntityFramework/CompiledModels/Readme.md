@@ -35,16 +35,16 @@ To add a compiled model for another edit type:
 Whenever the model changes, i.e. when the data model or the `OnModelCreating` methods of the
 contexts change. That's usually also the case when a migration is added.
 
-The `CompiledModelTests` in `tests/MUnique.OpenMU.Tests` fail when a compiled model doesn't
+The `CompiledModelTests` in `tests/HNMO.Tests` fail when a compiled model doesn't
 match the model which is built by `OnModelCreating`.
 
 The generated code of the `GameConfigurationLoader` has to be updated, too, see `../Loading/Readme.md`.
 
 ## How to generate them
 
-Use the project `MUnique.OpenMU.Persistence.EntityFramework.DesignTime` as startup project.
+Use the project `HNMO.Persistence.EntityFramework.DesignTime` as startup project.
 It contains design time services which make sure that the generated code references the
-types of OpenMU by their full name. Without it, the generated code doesn't compile, because
+types of HNMO by their full name. Without it, the generated code doesn't compile, because
 the entity types of this project have the same names as their base types in the data model.
 
 With the .NET CLI and the [dotnet-ef tool](https://learn.microsoft.com/ef/core/cli/dotnet),
@@ -52,25 +52,25 @@ in the folder `src/Persistence/EntityFramework`:
 
 ```
 dotnet build ../EntityFramework.DesignTime -c Release -p:ci=true
-dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context EntityDataContext --output-dir CompiledModels/EntityDataContext --namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
-dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context AccountContext --output-dir CompiledModels/AccountContext --namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountContext
-dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context TradeContext --output-dir CompiledModels/TradeContext --namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForTradeContext
+dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context EntityDataContext --output-dir CompiledModels/EntityDataContext --namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context AccountContext --output-dir CompiledModels/AccountContext --namespace HNMO.Persistence.EntityFramework.CompiledModels.ForAccountContext
+dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context TradeContext --output-dir CompiledModels/TradeContext --namespace HNMO.Persistence.EntityFramework.CompiledModels.ForTradeContext
 ```
 
 For each typed context, e.g. `CastleSiegeDataTypedContext`:
 
 ```
-dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context CastleSiegeDataTypedContext --output-dir CompiledModels/CastleSiegeDataTypedContext --namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForCastleSiegeDataTypedContext
+dotnet ef dbcontext optimize --no-build --configuration Release --project . --startup-project ../EntityFramework.DesignTime --context CastleSiegeDataTypedContext --output-dir CompiledModels/CastleSiegeDataTypedContext --namespace HNMO.Persistence.EntityFramework.CompiledModels.ForCastleSiegeDataTypedContext
 ```
 
-In the Package Manager Console of Visual Studio, select *MUnique.OpenMU.Persistence.EntityFramework*
+In the Package Manager Console of Visual Studio, select *HNMO.Persistence.EntityFramework*
 as default project and run:
 
 ```
-Optimize-DbContext -Context EntityDataContext -StartupProject MUnique.OpenMU.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/EntityDataContext -Namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
-Optimize-DbContext -Context AccountContext -StartupProject MUnique.OpenMU.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/AccountContext -Namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForAccountContext
-Optimize-DbContext -Context TradeContext -StartupProject MUnique.OpenMU.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/TradeContext -Namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForTradeContext
-Optimize-DbContext -Context CastleSiegeDataTypedContext -StartupProject MUnique.OpenMU.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/CastleSiegeDataTypedContext -Namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForCastleSiegeDataTypedContext
+Optimize-DbContext -Context EntityDataContext -StartupProject HNMO.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/EntityDataContext -Namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+Optimize-DbContext -Context AccountContext -StartupProject HNMO.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/AccountContext -Namespace HNMO.Persistence.EntityFramework.CompiledModels.ForAccountContext
+Optimize-DbContext -Context TradeContext -StartupProject HNMO.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/TradeContext -Namespace HNMO.Persistence.EntityFramework.CompiledModels.ForTradeContext
+Optimize-DbContext -Context CastleSiegeDataTypedContext -StartupProject HNMO.Persistence.EntityFramework.DesignTime -OutputDir CompiledModels/CastleSiegeDataTypedContext -Namespace HNMO.Persistence.EntityFramework.CompiledModels.ForCastleSiegeDataTypedContext
 ```
 
 and the same for the other typed contexts in the folder `TypedContexts`.

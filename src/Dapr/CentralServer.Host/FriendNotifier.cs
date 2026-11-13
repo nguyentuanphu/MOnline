@@ -1,14 +1,14 @@
-﻿// <copyright file="FriendNotifier.cs" company="MUnique">
+﻿// <copyright file="FriendNotifier.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using global::Dapr.Client;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.FriendServer;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.ServerClients;
+using HNMO.FriendServer;
+using HNMO.Interfaces;
+using HNMO.ServerClients;
 
 /// <summary>
 /// Implementation of a <see cref="IFriendNotifier"/> which notifies the game server
@@ -50,7 +50,7 @@ public class FriendNotifier : IFriendNotifier
     }
 
     /// <inheritdoc />
-    /// <remarks>It's usually never called here, but at <see cref="MUnique.OpenMU.FriendServer.FriendServer.ForwardLetterAsync"/>.</remarks>
+    /// <remarks>It's usually never called here, but at <see cref="HNMO.FriendServer.FriendServer.ForwardLetterAsync"/>.</remarks>
     public async ValueTask LetterReceivedAsync(LetterHeader letter)
     {
         try

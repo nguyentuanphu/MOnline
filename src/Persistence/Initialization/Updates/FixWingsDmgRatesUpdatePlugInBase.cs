@@ -1,11 +1,11 @@
-﻿// <copyright file="FixWingsDmgRatesUpdatePlugInBase.cs" company="MUnique">
+﻿// <copyright file="FixWingsDmgRatesUpdatePlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// This update fixes the wings damage absorption and increase bonus level tables values for a <see cref="CombinedElement"/> (sum) calculation, instead of a compound calculation.

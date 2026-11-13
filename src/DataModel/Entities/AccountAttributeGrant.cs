@@ -1,10 +1,10 @@
-// <copyright file="AccountAttributeGrant.cs" company="MUnique">
+// <copyright file="AccountAttributeGrant.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// A value of an attribute which is granted to an <see cref="Account"/>, optionally until a point in time,

@@ -1,12 +1,12 @@
-// <copyright file="IConfigurationUpdatePlugIn.cs" company="MUnique">
+// <copyright file="IConfigurationUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An interface for a plug in which provides data updates for a <see cref="IDataInitializationPlugIn"/>.
@@ -52,7 +52,7 @@ public interface IConfigurationUpdatePlugIn : IStrategyPlugIn<Guid>
 
     /// <summary>
     /// Gets a value indicating whether the update is applied when a new database is initialized.
-    /// The data initialization of this version already contains the changes of the updates of OpenMU itself, so it
+    /// The data initialization of this version already contains the changes of the updates of HNMO itself, so it
     /// only marks them as installed. An update whose changes aren't part of it, e.g. one of a plugin which adds its
     /// own items, returns <c>true</c>.
     /// </summary>

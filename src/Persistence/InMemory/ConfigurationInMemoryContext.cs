@@ -1,11 +1,11 @@
-﻿// <copyright file="ConfigurationInMemoryContext.cs" company="MUnique">
+﻿// <copyright file="ConfigurationInMemoryContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.BasicModel;
+using HNMO.Persistence.BasicModel;
 
 /// <summary>
 /// A context which is used to access the configuration data in-memory.

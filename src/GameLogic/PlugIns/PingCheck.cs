@@ -1,12 +1,12 @@
-// <copyright file="PingCheck.cs" company="MUnique">
+// <copyright file="PingCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Compares the timing and attack speed reported by client ping packets with the server.

@@ -1,8 +1,8 @@
-﻿// <copyright file="LauncherSettings.cs" company="MUnique">
+﻿// <copyright file="LauncherSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ClientLauncher;
+namespace HNMO.ClientLauncher;
 
 /// <summary>
 /// Settings of the launcher.
@@ -10,7 +10,7 @@ namespace MUnique.OpenMU.ClientLauncher;
 public class LauncherSettings
 {
     /// <summary>
-    /// Gets the default resolutions, which are based on the open source MuMain.
+    /// Gets the default resolutions, which are based on the desktop client.
     /// </summary>
     public static ClientResolution[] DefaultResolutions =>
     [

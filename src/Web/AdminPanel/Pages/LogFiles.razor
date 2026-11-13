@@ -3,12 +3,12 @@
 
 @using System.IO
 @using Microsoft.Extensions.Logging
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Web.AdminPanel.Properties
 @implements IAsyncDisposable
 @inject IJSRuntime JSRuntime
 @inject ILogger<LogFiles> Logger
 
-<PageTitle>OpenMU: @Resources.LogFiles</PageTitle>
+<PageTitle>HNMO: @Resources.LogFiles</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@Resources.LogFiles"/>
 
 <div class="row">
@@ -143,7 +143,7 @@
     private const long LogReadBufferSizeBytes = 102400; // 100 KB
     private const int LiveUpdateIntervalMs = 2000;
     private const string TerminalElementId = "log-terminal";
-    private const string JsModulePath = "./_content/MUnique.OpenMU.Web.AdminPanel/Pages/LogFiles.razor.js";
+    private const string JsModulePath = "./_content/HNMO.Web.AdminPanel/Pages/LogFiles.razor.js";
 
     private readonly List<FileInfo> _files = new();
     private FileInfo? _selectedFile;

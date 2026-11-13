@@ -1,15 +1,15 @@
-﻿// <copyright file="WingsInitializerBase.cs" company="MUnique">
+﻿// <copyright file="WingsInitializerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization;
+namespace HNMO.Persistence.Initialization;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameServer.RemoteView;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Base class for wing data initializing.
@@ -70,7 +70,7 @@ public abstract class WingsInitializerBase : InitializerBase
     /// </summary>
     /// <remarks>
     /// Some wings can possibly have different item options of <see cref="ItemOptionTypes.Option"/>, depending on the outcome of consumption of the 'Jewel of Life'.
-    /// Since webzen did a "great" job defining different numbers (representations in their transmitted item data) for the same options,
+    /// Since the original developers did a "great" job defining different numbers (representations in their transmitted item data) for the same options,
     /// we have to build <see cref="IncreasableItemOption"/>s for each item separately.
     /// We don't want to handle this stuff per-item in our <see cref="ItemSerializer"/> since we want a generic solution.
     /// </remarks>

@@ -8,7 +8,7 @@ description: Start and stop the sub-servers, add game and connect servers, send 
 
 **Navigation:** *Servers* — route `/servers`
 
-This page lists every sub-server of your OpenMU installation — connect servers,
+This page lists every sub-server of your HNMO installation — connect servers,
 game servers and the chat server — and is where you start and stop them.
 
 ## The server list

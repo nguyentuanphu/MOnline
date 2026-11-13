@@ -1,8 +1,8 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup;
+namespace HNMO.Startup;
 
 using System;
 using System.ComponentModel.Design;
@@ -15,36 +15,36 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.ChatServer;
-using MUnique.OpenMU.ConnectServer;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Discord;
-using MUnique.OpenMU.FriendServer;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.TestActors;
-using MUnique.OpenMU.GameServer;
-using MUnique.OpenMU.GuildServer;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.LoginServer;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Persistence.EntityFramework;
-using MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
-using MUnique.OpenMU.Persistence.Initialization.Version075;
-using MUnique.OpenMU.Persistence.InMemory;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Startup.TestActors;
-using MUnique.OpenMU.Telemetry;
-using MUnique.OpenMU.Web.AdminPanel;
-using MUnique.OpenMU.Web.AdminPanel.API;
-using MUnique.OpenMU.Web.AdminPanel.Mcp;
-using MUnique.OpenMU.Web.Map;
-using MUnique.OpenMU.Web.Map.Map;
-using MUnique.OpenMU.Web.Shared;
+using HNMO.ChatServer;
+using HNMO.ConnectServer;
+using HNMO.DataModel.Configuration;
+using HNMO.Discord;
+using HNMO.FriendServer;
+using HNMO.GameLogic;
+using HNMO.GameLogic.TestActors;
+using HNMO.GameServer;
+using HNMO.GuildServer;
+using HNMO.Interfaces;
+using HNMO.LoginServer;
+using HNMO.Network;
+using HNMO.Network.Analyzer;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Persistence.EntityFramework;
+using HNMO.Persistence.EntityFramework.AdminAuth;
+using HNMO.Persistence.EntityFramework.Json;
+using HNMO.Persistence.Initialization.Updates;
+using HNMO.Persistence.Initialization.Version075;
+using HNMO.Persistence.InMemory;
+using HNMO.PlugIns;
+using HNMO.Startup.TestActors;
+using HNMO.Telemetry;
+using HNMO.Web.AdminPanel;
+using HNMO.Web.AdminPanel.API;
+using HNMO.Web.AdminPanel.Mcp;
+using HNMO.Web.Map;
+using HNMO.Web.Map.Map;
+using HNMO.Web.Shared;
 using Nito.AsyncEx.Synchronous;
 using Serilog;
 using Serilog.Debugging;
@@ -340,7 +340,7 @@ internal sealed class Program : IDisposable
         }
 
         builder.Logging.ClearProviders();
-        builder.AddOpenTelemetry("openmu");
+        builder.AddOpenTelemetry("hnmo");
 
         var metricsRegistry = new MetricsRegistry();
         metricsRegistry.AddNetworkMeters();
@@ -355,7 +355,7 @@ internal sealed class Program : IDisposable
         // Ensure GameLogic and GameServer Assemblies are loaded
         _ = GameLogic.Rand.NextInt(1, 2);
         _ = DataInitialization.Id;
-        _ = OpenMU.GameServer.ClientVersionResolver.DefaultVersion;
+        _ = HNMO.GameServer.ClientVersionResolver.DefaultVersion;
 
         var addAdminPanel = this.IsAdminPanelEnabled(args);
         await new ConfigFileDatabaseConnectionStringProvider().InitializeAsync(default).ConfigureAwait(false);
@@ -384,7 +384,7 @@ internal sealed class Program : IDisposable
                 builder.Services.AddSingleton<IDatabaseSnapshotService, DatabaseSnapshotService>();
             }
 
-            builder.Services.AddSingleton(new MUnique.OpenMU.Web.AdminPanel.Operations.AdminAuditSettings { IsDemo = args.Contains("-demo") });
+            builder.Services.AddSingleton(new HNMO.Web.AdminPanel.Operations.AdminAuditSettings { IsDemo = args.Contains("-demo") });
             builder.AddAdminPanel(includeMapApp: true);
             builder.Services.AddAdminMcp(builder.Configuration);
         }
@@ -496,8 +496,8 @@ internal sealed class Program : IDisposable
     }
 
     /// <summary>
-    /// Adds the test actor control endpoint, but only when <c>OPENMU_ACTOR_PORT</c> names a
-    /// port; it binds loopback unless <c>OPENMU_ACTOR_ADDRESS</c> says otherwise. It is
+    /// Adds the test actor control endpoint, but only when <c>HNMO_ACTOR_PORT</c> names a
+    /// port; it binds loopback unless <c>HNMO_ACTOR_ADDRESS</c> says otherwise. It is
     /// unauthenticated development tooling and stays off by default, and it is registered after
     /// the server containers on purpose -
     /// hosted services are stopped in reverse order, so the actors are logged out (and their

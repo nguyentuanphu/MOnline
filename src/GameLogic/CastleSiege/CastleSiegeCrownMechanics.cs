@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegeCrownMechanics.cs" company="MUnique">
+// <copyright file="CastleSiegeCrownMechanics.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege.NPC;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege.NPC;
+using HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Implements Castle Siege Crown capture and ownership changes.

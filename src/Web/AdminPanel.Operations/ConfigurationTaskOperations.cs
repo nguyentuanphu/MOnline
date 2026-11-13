@@ -1,15 +1,15 @@
-// <copyright file="ConfigurationTaskOperations.cs" company="MUnique">
+// <copyright file="ConfigurationTaskOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Provides discoverable tasks for experience rates, drop groups and monster spawns.</summary>
 /// <param name="configurations">The active game configuration.</param>

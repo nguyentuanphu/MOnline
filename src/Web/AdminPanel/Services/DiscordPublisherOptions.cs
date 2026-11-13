@@ -1,13 +1,13 @@
-// <copyright file="DiscordPublisherOptions.cs" company="MUnique">
+// <copyright file="DiscordPublisherOptions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
-using MUnique.OpenMU.Discord;
-using MUnique.OpenMU.GameLogic.PlugIns.GameEvents;
+using HNMO.Discord;
+using HNMO.GameLogic.PlugIns.GameEvents;
 
 /// <summary>
 /// Provides publisher option metadata for the Discord configuration form.

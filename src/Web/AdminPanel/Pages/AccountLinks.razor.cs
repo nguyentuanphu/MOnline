@@ -1,19 +1,19 @@
-// <copyright file="AccountLinks.razor.cs" company="MUnique">
+// <copyright file="AccountLinks.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared.Components.Toast;
 
 /// <summary>
 /// The page which shows and removes the links of an account to users of external services, e.g. Discord.

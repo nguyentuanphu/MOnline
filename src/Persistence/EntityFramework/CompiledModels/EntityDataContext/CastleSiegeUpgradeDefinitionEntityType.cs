@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.EntityFramework.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 #pragma warning disable 219, 612, 618
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
+namespace HNMO.Persistence.EntityFramework.CompiledModels.ForEntityDataContext
 {
     [EntityFrameworkInternal]
     public partial class CastleSiegeUpgradeDefinitionEntityType
@@ -20,8 +20,8 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
         public static RuntimeEntityType Create(RuntimeModel model, RuntimeEntityType baseEntityType = null)
         {
             var runtimeEntityType = model.AddEntityType(
-                "MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition",
-                typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition),
+                "HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition",
+                typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition),
                 baseEntityType,
                 propertyCount: 10,
                 foreignKeyCount: 5,
@@ -31,11 +31,11 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var id = runtimeEntityType.AddProperty(
                 "Id",
                 typeof(Guid),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition).GetProperty("Id", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition).GetField("<Id>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 valueGenerated: ValueGenerated.OnAdd,
                 afterSaveBehavior: PropertySaveBehavior.Throw,
-                valueGeneratorFactory: new MUnique.OpenMU.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
+                valueGeneratorFactory: new HNMO.Persistence.EntityFramework.GuidV7ValueGeneratorFactory().Create,
                 sentinel: new Guid("00000000-0000-0000-0000-000000000000"));
             id.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -72,32 +72,32 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var level = runtimeEntityType.AddProperty(
                 "Level",
                 typeof(byte),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("Level", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<Level>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("Level", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<Level>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: (byte)0);
             level.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var requiredJewelOfGuardianCount = runtimeEntityType.AddProperty(
                 "RequiredJewelOfGuardianCount",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("RequiredJewelOfGuardianCount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<RequiredJewelOfGuardianCount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("RequiredJewelOfGuardianCount", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<RequiredJewelOfGuardianCount>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             requiredJewelOfGuardianCount.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var requiredZen = runtimeEntityType.AddProperty(
                 "RequiredZen",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("RequiredZen", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<RequiredZen>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("RequiredZen", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<RequiredZen>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             requiredZen.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
             var value = runtimeEntityType.AddProperty(
                 "Value",
                 typeof(int),
-                propertyInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("Value", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<Value>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                propertyInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetProperty("Value", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition).GetField("<Value>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly),
                 sentinel: 0);
             value.AddAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.None);
 
@@ -133,9 +133,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawGateDefenseUpgrades = principalEntityType.AddNavigation("RawGateDefenseUpgrades",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawGateDefenseUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawGateDefenseUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawGateDefenseUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawGateDefenseUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             return runtimeForeignKey;
         }
@@ -150,9 +150,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawGateLifeUpgrades = principalEntityType.AddNavigation("RawGateLifeUpgrades",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawGateLifeUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawGateLifeUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawGateLifeUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawGateLifeUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             runtimeForeignKey.AddAnnotation("Relational:Name", "FK_CastleSiegeUpgradeDefinition_CastleSiegeConfiguration_Cast~1");
             return runtimeForeignKey;
@@ -168,9 +168,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawStatueDefenseUpgrades = principalEntityType.AddNavigation("RawStatueDefenseUpgrades",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueDefenseUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueDefenseUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueDefenseUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueDefenseUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             runtimeForeignKey.AddAnnotation("Relational:Name", "FK_CastleSiegeUpgradeDefinition_CastleSiegeConfiguration_Cast~2");
             return runtimeForeignKey;
@@ -186,9 +186,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawStatueLifeUpgrades = principalEntityType.AddNavigation("RawStatueLifeUpgrades",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueLifeUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueLifeUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueLifeUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueLifeUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             runtimeForeignKey.AddAnnotation("Relational:Name", "FK_CastleSiegeUpgradeDefinition_CastleSiegeConfiguration_Cast~3");
             return runtimeForeignKey;
@@ -204,9 +204,9 @@ namespace MUnique.OpenMU.Persistence.EntityFramework.CompiledModels.ForEntityDat
             var rawStatueRegenUpgrades = principalEntityType.AddNavigation("RawStatueRegenUpgrades",
                 runtimeForeignKey,
                 onDependent: false,
-                typeof(System.Collections.Generic.ICollection<MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
-                propertyInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueRegenUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
-                fieldInfo: typeof(MUnique.OpenMU.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueRegenUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
+                typeof(System.Collections.Generic.ICollection<HNMO.Persistence.EntityFramework.Model.CastleSiegeUpgradeDefinition>),
+                propertyInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetProperty("RawStatueRegenUpgrades", BindingFlags.Public | BindingFlags.Instance | BindingFlags.DeclaredOnly),
+                fieldInfo: typeof(HNMO.Persistence.EntityFramework.Model.CastleSiegeConfiguration).GetField("<RawStatueRegenUpgrades>k__BackingField", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.DeclaredOnly));
 
             runtimeForeignKey.AddAnnotation("Relational:Name", "FK_CastleSiegeUpgradeDefinition_CastleSiegeConfiguration_Cast~4");
             return runtimeForeignKey;

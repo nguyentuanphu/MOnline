@@ -1,6 +1,6 @@
-# OpenMU documentation site
+# HNMO documentation site
 
-This folder contains the source of the OpenMU documentation website, built with
+This folder contains the source of the HNMO documentation website, built with
 [Docusaurus](https://docusaurus.io/).
 
 The content lives in [`docs/`](docs), one markdown file per page. The navigation
@@ -52,11 +52,11 @@ without a code change:
 
 | Environment variable | Meaning | Default |
 |---|---|---|
-| `DOCS_URL` | The base URL of the deployment | `https://docs.munique.net` |
+| `DOCS_URL` | The base URL of the deployment | `https://github.com/nguyentuanphu/HNMO` |
 | `DOCS_BASE_URL` | The path the site is served under | `/` |
 
-A fork which deploys to `https://<user>.github.io/OpenMU/` would therefore build
-with `DOCS_URL=https://<user>.github.io DOCS_BASE_URL=/OpenMU/`.
+A fork which deploys to `https://<user>.github.io/HNMO/` would therefore build
+with `DOCS_URL=https://<user>.github.io DOCS_BASE_URL=/HNMO/`.
 
 ## Dependency overrides
 

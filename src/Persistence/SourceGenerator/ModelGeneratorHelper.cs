@@ -1,11 +1,11 @@
-// <copyright file="ModelGeneratorHelper.cs" company="MUnique">
+// <copyright file="ModelGeneratorHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.SourceGenerator;
+namespace HNMO.Persistence.SourceGenerator;
 
 using System.Reflection;
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
 /// Helper class containing shared functionality for model generators.
@@ -17,7 +17,7 @@ internal static class ModelGeneratorHelper
     /// <summary>
     /// Gets a header template for a generated file.
     /// </summary>
-    public static string FileHeaderTemplate => @"// <copyright file=""{0}.Generated.cs"" company=""MUnique"">
+    public static string FileHeaderTemplate => @"// <copyright file=""{0}.Generated.cs"" company=""HNMO"">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -32,7 +32,7 @@ internal static class ModelGeneratorHelper
     /// <summary>
     /// Gets the namespace of the configuration classes.
     /// </summary>
-    public static string ConfigurationNamespace => "MUnique.OpenMU.DataModel.Configuration";
+    public static string ConfigurationNamespace => "HNMO.DataModel.Configuration";
 
     /// <summary>
     /// Gets the types which need to be customized for persistence.
@@ -124,7 +124,7 @@ internal static class ModelGeneratorHelper
     {
         return $$"""
                      /// <inheritdoc />
-                     public override {{type.Namespace}}.{{className}} Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+                     public override {{type.Namespace}}.{{className}} Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
                      {
                          var clone = new {{className}}();
                          clone.AssignValuesOf(this, gameConfiguration);
@@ -132,7 +132,7 @@ internal static class ModelGeneratorHelper
                      }
                      
                      /// <inheritdoc />
-                     public override void AssignValuesOf({{type.Namespace}}.{{className}} other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+                     public override void AssignValuesOf({{type.Namespace}}.{{className}} other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
                      {
                          base.AssignValuesOf(other, gameConfiguration);
                          this.Id = other.GetId();
@@ -153,13 +153,13 @@ internal static class ModelGeneratorHelper
             .Where(type => type.IsClass && type.IsPublic)
             .Where(type => !type.IsSealed && !type.IsAbstract && type.GetConstructor([]) != null).ToList();
         result.AddRange(loadedTypes);
-        result.Add(typeof(MUnique.OpenMU.AttributeSystem.AttributeDefinition));
-        result.Add(typeof(MUnique.OpenMU.AttributeSystem.StatAttribute));
-        result.Add(typeof(MUnique.OpenMU.AttributeSystem.ConstValueAttribute));
-        result.Add(typeof(MUnique.OpenMU.AttributeSystem.AttributeRelationship));
-        result.Add(typeof(MUnique.OpenMU.Interfaces.LetterHeader));
-        result.Add(typeof(MUnique.OpenMU.Interfaces.Friend));
-        result.Add(typeof(MUnique.OpenMU.PlugIns.PlugInConfiguration));
+        result.Add(typeof(HNMO.AttributeSystem.AttributeDefinition));
+        result.Add(typeof(HNMO.AttributeSystem.StatAttribute));
+        result.Add(typeof(HNMO.AttributeSystem.ConstValueAttribute));
+        result.Add(typeof(HNMO.AttributeSystem.AttributeRelationship));
+        result.Add(typeof(HNMO.Interfaces.LetterHeader));
+        result.Add(typeof(HNMO.Interfaces.Friend));
+        result.Add(typeof(HNMO.PlugIns.PlugInConfiguration));
 
         return result;
     }

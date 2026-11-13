@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordLinkCodeResult.cs" company="MUnique">
+﻿// <copyright file="DiscordLinkCodeResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Discord;
+namespace HNMO.GameLogic.Discord;
 
 /// <summary>
 /// The result of a request of a code to link the account to a Discord user.

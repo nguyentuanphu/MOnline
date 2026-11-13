@@ -1,4 +1,4 @@
-// <copyright file="StatAttribute.Generated.cs" company="MUnique">
+// <copyright file="StatAttribute.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="StatAttribute"/>.
 /// </summary>
-public partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttribute, IIdentifiable, IConvertibleTo<StatAttribute>
+public partial class StatAttribute : HNMO.AttributeSystem.StatAttribute, IIdentifiable, IConvertibleTo<StatAttribute>
 {
     /// <inheritdoc />
     public StatAttribute()
@@ -25,7 +25,7 @@ public partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttribut
     }
 
     /// <inheritdoc />
-    public StatAttribute(MUnique.OpenMU.AttributeSystem.AttributeDefinition definition, System.Single baseValue)
+    public StatAttribute(HNMO.AttributeSystem.AttributeDefinition definition, System.Single baseValue)
         : base(definition, baseValue)
     {
     }
@@ -47,7 +47,7 @@ public partial class StatAttribute : MUnique.OpenMU.AttributeSystem.StatAttribut
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Definition
+    public override HNMO.AttributeSystem.AttributeDefinition Definition
     {
         get => base.Definition;
         protected set => base.Definition = value;

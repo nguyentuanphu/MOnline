@@ -1,10 +1,10 @@
-﻿// <copyright file="IUpdateStatsPlugIn.cs" company="MUnique">
+﻿// <copyright file="IUpdateStatsPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Character;
+namespace HNMO.GameLogic.Views.Character;
 
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// Interface of a view whose implementation informs about updated stats.

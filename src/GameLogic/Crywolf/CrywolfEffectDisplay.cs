@@ -1,10 +1,10 @@
-﻿// <copyright file="CrywolfEffectDisplay.cs" company="MUnique">
+﻿// <copyright file="CrywolfEffectDisplay.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Shows an effect of the crywolf event at an NPC to the players which observe it.

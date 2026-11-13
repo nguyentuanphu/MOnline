@@ -1,4 +1,4 @@
-// <copyright file="ChatServerEndpoint.Generated.cs" company="MUnique">
+// <copyright file="ChatServerEndpoint.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ChatServerEndpoint"/>.
 /// </summary>
 [Table(nameof(ChatServerEndpoint), Schema = SchemaNames.Configuration)]
-internal partial class ChatServerEndpoint : MUnique.OpenMU.DataModel.Configuration.ChatServerEndpoint, IIdentifiable
+internal partial class ChatServerEndpoint : HNMO.DataModel.Configuration.ChatServerEndpoint, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class ChatServerEndpoint : MUnique.OpenMU.DataModel.Configurati
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameClientDefinition Client
+    public override HNMO.DataModel.Configuration.GameClientDefinition Client
     {
         get => base.Client;set
         {

@@ -1,8 +1,8 @@
-﻿// <copyright file="Connection.cs" company="MUnique">
+﻿// <copyright file="Connection.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.Buffers;
 using System.Collections.Immutable;
@@ -12,8 +12,8 @@ using System.IO.Pipelines;
 using System.Net;
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network.SimpleModulus;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network.SimpleModulus;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 using Nito.AsyncEx.Synchronous;
 using Pipelines.Sockets.Unofficial;
@@ -21,7 +21,7 @@ using Pipelines.Sockets.Unofficial;
 /// <summary>
 /// A connection which works on <see cref="IDuplexPipe"/>.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.Network.PacketPipeReaderBase" />
+/// <seealso cref="HNMO.Network.PacketPipeReaderBase" />
 public sealed class Connection : PacketPipeReaderBase, IConnection
 {
     private static readonly ActivitySource ActivitySource = new(typeof(Connection).FullName ?? nameof(Connection));
@@ -232,9 +232,9 @@ public sealed class Connection : PacketPipeReaderBase, IConnection
     }
 
     /// <summary>
-    /// Reads the mu online packet by raising <see cref="PacketReceived" />.
+    /// Reads the game packet by raising <see cref="PacketReceived" />.
     /// </summary>
-    /// <param name="packet">The mu online packet.</param>
+    /// <param name="packet">The game packet.</param>
     /// <returns><see langword="true" />, if the flush was successful or not required.<see langword="false" />, if the pipe reader is completed and no longer reading data.</returns>
     protected override async ValueTask<bool> ReadPacketAsync(ReadOnlySequence<byte> packet)
     {

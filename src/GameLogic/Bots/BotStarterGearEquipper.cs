@@ -1,12 +1,12 @@
-// <copyright file="BotStarterGearEquipper.cs" company="MUnique">
+// <copyright file="BotStarterGearEquipper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Linq;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence;
 
 /// <summary>
 /// Equips a freshly generated bot character with its starter gear: a class- and build-appropriate

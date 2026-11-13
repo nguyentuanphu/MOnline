@@ -1,15 +1,15 @@
-// <copyright file="GoldenArcherRegistrationStrategy.cs" company="MUnique">
+// <copyright file="GoldenArcherRegistrationStrategy.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items.ItemRegistration;
+namespace HNMO.GameLogic.PlayerActions.Items.ItemRegistration;
 
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The item registration strategy for the Golden Archer NPC.

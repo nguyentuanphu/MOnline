@@ -1,4 +1,4 @@
-// <copyright file="MagicEffectDefinition.Generated.cs" company="MUnique">
+// <copyright file="MagicEffectDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MagicEffectDefinition"/>.
 /// </summary>
 [Table(nameof(MagicEffectDefinition), Schema = SchemaNames.Configuration)]
-internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition, IIdentifiable
+internal partial class MagicEffectDefinition : HNMO.DataModel.Configuration.MagicEffectDefinition, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition> PowerUpDefinitions => base.PowerUpDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPowerUpDefinitions);
+    public override ICollection<HNMO.DataModel.Attributes.PowerUpDefinition> PowerUpDefinitions => base.PowerUpDefinitions ??= new CollectionAdapter<HNMO.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPowerUpDefinitions);
 
     /// <summary>
     /// Gets the raw collection of <see cref="PowerUpDefinitionsPvp" />.
@@ -44,7 +44,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition> PowerUpDefinitionsPvp => base.PowerUpDefinitionsPvp ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPowerUpDefinitionsPvp);
+    public override ICollection<HNMO.DataModel.Attributes.PowerUpDefinition> PowerUpDefinitionsPvp => base.PowerUpDefinitionsPvp ??= new CollectionAdapter<HNMO.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawPowerUpDefinitionsPvp);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Chance"/>.
@@ -63,7 +63,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue Chance
+    public override HNMO.DataModel.Attributes.PowerUpDefinitionValue Chance
     {
         get => base.Chance;set
         {
@@ -89,7 +89,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue ChancePvp
+    public override HNMO.DataModel.Attributes.PowerUpDefinitionValue ChancePvp
     {
         get => base.ChancePvp;set
         {
@@ -115,7 +115,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue Duration
+    public override HNMO.DataModel.Attributes.PowerUpDefinitionValue Duration
     {
         get => base.Duration;set
         {
@@ -141,7 +141,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue DurationPvp
+    public override HNMO.DataModel.Attributes.PowerUpDefinitionValue DurationPvp
     {
         get => base.DurationPvp;set
         {
@@ -151,7 +151,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MagicEffectDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MagicEffectDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -159,7 +159,7 @@ internal partial class MagicEffectDefinition : MUnique.OpenMU.DataModel.Configur
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MagicEffectDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MagicEffectDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

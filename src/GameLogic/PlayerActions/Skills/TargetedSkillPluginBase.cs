@@ -1,9 +1,9 @@
-﻿// <copyright file="TargetedSkillPluginBase.cs" company="MUnique">
+﻿// <copyright file="TargetedSkillPluginBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
-using MUnique.OpenMU.GameLogic.PlugIns;
+using HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// Action to perform a skill which is explicitly aimed to a target.

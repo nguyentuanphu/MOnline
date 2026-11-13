@@ -1,13 +1,13 @@
-﻿// <copyright file="NotifyableInputBase.cs" company="MUnique">
+﻿// <copyright file="NotifyableInputBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// An abstract base class which updates it's current value when

@@ -1,10 +1,10 @@
-﻿// <copyright file="MerchantStoreExtensions.cs" company="MUnique">
+﻿// <copyright file="MerchantStoreExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Extension methods for the <see cref="ItemStorage"/> of a merchant store.

@@ -1,10 +1,10 @@
-﻿// <copyright file="AttackAreaWhenPressedTrapIntelligence.cs" company="MUnique">
+﻿// <copyright file="AttackAreaWhenPressedTrapIntelligence.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.GameLogic.Views.World;
 using Nito.AsyncEx;
 
 /// <summary>

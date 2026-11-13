@@ -1,15 +1,15 @@
-﻿// <copyright file="GameServerInitializer.cs" company="MUnique">
+﻿// <copyright file="GameServerInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.Host;
+namespace HNMO.GameServer.Host;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence;
 
 /// <summary>
 /// Initialization of a <see cref="GameServer"/> which is executed before starting it.

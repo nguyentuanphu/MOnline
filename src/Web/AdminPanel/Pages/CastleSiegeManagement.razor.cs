@@ -1,22 +1,22 @@
-// <copyright file="CastleSiegeManagement.razor.cs" company="MUnique">
+// <copyright file="CastleSiegeManagement.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.AdminPanel.Services;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.AdminPanel.Services;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Displays and administers the local Castle Siege runtime.

@@ -1,4 +1,4 @@
-// <copyright file="Item.Generated.cs" company="MUnique">
+// <copyright file="Item.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Item"/>.
 /// </summary>
-public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiable, IConvertibleTo<Item>
+public partial class Item : HNMO.DataModel.Entities.Item, IIdentifiable, IConvertibleTo<Item>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiabl
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.ItemOptionLink> ItemOptions
+    public override ICollection<HNMO.DataModel.Entities.ItemOptionLink> ItemOptions
     {
-        get => base.ItemOptions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.ItemOptionLink, ItemOptionLink>(this.RawItemOptions);
+        get => base.ItemOptions ??= new CollectionAdapter<HNMO.DataModel.Entities.ItemOptionLink, ItemOptionLink>(this.RawItemOptions);
         protected set
         {
             this.ItemOptions.Clear();
@@ -54,9 +54,9 @@ public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiabl
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet> ItemSetGroups
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOfItemSet> ItemSetGroups
     {
-        get => base.ItemSetGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItemSetGroups);
+        get => base.ItemSetGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItemSetGroups);
         protected set
         {
             this.ItemSetGroups.Clear();
@@ -79,7 +79,7 @@ public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiabl
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition Definition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition Definition
     {
         get => base.Definition;
         set => base.Definition = value;
@@ -97,14 +97,14 @@ public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiabl
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition StorePriceItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition StorePriceItemDefinition
     {
         get => base.StorePriceItemDefinition;
         set => base.StorePriceItemDefinition = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Entities.Item Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Entities.Item Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new Item();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -112,7 +112,7 @@ public partial class Item : MUnique.OpenMU.DataModel.Entities.Item, IIdentifiabl
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Entities.Item other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Entities.Item other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

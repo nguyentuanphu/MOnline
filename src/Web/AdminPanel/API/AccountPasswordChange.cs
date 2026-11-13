@@ -1,8 +1,8 @@
-// <copyright file="AccountPasswordChange.cs" company="MUnique">
+// <copyright file="AccountPasswordChange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.ComponentModel.DataAnnotations;
 

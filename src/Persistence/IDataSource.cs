@@ -1,8 +1,8 @@
-// <copyright file="IDataSource.cs" company="MUnique">
+// <copyright file="IDataSource.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Collections;
 using System.Threading;

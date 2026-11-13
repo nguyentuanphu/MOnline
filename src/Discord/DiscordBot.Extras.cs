@@ -1,18 +1,18 @@
-﻿// <copyright file="DiscordBot.Extras.cs" company="MUnique">
+﻿// <copyright file="DiscordBot.Extras.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Threading;
 using System.Threading.Tasks;
 using global::Discord;
 using global::Discord.WebSocket;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.Discord.Provisioning;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Discord.Properties;
+using HNMO.Discord.Provisioning;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The part of the <see cref="DiscordBot"/> with the commands for game masters, the direct messages

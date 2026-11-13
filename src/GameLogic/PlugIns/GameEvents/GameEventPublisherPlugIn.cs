@@ -1,18 +1,18 @@
-﻿// <copyright file="GameEventPublisherPlugIn.cs" company="MUnique">
+﻿// <copyright file="GameEventPublisherPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.GameEvents;
+namespace HNMO.GameLogic.PlugIns.GameEvents;
 
 using System.Reflection;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Publishes events of the game as <see cref="GameEvent"/>s to the whole server, through <see cref="IEventPublisher.GameEventAsync"/>.

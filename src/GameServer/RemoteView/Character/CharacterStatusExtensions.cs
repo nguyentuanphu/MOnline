@@ -1,12 +1,12 @@
-﻿// <copyright file="CharacterStatusExtensions.cs" company="MUnique">
+﻿// <copyright file="CharacterStatusExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Character;
+namespace HNMO.GameServer.RemoteView.Character;
 
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Network.Packets;
-using CharacterStatus = MUnique.OpenMU.Network.Packets.ServerToClient.CharacterStatus;
+using HNMO.DataModel.Entities;
+using HNMO.Network.Packets;
+using CharacterStatus = HNMO.Network.Packets.ServerToClient.CharacterStatus;
 
 /// <summary>
 /// Extension methods for <see cref="DataModel.Entities.CharacterStatus"/>.

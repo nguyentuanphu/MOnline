@@ -1,8 +1,8 @@
-﻿// <copyright file="Extensions.cs" company="MUnique">
+﻿// <copyright file="Extensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.AttributeSystem;
+namespace HNMO.AttributeSystem;
 
 /// <summary>
 /// Common extension methods.

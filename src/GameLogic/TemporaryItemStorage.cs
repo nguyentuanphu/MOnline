@@ -1,8 +1,8 @@
-// <copyright file="TemporaryItemStorage.cs" company="MUnique">
+// <copyright file="TemporaryItemStorage.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// An <see cref="ItemStorage"/> which is not persisted, used for the temporary

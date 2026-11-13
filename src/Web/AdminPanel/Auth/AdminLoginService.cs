@@ -1,13 +1,13 @@
-// <copyright file="AdminLoginService.cs" company="MUnique">
+// <copyright file="AdminLoginService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
     /// <summary>
     /// Validates the credentials of an admin panel user.

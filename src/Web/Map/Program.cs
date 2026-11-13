@@ -1,13 +1,13 @@
-// <copyright file="Program.cs" company="MUnique">
+// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map;
+namespace HNMO.Web.Map;
 
 using System.ComponentModel;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.GameLogic;
+using HNMO.GameLogic;
 
 /// <summary>
 /// The class of the entry point.

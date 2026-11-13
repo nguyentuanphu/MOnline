@@ -1,14 +1,14 @@
-﻿// <copyright file="LookupField.razor.cs" company="MUnique">
+﻿// <copyright file="LookupField.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Lookup-Field which allows to select an object of the specified <typeparamref name="TObject"/>.

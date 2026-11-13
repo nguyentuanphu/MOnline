@@ -177,7 +177,7 @@ export class Attackable<TData extends ObjectData> extends THREE.Mesh implements 
 }
 
 export var attackableAlphaMapTexture: THREE.Texture;
-new THREE.TextureLoader().load("_content/MUnique.OpenMU.Web.Map/img/attackable_alphamap.png", (t: THREE.Texture) => {
+new THREE.TextureLoader().load("_content/HNMO.Web.Map/img/attackable_alphamap.png", (t: THREE.Texture) => {
     attackableAlphaMapTexture = t;
 });
 

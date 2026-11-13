@@ -1,10 +1,10 @@
-﻿// <copyright file="DiscordChatBindingInfo.cs" company="MUnique">
+﻿// <copyright file="DiscordChatBindingInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// A chat of a guild or an alliance which is bound to a Discord channel.

@@ -1,11 +1,11 @@
-// <copyright file="StatResetConfiguration.cs" company="MUnique">
+// <copyright file="StatResetConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Resets;
+namespace HNMO.GameLogic.Resets;
 
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Configuration of the Stat Reset System.

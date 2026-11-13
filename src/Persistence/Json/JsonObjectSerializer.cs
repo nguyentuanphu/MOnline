@@ -1,14 +1,14 @@
-﻿// <copyright file="JsonObjectSerializer.cs" company="MUnique">
+﻿// <copyright file="JsonObjectSerializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Json;
+namespace HNMO.Persistence.Json;
 
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Class to serialize an object to a json string or stream.

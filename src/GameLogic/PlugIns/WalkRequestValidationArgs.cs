@@ -1,8 +1,8 @@
-// <copyright file="WalkRequestValidationArgs.cs" company="MUnique">
+// <copyright file="WalkRequestValidationArgs.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// The result of a walk request validation.

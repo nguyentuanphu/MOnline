@@ -1,17 +1,17 @@
-﻿// <copyright file="QuestStructExtensions.cs" company="MUnique">
+﻿// <copyright file="QuestStructExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Quest;
+namespace HNMO.GameServer.RemoteView.Quest;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using QuestReward = MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.Network;
+using HNMO.Network.Packets;
+using HNMO.Network.Packets.ServerToClient;
+using QuestReward = HNMO.DataModel.Configuration.Quests.QuestReward;
 
 /// <summary>
 /// Extensions for quest message structs.

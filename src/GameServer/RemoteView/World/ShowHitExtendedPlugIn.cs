@@ -1,18 +1,18 @@
-﻿// <copyright file="ShowHitExtendedPlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowHitExtendedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.World;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The extended implementation of the <see cref="IShowHitPlugIn"/> which is forwarding everything to the game client with specific data packets.
@@ -37,7 +37,7 @@ public class ShowHitExtendedPlugIn : IShowHitPlugIn
     /// <remarks>
     /// This Packet is sent to the Client when a Player or Monster got hit and damaged.
     /// It includes which Player/Monster got hit by who, and the Damage Type.
-    /// It is obvious that the mu online protocol only supports 16 bits for each damage value. To prevent bugs (own player health)
+    /// It is obvious that the game protocol only supports 16 bits for each damage value. To prevent bugs (own player health)
     /// and to make it somehow visible that the damage exceeds 65k, we send more than one packet, if the 16bits are not enough.
     /// </remarks>
     /// <inheritdoc/>

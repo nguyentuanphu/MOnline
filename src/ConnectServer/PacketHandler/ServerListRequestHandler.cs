@@ -1,11 +1,11 @@
-﻿// <copyright file="ServerListRequestHandler.cs" company="MUnique">
+﻿// <copyright file="ServerListRequestHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer.PacketHandler;
+namespace HNMO.ConnectServer.PacketHandler;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network;
+using HNMO.Network;
 
 /// <summary>
 /// Handles the request of the server list.

@@ -1,19 +1,19 @@
-// <copyright file="FixBloodCastleMonsterAttributesUpdatePlugIn.cs" company="MUnique">
+// <copyright file="FixBloodCastleMonsterAttributesUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Swaps attribute values between BC7 (monsters 138-143) and BC8 (monsters 428-433)
 /// so the difficulty progression is correct: BC6 → BC7 → BC8.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixBloodCastleMonsterAttributesUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixBloodCastleMonsterAttributesUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixBloodCastleMonsterAttributesUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixBloodCastleMonsterAttributesUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("D4E5F6A0-1B2C-3D4E-5F6A-7B8C9D0E1F2A")]
 public class FixBloodCastleMonsterAttributesUpdatePlugIn : UpdatePlugInBase
 {

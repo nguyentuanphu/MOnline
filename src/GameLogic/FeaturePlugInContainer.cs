@@ -1,11 +1,11 @@
-﻿// <copyright file="FeaturePlugInContainer.cs" company="MUnique">
+﻿// <copyright file="FeaturePlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin container for <see cref="IFeaturePlugIn"/>s.

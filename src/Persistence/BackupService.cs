@@ -1,18 +1,18 @@
-﻿// <copyright file="BackupService.cs" company="MUnique">
+﻿// <copyright file="BackupService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.IO;
 using System.IO.Compression;
 using System.Reflection;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// Implementation of <see cref="IBackupService"/> which uses the available repositories
@@ -519,10 +519,10 @@ public class BackupService : IBackupService
             targetProp.SetValue(target, targetValue);
         }
 
-        // Recurse into MUnique parent base types for inherited properties.
+        // Recurse into HNMO parent base types for inherited properties.
         if (baseType.BaseType is { } parentBase
             && parentBase != typeof(object)
-            && parentBase.Namespace?.StartsWith("MUnique", StringComparison.Ordinal) is true)
+            && parentBase.Namespace?.StartsWith("HNMO", StringComparison.Ordinal) is true)
         {
             this.CopyProperties(source, target, parentBase, context, createdObjects);
         }

@@ -1,8 +1,8 @@
-﻿// <copyright file="IConfigurationTypeRepository.cs" company="MUnique">
+﻿// <copyright file="IConfigurationTypeRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// Non-generic interface for <see cref="ConfigurationTypeRepository{T}"/>.

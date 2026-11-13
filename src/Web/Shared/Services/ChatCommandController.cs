@@ -1,16 +1,16 @@
-// <copyright file="ChatCommandController.cs" company="MUnique">
+// <copyright file="ChatCommandController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Web.Shared.Models;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.PlugIns.ChatCommands;
+using HNMO.Persistence;
+using HNMO.PlugIns;
+using HNMO.Web.Shared.Models;
 
 /// <summary>
 /// A scoped controller to show the chat commands of the game configuration.

@@ -1,16 +1,16 @@
-﻿// <copyright file="LogOutByCheatDetectionHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="LogOutByCheatDetectionHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Login;
+namespace HNMO.GameServer.MessageHandler.Login;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.Views.Login;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.Views.Login;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for logout by cheat packets.

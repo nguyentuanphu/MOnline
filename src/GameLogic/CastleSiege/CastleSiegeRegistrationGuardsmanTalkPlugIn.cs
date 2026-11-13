@@ -1,15 +1,15 @@
-// <copyright file="CastleSiegeRegistrationGuardsmanTalkPlugIn.cs" company="MUnique">
+// <copyright file="CastleSiegeRegistrationGuardsmanTalkPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Opens the Castle Siege registration window when a player talks to a guardsman at the bridge of the Castle Siege map.

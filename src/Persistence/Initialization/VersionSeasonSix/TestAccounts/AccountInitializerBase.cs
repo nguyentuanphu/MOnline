@@ -1,20 +1,20 @@
-﻿// <copyright file="AccountInitializerBase.cs" company="MUnique">
+﻿// <copyright file="AccountInitializerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.TestAccounts;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.TestAccounts;
 
 using System;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameServer.MessageHandler.Quests;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameServer.MessageHandler.Quests;
+using HNMO.Persistence.Initialization.CharacterClasses;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Skills;
 
 /// <summary>
 /// Abstract base class for a test account initializer.

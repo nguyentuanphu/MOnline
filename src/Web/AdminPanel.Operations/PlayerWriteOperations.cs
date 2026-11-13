@@ -1,15 +1,15 @@
-// <copyright file="PlayerWriteOperations.cs" company="MUnique">
+// <copyright file="PlayerWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Routes player operations to the game server which owns the live account.</summary>
 /// <param name="servers">The server registry.</param>
@@ -54,7 +54,7 @@ public sealed class PlayerWriteOperations(IServerProvider servers, ILoginServer 
                 using var context = persistence.CreateNewPlayerContext(await configurations.GetOwnerAsync(cancellationToken: cancellationToken).ConfigureAwait(false));
                 var account = await context.GetAccountByCharacterNameAsync(characterName, cancellationToken).ConfigureAwait(false)
                     ?? throw new ArgumentException("Character not found.", nameof(characterName));
-                if (account.State is not (MUnique.OpenMU.DataModel.Entities.AccountState.Normal or MUnique.OpenMU.DataModel.Entities.AccountState.Banned or MUnique.OpenMU.DataModel.Entities.AccountState.TemporarilyBanned))
+                if (account.State is not (HNMO.DataModel.Entities.AccountState.Normal or HNMO.DataModel.Entities.AccountState.Banned or HNMO.DataModel.Entities.AccountState.TemporarilyBanned))
                 {
                     await executor.RequireAsync(AdminRoles.Administrator, cancellationToken).ConfigureAwait(false);
                 }

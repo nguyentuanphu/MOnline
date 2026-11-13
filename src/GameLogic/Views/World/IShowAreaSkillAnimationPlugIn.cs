@@ -1,10 +1,10 @@
-﻿// <copyright file="IShowAreaSkillAnimationPlugIn.cs" company="MUnique">
+﻿// <copyright file="IShowAreaSkillAnimationPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.World;
+namespace HNMO.GameLogic.Views.World;
 
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Interface of a view whose implementation informs about area skill animations of objects.

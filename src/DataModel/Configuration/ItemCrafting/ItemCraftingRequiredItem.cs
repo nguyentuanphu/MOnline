@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemCraftingRequiredItem.cs" company="MUnique">
+﻿// <copyright file="ItemCraftingRequiredItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
+namespace HNMO.DataModel.Configuration.ItemCrafting;
 
 using System.Globalization;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Describes an required item for a crafting.
@@ -76,7 +76,7 @@ public partial class ItemCraftingRequiredItem
         string itemName;
         if (!this.PossibleItems.Any())
         {
-            itemName = MUnique.OpenMU.DataModel.Properties.Resources.RandomItemSummary;
+            itemName = HNMO.DataModel.Properties.Resources.RandomItemSummary;
         }
         else
         {

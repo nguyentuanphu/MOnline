@@ -1,10 +1,10 @@
-// <copyright file="ItemStatProfile.cs" company="MUnique">
+// <copyright file="ItemStatProfile.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// A named set of item formulas: what an item's level, excellent options, ancient set and option level add to its

@@ -1,17 +1,17 @@
-// <copyright file="AddGlobalMoneyAmountRateAttributePlugIn075.cs" company="MUnique">
+// <copyright file="AddGlobalMoneyAmountRateAttributePlugIn075.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update moves the MoneyAmountRate attribute to global base attributes for version 0.75.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddGlobalMoneyAmountRateAttributePlugInBase_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddGlobalMoneyAmountRateAttributePlugInBase_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddGlobalMoneyAmountRateAttributePlugInBase_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddGlobalMoneyAmountRateAttributePlugInBase_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("A1B2C3D4-E5F6-7890-ABCD-EF1234567890")]
 public class AddGlobalMoneyAmountRateAttributePlugIn075 : AddGlobalMoneyAmountRateAttributePlugInBase
 {

@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeData.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeData.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CastleSiegeData"/>.
 /// </summary>
-public partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.CastleSiegeData, IIdentifiable, IConvertibleTo<CastleSiegeData>
+public partial class CastleSiegeData : HNMO.DataModel.Entities.CastleSiegeData, IIdentifiable, IConvertibleTo<CastleSiegeData>
 {
     
     
@@ -30,9 +30,9 @@ public partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.CastleS
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState> NpcStates
+    public override ICollection<HNMO.DataModel.Entities.CastleSiegeNpcState> NpcStates
     {
-        get => base.NpcStates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState, CastleSiegeNpcState>(this.RawNpcStates);
+        get => base.NpcStates ??= new CollectionAdapter<HNMO.DataModel.Entities.CastleSiegeNpcState, CastleSiegeNpcState>(this.RawNpcStates);
         protected set
         {
             this.NpcStates.Clear();
@@ -51,9 +51,9 @@ public partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.CastleS
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CastleSiegeGuild> Guilds
+    public override ICollection<HNMO.DataModel.Entities.CastleSiegeGuild> Guilds
     {
-        get => base.Guilds ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CastleSiegeGuild, CastleSiegeGuild>(this.RawGuilds);
+        get => base.Guilds ??= new CollectionAdapter<HNMO.DataModel.Entities.CastleSiegeGuild, CastleSiegeGuild>(this.RawGuilds);
         protected set
         {
             this.Guilds.Clear();

@@ -1,10 +1,10 @@
-﻿// <copyright file="ItemLevelPrice.cs" company="MUnique">
+﻿// <copyright file="ItemLevelPrice.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a fixed base price of an item at a specific item level.

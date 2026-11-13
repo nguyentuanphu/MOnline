@@ -1,4 +1,4 @@
-// <copyright file="ItemOptionCombinationBonus.Generated.cs" company="MUnique">
+// <copyright file="ItemOptionCombinationBonus.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus"/>.
 /// </summary>
 [Table(nameof(ItemOptionCombinationBonus), Schema = SchemaNames.Configuration)]
-internal partial class ItemOptionCombinationBonus : MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus, IIdentifiable
+internal partial class ItemOptionCombinationBonus : HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class ItemOptionCombinationBonus : MUnique.OpenMU.DataModel.Con
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement> Requirements => base.Requirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.CombinationBonusRequirement, CombinationBonusRequirement>(this.RawRequirements);
+    public override ICollection<HNMO.DataModel.Configuration.Items.CombinationBonusRequirement> Requirements => base.Requirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.CombinationBonusRequirement, CombinationBonusRequirement>(this.RawRequirements);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Bonus"/>.
@@ -54,7 +54,7 @@ internal partial class ItemOptionCombinationBonus : MUnique.OpenMU.DataModel.Con
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition Bonus
+    public override HNMO.DataModel.Attributes.PowerUpDefinition Bonus
     {
         get => base.Bonus;set
         {
@@ -64,7 +64,7 @@ internal partial class ItemOptionCombinationBonus : MUnique.OpenMU.DataModel.Con
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemOptionCombinationBonus();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -72,7 +72,7 @@ internal partial class ItemOptionCombinationBonus : MUnique.OpenMU.DataModel.Con
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionCombinationBonus other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemOptionCombinationBonus other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

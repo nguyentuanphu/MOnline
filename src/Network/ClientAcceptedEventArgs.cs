@@ -1,8 +1,8 @@
-﻿// <copyright file="ClientAcceptedEventArgs.cs" company="MUnique">
+﻿// <copyright file="ClientAcceptedEventArgs.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 /// <summary>
 /// Event args for <see cref="Listener.ClientAccepted"/> which contains the connection of the client.

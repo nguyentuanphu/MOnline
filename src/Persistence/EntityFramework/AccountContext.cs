@@ -1,11 +1,11 @@
-﻿// <copyright file="AccountContext.cs" company="MUnique">
+﻿// <copyright file="AccountContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.EntityFrameworkCore;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// A context which is used by each account. This context does not track and save configuration data.

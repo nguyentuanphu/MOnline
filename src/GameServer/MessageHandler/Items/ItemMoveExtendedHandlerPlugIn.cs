@@ -1,16 +1,16 @@
-﻿// <copyright file="ItemMoveExtendedHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="ItemMoveExtendedHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Items;
+namespace HNMO.GameServer.MessageHandler.Items;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameServer.RemoteView.Inventory;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameServer.RemoteView.Inventory;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for extended item move packets.

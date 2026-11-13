@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeRequestResult.cs" company="MUnique">
+// <copyright file="CastleSiegeRequestResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.CastleSiege;
+namespace HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Defines the common result codes of Castle Siege management requests.

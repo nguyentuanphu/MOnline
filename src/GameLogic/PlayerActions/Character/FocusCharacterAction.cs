@@ -1,10 +1,10 @@
-﻿// <copyright file="FocusCharacterAction.cs" company="MUnique">
+﻿// <copyright file="FocusCharacterAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Character;
+namespace HNMO.GameLogic.PlayerActions.Character;
 
-using MUnique.OpenMU.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Character;
 
 /// <summary>
 /// Action to focus a character in the character selection screen.

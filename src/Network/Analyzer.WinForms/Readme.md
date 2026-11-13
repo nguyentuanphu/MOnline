@@ -1,7 +1,7 @@
 ﻿# Network Analyzer
 
 This little tool can be used to analyze the network traffic between a server
-and client, when they use the mu online protocol.
+and client, when they use the game protocol.
 It acts as a proxy, which means it waits for incoming connections and connects
 to the actual server when a connection arrives. It then forwards all the
 traffic between server and client.
@@ -61,8 +61,8 @@ The connection list has the following context menu items:
 
 ### Incomplete packet definitions
 
-At the moment, at least every packet which is supported by OpenMU is contained
+At the moment, at least every packet which is supported by HNMO is contained
 in the packet definitions.
-There are other packets, which are not yet implemented by OpenMU, of course.
+There are other packets, which are not yet implemented by HNMO, of course.
 These are probably missing.
 Feel free to submit pull requests to make them complete :)

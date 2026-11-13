@@ -1,8 +1,8 @@
-﻿// <copyright file="ChangeOnlineStateAction.cs" company="MUnique">
+﻿// <copyright file="ChangeOnlineStateAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Messenger;
+namespace HNMO.GameLogic.PlayerActions.Messenger;
 
 /// <summary>
 /// Action to change the online state for the messenger.

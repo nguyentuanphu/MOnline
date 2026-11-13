@@ -1,11 +1,11 @@
-// <copyright file="KanturuKillTracker.cs" company="MUnique">
+// <copyright file="KanturuKillTracker.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Thread-safe kill counting for the current Kanturu phase.

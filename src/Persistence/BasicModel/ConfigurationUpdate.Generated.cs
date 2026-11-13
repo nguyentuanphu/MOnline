@@ -1,4 +1,4 @@
-// <copyright file="ConfigurationUpdate.Generated.cs" company="MUnique">
+// <copyright file="ConfigurationUpdate.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ConfigurationUpdate"/>.
 /// </summary>
-public partial class ConfigurationUpdate : MUnique.OpenMU.DataModel.Configuration.ConfigurationUpdate, IIdentifiable, IConvertibleTo<ConfigurationUpdate>
+public partial class ConfigurationUpdate : HNMO.DataModel.Configuration.ConfigurationUpdate, IIdentifiable, IConvertibleTo<ConfigurationUpdate>
 {
     
     /// <summary>

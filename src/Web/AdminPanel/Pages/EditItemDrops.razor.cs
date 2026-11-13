@@ -1,8 +1,8 @@
-// <copyright file="EditItemDrops.razor.cs" company="MUnique">
+// <copyright file="EditItemDrops.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Threading;
 using Microsoft.AspNetCore.Components;
@@ -10,17 +10,17 @@ using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Page which allows to configure all item drops of the game configuration on one page.
@@ -544,7 +544,7 @@ public partial class EditItemDrops : ComponentBase, IAsyncDisposable
 
     /// <summary>
     /// The drop overview of a monster on a map. It considers the drop item groups in the same way
-    /// as the <see cref="MUnique.OpenMU.GameLogic.DefaultDropGenerator"/>, except the quest and character specific groups.
+    /// as the <see cref="HNMO.GameLogic.DefaultDropGenerator"/>, except the quest and character specific groups.
     /// </summary>
     private sealed class MonsterDropOverview
     {

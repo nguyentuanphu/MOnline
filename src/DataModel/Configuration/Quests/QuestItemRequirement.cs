@@ -1,11 +1,11 @@
-﻿// <copyright file="QuestItemRequirement.cs" company="MUnique">
+﻿// <copyright file="QuestItemRequirement.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Quests;
+namespace HNMO.DataModel.Configuration.Quests;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Defines the required item(s) which should be in the inventory of the character

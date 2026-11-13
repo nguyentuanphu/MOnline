@@ -1,4 +1,4 @@
-// <copyright file="PowerUpDefinition.Generated.cs" company="MUnique">
+// <copyright file="PowerUpDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="PowerUpDefinition"/>.
 /// </summary>
-public partial class PowerUpDefinition : MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, IIdentifiable, IConvertibleTo<PowerUpDefinition>
+public partial class PowerUpDefinition : HNMO.DataModel.Attributes.PowerUpDefinition, IIdentifiable, IConvertibleTo<PowerUpDefinition>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class PowerUpDefinition : MUnique.OpenMU.DataModel.Attributes.Pow
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition TargetAttribute
+    public override HNMO.AttributeSystem.AttributeDefinition TargetAttribute
     {
         get => base.TargetAttribute;
         set => base.TargetAttribute = value;
@@ -55,14 +55,14 @@ public partial class PowerUpDefinition : MUnique.OpenMU.DataModel.Attributes.Pow
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinitionValue Boost
+    public override HNMO.DataModel.Attributes.PowerUpDefinitionValue Boost
     {
         get => base.Boost;
         set => base.Boost = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Attributes.PowerUpDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new PowerUpDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -70,7 +70,7 @@ public partial class PowerUpDefinition : MUnique.OpenMU.DataModel.Attributes.Pow
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Attributes.PowerUpDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

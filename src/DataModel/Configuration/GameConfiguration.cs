@@ -1,14 +1,14 @@
-﻿// <copyright file="GameConfiguration.cs" company="MUnique">
+﻿// <copyright file="GameConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Defines the game configuration.
@@ -131,7 +131,7 @@ public partial class GameConfiguration
     public string? MasterExperienceFormula { get; set; }
 
     /// <summary>
-    /// Gets or sets the interval for attribute recoveries. See also MUnique.OpenMU.GameLogic.Attributes.Stats.Regeneration.
+    /// Gets or sets the interval for attribute recoveries. See also HNMO.GameLogic.Attributes.Stats.Regeneration.
     /// </summary>
     /// <remarks>Default value is 3000.</remarks>
     public int RecoveryInterval { get; set; }

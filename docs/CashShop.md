@@ -24,7 +24,7 @@ Using a storage item puts its items into the inventory.
 ## Client constraints
 
 These facts come from the open source client
-[MuMain](https://github.com/sven-n/MuMain) (`src/source/GameShop`,
+[the desktop client](https://github.com/nguyentuanphu/HNMO) (`src/source/GameShop`,
 `src/source/Network/Server/WSclient.cpp`), as protocol facts — see rule 9 of the
 [coding rules](CODING_RULES.md).
 
@@ -33,7 +33,7 @@ These facts come from the open source client
 The client reads the catalog from script files in
 `Data\InGameShopScript\[SaleZone].[Year].[YearId]\` (`IBSCategory.txt`,
 `IBSPackage.txt`, `IBSProduct.txt`) and the banner from `Data\InGameShopBanner\...`.
-The server only sends the version to load; the download from Webzen's server
+The server only sends the version to load; the download from the original developers' server
 doesn't work. The client ships with the script `512.2012.084` and the banner
 `583.2011.001`.
 
@@ -383,15 +383,15 @@ Before the pull request(s):
 
 | Tests | Covers |
 |---|---|
-| `tests/MUnique.OpenMU.Tests/CashShopActionsTest.cs` | opening, points, storage, buy, use (incl. rollback on a full inventory), gift, coin grants |
-| `tests/MUnique.OpenMU.Tests/CashShopProductDeliveryTest.cs` | delivery selection, inactive plugins, the built-in delivery plugins |
-| `tests/MUnique.OpenMU.Tests/GoblinPointsForPlayTimePlugInTest.cs` | Goblin Points for play time |
-| `tests/MUnique.OpenMU.Tests/CashShopRemoteViewTests.cs` | packet bytes, paging, storage indexes |
-| `tests/MUnique.OpenMU.Persistence.Initialization.Tests/CashShopUpdateTest.cs` | fresh database, update plugin incl. a catalog without the delivery items, idempotence |
-| `tests/MUnique.OpenMU.Web.Tests/Api/CashShopControllerTests.cs` | API status codes, references |
-| `tests/MUnique.OpenMU.Web.Tests/Pages/CashShopCoinsPageTests.cs` | coins page |
-| `tests/MUnique.OpenMU.Web.Tests/Pages/CashShopCatalogPageTests.cs` | catalog editor, `CashShopCatalogCheck` |
-| `tests/MUnique.OpenMU.Network.Packets.Tests` | generated packet structure tests |
+| `tests/HNMO.Tests/CashShopActionsTest.cs` | opening, points, storage, buy, use (incl. rollback on a full inventory), gift, coin grants |
+| `tests/HNMO.Tests/CashShopProductDeliveryTest.cs` | delivery selection, inactive plugins, the built-in delivery plugins |
+| `tests/HNMO.Tests/GoblinPointsForPlayTimePlugInTest.cs` | Goblin Points for play time |
+| `tests/HNMO.Tests/CashShopRemoteViewTests.cs` | packet bytes, paging, storage indexes |
+| `tests/HNMO.Persistence.Initialization.Tests/CashShopUpdateTest.cs` | fresh database, update plugin incl. a catalog without the delivery items, idempotence |
+| `tests/HNMO.Web.Tests/Api/CashShopControllerTests.cs` | API status codes, references |
+| `tests/HNMO.Web.Tests/Pages/CashShopCoinsPageTests.cs` | coins page |
+| `tests/HNMO.Web.Tests/Pages/CashShopCatalogPageTests.cs` | catalog editor, `CashShopCatalogCheck` |
+| `tests/HNMO.Network.Packets.Tests` | generated packet structure tests |
 
 The tests use the in-memory persistence. Verified with the game client on
 PostgreSQL: the shop opens and lists the items; buying with WCoin (C), WCoin (P)
@@ -403,12 +403,12 @@ PostgreSQL needs `IntervalAsTimeSpanJsonConverter`, because PostgreSQL writes a
 product duration of a day or more as e.g. `"7 days"` into the JSON.
 
 What can be bought: 21 of 205 packages (see
-[Catalog initialization](#catalog-initialization)). The others have items OpenMU
+[Catalog initialization](#catalog-initialization)). The others have items HNMO
 doesn't define, or are time-limited.
 
 ## Working on it
 
-* **Packets:** edit the XML, then build `MUnique.OpenMU.Network.Packets` and the
+* **Packets:** edit the XML, then build `HNMO.Network.Packets` and the
   packet test project and commit the generated files. An inline enum must not
   have the name of its packet.
 * **Data model:** build `Persistence/SourceGenerator` first (the persistence

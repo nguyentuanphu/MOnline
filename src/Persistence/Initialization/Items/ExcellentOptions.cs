@@ -1,16 +1,16 @@
-﻿// <copyright file="ExcellentOptions.cs" company="MUnique">
+﻿// <copyright file="ExcellentOptions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Items;
+namespace HNMO.Persistence.Initialization.Items;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Properties;
 
 /// <summary>
 /// Initializer for excellent options.
@@ -58,7 +58,7 @@ public class ExcellentOptions : InitializerBase
     }
 
     [Obsolete(@"There are no curse attack excellent options until Season 14 (Summoner renewal). Until then, excellent curse spell books had excellent wizardry attack options.
-        Reference: https://muonline.webzen.com/pt/gameinfo/guide/detail/91")]
+        Reference: the original game guide.")]
     private void CreateCurseAttackOptions()
     {
         var definition = this.Context.CreateNew<ItemOptionDefinition>();

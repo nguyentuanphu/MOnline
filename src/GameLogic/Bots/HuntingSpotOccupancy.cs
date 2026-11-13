@@ -1,11 +1,11 @@
-// <copyright file="HuntingSpotOccupancy.cs" company="MUnique">
+// <copyright file="HuntingSpotOccupancy.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Offline;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Decides whether a hunting spot or monster is already taken by another bot. Bots of the same party

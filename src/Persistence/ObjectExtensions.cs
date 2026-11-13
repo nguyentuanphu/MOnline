@@ -1,16 +1,16 @@
-// <copyright file="ObjectExtensions.cs" company="MUnique">
+// <copyright file="ObjectExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Collections.Concurrent;
 using System.Globalization;
 using System.Reflection;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.DataModel;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Extensions for objects.

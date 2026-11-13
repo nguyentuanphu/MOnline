@@ -1,13 +1,13 @@
-// <copyright file="PersistentObjectsLookupController.cs" company="MUnique">
+// <copyright file="PersistentObjectsLookupController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
 
 /// <summary>
 /// A <see cref="ILookupController"/> which will return persistent objects which

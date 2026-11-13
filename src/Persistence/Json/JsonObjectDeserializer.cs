@@ -1,8 +1,8 @@
-﻿// <copyright file="JsonObjectDeserializer.cs" company="MUnique">
+﻿// <copyright file="JsonObjectDeserializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Json;
+namespace HNMO.Persistence.Json;
 
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
@@ -10,9 +10,9 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A json deserializer which is able to resolve circular references.

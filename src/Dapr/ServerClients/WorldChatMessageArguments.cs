@@ -1,8 +1,8 @@
-﻿// <copyright file="WorldChatMessageArguments.cs" company="MUnique">
+﻿// <copyright file="WorldChatMessageArguments.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ServerClients;
+namespace HNMO.ServerClients;
 
 /// <summary>
 /// Arguments for a message of the world chat.

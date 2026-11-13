@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeGuildParticipant.cs" company="MUnique">
+// <copyright file="CastleSiegeGuildParticipant.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Holds a guild's runtime participation data for the current Castle Siege cycle.

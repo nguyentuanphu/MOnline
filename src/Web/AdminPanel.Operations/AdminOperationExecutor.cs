@@ -1,13 +1,13 @@
-// <copyright file="AdminOperationExecutor.cs" company="MUnique">
+// <copyright file="AdminOperationExecutor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
 
 /// <summary>Enforces authorization and audits operations, with a log-only exception for setup/demo panel actions.</summary>
 /// <param name="caller">The current caller.</param>

@@ -1,8 +1,8 @@
-// <copyright file="ICastleSiegeCommandPlugIn.cs" company="MUnique">
+// <copyright file="ICastleSiegeCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.CastleSiege;
+namespace HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// A view which shows a guild command issued by an alliance master to same-side players.

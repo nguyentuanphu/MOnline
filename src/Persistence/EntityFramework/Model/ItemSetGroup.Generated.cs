@@ -1,4 +1,4 @@
-// <copyright file="ItemSetGroup.Generated.cs" company="MUnique">
+// <copyright file="ItemSetGroup.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemSetGroup"/>.
 /// </summary>
 [Table(nameof(ItemSetGroup), Schema = SchemaNames.Configuration)]
-internal partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup, IIdentifiable
+internal partial class ItemSetGroup : HNMO.DataModel.Configuration.Items.ItemSetGroup, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Ite
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet> Items => base.Items ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItems);
+    public override ICollection<HNMO.DataModel.Configuration.Items.ItemOfItemSet> Items => base.Items ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOfItemSet, ItemOfItemSet>(this.RawItems);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Options"/>.
@@ -54,7 +54,7 @@ internal partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Ite
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionDefinition Options
+    public override HNMO.DataModel.Configuration.Items.ItemOptionDefinition Options
     {
         get => base.Options;set
         {
@@ -64,7 +64,7 @@ internal partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Ite
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemSetGroup Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemSetGroup();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -72,7 +72,7 @@ internal partial class ItemSetGroup : MUnique.OpenMU.DataModel.Configuration.Ite
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemSetGroup other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemSetGroup other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

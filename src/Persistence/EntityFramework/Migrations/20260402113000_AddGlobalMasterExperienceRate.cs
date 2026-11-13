@@ -1,10 +1,10 @@
-﻿// <copyright file="20260402113000_AddGlobalMasterExperienceRate.cs" company="MUnique">
+﻿// <copyright file="20260402113000_AddGlobalMasterExperienceRate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     using Microsoft.EntityFrameworkCore.Infrastructure;
     using Microsoft.EntityFrameworkCore.Migrations;

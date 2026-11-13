@@ -1,6 +1,6 @@
 ﻿# Project feature progress
 
-For the progress of the project as a whole, please have a look at the [projects page](https://github.com/MUnique/OpenMU/projects).
+For the progress of the project as a whole, please have a look at the [projects page](https://github.com/nguyentuanphu/HNMO/projects).
 
 In this document we track the progress of the packet handlers.
 Each packet handler requires some game logic behind it.

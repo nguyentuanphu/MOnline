@@ -1,11 +1,11 @@
-﻿// <copyright file="LevelBonus.cs" company="MUnique">
+﻿// <copyright file="LevelBonus.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// Defines a constant bonus, depending on item level.
@@ -71,6 +71,6 @@ public partial class LevelBonus
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.LevelValueSummary, this.Level, this.AdditionalValue);
+        return string.Format(HNMO.DataModel.Properties.Resources.LevelValueSummary, this.Level, this.AdditionalValue);
     }
 }

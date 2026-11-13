@@ -1,16 +1,16 @@
-﻿// <copyright file="FireScreamSkillPlugIn.cs" company="MUnique">
+﻿// <copyright file="FireScreamSkillPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles the fire scream skill of the dark lord class. Based on a chance, it does an additional damage (explosion) to any targets in a radius which origin is the target itself.

@@ -1,16 +1,16 @@
-﻿// <copyright file="DiscordIntegrationViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="DiscordIntegrationViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Discord;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
-using DiscordIntegrationInfo = MUnique.OpenMU.GameLogic.Discord.DiscordIntegrationInfo;
+using HNMO.GameLogic.Discord;
+using HNMO.GameLogic.Views;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
+using DiscordIntegrationInfo = HNMO.GameLogic.Discord.DiscordIntegrationInfo;
 
 /// <summary>
 /// The default implementation of the <see cref="IDiscordIntegrationViewPlugIn"/> which sends the Discord

@@ -1,19 +1,19 @@
-﻿// <copyright file="AddItemDropGroupForJewelsUpdateSeason6.cs" company="MUnique">
+﻿// <copyright file="AddItemDropGroupForJewelsUpdateSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update creates a specific item drop group for jewels with a default chance of 5%.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddItemDropGroupForJewelsUpdate075_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddItemDropGroupForJewelsUpdate075_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddItemDropGroupForJewelsUpdate075_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddItemDropGroupForJewelsUpdate075_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("F958CC5B-C1E6-4F67-B48D-4BF75EC5CAA8")]
 public class AddItemDropGroupForJewelsUpdateSeason6 : AddItemDropGroupForJewelsUpdate075
 {

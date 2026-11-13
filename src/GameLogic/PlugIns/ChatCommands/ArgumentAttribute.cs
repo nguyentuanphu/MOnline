@@ -1,8 +1,8 @@
-﻿// <copyright file="ArgumentAttribute.cs" company="MUnique">
+﻿// <copyright file="ArgumentAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 /// <summary>
 /// Attribute used in the arguments of the commands.

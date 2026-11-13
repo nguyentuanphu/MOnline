@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfContractResult.cs" company="MUnique">
+﻿// <copyright file="CrywolfContractResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// The result of a request to contract an altar of the crywolf event.

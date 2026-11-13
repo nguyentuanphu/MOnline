@@ -1,12 +1,12 @@
-// <copyright file="ApiKeyRepository.cs" company="MUnique">
+// <copyright file="ApiKeyRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
+namespace HNMO.Persistence.EntityFramework.AdminAuth;
 
 using System.Threading;
 using Microsoft.EntityFrameworkCore;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Implementation of the <see cref="IApiKeyRepository"/> which stores the keys

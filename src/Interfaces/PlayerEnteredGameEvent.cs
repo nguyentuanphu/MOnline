@@ -1,8 +1,8 @@
-﻿// <copyright file="PlayerEnteredGameEvent.cs" company="MUnique">
+﻿// <copyright file="PlayerEnteredGameEvent.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// A character entered the game.

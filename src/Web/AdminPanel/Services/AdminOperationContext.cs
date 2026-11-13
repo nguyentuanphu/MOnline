@@ -1,15 +1,15 @@
-// <copyright file="AdminOperationContext.cs" company="MUnique">
+// <copyright file="AdminOperationContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.Security.Claims;
 using System.Threading;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Http;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Resolves HTTP API callers and the current Blazor circuit user.</summary>
 /// <param name="http">The HTTP context accessor.</param>
@@ -43,7 +43,7 @@ public sealed class AdminOperationContext(IHttpContextAccessor http, Authenticat
             // Anonymous setup applies only to panel circuits, never to MCP or REST requests.
             if (isPanel && !await userAvailability.AnyUserExistsAsync(cancellationToken).ConfigureAwait(false))
             {
-                return new AdminActor("setup", "Initial setup", "panel", [MUnique.OpenMU.Persistence.AdminAuth.AdminRoles.Administrator]) { IsInitialSetup = true };
+                return new AdminActor("setup", "Initial setup", "panel", [HNMO.Persistence.AdminAuth.AdminRoles.Administrator]) { IsInitialSetup = true };
             }
 
             throw new AdminOperationException("An authenticated administrator or API client is required.", AdminOperationErrorKind.Forbidden);

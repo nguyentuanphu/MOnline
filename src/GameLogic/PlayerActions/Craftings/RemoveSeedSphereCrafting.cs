@@ -1,12 +1,12 @@
-﻿// <copyright file="RemoveSeedSphereCrafting.cs" company="MUnique">
+﻿// <copyright file="RemoveSeedSphereCrafting.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
+namespace HNMO.GameLogic.PlayerActions.Craftings;
 
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.PlayerActions.Items;
 
 /// <summary>
 /// Crafting to remove a mounted seed sphere from a socket item.

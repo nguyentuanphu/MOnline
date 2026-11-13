@@ -1,11 +1,11 @@
-﻿// <copyright file="BleedingMagicEffect.cs" company="MUnique">
+﻿// <copyright file="BleedingMagicEffect.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Timers;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The magic effect for bleeding, which will damage the character every second until the effect ends.

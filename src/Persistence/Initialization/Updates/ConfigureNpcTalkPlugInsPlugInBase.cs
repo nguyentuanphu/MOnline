@@ -1,13 +1,13 @@
-﻿// <copyright file="ConfigureNpcTalkPlugInsPlugInBase.cs" company="MUnique">
+﻿// <copyright file="ConfigureNpcTalkPlugInsPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update configures the NPCs of the plugins which handle talking to an NPC (<see cref="NpcTalkPlugInBase"/>).

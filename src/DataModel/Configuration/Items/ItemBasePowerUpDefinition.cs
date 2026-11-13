@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemBasePowerUpDefinition.cs" company="MUnique">
+﻿// <copyright file="ItemBasePowerUpDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// Defines an item base power up definition.

@@ -1,12 +1,12 @@
-// <copyright file="PacketDetail.razor.cs" company="MUnique">
+// <copyright file="PacketDetail.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.NetworkAnalyzer;
+namespace HNMO.Web.AdminPanel.Components.NetworkAnalyzer;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Network.Analyzer;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// Shows the content of a selected data packet.

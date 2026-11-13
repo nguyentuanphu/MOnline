@@ -1,11 +1,11 @@
-// <copyright file="KanturuTowerEntry.cs" company="MUnique">
+// <copyright file="KanturuTowerEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Tower entry without a running event game, e.g. after a server restart while the

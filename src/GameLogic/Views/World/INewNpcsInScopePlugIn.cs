@@ -1,10 +1,10 @@
-﻿// <copyright file="INewNpcsInScopePlugIn.cs" company="MUnique">
+﻿// <copyright file="INewNpcsInScopePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.World;
+namespace HNMO.GameLogic.Views.World;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Interface of a view whose implementation informs about non-player-characters which went into the observing scope.

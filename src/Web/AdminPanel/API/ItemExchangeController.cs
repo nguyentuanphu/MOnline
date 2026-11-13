@@ -1,18 +1,18 @@
-// <copyright file="ItemExchangeController.cs" company="MUnique">
+// <copyright file="ItemExchangeController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations.ItemExchange;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations.ItemExchange;
 
 /// <summary>
-/// Provides the items as an item exchange file of the MuMain client, which its editor downloads.
+/// Provides the items as an item exchange file of the desktop client, which its editor downloads.
 /// </summary>
 /// <param name="operations">The item exchange operations.</param>
 [ApiController]

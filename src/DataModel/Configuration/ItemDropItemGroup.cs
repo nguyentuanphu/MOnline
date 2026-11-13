@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemDropItemGroup.cs" company="MUnique">
+﻿// <copyright file="ItemDropItemGroup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.Annotations;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Defines an effect which is shown in the game, when a <see cref="ItemDropItemGroup"/> is applied.

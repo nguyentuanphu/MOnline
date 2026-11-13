@@ -1,11 +1,11 @@
-﻿// <copyright file="BloodCastleItemExtensions.cs" company="MUnique">
+﻿// <copyright file="BloodCastleItemExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Item-related extension methods for the blood castle event.

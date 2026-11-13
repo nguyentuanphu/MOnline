@@ -1,8 +1,8 @@
-﻿// <copyright file="PipelinedSimpleModulusEncryptor.cs" company="MUnique">
+﻿// <copyright file="PipelinedSimpleModulusEncryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.SimpleModulus;
+namespace HNMO.Network.SimpleModulus;
 
 using System.Buffers;
 using System.IO.Pipelines;
@@ -12,7 +12,7 @@ using static System.Buffers.Binary.BinaryPrimitives;
 /// <summary>
 /// The standard encryptor (server-side) which encrypts 0xC3 and 0xC4-packets with the "simple modulus" algorithm.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.Network.SimpleModulus.PipelinedSimpleModulusBase" />
+/// <seealso cref="HNMO.Network.SimpleModulus.PipelinedSimpleModulusBase" />
 public class PipelinedSimpleModulusEncryptor : PipelinedSimpleModulusBase, IPipelinedEncryptor
 {
     /// <summary>

@@ -1,11 +1,11 @@
-﻿// <copyright file="Extensions.cs" company="MUnique">
+﻿// <copyright file="Extensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.MiniGames;
+namespace HNMO.GameServer.RemoteView.MiniGames;
 
-using MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
+using HNMO.GameLogic.PlayerActions.MiniGames;
+using HNMO.Network.Packets.ServerToClient;
 
 /// <summary>
 /// Extension methods for various classes regarding views of mini games.

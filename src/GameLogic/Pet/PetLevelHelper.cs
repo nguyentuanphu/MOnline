@@ -1,11 +1,11 @@
-﻿// <copyright file="PetLevelHelper.cs" company="MUnique">
+﻿// <copyright file="PetLevelHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Pet;
+namespace HNMO.GameLogic.Pet;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Items;
 using org.mariuszgromada.math.mxparser;
 
 /// <summary>

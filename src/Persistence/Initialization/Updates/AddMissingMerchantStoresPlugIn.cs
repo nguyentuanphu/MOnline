@@ -1,12 +1,12 @@
-// <copyright file="AddMissingMerchantStoresPlugIn.cs" company="MUnique">
+// <copyright file="AddMissingMerchantStoresPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update gives a merchant store to a merchant NPC which has a merchant window
@@ -20,7 +20,7 @@ using MUnique.OpenMU.PlugIns;
 /// fit either of them.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMissingMerchantStoresPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMissingMerchantStoresPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMissingMerchantStoresPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMissingMerchantStoresPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("f78d6e1d-1cb5-45f7-912d-54b2cb1220eb")]
 public class AddMissingMerchantStoresPlugIn : UpdatePlugInBase
 {

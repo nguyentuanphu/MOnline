@@ -1,13 +1,13 @@
-﻿// <copyright file="Jewels.cs" company="MUnique">
+﻿// <copyright file="Jewels.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version097d.Items;
+namespace HNMO.Persistence.Initialization.Version097d.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Properties;
 
 /// <summary>
 /// Jewels for MU Version 0.97d.

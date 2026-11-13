@@ -13,7 +13,7 @@ The deployment guides moved to the documentation website:
   the compose files are in [distributed](distributed)
 * [Kubernetes](../docs-website/docs/deployment/kubernetes.md) — the distributed
   deployment on Kubernetes, experimental; the Helm chart is in
-  [kubernetes/openmu](kubernetes/openmu)
+  [kubernetes/hnmo](kubernetes/hnmo)
 * [Startup parameters and environment variables](../docs-website/docs/deployment/startup-parameters.md)
 
 The website is built from the [docs-website](../docs-website) folder of this

@@ -6,7 +6,7 @@ The game client noticed, that the coordinates of the player is not on the ground
 
 ## Causes the following actions on the server side
 
-The server sets the player on the new coordinates. Not handled on OpenMU.
+The server sets the player on the new coordinates. Not handled on HNMO.
 
 ## Structure
 

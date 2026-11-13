@@ -1,12 +1,12 @@
-﻿// <copyright file="ServerList.cs" company="MUnique">
+﻿// <copyright file="ServerList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer;
+namespace HNMO.ConnectServer;
 
 using System.Threading;
-using MUnique.OpenMU.Network.Packets.ConnectServer;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Network.Packets.ConnectServer;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// The server list.

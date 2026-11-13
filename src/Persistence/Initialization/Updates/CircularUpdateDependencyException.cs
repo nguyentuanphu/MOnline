@@ -1,8 +1,8 @@
-// <copyright file="CircularUpdateDependencyException.cs" company="MUnique">
+// <copyright file="CircularUpdateDependencyException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 /// <summary>
 /// Exception that is thrown when a circular dependency between updates is detected.

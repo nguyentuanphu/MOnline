@@ -9,7 +9,7 @@ It might help to find/analyse errors which occurred on the client side.
 
 This is a command line tool. The file name is given as first parameter. If it
 contains spaces, wrap it by quotes.
-Example: ```MUnique.OpenMU.ClientErrorLogDecryptor.exe "C:\MU-Season 6E3\MuError.log"```
+Example: ```HNMO.ClientErrorLogDecryptor.exe "C:\MU-Season 6E3\MuError.log"```
 
 On windows you can also just simply drag & drop your MuError.log file on the exe.
 

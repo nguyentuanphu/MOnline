@@ -1,8 +1,8 @@
-﻿// <copyright file="ImperialGuardianWeather.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianWeather.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
+namespace HNMO.GameLogic.MiniGames.ImperialGuardian;
 
 /// <summary>
 /// The weather of the map of the imperial guardian event, which is chosen randomly for each game.

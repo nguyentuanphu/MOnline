@@ -1,8 +1,8 @@
-﻿// <copyright file="IRotatable.cs" company="MUnique">
+﻿// <copyright file="IRotatable.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// Interface for a rotatable class. An instance implementing this interface can be rotated on its game map.

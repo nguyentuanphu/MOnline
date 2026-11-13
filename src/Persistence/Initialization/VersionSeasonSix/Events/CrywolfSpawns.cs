@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfSpawns.cs" company="MUnique">
+﻿// <copyright file="CrywolfSpawns.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Events;
 
 /// <summary>
 /// The monster spawns of the army of Balgass on the crywolf map, which are spawned by the crywolf event.

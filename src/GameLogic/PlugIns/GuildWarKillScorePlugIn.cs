@@ -1,13 +1,13 @@
-﻿// <copyright file="GuildWarKillScorePlugIn.cs" company="MUnique">
+﻿// <copyright file="GuildWarKillScorePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.GuildWar;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin increases the score of the soccer result, if a kill occurred.

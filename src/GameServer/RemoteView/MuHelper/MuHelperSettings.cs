@@ -1,10 +1,10 @@
-// <copyright file="MuHelperSettings.cs" company="MUnique">
+// <copyright file="MuHelperSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.MuHelper;
+namespace HNMO.GameServer.RemoteView.MuHelper;
 
-using MUnique.OpenMU.GameLogic.MuHelper;
+using HNMO.GameLogic.MuHelper;
 
 /// <summary>
 /// Deserialized representation of the 257-byte <c>PRECEIVE_MUHELPER_DATA</c> blob.

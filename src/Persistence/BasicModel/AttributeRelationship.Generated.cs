@@ -1,4 +1,4 @@
-// <copyright file="AttributeRelationship.Generated.cs" company="MUnique">
+// <copyright file="AttributeRelationship.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="AttributeRelationship"/>.
 /// </summary>
-public partial class AttributeRelationship : MUnique.OpenMU.AttributeSystem.AttributeRelationship, IIdentifiable, IConvertibleTo<AttributeRelationship>
+public partial class AttributeRelationship : HNMO.AttributeSystem.AttributeRelationship, IIdentifiable, IConvertibleTo<AttributeRelationship>
 {
     /// <inheritdoc />
     public AttributeRelationship()
@@ -25,19 +25,19 @@ public partial class AttributeRelationship : MUnique.OpenMU.AttributeSystem.Attr
     }
 
     /// <inheritdoc />
-    public AttributeRelationship(MUnique.OpenMU.AttributeSystem.AttributeDefinition targetAttribute, System.Single inputOperand, MUnique.OpenMU.AttributeSystem.AttributeDefinition inputAttribute, MUnique.OpenMU.AttributeSystem.AggregateType aggregateType)
+    public AttributeRelationship(HNMO.AttributeSystem.AttributeDefinition targetAttribute, System.Single inputOperand, HNMO.AttributeSystem.AttributeDefinition inputAttribute, HNMO.AttributeSystem.AggregateType aggregateType)
         : base(targetAttribute, inputOperand, inputAttribute, aggregateType)
     {
     }
 
     /// <inheritdoc />
-    public AttributeRelationship(MUnique.OpenMU.AttributeSystem.AttributeDefinition targetAttribute, MUnique.OpenMU.AttributeSystem.AttributeDefinition inputOperand, MUnique.OpenMU.AttributeSystem.AttributeDefinition inputAttribute, MUnique.OpenMU.AttributeSystem.AggregateType aggregateType)
+    public AttributeRelationship(HNMO.AttributeSystem.AttributeDefinition targetAttribute, HNMO.AttributeSystem.AttributeDefinition inputOperand, HNMO.AttributeSystem.AttributeDefinition inputAttribute, HNMO.AttributeSystem.AggregateType aggregateType)
         : base(targetAttribute, inputOperand, inputAttribute, aggregateType)
     {
     }
 
     /// <inheritdoc />
-    public AttributeRelationship(MUnique.OpenMU.AttributeSystem.AttributeDefinition targetAttribute, System.Single inputOperand, MUnique.OpenMU.AttributeSystem.AttributeDefinition inputAttribute, MUnique.OpenMU.AttributeSystem.InputOperator inputOperator, MUnique.OpenMU.AttributeSystem.AttributeDefinition operandAttribute, MUnique.OpenMU.AttributeSystem.AggregateType aggregateType)
+    public AttributeRelationship(HNMO.AttributeSystem.AttributeDefinition targetAttribute, System.Single inputOperand, HNMO.AttributeSystem.AttributeDefinition inputAttribute, HNMO.AttributeSystem.InputOperator inputOperator, HNMO.AttributeSystem.AttributeDefinition operandAttribute, HNMO.AttributeSystem.AggregateType aggregateType)
         : base(targetAttribute, inputOperand, inputAttribute, inputOperator, operandAttribute, aggregateType)
     {
     }
@@ -59,7 +59,7 @@ public partial class AttributeRelationship : MUnique.OpenMU.AttributeSystem.Attr
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition TargetAttribute
+    public override HNMO.AttributeSystem.AttributeDefinition TargetAttribute
     {
         get => base.TargetAttribute;
         set => base.TargetAttribute = value;
@@ -77,7 +77,7 @@ public partial class AttributeRelationship : MUnique.OpenMU.AttributeSystem.Attr
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition InputAttribute
+    public override HNMO.AttributeSystem.AttributeDefinition InputAttribute
     {
         get => base.InputAttribute;
         set => base.InputAttribute = value;
@@ -95,7 +95,7 @@ public partial class AttributeRelationship : MUnique.OpenMU.AttributeSystem.Attr
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition OperandAttribute
+    public override HNMO.AttributeSystem.AttributeDefinition OperandAttribute
     {
         get => base.OperandAttribute;
         set => base.OperandAttribute = value;

@@ -1,12 +1,12 @@
-﻿// <copyright file="IWarpGateEnteringPlugIn.cs" company="MUnique">
+﻿// <copyright file="IWarpGateEnteringPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin interface which is called when a player is about to enter a warp gate, or to warp to a gate by the warp command.

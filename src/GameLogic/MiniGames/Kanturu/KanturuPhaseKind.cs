@@ -1,8 +1,8 @@
-﻿// <copyright file="KanturuPhaseKind.cs" company="MUnique">
+﻿// <copyright file="KanturuPhaseKind.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 /// <summary>
 /// The kind of a <see cref="KanturuPhaseDefinition"/>, which decides how the

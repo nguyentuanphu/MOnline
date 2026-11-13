@@ -1,12 +1,12 @@
-﻿// <copyright file="PowerUpDefinitionValue.cs" company="MUnique">
+﻿// <copyright file="PowerUpDefinitionValue.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Attributes;
+namespace HNMO.DataModel.Attributes;
 
 using System.ComponentModel;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The power up definition value which can consist of a constant value and several related values which are all added together to get the result.

@@ -1,8 +1,8 @@
-﻿// <copyright file="IPlugInContainer.cs" company="MUnique">
+﻿// <copyright file="IPlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns;
+namespace HNMO.PlugIns;
 
 /// <summary>
 /// A interface a plugin container (e.g. a proxy object) which manages <typeparamref name="TPlugIn"/>s.

@@ -1,12 +1,12 @@
-// <copyright file="MapObjectFactory.cs" company="MUnique">
+// <copyright file="MapObjectFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.MapEditor;
+namespace HNMO.Web.Shared.Components.MapEditor;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.Persistence;
 
 /// <summary>
 /// Handles creation and duplication of map objects within a <see cref="GameMapDefinition"/>,

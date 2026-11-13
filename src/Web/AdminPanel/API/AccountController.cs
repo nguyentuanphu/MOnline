@@ -1,17 +1,17 @@
-// <copyright file="AccountController.cs" company="MUnique">
+// <copyright file="AccountController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.Text.Json.Nodes;
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>
 /// API controller which creates accounts, e.g. for the registration form of a website.
@@ -26,11 +26,11 @@ using MUnique.OpenMU.Web.AdminPanel.Operations;
 [Route("api/accounts")]
 public class AccountController : ControllerBase
 {
-    private readonly MUnique.OpenMU.Web.AdminPanel.Operations.AccountWriteOperations _operations;
+    private readonly HNMO.Web.AdminPanel.Operations.AccountWriteOperations _operations;
 
     /// <summary>Initializes a new instance of the <see cref="AccountController"/> class.</summary>
     /// <param name="operations">The shared, audited account operations.</param>
-    public AccountController(MUnique.OpenMU.Web.AdminPanel.Operations.AccountWriteOperations operations) => this._operations = operations;
+    public AccountController(HNMO.Web.AdminPanel.Operations.AccountWriteOperations operations) => this._operations = operations;
 
     /// <summary>
     /// Registers a new account, which can log in right away.

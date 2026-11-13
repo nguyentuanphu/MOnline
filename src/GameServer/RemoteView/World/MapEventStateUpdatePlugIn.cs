@@ -1,13 +1,13 @@
-﻿// <copyright file="MapEventStateUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="MapEventStateUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IMapEventStateUpdatePlugIn"/> which is forwarding everything to the game client with specific data packets.

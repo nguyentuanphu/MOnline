@@ -1,16 +1,16 @@
-﻿// <copyright file="ShowMiniGameEnterResultViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowMiniGameEnterResultViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.MiniGames;
+namespace HNMO.GameServer.RemoteView.MiniGames;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
-using MiniGameType = MUnique.OpenMU.DataModel.Configuration.MiniGameType;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.PlayerActions.MiniGames;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
+using MiniGameType = HNMO.DataModel.Configuration.MiniGameType;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowMiniGameEnterResultPlugIn"/> which is forwarding everything to the game client with specific data packets.

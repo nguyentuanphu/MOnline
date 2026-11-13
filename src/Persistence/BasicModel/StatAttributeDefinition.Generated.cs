@@ -1,4 +1,4 @@
-// <copyright file="StatAttributeDefinition.Generated.cs" company="MUnique">
+// <copyright file="StatAttributeDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="StatAttributeDefinition"/>.
 /// </summary>
-public partial class StatAttributeDefinition : MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition, IIdentifiable, IConvertibleTo<StatAttributeDefinition>
+public partial class StatAttributeDefinition : HNMO.DataModel.Configuration.StatAttributeDefinition, IIdentifiable, IConvertibleTo<StatAttributeDefinition>
 {
     /// <inheritdoc />
     public StatAttributeDefinition()
@@ -25,7 +25,7 @@ public partial class StatAttributeDefinition : MUnique.OpenMU.DataModel.Configur
     }
 
     /// <inheritdoc />
-    public StatAttributeDefinition(MUnique.OpenMU.AttributeSystem.AttributeDefinition attribute, System.Single baseValue, System.Boolean increasableByPlayer)
+    public StatAttributeDefinition(HNMO.AttributeSystem.AttributeDefinition attribute, System.Single baseValue, System.Boolean increasableByPlayer)
         : base(attribute, baseValue, increasableByPlayer)
     {
     }
@@ -47,14 +47,14 @@ public partial class StatAttributeDefinition : MUnique.OpenMU.DataModel.Configur
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Attribute
+    public override HNMO.AttributeSystem.AttributeDefinition Attribute
     {
         get => base.Attribute;
         set => base.Attribute = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.StatAttributeDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new StatAttributeDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -62,7 +62,7 @@ public partial class StatAttributeDefinition : MUnique.OpenMU.DataModel.Configur
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.StatAttributeDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.StatAttributeDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

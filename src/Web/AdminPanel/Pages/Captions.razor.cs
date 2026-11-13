@@ -1,8 +1,8 @@
-// <copyright file="Captions.razor.cs" company="MUnique">
+// <copyright file="Captions.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Diagnostics;
 using System.Globalization;
@@ -10,9 +10,9 @@ using System.Threading;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Rendering;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Initialization.Captions;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.Persistence;
+using HNMO.Persistence.Initialization.Captions;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// Page which compares the captions of the configuration with their sources and applies selected changes.
@@ -175,7 +175,7 @@ public partial class Captions : IDisposable
 
     /// <summary>
     /// Checks in the background if built-in captions can be linked, which are not linked yet,
-    /// e.g. because an update of OpenMU added their sources.
+    /// e.g. because an update of HNMO added their sources.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token, which is canceled when the page is disposed.</param>
     private async Task CheckLinkableCaptionsAsync(CancellationToken cancellationToken)

@@ -1,8 +1,8 @@
-// <copyright file="AuthenticatorTimeStep.cs" company="MUnique">
+// <copyright file="AuthenticatorTimeStep.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Buffers.Binary;
 using System.Globalization;

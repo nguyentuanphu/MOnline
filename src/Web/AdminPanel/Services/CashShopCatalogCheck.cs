@@ -1,12 +1,12 @@
-﻿// <copyright file="CashShopCatalogCheck.cs" company="MUnique">
+﻿// <copyright file="CashShopCatalogCheck.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CashShop;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CashShop;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// Checks the packages of the cash shop catalog for problems, which the catalog editor shows.

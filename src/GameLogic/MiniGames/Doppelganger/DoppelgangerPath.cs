@@ -1,8 +1,8 @@
-﻿// <copyright file="DoppelgangerPath.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerPath.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
+namespace HNMO.GameLogic.MiniGames.Doppelganger;
 
 /// <summary>
 /// The path of the monsters towards the magic circle on one doppelganger event map.

@@ -1,12 +1,12 @@
-// <copyright file="ChatRoom.cs" company="MUnique">
+// <copyright file="ChatRoom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

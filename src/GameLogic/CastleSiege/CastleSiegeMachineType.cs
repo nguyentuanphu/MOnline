@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeMachineType.cs" company="MUnique">
+// <copyright file="CastleSiegeMachineType.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
 /// <summary>
 /// The available Castle Siege warfare-machine types.

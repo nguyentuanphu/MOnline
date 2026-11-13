@@ -1,13 +1,13 @@
-﻿// <copyright file="AddIronKnightStabUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddIronKnightStabUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Raklion;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Raklion;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Lets the iron knight of raklion use its stab, by setting its intelligence to the <see cref="IronKnightIntelligence"/>.
@@ -16,7 +16,7 @@ using MUnique.OpenMU.PlugIns;
 /// An intelligence which was already configured for the iron knight is kept.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddIronKnightStabUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddIronKnightStabUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddIronKnightStabUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddIronKnightStabUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6C0E4B2A-93F1-4D7E-A58B-1F2D7C9E3A40")]
 public class AddIronKnightStabUpdatePlugIn : UpdatePlugInBase
 {

@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordPendingRoleRevocation.cs" company="MUnique">
+﻿// <copyright file="DiscordPendingRoleRevocation.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 /// <summary>
 /// A pending removal of the role of linked players.

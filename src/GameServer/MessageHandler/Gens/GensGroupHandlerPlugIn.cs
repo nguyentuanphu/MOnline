@@ -1,13 +1,13 @@
-// <copyright file="GensGroupHandlerPlugIn.cs" company="MUnique">
+// <copyright file="GensGroupHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Gens;
+namespace HNMO.GameServer.MessageHandler.Gens;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for the packets of the gens system (0xF8 identifier).

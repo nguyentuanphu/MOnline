@@ -1,11 +1,11 @@
-﻿// <copyright file="GameConfigurationJsonQueryBuilder.cs" company="MUnique">
+﻿// <copyright file="GameConfigurationJsonQueryBuilder.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Json;
+namespace HNMO.Persistence.EntityFramework.Json;
 
 using Microsoft.EntityFrameworkCore.Metadata;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// <see cref="JsonQueryBuilder"/> for <see cref="GameConfiguration"/>.

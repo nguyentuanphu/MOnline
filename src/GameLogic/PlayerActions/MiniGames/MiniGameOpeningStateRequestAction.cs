@@ -1,12 +1,12 @@
-﻿// <copyright file="MiniGameOpeningStateRequestAction.cs" company="MUnique">
+﻿// <copyright file="MiniGameOpeningStateRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.PlugIns.ChatCommands;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Action which handles the mini game opening state request.

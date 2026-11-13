@@ -1,13 +1,13 @@
-// <copyright file="OfflinePartyMember.cs" company="MUnique">
+// <copyright file="OfflinePartyMember.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

@@ -1,23 +1,23 @@
-// <copyright file="ApiKeys.razor.cs" company="MUnique">
+// <copyright file="ApiKeys.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.AdminPanel.Services;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.AdminPanel.Services;
+using HNMO.Web.Shared.Components.Toast;
 
 /// <summary>
 /// The page which manages the API keys of the public API.
 /// </summary>
 public partial class ApiKeys : IAsyncDisposable
 {
-    private const string ClipboardScriptPath = "./_content/MUnique.OpenMU.Web.AdminPanel/js/clipboard.js";
+    private const string ClipboardScriptPath = "./_content/HNMO.Web.AdminPanel/js/clipboard.js";
 
     private IList<ApiKey> _apiKeys = new List<ApiKey>();
     private DateTime? _firstUserCreatedAt;

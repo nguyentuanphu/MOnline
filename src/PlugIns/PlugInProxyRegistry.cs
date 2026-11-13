@@ -1,8 +1,8 @@
-﻿// <copyright file="PlugInProxyRegistry.cs" company="MUnique">
+﻿// <copyright file="PlugInProxyRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns;
+namespace HNMO.PlugIns;
 
 using System.Collections.Concurrent;
 using System.Diagnostics.CodeAnalysis;
@@ -10,7 +10,7 @@ using System.Runtime.CompilerServices;
 
 /// <summary>
 /// Registry for the proxies of plugin points, which are generated at compile time
-/// by the <c>PlugInProxyGenerator</c> of the <c>MUnique.OpenMU.PlugIns.Generators</c> project.
+/// by the <c>PlugInProxyGenerator</c> of the <c>HNMO.PlugIns.Generators</c> project.
 /// </summary>
 /// <remarks>
 /// The generated proxies register themselves with a module initializer. For plugin points without

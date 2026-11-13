@@ -1,12 +1,12 @@
-﻿// <copyright file="ChatMessageGuildProcessor.cs" company="MUnique">
+﻿// <copyright file="ChatMessageGuildProcessor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Chat;
+namespace HNMO.GameLogic.PlayerActions.Chat;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// A chat message processor which sends the message to the guild.

@@ -1,10 +1,10 @@
-﻿// <copyright file="IKanturuEventViewPlugIn.cs" company="MUnique">
+﻿// <copyright file="IKanturuEventViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// View plugin interface for Kanturu-specific server-to-client packets (0xD1 group).

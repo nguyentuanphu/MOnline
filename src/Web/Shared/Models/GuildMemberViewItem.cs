@@ -1,10 +1,10 @@
-// <copyright file="GuildMemberViewItem.cs" company="MUnique">
+// <copyright file="GuildMemberViewItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Models;
+namespace HNMO.Web.Shared.Models;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Data transfer object for a guild member in the admin panel guild detail page.

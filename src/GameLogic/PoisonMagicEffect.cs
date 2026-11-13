@@ -1,12 +1,12 @@
-﻿// <copyright file="PoisonMagicEffect.cs" company="MUnique">
+﻿// <copyright file="PoisonMagicEffect.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Timers;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// The magic effect for poison, which will damage the character in an interval until the effect ends.

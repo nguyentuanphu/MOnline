@@ -1,15 +1,15 @@
-﻿// <copyright file="GameServerController.cs" company="MUnique">
+﻿// <copyright file="GameServerController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.Host;
+namespace HNMO.GameServer.Host;
 
 using global::Dapr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.ServerClients;
+using HNMO.Dapr.Common;
+using HNMO.Interfaces;
+using HNMO.ServerClients;
 
 /// <summary>
 /// The API controller for the game server which handles the calls from other services.

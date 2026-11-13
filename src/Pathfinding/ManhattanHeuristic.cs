@@ -1,8 +1,8 @@
-﻿// <copyright file="ManhattanHeuristic.cs" company="MUnique">
+﻿// <copyright file="ManhattanHeuristic.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Pathfinding;
+namespace HNMO.Pathfinding;
 
 /// <summary>
 /// The manhattan (because of how the buildings are placed) heuristic.

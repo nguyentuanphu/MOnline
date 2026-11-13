@@ -1,14 +1,14 @@
-// <copyright file="PKClearChatCommandPlugIn.cs" company="MUnique">
+// <copyright file="PKClearChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.GameLogic.Views.Character;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles pk clear commands.
@@ -129,13 +129,13 @@ public class PkClearChatCommandPlugIn : ChatCommandPlugInBase<PkClearChatCommand
         /// <summary>
         /// Gets or sets the Zen cost per kill.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PKClearConfiguration_ZenCostPerKill_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PKClearConfiguration_ZenCostPerKill_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.PKClearConfiguration_ZenCostPerKill_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.PKClearConfiguration_ZenCostPerKill_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public int ZenCostPerKill { get; set; } = 10_000_000;
 
         /// <summary>
         /// Gets or sets a value indicating whether regular players are allowed to clear their PK status.
         /// </summary>
-        [Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PKClearConfiguration_AllowRegularPlayers_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.PKClearConfiguration_AllowRegularPlayers_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+        [Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.PKClearConfiguration_AllowRegularPlayers_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.PKClearConfiguration_AllowRegularPlayers_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
         public bool AllowRegularPlayers { get; set; } = true;
     }
 }

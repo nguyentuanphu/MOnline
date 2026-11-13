@@ -1,10 +1,10 @@
-﻿// <copyright file="IllusionTempleTicketCrafting.cs" company="MUnique">
+﻿// <copyright file="IllusionTempleTicketCrafting.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
+namespace HNMO.GameLogic.PlayerActions.Craftings;
 
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// Crafting for Illusion Temple Event Tickets.

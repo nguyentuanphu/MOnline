@@ -1,21 +1,21 @@
-﻿// <copyright file="LostMapDroppedPlugIn.cs" company="MUnique">
+﻿// <copyright file="LostMapDroppedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.PlugIns.ChatCommands;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This plugin transforms a stack of symbol of kundun into a lost map.
 /// todo: implement plugin configuration to resolve magic numbers.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.LostMapDroppedPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.LostMapDroppedPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.LostMapDroppedPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.LostMapDroppedPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("F6DB10E0-AE7F-4BC6-914F-B858763C5CF7")]
 public sealed class LostMapDroppedPlugIn : IItemDropPlugIn
 {

@@ -1,8 +1,8 @@
-// <copyright file="CrywolfMonsterSkill.cs" company="MUnique">
+// <copyright file="CrywolfMonsterSkill.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// A skill of a monster of the army of Balgass, like the monster skill units of the original game.

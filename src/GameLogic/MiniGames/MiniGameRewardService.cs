@@ -1,13 +1,13 @@
-﻿// <copyright file="MiniGameRewardService.cs" company="MUnique">
+﻿// <copyright file="MiniGameRewardService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.DataModel.Statistics;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Statistics;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Persistence;
 
 /// <summary>
 /// Gives the mini game rewards to the players and saves the ranking.

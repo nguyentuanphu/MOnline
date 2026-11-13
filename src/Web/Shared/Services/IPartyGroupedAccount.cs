@@ -1,8 +1,8 @@
-// <copyright file="IPartyGroupedAccount.cs" company="MUnique">
+// <copyright file="IPartyGroupedAccount.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 /// <summary>
 /// The data shown in one row of the online-accounts tables which can be grouped by party.

@@ -1,7 +1,7 @@
 # Appearance
 
 The appearance of characters is serialized as follows. 
-Webzen did a "good" job saving one bit here and there, so it's a bit complicated
+The original protocol saves one bit here and there, so it's a bit complicated
 sometimes (e.g. wings and pets).
 It seems like the structure is historically grown.
 

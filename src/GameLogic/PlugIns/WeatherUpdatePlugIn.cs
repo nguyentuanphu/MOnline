@@ -1,13 +1,13 @@
-﻿// <copyright file="WeatherUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="WeatherUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Updates the state of the weather of each hosted map in a random way and notifies players which enter a map about the current weather.

@@ -1,8 +1,8 @@
-// <copyright file="AdminAuthenticationDefaults.cs" company="MUnique">
+// <copyright file="AdminAuthenticationDefaults.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 /// <summary>
 /// Constants of the admin panel authentication.
@@ -12,7 +12,7 @@ public static class AdminAuthenticationDefaults
     /// <summary>
     /// Gets the name of the authentication cookie.
     /// </summary>
-    public static string CookieName => "OpenMU.AdminPanel.Auth";
+    public static string CookieName => "HNMO.AdminPanel.Auth";
 
     /// <summary>
     /// Gets the path of the login page.
@@ -48,12 +48,12 @@ public static class AdminAuthenticationDefaults
     /// <summary>
     /// Gets the path of the javascript module which talks to the sign in and sign out endpoints.
     /// </summary>
-    public static string AuthScriptPath => "./_content/MUnique.OpenMU.Web.AdminPanel/js/auth.js";
+    public static string AuthScriptPath => "./_content/HNMO.Web.AdminPanel/js/auth.js";
 
     /// <summary>
     /// Gets the claim type which holds the security stamp of the user, so sessions can be invalidated.
     /// </summary>
-    public static string SecurityStampClaimType => "openmu:security-stamp";
+    public static string SecurityStampClaimType => "hnmo:security-stamp";
 
     /// <summary>
     /// Gets the claim type which describes how the user authenticated itself.

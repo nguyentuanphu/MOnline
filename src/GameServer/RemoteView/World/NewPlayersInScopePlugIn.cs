@@ -1,22 +1,22 @@
-﻿// <copyright file="NewPlayersInScopePlugIn.cs" company="MUnique">
+﻿// <copyright file="NewPlayersInScopePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Gens;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.GameServer.RemoteView.Character;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Gens;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.GameLogic.Views.PlayerShop;
+using HNMO.GameLogic.Views.World;
+using HNMO.GameServer.RemoteView.Character;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="INewPlayersInScopePlugIn"/> which is forwarding everything to the game client with specific data packets.

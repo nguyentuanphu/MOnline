@@ -1,10 +1,10 @@
-﻿// <copyright file="IShowGuildWarRequestPlugIn.cs" company="MUnique">
+﻿// <copyright file="IShowGuildWarRequestPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Guild;
+namespace HNMO.GameLogic.Views.Guild;
 
-using MUnique.OpenMU.GameLogic.GuildWar;
+using HNMO.GameLogic.GuildWar;
 
 /// <summary>
 /// Interface of a view whose implementation informs about a guild war request of another guild master.

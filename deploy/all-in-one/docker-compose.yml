@@ -7,11 +7,11 @@ services:
     volumes:
       - ./nginx/nginx.dev.conf:/etc/nginx/nginx.conf:ro
     depends_on:
-      - openmu-startup
+      - hnmo-startup
 
-  openmu-startup:
-    image: munique/openmu
-    container_name: openmu-startup
+  hnmo-startup:
+    image: hnmo
+    container_name: hnmo-startup
     ports:
       - "127.0.0.1::8080"
       - "45901:45901"
@@ -30,10 +30,10 @@ services:
       ASPNETCORE_URLS: http://+:8080
       # Optional bootstrap admin panel user. Without it, the admin panel is reachable
       # without a login until the first user has been created within the panel itself.
-      OPENMU_ADMIN_USER: ${OPENMU_ADMIN_USER:-}
-      OPENMU_ADMIN_PASSWORD: ${OPENMU_ADMIN_PASSWORD:-}
+      HNMO_ADMIN_USER: ${HNMO_ADMIN_USER:-}
+      HNMO_ADMIN_PASSWORD: ${HNMO_ADMIN_PASSWORD:-}
       # Optional base32 TOTP secret, if the bootstrap user should require a second factor.
-      OPENMU_ADMIN_TOTP_SECRET: ${OPENMU_ADMIN_TOTP_SECRET:-}
+      HNMO_ADMIN_TOTP_SECRET: ${HNMO_ADMIN_TOTP_SECRET:-}
       # website authenticates itself at the public API under /api.
     volumes:
       - adminpanel-keys:/app/data-protection-keys
@@ -46,7 +46,7 @@ services:
     container_name: database
     environment:
       POSTGRES_PASSWORD: ${DB_ADMIN_PW:-admin}
-      POSTGRES_DB: ${DB_NAME:-openmu}
+      POSTGRES_DB: ${DB_NAME:-hnmo}
       POSTGRES_USER: ${DB_ADMIN_USER:-postgres}
     ports:
       - "5432"

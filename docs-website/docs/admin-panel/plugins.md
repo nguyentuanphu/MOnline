@@ -8,7 +8,7 @@ description: Activate, deactivate and configure the plugins which implement the 
 
 **Navigation:** *Configuration → Plugins* — route `/plugins`
 
-Large parts of OpenMU are implemented as plugins: packet handlers, view plugins,
+Large parts of HNMO are implemented as plugins: packet handlers, view plugins,
 chat commands, periodic tasks, item crafting, quest logic, and much more. Each
 plugin implements an **extension point** (a plugin interface), and the server
 picks the plugins which are active for the client version it is serving.
@@ -160,4 +160,4 @@ for these jewels, so a server owner can use any value between 0 and 1.
 ## Writing your own plugin
 
 Implementing a plugin is documented next to the code, in the
-[MUnique.OpenMU.PlugIns readme](https://github.com/MUnique/OpenMU/blob/master/src/PlugIns/Readme.md).
+[HNMO.PlugIns readme](https://github.com/nguyentuanphu/HNMO/blob/master/src/PlugIns/Readme.md).

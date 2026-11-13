@@ -1,26 +1,26 @@
-﻿// <copyright file="FixWeaponRisePercentagePlugInSeason6.cs" company="MUnique">
+﻿// <copyright file="FixWeaponRisePercentagePlugInSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
-using static MUnique.OpenMU.Persistence.Initialization.CharacterClasses.CharacterClassHelper;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Network.Packets;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
+using static HNMO.Persistence.Initialization.CharacterClasses.CharacterClassHelper;
 
 /// <summary>
 /// This update fixes weapons (staff, stick, book, scepter) rise percentage increase; Summoner weapons and wings wizardry/curse options; and Wing of Dimension (inc/dec), Cape of Overrule (inc/dec), Cape of Emperor (dec) damage rates..
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixWeaponRisePercentagePlugInSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixWeaponRisePercentagePlugInSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixWeaponRisePercentagePlugInSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixWeaponRisePercentagePlugInSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("58740F26-6496-4CCA-8C90-C4749E09DDB2")]
 public class FixWeaponRisePercentagePlugInSeason6 : FixWeaponRisePercentagePlugInBase
 {

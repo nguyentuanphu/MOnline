@@ -1,13 +1,13 @@
-// <copyright file="PluginReadOperations.cs" company="MUnique">
+// <copyright file="PluginReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Nodes;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Persistence.AdminAuth;
+using HNMO.PlugIns;
 
 /// <summary>Reads plugin metadata without exposing custom configuration or source.</summary>
 public sealed class PluginReadOperations(PlugInManager plugins)

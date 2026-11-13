@@ -1,13 +1,13 @@
-﻿// <copyright file="IConnection.cs" company="MUnique">
+﻿// <copyright file="IConnection.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.Buffers;
 using System.IO.Pipelines;
 using System.Net;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

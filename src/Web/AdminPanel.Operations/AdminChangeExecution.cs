@@ -1,13 +1,13 @@
-// <copyright file="AdminChangeExecution.cs" company="MUnique">
+// <copyright file="AdminChangeExecution.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>Shares preview authorization, confirmation and durable write execution between operation services.</summary>
 internal static class AdminChangeExecution

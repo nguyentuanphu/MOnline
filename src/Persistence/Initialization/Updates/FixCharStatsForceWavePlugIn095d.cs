@@ -1,18 +1,18 @@
-﻿// <copyright file="FixCharStatsForceWavePlugIn095d.cs" company="MUnique">
+﻿// <copyright file="FixCharStatsForceWavePlugIn095d.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes agility to defense multiplier (DW) and base energy (MG) stats.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixCharStatsForceWavePlugIn095d_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixCharStatsForceWavePlugIn095d_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixCharStatsForceWavePlugIn095d_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixCharStatsForceWavePlugIn095d_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("14DFF317-B4E6-424A-A8D1-6D1D5195E970")]
 public class FixCharStatsForceWavePlugIn095D : FixCharStatsForceWavePlugInBase
 {

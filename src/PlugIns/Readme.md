@@ -1,7 +1,7 @@
-﻿# MUnique.OpenMU.PlugIns
+﻿# HNMO.PlugIns
 
-This project contains the building blocks for the plugin system of OpenMU and
-doesn't have any dependencies to other OpenMU projects - so it's reuseable, if
+This project contains the building blocks for the plugin system of HNMO and
+doesn't have any dependencies to other HNMO projects - so it's reuseable, if
 required.
 It also contains unit tests with almost complete test coverage, which can help
 to understand how this all works.
@@ -11,11 +11,11 @@ to understand how this all works.
 A plugin manager takes care of discovering plugins and offers methods to retrieve,
 activate, deactivate and to manually register plugins.
 
-Projects which contain plugins reference `MUnique.OpenMU.PlugIns.Generators` as
+Projects which contain plugins reference `HNMO.PlugIns.Generators` as
 analyzer:
 
 ```xml
-<ProjectReference Include="..\PlugIns.Generators\MUnique.OpenMU.PlugIns.Generators.csproj"
+<ProjectReference Include="..\PlugIns.Generators\HNMO.PlugIns.Generators.csproj"
                   OutputItemType="Analyzer"
                   ReferenceOutputAssembly="false" />
 ```
@@ -25,7 +25,7 @@ plugin points which are defined in it. The plugin manager takes the plugins from
 the registry. For assemblies without one, e.g. external plugin assemblies which
 were built without the generator, it searches all types for the `PlugInAttribute`.
 The registries can be disabled with the `AppContext` switch
-`MUnique.OpenMU.PlugIns.DisableGeneratedRegistries`.
+`HNMO.PlugIns.DisableGeneratedRegistries`.
 
 ## Plugin Types
 
@@ -108,7 +108,7 @@ I copied this example from the unit tests:
 
 ```csharp
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
+using HNMO.GameLogic;
 
 /// <summary>
 /// Example interface for a plugin.
@@ -205,8 +205,8 @@ Example:
 
 ```csharp
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The implementation of the <see cref="IExamplePlugIn"/>.

@@ -1,8 +1,8 @@
-// <copyright file="CaptionLinkStep.cs" company="MUnique">
+// <copyright file="CaptionLinkStep.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Captions;
+namespace HNMO.Persistence.Initialization.Captions;
 
 /// <summary>
 /// The steps of <see cref="ConfigurationCaptionService.LinkBuiltInCaptionsAsync"/>, in the order of their execution.

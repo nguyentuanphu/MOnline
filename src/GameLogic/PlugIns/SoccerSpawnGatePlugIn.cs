@@ -1,19 +1,19 @@
-// <copyright file="SoccerSpawnGatePlugIn.cs" company="MUnique">
+// <copyright file="SoccerSpawnGatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.GuildWar;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin which keeps a player on the soccer ground of a running guild war soccer match,
 /// instead of spawning it at the safezone.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SoccerSpawnGatePlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SoccerSpawnGatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SoccerSpawnGatePlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.SoccerSpawnGatePlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("8C4E1F0B-7A93-4D65-B0C8-2E5F9A1D6B37")]
 public class SoccerSpawnGatePlugIn : IPlayerSpawnGateSelectionPlugIn
 {

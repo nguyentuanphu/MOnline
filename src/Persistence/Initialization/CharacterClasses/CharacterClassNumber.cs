@@ -1,8 +1,8 @@
-﻿// <copyright file="CharacterClassNumber.cs" company="MUnique">
+﻿// <copyright file="CharacterClassNumber.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
+namespace HNMO.Persistence.Initialization.CharacterClasses;
 
 /// <summary>
 /// The default character class numbers.

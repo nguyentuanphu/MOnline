@@ -1,4 +1,4 @@
-// <copyright file="QuestMonsterKillRequirementState.Generated.cs" company="MUnique">
+// <copyright file="QuestMonsterKillRequirementState.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="QuestMonsterKillRequirementState"/>.
 /// </summary>
-public partial class QuestMonsterKillRequirementState : MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState, IIdentifiable, IConvertibleTo<QuestMonsterKillRequirementState>
+public partial class QuestMonsterKillRequirementState : HNMO.DataModel.Entities.QuestMonsterKillRequirementState, IIdentifiable, IConvertibleTo<QuestMonsterKillRequirementState>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class QuestMonsterKillRequirementState : MUnique.OpenMU.DataModel
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestMonsterKillRequirement Requirement
+    public override HNMO.DataModel.Configuration.Quests.QuestMonsterKillRequirement Requirement
     {
         get => base.Requirement;
         set => base.Requirement = value;

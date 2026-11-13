@@ -1,13 +1,13 @@
-﻿// <copyright file="UpdatePetCommandManagerOnItemMovePlugIn.cs" company="MUnique">
+﻿// <copyright file="UpdatePetCommandManagerOnItemMovePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Pet;
+namespace HNMO.GameLogic.Pet;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions.Items;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Updates the pet command manager on the player object after a pet has been equipped or unequipped.

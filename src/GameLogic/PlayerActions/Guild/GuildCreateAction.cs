@@ -1,12 +1,12 @@
-﻿// <copyright file="GuildCreateAction.cs" company="MUnique">
+﻿// <copyright file="GuildCreateAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Guild;
+namespace HNMO.GameLogic.PlayerActions.Guild;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Guild;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Guild;
 
 /// <summary>
 /// Action to create a guild.

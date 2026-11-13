@@ -1,8 +1,8 @@
-﻿// <copyright file="EffectNumbers.cs" company="MUnique">
+﻿// <copyright file="EffectNumbers.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.World;
+namespace HNMO.GameServer.RemoteView.World;
 
 /// <summary>
 /// Skill effect flags which were used in earlier versions, like 0.75.

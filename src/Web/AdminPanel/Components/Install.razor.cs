@@ -1,14 +1,14 @@
-// <copyright file="Install.razor.cs" company="MUnique">
+// <copyright file="Install.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components;
+namespace HNMO.Web.AdminPanel.Components;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// The component which allows to initialize the database.

@@ -1,16 +1,16 @@
-// <copyright file="ConfigurationSearch.razor.cs" company="MUnique">
+// <copyright file="ConfigurationSearch.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.Layout;
+namespace HNMO.Web.AdminPanel.Components.Layout;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Services;
-using MUnique.OpenMU.Web.Shared.Components;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Services;
+using HNMO.Web.Shared.Components;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Header search for configuration properties.

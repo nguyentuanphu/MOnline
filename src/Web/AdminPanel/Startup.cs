@@ -1,8 +1,8 @@
-﻿// <copyright file="Startup.cs" company="MUnique">
+﻿// <copyright file="Startup.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel;
+namespace HNMO.Web.AdminPanel;
 
 using System.IO;
 using Microsoft.AspNetCore.Builder;
@@ -11,15 +11,15 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Components;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Services;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Models;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel.Entities;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Components;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Services;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Models;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// The startup class for the blazor app.

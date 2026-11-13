@@ -1,16 +1,16 @@
-// <copyright file="IllusionTempleContext.cs" company="MUnique">
+// <copyright file="IllusionTempleContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The context of an illusion temple game.

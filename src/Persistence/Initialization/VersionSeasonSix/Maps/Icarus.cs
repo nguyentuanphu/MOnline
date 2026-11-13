@@ -1,11 +1,11 @@
-﻿// <copyright file="Icarus.cs" company="MUnique">
+﻿// <copyright file="Icarus.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The initialization for the Icarus map.

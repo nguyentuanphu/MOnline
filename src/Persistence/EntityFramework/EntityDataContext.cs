@@ -1,16 +1,16 @@
-﻿// <copyright file="EntityDataContext.cs" company="MUnique">
+﻿// <copyright file="EntityDataContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Threading;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.Persistence.EntityFramework.Extensions;
-using MUnique.OpenMU.Persistence.EntityFramework.Extensions.ModelBuilder;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.AttributeSystem;
+using HNMO.Persistence.EntityFramework.Extensions;
+using HNMO.Persistence.EntityFramework.Extensions.ModelBuilder;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// Context for all types of the data model.

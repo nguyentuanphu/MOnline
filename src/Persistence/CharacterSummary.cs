@@ -1,8 +1,8 @@
-﻿// <copyright file="CharacterSummary.cs" company="MUnique">
+﻿// <copyright file="CharacterSummary.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// A summary of a character, e.g. for the ranking.

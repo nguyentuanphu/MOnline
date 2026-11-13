@@ -1,17 +1,17 @@
-﻿// <copyright file="GuildServer.cs" company="MUnique">
+﻿// <copyright file="GuildServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GuildServer;
+namespace HNMO.GuildServer;
 
 using System.Collections.Concurrent;
 using System.Collections.Immutable;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 using Nito.AsyncEx;
-using Guild = MUnique.OpenMU.DataModel.Entities.Guild;
-using GuildMember = MUnique.OpenMU.DataModel.Entities.GuildMember;
+using Guild = HNMO.DataModel.Entities.Guild;
+using GuildMember = HNMO.DataModel.Entities.GuildMember;
 
 /// <summary>
 /// GuildServer which is managing the guilds. All Guilds of online guild members will be cached here.

@@ -1,12 +1,12 @@
-﻿// <copyright file="ManageableServerController.cs" company="MUnique">
+﻿// <copyright file="ManageableServerController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using global::Dapr;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An api controller to control a <see cref="IManageableServer"/>.

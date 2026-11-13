@@ -1,12 +1,12 @@
-// <copyright file="LocateableExtensions.cs" company="MUnique">
+// <copyright file="LocateableExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Extension methods for <see cref="ILocateable"/>.

@@ -1,10 +1,10 @@
-// <copyright file="ActorObjects.cs" company="MUnique">
+// <copyright file="ActorObjects.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// Describes the objects of the game world the way the actor's event stream and command results

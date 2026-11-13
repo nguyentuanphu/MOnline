@@ -76,7 +76,7 @@ Reinstalling drops the existing database contents — accounts, characters and a
 configuration changes. Back up your PostgreSQL database first.
 :::
 
-## Update OpenMU to a newer version
+## Update HNMO to a newer version
 
 1. Pull the new docker image (or build the new source) and restart the server.
 2. Open the [Setup page](setup.md) — if it says *Update required*, run the schema

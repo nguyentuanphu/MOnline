@@ -1,13 +1,13 @@
-// <copyright file="ResetStatsAction.cs" company="MUnique">
+// <copyright file="ResetStatsAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Resets;
+namespace HNMO.GameLogic.Resets;
 
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.Login;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Login;
 
 /// <summary>
 /// Action to reset a character's stats back to base values and refund the invested points.

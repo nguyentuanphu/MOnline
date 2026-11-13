@@ -1,4 +1,4 @@
-// <copyright file="MiniGameRankingEntry.Generated.cs" company="MUnique">
+// <copyright file="MiniGameRankingEntry.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MiniGameRankingEntry"/>.
 /// </summary>
-public partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistics.MiniGameRankingEntry, IIdentifiable, IConvertibleTo<MiniGameRankingEntry>
+public partial class MiniGameRankingEntry : HNMO.DataModel.Statistics.MiniGameRankingEntry, IIdentifiable, IConvertibleTo<MiniGameRankingEntry>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistics.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Entities.Character Character
+    public override HNMO.DataModel.Entities.Character Character
     {
         get => base.Character;
         set => base.Character = value;
@@ -55,7 +55,7 @@ public partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistics.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition MiniGame
+    public override HNMO.DataModel.Configuration.MiniGameDefinition MiniGame
     {
         get => base.MiniGame;
         set => base.MiniGame = value;

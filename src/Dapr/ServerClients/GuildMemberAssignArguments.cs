@@ -1,10 +1,10 @@
-﻿// <copyright file="GuildMemberAssignArguments.cs" company="MUnique">
+﻿// <copyright file="GuildMemberAssignArguments.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ServerClients;
+namespace HNMO.ServerClients;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Arguments for a guild member assignment.

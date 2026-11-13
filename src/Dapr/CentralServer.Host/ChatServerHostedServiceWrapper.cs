@@ -1,17 +1,17 @@
-﻿// <copyright file="ChatServerHostedServiceWrapper.cs" company="MUnique">
+﻿// <copyright file="ChatServerHostedServiceWrapper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Collections.Generic;
 using System.Threading;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
-using ChatServer = MUnique.OpenMU.ChatServer.ChatServer;
+using HNMO.Dapr.Common;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
+using ChatServer = HNMO.ChatServer.ChatServer;
 
 /// <summary>
 /// A wrapper which takes a <see cref="ChatServer"/> and wraps it as <see cref="IHostedLifecycleService"/>,

@@ -1,17 +1,17 @@
-﻿// <copyright file="EnterMiniGameAction.cs" company="MUnique">
+﻿// <copyright file="EnterMiniGameAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.PlayerActions.PlayerStore;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.PlayerActions.PlayerStore;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// Player action which implements entering a mini game.

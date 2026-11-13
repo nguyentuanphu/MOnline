@@ -1,13 +1,13 @@
-// <copyright file="InventoryProductDelivery.cs" company="MUnique">
+// <copyright file="InventoryProductDelivery.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CashShop;
+namespace HNMO.GameLogic.CashShop;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.CashShop;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.CashShop;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// The standard delivery of a cash shop product, which puts its items into the inventory.

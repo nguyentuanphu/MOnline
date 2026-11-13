@@ -1,13 +1,13 @@
-﻿// <copyright file="ByteArrayDownloadController.cs" company="MUnique">
+﻿// <copyright file="ByteArrayDownloadController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.Reflection;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// API-Controller which returns data of a byte array of an object.
@@ -43,11 +43,11 @@ public class ByteArrayDownloadController : Controller
     [HttpGet]
     public async Task<IActionResult> GetAsync(string typeString, Guid id, string propertyName)
     {
-        var type = AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.FullName?.StartsWith(nameof(MUnique)) ?? false)
+        var type = AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.FullName?.StartsWith(nameof(HNMO)) ?? false)
             .Select(assembly => assembly.GetType(typeString)).FirstOrDefault(t => t != null);
         if (type is null)
         {
-            throw new InvalidOperationException($"Only types of namespace {nameof(MUnique)} can be edited on this page.");
+            throw new InvalidOperationException($"Only types of namespace {nameof(HNMO)} can be edited on this page.");
         }
 
         var property = type.GetProperty(propertyName, BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy);

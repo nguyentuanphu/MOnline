@@ -1,11 +1,11 @@
-﻿// <copyright file="ImperialGuardianFeaturePlugIn.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianFeaturePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
+namespace HNMO.GameLogic.MiniGames.ImperialGuardian;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The feature plug-in of the imperial guardian event. Its configuration describes the run of the event,

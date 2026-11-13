@@ -1,20 +1,20 @@
-// <copyright file="TerrainEditor.razor.cs" company="MUnique">
+// <copyright file="TerrainEditor.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.TerrainEditor;
+namespace HNMO.Web.Shared.Components.TerrainEditor;
 
 using System.IO;
 using BlazorInputFile;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Components.MapEditor;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Properties;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Components.MapEditor;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Properties;
 
 /// <summary>
 /// A graphical editor for the terrains of a <see cref="GameMapDefinition"/>, which are its

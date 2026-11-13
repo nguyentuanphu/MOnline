@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordIntegrationConfiguration.cs" company="MUnique">
+﻿// <copyright file="DiscordIntegrationConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Discord;
+namespace HNMO.GameLogic.Discord;
 
 /// <summary>
 /// The configuration of the Discord integration, which the game client gets with the Discord integration info.

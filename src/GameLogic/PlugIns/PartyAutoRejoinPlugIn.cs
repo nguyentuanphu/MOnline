@@ -1,12 +1,12 @@
-// <copyright file="PartyAutoRejoinPlugIn.cs" company="MUnique">
+// <copyright file="PartyAutoRejoinPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.Party;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.Party;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Listens for the <see cref="IPlayerStateChangedPlugIn"/> and automatically rejoins the player

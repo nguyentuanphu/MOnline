@@ -1,12 +1,12 @@
-﻿// <copyright file="EnterDoppelgangerAction.cs" company="MUnique">
+﻿// <copyright file="EnterDoppelgangerAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.GameLogic.MiniGames;
-using MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.MiniGames;
+using HNMO.GameLogic.MiniGames.Doppelganger;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Action to enter the doppelganger event.

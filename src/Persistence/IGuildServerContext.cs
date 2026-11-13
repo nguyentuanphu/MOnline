@@ -1,11 +1,11 @@
-// <copyright file="IGuildServerContext.cs" company="MUnique">
+// <copyright file="IGuildServerContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 using System.Threading;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// A context which is used by the <see cref="IGuildServer"/>.

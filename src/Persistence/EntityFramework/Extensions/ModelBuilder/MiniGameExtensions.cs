@@ -1,12 +1,12 @@
-﻿// <copyright file="MiniGameExtensions.cs" company="MUnique">
+﻿// <copyright file="MiniGameExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Extensions.ModelBuilder;
+namespace HNMO.Persistence.EntityFramework.Extensions.ModelBuilder;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// Extensions for the <see cref="MiniGameDefinition"/>-related <see cref="EntityTypeBuilder"/>.
@@ -50,7 +50,7 @@ internal static class MiniGameExtensions
     /// <remarks>
     /// A ranking entry is a member of neither the character's nor the mini game definition's
     /// aggregate. The model generator only emits a cascading delete for navigations marked with
-    /// <see cref="MUnique.OpenMU.DataModel.Composition.MemberOfAggregateAttribute"/>, so these two
+    /// <see cref="HNMO.DataModel.Composition.MemberOfAggregateAttribute"/>, so these two
     /// references are left without a delete behavior; Entity Framework then defaults to no action
     /// for them, and the database refuses to delete a character which has played a mini game.
     /// </remarks>

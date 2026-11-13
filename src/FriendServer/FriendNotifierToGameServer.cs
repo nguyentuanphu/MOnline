@@ -1,10 +1,10 @@
-﻿// <copyright file="FriendNotifierToGameServer.cs" company="MUnique">
+﻿// <copyright file="FriendNotifierToGameServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.FriendServer;
+namespace HNMO.FriendServer;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// An implementation of a <see cref="IFriendNotifier"/> which forwards the calls to the available game server instances.

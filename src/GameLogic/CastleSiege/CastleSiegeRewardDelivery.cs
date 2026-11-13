@@ -1,13 +1,13 @@
-// <copyright file="CastleSiegeRewardDelivery.cs" company="MUnique">
+// <copyright file="CastleSiegeRewardDelivery.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Persistence;
 
 /// <summary>
 /// Creates participant reward items and queues rewards which cannot be delivered immediately.

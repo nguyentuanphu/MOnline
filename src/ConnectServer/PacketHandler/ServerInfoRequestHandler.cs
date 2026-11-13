@@ -1,13 +1,13 @@
-﻿// <copyright file="ServerInfoRequestHandler.cs" company="MUnique">
+﻿// <copyright file="ServerInfoRequestHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer.PacketHandler;
+namespace HNMO.ConnectServer.PacketHandler;
 
 using System.Net;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ConnectServer;
+using HNMO.Network;
+using HNMO.Network.Packets.ConnectServer;
 
 /// <summary>
 /// Handles the server info request of a client, which means the client wants to know the connect data of the server it just clicked on.

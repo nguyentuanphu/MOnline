@@ -1,14 +1,14 @@
-// <copyright file="AdminToolGroups.cs" company="MUnique">
+// <copyright file="AdminToolGroups.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 /// <summary>Parses optional per-key MCP allowlists. Empty preserves existing role-only access.</summary>
 public static class AdminToolGroups
 {
     /// <summary>Gets the signed claim containing the configured tool restriction.</summary>
-    public static string ClaimType => "openmu:allowed-mcp-tools";
+    public static string ClaimType => "hnmo:allowed-mcp-tools";
 
     /// <summary>Validates a bounded comma-separated list of exact tool names or area_* patterns.</summary>
     /// <param name="value">The configured allowlist.</param>

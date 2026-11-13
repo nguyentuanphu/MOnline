@@ -1,11 +1,11 @@
-﻿// <copyright file="StorageViewModelFactory.cs" company="MUnique">
+﻿// <copyright file="StorageViewModelFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.ItemEditor;
+namespace HNMO.Web.ItemEditor;
 
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Factory for <see cref="StorageViewModel"/>s.

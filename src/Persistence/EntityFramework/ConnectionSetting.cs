@@ -1,8 +1,8 @@
-// <copyright file="ConnectionSetting.cs" company="MUnique">
+// <copyright file="ConnectionSetting.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.ComponentModel;
 using System.Xml.Serialization;
@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 /// The configured database engine.
 /// </summary>
 [Serializable]
-[XmlType(Namespace = "http://www.munique.net/ConnectionSettings")]
+[XmlType(Namespace = "https://github.com/nguyentuanphu/HNMO/ConnectionSettings")]
 public enum DatabaseEngine
 {
     /// <summary>
@@ -35,7 +35,7 @@ public enum DatabaseEngine
 /// A database connection setting for the specified role.
 /// </summary>
 [Serializable]
-[XmlType(Namespace = "http://www.munique.net/ConnectionSettings")]
+[XmlType(Namespace = "https://github.com/nguyentuanphu/HNMO/ConnectionSettings")]
 public class ConnectionSetting
 {
     /// <summary>

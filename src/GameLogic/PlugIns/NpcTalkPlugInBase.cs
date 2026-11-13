@@ -1,11 +1,11 @@
-// <copyright file="NpcTalkPlugInBase.cs" company="MUnique">
+// <copyright file="NpcTalkPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Base class for a plugin which handles talking to the NPC of its <see cref="NpcTalkPlugInConfiguration"/>.

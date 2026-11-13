@@ -1,12 +1,12 @@
-// <copyright file="AdminAuthServiceCollectionExtensions.cs" company="MUnique">
+// <copyright file="AdminAuthServiceCollectionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
+namespace HNMO.Persistence.EntityFramework.AdminAuth;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Extensions to register the persistence of the admin panel users.

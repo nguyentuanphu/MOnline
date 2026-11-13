@@ -1,12 +1,12 @@
-﻿// <copyright file="CrywolfChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="CrywolfChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Crywolf;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Crywolf;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command for game masters, which lets the crywolf event proceed: it starts the event

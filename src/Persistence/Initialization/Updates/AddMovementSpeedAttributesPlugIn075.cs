@@ -1,17 +1,17 @@
-// <copyright file="AddMovementSpeedAttributesPlugIn075.cs" company="MUnique">
+// <copyright file="AddMovementSpeedAttributesPlugIn075.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds movement speed attributes to 0.75 game configurations.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMovementSpeedAttributesPlugInBase_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddMovementSpeedAttributesPlugInBase_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMovementSpeedAttributesPlugInBase_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddMovementSpeedAttributesPlugInBase_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("890E2FCB-EC93-4CC1-84FC-67A1B398D5C8")]
 public class AddMovementSpeedAttributesPlugIn075 : AddMovementSpeedAttributesPlugInBase
 {

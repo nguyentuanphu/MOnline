@@ -1,10 +1,10 @@
-﻿// <copyright file="IShowMiniGameOpeningStatePlugIn.cs" company="MUnique">
+﻿// <copyright file="IShowMiniGameOpeningStatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Views;
+using HNMO.GameLogic.Views;
 
 /// <summary>
 /// Interface for view plugins which shows the opening state of a mini game event.

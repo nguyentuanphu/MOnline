@@ -1,8 +1,8 @@
-// <copyright file="CashShopUseResult.cs" company="MUnique">
+// <copyright file="CashShopUseResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.CashShop;
+namespace HNMO.GameLogic.Views.CashShop;
 
 /// <summary>
 /// The result of a request to use an item of the cash shop storage.

@@ -1,8 +1,8 @@
-// <copyright file="PacketAnalyzerProvider.cs" company="MUnique">
+// <copyright file="PacketAnalyzerProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer;
+namespace HNMO.Network.Analyzer;
 
 using System.Collections.Concurrent;
 

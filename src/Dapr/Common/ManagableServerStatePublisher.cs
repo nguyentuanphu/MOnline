@@ -1,8 +1,8 @@
-﻿// <copyright file="ManagableServerStatePublisher.cs" company="MUnique">
+﻿// <copyright file="ManagableServerStatePublisher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Dapr.Common;
+namespace HNMO.Dapr.Common;
 
 using System;
 using System.ComponentModel;
@@ -12,8 +12,8 @@ using global::Dapr.Client;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 using Nito.AsyncEx.Synchronous;
 

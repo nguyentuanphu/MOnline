@@ -1,11 +1,11 @@
-// <copyright file="CaptionLinkReference.cs" company="MUnique">
+// <copyright file="CaptionLinkReference.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Captions;
+namespace HNMO.Persistence.Initialization.Captions;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The linked captions of a reference configuration (usually a freshly initialized one),

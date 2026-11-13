@@ -1,12 +1,12 @@
-// <copyright file="AuditReadOperations.cs" company="MUnique">
+// <copyright file="AuditReadOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Reads administrative audit history for administrators.</summary>
 /// <param name="executor">The authorization service.</param>

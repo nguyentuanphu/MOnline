@@ -1,12 +1,12 @@
 @page "/api-keys"
 
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Web.AdminPanel.Properties
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 
 @{
     var title = Resources.ApiKeys;
 }
-<PageTitle>OpenMU: @title</PageTitle>
+<PageTitle>HNMO: @title</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@title" />
 <h1>@title</h1>
 
@@ -49,7 +49,7 @@ else
                 <th class="col-4">@Resources.ApiKeyName</th>
                 <th class="col-2">@Resources.ApiKeyPrefix</th>
                 <th class="col-2">@Resources.Role</th>
-                <th>@MUnique.OpenMU.Web.AdminPanel.Services.ApiKeyToolGroupResources.Caption</th>
+                <th>@HNMO.Web.AdminPanel.Services.ApiKeyToolGroupResources.Caption</th>
                 <th class="col-4">@Resources.Actions</th>
             </tr>
             </thead>
@@ -65,10 +65,10 @@ else
                         }
                     </td>
                     <td><code>@apiKey.KeyPrefix…</code></td>
-                    <td>@MUnique.OpenMU.Web.AdminPanel.Auth.RoleCaption.Get(apiKey.Roles)</td>
+                    <td>@HNMO.Web.AdminPanel.Auth.RoleCaption.Get(apiKey.Roles)</td>
                     <td>
                         <code>@apiKey.AllowedToolGroups</code>
-                        <button type="button" class="btn btn-sm btn-secondary" @onclick="@(() => this.OnEditToolGroupsAsync(apiKey))">@MUnique.OpenMU.Web.Shared.Properties.Resources.Change</button>
+                        <button type="button" class="btn btn-sm btn-secondary" @onclick="@(() => this.OnEditToolGroupsAsync(apiKey))">@HNMO.Web.Shared.Properties.Resources.Change</button>
                     </td>
                     <td>
                         @if (apiKey.IsDisabled)

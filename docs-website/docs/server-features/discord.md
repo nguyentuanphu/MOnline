@@ -7,7 +7,7 @@ description: A Discord bot and notifications, which bring the game to your Disco
 
 # Discord
 
-OpenMU can bring your game into your Discord server:
+HNMO can bring your game into your Discord server:
 
 * **Notifications:** what happens in the game, like mini games, the castle siege
   or rare drops, is posted into your channels.
@@ -125,7 +125,7 @@ selection to inherit its layout default.
 The commands only show information; they don't change anything in the game.
 Additionally, players can [link their account](#linking-accounts) with
 `/link`, `/unlink` and `/character`, and administrators of the Discord server
-can use [`/openmu setup`](#the-layout-of-your-discord-server).
+can use [`/hnmo setup`](#the-layout-of-your-discord-server).
 
 ### Linking accounts
 
@@ -177,7 +177,7 @@ message again after a restart.
 
 ### The layout of your Discord server
 
-*Create channels and roles* on the Discord page, or `/openmu setup` in Discord as
+*Create channels and roles* on the Discord page, or `/hnmo setup` in Discord as
 administrator of the Discord server, creates the following roles, categories and
 channels:
 
@@ -207,7 +207,7 @@ into the channels of the one which you choose in the setup.
 #### Your own layout
 
 The layout is defined in a JSON file. To use your own, copy the
-[default layout](https://github.com/MUnique/OpenMU/blob/master/src/Discord/Provisioning/DefaultLayout.json),
+[default layout](https://github.com/nguyentuanphu/HNMO/blob/master/src/Discord/Provisioning/DefaultLayout.json),
 adapt it and enter its path as *Layout file* in the advanced settings of the Discord page. Each role,
 category and channel has a key, which has to be unique, and a name. Channels can
 have these properties:
@@ -229,7 +229,7 @@ Discord can copy the structure of a Discord server with a *server template*:
 In the settings of a set-up Discord server, open *Server Template*, create a
 template and share its link. Everybody who opens the link creates a new Discord
 server with the same channels, roles and permissions, but without messages and
-members. After inviting the bot to it, `/openmu setup` adopts everything and
+members. After inviting the bot to it, `/hnmo setup` adopts everything and
 reports that nothing was missing.
 
 ## Chat bridge
@@ -315,7 +315,7 @@ reason.
 
 ## The game client
 
-[MuMain](https://github.com/sven-n/MuMain), the open source game client, has
+[the desktop client](https://github.com/nguyentuanphu/HNMO), the open source game client, has
 its own Discord features. It asks the server how it's connected to Discord, when
 the character enters the game:
 
@@ -413,7 +413,7 @@ with the parts separated by two underscores, like `Discord__Bot__Token`.
 * **Times** like "the entrance closes in 5 minutes" are posted in a way that each
   Discord user sees them in their own time zone and language.
 * **Rate limits:** Discord accepts about 30 messages per minute per channel.
-  When more happens, OpenMU combines up to 10 messages into one post and waits
+  When more happens, HNMO combines up to 10 messages into one post and waits
   for Discord, so nothing gets lost unless the queue overflows.
 * **Mini games** like Blood Castle open all their levels at the same time; this
   is announced only once.
@@ -423,7 +423,7 @@ with the parts separated by two underscores, like `Discord__Bot__Token`.
   trying again and again.
 * Make your notices channel an *Announcement channel*: other Discord servers,
   e.g. the ones of guilds, can then *follow* it and get the messages copied into
-  their own channel. `/openmu setup` does this on community servers.
+  their own channel. `/hnmo setup` does this on community servers.
 * Until the bot is connected to Discord, which takes a few seconds after the
   start, notifications for the channels of the layout are posted through the
   webhook of their category, if there is one.

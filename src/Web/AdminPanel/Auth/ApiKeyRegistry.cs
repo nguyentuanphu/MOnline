@@ -1,11 +1,11 @@
-// <copyright file="ApiKeyRegistry.cs" company="MUnique">
+// <copyright file="ApiKeyRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Resolves a presented API key to the client which uses it.

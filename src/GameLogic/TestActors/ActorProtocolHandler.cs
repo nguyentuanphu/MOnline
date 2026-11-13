@@ -1,8 +1,8 @@
-// <copyright file="ActorProtocolHandler.cs" company="MUnique">
+// <copyright file="ActorProtocolHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 using System.Reflection;
 using System.Text.Json;

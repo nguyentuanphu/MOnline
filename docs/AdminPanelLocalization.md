@@ -43,7 +43,7 @@ Do not translate command syntax, packet identifiers, or authorization values.
 ### German terminology
 
 The German texts (`*.de.resx`) use the same terms as the German translation of
-the open source game client ([sven-n/MuMain](https://github.com/sven-n/MuMain),
+the open source game client ([the HNMO desktop client](https://github.com/nguyentuanphu/HNMO),
 `src/Localization/*.de.resx`), so players see the same words in server messages
 and in the client. They address the player formally ("Sie"), like the client.
 Map, class and event names follow the client (e.g. *Verlorener Turm*,
@@ -58,7 +58,7 @@ German, like in the client's item data (see
 Run the admin panel tests with:
 
 ```sh
-dotnet test tests/MUnique.OpenMU.Web.Tests/MUnique.OpenMU.Web.Tests.csproj \
+dotnet test tests/HNMO.Web.Tests/HNMO.Web.Tests.csproj \
   -c Release -p:ci=true
 ```
 
@@ -67,9 +67,9 @@ once and use `--no-build` with the same options, so the project isn't rebuilt
 each time:
 
 ```sh
-dotnet build tests/MUnique.OpenMU.Web.Tests/MUnique.OpenMU.Web.Tests.csproj \
+dotnet build tests/HNMO.Web.Tests/HNMO.Web.Tests.csproj \
   -c Release -p:ci=true
-dotnet test tests/MUnique.OpenMU.Web.Tests/MUnique.OpenMU.Web.Tests.csproj \
+dotnet test tests/HNMO.Web.Tests/HNMO.Web.Tests.csproj \
   -c Release -p:ci=true --no-build
 ```
 

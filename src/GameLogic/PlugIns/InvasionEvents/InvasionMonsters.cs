@@ -1,8 +1,8 @@
-// <copyright file="InvasionMonsters.cs" company="MUnique">
+// <copyright file="InvasionMonsters.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 /// <summary>
 /// Monster identifiers used across invasion plugins.

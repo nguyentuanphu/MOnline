@@ -1,11 +1,11 @@
-// <copyright file="SpeedHackDetectConfiguration.cs" company="MUnique">
+// <copyright file="SpeedHackDetectConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// Configuration for the speedhack detection anti-cheat system.
@@ -20,7 +20,7 @@ public class SpeedHackDetectConfiguration
     /// can be affected by network jitter. Because a ban is a heavy action, it's disabled by default.
     /// </remarks>
     [DefaultValue(false)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AutoBan_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AutoBan_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool AutoBan { get; set; }
 
     /// <summary>
@@ -32,7 +32,7 @@ public class SpeedHackDetectConfiguration
     /// after the detection has been observed on the server.
     /// </remarks>
     [DefaultValue(false)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_DisconnectOnViolation_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_DisconnectOnViolation_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool DisconnectOnViolation { get; set; }
 
     /// <summary>
@@ -41,14 +41,14 @@ public class SpeedHackDetectConfiguration
     /// Useful to trial the detection on a live server before enforcing it.
     /// </summary>
     [DefaultValue(false)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ObserveOnly_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ObserveOnly_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool ObserveOnly { get; set; }
 
     /// <summary>
     /// Gets or sets the threshold of warnings a player receives before being banned/disconnected.
     /// </summary>
     [DefaultValue(3)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxWarnings_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxWarnings_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int MaxWarnings { get; set; } = 3;
 
     /// <summary>
@@ -56,7 +56,7 @@ public class SpeedHackDetectConfiguration
     /// Consecutive warnings within this period are ignored to avoid spamming/jitter.
     /// </summary>
     [DefaultValue(5)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AlertDebounceSeconds_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AlertDebounceSeconds_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int AlertDebounceSeconds { get; set; } = 5;
 
     /// <summary>
@@ -64,7 +64,7 @@ public class SpeedHackDetectConfiguration
     /// Warnings older than this time are cleared from the player's history.
     /// </summary>
     [DefaultValue(1)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WarningHistoryHours_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WarningHistoryHours_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int WarningHistoryHours { get; set; } = 1;
 
     /// <summary>
@@ -78,7 +78,7 @@ public class SpeedHackDetectConfiguration
     /// affect it. The check still observes and logs suspicious walk pace when this is disabled.
     /// </remarks>
     [DefaultValue(false)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_EnforceWalkSpeed_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_EnforceWalkSpeed_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public bool EnforceWalkSpeed { get; set; }
 
     /// <summary>
@@ -91,7 +91,7 @@ public class SpeedHackDetectConfiguration
     /// below or equal to 0 fall back to the default at the check.
     /// </remarks>
     [DefaultValue(WalkSpeedValidator.DefaultWindowSeconds)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WalkSpeedWindowSeconds_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WalkSpeedWindowSeconds_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int WalkSpeedWindowSeconds { get; set; } = WalkSpeedValidator.DefaultWindowSeconds;
 
     /// <summary>
@@ -101,7 +101,7 @@ public class SpeedHackDetectConfiguration
     /// The value is scaled by the step delay of the player, relative to the normal step delay of 300 ms.
     /// </summary>
     [DefaultValue(2000)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WalkSpeedToleranceMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_WalkSpeedToleranceMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int WalkSpeedToleranceMs { get; set; } = 2000;
 
     /// <summary>
@@ -112,7 +112,7 @@ public class SpeedHackDetectConfiguration
     /// accepted offset instead.
     /// </summary>
     [DefaultValue(5)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxAllowedWalkStartOffset_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxAllowedWalkStartOffset_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int MaxAllowedWalkStartOffset { get; set; } = 5;
 
     /// <summary>
@@ -120,7 +120,7 @@ public class SpeedHackDetectConfiguration
     /// between the cast and its hit packet is still accepted.
     /// </summary>
     [DefaultValue(2)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitAreaRangeSlack_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitAreaRangeSlack_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int SkillHitAreaRangeSlack { get; set; } = 2;
 
     /// <summary>
@@ -128,7 +128,7 @@ public class SpeedHackDetectConfiguration
     /// Zero disables the replay check.
     /// </summary>
     [DefaultValue(1000)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitCounterReplayWindowMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitCounterReplayWindowMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int SkillHitCounterReplayWindowMs { get; set; } = 1000;
 
     /// <summary>
@@ -136,7 +136,7 @@ public class SpeedHackDetectConfiguration
     /// Zero disables the age check.
     /// </summary>
     [DefaultValue(10)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitMaxAreaToHitDelaySeconds_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_SkillHitMaxAreaToHitDelaySeconds_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int SkillHitMaxAreaToHitDelaySeconds { get; set; } = 10;
 
     /// <summary>
@@ -151,7 +151,7 @@ public class SpeedHackDetectConfiguration
     /// below or equal to 0 fall back to the default at the check.
     /// </remarks>
     [DefaultValue(ViolationPolicy.DefaultRejectThreshold)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ViolationScoreRejectThreshold_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ViolationScoreRejectThreshold_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double ViolationScoreRejectThreshold { get; set; } = ViolationPolicy.DefaultRejectThreshold;
 
     /// <summary>
@@ -162,56 +162,56 @@ public class SpeedHackDetectConfiguration
     /// below or equal to 0 fall back to the default at the check.
     /// </remarks>
     [DefaultValue(ViolationPolicy.DefaultHalfLifeMinutes)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ViolationScoreHalfLifeMinutes_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_ViolationScoreHalfLifeMinutes_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double ViolationScoreHalfLifeMinutes { get; set; } = ViolationPolicy.DefaultHalfLifeMinutes;
 
     /// <summary>
     /// Gets or sets the maximum tokens for the token bucket attack check.
     /// </summary>
     [DefaultValue(5.0)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxAttackTokens_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MaxAttackTokens_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double MaxAttackTokens { get; set; } = 5.0;
 
     /// <summary>
     /// Gets or sets the base delay in milliseconds used in attack speed calculation.
     /// </summary>
     [DefaultValue(450.0)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedBaseDelayMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedBaseDelayMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double AttackSpeedBaseDelayMs { get; set; } = 450.0;
 
     /// <summary>
     /// Gets or sets the scaling factor applied to attack speed attribute in delay calculation.
     /// </summary>
     [DefaultValue(1.2)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedScalingFactor_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedScalingFactor_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double AttackSpeedScalingFactor { get; set; } = 1.2;
 
     /// <summary>
     /// Gets or sets the minimum delay floor in milliseconds between attacks.
     /// </summary>
     [DefaultValue(60.0)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedMinIntervalMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedMinIntervalMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double AttackSpeedMinIntervalMs { get; set; } = 60.0;
 
     /// <summary>
     /// Gets or sets the base delay in milliseconds used in magic speed calculation.
     /// </summary>
     [DefaultValue(450.0)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedBaseDelayMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedBaseDelayMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double MagicSpeedBaseDelayMs { get; set; } = 450.0;
 
     /// <summary>
     /// Gets or sets the scaling factor applied to the magic speed attribute in delay calculation.
     /// </summary>
     [DefaultValue(1.2)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedScalingFactor_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedScalingFactor_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double MagicSpeedScalingFactor { get; set; } = 1.2;
 
     /// <summary>
     /// Gets or sets the minimum delay floor in milliseconds between magic attacks.
     /// </summary>
     [DefaultValue(60.0)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedMinIntervalMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_MagicSpeedMinIntervalMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public double MagicSpeedMinIntervalMs { get; set; } = 60.0;
 
     /// <summary>
@@ -219,7 +219,7 @@ public class SpeedHackDetectConfiguration
     /// client ping tick count and the time which actually passed on the server.
     /// </summary>
     [DefaultValue(3000)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_PingClockToleranceMs_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_PingClockToleranceMs_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int PingClockToleranceMs { get; set; } = 3000;
 
     /// <summary>
@@ -227,13 +227,13 @@ public class SpeedHackDetectConfiguration
     /// ping packet and the attack speed calculated by the server.
     /// </summary>
     [DefaultValue(20)]
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_PingAttackSpeedTolerance_Caption), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_PingAttackSpeedTolerance_Caption), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     public int PingAttackSpeedTolerance { get; set; } = 20;
 
     /// <summary>
     /// Gets or sets optional attack speed overrides for individual skills.
     /// </summary>
-    [System.ComponentModel.DataAnnotations.Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedProfiles_Caption), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedProfiles_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+    [System.ComponentModel.DataAnnotations.Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedProfiles_Caption), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.SpeedHackDetectConfiguration_AttackSpeedProfiles_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
     [MemberOfAggregate]
     [System.ComponentModel.DataAnnotations.ScaffoldColumn(true)]
     public ICollection<AttackSpeedProfile> AttackSpeedProfiles { get; set; } = new List<AttackSpeedProfile>();

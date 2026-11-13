@@ -1,13 +1,13 @@
-﻿// <copyright file="ItemSerializerHelper.cs" company="MUnique">
+﻿// <copyright file="ItemSerializerHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.Persistence;
 
 /// <summary>
 /// A helper class to <see cref="ItemSerializer"/>.
@@ -60,7 +60,7 @@ public static class ItemSerializerHelper
     /// and the value is the first index of this corresponding elemental seed.
     /// </summary>
     /// <remarks>
-    /// Webzen decided to put every possible socket option of each elemental seed type into one big list,
+    /// the original developers decided to put every possible socket option of each elemental seed type into one big list,
     /// which may contain up to <see cref="MaximumSocketOptions"/> elements.
     /// I couldn't figure out a pattern, but found these index offsets by trial and error.
     /// Their list contains holes, so expect that index 9 doesn't define an option.

@@ -1,13 +1,13 @@
-﻿// <copyright file="GameEventController.cs" company="MUnique">
+﻿// <copyright file="GameEventController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.Host;
+namespace HNMO.Discord.Host;
 
 using global::Dapr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Receives the <see cref="GameEvent"/>s which the game servers publish, and passes them to the <see cref="IGameEventListener"/>s.

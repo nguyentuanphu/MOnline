@@ -1,23 +1,23 @@
-﻿// <copyright file="PreSeason6NetworkEncryptionFactoryPlugIn.cs" company="MUnique">
+﻿// <copyright file="PreSeason6NetworkEncryptionFactoryPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.PlugIns;
+namespace HNMO.Network.PlugIns;
 
 using System.ComponentModel.DataAnnotations;
 using System.IO.Pipelines;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.SimpleModulus;
-using MUnique.OpenMU.Network.Xor;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network;
+using HNMO.Network.SimpleModulus;
+using HNMO.Network.Xor;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin which provides network encryptors and decryptors for game clients before season 6.
 /// </summary>
 /// <remarks>
 /// The simple modulus keys were never changed, so the default keys of season 6 work here without changes.
-/// For the Xor32 key it's different. During season 6 on GMO, Webzen desperately changed them in a regular manner - sometimes
+/// For the Xor32 key it's different. During season 6 on GMO, the original developers desperately changed them in a regular manner - sometimes
 /// every weekly maintenance. Needless to say, calculating the new key was a matter of seconds and provided no protection from skilled hackers at all.
 /// </remarks>
 [PlugIn]

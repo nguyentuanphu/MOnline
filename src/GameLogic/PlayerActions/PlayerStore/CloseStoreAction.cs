@@ -1,10 +1,10 @@
-﻿// <copyright file="CloseStoreAction.cs" company="MUnique">
+﻿// <copyright file="CloseStoreAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.PlayerStore;
+namespace HNMO.GameLogic.PlayerActions.PlayerStore;
 
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
+using HNMO.GameLogic.Views.PlayerShop;
 
 /// <summary>
 /// Action to close the own player store.

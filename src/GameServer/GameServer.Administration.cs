@@ -1,13 +1,13 @@
-// <copyright file="GameServer.Administration.cs" company="MUnique">
+// <copyright file="GameServer.Administration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.Administration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Administration;
+using HNMO.Interfaces;
 
 /// <summary>The live administration channel of a game server.</summary>
 public sealed partial class GameServer : IGameServerAdministration

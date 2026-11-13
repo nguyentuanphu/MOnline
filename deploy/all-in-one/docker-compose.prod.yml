@@ -1,5 +1,5 @@
 services:
-  openmu-startup:
+  hnmo-startup:
     restart: "unless-stopped"
     environment:
       ASPNETCORE_ENVIRONMENT: Production
@@ -35,7 +35,7 @@ services:
       - ./nginx/templates/nginx.server_name.conf.template:/etc/nginx/templates/nginx.server_name.conf.template:ro
       - ./nginx/templates/nginx.prod.certificates.conf.template:/etc/nginx/templates/nginx.prod.certificates.conf.template:ro
     depends_on:
-      - openmu-startup
+      - hnmo-startup
 
   certbot:
     image: certbot/certbot:latest

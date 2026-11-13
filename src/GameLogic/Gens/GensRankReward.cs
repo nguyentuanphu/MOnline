@@ -1,8 +1,8 @@
-// <copyright file="GensRankReward.cs" company="MUnique">
+// <copyright file="GensRankReward.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
 /// <summary>
 /// The monthly reward of a gens rank.

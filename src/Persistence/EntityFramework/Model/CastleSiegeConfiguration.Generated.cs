@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeConfiguration.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.CastleSiegeConfiguration"/>.
 /// </summary>
 [Table(nameof(CastleSiegeConfiguration), Schema = SchemaNames.Configuration)]
-internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration, IIdentifiable
+internal partial class CastleSiegeConfiguration : HNMO.DataModel.Configuration.CastleSiegeConfiguration, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry> StateSchedule => base.StateSchedule ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry, CastleSiegeStateScheduleEntry>(this.RawStateSchedule);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry> StateSchedule => base.StateSchedule ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry, CastleSiegeStateScheduleEntry>(this.RawStateSchedule);
 
     /// <summary>
     /// Gets the raw collection of <see cref="NpcDefinitions" />.
@@ -44,7 +44,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition> NpcDefinitions => base.NpcDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition, CastleSiegeNpcDefinition>(this.RawNpcDefinitions);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeNpcDefinition> NpcDefinitions => base.NpcDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeNpcDefinition, CastleSiegeNpcDefinition>(this.RawNpcDefinitions);
 
     /// <summary>
     /// Gets the raw collection of <see cref="GateDefenseUpgrades" />.
@@ -53,7 +53,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateDefenseUpgrades => base.GateDefenseUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateDefenseUpgrades);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateDefenseUpgrades => base.GateDefenseUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateDefenseUpgrades);
 
     /// <summary>
     /// Gets the raw collection of <see cref="GateLifeUpgrades" />.
@@ -62,7 +62,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateLifeUpgrades => base.GateLifeUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateLifeUpgrades);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateLifeUpgrades => base.GateLifeUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateLifeUpgrades);
 
     /// <summary>
     /// Gets the raw collection of <see cref="StatueDefenseUpgrades" />.
@@ -71,7 +71,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueDefenseUpgrades => base.StatueDefenseUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueDefenseUpgrades);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueDefenseUpgrades => base.StatueDefenseUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueDefenseUpgrades);
 
     /// <summary>
     /// Gets the raw collection of <see cref="StatueLifeUpgrades" />.
@@ -80,7 +80,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueLifeUpgrades => base.StatueLifeUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueLifeUpgrades);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueLifeUpgrades => base.StatueLifeUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueLifeUpgrades);
 
     /// <summary>
     /// Gets the raw collection of <see cref="StatueRegenUpgrades" />.
@@ -89,7 +89,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueRegenUpgrades => base.StatueRegenUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueRegenUpgrades);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueRegenUpgrades => base.StatueRegenUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueRegenUpgrades);
 
     /// <summary>
     /// Gets the raw collection of <see cref="AttackMachineZones" />.
@@ -98,7 +98,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition> AttackMachineZones => base.AttackMachineZones ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawAttackMachineZones);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition> AttackMachineZones => base.AttackMachineZones ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawAttackMachineZones);
 
     /// <summary>
     /// Gets the raw collection of <see cref="DefenseMachineZones" />.
@@ -107,7 +107,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition> DefenseMachineZones => base.DefenseMachineZones ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawDefenseMachineZones);
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition> DefenseMachineZones => base.DefenseMachineZones ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawDefenseMachineZones);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="SignOfLordItemDefinition"/>.
@@ -126,7 +126,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition SignOfLordItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition SignOfLordItemDefinition
     {
         get => base.SignOfLordItemDefinition;set
         {
@@ -152,7 +152,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition CastleSiegeMapDefinition
+    public override HNMO.DataModel.Configuration.GameMapDefinition CastleSiegeMapDefinition
     {
         get => base.CastleSiegeMapDefinition;set
         {
@@ -178,7 +178,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition LandOfTrialsMapDefinition
+    public override HNMO.DataModel.Configuration.GameMapDefinition LandOfTrialsMapDefinition
     {
         get => base.LandOfTrialsMapDefinition;set
         {
@@ -204,7 +204,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition RewardItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition RewardItemDefinition
     {
         get => base.RewardItemDefinition;set
         {
@@ -230,7 +230,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition DefenseRespawnArea
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition DefenseRespawnArea
     {
         get => base.DefenseRespawnArea;set
         {
@@ -256,7 +256,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition AttackRespawnArea
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition AttackRespawnArea
     {
         get => base.AttackRespawnArea;set
         {
@@ -266,7 +266,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -274,7 +274,7 @@ internal partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Confi
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

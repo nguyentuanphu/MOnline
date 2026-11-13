@@ -1,12 +1,12 @@
-// <copyright file="OfflineViewPlugInContainer.cs" company="MUnique">
+// <copyright file="OfflineViewPlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.World;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin container for the <see cref="OfflinePlayer"/>, providing stub implementations

@@ -1,14 +1,14 @@
-﻿// <copyright file="BasicModelGenerator.cs" company="MUnique">
+﻿// <copyright file="BasicModelGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.SourceGenerator;
+namespace HNMO.Persistence.SourceGenerator;
 
 using System.Reflection;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// A generator for the plain and simple objects for the persistence project.
@@ -19,7 +19,7 @@ public class BasicModelGenerator : IIncrementalGenerator, IUnboundSourceGenerato
     /// <summary>
     /// Holds the Assembly-Name which is the target of this generator.
     /// </summary>
-    internal const string TargetAssemblyName = "MUnique.OpenMU.Persistence";
+    internal const string TargetAssemblyName = "HNMO.Persistence";
 
     /// <inheritdoc />
     public void Initialize(IncrementalGeneratorInitializationContext context)
@@ -70,9 +70,9 @@ public class BasicModelGenerator : IIncrementalGenerator, IUnboundSourceGenerato
 
             var classSource = $@"{string.Format(ModelGeneratorHelper.FileHeaderTemplate, className)}
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref=""{className}""/>.

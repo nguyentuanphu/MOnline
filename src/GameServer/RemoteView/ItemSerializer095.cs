@@ -1,18 +1,18 @@
-﻿// <copyright file="ItemSerializer095.cs" company="MUnique">
+﻿// <copyright file="ItemSerializer095.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This item serializer is used to serialize the item data to the data packets for version 0.95.

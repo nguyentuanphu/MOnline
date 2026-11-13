@@ -1,26 +1,26 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Dapr.Common.HealthChecks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameServer;
-using MUnique.OpenMU.GameServer.Host;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.ServerClients;
-using MUnique.OpenMU.Telemetry;
-using MUnique.OpenMU.Web.Map;
-using GameServer = MUnique.OpenMU.GameServer.GameServer;
+using HNMO.Dapr.Common;
+using HNMO.Dapr.Common.HealthChecks;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameServer;
+using HNMO.GameServer.Host;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
+using HNMO.ServerClients;
+using HNMO.Telemetry;
+using HNMO.Web.Map;
+using GameServer = HNMO.GameServer.GameServer;
 
 // Ensure GameLogic and GameServer Assemblies are loaded
-_ = MUnique.OpenMU.GameLogic.Rand.NextInt(1, 2);
-_ = MUnique.OpenMU.GameServer.ClientVersionResolver.DefaultVersion;
+_ = HNMO.GameLogic.Rand.NextInt(1, 2);
+_ = HNMO.GameServer.ClientVersionResolver.DefaultVersion;
 
 var gameServerId = GameServerIdResolver.Determine();
 var serviceName = $"GameServer{gameServerId}";
@@ -62,13 +62,13 @@ builder.AddMapApp();
 
 var metricsRegistry = new MetricsRegistry();
 metricsRegistry.AddNetworkMeters();
-metricsRegistry.AddMeters(MUnique.OpenMU.GameLogic.Metrics.Meters);
+metricsRegistry.AddMeters(HNMO.GameLogic.Metrics.Meters);
 builder.AddOpenTelemetryMetrics(metricsRegistry);
 
 var app = builder.BuildAndConfigure(false);
 app.UseStaticFiles();
 app.UseAntiforgery();
-app.MapRazorComponents<MUnique.OpenMU.GameServer.Host.App>()
+app.MapRazorComponents<HNMO.GameServer.Host.App>()
     .AddInteractiveServerRenderMode();
 await app.WaitForDatabaseConnectionInitializationAsync().ConfigureAwait(false);
 

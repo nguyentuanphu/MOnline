@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemRules.cs" company="MUnique">
+﻿// <copyright file="ItemRules.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Sets the item rules (<see cref="ItemDefinition.IsTradable"/>, <see cref="ItemDefinition.IsDroppable"/>,
@@ -14,7 +14,7 @@ using MUnique.OpenMU.DataModel.Configuration.Items;
 /// of the Season 6 items.
 /// </summary>
 /// <remarks>
-/// The values are the ones of the MuMain client item data (src/bin/Data/Items), so the client and the
+/// The values are the ones of the desktop client item data (src/bin/Data/Items), so the client and the
 /// server allow the same actions. Items which are not listed allow everything.
 /// Two exceptions:
 /// <list type="bullet">

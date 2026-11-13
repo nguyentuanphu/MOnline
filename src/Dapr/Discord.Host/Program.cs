@@ -1,15 +1,15 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Discord;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.ServerClients;
+using HNMO.Dapr.Common;
+using HNMO.Discord;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
+using HNMO.ServerClients;
 
 var builder = DaprService.CreateBuilder("Discord", args);
 

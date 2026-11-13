@@ -1,12 +1,12 @@
-// <copyright file="CastleSiegeExtensions.cs" company="MUnique">
+// <copyright file="CastleSiegeExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Extensions.ModelBuilder;
+namespace HNMO.Persistence.EntityFramework.Extensions.ModelBuilder;
 
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 
 /// <summary>
 /// Extensions for Castle Siege-related <see cref="EntityTypeBuilder"/>s.

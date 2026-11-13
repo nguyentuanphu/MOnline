@@ -1,15 +1,15 @@
-// <copyright file="PlayerController.cs" company="MUnique">
+// <copyright file="PlayerController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.Text.Json.Nodes;
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Routes audited player operations through the owning game server.</summary>
 /// <param name="operations">The shared player operations.</param>

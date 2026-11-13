@@ -1,20 +1,20 @@
-﻿// <copyright file="LogInHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="LogInHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Login;
+namespace HNMO.GameServer.MessageHandler.Login;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Network.Xor;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.GameServer.RemoteView;
+using HNMO.Network;
+using HNMO.Network.Packets;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.PlugIns;
+using HNMO.Network.Xor;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for login packets.

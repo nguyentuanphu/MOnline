@@ -1,10 +1,10 @@
-﻿// <copyright file="DiscordBotSettings.cs" company="MUnique">
+﻿// <copyright file="DiscordBotSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
-using MUnique.OpenMU.Discord.ChatBridge;
+using HNMO.Discord.ChatBridge;
 
 /// <summary>
 /// The settings of the Discord bot.
@@ -38,7 +38,7 @@ public class DiscordBotSettings
     public Dictionary<DiscordChannelCategory, ulong> Channels { get; set; } = new();
 
     /// <summary>
-    /// Gets or sets the path of a JSON file with the layout of the Discord server, which the command <c>/openmu setup</c> sets up.
+    /// Gets or sets the path of a JSON file with the layout of the Discord server, which the command <c>/hnmo setup</c> sets up.
     /// Without it, the default layout is used.
     /// </summary>
     public string? LayoutFile { get; set; }

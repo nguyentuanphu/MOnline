@@ -1,12 +1,12 @@
-﻿// <copyright file="MasterSkillDefinition.cs" company="MUnique">
+﻿// <copyright file="MasterSkillDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
 
 /// <summary>
 /// The definition of a master skill. One skill can have 0-n master skill definitions,

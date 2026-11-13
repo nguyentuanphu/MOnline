@@ -1,8 +1,8 @@
-// <copyright file="AttributeDisplayNames.cs" company="MUnique">
+// <copyright file="AttributeDisplayNames.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.AttributeSystem;
+namespace HNMO.AttributeSystem;
 
 using System.Globalization;
 using System.Resources;
@@ -12,7 +12,7 @@ using System.Resources;
 /// </summary>
 public static class AttributeDisplayNames
 {
-    private static readonly ResourceManager Resources = new("MUnique.OpenMU.AttributeSystem.Properties.AttributeTexts", typeof(AttributeDisplayNames).Assembly);
+    private static readonly ResourceManager Resources = new("HNMO.AttributeSystem.Properties.AttributeTexts", typeof(AttributeDisplayNames).Assembly);
 
     /// <summary>Gets a localized name while preserving unknown and customized names.</summary>
     /// <param name="attribute">The attribute definition.</param>

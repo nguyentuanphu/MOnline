@@ -1,13 +1,13 @@
-﻿// <copyright file="ClientConnectionInfo.cs" company="MUnique">
+﻿// <copyright file="ClientConnectionInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer;
+namespace HNMO.ConnectServer;
 
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Analyzer;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// The <see cref="ICapturedConnectionInfo"/> of a client of the connect server.

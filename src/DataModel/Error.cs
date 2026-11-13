@@ -1,8 +1,8 @@
-﻿// <copyright file="Error.cs" company="MUnique">
+﻿// <copyright file="Error.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel;
+namespace HNMO.DataModel;
 
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;

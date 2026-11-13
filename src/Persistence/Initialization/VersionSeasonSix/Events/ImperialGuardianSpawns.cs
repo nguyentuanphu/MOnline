@@ -1,17 +1,17 @@
-﻿// <copyright file="ImperialGuardianSpawns.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianSpawns.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Events;
 
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Maps;
+using HNMO.Pathfinding;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Maps;
 
 /// <summary>
 /// The monster spawns of the imperial guardian event, for each map, zone and day of the week.
 /// </summary>
 /// <remarks>
-/// The directions are the ones of the game client plus one, like the <see cref="Direction"/> of OpenMU.
+/// The directions are the ones of the game client plus one, like the <see cref="Direction"/> of HNMO.
 /// The spawns of a map are defined twice, once for each of its days, because the boss of the last zone differs.
 /// </remarks>
 internal static class ImperialGuardianSpawns

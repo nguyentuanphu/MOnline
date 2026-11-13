@@ -1,4 +1,4 @@
-// <copyright file="ItemStatTerms.Generated.cs" company="MUnique">
+// <copyright file="ItemStatTerms.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.Items.ItemStatTerms"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.Items.ItemStatTerms"/>.
 /// </summary>
 [Table(nameof(ItemStatTerms), Schema = SchemaNames.Configuration)]
-internal partial class ItemStatTerms : MUnique.OpenMU.DataModel.Configuration.Items.ItemStatTerms, IIdentifiable
+internal partial class ItemStatTerms : HNMO.DataModel.Configuration.Items.ItemStatTerms, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class ItemStatTerms : MUnique.OpenMU.DataModel.Configuration.It
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Attribute
+    public override HNMO.AttributeSystem.AttributeDefinition Attribute
     {
         get => base.Attribute;set
         {
@@ -71,7 +71,7 @@ internal partial class ItemStatTerms : MUnique.OpenMU.DataModel.Configuration.It
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemLevelBonusTable Table
+    public override HNMO.DataModel.Configuration.Items.ItemLevelBonusTable Table
     {
         get => base.Table;set
         {
@@ -81,7 +81,7 @@ internal partial class ItemStatTerms : MUnique.OpenMU.DataModel.Configuration.It
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemStatTerms Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Items.ItemStatTerms Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemStatTerms();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -89,7 +89,7 @@ internal partial class ItemStatTerms : MUnique.OpenMU.DataModel.Configuration.It
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Items.ItemStatTerms other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Items.ItemStatTerms other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

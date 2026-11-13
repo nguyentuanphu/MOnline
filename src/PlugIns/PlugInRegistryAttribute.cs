@@ -1,14 +1,14 @@
-// <copyright file="PlugInRegistryAttribute.cs" company="MUnique">
+// <copyright file="PlugInRegistryAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns;
+namespace HNMO.PlugIns;
 
 using System.Diagnostics.CodeAnalysis;
 
 /// <summary>
 /// Marks an assembly which contains a <see cref="IPlugInRegistry"/> of its plugins.
-/// It's added by the <c>PlugInRegistryGenerator</c> of the <c>MUnique.OpenMU.PlugIns.Generators</c> project.
+/// It's added by the <c>PlugInRegistryGenerator</c> of the <c>HNMO.PlugIns.Generators</c> project.
 /// </summary>
 /// <remarks>
 /// When the <see cref="PlugInManager"/> discovers the plugins of an assembly with this attribute,

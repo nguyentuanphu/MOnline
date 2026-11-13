@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeConfiguration.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CastleSiegeConfiguration"/>.
 /// </summary>
-public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration, IIdentifiable, IConvertibleTo<CastleSiegeConfiguration>
+public partial class CastleSiegeConfiguration : HNMO.DataModel.Configuration.CastleSiegeConfiguration, IIdentifiable, IConvertibleTo<CastleSiegeConfiguration>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry> StateSchedule
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry> StateSchedule
     {
-        get => base.StateSchedule ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeStateScheduleEntry, CastleSiegeStateScheduleEntry>(this.RawStateSchedule);
+        get => base.StateSchedule ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeStateScheduleEntry, CastleSiegeStateScheduleEntry>(this.RawStateSchedule);
         protected set
         {
             this.StateSchedule.Clear();
@@ -54,9 +54,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition> NpcDefinitions
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeNpcDefinition> NpcDefinitions
     {
-        get => base.NpcDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition, CastleSiegeNpcDefinition>(this.RawNpcDefinitions);
+        get => base.NpcDefinitions ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeNpcDefinition, CastleSiegeNpcDefinition>(this.RawNpcDefinitions);
         protected set
         {
             this.NpcDefinitions.Clear();
@@ -75,9 +75,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateDefenseUpgrades
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateDefenseUpgrades
     {
-        get => base.GateDefenseUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateDefenseUpgrades);
+        get => base.GateDefenseUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateDefenseUpgrades);
         protected set
         {
             this.GateDefenseUpgrades.Clear();
@@ -96,9 +96,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateLifeUpgrades
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> GateLifeUpgrades
     {
-        get => base.GateLifeUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateLifeUpgrades);
+        get => base.GateLifeUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawGateLifeUpgrades);
         protected set
         {
             this.GateLifeUpgrades.Clear();
@@ -117,9 +117,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueDefenseUpgrades
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueDefenseUpgrades
     {
-        get => base.StatueDefenseUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueDefenseUpgrades);
+        get => base.StatueDefenseUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueDefenseUpgrades);
         protected set
         {
             this.StatueDefenseUpgrades.Clear();
@@ -138,9 +138,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueLifeUpgrades
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueLifeUpgrades
     {
-        get => base.StatueLifeUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueLifeUpgrades);
+        get => base.StatueLifeUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueLifeUpgrades);
         protected set
         {
             this.StatueLifeUpgrades.Clear();
@@ -159,9 +159,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueRegenUpgrades
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition> StatueRegenUpgrades
     {
-        get => base.StatueRegenUpgrades ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueRegenUpgrades);
+        get => base.StatueRegenUpgrades ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeUpgradeDefinition, CastleSiegeUpgradeDefinition>(this.RawStatueRegenUpgrades);
         protected set
         {
             this.StatueRegenUpgrades.Clear();
@@ -180,9 +180,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition> AttackMachineZones
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition> AttackMachineZones
     {
-        get => base.AttackMachineZones ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawAttackMachineZones);
+        get => base.AttackMachineZones ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawAttackMachineZones);
         protected set
         {
             this.AttackMachineZones.Clear();
@@ -201,9 +201,9 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition> DefenseMachineZones
+    public override ICollection<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition> DefenseMachineZones
     {
-        get => base.DefenseMachineZones ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawDefenseMachineZones);
+        get => base.DefenseMachineZones ??= new CollectionAdapter<HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, CastleSiegeZoneDefinition>(this.RawDefenseMachineZones);
         protected set
         {
             this.DefenseMachineZones.Clear();
@@ -226,7 +226,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition SignOfLordItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition SignOfLordItemDefinition
     {
         get => base.SignOfLordItemDefinition;
         set => base.SignOfLordItemDefinition = value;
@@ -244,7 +244,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition CastleSiegeMapDefinition
+    public override HNMO.DataModel.Configuration.GameMapDefinition CastleSiegeMapDefinition
     {
         get => base.CastleSiegeMapDefinition;
         set => base.CastleSiegeMapDefinition = value;
@@ -262,7 +262,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition LandOfTrialsMapDefinition
+    public override HNMO.DataModel.Configuration.GameMapDefinition LandOfTrialsMapDefinition
     {
         get => base.LandOfTrialsMapDefinition;
         set => base.LandOfTrialsMapDefinition = value;
@@ -280,7 +280,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition RewardItemDefinition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition RewardItemDefinition
     {
         get => base.RewardItemDefinition;
         set => base.RewardItemDefinition = value;
@@ -298,7 +298,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition DefenseRespawnArea
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition DefenseRespawnArea
     {
         get => base.DefenseRespawnArea;
         set => base.DefenseRespawnArea = value;
@@ -316,14 +316,14 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition AttackRespawnArea
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition AttackRespawnArea
     {
         get => base.AttackRespawnArea;
         set => base.AttackRespawnArea = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeConfiguration Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -331,7 +331,7 @@ public partial class CastleSiegeConfiguration : MUnique.OpenMU.DataModel.Configu
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,10 +1,10 @@
-﻿// <copyright file="GuildMember.cs" company="MUnique">
+﻿// <copyright file="GuildMember.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Information about a guild member.

@@ -1,8 +1,8 @@
-﻿// <copyright file="IContextAwareRepositoryProvider.cs" company="MUnique">
+﻿// <copyright file="IContextAwareRepositoryProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// A <see cref="IRepositoryProvider"/> which is aware of a current context by

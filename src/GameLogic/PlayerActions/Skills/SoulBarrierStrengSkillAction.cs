@@ -1,14 +1,14 @@
-﻿// <copyright file="SoulBarrierStrengSkillAction.cs" company="MUnique">
+﻿// <copyright file="SoulBarrierStrengSkillAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Views.World;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The Soul Barrier Strengthener skill action.

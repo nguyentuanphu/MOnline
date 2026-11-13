@@ -1,12 +1,12 @@
-﻿// <copyright file="AddInitialSkillPlugInBase.cs" company="MUnique">
+﻿// <copyright file="AddInitialSkillPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.PlugIns.CharacterCreated;
+namespace HNMO.Persistence.Initialization.PlugIns.CharacterCreated;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// Base class for a <see cref="ICharacterCreatedPlugIn"/> which adds an initial skill for a specific character class.

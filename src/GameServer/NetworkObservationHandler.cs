@@ -1,16 +1,16 @@
-// <copyright file="NetworkObservationHandler.cs" company="MUnique">
+// <copyright file="NetworkObservationHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using System.Collections.Concurrent;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer.Archive;
+using HNMO.GameLogic;
+using HNMO.GameServer.RemoteView;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Analyzer.Archive;
 
 /// <summary>
 /// Archives the traffic of the players whose account is observed.

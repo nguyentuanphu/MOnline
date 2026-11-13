@@ -1,4 +1,4 @@
-// <copyright file="MiniGameChangeEvent.Generated.cs" company="MUnique">
+// <copyright file="MiniGameChangeEvent.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MiniGameChangeEvent"/>.
 /// </summary>
-public partial class MiniGameChangeEvent : MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent, IIdentifiable, IConvertibleTo<MiniGameChangeEvent>
+public partial class MiniGameChangeEvent : HNMO.DataModel.Configuration.MiniGameChangeEvent, IIdentifiable, IConvertibleTo<MiniGameChangeEvent>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class MiniGameChangeEvent : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MiniGameTerrainChange> TerrainChanges
+    public override ICollection<HNMO.DataModel.Configuration.MiniGameTerrainChange> TerrainChanges
     {
-        get => base.TerrainChanges ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MiniGameTerrainChange, MiniGameTerrainChange>(this.RawTerrainChanges);
+        get => base.TerrainChanges ??= new CollectionAdapter<HNMO.DataModel.Configuration.MiniGameTerrainChange, MiniGameTerrainChange>(this.RawTerrainChanges);
         protected set
         {
             this.TerrainChanges.Clear();
@@ -58,7 +58,7 @@ public partial class MiniGameChangeEvent : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition TargetDefinition
+    public override HNMO.DataModel.Configuration.MonsterDefinition TargetDefinition
     {
         get => base.TargetDefinition;
         set => base.TargetDefinition = value;
@@ -76,14 +76,14 @@ public partial class MiniGameChangeEvent : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea SpawnArea
+    public override HNMO.DataModel.Configuration.MonsterSpawnArea SpawnArea
     {
         get => base.SpawnArea;
         set => base.SpawnArea = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MiniGameChangeEvent Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MiniGameChangeEvent();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -91,7 +91,7 @@ public partial class MiniGameChangeEvent : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MiniGameChangeEvent other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MiniGameChangeEvent other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

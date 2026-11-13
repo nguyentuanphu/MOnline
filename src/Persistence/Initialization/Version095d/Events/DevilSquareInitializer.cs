@@ -1,11 +1,11 @@
-﻿// <copyright file="DevilSquareInitializer.cs" company="MUnique">
+﻿// <copyright file="DevilSquareInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version095d.Events;
+namespace HNMO.Persistence.Initialization.Version095d.Events;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The initializer for the devil square event.

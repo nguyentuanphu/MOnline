@@ -1,10 +1,10 @@
-// <copyright file="AccountCoinShopCurrencyExchange.cs" company="MUnique">
+// <copyright file="AccountCoinShopCurrencyExchange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
-using MUnique.OpenMU.GameLogic.CashShop;
+using HNMO.GameLogic.CashShop;
 
 /// <summary>
 /// Pays prices in account coins (WCoin C, WCoin P, Goblin Points), by transferring them from the account

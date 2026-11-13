@@ -1,10 +1,10 @@
-// <copyright file="BotMuHelperSettings.cs" company="MUnique">
+// <copyright file="BotMuHelperSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
-using MUnique.OpenMU.GameLogic.MuHelper;
+using HNMO.GameLogic.MuHelper;
 
 /// <summary>
 /// Default MU Helper settings used to drive a bot's combat AI.

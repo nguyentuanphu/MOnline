@@ -1,13 +1,13 @@
-﻿// <copyright file="WizardTeleportAction.cs" company="MUnique">
+﻿// <copyright file="WizardTeleportAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions;
+namespace HNMO.GameLogic.PlayerActions;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Action to warp to another place through a gate.

@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationSearchEntry.cs" company="MUnique">
+// <copyright file="ConfigurationSearchEntry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 /// <summary>
 /// A precomputed configuration-search entry.

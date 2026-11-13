@@ -1,18 +1,18 @@
-﻿// <copyright file="PlugInConfiguration.Custom.cs" company="MUnique">
+﻿// <copyright file="PlugInConfiguration.Custom.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
 /// Custom additions to the generated <see cref="PlugInConfiguration"/>.
 /// </summary>
-internal partial class PlugInConfiguration : IAssignable, IAssignable<MUnique.OpenMU.PlugIns.PlugInConfiguration>, ICloneable<MUnique.OpenMU.PlugIns.PlugInConfiguration>
+internal partial class PlugInConfiguration : IAssignable, IAssignable<HNMO.PlugIns.PlugInConfiguration>, ICloneable<HNMO.PlugIns.PlugInConfiguration>
 {
     /// <inheritdoc />
-    public virtual MUnique.OpenMU.PlugIns.PlugInConfiguration Clone(DataModel.Configuration.GameConfiguration gameConfiguration)
+    public virtual HNMO.PlugIns.PlugInConfiguration Clone(DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new PlugInConfiguration();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -20,16 +20,16 @@ internal partial class PlugInConfiguration : IAssignable, IAssignable<MUnique.Op
     }
 
     /// <inheritdoc />
-    public virtual void AssignValuesOf(object other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public virtual void AssignValuesOf(object other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
-        if (other is MUnique.OpenMU.PlugIns.PlugInConfiguration typedOther)
+        if (other is HNMO.PlugIns.PlugInConfiguration typedOther)
         {
             this.AssignValuesOf(typedOther, gameConfiguration);
         }
     }
 
     /// <inheritdoc />
-    public virtual void AssignValuesOf(MUnique.OpenMU.PlugIns.PlugInConfiguration other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public virtual void AssignValuesOf(HNMO.PlugIns.PlugInConfiguration other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         this.TypeId = other.TypeId;
         this.IsActive = other.IsActive;

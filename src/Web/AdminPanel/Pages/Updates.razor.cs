@@ -1,13 +1,13 @@
-﻿// <copyright file="Updates.razor.cs" company="MUnique">
+﻿// <copyright file="Updates.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.Initialization.Updates;
+using HNMO.Persistence;
+using HNMO.Persistence.Initialization.Updates;
 
 /// <summary>
 /// The set-up page.

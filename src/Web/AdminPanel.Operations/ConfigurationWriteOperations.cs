@@ -1,21 +1,21 @@
-// <copyright file="ConfigurationWriteOperations.cs" company="MUnique">
+// <copyright file="ConfigurationWriteOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Collections;
 using System.Reflection;
 using System.Security.Cryptography;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Composition;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.AttributeSystem;
+using HNMO.DataModel;
+using HNMO.DataModel.Composition;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>Previews and applies bounded configuration patches using the existing persistence notification path.</summary>
 /// <param name="persistence">The persistence provider.</param>

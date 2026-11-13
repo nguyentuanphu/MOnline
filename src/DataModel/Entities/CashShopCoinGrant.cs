@@ -1,10 +1,10 @@
-// <copyright file="CashShopCoinGrant.cs" company="MUnique">
+// <copyright file="CashShopCoinGrant.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// A grant of cash shop coins to an account, e.g. by an administrator or a payment provider.

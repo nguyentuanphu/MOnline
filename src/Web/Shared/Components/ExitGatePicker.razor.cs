@@ -1,14 +1,14 @@
-﻿// <copyright file="ExitGatePicker.razor.cs" company="MUnique">
+﻿// <copyright file="ExitGatePicker.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components;
+namespace HNMO.Web.Shared.Components;
 
 using System.Globalization;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.Persistence;
 
 /// <summary>
 /// Blazor component which allows to select an exit gate.

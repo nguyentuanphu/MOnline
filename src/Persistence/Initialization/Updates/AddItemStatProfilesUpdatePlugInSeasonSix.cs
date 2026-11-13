@@ -1,11 +1,11 @@
-// <copyright file="AddItemStatProfilesUpdatePlugInSeasonSix.cs" company="MUnique">
+// <copyright file="AddItemStatProfilesUpdatePlugInSeasonSix.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the item stat profiles to season 6 configurations.

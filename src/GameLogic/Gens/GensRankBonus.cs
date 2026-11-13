@@ -1,8 +1,8 @@
-// <copyright file="GensRankBonus.cs" company="MUnique">
+// <copyright file="GensRankBonus.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
 /// <summary>
 /// The bonus contribution points of a kill of a member of the other gens with a better rank.

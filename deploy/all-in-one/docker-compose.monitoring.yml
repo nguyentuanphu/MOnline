@@ -1,9 +1,9 @@
 # Optional monitoring stack for the all-in-one deployment. Add it with another -f parameter, e.g.:
 #   docker compose -f docker-compose.yml -f docker-compose.monitoring.yml up -d
-# OpenMU then exports its logs, metrics and traces with OpenTelemetry (OTLP), and Grafana is
+# HNMO then exports its logs, metrics and traces with OpenTelemetry (OTLP), and Grafana is
 # available under /grafana/, with the login of the admin panel. The log files are written as before.
 services:
-  openmu-startup:
+  hnmo-startup:
     environment:
       OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-lgtm:4317
     depends_on:
@@ -12,7 +12,7 @@ services:
   otel-lgtm:
     # OpenTelemetry collector, Loki (logs), Prometheus (metrics), Tempo (traces) and Grafana in one container.
     # It's intended for development, demo and testing environments. For bigger production setups,
-    # replace it by dedicated deployments of these components - OpenMU just needs the OTLP endpoint.
+    # replace it by dedicated deployments of these components - HNMO just needs the OTLP endpoint.
     image: grafana/otel-lgtm:0.35.0
     container_name: otel-lgtm
     restart: unless-stopped

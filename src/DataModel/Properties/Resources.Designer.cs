@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.DataModel.Properties {
+namespace HNMO.DataModel.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MUnique.OpenMU.DataModel.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MUnique.OpenMU.DataModel.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HNMO.DataModel.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -106,7 +106,7 @@ namespace MUnique.OpenMU.DataModel.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Defines, if the (sub-)servers should be automatically started then when server process starts. This setting applies only to the all-in-one server (MUnique.OpenMU.Startup)..
+        ///   Looks up a localized string similar to Defines, if the (sub-)servers should be automatically started then when server process starts. This setting applies only to the all-in-one server (HNMO.Startup)..
         /// </summary>
         public static string SystemConfiguration_AutoStart_Description {
             get {
@@ -124,7 +124,7 @@ namespace MUnique.OpenMU.DataModel.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Defines, if the all-in-one server (MUnique.OpenMU.Startup) automatically updates the database schema and applies the mandatory configuration updates when the server process starts. In a distributed deployment, the user must start the updates manually over the admin panel..
+        ///   Looks up a localized string similar to Defines, if the all-in-one server (HNMO.Startup) automatically updates the database schema and applies the mandatory configuration updates when the server process starts. In a distributed deployment, the user must start the updates manually over the admin panel..
         /// </summary>
         public static string SystemConfiguration_AutoUpdateSchema_Description {
             get {
@@ -201,7 +201,7 @@ namespace MUnique.OpenMU.DataModel.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Defines, if the user can enter commands in the console of the server process. This setting applies only to the all-in-one server (MUnique.OpenMU.Startup). It replaces the &apos;-deamon&apos; start parameter..
+        ///   Looks up a localized string similar to Defines, if the user can enter commands in the console of the server process. This setting applies only to the all-in-one server (HNMO.Startup). It replaces the &apos;-deamon&apos; start parameter..
         /// </summary>
         public static string SystemConfiguration_ReadConsoleInput_Description {
             get {

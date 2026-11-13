@@ -1,14 +1,14 @@
-// <copyright file="ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn.cs" company="MUnique">
+// <copyright file="ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Configures the NPCs of the Castle Siege guard talk plug-ins:
@@ -21,7 +21,7 @@ using MUnique.OpenMU.PlugIns;
 /// which it doesn't need as a passive NPC which players talk to.
 /// </remarks>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("0B9D1938-0A3F-41D3-B5F1-1BAA1512BE6F")]
 public class ConfigureCastleSiegeGuardTalkPlugInsUpdatePlugIn : UpdatePlugInBase
 {

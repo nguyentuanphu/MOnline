@@ -1,10 +1,10 @@
-﻿// <copyright file="CrywolfMovePath.cs" company="MUnique">
+﻿// <copyright file="CrywolfMovePath.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The waypoints of the crywolf map, along which the monsters of the army of Balgass march to their goals.

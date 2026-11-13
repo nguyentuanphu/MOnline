@@ -1,41 +1,13 @@
-# OpenMU Project
+# HNMO server
+
+The game server of HNMO: the login and connect servers, the game servers with
+the whole game logic, chat, friends and guilds, and the admin panel to run and
+configure it all.
+
+It is played with the HNMO web client, and comes ready to start in the HNMO
+folder: server, admin panel, web client and save database in one.
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/d0f57e29e7524dadb677561389256d8b)](https://app.codacy.com/gh/MUnique/OpenMU/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/MUnique/OpenMU)
-[![Discord chat](https://img.shields.io/discord/669595902750490698?logo=discord)](https://discord.gg/2u5Agkd)
-
-| Platform       |Build Status          |
-|----------------|----------------------|
-| Linux          | [![Build Status](https://github.com/MUnique/OpenMU/actions/workflows/dotnetcore.yml/badge.svg?branch=master)](https://github.com/MUnique/OpenMU/actions/workflows/dotnetcore.yml) |
-| Linux (Docker) | [![Docker Build Status](https://github.com/MUnique/OpenMU/actions/workflows/docker.yml/badge.svg?branch=master)](https://hub.docker.com/r/munique/openmu)  |
-
-| NuGet Packages |   |
-|----------------|---|
-| MUnique.OpenMU.Network | [![NuGet Badge](https://img.shields.io/nuget/v/MUnique.OpenMU.Network)](https://www.nuget.org/packages/MUnique.OpenMU.Network/) |
-| MUnique.OpenMU.Network.Packets | [![NuGet Badge](https://img.shields.io/nuget/v/MUnique.OpenMU.Network.Packets)](https://www.nuget.org/packages/MUnique.OpenMU.Network.Packets/) |
-
-This project aims to create an easy to use, extendable and customizable server
-for a MMORPG called "MU Online".
-The server supports multiple versions of the game, but the main focus is
-version of Season 6 Episode 3 using the ENG (english) protocol. Additionally,
-the long-term focus is on the [open source client](https://github.com/sven-n/MuMain)
-which supports a slightly extended network protocol.
-However, parts of the software can also be suitable for the development of
-other games, even for other kind of games.
-
-The code is a complete rewrite from scratch - it's not based on pre-existing
-projects, and it's also explicitly not based on decompiled server sources or
-their countless derivates.
-
-There also exists a [blog](https://munique.net) which may contain some valuable
-information about this development.
-
-## Current project state
-
-This project is currently under development without any release.
-You can try the current state by using the available docker image, see
-[Run with Docker](docs-website/docs/getting-started/docker.md).
 
 ## Documentation
 
@@ -64,25 +36,11 @@ npm install
 npm start
 ```
 
-## Disclaimer Regarding Private Servers
-
-OpenMU is an open-source project and is not affiliated with, operated by, or responsible for any publicly hosted MU Online private servers.
-
-While anyone is welcome to use OpenMU in accordance with its license, we strongly discourage using the name **OpenMU** for private servers or their branding, as this may falsely imply an official affiliation with the project.
-
-If you operate a server based on OpenMU, please choose a distinct name and make it clear that your server is independently operated.
-
-Attribution such as **"Powered by OpenMU"**, preferably with a link to this repository, is appreciated but not required.
-
-The OpenMU project and its maintainers do not endorse or assume responsibility for third-party servers or their operations.
-
 ## Licensing
 
 This project is released under the MIT license (see LICENSE file).
 
 ## Contributions
 
-Contributions are welcome — from developers and non-developers alike. Please
-read [CONTRIBUTING.md](CONTRIBUTING.md) before you start, and don't hesitate to
-ask in our [discord channel](https://discord.gg/2u5Agkd) or by submitting an
-issue.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before you start, and open an issue for
+questions or ideas.

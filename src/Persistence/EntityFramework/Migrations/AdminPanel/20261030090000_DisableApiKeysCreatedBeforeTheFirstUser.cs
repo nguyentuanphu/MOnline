@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations.AdminPanel
+namespace HNMO.Persistence.EntityFramework.Migrations.AdminPanel
 {
     /// <summary>
     /// Disables the API keys which were created before the first user of the admin panel.

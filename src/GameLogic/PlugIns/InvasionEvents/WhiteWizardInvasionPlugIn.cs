@@ -1,17 +1,17 @@
-// <copyright file="WhiteWizardInvasionPlugIn.cs" company="MUnique">
+// <copyright file="WhiteWizardInvasionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.InvasionEvents;
+namespace HNMO.GameLogic.PlugIns.InvasionEvents;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Enables the White Wizard Invasion feature.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.WhiteWizardInvasionPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.WhiteWizardInvasionPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.WhiteWizardInvasionPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.WhiteWizardInvasionPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("4B5D0F55-5B26-4447-B9C0-C272E5D0A141")]
 public sealed class WhiteWizardInvasionPlugIn : SimpleInvasionPlugIn
 {

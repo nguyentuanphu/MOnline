@@ -1,4 +1,4 @@
-// <copyright file="MiniGameRankingEntry.Generated.cs" company="MUnique">
+// <copyright file="MiniGameRankingEntry.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Statistics.MiniGameRankingEntry"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Statistics.MiniGameRankingEntry"/>.
 /// </summary>
 [Table(nameof(MiniGameRankingEntry), Schema = SchemaNames.AccountData)]
-internal partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistics.MiniGameRankingEntry, IIdentifiable
+internal partial class MiniGameRankingEntry : HNMO.DataModel.Statistics.MiniGameRankingEntry, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistic
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Entities.Character Character
+    public override HNMO.DataModel.Entities.Character Character
     {
         get => base.Character;set
         {
@@ -71,7 +71,7 @@ internal partial class MiniGameRankingEntry : MUnique.OpenMU.DataModel.Statistic
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameDefinition MiniGame
+    public override HNMO.DataModel.Configuration.MiniGameDefinition MiniGame
     {
         get => base.MiniGame;set
         {

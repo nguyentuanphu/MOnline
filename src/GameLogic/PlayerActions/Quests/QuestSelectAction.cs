@@ -1,11 +1,11 @@
-﻿// <copyright file="QuestSelectAction.cs" company="MUnique">
+﻿// <copyright file="QuestSelectAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Quests;
+namespace HNMO.GameLogic.PlayerActions.Quests;
 
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic.Views.Quest;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic.Views.Quest;
 
 /// <summary>
 /// A player action which implements the selecting of a quest in the quest list.

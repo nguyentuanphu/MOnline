@@ -1,8 +1,8 @@
-// <copyright file="GameServerAdminResult.cs" company="MUnique">
+// <copyright file="GameServerAdminResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>A confirmed result from the game server which owns the live state.</summary>
 /// <param name="Succeeded">Whether the action completed successfully.</param>

@@ -1,17 +1,17 @@
-// <copyright file="HealingHandler.cs" company="MUnique">
+// <copyright file="HealingHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.PlayerActions.ItemConsumeActions;
+using HNMO.GameLogic.Views.World;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Handles health recovery for the offline player and their party.

@@ -1,8 +1,8 @@
-// <copyright file="ActorControlService.cs" company="MUnique">
+// <copyright file="ActorControlService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Startup.TestActors;
+namespace HNMO.Startup.TestActors;
 
 using System.IO;
 using System.Net;
@@ -11,9 +11,9 @@ using System.Text;
 using System.Threading;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.TestActors;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.TestActors;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The local control endpoint: a plain TCP listener which speaks newline-delimited JSON.
@@ -31,12 +31,12 @@ public sealed class ActorControlService : BackgroundService
     /// <summary>
     /// The environment variable which enables the endpoint by naming its port.
     /// </summary>
-    public static readonly string PortVariableName = "OPENMU_ACTOR_PORT";
+    public static readonly string PortVariableName = "HNMO_ACTOR_PORT";
 
     /// <summary>
     /// The environment variable which names the address to bind; unset, the loopback address.
     /// </summary>
-    public static readonly string AddressVariableName = "OPENMU_ACTOR_ADDRESS";
+    public static readonly string AddressVariableName = "HNMO_ACTOR_ADDRESS";
 
     /// <summary>
     /// UTF-8 without a byte order mark: the first line of a connection must be plain JSON, or a

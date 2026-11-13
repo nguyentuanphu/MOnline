@@ -1,14 +1,14 @@
-﻿// <copyright file="MagicEffect.cs" company="MUnique">
+﻿// <copyright file="MagicEffect.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Diagnostics;
 using System.Threading;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A magic effect, usually given by an applied skill or consumed item.

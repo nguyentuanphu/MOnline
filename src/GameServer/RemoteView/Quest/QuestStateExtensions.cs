@@ -1,14 +1,14 @@
-﻿// <copyright file="QuestStateExtensions.cs" company="MUnique">
+﻿// <copyright file="QuestStateExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Quest;
+namespace HNMO.GameServer.RemoteView.Quest;
 
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Quests;
-using MUnique.OpenMU.GameServer.MessageHandler.Quests;
-using MUnique.OpenMU.Network.Packets;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Quests;
+using HNMO.GameServer.MessageHandler.Quests;
+using HNMO.Network.Packets;
 
 /// <summary>
 /// Extensions regarding the quest state of a player.

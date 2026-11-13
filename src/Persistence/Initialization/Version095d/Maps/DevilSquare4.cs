@@ -1,15 +1,15 @@
-﻿// <copyright file="DevilSquare4.cs" company="MUnique">
+﻿// <copyright file="DevilSquare4.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version095d.Maps;
+namespace HNMO.Persistence.Initialization.Version095d.Maps;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.Persistence.Initialization.Version095d.Events;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.Persistence.Initialization.Version095d.Events;
 
 /// <summary>
 /// Initialization for the devil square map which hosts devil square 1 to 4.

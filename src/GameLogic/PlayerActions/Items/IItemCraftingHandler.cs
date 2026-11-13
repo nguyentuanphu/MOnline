@@ -1,11 +1,11 @@
-﻿// <copyright file="IItemCraftingHandler.cs" company="MUnique">
+﻿// <copyright file="IItemCraftingHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
-using MUnique.OpenMU.GameLogic.Views.NPC;
+using HNMO.GameLogic.PlayerActions.Craftings;
+using HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// Interface for an item crafting handler.

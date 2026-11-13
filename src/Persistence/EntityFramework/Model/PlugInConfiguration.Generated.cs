@@ -1,4 +1,4 @@
-// <copyright file="PlugInConfiguration.Generated.cs" company="MUnique">
+// <copyright file="PlugInConfiguration.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.PlugIns.PlugInConfiguration"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.PlugIns.PlugInConfiguration"/>.
 /// </summary>
 [Table(nameof(PlugInConfiguration), Schema = SchemaNames.Configuration)]
-internal partial class PlugInConfiguration : MUnique.OpenMU.PlugIns.PlugInConfiguration, IIdentifiable
+internal partial class PlugInConfiguration : HNMO.PlugIns.PlugInConfiguration, IIdentifiable
 {
     
     

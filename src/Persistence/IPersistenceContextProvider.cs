@@ -1,12 +1,12 @@
-﻿// <copyright file="IPersistenceContextProvider.cs" company="MUnique">
+﻿// <copyright file="IPersistenceContextProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Provider for persistence contexts.
@@ -68,7 +68,7 @@ public interface IPersistenceContextProvider
 
     /// <summary>
     /// Creates a new context which is used by the guild server.
-    /// It manages basically only <see cref="MUnique.OpenMU.Interfaces.Guild"/>s and <see cref="GuildMember"/>s.
+    /// It manages basically only <see cref="HNMO.Interfaces.Guild"/>s and <see cref="GuildMember"/>s.
     /// </summary>
     /// <returns>A new context which is used by the guild server.</returns>
     IGuildServerContext CreateNewGuildContext();

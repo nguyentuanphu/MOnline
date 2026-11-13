@@ -1,19 +1,19 @@
-// <copyright file="ItemExchangeExport.cs" company="MUnique">
+// <copyright file="ItemExchangeExport.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations.ItemExchange;
+namespace HNMO.Web.AdminPanel.Operations.ItemExchange;
 
 using System.IO;
 using System.Text.Encodings.Web;
 using System.Text.Json;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence;
 
 /// <summary>
-/// Writes the items of a game configuration as an item exchange file of the MuMain client,
-/// which its editor (MuEditor) imports with a diff the user checks by hand.
+/// Writes the items of a game configuration as an item exchange file of the desktop client,
+/// which its editor (HNMO Editor) imports with a diff the user checks by hand.
 /// </summary>
 /// <remarks>
 /// The file uses the client's keys and meanings, see the client's <c>docs/item-data.md</c>.
@@ -32,7 +32,7 @@ public static class ItemExchangeExport
     /// <summary>
     /// Gets the source which the file names.
     /// </summary>
-    public static string Source { get; } = "OpenMU";
+    public static string Source { get; } = "HNMO";
 
     /// <summary>
     /// Gets the game version of the client's data, the key of the Season 6 data initialization.
@@ -128,7 +128,7 @@ public static class ItemExchangeExport
     /// <param name="configuration">The game configuration.</param>
     /// <returns>The exported items.</returns>
     /// <remarks>
-    /// OpenMU doesn't keep the group and number of an item unique. Items which share them are
+    /// HNMO doesn't keep the group and number of an item unique. Items which share them are
     /// sorted by their id, so that the same configuration always gives the same file; the order
     /// in which the configuration is loaded can differ.
     /// </remarks>

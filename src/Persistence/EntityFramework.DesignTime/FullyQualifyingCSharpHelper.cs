@@ -1,15 +1,15 @@
-// <copyright file="FullyQualifyingCSharpHelper.cs" company="MUnique">
+// <copyright file="FullyQualifyingCSharpHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.DesignTime;
+namespace HNMO.Persistence.EntityFramework.DesignTime;
 
 using Microsoft.EntityFrameworkCore.Storage;
 
 #pragma warning disable EF1001 // Internal EF Core API usage. There is no public API to influence how types are referenced in generated code.
 
 /// <summary>
-/// A <see cref="Microsoft.EntityFrameworkCore.Design.ICSharpHelper"/> which references the types of OpenMU
+/// A <see cref="Microsoft.EntityFrameworkCore.Design.ICSharpHelper"/> which references the types of HNMO
 /// with their full name in generated code.
 /// </summary>
 /// <remarks>
@@ -31,21 +31,21 @@ internal class FullyQualifyingCSharpHelper : Microsoft.EntityFrameworkCore.Desig
     /// <inheritdoc />
     public override string Reference(Type type, bool? fullName = null)
     {
-        return base.Reference(type, fullName ?? ContainsOpenMuType(type));
+        return base.Reference(type, fullName ?? ContainsHnmoType(type));
     }
 
-    private static bool ContainsOpenMuType(Type type)
+    private static bool ContainsHnmoType(Type type)
     {
-        if (type.Namespace?.StartsWith("MUnique.OpenMU", StringComparison.Ordinal) is true)
+        if (type.Namespace?.StartsWith("HNMO", StringComparison.Ordinal) is true)
         {
             return true;
         }
 
         if (type.HasElementType && type.GetElementType() is { } elementType)
         {
-            return ContainsOpenMuType(elementType);
+            return ContainsHnmoType(elementType);
         }
 
-        return type.IsGenericType && type.GetGenericArguments().Any(ContainsOpenMuType);
+        return type.IsGenericType && type.GetGenericArguments().Any(ContainsHnmoType);
     }
 }

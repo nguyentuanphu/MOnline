@@ -1,7 +1,7 @@
 ---
 title: Kubernetes
 sidebar_position: 5
-description: Hosting the distributed deployment of OpenMU on Kubernetes with Dapr and a Helm chart.
+description: Hosting the distributed deployment of HNMO on Kubernetes with Dapr and a Helm chart.
 ---
 
 # Kubernetes
@@ -12,7 +12,7 @@ experimental. It requires a good understanding of Kubernetes and of the
 [distributed deployment](distributed.md).
 :::
 
-The Helm chart in [`deploy/kubernetes/openmu`](https://github.com/MUnique/OpenMU/tree/master/deploy/kubernetes/openmu)
+The Helm chart in [`deploy/kubernetes/hnmo`](https://github.com/nguyentuanphu/HNMO/tree/master/deploy/kubernetes/hnmo)
 deploys the same containers as the [docker compose file](distributed.md), but
 lets Kubernetes and Dapr do what the compose file does by hand:
 
@@ -77,14 +77,14 @@ server.
   helm install dapr dapr/dapr --namespace dapr-system --create-namespace --wait
   ```
 
-* **The OpenMU images.** There are no up-to-date published images yet. Build
+* **The HNMO images.** There are no up-to-date published images yet. Build
   them from the sources and push them to a registry your cluster can pull from:
 
   ```bash
   cd src
-  docker build -f Dapr/CentralServer.Host/Dockerfile -t <registry>/munique/openmu-central:<tag> .
-  docker build -f Dapr/GameServer.Host/Dockerfile -t <registry>/munique/openmu-game:<tag> .
-  docker build -f Dapr/AdminPanel.Host/Dockerfile -t <registry>/munique/openmu-admin:<tag> .
+  docker build -f Dapr/CentralServer.Host/Dockerfile -t <registry>/hnmo-central:<tag> .
+  docker build -f Dapr/GameServer.Host/Dockerfile -t <registry>/hnmo-game:<tag> .
+  docker build -f Dapr/AdminPanel.Host/Dockerfile -t <registry>/hnmo-admin:<tag> .
   ```
 
 * **PostgreSQL, RabbitMQ and Redis.** For development and tests, the chart
@@ -94,7 +94,7 @@ server.
 ## Installation
 
 ```bash
-helm install openmu deploy/kubernetes/openmu --namespace openmu --create-namespace \
+helm install hnmo deploy/kubernetes/hnmo --namespace hnmo --create-namespace \
   --set image.registry=<registry> --set image.tag=<tag> \
   --set adminPanel.bootstrapUser.name=admin --set adminPanel.bootstrapUser.password=<password>
 ```
@@ -109,7 +109,7 @@ The game clients connect to the connect servers through the service
 `<release>-central-server`, which is a `LoadBalancer` by default
 (`centralServer.service`).
 
-See [`values.yaml`](https://github.com/MUnique/OpenMU/blob/master/deploy/kubernetes/openmu/values.yaml)
+See [`values.yaml`](https://github.com/nguyentuanphu/HNMO/blob/master/deploy/kubernetes/hnmo/values.yaml)
 for all settings.
 
 ## Limitations

@@ -1,15 +1,15 @@
-﻿// <copyright file="ShowGuildListPlugIn.cs" company="MUnique">
+﻿// <copyright file="ShowGuildListPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Guild;
+namespace HNMO.GameServer.RemoteView.Guild;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowGuildListPlugIn"/> which is forwarding everything to the game client with specific data packets.
@@ -29,7 +29,7 @@ public class ShowGuildListPlugIn : IShowGuildListPlugIn
     public ShowGuildListPlugIn(RemotePlayer player) => this._player = player;
 
     /// <inheritdoc/>
-    public async ValueTask ShowGuildListAsync(IReadOnlyCollection<OpenMU.Interfaces.GuildListEntry> players, Interfaces.Guild guild)
+    public async ValueTask ShowGuildListAsync(IReadOnlyCollection<HNMO.Interfaces.GuildListEntry> players, Interfaces.Guild guild)
     {
         var connection = this._player.Connection;
         if (connection is null)

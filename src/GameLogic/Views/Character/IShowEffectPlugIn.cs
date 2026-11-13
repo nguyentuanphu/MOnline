@@ -1,10 +1,10 @@
-﻿// <copyright file="IShowEffectPlugIn.cs" company="MUnique">
+﻿// <copyright file="IShowEffectPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Character;
+namespace HNMO.GameLogic.Views.Character;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Interface of a view whose implementation informs about an effect for a target object.

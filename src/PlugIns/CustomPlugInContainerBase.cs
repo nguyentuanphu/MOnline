@@ -1,8 +1,8 @@
-﻿// <copyright file="CustomPlugInContainerBase.cs" company="MUnique">
+﻿// <copyright file="CustomPlugInContainerBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.PlugIns;
+namespace HNMO.PlugIns;
 
 using System.Collections.Concurrent;
 using System.Reflection;
@@ -14,7 +14,7 @@ using System.Reflection;
 /// This base class defines abstract methods which help to select these 'effective' implementations.
 /// </summary>
 /// <typeparam name="TPlugIn">The type of the plug in.</typeparam>
-/// <seealso cref="MUnique.OpenMU.PlugIns.PlugInContainerBase{TPlugIn}" />
+/// <seealso cref="HNMO.PlugIns.PlugInContainerBase{TPlugIn}" />
 public abstract class CustomPlugInContainerBase<TPlugIn> : PlugInContainerBase<TPlugIn>, ICustomPlugInContainer<TPlugIn>
     where TPlugIn : class
 {

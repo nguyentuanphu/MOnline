@@ -1,13 +1,13 @@
-﻿// <copyright file="SoccerBall.cs" company="MUnique">
+﻿// <copyright file="SoccerBall.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

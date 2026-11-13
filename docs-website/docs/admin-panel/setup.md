@@ -1,7 +1,7 @@
 ---
 title: Setup
 sidebar_position: 2
-description: Create, reinstall and update the OpenMU database from the admin panel.
+description: Create, reinstall and update the HNMO database from the admin panel.
 ---
 
 # Setup
@@ -18,9 +18,9 @@ The page starts by telling you the state of the database:
 
 | Status | Meaning | What to do |
 |---|---|---|
-| *Can't connect to the database, probably not created yet* | The server can reach the database server, but not the OpenMU database | Click **Create** |
+| *Can't connect to the database, probably not created yet* | The server can reach the database server, but not the HNMO database | Click **Create** |
 | *Not created* | The database exists but has no schema yet | Click **Create** |
-| *Update required* | The schema is older than the running OpenMU version | Click **Update** |
+| *Update required* | The schema is older than the running HNMO version | Click **Update** |
 | *Up to date* | Everything is fine | Nothing |
 
 When the database is up to date, the page also shows the **initialized game
@@ -42,7 +42,7 @@ choices:
 
 Every supported version has its own data initialization, which creates the
 matching items, monsters, maps, skills and servers. The list contains the
-versions which are available in your OpenMU build — Season 6 Episode 3 is the
+versions which are available in your HNMO build — Season 6 Episode 3 is the
 main one, plus older versions such as 0.75 and 0.95d.
 
 ### 2. Number of game servers
@@ -93,7 +93,7 @@ PostgreSQL database first if you care about it.
 
 ## Updating
 
-If the running OpenMU version needs a newer database schema, the page offers
+If the running HNMO version needs a newer database schema, the page offers
 **Update**. This migrates the schema; it does not touch your accounts.
 
 If a schema update fails, the page shows an error. Check the server logs, restore

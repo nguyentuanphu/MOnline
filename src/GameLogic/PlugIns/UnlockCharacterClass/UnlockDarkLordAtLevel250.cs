@@ -1,11 +1,11 @@
-﻿// <copyright file="UnlockDarkLordAtLevel250.cs" company="MUnique">
+﻿// <copyright file="UnlockDarkLordAtLevel250.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.UnlockCharacterClass;
+namespace HNMO.GameLogic.PlugIns.UnlockCharacterClass;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Unlocks the Dark Lord character class as soon as the first character of an account reaches level 250.

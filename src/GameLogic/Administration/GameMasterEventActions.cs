@@ -1,13 +1,13 @@
-// <copyright file="GameMasterEventActions.cs" company="MUnique">
+// <copyright file="GameMasterEventActions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Administration;
+namespace HNMO.GameLogic.Administration;
 
 using System.Runtime.CompilerServices;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.Interfaces;
 using Nito.AsyncEx;
 
 /// <summary>Shares event start validation and cleanup between GM chat and administration.</summary>

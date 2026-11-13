@@ -1,13 +1,13 @@
-﻿// <copyright file="INetworkEncryptionFactoryPlugIn.cs" company="MUnique">
+﻿// <copyright file="INetworkEncryptionFactoryPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.PlugIns;
+namespace HNMO.Network.PlugIns;
 
 using System.IO.Pipelines;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A strategy plugin interface for plugins which provide network packet encryptors and decryptors for a specific game client version.

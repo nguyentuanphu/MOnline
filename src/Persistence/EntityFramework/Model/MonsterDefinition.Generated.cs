@@ -1,4 +1,4 @@
-// <copyright file="MonsterDefinition.Generated.cs" company="MUnique">
+// <copyright file="MonsterDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.MonsterDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.MonsterDefinition"/>.
 /// </summary>
 [Table(nameof(MonsterDefinition), Schema = SchemaNames.Configuration)]
-internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.MonsterDefinition, IIdentifiable
+internal partial class MonsterDefinition : HNMO.DataModel.Configuration.MonsterDefinition, IIdentifiable
 {
     /// <inheritdoc />
     public MonsterDefinition()
@@ -40,7 +40,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting> ItemCraftings => base.ItemCraftings ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting, ItemCrafting>(this.RawItemCraftings);
+    public override ICollection<HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting> ItemCraftings => base.ItemCraftings ??= new CollectionAdapter<HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting, ItemCrafting>(this.RawItemCraftings);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Attributes" />.
@@ -49,7 +49,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterAttribute> Attributes => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterAttribute, MonsterAttribute>(this.RawAttributes);
+    public override ICollection<HNMO.DataModel.Configuration.MonsterAttribute> Attributes => base.Attributes ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterAttribute, MonsterAttribute>(this.RawAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Quests" />.
@@ -58,7 +58,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition> Quests => base.Quests ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition, QuestDefinition>(this.RawQuests);
+    public override ICollection<HNMO.DataModel.Configuration.Quests.QuestDefinition> Quests => base.Quests ??= new CollectionAdapter<HNMO.DataModel.Configuration.Quests.QuestDefinition, QuestDefinition>(this.RawQuests);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Buffs" />.
@@ -67,7 +67,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Buff> Buffs => base.Buffs ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Buff, Buff>(this.RawBuffs);
+    public override ICollection<HNMO.DataModel.Configuration.Buff> Buffs => base.Buffs ??= new CollectionAdapter<HNMO.DataModel.Configuration.Buff, Buff>(this.RawBuffs);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="AttackSkill"/>.
@@ -86,7 +86,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill AttackSkill
+    public override HNMO.DataModel.Configuration.Skill AttackSkill
     {
         get => base.AttackSkill;set
         {
@@ -112,7 +112,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage MerchantStore
+    public override HNMO.DataModel.Entities.ItemStorage MerchantStore
     {
         get => base.MerchantStore;set
         {
@@ -122,7 +122,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MonsterDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MonsterDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -130,7 +130,7 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MonsterDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MonsterDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -156,6 +156,6 @@ internal partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     protected void InitJoinCollections()
     {
-        this.DropItemGroups = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, MonsterDefinitionDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new MonsterDefinitionDropItemGroup { MonsterDefinition = this, MonsterDefinitionId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
+        this.DropItemGroups = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, MonsterDefinitionDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new MonsterDefinitionDropItemGroup { MonsterDefinition = this, MonsterDefinitionId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
     }
 }

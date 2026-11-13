@@ -1,10 +1,10 @@
-﻿// <copyright file="ServerEndpoint.cs" company="MUnique">
+﻿// <copyright file="ServerEndpoint.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines an endpoint of a server.
@@ -38,6 +38,6 @@ public partial class ServerEndpoint
     /// </returns>
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.ServerEndpointSummary, this.Client?.Description, this.NetworkPort);
+        return string.Format(HNMO.DataModel.Properties.Resources.ServerEndpointSummary, this.Client?.Description, this.NetworkPort);
     }
 }

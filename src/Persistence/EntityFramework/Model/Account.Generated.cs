@@ -1,4 +1,4 @@
-// <copyright file="Account.Generated.cs" company="MUnique">
+// <copyright file="Account.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.Account"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.Account"/>.
 /// </summary>
 [Table(nameof(Account), Schema = SchemaNames.AccountData)]
-internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdentifiable
+internal partial class Account : HNMO.DataModel.Entities.Account, IIdentifiable
 {
     /// <inheritdoc />
     public Account()
@@ -40,7 +40,7 @@ internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIde
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.Character> Characters => base.Characters ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.Character, Character>(this.RawCharacters);
+    public override ICollection<HNMO.DataModel.Entities.Character> Characters => base.Characters ??= new CollectionAdapter<HNMO.DataModel.Entities.Character, Character>(this.RawCharacters);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Attributes" />.
@@ -49,7 +49,7 @@ internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIde
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.StatAttribute> Attributes => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
+    public override ICollection<HNMO.AttributeSystem.StatAttribute> Attributes => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="AttributeGrants" />.
@@ -58,7 +58,7 @@ internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIde
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant> AttributeGrants => base.AttributeGrants ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant, AccountAttributeGrant>(this.RawAttributeGrants);
+    public override ICollection<HNMO.DataModel.Entities.AccountAttributeGrant> AttributeGrants => base.AttributeGrants ??= new CollectionAdapter<HNMO.DataModel.Entities.AccountAttributeGrant, AccountAttributeGrant>(this.RawAttributeGrants);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Vault"/>.
@@ -77,7 +77,7 @@ internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIde
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage Vault
+    public override HNMO.DataModel.Entities.ItemStorage Vault
     {
         get => base.Vault;set
         {
@@ -107,6 +107,6 @@ internal partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIde
 
     protected void InitJoinCollections()
     {
-        this.UnlockedCharacterClasses = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, AccountCharacterClass>(this.JoinedUnlockedCharacterClasses, joinEntity => joinEntity.CharacterClass, entity => new AccountCharacterClass { Account = this, AccountId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
+        this.UnlockedCharacterClasses = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, AccountCharacterClass>(this.JoinedUnlockedCharacterClasses, joinEntity => joinEntity.CharacterClass, entity => new AccountCharacterClass { Account = this, AccountId = this.Id, CharacterClass = (CharacterClass)entity, CharacterClassId = ((CharacterClass)entity).Id});
     }
 }

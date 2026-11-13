@@ -1,7 +1,7 @@
 services:
-  openmu-startup:
-    image: munique/openmu
-    container_name: openmu-startup
+  hnmo-startup:
+    image: hnmo
+    container_name: hnmo-startup
     networks:
       - proxy
     ports:
@@ -23,15 +23,15 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=proxy"
-      - "traefik.http.routers.openmu.entrypoints=websecure"
-      - "traefik.http.routers.openmu.rule=Host(`${DOMAIN}`)"
+      - "traefik.http.routers.hnmo.entrypoints=websecure"
+      - "traefik.http.routers.hnmo.rule=Host(`${DOMAIN}`)"
 
   database:
     image: postgres:18
     container_name: database
     environment:
       POSTGRES_PASSWORD: ${DB_ADMIN_PW:-admin}
-      POSTGRES_DB: ${DB_NAME:-openmu}
+      POSTGRES_DB: ${DB_NAME:-hnmo}
       POSTGRES_USER: ${DB_ADMIN_USER:-postgres}
     networks:
       - proxy

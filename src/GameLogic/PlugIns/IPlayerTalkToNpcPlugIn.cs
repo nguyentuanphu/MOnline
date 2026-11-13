@@ -1,14 +1,14 @@
-﻿// <copyright file="IPlayerTalkToNpcPlugIn.cs" company="MUnique">
+﻿// <copyright file="IPlayerTalkToNpcPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlayerActions;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlayerActions;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Plugin interface which is called when a player talks to a npc.

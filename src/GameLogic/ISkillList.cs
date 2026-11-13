@@ -1,8 +1,8 @@
-﻿// <copyright file="ISkillList.cs" company="MUnique">
+﻿// <copyright file="ISkillList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// Interface for a skill list of a character.

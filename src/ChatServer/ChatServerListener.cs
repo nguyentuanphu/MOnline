@@ -1,15 +1,15 @@
-﻿// <copyright file="ChatServerListener.cs" company="MUnique">
+﻿// <copyright file="ChatServerListener.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
 using System.ComponentModel;
 using System.IO.Pipelines;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A listener which listens to the specified endpoint and provides the initialized <see cref="IConnection"/> by the event <see cref="ClientAccepted"/>.

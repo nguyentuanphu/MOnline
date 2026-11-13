@@ -1,15 +1,15 @@
-﻿// <copyright file="DiscordCommands.cs" company="MUnique">
+﻿// <copyright file="DiscordCommands.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
 using System.Text;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.Discord.Provisioning;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Discord.Properties;
+using HNMO.Discord.Provisioning;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The slash commands of the Discord bot. They only show information and don't change anything in the game.

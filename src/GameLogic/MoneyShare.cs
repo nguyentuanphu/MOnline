@@ -1,8 +1,8 @@
-// <copyright file="MoneyShare.cs" company="MUnique">
+// <copyright file="MoneyShare.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// The part of a money drop which is reserved for a single player.

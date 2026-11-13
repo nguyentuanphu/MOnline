@@ -1,10 +1,10 @@
-﻿// <copyright file="AddResponseAction.cs" company="MUnique">
+﻿// <copyright file="AddResponseAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Messenger;
+namespace HNMO.GameLogic.PlayerActions.Messenger;
 
-using MUnique.OpenMU.GameLogic.Views.Messenger;
+using HNMO.GameLogic.Views.Messenger;
 
 /// <summary>
 /// Action to respond to a friend request.

@@ -1,8 +1,8 @@
-// <copyright file="ExperienceShare.cs" company="MUnique">
+// <copyright file="ExperienceShare.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 /// <summary>
 /// The experience which a single player gained from a kill.

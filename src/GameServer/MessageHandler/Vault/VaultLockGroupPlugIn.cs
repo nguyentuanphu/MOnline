@@ -1,12 +1,12 @@
-﻿// <copyright file="VaultLockGroupPlugIn.cs" company="MUnique">
+﻿// <copyright file="VaultLockGroupPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Vault;
+namespace HNMO.GameServer.MessageHandler.Vault;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for vault lock packets (0x83 identifier).

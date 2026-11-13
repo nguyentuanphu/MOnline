@@ -1,12 +1,12 @@
-// <copyright file="CastleSiegeStatusAction.cs" company="MUnique">
+// <copyright file="CastleSiegeStatusAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.Actions;
+namespace HNMO.GameLogic.CastleSiege.Actions;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Views.CastleSiege;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Returns the current Castle Siege status, e.g. when a player talks to the guardsman.

@@ -1,13 +1,13 @@
-// <copyright file="CharacterInitialization.cs" company="MUnique">
+// <copyright file="CharacterInitialization.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Text.RegularExpressions;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Discord;
-using MUnique.OpenMU.Persistence;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Discord;
+using HNMO.Persistence;
 
 /// <summary>
 /// Initializes the data of newly created characters, so that they are playable right away.

@@ -1,4 +1,4 @@
-﻿// <copyright file="ConnectionExtensions.cs" company="MUnique">
+﻿// <copyright file="ConnectionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -16,11 +16,11 @@
 // ReSharper disable UseObjectOrCollectionInitializer
 
 #nullable enable
-namespace MUnique.OpenMU.Network.Packets.ChatServer;
+namespace HNMO.Network.Packets.ChatServer;
 
 using System;
 using System.Threading;
-using MUnique.OpenMU.Network;
+using HNMO.Network;
 
 /// <summary>
 /// Extension methods to start writing messages of this namespace on a <see cref="IConnection"/>.

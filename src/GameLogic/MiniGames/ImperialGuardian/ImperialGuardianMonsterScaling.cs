@@ -1,8 +1,8 @@
-﻿// <copyright file="ImperialGuardianMonsterScaling.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianMonsterScaling.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
+namespace HNMO.GameLogic.MiniGames.ImperialGuardian;
 
 /// <summary>
 /// The scaling of the monsters of the imperial guardian event for players up to a level.

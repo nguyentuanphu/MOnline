@@ -41,11 +41,11 @@ The packet structures, their send extension methods, their markdown documentatio
   against `PacketDefinitions.xsd`.
 * **Never hand-edit a generated file**: `*Packets.cs`, `*PacketsRef.cs`,
   `ConnectionExtensions.cs`, the ~500 files in [`Packets`](Packets), or the
-  generated test files in `tests/MUnique.OpenMU.Network.Packets.Tests`.
+  generated test files in `tests/HNMO.Network.Packets.Tests`.
 * Generation runs as a pre-build step **only when the `ci` property is not
   `true`**, and CI builds with `-p:ci=true`. That means the generated files are
   committed and **CI will not regenerate them for you** — build the
-  `MUnique.OpenMU.Network.Packets` project and the packets test project locally
+  `HNMO.Network.Packets` project and the packets test project locally
   and commit the result alongside the XML. The markdown generation additionally
   needs NodeJS (it shells out to `npx xslt3`).
 * Fill in `SentWhen` and `CausedReaction`. They are the documentation.
@@ -66,7 +66,7 @@ The name of a packet tells you which client it has to work with:
   must be tested with it.
 * **`Extended` suffix** — extended from the original, or entirely new, for the
   custom protocol of the open source client
-  ([MuMain](https://github.com/sven-n/MuMain)).
+  ([the desktop client](https://github.com/nguyentuanphu/HNMO)).
 * **Version suffix (`075`, `095`)** — compatible with the older "vintage"
   clients, matching the `Version075` and `Version095d` data initialization.
 
@@ -80,7 +80,7 @@ See [Packet documentation](../docs-website/docs/reference/packets.md) and
 
 ## 3. Configuration data, not hard-coded values
 
-OpenMU's flexibility comes from its configuration. `GameLogic` should not contain
+HNMO's flexibility comes from its configuration. `GameLogic` should not contain
 values which are — or could be — configuration data. Work down this ladder and
 stop at the first rung that works:
 
@@ -172,7 +172,7 @@ When writing the update plugin:
   version.
 * Keep the `Name` and `Description` meaningful — server owners read them to
   decide whether an update would overwrite something they customized.
-* Test three paths (tests live in `tests/MUnique.OpenMU.Persistence.Initialization.Tests`,
+* Test three paths (tests live in `tests/HNMO.Persistence.Initialization.Tests`,
   using an in-memory database — no database server needed):
   1. a freshly initialized database already contains the fixed data;
   2. an existing database which is missing the data is repaired by applying
@@ -218,7 +218,7 @@ reused**.
 `DataModel` classes hold **real object references**. How an object is identified
 is an implementation detail of the persistence layer.
 
-`Guid Id` comes from `MUnique.OpenMU.Persistence.IIdentifiable` and is
+`Guid Id` comes from `HNMO.Persistence.IIdentifiable` and is
 implemented by the **derived** model classes — the generated Entity Framework
 model and the `BasicModel` (which the in-memory persistence uses) — together
 with the foreign keys and `Raw…` properties they need. Compare
@@ -280,14 +280,14 @@ database. See [Architecture](../docs-website/docs/development/architecture.md).
 ### Admin operations and agents
 
 Implement new admin functionality in the UI independent
-`MUnique.OpenMU.Web.AdminPanel.Operations` layer; Razor pages and REST controllers
+`HNMO.Web.AdminPanel.Operations` layer; Razor pages and REST controllers
 call that layer. Expose every operation through an MCP tool with a description,
 a minimum role and read-only, destructive and idempotent annotations. Link the
 tool with `[ExposesOperation(typeof(Service), nameof(Service.OperationAsync))]`,
 or mark the operation `[NotExposedToAgents("reason")]` when it has no useful agent
 equivalent, such as a graphical editor. Update the tool in the same change when
 an operation's parameters or meaning change. The parity and tool schema tests in
-`MUnique.OpenMU.Web.Tests/Mcp` enforce this for operations in the new layer.
+`HNMO.Web.Tests/Mcp` enforce this for operations in the new layer.
 Existing UI-bound operations are migrated one area at a time; this rule does not
 require a retroactive rewrite. Phase one exposes only reads: adding write tools
 also requires the authorization, audit and preview safeguards of issue #1257.
@@ -318,7 +318,7 @@ already exists.
 ## 9. Sources for game behaviour: inspiration, not facts
 
 Third-party server sources (`zTeamS6.3`, `emu-server`, and similar) were **not
-written by Webzen** and routinely contain their authors' own customizations.
+written by the original developers** and routinely contain their authors' own customizations.
 Treat them as **inspiration, not as facts** — they tell you what somebody did,
 not what the original did. They frequently disagree with each other and with the
 client.
@@ -334,11 +334,11 @@ client.
   `Stats.TotalStrength`, `Stats.TotalAgility`, `Stats.TotalLevel` — rather than
   the base stats.
 * **Never port or transliterate code** from any of them. Reimplement the
-  behaviour in OpenMU's own terms: configuration, attribute relationships,
+  behaviour in HNMO's own terms: configuration, attribute relationships,
   plugins. This is what `CONTRIBUTING.md` means.
 
 The same caution applies to the open source client
-([MuMain](https://github.com/sven-n/MuMain)): useful for observing behaviour and
+([the desktop client](https://github.com/nguyentuanphu/HNMO)): useful for observing behaviour and
 protocol facts, but it is being actively refactored, and its legacy code
 hard-codes a great deal without so much as a constant name. **It is not a design
 or style reference for the server.**
@@ -422,7 +422,7 @@ pull request what you ran.
   between; every plain `dotnet test` repeats the build. Use the same
   configuration for both, and build again after any code change (see
   [`AGENTS.md`](../AGENTS.md#building-and-running-tests)).
-* Configuration data changes: `MUnique.OpenMU.Persistence.Initialization.Tests`,
+* Configuration data changes: `HNMO.Persistence.Initialization.Tests`,
   which runs the data initialization in memory — no database needed — and
   holds the per-feature data tests (see rule 4). The variant against a real
   PostgreSQL instance is marked `[Ignore]` and only run by hand.

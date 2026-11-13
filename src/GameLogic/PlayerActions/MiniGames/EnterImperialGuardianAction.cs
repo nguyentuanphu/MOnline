@@ -1,12 +1,12 @@
-﻿// <copyright file="EnterImperialGuardianAction.cs" company="MUnique">
+﻿// <copyright file="EnterImperialGuardianAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.MiniGames.ImperialGuardian;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.MiniGames.ImperialGuardian;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Action to enter the imperial guardian event.

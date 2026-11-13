@@ -1,11 +1,11 @@
-// <copyright file="GuildNames.cs" company="MUnique">
+// <copyright file="GuildNames.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Bulk resolution of guild names for the online-accounts tables: one lookup per distinct

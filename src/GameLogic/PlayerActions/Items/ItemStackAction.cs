@@ -1,10 +1,10 @@
-﻿// <copyright file="ItemStackAction.cs" company="MUnique">
+﻿// <copyright file="ItemStackAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Action to stack items.

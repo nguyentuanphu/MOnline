@@ -1,10 +1,10 @@
-// <copyright file="CastleSiegeUpgradeDefinition.cs" company="MUnique">
+// <copyright file="CastleSiegeUpgradeDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines one level of an upgrade that the castle owner can apply to a gate or statue NPC.

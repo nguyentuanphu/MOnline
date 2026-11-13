@@ -1,8 +1,8 @@
-// <copyright file="ChatCommandArgumentsGenerator.cs" company="MUnique">
+// <copyright file="ChatCommandArgumentsGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.SourceGenerators;
+namespace HNMO.SourceGenerators;
 
 using System.Collections.Immutable;
 using System.Threading;
@@ -22,15 +22,15 @@ using Microsoft.CodeAnalysis.Text;
 [Generator]
 public class ChatCommandArgumentsGenerator : IIncrementalGenerator
 {
-    private const string ArgumentsBaseFullName = "MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ArgumentsBase";
+    private const string ArgumentsBaseFullName = "HNMO.GameLogic.PlugIns.ChatCommands.ArgumentsBase";
 
-    private const string ArgumentAttributeFullName = "MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ArgumentAttribute";
+    private const string ArgumentAttributeFullName = "HNMO.GameLogic.PlugIns.ChatCommands.ArgumentAttribute";
 
-    private const string ValidValuesAttributeFullName = "MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ValidValuesAttribute";
+    private const string ValidValuesAttributeFullName = "HNMO.GameLogic.PlugIns.ChatCommands.ValidValuesAttribute";
 
     private const string RangeAttributeFullName = "System.ComponentModel.DataAnnotations.RangeAttribute";
 
-    private const string ValueReferenceAttributeFullName = "MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ValueReferenceAttribute";
+    private const string ValueReferenceAttributeFullName = "HNMO.GameLogic.PlugIns.ChatCommands.ValueReferenceAttribute";
 
     private static readonly SymbolDisplayFormat TypeFormat = SymbolDisplayFormat.FullyQualifiedFormat;
 
@@ -226,7 +226,7 @@ public class ChatCommandArgumentsGenerator : IIncrementalGenerator
         }
 
         builder.AppendLine("/// <summary>Registers the properties of the chat command arguments classes of this assembly.</summary>");
-        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"MUnique.OpenMU.SourceGenerators\", \"1.0\")]");
+        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"HNMO.SourceGenerators\", \"1.0\")]");
         builder.AppendLine("internal static class GeneratedChatCommandArguments");
         builder.AppendLine("{");
         builder.AppendLine("    /// <summary>Registers the properties.</summary>");
@@ -235,7 +235,7 @@ public class ChatCommandArgumentsGenerator : IIncrementalGenerator
         builder.AppendLine("    {");
         foreach (var argumentsClass in model.Classes)
         {
-            builder.Append("        global::MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.ChatCommandArguments.Register(typeof(").Append(argumentsClass.TypeName).AppendLine("),");
+            builder.Append("        global::HNMO.GameLogic.PlugIns.ChatCommands.ChatCommandArguments.Register(typeof(").Append(argumentsClass.TypeName).AppendLine("),");
             builder.AppendLine("        [");
             foreach (var property in argumentsClass.Properties)
             {

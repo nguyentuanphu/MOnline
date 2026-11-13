@@ -1,15 +1,15 @@
-// <copyright file="GuildRelationshipChangeAction.cs" company="MUnique">
+// <copyright file="GuildRelationshipChangeAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Guild;
+namespace HNMO.GameLogic.PlayerActions.Guild;
 
 using System.ComponentModel;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action which handles guild relationship changes (alliance creation/removal and hostility).

@@ -1,13 +1,13 @@
-﻿// <copyright file="RequiemEffectInitializer.cs" company="MUnique">
+﻿// <copyright file="RequiemEffectInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Skills;
+namespace HNMO.Persistence.Initialization.Skills;
 
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Initializer for the requiem effect (book of neil). Similar to <see cref="ExplosionEffectInitializer"/>, but different graphic effect on the client.

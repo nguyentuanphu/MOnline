@@ -1,10 +1,10 @@
-// <copyright file="RemoveDuplicateStatAttributesPlugInBase.cs" company="MUnique">
+// <copyright file="RemoveDuplicateStatAttributesPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// This update removes stat attributes which are defined more than once for a character class.

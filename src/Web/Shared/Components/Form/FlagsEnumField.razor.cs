@@ -1,12 +1,12 @@
-// <copyright file="FlagsEnumField.razor.cs" company="MUnique">
+// <copyright file="FlagsEnumField.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.DataModel;
+using HNMO.DataModel;
 
 /// <summary>
 /// Lookup field that allows to select multiple objects which will be stored in a bound <see cref="IList{TObject}"/>.
@@ -24,7 +24,7 @@ public partial class FlagsEnumField<TValue> : NotifyableInputBase<TValue>
     [Parameter]
     public string? Label { get; set; }
 
-    private string Placeholder => this.UnassignedFlags.Any() ? MUnique.OpenMU.Web.Shared.Properties.Resources.AddPlaceholder : MUnique.OpenMU.Web.Shared.Properties.Resources.NoMoreAvailable;
+    private string Placeholder => this.UnassignedFlags.Any() ? HNMO.Web.Shared.Properties.Resources.AddPlaceholder : HNMO.Web.Shared.Properties.Resources.NoMoreAvailable;
 
     private IEnumerable<TValue> UnassignedFlags => PossibleFlags.Where(f => !this.Value.HasFlag(f));
 

@@ -1,15 +1,15 @@
-// <copyright file="CastleSiegeMarkRegistrationHandlerPlugIn.cs" company="MUnique">
+// <copyright file="CastleSiegeMarkRegistrationHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.CastleSiege;
+namespace HNMO.GameServer.MessageHandler.CastleSiege;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.CastleSiege.Actions;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.GameLogic;
+using HNMO.GameLogic.CastleSiege.Actions;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles Sign of Lord registration requests.
@@ -46,10 +46,10 @@ internal class CastleSiegeMarkRegistrationHandlerPlugIn : ISubPacketHandlerPlugI
     }
 
     /// <summary>
-    /// Translates the client-side backpack-grid index to OpenMU's inventory slot, which includes equipment slots.
+    /// Translates the client-side backpack-grid index to HNMO's inventory slot, which includes equipment slots.
     /// </summary>
     /// <param name="clientItemIndex">The zero-based backpack-grid index sent by the client.</param>
-    /// <param name="inventorySlot">The translated OpenMU inventory slot.</param>
+    /// <param name="inventorySlot">The translated HNMO inventory slot.</param>
     /// <returns><see langword="true"/> if the translated slot fits into the packet slot range; otherwise, <see langword="false"/>.</returns>
     internal static bool TryGetInventorySlot(byte clientItemIndex, out byte inventorySlot)
     {

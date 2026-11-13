@@ -1,12 +1,12 @@
-// <copyright file="IPartyRequestingPlugIn.cs" company="MUnique">
+// <copyright file="IPartyRequestingPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Plugins which are called when a player requests a party with another player, and when the other player accepts it.

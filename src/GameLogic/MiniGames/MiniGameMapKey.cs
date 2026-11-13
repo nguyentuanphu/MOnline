@@ -1,8 +1,8 @@
-﻿// <copyright file="MiniGameMapKey.cs" company="MUnique">
+﻿// <copyright file="MiniGameMapKey.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 /// <summary>
 /// Defines a key for a <see cref="MiniGameContext"/>, which is unique within a <see cref="IGameContext"/>.

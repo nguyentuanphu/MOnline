@@ -1,4 +1,4 @@
-// <copyright file="MonsterSpawnArea.Generated.cs" company="MUnique">
+// <copyright file="MonsterSpawnArea.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MonsterSpawnArea"/>.
 /// </summary>
-public partial class MonsterSpawnArea : MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea, IIdentifiable, IConvertibleTo<MonsterSpawnArea>
+public partial class MonsterSpawnArea : HNMO.DataModel.Configuration.MonsterSpawnArea, IIdentifiable, IConvertibleTo<MonsterSpawnArea>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class MonsterSpawnArea : MUnique.OpenMU.DataModel.Configuration.M
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition MonsterDefinition
+    public override HNMO.DataModel.Configuration.MonsterDefinition MonsterDefinition
     {
         get => base.MonsterDefinition;
         set => base.MonsterDefinition = value;
@@ -55,14 +55,14 @@ public partial class MonsterSpawnArea : MUnique.OpenMU.DataModel.Configuration.M
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition GameMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition GameMap
     {
         get => base.GameMap;
         set => base.GameMap = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MonsterSpawnArea Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MonsterSpawnArea();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -70,7 +70,7 @@ public partial class MonsterSpawnArea : MUnique.OpenMU.DataModel.Configuration.M
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MonsterSpawnArea other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

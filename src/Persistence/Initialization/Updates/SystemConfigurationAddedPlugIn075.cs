@@ -1,19 +1,19 @@
-﻿// <copyright file="SystemConfigurationAddedPlugIn075.cs" company="MUnique">
+﻿// <copyright file="SystemConfigurationAddedPlugIn075.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This updates adds the new <see cref="SystemConfiguration"/> with default settings
 /// for Version 0.75.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.SystemConfigurationAddedPlugInBase_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.SystemConfigurationAddedPlugInBase_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.SystemConfigurationAddedPlugInBase_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.SystemConfigurationAddedPlugInBase_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("F1151FDE-14F7-4945-AEE9-57DAB6449CFF")]
 public class SystemConfigurationAddedPlugIn075 : SystemConfigurationAddedPlugInBase
 {

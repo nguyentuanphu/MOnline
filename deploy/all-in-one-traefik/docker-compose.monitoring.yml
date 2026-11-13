@@ -1,10 +1,10 @@
 # Optional monitoring stack for the all-in-one deployment with Traefik. Add it with another -f parameter, e.g.:
 #   docker compose -f docker-compose.yml -f docker-compose.monitoring.yml up -d
 #   docker compose -f docker-compose.prod.yml -f docker-compose.monitoring.yml up -d
-# OpenMU then exports its logs, metrics and traces with OpenTelemetry (OTLP), and Grafana is
+# HNMO then exports its logs, metrics and traces with OpenTelemetry (OTLP), and Grafana is
 # available under /grafana/ of the admin panel host, with the login of the admin panel.
 services:
-  openmu-startup:
+  hnmo-startup:
     environment:
       OTEL_EXPORTER_OTLP_ENDPOINT: http://otel-lgtm:4317
     depends_on:
@@ -13,7 +13,7 @@ services:
   otel-lgtm:
     # OpenTelemetry collector, Loki (logs), Prometheus (metrics), Tempo (traces) and Grafana in one container.
     # It's intended for development, demo and testing environments. For bigger production setups,
-    # replace it by dedicated deployments of these components - OpenMU just needs the OTLP endpoint.
+    # replace it by dedicated deployments of these components - HNMO just needs the OTLP endpoint.
     image: grafana/otel-lgtm:0.35.0
     container_name: otel-lgtm
     restart: unless-stopped
@@ -28,15 +28,15 @@ services:
       GF_SERVER_ROOT_URL: ${GRAFANA_ROOT_URL:-http://admin.docker.localhost/grafana/}
       GF_SERVER_SERVE_FROM_SUB_PATH: "true"
       # Grafana relies on the admin panel login: Traefik asks the admin panel and passes
-      # the user and its Grafana role in the X-OpenMU-User and X-OpenMU-Grafana-Role headers.
+      # the user and its Grafana role in the X-HNMO-User and X-HNMO-Grafana-Role headers.
       GF_AUTH_ANONYMOUS_ENABLED: "false"
       GF_AUTH_BASIC_ENABLED: "false"
       GF_AUTH_DISABLE_LOGIN_FORM: "true"
       GF_AUTH_DISABLE_SIGNOUT_MENU: "true"
       GF_AUTH_PROXY_ENABLED: "true"
-      GF_AUTH_PROXY_HEADER_NAME: X-OpenMU-User
+      GF_AUTH_PROXY_HEADER_NAME: X-HNMO-User
       GF_AUTH_PROXY_HEADER_PROPERTY: username
-      GF_AUTH_PROXY_HEADERS: Role:X-OpenMU-Grafana-Role
+      GF_AUTH_PROXY_HEADERS: Role:X-HNMO-Grafana-Role
       GF_AUTH_PROXY_SYNC_TTL: "1" # minutes until a changed role is applied
       GF_USERS_AUTO_ASSIGN_ORG: "true"
       GF_USERS_AUTO_ASSIGN_ORG_ROLE: Viewer
@@ -55,8 +55,8 @@ services:
       # Asks the admin panel whether the cookie of the request belongs to a logged in user. If so, the user
       # and its role are passed to Grafana. These headers are always overwritten, so they can't come from the client.
       # Without a login, the admin panel redirects to its login page.
-      - "traefik.http.middlewares.grafana-auth.forwardauth.address=http://openmu-startup:8080/auth/proxy?loginRedirect=true"
-      - "traefik.http.middlewares.grafana-auth.forwardauth.authResponseHeaders=X-OpenMU-User,X-OpenMU-Grafana-Role"
+      - "traefik.http.middlewares.grafana-auth.forwardauth.address=http://hnmo-startup:8080/auth/proxy?loginRedirect=true"
+      - "traefik.http.middlewares.grafana-auth.forwardauth.authResponseHeaders=X-HNMO-User,X-HNMO-Grafana-Role"
       - "traefik.http.middlewares.grafana-headers.headers.customrequestheaders.Authorization="
 
 volumes:

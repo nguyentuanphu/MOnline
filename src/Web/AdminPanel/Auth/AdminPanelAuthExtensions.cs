@@ -1,8 +1,8 @@
-// <copyright file="AdminPanelAuthExtensions.cs" company="MUnique">
+// <copyright file="AdminPanelAuthExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.IO;
 using Microsoft.AspNetCore.Authentication;
@@ -18,9 +18,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>
 /// Extensions which add the authentication of the admin panel.
@@ -30,17 +30,17 @@ public static class AdminPanelAuthExtensions
     /// <summary>
     /// Gets the environment variable which defines the login name of the bootstrap user.
     /// </summary>
-    public static string BootstrapUserVariableName => "OPENMU_ADMIN_USER";
+    public static string BootstrapUserVariableName => "HNMO_ADMIN_USER";
 
     /// <summary>
     /// Gets the environment variable which defines the password of the bootstrap user.
     /// </summary>
-    public static string BootstrapPasswordVariableName => "OPENMU_ADMIN_PASSWORD";
+    public static string BootstrapPasswordVariableName => "HNMO_ADMIN_PASSWORD";
 
     /// <summary>
     /// Gets the environment variable which defines the base32 authenticator key of the bootstrap user.
     /// </summary>
-    public static string BootstrapAuthenticatorKeyVariableName => "OPENMU_ADMIN_TOTP_SECRET";
+    public static string BootstrapAuthenticatorKeyVariableName => "HNMO_ADMIN_TOTP_SECRET";
 
     /// <summary>
     /// Adds the authentication of the admin panel to the service collection.
@@ -248,7 +248,7 @@ public static class AdminPanelAuthExtensions
     {
         var keyPath = configuration["AdminPanel:Auth:DataProtectionKeyPath"] ?? "data-protection-keys";
         var directory = new DirectoryInfo(Path.Combine(Directory.GetCurrentDirectory(), keyPath));
-        var dataProtection = services.AddDataProtection().SetApplicationName("MUnique.OpenMU.AdminPanel");
+        var dataProtection = services.AddDataProtection().SetApplicationName("HNMO.AdminPanel");
 
         try
         {

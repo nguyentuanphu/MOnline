@@ -1,4 +1,4 @@
-// <copyright file="Account.Generated.cs" company="MUnique">
+// <copyright file="Account.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="Account"/>.
 /// </summary>
-public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdentifiable, IConvertibleTo<Account>
+public partial class Account : HNMO.DataModel.Entities.Account, IIdentifiable, IConvertibleTo<Account>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdent
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.CharacterClass> UnlockedCharacterClasses
+    public override ICollection<HNMO.DataModel.Configuration.CharacterClass> UnlockedCharacterClasses
     {
-        get => base.UnlockedCharacterClasses ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawUnlockedCharacterClasses);
+        get => base.UnlockedCharacterClasses ??= new CollectionAdapter<HNMO.DataModel.Configuration.CharacterClass, CharacterClass>(this.RawUnlockedCharacterClasses);
         protected set
         {
             this.UnlockedCharacterClasses.Clear();
@@ -54,9 +54,9 @@ public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdent
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.Character> Characters
+    public override ICollection<HNMO.DataModel.Entities.Character> Characters
     {
-        get => base.Characters ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.Character, Character>(this.RawCharacters);
+        get => base.Characters ??= new CollectionAdapter<HNMO.DataModel.Entities.Character, Character>(this.RawCharacters);
         protected set
         {
             this.Characters.Clear();
@@ -75,9 +75,9 @@ public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdent
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.StatAttribute> Attributes
+    public override ICollection<HNMO.AttributeSystem.StatAttribute> Attributes
     {
-        get => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
+        get => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
         protected set
         {
             this.Attributes.Clear();
@@ -96,9 +96,9 @@ public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdent
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant> AttributeGrants
+    public override ICollection<HNMO.DataModel.Entities.AccountAttributeGrant> AttributeGrants
     {
-        get => base.AttributeGrants ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.AccountAttributeGrant, AccountAttributeGrant>(this.RawAttributeGrants);
+        get => base.AttributeGrants ??= new CollectionAdapter<HNMO.DataModel.Entities.AccountAttributeGrant, AccountAttributeGrant>(this.RawAttributeGrants);
         protected set
         {
             this.AttributeGrants.Clear();
@@ -121,7 +121,7 @@ public partial class Account : MUnique.OpenMU.DataModel.Entities.Account, IIdent
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage Vault
+    public override HNMO.DataModel.Entities.ItemStorage Vault
     {
         get => base.Vault;
         set => base.Vault = value;

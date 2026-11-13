@@ -1,4 +1,4 @@
-// <copyright file="CharacterQuestState.Generated.cs" company="MUnique">
+// <copyright file="CharacterQuestState.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.CharacterQuestState"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.CharacterQuestState"/>.
 /// </summary>
 [Table(nameof(CharacterQuestState), Schema = SchemaNames.AccountData)]
-internal partial class CharacterQuestState : MUnique.OpenMU.DataModel.Entities.CharacterQuestState, IIdentifiable
+internal partial class CharacterQuestState : HNMO.DataModel.Entities.CharacterQuestState, IIdentifiable
 {
     
     
@@ -35,7 +35,7 @@ internal partial class CharacterQuestState : MUnique.OpenMU.DataModel.Entities.C
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState> RequirementStates => base.RequirementStates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.QuestMonsterKillRequirementState, QuestMonsterKillRequirementState>(this.RawRequirementStates);
+    public override ICollection<HNMO.DataModel.Entities.QuestMonsterKillRequirementState> RequirementStates => base.RequirementStates ??= new CollectionAdapter<HNMO.DataModel.Entities.QuestMonsterKillRequirementState, QuestMonsterKillRequirementState>(this.RawRequirementStates);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="LastFinishedQuest"/>.
@@ -54,7 +54,7 @@ internal partial class CharacterQuestState : MUnique.OpenMU.DataModel.Entities.C
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition LastFinishedQuest
+    public override HNMO.DataModel.Configuration.Quests.QuestDefinition LastFinishedQuest
     {
         get => base.LastFinishedQuest;set
         {
@@ -80,7 +80,7 @@ internal partial class CharacterQuestState : MUnique.OpenMU.DataModel.Entities.C
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition ActiveQuest
+    public override HNMO.DataModel.Configuration.Quests.QuestDefinition ActiveQuest
     {
         get => base.ActiveQuest;set
         {

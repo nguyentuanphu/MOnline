@@ -1,4 +1,4 @@
-// <copyright file="GameMapDefinition.Generated.cs" company="MUnique">
+// <copyright file="GameMapDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GameMapDefinition"/>.
 /// </summary>
-public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.GameMapDefinition, IIdentifiable, IConvertibleTo<GameMapDefinition>
+public partial class GameMapDefinition : HNMO.DataModel.Configuration.GameMapDefinition, IIdentifiable, IConvertibleTo<GameMapDefinition>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant> TerrainVariants
+    public override ICollection<HNMO.DataModel.Configuration.GameMapTerrainVariant> TerrainVariants
     {
-        get => base.TerrainVariants ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant, GameMapTerrainVariant>(this.RawTerrainVariants);
+        get => base.TerrainVariants ??= new CollectionAdapter<HNMO.DataModel.Configuration.GameMapTerrainVariant, GameMapTerrainVariant>(this.RawTerrainVariants);
         protected set
         {
             this.TerrainVariants.Clear();
@@ -54,9 +54,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea> MonsterSpawns
+    public override ICollection<HNMO.DataModel.Configuration.MonsterSpawnArea> MonsterSpawns
     {
-        get => base.MonsterSpawns ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea, MonsterSpawnArea>(this.RawMonsterSpawns);
+        get => base.MonsterSpawns ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterSpawnArea, MonsterSpawnArea>(this.RawMonsterSpawns);
         protected set
         {
             this.MonsterSpawns.Clear();
@@ -75,9 +75,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.EnterGate> EnterGates
+    public override ICollection<HNMO.DataModel.Configuration.EnterGate> EnterGates
     {
-        get => base.EnterGates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.EnterGate, EnterGate>(this.RawEnterGates);
+        get => base.EnterGates ??= new CollectionAdapter<HNMO.DataModel.Configuration.EnterGate, EnterGate>(this.RawEnterGates);
         protected set
         {
             this.EnterGates.Clear();
@@ -96,9 +96,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ExitGate> ExitGates
+    public override ICollection<HNMO.DataModel.Configuration.ExitGate> ExitGates
     {
-        get => base.ExitGates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ExitGate, ExitGate>(this.RawExitGates);
+        get => base.ExitGates ??= new CollectionAdapter<HNMO.DataModel.Configuration.ExitGate, ExitGate>(this.RawExitGates);
         protected set
         {
             this.ExitGates.Clear();
@@ -117,9 +117,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DropItemGroup> DropItemGroups
+    public override ICollection<HNMO.DataModel.Configuration.DropItemGroup> DropItemGroups
     {
-        get => base.DropItemGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
+        get => base.DropItemGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
         protected set
         {
             this.DropItemGroups.Clear();
@@ -138,9 +138,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> MapRequirements
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> MapRequirements
     {
-        get => base.MapRequirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawMapRequirements);
+        get => base.MapRequirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawMapRequirements);
         protected set
         {
             this.MapRequirements.Clear();
@@ -159,9 +159,9 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition> CharacterPowerUpDefinitions
+    public override ICollection<HNMO.DataModel.Attributes.PowerUpDefinition> CharacterPowerUpDefinitions
     {
-        get => base.CharacterPowerUpDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawCharacterPowerUpDefinitions);
+        get => base.CharacterPowerUpDefinitions ??= new CollectionAdapter<HNMO.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawCharacterPowerUpDefinitions);
         protected set
         {
             this.CharacterPowerUpDefinitions.Clear();
@@ -184,7 +184,7 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition SafezoneMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition SafezoneMap
     {
         get => base.SafezoneMap;
         set => base.SafezoneMap = value;
@@ -202,14 +202,14 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition BattleZone
+    public override HNMO.DataModel.Configuration.BattleZoneDefinition BattleZone
     {
         get => base.BattleZone;
         set => base.BattleZone = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameMapDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameMapDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -217,7 +217,7 @@ public partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameMapDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameMapDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

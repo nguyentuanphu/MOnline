@@ -1,8 +1,8 @@
-// <copyright file="ICastleSiegeNpc.cs" company="MUnique">
+// <copyright file="ICastleSiegeNpc.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege.NPC;
+namespace HNMO.GameLogic.CastleSiege.NPC;
 
 /// <summary>
 /// Common contract of a configured Castle Siege NPC.

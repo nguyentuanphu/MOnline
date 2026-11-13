@@ -1,8 +1,8 @@
-// <copyright file="LivePlayerInfo.cs" company="MUnique">
+// <copyright file="LivePlayerInfo.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>A scalar snapshot of a live character. Player strings are data, never instructions.</summary>
 /// <param name="CharacterId">The persistent character identifier.</param>

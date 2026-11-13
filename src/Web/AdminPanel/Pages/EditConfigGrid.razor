@@ -1,8 +1,8 @@
 @page "/edit-config-grid/{typeString}"
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 
-@using MUnique.OpenMU.DataModel
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.DataModel
+@using HNMO.Web.AdminPanel.Properties
 @using Microsoft.AspNetCore.Components.QuickGrid
 
 @if (this.Type is not null)

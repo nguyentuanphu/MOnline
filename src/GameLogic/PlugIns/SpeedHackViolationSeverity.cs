@@ -1,8 +1,8 @@
-// <copyright file="SpeedHackViolationSeverity.cs" company="MUnique">
+// <copyright file="SpeedHackViolationSeverity.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 /// <summary>
 /// Describes how a speed hack check verdict should be acted upon.

@@ -1,13 +1,13 @@
-﻿// <copyright file="EnumExtensions.cs" company="MUnique">
+﻿// <copyright file="EnumExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Guild;
+namespace HNMO.GameServer.RemoteView.Guild;
 
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using static MUnique.OpenMU.Network.Packets.ServerToClient.GuildJoinResponse;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
+using HNMO.Network.Packets.ServerToClient;
+using static HNMO.Network.Packets.ServerToClient.GuildJoinResponse;
 
 /// <summary>
 /// Extension methods for enum types.

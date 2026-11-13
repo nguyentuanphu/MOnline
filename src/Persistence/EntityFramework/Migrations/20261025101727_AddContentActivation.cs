@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     /// <summary>
     /// Adds the active flags and the game version which introduced them to the maps, character classes,

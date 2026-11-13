@@ -1,16 +1,16 @@
-﻿// <copyright file="DevilSquareEnterHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="DevilSquareEnterHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.MiniGames;
+namespace HNMO.GameServer.MessageHandler.MiniGames;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.MiniGames;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for devil square enter request packets.

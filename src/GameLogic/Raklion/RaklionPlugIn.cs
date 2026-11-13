@@ -1,14 +1,14 @@
-﻿// <copyright file="RaklionPlugIn.cs" company="MUnique">
+﻿// <copyright file="RaklionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Raklion;
+namespace HNMO.GameLogic.Raklion;
 
 using System.Collections.Concurrent;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The plugin of the raklion event, in which the players fight against Selupan in the hatchery.

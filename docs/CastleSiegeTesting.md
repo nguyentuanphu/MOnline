@@ -1,7 +1,7 @@
 # Castle Siege testing strategy
 
-This is the regression coverage map for [the testing issue](https://github.com/MUnique/OpenMU/issues/734)
-and [the Castle Siege epic](https://github.com/MUnique/OpenMU/issues/735).
+This is the regression coverage map for [the testing issue](https://github.com/nguyentuanphu/HNMO/issues/734)
+and [the Castle Siege epic](https://github.com/nguyentuanphu/HNMO/issues/735).
 Extend the existing fixtures when changing a rule instead of creating a second
 suite for the same behavior. The repository uses **NUnit and Moq**, not the
 xUnit examples originally proposed in the issue.
@@ -22,7 +22,7 @@ which makes the mechanics work on a fresh or upgraded installation.
 
 ## Coverage map
 
-Paths below are relative to `tests/MUnique.OpenMU.Tests` unless stated otherwise.
+Paths below are relative to `tests/HNMO.Tests` unless stated otherwise.
 Each row includes existing coverage added with the feature and the final
 boundary/authorization cases added with the testing strategy.
 
@@ -38,8 +38,8 @@ boundary/authorization cases added with the testing strategy.
 | Rewards | `CastleSiegeGuildSelectionTests` | Exact participation threshold and one second below it for online/offline characters, online notification, queued delivery on login, irrecoverable item definitions, reconnect overlap, winner/master and alliance-member scores. |
 | Life Stones | `CastleSiegeNpcTests` | Placement/consumption, malformed configuration, opposing-side damage, build stages, heal cadence, same-side friendly flag including allies, state-exit and Crown-capture cleanup. |
 | Mini-map/commands | `CastleSiegeMiniMapTests`, `CastleSiegeMiniMapRemoteViewTests`, `CastleSiegeStateMachineTests` | Commander authorization, same-side/map filtering, empty/capped snapshots, three-second push cadence, command groups and request throttling, wire ordering and serialization. |
-| Protocol | `CastleSiege*RemoteViewTests` and `MUnique.OpenMU.Network.Packets.Tests/CastleSiegePacketDefinitionTests.cs` | Result codes, view serialization, field layout, handler keys and malformed/truncated requests. |
-| Configuration | `MUnique.OpenMU.Persistence.Initialization.Tests/CastleSiegeDataUpdateTest.cs`, `CastleSiegeGuardTalkPlugInsTest.cs` | Fresh data, configuration updates and repeat application, NPC/plugin defaults and initialization consistency. |
+| Protocol | `CastleSiege*RemoteViewTests` and `HNMO.Network.Packets.Tests/CastleSiegePacketDefinitionTests.cs` | Result codes, view serialization, field layout, handler keys and malformed/truncated requests. |
+| Configuration | `HNMO.Persistence.Initialization.Tests/CastleSiegeDataUpdateTest.cs`, `CastleSiegeGuardTalkPlugInsTest.cs` | Fresh data, configuration updates and repeat application, NPC/plugin defaults and initialization consistency. |
 
 The alliance-size limit belongs to `GuildRelationshipChangeAction`, using the
 requester's `Stats.MaximumAllianceSize`; zero means unlimited. The guild server
@@ -63,24 +63,24 @@ profile changed-pair counts and operation latency before changing batching.
 From the repository root, build once in the same configuration used for tests:
 
 ```powershell
-$coreTests = "tests/MUnique.OpenMU.Tests"
-$packetTests = "tests/MUnique.OpenMU.Network.Packets.Tests"
+$coreTests = "tests/HNMO.Tests"
+$packetTests = "tests/HNMO.Network.Packets.Tests"
 $initializationTests =
-    "tests/MUnique.OpenMU.Persistence.Initialization.Tests"
+    "tests/HNMO.Persistence.Initialization.Tests"
 
 dotnet build $coreTests -c Debug -p:ci=true
 dotnet build $packetTests -c Debug -p:ci=true
 dotnet build $initializationTests -c Debug -p:ci=true
 
 $coreFilter = @(
-    "FullyQualifiedName~MUnique.OpenMU.Tests.CastleSiege",
+    "FullyQualifiedName~HNMO.Tests.CastleSiege",
     "FullyQualifiedName~GuildAllianceTest",
     "FullyQualifiedName~GuildActionTest",
     "FullyQualifiedName~GuildRivalrySynchronizationTests",
     "FullyQualifiedName~RivalGuild"
 ) -join "|"
 $initializationFilter = "FullyQualifiedName~" +
-    "MUnique.OpenMU.Persistence.Initialization.Tests.CastleSiege"
+    "HNMO.Persistence.Initialization.Tests.CastleSiege"
 
 dotnet test $coreTests -c Debug --no-build --filter $coreFilter
 dotnet test $packetTests -c Debug --no-build `

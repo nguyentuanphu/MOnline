@@ -1,14 +1,14 @@
-﻿// <copyright file="SoccerGameMap.cs" company="MUnique">
+﻿// <copyright file="SoccerGameMap.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.ComponentModel;
 using System.Diagnostics;
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.NPC;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// A game map with a battle soccer field, which requires a defined <see cref="GameMapDefinition.BattleZone"/>.

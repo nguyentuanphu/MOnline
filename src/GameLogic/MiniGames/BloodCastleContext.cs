@@ -1,15 +1,15 @@
-﻿// <copyright file="BloodCastleContext.cs" company="MUnique">
+﻿// <copyright file="BloodCastleContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Character;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Character;
+using HNMO.GameLogic.Views.Inventory;
 using Nito.Disposables.Internals;
 
 /// <summary>

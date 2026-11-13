@@ -1,14 +1,14 @@
-﻿// <copyright file="SleepEffectInitializer.cs" company="MUnique">
+﻿// <copyright file="SleepEffectInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Skills;
+namespace HNMO.Persistence.Initialization.Skills;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Initializer for the sleep effect.

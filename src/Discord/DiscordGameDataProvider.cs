@@ -1,16 +1,16 @@
-﻿// <copyright file="DiscordGameDataProvider.cs" company="MUnique">
+﻿// <copyright file="DiscordGameDataProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Provides the data of the game for the Discord bot, through the interfaces of the servers and the database.

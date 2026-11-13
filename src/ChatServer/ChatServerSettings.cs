@@ -1,10 +1,10 @@
-﻿// <copyright file="ChatServerSettings.cs" company="MUnique">
+﻿// <copyright file="ChatServerSettings.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Settings for the <see cref="ChatServer"/>.

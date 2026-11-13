@@ -8,7 +8,7 @@
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <DockerServiceName>openmu-startup</DockerServiceName>
+    <DockerServiceName>hnmo-startup</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.monitoring.yml">

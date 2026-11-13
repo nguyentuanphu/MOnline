@@ -1,15 +1,15 @@
-// <copyright file="ItemExchangeOperations.cs" company="MUnique">
+// <copyright file="ItemExchangeOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations.ItemExchange;
+namespace HNMO.Web.AdminPanel.Operations.ItemExchange;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Provides the item exchange file of the stored game configuration.

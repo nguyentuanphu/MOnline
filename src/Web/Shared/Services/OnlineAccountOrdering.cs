@@ -1,8 +1,8 @@
-// <copyright file="OnlineAccountOrdering.cs" company="MUnique">
+// <copyright file="OnlineAccountOrdering.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Shared ordering for the online-accounts tables: partied players first so each party's

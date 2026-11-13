@@ -11,8 +11,8 @@ The admin panel authenticates its users itself. Earlier versions relied on the
 basic authentication of the reverse proxy against an `.htpasswd` file; that file
 is gone, and so are the proxy configurations which used it.
 
-:::warning[Requires OpenMU 0.9.12 or newer]
-The built-in login is part of OpenMU 0.9.12 and newer. The docker images up to
+:::warning[Requires HNMO 0.9.12 or newer]
+The built-in login is part of HNMO 0.9.12 and newer. The docker images up to
 0.9.10 still rely on the `.htpasswd` file of the reverse proxy. Don't combine
 such an image with the current deployment files, which no longer contain that
 file: the admin panel would then be reachable by anybody, without a login. Run
@@ -64,10 +64,10 @@ out later. Set these environment variables on the container or process which
 hosts the admin panel:
 
 ```bash
-OPENMU_ADMIN_USER=admin
-OPENMU_ADMIN_PASSWORD=<a long password>
+HNMO_ADMIN_USER=admin
+HNMO_ADMIN_PASSWORD=<a long password>
 # optional, if the bootstrap user should require a second factor:
-OPENMU_ADMIN_TOTP_SECRET=<base32 secret>
+HNMO_ADMIN_TOTP_SECRET=<base32 secret>
 ```
 
 The docker compose files already pass these through, so you can put them in a
@@ -245,7 +245,7 @@ don't accept the login cookie; they need an API key.
 ### Items for the client editor
 
 `GET /api/items/exchange` returns the items as an item exchange file of the
-MuMain client. Its editor, MuEditor, downloads it with "Update from server" and
+desktop client. Its editor, HNMO Editor, downloads it with "Update from server" and
 shows what differs from the client's items before anything changes; see the
 client's `docs/item-data.md`.
 
@@ -394,7 +394,7 @@ auditing.
 If the host restarts while the admin database is unreachable, it cannot
 distinguish a previous installation from initial setup and may allow anonymous
 setup actions with log-only auditing. Configure a bootstrap user with
-`OPENMU_ADMIN_USER` and `OPENMU_ADMIN_PASSWORD` to prevent that fallback.
+`HNMO_ADMIN_USER` and `HNMO_ADMIN_PASSWORD` to prevent that fallback.
 
 Explicit `-demo` mode also uses log-only panel auditing. MCP and API
 writes always require authentication and durable admin audit storage.

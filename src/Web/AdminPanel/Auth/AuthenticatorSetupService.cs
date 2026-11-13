@@ -1,11 +1,11 @@
-// <copyright file="AuthenticatorSetupService.cs" company="MUnique">
+// <copyright file="AuthenticatorSetupService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using Microsoft.AspNetCore.Identity;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 using QRCoder;
 
 /// <summary>
@@ -19,7 +19,7 @@ using QRCoder;
 /// </remarks>
 public class AuthenticatorSetupService
 {
-    private const string Issuer = "OpenMU AdminPanel";
+    private const string Issuer = "HNMO AdminPanel";
     private const int RecoveryCodeCount = 10;
 
     private readonly UserManager<AdminUser> _userManager;

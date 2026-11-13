@@ -1,8 +1,8 @@
-﻿// <copyright file="IsLinkToParentAttribute.cs" company="MUnique">
+﻿// <copyright file="IsLinkToParentAttribute.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// Attribute to mark properties which are a link to the parent object.

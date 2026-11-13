@@ -1,8 +1,8 @@
-// <copyright file="LoggingConfigurationService.cs" company="MUnique">
+// <copyright file="LoggingConfigurationService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Services;
+namespace HNMO.Web.AdminPanel.Services;
 
 using System.IO;
 using System.Text.Encodings.Web;
@@ -182,7 +182,7 @@ public class LoggingConfigurationService
     /// <param name="cancellationToken">The cancellation token.</param>
     /// <exception cref="JsonException">When <paramref name="sectionJson"/> or the file don't contain a valid JSON object.</exception>
     /// <exception cref="IOException">When the file couldn't be read or written.</exception>
-    [MUnique.OpenMU.Web.AdminPanel.Operations.NotExposedToAgents("Full logging sink configuration can contain credentials; MCP exposes minimum levels only.")]
+    [HNMO.Web.AdminPanel.Operations.NotExposedToAgents("Full logging sink configuration can contain credentials; MCP exposes minimum levels only.")]
     public async ValueTask SaveSectionAsync(string sectionJson, CancellationToken cancellationToken = default)
     {
         var section = ParseObject(sectionJson);

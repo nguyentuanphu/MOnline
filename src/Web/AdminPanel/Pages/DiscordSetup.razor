@@ -1,15 +1,15 @@
 ﻿@page "/discord"
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 
-@using MUnique.OpenMU.Discord
-@using MUnique.OpenMU.Discord.ChatBridge
-@using MUnique.OpenMU.Interfaces
-@using MUnique.OpenMU.GameLogic.PlugIns.GameEvents
+@using HNMO.Discord
+@using HNMO.Discord.ChatBridge
+@using HNMO.Interfaces
+@using HNMO.GameLogic.PlugIns.GameEvents
 @using Microsoft.AspNetCore.Components.Routing
-@using MUnique.OpenMU.Web.AdminPanel.Properties
-@using MUnique.OpenMU.Web.AdminPanel.Services
+@using HNMO.Web.AdminPanel.Properties
+@using HNMO.Web.AdminPanel.Services
 
-<PageTitle>OpenMU: @Resources.Discord</PageTitle>
+<PageTitle>HNMO: @Resources.Discord</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@Resources.Discord"/>
 <h1>@Resources.Discord</h1>
 

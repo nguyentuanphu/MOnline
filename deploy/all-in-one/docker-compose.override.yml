@@ -1,6 +1,6 @@
 services:
 
-  openmu-startup:
+  hnmo-startup:
     build:
       context: ../../src
       dockerfile: Startup/Dockerfile

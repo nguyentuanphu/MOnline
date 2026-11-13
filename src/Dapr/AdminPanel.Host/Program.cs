@@ -1,21 +1,21 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
-using MUnique.OpenMU.AdminPanel.Host;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.EntityFramework;
-using MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.ServerClients;
-using MUnique.OpenMU.Telemetry;
-using MUnique.OpenMU.Web.AdminPanel;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Mcp;
+using HNMO.AdminPanel.Host;
+using HNMO.Dapr.Common;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Persistence.EntityFramework;
+using HNMO.Persistence.EntityFramework.AdminAuth;
+using HNMO.PlugIns;
+using HNMO.ServerClients;
+using HNMO.Telemetry;
+using HNMO.Web.AdminPanel;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Mcp;
 
 var builder = DaprService.CreateBuilder("AdminPanel", args);
 
@@ -52,7 +52,7 @@ app.UseAdminMcpProtection();
 app.UseAdminPanelAuth();
 app.UseAntiforgery();
 app.MapStaticAssets();
-app.MapRazorComponents<MUnique.OpenMU.Web.AdminPanel.Components.App>()
+app.MapRazorComponents<HNMO.Web.AdminPanel.Components.App>()
     .AddInteractiveServerRenderMode();
 app.MapAdminPanelAuthEndpoints();
 app.MapAdminMcp();

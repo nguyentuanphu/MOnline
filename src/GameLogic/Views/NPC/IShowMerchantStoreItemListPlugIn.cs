@@ -1,8 +1,8 @@
-﻿// <copyright file="IShowMerchantStoreItemListPlugIn.cs" company="MUnique">
+﻿// <copyright file="IShowMerchantStoreItemListPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.NPC;
+namespace HNMO.GameLogic.Views.NPC;
 
 /// <summary>
 /// The kind of a store of the shown dialog.

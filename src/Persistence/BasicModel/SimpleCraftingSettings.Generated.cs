@@ -1,4 +1,4 @@
-// <copyright file="SimpleCraftingSettings.Generated.cs" company="MUnique">
+// <copyright file="SimpleCraftingSettings.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="SimpleCraftingSettings"/>.
 /// </summary>
-public partial class SimpleCraftingSettings : MUnique.OpenMU.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings, IIdentifiable, IConvertibleTo<SimpleCraftingSettings>
+public partial class SimpleCraftingSettings : HNMO.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings, IIdentifiable, IConvertibleTo<SimpleCraftingSettings>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class SimpleCraftingSettings : MUnique.OpenMU.DataModel.Configura
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem> RequiredItems
+    public override ICollection<HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem> RequiredItems
     {
-        get => base.RequiredItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, ItemCraftingRequiredItem>(this.RawRequiredItems);
+        get => base.RequiredItems ??= new CollectionAdapter<HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingRequiredItem, ItemCraftingRequiredItem>(this.RawRequiredItems);
         protected set
         {
             this.RequiredItems.Clear();
@@ -54,9 +54,9 @@ public partial class SimpleCraftingSettings : MUnique.OpenMU.DataModel.Configura
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem> ResultItems
+    public override ICollection<HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem> ResultItems
     {
-        get => base.ResultItems ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem, ItemCraftingResultItem>(this.RawResultItems);
+        get => base.ResultItems ??= new CollectionAdapter<HNMO.DataModel.Configuration.ItemCrafting.ItemCraftingResultItem, ItemCraftingResultItem>(this.RawResultItems);
         protected set
         {
             this.ResultItems.Clear();
@@ -68,7 +68,7 @@ public partial class SimpleCraftingSettings : MUnique.OpenMU.DataModel.Configura
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new SimpleCraftingSettings();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -76,7 +76,7 @@ public partial class SimpleCraftingSettings : MUnique.OpenMU.DataModel.Configura
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.ItemCrafting.SimpleCraftingSettings other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

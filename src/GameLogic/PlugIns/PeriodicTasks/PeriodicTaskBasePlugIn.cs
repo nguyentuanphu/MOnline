@@ -1,14 +1,14 @@
-﻿// <copyright file="PeriodicTaskBasePlugIn.cs" company="MUnique">
+﻿// <copyright file="PeriodicTaskBasePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 using System.Collections.Concurrent;
 using System.Threading;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Base class for periodic task plugins.

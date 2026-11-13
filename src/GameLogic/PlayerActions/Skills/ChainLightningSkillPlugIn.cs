@@ -1,17 +1,17 @@
-﻿// <copyright file="ChainLightningSkillPlugIn.cs" company="MUnique">
+﻿// <copyright file="ChainLightningSkillPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Skills;
+namespace HNMO.GameLogic.PlayerActions.Skills;
 
 using System.Runtime.InteropServices;
 
-using MUnique.OpenMU.GameLogic.GuildWar;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.GuildWar;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handles the chain lightning skill of the summoner class. Additionally to the attacked target, it will hit up to two additional targets.

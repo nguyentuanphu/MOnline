@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MUnique.OpenMU.Discord.Properties {
+namespace HNMO.Discord.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace MUnique.OpenMU.Discord.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MUnique.OpenMU.Discord.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("HNMO.Discord.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -646,11 +646,11 @@ namespace MUnique.OpenMU.Discord.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Administrates the OpenMU integration of this Discord server..
+        ///   Looks up a localized string similar to Administrates the HNMO integration of this Discord server..
         /// </summary>
-        public static string Command_OpenMu_Description {
+        public static string Command_Hnmo_Description {
             get {
-                return ResourceManager.GetString("Command_OpenMu_Description", resourceCulture);
+                return ResourceManager.GetString("Command_Hnmo_Description", resourceCulture);
             }
         }
         

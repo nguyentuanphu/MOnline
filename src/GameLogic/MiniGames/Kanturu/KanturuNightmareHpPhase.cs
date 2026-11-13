@@ -1,8 +1,8 @@
-﻿// <copyright file="KanturuNightmareHpPhase.cs" company="MUnique">
+﻿// <copyright file="KanturuNightmareHpPhase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
 /// <summary>
 /// One health based phase of the Nightmare boss fight. When the boss' health drops below
@@ -14,7 +14,7 @@ public class KanturuNightmareHpPhase
     /// <summary>
     /// Gets or sets the number of the spawn wave which is started when this phase starts,
     /// e.g. 7 Dread Fears around the teleport target. No minions are summoned when it's
-    /// <c>null</c>. It refers to the <see cref="MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea.WaveNumber"/>
+    /// <c>null</c>. It refers to the <see cref="HNMO.DataModel.Configuration.MonsterSpawnArea.WaveNumber"/>
     /// of the spawn areas of the event map.
     /// </summary>
     public byte? SummonWaveNumber { get; set; }

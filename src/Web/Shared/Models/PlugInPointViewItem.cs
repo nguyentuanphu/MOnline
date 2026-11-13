@@ -1,8 +1,8 @@
-﻿// <copyright file="PlugInPointViewItem.cs" company="MUnique">
+﻿// <copyright file="PlugInPointViewItem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Models;
+namespace HNMO.Web.Shared.Models;
 
 /// <summary>
 /// View item for plugin extension points.

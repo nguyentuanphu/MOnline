@@ -1,11 +1,11 @@
-﻿// <copyright file="WebApplicationExtensions.cs" company="MUnique">
+﻿// <copyright file="WebApplicationExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map;
+namespace HNMO.Web.Map;
 
 using Microsoft.AspNetCore.Hosting.StaticWebAssets;
-using MUnique.OpenMU.Web.Map.Map;
+using HNMO.Web.Map.Map;
 
 /// <summary>
 /// Extensions for the <see cref="WebApplicationBuilder"/> to add the web map app.

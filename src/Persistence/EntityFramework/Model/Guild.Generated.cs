@@ -1,4 +1,4 @@
-// <copyright file="Guild.Generated.cs" company="MUnique">
+// <copyright file="Guild.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.Guild"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.Guild"/>.
 /// </summary>
 [Table(nameof(Guild), Schema = SchemaNames.AccountData)]
-internal partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentifiable
+internal partial class Guild : HNMO.DataModel.Entities.Guild, IIdentifiable
 {
     
     
@@ -31,7 +31,7 @@ internal partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentif
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.GuildMember> Members => base.Members ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.GuildMember, GuildMember>(this.RawMembers);
+    public override ICollection<HNMO.DataModel.Entities.GuildMember> Members => base.Members ??= new CollectionAdapter<HNMO.DataModel.Entities.GuildMember, GuildMember>(this.RawMembers);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="Hostility"/>.
@@ -50,7 +50,7 @@ internal partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentif
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.Interfaces.Guild Hostility
+    public override HNMO.Interfaces.Guild Hostility
     {
         get => base.Hostility;set
         {
@@ -76,7 +76,7 @@ internal partial class Guild : MUnique.OpenMU.DataModel.Entities.Guild, IIdentif
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.Interfaces.Guild AllianceGuild
+    public override HNMO.Interfaces.Guild AllianceGuild
     {
         get => base.AllianceGuild;set
         {

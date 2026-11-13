@@ -1,8 +1,8 @@
-﻿// <copyright file="InputByteBase.cs" company="MUnique">
+﻿// <copyright file="InputByteBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
@@ -18,7 +18,7 @@ public abstract class InputByteBase<TByte> : InputBase<TByte>
     /// Gets or sets the error message used when displaying an a parsing error.
     /// </summary>
     [Parameter]
-    public string ParsingErrorMessage { get; set; } = string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.NumberRangeError, "{0}", byte.MinValue, byte.MaxValue);
+    public string ParsingErrorMessage { get; set; } = string.Format(HNMO.Web.Shared.Properties.Resources.NumberRangeError, "{0}", byte.MinValue, byte.MaxValue);
 
     /// <summary>
     /// Gets or sets the minimum value.

@@ -1,14 +1,14 @@
 ﻿// -----------------------------------------------------------------------
-// <copyright file="UpgradeItemLevelJewelConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="UpgradeItemLevelJewelConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 // -----------------------------------------------------------------------
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Base class for consume handlers which upgrade the item level by consuming a jewel.

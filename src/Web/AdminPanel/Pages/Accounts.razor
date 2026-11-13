@@ -1,15 +1,15 @@
 ﻿@page "/accounts"
-@using MUnique.OpenMU.DataModel
-@using MUnique.OpenMU.DataModel.Entities;
-@using MUnique.OpenMU.Persistence;
-@using Resources = MUnique.OpenMU.Web.AdminPanel.Properties.Resources
+@using HNMO.DataModel
+@using HNMO.DataModel.Entities;
+@using HNMO.Persistence;
+@using Resources = HNMO.Web.AdminPanel.Properties.Resources
 
 @inject AccountService _accountService;
 
 @{
   var title = typeof(Account).GetPluralizedTypeCaption();
 }
-<PageTitle>OpenMU: @title</PageTitle>
+<PageTitle>HNMO: @title</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@title" />
 <h1>@title</h1>
 

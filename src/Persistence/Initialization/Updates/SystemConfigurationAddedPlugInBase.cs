@@ -1,11 +1,11 @@
-﻿// <copyright file="SystemConfigurationAddedPlugInBase.cs" company="MUnique">
+﻿// <copyright file="SystemConfigurationAddedPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Network;
+using HNMO.DataModel.Configuration;
+using HNMO.Network;
 
 /// <summary>
 /// This updates adds the new <see cref="SystemConfiguration"/> with default settings.

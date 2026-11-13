@@ -3,7 +3,7 @@
 **Status:** steps 1–4 of the implementation plan (§7) are implemented. §10
 summarizes where the implementation deviates from the first draft of this
 concept.
-**Issue:** [#75 Rule engine for item price calculation](https://github.com/MUnique/OpenMU/issues/75)
+**Issue:** [#75 Rule engine for item price calculation](https://github.com/nguyentuanphu/HNMO/issues/75)
 **Subject:** `src/GameLogic/ItemPriceCalculator.cs`
 
 ## 1. Goal
@@ -38,7 +38,7 @@ So we need two tiers:
 * **Changing prices.** The first step must give exactly the same results as
   today. The original client calculates and shows the prices itself (see
   `ItemValue` in `ZzzInfomation.cpp` of
-  [MuMain](https://github.com/sven-n/MuMain)), so a server that differs is
+  [the desktop client](https://github.com/nguyentuanphu/HNMO)), so a server that differs is
   visibly wrong. The known differences to the client are listed in §9 and
   belong in their own pull requests (coding rule 1).
 * **Changing the repair price formula.** `CalculateRepairPrice` is generic

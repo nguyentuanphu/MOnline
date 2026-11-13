@@ -1,23 +1,23 @@
-﻿// <copyright file="LuckyItems.cs" company="MUnique">
+﻿// <copyright file="LuckyItems.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions.Craftings;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions.Craftings;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.CharacterClasses;
 
 /// <summary>
 /// Initializer for the lucky items: the lucky armor sets, the lucky item tickets and the jewels of extension and elevation.
 /// </summary>
 /// <remarks>
-/// The data is taken from the item data of the open source client (sven-n/MuMain, src/bin/Data/Items), where
+/// The data is taken from the item data of the open source client (the HNMO desktop client, src/bin/Data/Items), where
 /// these items are tagged as lucky item or lucky item ticket.
 /// The lucky armors share their names with the regular armors, but they are separate items. They can't be upgraded
 /// with jewels of bless, soul or life, so their maximum item level is 0 and their only possible option is the

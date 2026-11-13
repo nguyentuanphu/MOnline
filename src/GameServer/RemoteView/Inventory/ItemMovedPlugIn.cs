@@ -1,17 +1,17 @@
-﻿// <copyright file="ItemMovedPlugIn.cs" company="MUnique">
+﻿// <copyright file="ItemMovedPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Inventory;
+namespace HNMO.GameServer.RemoteView.Inventory;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Network;
+using HNMO.Network.Packets;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IItemMovedPlugIn"/> which is forwarding everything to the game client with specific data packets.

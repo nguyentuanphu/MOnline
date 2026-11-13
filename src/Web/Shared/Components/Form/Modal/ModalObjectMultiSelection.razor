@@ -1,11 +1,11 @@
 ﻿@typeparam TItem
 
-@using MUnique.OpenMU.Web.Shared.Components.Modal
+@using HNMO.Web.Shared.Components.Modal
 
 <EditForm Model="@this" class="modal-multi-selection">
   <div class="modal-multi-selection__content">
     <CascadingValue Value="@this.PersistenceContext">
-      <MultiLookupField TObject="TItem" @bind-Value="@this.Items" Label="@(MUnique.OpenMU.DataModel.ModelResourceProvider.GetTypeCaption<TItem>())"/>
+      <MultiLookupField TObject="TItem" @bind-Value="@this.Items" Label="@(HNMO.DataModel.ModelResourceProvider.GetTypeCaption<TItem>())"/>
     </CascadingValue>
   </div>
 

@@ -1,17 +1,17 @@
-﻿// <copyright file="Jewelery.cs" company="MUnique">
+﻿// <copyright file="Jewelery.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
+namespace HNMO.Persistence.Initialization.VersionSeasonSix.Items;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Properties;
 
 /// <summary>
 /// Initializer for jewelery (rings and pendants).
@@ -34,7 +34,7 @@ internal class Jewelery : Version095d.Items.Jewelery
     /// <returns>The created items.</returns>
     /// <remarks>
     /// Their bonuses are fixed, they have no options and can't be upgraded. The values are the ones which
-    /// the game client shows (MuMain item data src/bin/Data/Items/Group13_Helper.json, and for the
+    /// the game client shows (the desktop client item data src/bin/Data/Items/Group13_Helper.json, and for the
     /// Lethal Wizard's Ring the special options of ZzzInfomation.cpp). Like the excellent options, the
     /// percentages of the client are multipliers or chances here.
     /// Like the other jewelery, they wear out slowly while they're equipped outside of the safezone.

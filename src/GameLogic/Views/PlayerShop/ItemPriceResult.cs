@@ -1,10 +1,10 @@
-﻿// <copyright file="ItemPriceResult.cs" company="MUnique">
+﻿// <copyright file="ItemPriceResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.PlayerShop;
+namespace HNMO.GameLogic.Views.PlayerShop;
 
-using MUnique.OpenMU.GameLogic.PlayerActions.PlayerStore;
+using HNMO.GameLogic.PlayerActions.PlayerStore;
 
 /// <summary>
 /// Result of the <see cref="BuyRequestAction"/>.

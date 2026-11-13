@@ -1,13 +1,13 @@
-﻿// <copyright file="ExpressionExtensions.cs" company="MUnique">
+﻿// <copyright file="ExpressionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared;
+namespace HNMO.Web.Shared;
 
 using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 using System.Reflection;
-using MUnique.OpenMU.DataModel.Composition;
+using HNMO.DataModel.Composition;
 
 /// <summary>
 /// Extensions for expressions.

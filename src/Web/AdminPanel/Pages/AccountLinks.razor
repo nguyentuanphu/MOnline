@@ -1,12 +1,12 @@
 @page "/accounts/{LoginName}/links"
 @attribute [Authorize(Policy = AdminPolicies.Operator)]
 
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Web.AdminPanel.Properties
 
 @{
     var title = string.Format(Resources.ExternalLinksOf, this.LoginName);
 }
-<PageTitle>OpenMU: @title</PageTitle>
+<PageTitle>HNMO: @title</PageTitle>
 <Breadcrumb Caption="@title" />
 <h1>@title</h1>
 

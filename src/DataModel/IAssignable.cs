@@ -1,10 +1,10 @@
-﻿// <copyright file="IAssignable.cs" company="MUnique">
+﻿// <copyright file="IAssignable.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel;
+namespace HNMO.DataModel;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Interface for a class which can assign values from another instance to the

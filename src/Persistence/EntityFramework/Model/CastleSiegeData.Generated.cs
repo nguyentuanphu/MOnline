@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeData.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeData.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.CastleSiegeData"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.CastleSiegeData"/>.
 /// </summary>
 [Table(nameof(CastleSiegeData), Schema = SchemaNames.AccountData)]
-internal partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.CastleSiegeData, IIdentifiable
+internal partial class CastleSiegeData : HNMO.DataModel.Entities.CastleSiegeData, IIdentifiable
 {
     
     
@@ -31,7 +31,7 @@ internal partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.Castl
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState> NpcStates => base.NpcStates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CastleSiegeNpcState, CastleSiegeNpcState>(this.RawNpcStates);
+    public override ICollection<HNMO.DataModel.Entities.CastleSiegeNpcState> NpcStates => base.NpcStates ??= new CollectionAdapter<HNMO.DataModel.Entities.CastleSiegeNpcState, CastleSiegeNpcState>(this.RawNpcStates);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Guilds" />.
@@ -40,7 +40,7 @@ internal partial class CastleSiegeData : MUnique.OpenMU.DataModel.Entities.Castl
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CastleSiegeGuild> Guilds => base.Guilds ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CastleSiegeGuild, CastleSiegeGuild>(this.RawGuilds);
+    public override ICollection<HNMO.DataModel.Entities.CastleSiegeGuild> Guilds => base.Guilds ??= new CollectionAdapter<HNMO.DataModel.Entities.CastleSiegeGuild, CastleSiegeGuild>(this.RawGuilds);
 
 
     /// <inheritdoc/>

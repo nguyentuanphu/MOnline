@@ -1,12 +1,12 @@
-// <copyright file="CastleSiegeSwitchMechanics.cs" company="MUnique">
+// <copyright file="CastleSiegeSwitchMechanics.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CastleSiege;
+namespace HNMO.GameLogic.CastleSiege;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.CastleSiege.NPC;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.CastleSiege.NPC;
+using HNMO.GameLogic.Views.CastleSiege;
 
 /// <summary>
 /// Broadcasts Castle Siege Crown switch occupants and Crown availability.
@@ -105,7 +105,7 @@ public static class CastleSiegeSwitchMechanics
             ? participant.GuildName
             : string.Empty;
 
-        // MuMain resolves the legacy switch-index field through its visible-object table, so the object id is required.
+        // The desktop client resolves the legacy switch-index field through its visible-object table, so the object id is required.
         return new(
             siegeSwitch.Id,
             occupant is not null,

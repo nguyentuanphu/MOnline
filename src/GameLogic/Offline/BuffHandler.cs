@@ -1,16 +1,16 @@
-// <copyright file="BuffHandler.cs" company="MUnique">
+// <copyright file="BuffHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.Bots;
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.PlayerActions.Skills;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.World;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.Bots;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.PlayerActions.Skills;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.World;
 
 /// <summary>
 /// Handles buff application and management for the offline player.

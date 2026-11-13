@@ -1,14 +1,14 @@
-﻿// <copyright file="ClassRageFighter.cs" company="MUnique">
+﻿// <copyright file="ClassRageFighter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.CharacterClasses;
+namespace HNMO.Persistence.Initialization.CharacterClasses;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Properties;
 
 /// <summary>
 /// Initialization of character classes data.

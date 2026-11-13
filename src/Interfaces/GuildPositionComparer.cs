@@ -1,8 +1,8 @@
-// <copyright file="GuildPositionComparer.cs" company="MUnique">
+// <copyright file="GuildPositionComparer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// Comparer for <see cref="GuildPosition"/> and <see cref="GuildListEntry"/>, ordering by hierarchy:

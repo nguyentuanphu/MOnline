@@ -1,8 +1,8 @@
-﻿// <copyright file="PipelinedSimpleModulusDecryptor.cs" company="MUnique">
+﻿// <copyright file="PipelinedSimpleModulusDecryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.SimpleModulus;
+namespace HNMO.Network.SimpleModulus;
 
 using System.Buffers;
 using System.Diagnostics;
@@ -76,10 +76,10 @@ public class PipelinedSimpleModulusDecryptor : PipelinedSimpleModulusBase, IPipe
     }
 
     /// <summary>
-    /// Reads the mu online packet.
+    /// Reads the game packet.
     /// Decrypts the packet and writes it into our pipe.
     /// </summary>
-    /// <param name="packet">The mu online packet.</param>
+    /// <param name="packet">The game packet.</param>
     /// <returns><see langword="true" />, if the flush was successful or not required.<see langword="false" />, if the pipe reader is completed and no longer reading data.</returns>
     protected override async ValueTask<bool> ReadPacketAsync(ReadOnlySequence<byte> packet)
     {

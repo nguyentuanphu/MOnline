@@ -1,14 +1,14 @@
-// <copyright file="ReverseProxyAuthenticationService.cs" company="MUnique">
+// <copyright file="ReverseProxyAuthenticationService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Collections.Concurrent;
 using System.Security.Claims;
 using System.Threading;
 using Microsoft.AspNetCore.Http;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Answers the authentication requests of a reverse proxy, so that other web applications
@@ -52,12 +52,12 @@ public class ReverseProxyAuthenticationService
     /// <summary>
     /// Gets the name of the response header which contains the name of the authenticated user.
     /// </summary>
-    public static string UserHeaderName => "X-OpenMU-User";
+    public static string UserHeaderName => "X-HNMO-User";
 
     /// <summary>
     /// Gets the name of the response header which contains the most privileged role of the authenticated user.
     /// </summary>
-    public static string RoleHeaderName => "X-OpenMU-Role";
+    public static string RoleHeaderName => "X-HNMO-Role";
 
     /// <summary>
     /// Gets the name of the response header which contains the Grafana role for the most privileged role of the authenticated user.
@@ -65,7 +65,7 @@ public class ReverseProxyAuthenticationService
     /// <remarks>
     /// It's meant for reverse proxies which can't map the <see cref="RoleHeaderName"/> to the Grafana role themselves, e.g. Traefik.
     /// </remarks>
-    public static string GrafanaRoleHeaderName => "X-OpenMU-Grafana-Role";
+    public static string GrafanaRoleHeaderName => "X-HNMO-Grafana-Role";
 
     /// <summary>
     /// Gets the user name which is used in the initial setup mode, when no user exists yet.

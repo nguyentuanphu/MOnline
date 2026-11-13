@@ -1,10 +1,10 @@
-﻿// <copyright file="IClientVersionProvider.cs" company="MUnique">
+﻿// <copyright file="IClientVersionProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// Interface for an object which can provide its client version.

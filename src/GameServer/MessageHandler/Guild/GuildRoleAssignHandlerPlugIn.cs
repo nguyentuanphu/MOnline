@@ -1,17 +1,17 @@
-// <copyright file="GuildRoleAssignHandlerPlugIn.cs" company="MUnique">
+// <copyright file="GuildRoleAssignHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Guild;
+namespace HNMO.GameServer.MessageHandler.Guild;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Guild;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.GameServer.RemoteView.Guild;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Guild;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.GameServer.RemoteView.Guild;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for guild role assign packets.

@@ -1,19 +1,19 @@
-﻿// <copyright file="MapController.cs" company="MUnique">
+﻿// <copyright file="MapController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
 using System.Collections.Concurrent;
 using System.Threading;
 using Microsoft.Extensions.Logging;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.World;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Web.Map.ViewPlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.World;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
+using HNMO.Web.Map.ViewPlugIns;
 using Nito.AsyncEx;
 
 /// <summary>

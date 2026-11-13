@@ -1,11 +1,11 @@
-﻿// <copyright file="ClientColorDepth.cs" company="MUnique">
+﻿// <copyright file="ClientColorDepth.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ClientLauncher;
+namespace HNMO.ClientLauncher;
 
 /// <summary>
-/// The available color depths for the mu online client.
+/// The available color depths for the game client.
 /// </summary>
 public enum ClientColorDepth
 {

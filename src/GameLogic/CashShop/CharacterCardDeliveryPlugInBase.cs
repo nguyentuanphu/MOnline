@@ -1,11 +1,11 @@
-// <copyright file="CharacterCardDeliveryPlugInBase.cs" company="MUnique">
+// <copyright file="CharacterCardDeliveryPlugInBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.CashShop;
+namespace HNMO.GameLogic.CashShop;
 
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.CashShop;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.CashShop;
 
 /// <summary>
 /// Delivers a character card of the cash shop by unlocking its character class for the account.

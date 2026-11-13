@@ -1,11 +1,11 @@
-// <copyright file="AccountExtensions.cs" company="MUnique">
+// <copyright file="AccountExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// Extension methods for the <see cref="Account"/>.

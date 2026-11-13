@@ -1,11 +1,11 @@
-// <copyright file="PersistenceJsonSerializerContext.cs" company="MUnique">
+// <copyright file="PersistenceJsonSerializerContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Json;
+namespace HNMO.Persistence.Json;
 
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The json metadata of the types which are read by the reference resolving converters, but which are

@@ -1,8 +1,8 @@
-﻿// <copyright file="CrywolfEventDefinition.cs" company="MUnique">
+﻿// <copyright file="CrywolfEventDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Crywolf;
+namespace HNMO.GameLogic.Crywolf;
 
 /// <summary>
 /// Describes the run of the crywolf event.

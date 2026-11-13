@@ -1,8 +1,8 @@
-﻿// <copyright file="NavigationHistory.cs" company="MUnique">
+﻿// <copyright file="NavigationHistory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System;
 using Microsoft.AspNetCore.Components;
@@ -69,7 +69,7 @@ public sealed class NavigationHistory
         this._nextPages.Clear();
         this._previousPages.Clear();
         this._current = null;
-        this._current = new HistoryEntry(this.NavigationManager.BaseUri, MUnique.OpenMU.Web.Shared.Properties.Resources.Home);
+        this._current = new HistoryEntry(this.NavigationManager.BaseUri, HNMO.Web.Shared.Properties.Resources.Home);
         this.HistoryChanged?.Invoke(this, EventArgs.Empty);
     }
 

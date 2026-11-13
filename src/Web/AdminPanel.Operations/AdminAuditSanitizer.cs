@@ -1,14 +1,14 @@
-// <copyright file="AdminAuditSanitizer.cs" company="MUnique">
+// <copyright file="AdminAuditSanitizer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 using System.Text.Json.Serialization.Metadata;
-using MUnique.OpenMU.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>Removes credential fields from already explicit audit projections as defense in depth.</summary>
 internal static class AdminAuditSanitizer

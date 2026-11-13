@@ -1,12 +1,12 @@
-// <copyright file="AdminPanelSetupMode.cs" company="MUnique">
+// <copyright file="AdminPanelSetupMode.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Threading;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// Knows whether the admin panel is in its initial setup mode, and disables the API keys which

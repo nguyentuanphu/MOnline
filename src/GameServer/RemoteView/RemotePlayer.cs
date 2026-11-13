@@ -1,17 +1,17 @@
-// <copyright file="RemotePlayer.cs" company="MUnique">
+// <copyright file="RemotePlayer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Buffers;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameServer.MessageHandler;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Views;
+using HNMO.GameServer.MessageHandler;
+using HNMO.Network;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A player that is playing through a remote connection.

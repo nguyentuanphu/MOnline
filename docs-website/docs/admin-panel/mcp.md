@@ -6,7 +6,7 @@ sidebar_position: 18
 
 The admin panel can expose a [Model Context
 Protocol](https://modelcontextprotocol.io/)
-server at `/mcp`. Your agent can inspect OpenMU without OpenMU calling an AI
+server at `/mcp`. Your agent can inspect HNMO without HNMO calling an AI
 model
 or requiring a model API key. The endpoint is disabled by default.
 
@@ -35,7 +35,7 @@ editor, which always saves the whole configuration. It applies even when MCP is
 disabled. Raise it if saving a plugin with long text lists reports that the
 limit is exceeded.
 
-Alternatively, set `OPENMU_MCP_ENABLED=true` in the admin host's environment
+Alternatively, set `HNMO_MCP_ENABLED=true` in the admin host's environment
 (including Docker), or `AdminPanel__Mcp__Enabled=true` through standard .NET
 configuration. Both the all-in-one host and distributed admin host support MCP.
 `ReadOnly` defaults to `true`: write tools are absent from discovery and cannot
@@ -63,7 +63,7 @@ sanitized attempts and outcomes in logs instead.
 After a restart with an unreachable admin database, the host cannot distinguish
 an existing installation from initial setup, so anonymous panel setup access and
 log-only auditing may apply again. Configure a bootstrap user with
-`OPENMU_ADMIN_USER` and `OPENMU_ADMIN_PASSWORD` to prevent this fallback.
+`HNMO_ADMIN_USER` and `HNMO_ADMIN_PASSWORD` to prevent this fallback.
 
 The explicit `-demo` mode also uses a log-only panel audit without PostgreSQL.
 These non-durable entries are
@@ -79,14 +79,14 @@ HTTPS URL in the agent.
 
 The production nginx configurations overwrite `X-Forwarded-Proto` with `$scheme`
 in the admin location. To let ASP.NET Core recognize that HTTPS connection, add
-this environment setting to `openmu-startup` (all-in-one) or `adminPanel`
+this environment setting to `hnmo-startup` (all-in-one) or `adminPanel`
 (distributed) in your Compose override:
 
 ```yaml
 services:
-  adminPanel: # Use openmu-startup in the all-in-one deployment.
+  adminPanel: # Use hnmo-startup in the all-in-one deployment.
     environment:
-      OPENMU_MCP_ENABLED: "true"
+      HNMO_MCP_ENABLED: "true"
       ASPNETCORE_FORWARDEDHEADERS_ENABLED: "true"
 ```
 
@@ -137,7 +137,7 @@ you created. These examples contain a placeholder, never an actual key.
 ### Claude Code
 
 ```bash
-claude mcp add --transport http openmu https://admin.example.com/mcp \
+claude mcp add --transport http hnmo https://admin.example.com/mcp \
   --header "X-Api-Key: <key>"
 ```
 
@@ -148,7 +148,7 @@ Add a remote server to `.cursor/mcp.json`:
 ```json
 {
   "mcpServers": {
-    "openmu": {
+    "hnmo": {
       "url": "https://admin.example.com/mcp",
       "headers": { "X-Api-Key": "<key>" }
     }
@@ -165,17 +165,17 @@ file:
 {
   "inputs": [
     {
-      "id": "openmu-key",
+      "id": "hnmo-key",
       "type": "promptString",
-      "description": "OpenMU API key",
+      "description": "HNMO API key",
       "password": true
     }
   ],
   "servers": {
-    "openmu": {
+    "hnmo": {
       "type": "http",
       "url": "https://admin.example.com/mcp",
-      "headers": { "X-Api-Key": "${input:openmu-key}" }
+      "headers": { "X-Api-Key": "${input:hnmo-key}" }
     }
   }
 }
@@ -313,7 +313,7 @@ before retrying.
 Operational error bodies retain `error` and include `kind`: `Conflict`,
 `Forbidden`, `InvalidInput`, `Unavailable`, or `Uncertain`. MCP tool errors
 retain their text and `isError: true`, and expose the same invariant value in
-`_meta["openmu/errorKind"]`. Validation errors use `InvalidInput`; configuration
+`_meta["hnmo/errorKind"]`. Validation errors use `InvalidInput`; configuration
 read conflicts use `Conflict`. Unexpected errors remain generic and do not
 expose host details. A missing kind is not evidence that retrying is safe.
 
@@ -402,7 +402,7 @@ configuration and exclude runtime source and assembly installation. Nested or
 sensitive custom settings remain in the panel's graphical editor. Those saves
 share authorization, preview validation and durable auditing, but omit custom
 values from history and cannot be reverted through MCP. Plugin authors should
-mark sensitive properties with `[Secret]` from `MUnique.OpenMU.PlugIns`.
+mark sensitive properties with `[Secret]` from `HNMO.PlugIns`.
 Agents cannot read or patch marked fields; the graphical editor masks marked
 strings and typed audit serialization omits marked properties. Names do not
 decide which plugin fields are editable. For compatibility with older plugins,
@@ -493,7 +493,7 @@ In distributed deployments, each sidecar must use the unique app id
 The internal `/administration/*` routes also require the sidecar's
 `dapr-api-token` header. Configure the same `APP_API_TOKEN` on each game server
 and its sidecar; missing configuration disables these routes. Compose requires
-`OPENMU_GAME_SERVER_APP_TOKEN` and binds game server HTTP ports to loopback.
+`HNMO_GAME_SERVER_APP_TOKEN` and binds game server HTTP ports to loopback.
 Helm creates a reusable random token Secret, or accepts `gameServer.appTokenSecret`
 with key `token`. Never put this token in agent prompts or client requests.
 Calls return the actual owning server's response; live writes do not use
@@ -566,12 +566,12 @@ available during the upgrade.
 
 Run the PostgreSQL regression in a separate test process before each release;
 it is marked `[Explicit]` and does not run in the default CI suite. Point
-`OPENMU_TEST_MCP_POSTGRES` at an **empty, disposable PostgreSQL database**.
-The test creates the OpenMU tables, so never use a game or admin database.
+`HNMO_TEST_MCP_POSTGRES` at an **empty, disposable PostgreSQL database**.
+The test creates the HNMO tables, so never use a game or admin database.
 After building in Release, run:
 
 ```shell
-dotnet test tests/MUnique.OpenMU.Web.Tests -c Release -p:ci=true --no-build \
+dotnet test tests/HNMO.Web.Tests -c Release -p:ci=true --no-build \
   --filter FullyQualifiedName~ConfigurationPostgreSqlTests
 ```
 

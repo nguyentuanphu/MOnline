@@ -1,10 +1,10 @@
-// <copyright file="IGensViewPlugIn.cs" company="MUnique">
+// <copyright file="IGensViewPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Gens;
+namespace HNMO.GameLogic.Views.Gens;
 
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// The view plugin for the gens system of the own player.

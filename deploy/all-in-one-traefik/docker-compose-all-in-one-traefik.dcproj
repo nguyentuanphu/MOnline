@@ -8,7 +8,7 @@
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <DockerServiceName>openmu-startup-traefik</DockerServiceName>
+    <DockerServiceName>hnmo-startup-traefik</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include=".env.example" />

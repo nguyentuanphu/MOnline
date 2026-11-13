@@ -1,4 +1,4 @@
-﻿namespace MUnique.OpenMU.Network.Analyzer
+﻿namespace HNMO.Network.Analyzer
 {
     partial class PacketSenderForm
     {

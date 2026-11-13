@@ -1,8 +1,8 @@
-﻿// <copyright file="ChatServer.cs" company="MUnique">
+﻿// <copyright file="ChatServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
 using System.ComponentModel;
 using System.Net;
@@ -11,10 +11,10 @@ using System.Security.Cryptography;
 using System.Threading;
 using System.Timers;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Analyzer;
+using HNMO.PlugIns;
 using Timer = System.Timers.Timer;
 
 /// <summary>
@@ -152,7 +152,7 @@ public sealed class ChatServer : IChatServer, IDisposable, IConnectionSource
 
         this._logger.LogInformation("Begin starting");
         var oldState = this.ServerState;
-        this.ServerState = OpenMU.Interfaces.ServerState.Starting;
+        this.ServerState = HNMO.Interfaces.ServerState.Starting;
         try
         {
             this.CreateListeners();
@@ -163,7 +163,7 @@ public sealed class ChatServer : IChatServer, IDisposable, IConnectionSource
 
             this.CreateCleanupTimers();
 
-            this.ServerState = OpenMU.Interfaces.ServerState.Started;
+            this.ServerState = HNMO.Interfaces.ServerState.Started;
         }
         catch (Exception ex)
         {
@@ -204,7 +204,7 @@ public sealed class ChatServer : IChatServer, IDisposable, IConnectionSource
         }
 
         this._logger.LogInformation("Begin shutdown");
-        this.ServerState = OpenMU.Interfaces.ServerState.Stopping;
+        this.ServerState = HNMO.Interfaces.ServerState.Stopping;
         this.RemoveCleanupTimers();
         foreach (var listener in this._listeners)
         {
@@ -227,7 +227,7 @@ public sealed class ChatServer : IChatServer, IDisposable, IConnectionSource
             }
         }
 
-        this.ServerState = OpenMU.Interfaces.ServerState.Stopped;
+        this.ServerState = HNMO.Interfaces.ServerState.Stopped;
         this._logger.LogInformation("Finished shutdown");
     }
 

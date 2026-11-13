@@ -2,15 +2,15 @@
 
 @implements IDisposable
 
-@using MUnique.OpenMU.Web.AdminPanel.Properties
-@using MUnique.OpenMU.Web.Map.Components
-@using MUnique.OpenMU.Web.Map
-@using MUnique.OpenMU.Interfaces
-@using MUnique.OpenMU.GameLogic
+@using HNMO.Web.AdminPanel.Properties
+@using HNMO.Web.Map.Components
+@using HNMO.Web.Map
+@using HNMO.Interfaces
+@using HNMO.GameLogic
 
 @if (this._gameServer is not null)
 {
-    <PageTitle>OpenMU: @Resources.GameServer @this._gameServer.Id</PageTitle>
+    <PageTitle>HNMO: @Resources.GameServer @this._gameServer.Id</PageTitle>
     <Breadcrumb Caption=@($"{Resources.GameServer} {this._gameServer.Id}") />
     <CascadingValue Value="@_liveMapRoute" Name="LiveMapRoute">
     <CascadingValue Value="@_gameServer">

@@ -45,8 +45,8 @@ the initialized names equal their resource source.
 
 The tables below carry forward the translation audit completed on 2026-09-29,
 using the Taren-operated Chinese MU website. They are name references, not evidence
-for changing game mechanics. Numbered variants retain OpenMU's distinctions.
-Entries labeled **Derived** adapt an official base name to an OpenMU variant;
+for changing game mechanics. Numbered variants retain HNMO's distinctions.
+Entries labeled **Derived** adapt an official base name to an HNMO variant;
 they are not claimed to be verbatim official names. Format placeholders are preserved.
 
 Provisional monster translations and entries supported only by an existing local

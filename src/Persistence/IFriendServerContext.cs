@@ -1,13 +1,13 @@
-﻿// <copyright file="IFriendServerContext.cs" company="MUnique">
+﻿// <copyright file="IFriendServerContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
-/// A context which is used by the <see cref="T:MUnique.OpenMU.Interfaces.IFriendServer" />.
+/// A context which is used by the <see cref="T:HNMO.Interfaces.IFriendServer" />.
 /// </summary>
 public interface IFriendServerContext : IContext
 {

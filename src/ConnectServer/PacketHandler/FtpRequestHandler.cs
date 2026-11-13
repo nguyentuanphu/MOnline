@@ -1,13 +1,13 @@
-﻿// <copyright file="FtpRequestHandler.cs" company="MUnique">
+﻿// <copyright file="FtpRequestHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer.PacketHandler;
+namespace HNMO.ConnectServer.PacketHandler;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ConnectServer;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Packets.ConnectServer;
 
 /// <summary>
 /// Handles the ftp related request. The client is sending its version, and the server answers

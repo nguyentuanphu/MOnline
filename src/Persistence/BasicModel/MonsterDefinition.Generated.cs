@@ -1,4 +1,4 @@
-// <copyright file="MonsterDefinition.Generated.cs" company="MUnique">
+// <copyright file="MonsterDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MonsterDefinition"/>.
 /// </summary>
-public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.MonsterDefinition, IIdentifiable, IConvertibleTo<MonsterDefinition>
+public partial class MonsterDefinition : HNMO.DataModel.Configuration.MonsterDefinition, IIdentifiable, IConvertibleTo<MonsterDefinition>
 {
     
     /// <summary>
@@ -33,9 +33,9 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting> ItemCraftings
+    public override ICollection<HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting> ItemCraftings
     {
-        get => base.ItemCraftings ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ItemCrafting.ItemCrafting, ItemCrafting>(this.RawItemCraftings);
+        get => base.ItemCraftings ??= new CollectionAdapter<HNMO.DataModel.Configuration.ItemCrafting.ItemCrafting, ItemCrafting>(this.RawItemCraftings);
         protected set
         {
             this.ItemCraftings.Clear();
@@ -54,9 +54,9 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.DropItemGroup> DropItemGroups
+    public override ICollection<HNMO.DataModel.Configuration.DropItemGroup> DropItemGroups
     {
-        get => base.DropItemGroups ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
+        get => base.DropItemGroups ??= new CollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, DropItemGroup>(this.RawDropItemGroups);
         protected set
         {
             this.DropItemGroups.Clear();
@@ -75,9 +75,9 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterAttribute> Attributes
+    public override ICollection<HNMO.DataModel.Configuration.MonsterAttribute> Attributes
     {
-        get => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterAttribute, MonsterAttribute>(this.RawAttributes);
+        get => base.Attributes ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterAttribute, MonsterAttribute>(this.RawAttributes);
         protected set
         {
             this.Attributes.Clear();
@@ -96,9 +96,9 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition> Quests
+    public override ICollection<HNMO.DataModel.Configuration.Quests.QuestDefinition> Quests
     {
-        get => base.Quests ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Quests.QuestDefinition, QuestDefinition>(this.RawQuests);
+        get => base.Quests ??= new CollectionAdapter<HNMO.DataModel.Configuration.Quests.QuestDefinition, QuestDefinition>(this.RawQuests);
         protected set
         {
             this.Quests.Clear();
@@ -117,9 +117,9 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Buff> Buffs
+    public override ICollection<HNMO.DataModel.Configuration.Buff> Buffs
     {
-        get => base.Buffs ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Buff, Buff>(this.RawBuffs);
+        get => base.Buffs ??= new CollectionAdapter<HNMO.DataModel.Configuration.Buff, Buff>(this.RawBuffs);
         protected set
         {
             this.Buffs.Clear();
@@ -142,7 +142,7 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill AttackSkill
+    public override HNMO.DataModel.Configuration.Skill AttackSkill
     {
         get => base.AttackSkill;
         set => base.AttackSkill = value;
@@ -160,14 +160,14 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage MerchantStore
+    public override HNMO.DataModel.Entities.ItemStorage MerchantStore
     {
         get => base.MerchantStore;
         set => base.MerchantStore = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MonsterDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MonsterDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MonsterDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -175,7 +175,7 @@ public partial class MonsterDefinition : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MonsterDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MonsterDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

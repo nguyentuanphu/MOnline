@@ -1,10 +1,10 @@
-﻿// <copyright file="20240805183034_ExpFormulas.cs" company="MUnique">
+﻿// <copyright file="20240805183034_ExpFormulas.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     using Microsoft.EntityFrameworkCore.Migrations;
 

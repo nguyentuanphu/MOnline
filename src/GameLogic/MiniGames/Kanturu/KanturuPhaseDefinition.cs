@@ -1,10 +1,10 @@
-﻿// <copyright file="KanturuPhaseDefinition.cs" company="MUnique">
+﻿// <copyright file="KanturuPhaseDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Kanturu;
+namespace HNMO.GameLogic.MiniGames.Kanturu;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// The definition of one phase of the Kanturu event. The <see cref="KanturuContext"/> runs the
@@ -52,7 +52,7 @@ public class KanturuPhaseDefinition
 
     /// <summary>
     /// Gets or sets the number of the spawn wave which is started with the phase. It refers to
-    /// the <see cref="MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea.WaveNumber"/> of
+    /// the <see cref="HNMO.DataModel.Configuration.MonsterSpawnArea.WaveNumber"/> of
     /// the spawn areas of the event map.
     /// </summary>
     public byte? SpawnWaveNumber { get; set; }

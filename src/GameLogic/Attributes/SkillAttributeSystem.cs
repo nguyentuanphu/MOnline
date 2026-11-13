@@ -1,10 +1,10 @@
-// <copyright file="SkillAttributeSystem.cs" company="MUnique">
+// <copyright file="SkillAttributeSystem.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Attributes;
+namespace HNMO.GameLogic.Attributes;
 
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The attributes of a skill of a character, e.g. its damage bonus, which depend on the skill level and on

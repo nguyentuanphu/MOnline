@@ -1,4 +1,4 @@
-// <copyright file="Character.Generated.cs" company="MUnique">
+// <copyright file="Character.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.Character"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.Character"/>.
 /// </summary>
 [Table(nameof(Character), Schema = SchemaNames.AccountData)]
-internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, IIdentifiable
+internal partial class Character : HNMO.DataModel.Entities.Character, IIdentifiable
 {
     /// <inheritdoc />
     public Character()
@@ -36,7 +36,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.AttributeSystem.StatAttribute> Attributes => base.Attributes ??= new CollectionAdapter<MUnique.OpenMU.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
+    public override ICollection<HNMO.AttributeSystem.StatAttribute> Attributes => base.Attributes ??= new CollectionAdapter<HNMO.AttributeSystem.StatAttribute, StatAttribute>(this.RawAttributes);
 
     /// <summary>
     /// Gets the raw collection of <see cref="Letters" />.
@@ -45,7 +45,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
     
     /// <inheritdoc/>
     [NotMapped]
-    public override IList<MUnique.OpenMU.Interfaces.LetterHeader> Letters => base.Letters ??= new ListAdapter<MUnique.OpenMU.Interfaces.LetterHeader, LetterHeader>(this.RawLetters);
+    public override IList<HNMO.Interfaces.LetterHeader> Letters => base.Letters ??= new ListAdapter<HNMO.Interfaces.LetterHeader, LetterHeader>(this.RawLetters);
 
     /// <summary>
     /// Gets the raw collection of <see cref="LearnedSkills" />.
@@ -54,7 +54,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.SkillEntry> LearnedSkills => base.LearnedSkills ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.SkillEntry, SkillEntry>(this.RawLearnedSkills);
+    public override ICollection<HNMO.DataModel.Entities.SkillEntry> LearnedSkills => base.LearnedSkills ??= new CollectionAdapter<HNMO.DataModel.Entities.SkillEntry, SkillEntry>(this.RawLearnedSkills);
 
     /// <summary>
     /// Gets the raw collection of <see cref="QuestStates" />.
@@ -63,7 +63,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.CharacterQuestState> QuestStates => base.QuestStates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.CharacterQuestState, CharacterQuestState>(this.RawQuestStates);
+    public override ICollection<HNMO.DataModel.Entities.CharacterQuestState> QuestStates => base.QuestStates ??= new CollectionAdapter<HNMO.DataModel.Entities.CharacterQuestState, CharacterQuestState>(this.RawQuestStates);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="CharacterClass"/>.
@@ -82,7 +82,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.CharacterClass CharacterClass
+    public override HNMO.DataModel.Configuration.CharacterClass CharacterClass
     {
         get => base.CharacterClass;set
         {
@@ -108,7 +108,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition CurrentMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition CurrentMap
     {
         get => base.CurrentMap;set
         {
@@ -134,7 +134,7 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage Inventory
+    public override HNMO.DataModel.Entities.ItemStorage Inventory
     {
         get => base.Inventory;set
         {
@@ -164,6 +164,6 @@ internal partial class Character : MUnique.OpenMU.DataModel.Entities.Character, 
 
     protected void InitJoinCollections()
     {
-        this.DropItemGroups = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, CharacterDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new CharacterDropItemGroup { Character = this, CharacterId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
+        this.DropItemGroups = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, CharacterDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new CharacterDropItemGroup { Character = this, CharacterId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
     }
 }

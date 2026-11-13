@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemOptionDefinition.cs" company="MUnique">
+﻿// <copyright file="ItemOptionDefinition.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Annotations;
+using HNMO.Interfaces;
 
 /// <summary>
 /// The definition of an item option.

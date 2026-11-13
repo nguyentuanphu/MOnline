@@ -1,14 +1,14 @@
-// <copyright file="OfflinePlayer.cs" company="MUnique">
+// <copyright file="OfflinePlayer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.MuHelper;
+using HNMO.GameLogic.Views;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An offline player that continues leveling after the real client disconnects.

@@ -1,13 +1,13 @@
-﻿// <copyright file="InMemoryPersistenceContextProvider.cs" company="MUnique">
+﻿// <copyright file="InMemoryPersistenceContextProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 using Nito.Disposables;
 
 /// <summary>

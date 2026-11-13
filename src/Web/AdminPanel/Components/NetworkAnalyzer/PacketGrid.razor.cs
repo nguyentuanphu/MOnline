@@ -1,14 +1,14 @@
-// <copyright file="PacketGrid.razor.cs" company="MUnique">
+// <copyright file="PacketGrid.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.NetworkAnalyzer;
+namespace HNMO.Web.AdminPanel.Components.NetworkAnalyzer;
 
 using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Network.Analyzer;
+using HNMO.Network.PlugIns;
 
 /// <summary>
 /// The grid which shows the captured data packets of a connection.
@@ -26,7 +26,7 @@ public partial class PacketGrid : IAsyncDisposable
     /// </summary>
     private const float HeaderHeight = 40;
 
-    private const string ModulePath = "./_content/MUnique.OpenMU.Web.AdminPanel/Components/NetworkAnalyzer/PacketGrid.razor.js";
+    private const string ModulePath = "./_content/HNMO.Web.AdminPanel/Components/NetworkAnalyzer/PacketGrid.razor.js";
 
     private IJSObjectReference? _module;
 

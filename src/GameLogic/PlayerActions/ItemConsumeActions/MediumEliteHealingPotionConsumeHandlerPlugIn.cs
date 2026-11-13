@@ -1,13 +1,13 @@
-// <copyright file="MediumEliteHealingPotionConsumeHandlerPlugIn.cs" company="MUnique">
+// <copyright file="MediumEliteHealingPotionConsumeHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.ItemConsumeActions;
+namespace HNMO.GameLogic.PlayerActions.ItemConsumeActions;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Consume handler for the medium elite healing potion, which recovers 65 percent of the health immediately.

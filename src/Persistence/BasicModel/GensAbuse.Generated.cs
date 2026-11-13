@@ -1,4 +1,4 @@
-// <copyright file="GensAbuse.Generated.cs" company="MUnique">
+// <copyright file="GensAbuse.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GensAbuse"/>.
 /// </summary>
-public partial class GensAbuse : MUnique.OpenMU.DataModel.Entities.GensAbuse, IIdentifiable, IConvertibleTo<GensAbuse>
+public partial class GensAbuse : HNMO.DataModel.Entities.GensAbuse, IIdentifiable, IConvertibleTo<GensAbuse>
 {
     
     

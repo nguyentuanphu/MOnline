@@ -1,20 +1,20 @@
-// <copyright file="LimitWhiteWizardDropsUpdatePlugIn.cs" company="MUnique">
+// <copyright file="LimitWhiteWizardDropsUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update limits the Wizard's Ring to one per character for existing databases.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.LimitWhiteWizardDropsUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.LimitWhiteWizardDropsUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.LimitWhiteWizardDropsUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.LimitWhiteWizardDropsUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("A7B3E5F1-8C2D-4E6F-9A1B-3D5C7E8F2A4B")]
 public class LimitWhiteWizardDropsUpdatePlugIn : UpdatePlugInBase
 {

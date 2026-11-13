@@ -1,12 +1,12 @@
-﻿// <copyright file="PipelinedDecryptor.cs" company="MUnique">
+﻿// <copyright file="PipelinedDecryptor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network;
+namespace HNMO.Network;
 
 using System.IO.Pipelines;
-using MUnique.OpenMU.Network.SimpleModulus;
-using MUnique.OpenMU.Network.Xor;
+using HNMO.Network.SimpleModulus;
+using HNMO.Network.Xor;
 
 /// <summary>
 /// Default server implementation of a <see cref="IPipelinedDecryptor"/> which decrypts incoming data packets.

@@ -1,10 +1,10 @@
-﻿// <copyright file="GameMapDefinitionExtensions.cs" company="MUnique">
+﻿// <copyright file="GameMapDefinitionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Extensions for <see cref="GameMapDefinition"/> which concern the communication with the game client.

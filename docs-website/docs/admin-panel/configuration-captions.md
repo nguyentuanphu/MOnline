@@ -1,7 +1,7 @@
 ---
 title: Configuration captions
 sidebar_position: 4
-description: Keep the translated names of the game configuration in sync with the translations which ship with OpenMU.
+description: Keep the translated names of the game configuration in sync with the translations which ship with HNMO.
 ---
 
 # Configuration captions
@@ -9,7 +9,7 @@ description: Keep the translated names of the game configuration in sync with th
 **Navigation:** *System → Captions* — route `/config-captions`
 
 The names of built-in configuration objects, e.g. maps, monsters and character
-classes, can contain translations for several languages. New OpenMU versions can
+classes, can contain translations for several languages. New HNMO versions can
 ship additional languages or corrected translations. This page compares the
 captions of your configuration with these built-in sources and lets you decide
 which differences to apply. No configuration update is required for that.
@@ -21,7 +21,7 @@ The page guides you through two steps:
 2. Afterwards it lists the differences, which you can review and apply. If there
    are no differences, it shows *All available localizations are in place*.
 
-When an update of OpenMU adds sources for captions which weren't linked before
+When an update of HNMO adds sources for captions which weren't linked before
 (e.g. the item names), the page shows *Link new built-in captions* with the
 number of these captions by type, so they can be linked as well. See
 [Link built-in captions](#link-built-in-captions).
@@ -45,7 +45,7 @@ the server process to take effect.
 
 ## Link built-in captions
 
-To know where a caption comes from, OpenMU stores a source reference with it
+To know where a caption comes from, HNMO stores a source reference with it
 (for example `MapNames/Lorencia`). Configurations which were created with an
 older version don't have these references yet, so they don't show any changes.
 
@@ -57,7 +57,7 @@ the available differences. *Link captions again* (at the bottom of the page) lin
 captions which aren't linked yet, e.g. after configuration updates added new objects.
 
 When you open the page, it checks in the background if linking would link
-captions which aren't linked yet. That's the case when a newer version of OpenMU
+captions which aren't linked yet. That's the case when a newer version of HNMO
 added sources, e.g. for the item names. Then it shows *Link new built-in captions*
 at the top of the page, so you don't need to remember to link again. The first
 check after a server start takes a while, because it executes the data
@@ -97,7 +97,7 @@ configuration objects or change their gameplay settings.
 
 Chinese warp labels use the same place names as the map resources. Existing
 Season 6 terminology is retained for items and activities. New quest titles and
-technical descriptions are translations of OpenMU's English configuration text,
+technical descriptions are translations of HNMO's English configuration text,
 not claims of verbatim official client wording. The three legacy candy-box
 labels are descriptive translations pending confirmation from a matching Season
 6 client. The Chinese name `次元标识` for `Sign of Dimensions` was confirmed by a

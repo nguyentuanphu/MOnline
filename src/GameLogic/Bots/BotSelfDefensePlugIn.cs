@@ -1,13 +1,13 @@
-// <copyright file="BotSelfDefensePlugIn.cs" company="MUnique">
+// <copyright file="BotSelfDefensePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Offline;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Offline;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Notes when a (human) player attacks a server-side bot, so the bot's combat AI can defend itself.
@@ -16,7 +16,7 @@ using MUnique.OpenMU.PlugIns;
 /// <see cref="CombatHandler"/>, which prioritizes a recent aggressor over its monster targets.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotSelfDefensePlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotSelfDefensePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.BotSelfDefensePlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.BotSelfDefensePlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("7E2B9C41-5A8D-4F36-B190-3D6E84C7F215")]
 public class BotSelfDefensePlugIn : IAttackableGotHitPlugIn
 {

@@ -1,8 +1,8 @@
-// <copyright file="GuildStatistics.cs" company="MUnique">
+// <copyright file="GuildStatistics.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// Statistics about the guilds, e.g. for the dashboard of the admin panel.

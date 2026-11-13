@@ -1,15 +1,15 @@
-﻿// <copyright file="SkinChatCommandPlugIn.cs" company="MUnique">
+﻿// <copyright file="SkinChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.Persistence.BasicModel;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.Persistence.BasicModel;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which handles skin commands.

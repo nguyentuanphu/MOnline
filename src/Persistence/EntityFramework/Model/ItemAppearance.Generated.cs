@@ -1,4 +1,4 @@
-// <copyright file="ItemAppearance.Generated.cs" company="MUnique">
+// <copyright file="ItemAppearance.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.ItemAppearance"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.ItemAppearance"/>.
 /// </summary>
 [Table(nameof(ItemAppearance), Schema = SchemaNames.AccountData)]
-internal partial class ItemAppearance : MUnique.OpenMU.DataModel.Entities.ItemAppearance, IIdentifiable
+internal partial class ItemAppearance : HNMO.DataModel.Entities.ItemAppearance, IIdentifiable
 {
     /// <inheritdoc />
     public ItemAppearance()
@@ -50,7 +50,7 @@ internal partial class ItemAppearance : MUnique.OpenMU.DataModel.Entities.ItemAp
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Items.ItemDefinition Definition
+    public override HNMO.DataModel.Configuration.Items.ItemDefinition Definition
     {
         get => base.Definition;set
         {
@@ -80,6 +80,6 @@ internal partial class ItemAppearance : MUnique.OpenMU.DataModel.Entities.ItemAp
 
     protected void InitJoinCollections()
     {
-        this.VisibleOptions = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.ItemOptionType, ItemAppearanceItemOptionType>(this.JoinedVisibleOptions, joinEntity => joinEntity.ItemOptionType, entity => new ItemAppearanceItemOptionType { ItemAppearance = this, ItemAppearanceId = this.Id, ItemOptionType = (ItemOptionType)entity, ItemOptionTypeId = ((ItemOptionType)entity).Id});
+        this.VisibleOptions = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.Items.ItemOptionType, ItemAppearanceItemOptionType>(this.JoinedVisibleOptions, joinEntity => joinEntity.ItemOptionType, entity => new ItemAppearanceItemOptionType { ItemAppearance = this, ItemAppearanceId = this.Id, ItemOptionType = (ItemOptionType)entity, ItemOptionTypeId = ((ItemOptionType)entity).Id});
     }
 }

@@ -1,15 +1,15 @@
-// <copyright file="ShopPriceChatCommandPlugIn.cs" company="MUnique">
+// <copyright file="ShopPriceChatCommandPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.ChatCommands;
+namespace HNMO.GameLogic.PlugIns.ChatCommands;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.PlayerActions.PlayerStore;
-using MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
-using MUnique.OpenMU.GameLogic.PlugIns.ChatCommands.Arguments;
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.PlayerActions.PlayerStore;
+using HNMO.GameLogic.PlayerShopCurrencies;
+using HNMO.GameLogic.PlugIns.ChatCommands.Arguments;
+using HNMO.GameLogic.Views.PlayerShop;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A chat command plugin which sets the prices of the items in the own player store, in any of the enabled

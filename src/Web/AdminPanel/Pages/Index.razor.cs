@@ -1,18 +1,18 @@
-// <copyright file="Index.razor.cs" company="MUnique">
+// <copyright file="Index.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.ComponentModel;
 using System.Globalization;
 using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.AdminPanel.Properties;
 
 /// <summary>
 /// The start page of the admin panel, which shows a dashboard with statistics about the server.

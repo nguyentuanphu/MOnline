@@ -1,4 +1,4 @@
-// <copyright file="CastleSiegeZoneDefinition.Generated.cs" company="MUnique">
+// <copyright file="CastleSiegeZoneDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="CastleSiegeZoneDefinition"/>.
 /// </summary>
-public partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition, IIdentifiable, IConvertibleTo<CastleSiegeZoneDefinition>
+public partial class CastleSiegeZoneDefinition : HNMO.DataModel.Configuration.CastleSiegeZoneDefinition, IIdentifiable, IConvertibleTo<CastleSiegeZoneDefinition>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Config
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.CastleSiegeZoneDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new CastleSiegeZoneDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class CastleSiegeZoneDefinition : MUnique.OpenMU.DataModel.Config
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.CastleSiegeZoneDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.CastleSiegeZoneDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

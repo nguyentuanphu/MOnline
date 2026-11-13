@@ -1,13 +1,13 @@
-﻿// <copyright file="GroupPacketHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="GroupPacketHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Reflection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.PlugIns;
 
 /// <summary>
 /// An abstract base class for a packet handler which has sub-packet handlers, implemented as

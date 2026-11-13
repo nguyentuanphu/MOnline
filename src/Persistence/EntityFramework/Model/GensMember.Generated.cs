@@ -1,4 +1,4 @@
-// <copyright file="GensMember.Generated.cs" company="MUnique">
+// <copyright file="GensMember.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.GensMember"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.GensMember"/>.
 /// </summary>
 [Table(nameof(GensMember), Schema = SchemaNames.AccountData)]
-internal partial class GensMember : MUnique.OpenMU.DataModel.Entities.GensMember, IIdentifiable
+internal partial class GensMember : HNMO.DataModel.Entities.GensMember, IIdentifiable
 {
     
     

@@ -1,14 +1,14 @@
-﻿// <copyright file="CacheAwareRepositoryProvider.cs" company="MUnique">
+﻿// <copyright file="CacheAwareRepositoryProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.EntityFramework.Json;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence.EntityFramework.Json;
 
 /// <summary>
 /// This provider holds two other repository providers:

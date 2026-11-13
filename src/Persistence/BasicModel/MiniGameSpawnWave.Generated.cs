@@ -1,4 +1,4 @@
-// <copyright file="MiniGameSpawnWave.Generated.cs" company="MUnique">
+// <copyright file="MiniGameSpawnWave.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="MiniGameSpawnWave"/>.
 /// </summary>
-public partial class MiniGameSpawnWave : MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave, IIdentifiable, IConvertibleTo<MiniGameSpawnWave>
+public partial class MiniGameSpawnWave : HNMO.DataModel.Configuration.MiniGameSpawnWave, IIdentifiable, IConvertibleTo<MiniGameSpawnWave>
 {
     
     /// <summary>
@@ -26,7 +26,7 @@ public partial class MiniGameSpawnWave : MUnique.OpenMU.DataModel.Configuration.
     public Guid Id { get; set; }
     
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.MiniGameSpawnWave Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new MiniGameSpawnWave();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -34,7 +34,7 @@ public partial class MiniGameSpawnWave : MUnique.OpenMU.DataModel.Configuration.
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.MiniGameSpawnWave other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.MiniGameSpawnWave other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

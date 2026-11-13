@@ -1,18 +1,18 @@
-﻿// <copyright file="MiniGameContext.cs" company="MUnique">
+﻿// <copyright file="MiniGameContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames;
+namespace HNMO.GameLogic.MiniGames;
 
 using System.Collections.Concurrent;
 using System.Diagnostics;
 using System.Threading;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.PlayerActions.MiniGames;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The context of a mini game.

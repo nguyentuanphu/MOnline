@@ -1,14 +1,14 @@
-@using MUnique.OpenMU.GameServer.Host.Layout
+@using HNMO.GameServer.Host.Layout
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenMU Map</title>
+  <title>HNMO Map</title>
   <base href="/" />
   <ResourcePreloader />
-    <link href="@Assets["MUnique.OpenMU.GameServer.Host.styles.css"]" rel="stylesheet" />
+    <link href="@Assets["HNMO.GameServer.Host.styles.css"]" rel="stylesheet" />
     @foreach (var stylesheetSrc in Web.Map.Exports.Stylesheets)
   {
     <link href="@Assets[stylesheetSrc]" rel="stylesheet" />

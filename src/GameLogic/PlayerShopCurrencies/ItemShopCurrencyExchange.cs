@@ -1,11 +1,11 @@
-// <copyright file="ItemShopCurrencyExchange.cs" company="MUnique">
+// <copyright file="ItemShopCurrencyExchange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Pays prices in items, e.g. jewels, by moving them from the inventory of the buyer to the one of the seller.

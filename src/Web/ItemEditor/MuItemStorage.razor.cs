@@ -1,8 +1,8 @@
-﻿// <copyright file="MuItemStorage.razor.cs" company="MUnique">
+﻿// <copyright file="MuItemStorage.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.ItemEditor;
+namespace HNMO.Web.ItemEditor;
 
 using Microsoft.AspNetCore.Components;
 

@@ -1,14 +1,14 @@
-﻿// <copyright file="ImperialGuardianGroupHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="ImperialGuardianGroupHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.MiniGames;
+namespace HNMO.GameServer.MessageHandler.MiniGames;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameServer.Properties;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameServer.Properties;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for the packets of the imperial guardian event (0xF7), which are forwarded to the sub handlers.

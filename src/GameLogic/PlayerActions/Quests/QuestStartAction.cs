@@ -1,11 +1,11 @@
-﻿// <copyright file="QuestStartAction.cs" company="MUnique">
+﻿// <copyright file="QuestStartAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Quests;
+namespace HNMO.GameLogic.PlayerActions.Quests;
 
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.GameLogic.Views.Quest;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.GameLogic.Views.Quest;
 
 /// <summary>
 /// A player action which implements the starting of a quest.

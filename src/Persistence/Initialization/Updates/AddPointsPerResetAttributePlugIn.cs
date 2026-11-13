@@ -1,22 +1,22 @@
-﻿// <copyright file="AddPointsPerResetAttributePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddPointsPerResetAttributePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.AttributeSystem;
 
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds the <see cref="Stats.PointsPerReset"/>.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddPointsPerResetAttributePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddPointsPerResetAttributePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddPointsPerResetAttributePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddPointsPerResetAttributePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("6011A1B8-7FA5-48EB-935D-EEAF83017799")]
 public class AddPointsPerResetAttributePlugIn : UpdatePlugInBase
 {

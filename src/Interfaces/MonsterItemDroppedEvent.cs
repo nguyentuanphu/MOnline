@@ -1,8 +1,8 @@
-﻿// <copyright file="MonsterItemDroppedEvent.cs" company="MUnique">
+﻿// <copyright file="MonsterItemDroppedEvent.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Interfaces;
+namespace HNMO.Interfaces;
 
 /// <summary>
 /// A killed monster dropped a notable item, e.g. an excellent or ancient item.

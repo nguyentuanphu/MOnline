@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegeNpcState.cs" company="MUnique">
+// <copyright file="CastleSiegeNpcState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// Persistent state of a single castle siege NPC between siege cycles.
@@ -20,7 +20,7 @@ public class CastleSiegeNpcState
     public short MonsterNumber { get; set; }
 
     /// <summary>
-    /// Gets or sets the instance identifier matching <see cref="MUnique.OpenMU.DataModel.Configuration.CastleSiegeNpcDefinition.InstanceId"/>.
+    /// Gets or sets the instance identifier matching <see cref="HNMO.DataModel.Configuration.CastleSiegeNpcDefinition.InstanceId"/>.
     /// </summary>
     public byte InstanceId { get; set; }
 

@@ -1,10 +1,10 @@
-﻿// <copyright file="DuelConfiguration.cs" company="MUnique">
+﻿// <copyright file="DuelConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Configuration for the duel feature.
@@ -47,6 +47,6 @@ public partial class DuelConfiguration
     /// <inheritdoc />
     public override string ToString()
     {
-        return string.Format(MUnique.OpenMU.DataModel.Properties.Resources.DuelConfigSummary, this.DuelAreas.Count, this.Exit);
+        return string.Format(HNMO.DataModel.Properties.Resources.DuelConfigSummary, this.DuelAreas.Count, this.Exit);
     }
 }

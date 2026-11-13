@@ -1,13 +1,13 @@
-// <copyright file="SpeedHackViolationRecorder.cs" company="MUnique">
+// <copyright file="SpeedHackViolationRecorder.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Records speed hack warnings and applies the configured sanction.

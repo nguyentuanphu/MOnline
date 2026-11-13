@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordIntegration.cs" company="MUnique">
+﻿// <copyright file="DiscordIntegration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.ComponentModel;
 using System.Net;
@@ -16,10 +16,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Discord.Properties;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The Discord integration of the server, as it's configured in the <see cref="DiscordSettings.SectionName"/> section

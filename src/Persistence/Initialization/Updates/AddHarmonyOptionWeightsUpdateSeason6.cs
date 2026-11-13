@@ -1,22 +1,22 @@
-﻿// <copyright file="AddHarmonyOptionWeightsUpdateSeason6.cs" company="MUnique">
+﻿// <copyright file="AddHarmonyOptionWeightsUpdateSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Items;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Items;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update adds Jewel of Harmony option weights used for option assignment, fixes some options, and fixes item restore mix.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddHarmonyOptionWeightsUpdateSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddHarmonyOptionWeightsUpdateSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddHarmonyOptionWeightsUpdateSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddHarmonyOptionWeightsUpdateSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("E94DE59E-5B3A-4498-A4AF-E7F4F173B754")]
 public class AddHarmonyOptionWeightsUpdateSeason6 : UpdatePlugInBase
 {

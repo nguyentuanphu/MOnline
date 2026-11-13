@@ -53,7 +53,7 @@ file. The page shows the path of the file it edits, and offers two tabs:
 
 | Tab | Effect |
 |---|---|
-| **Log Levels** | The default minimum level, and a table of levels per source. A source is the name of a logger — usually the full name of a class, like `MUnique.OpenMU.ConnectServer.ClientListener` — or a namespace like `MUnique.OpenMU.GameLogic`, which covers all loggers in it. The most specific source wins. |
+| **Log Levels** | The default minimum level, and a table of levels per source. A source is the name of a logger — usually the full name of a class, like `HNMO.ConnectServer.ClientListener` — or a namespace like `HNMO.GameLogic`, which covers all loggers in it. The most specific source wins. |
 | **Advanced (JSON)** | The whole `Serilog` section of the file, for everything the table doesn't cover, like sinks, output templates or filters. Invalid JSON is rejected. |
 
 ![Log levels of the logging configuration](/img/admin-panel/logging-configuration-levels.png)
@@ -118,10 +118,10 @@ Like the admin panel itself, Grafana is reachable without a login until the
 ## What to include in a bug report
 
 If you report a problem in
-[an issue](https://github.com/MUnique/OpenMU/issues) or on
-[Discord](https://discord.gg/2u5Agkd), the useful parts are:
+[an issue](https://github.com/nguyentuanphu/HNMO/issues) or on
+the project's issue tracker, the useful parts are:
 
-* the OpenMU version or docker image tag, and the deployment you use,
+* the HNMO version or docker image tag, and the deployment you use,
 * the game version the database was initialized with,
 * the log around the time of the problem — download the file rather than
   copying a screenshot of it,

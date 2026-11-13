@@ -1,11 +1,11 @@
-﻿// <copyright file="ServerInfoController.cs" company="MUnique">
+﻿// <copyright file="ServerInfoController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using Microsoft.AspNetCore.Mvc;
-using ConnectServer = MUnique.OpenMU.ConnectServer.ConnectServer;
+using ConnectServer = HNMO.ConnectServer.ConnectServer;
 
 /// <summary>
 /// API Controller which provides information about the connection and game servers.

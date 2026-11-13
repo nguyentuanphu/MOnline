@@ -1,12 +1,12 @@
-﻿// <copyright file="BuyNpcItemAction.cs" company="MUnique">
+﻿// <copyright file="BuyNpcItemAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.CastleSiege;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
+using HNMO.GameLogic.CastleSiege;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views.Inventory;
 
 /// <summary>
 /// Action to buy items from a Monster merchant.

@@ -1,21 +1,21 @@
-﻿// <copyright file="GameConfigurationHelper.cs" company="MUnique">
+﻿// <copyright file="GameConfigurationHelper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel;
+namespace HNMO.DataModel;
 
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.ItemCrafting;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Configuration.Quests;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.ItemCrafting;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Configuration.Quests;
+using HNMO.DataModel.Entities;
+using HNMO.PlugIns;
 using Nito.Disposables.Internals;
 
 /// <summary>

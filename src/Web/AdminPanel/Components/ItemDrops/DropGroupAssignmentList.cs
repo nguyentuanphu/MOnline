@@ -1,11 +1,11 @@
-// <copyright file="DropGroupAssignmentList.cs" company="MUnique">
+// <copyright file="DropGroupAssignmentList.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.ItemDrops;
+namespace HNMO.Web.AdminPanel.Components.ItemDrops;
 
 using System.Collections;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// A list of owners (e.g. maps or monsters) to which a <see cref="DropItemGroup"/> is assigned.

@@ -1,20 +1,20 @@
-﻿// <copyright file="FixMaxManaAndAbilityJewelryOptionsUpdateSeason6.cs" company="MUnique">
+﻿// <copyright file="FixMaxManaAndAbilityJewelryOptionsUpdateSeason6.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update fixes the calculation for max mana/AG % increase provided by Ring of Magic/Pendant of Ability options.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixMaxManaAndAbilityJewelryOptionsUpdateSeason6_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.FixMaxManaAndAbilityJewelryOptionsUpdateSeason6_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixMaxManaAndAbilityJewelryOptionsUpdateSeason6_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.FixMaxManaAndAbilityJewelryOptionsUpdateSeason6_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("EAC7C809-D4B8-443F-BE52-E56560003483")]
 public class FixMaxManaAndAbilityJewelryOptionsUpdateSeason6 : UpdatePlugInBase
 {

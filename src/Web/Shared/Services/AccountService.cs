@@ -1,20 +1,20 @@
-// <copyright file="AccountService.cs" company="MUnique">
+// <copyright file="AccountService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Operations;
-using MUnique.OpenMU.Web.Shared.Components;
-using MUnique.OpenMU.Web.Shared.Components.Form.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Properties;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Operations;
+using HNMO.Web.Shared.Components;
+using HNMO.Web.Shared.Components.Form.Modal;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Properties;
 
 /// <summary>
 /// Service for <see cref="Account"/>s.
@@ -118,7 +118,7 @@ public class AccountService : IDataService<Account>, ISupportDataChangedNotifica
             DisableBackgroundCancel = true,
         };
 
-        var modal = this._modalService.Show<ModalCreateNew<AccountCreationParameters>>(string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.CreateType, MUnique.OpenMU.DataModel.ModelResourceProvider.GetTypeCaption<Account>()), parameters, options);
+        var modal = this._modalService.Show<ModalCreateNew<AccountCreationParameters>>(string.Format(HNMO.Web.Shared.Properties.Resources.CreateType, HNMO.DataModel.ModelResourceProvider.GetTypeCaption<Account>()), parameters, options);
         var result = await modal.Result.ConfigureAwait(false);
         if (!result.Cancelled)
         {

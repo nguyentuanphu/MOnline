@@ -1,12 +1,12 @@
-// <copyright file="InMemoryBackupService.cs" company="MUnique">
+// <copyright file="InMemoryBackupService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.InMemory;
+namespace HNMO.Persistence.InMemory;
 
 using System.IO;
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// An implementation of <see cref="IBackupService"/> for the in-memory persistence layer.

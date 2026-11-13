@@ -1,4 +1,4 @@
-// <copyright file="ConstValueAttribute.Generated.cs" company="MUnique">
+// <copyright file="ConstValueAttribute.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,18 +10,18 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="ConstValueAttribute"/>.
 /// </summary>
-public partial class ConstValueAttribute : MUnique.OpenMU.AttributeSystem.ConstValueAttribute, IIdentifiable, IConvertibleTo<ConstValueAttribute>
+public partial class ConstValueAttribute : HNMO.AttributeSystem.ConstValueAttribute, IIdentifiable, IConvertibleTo<ConstValueAttribute>
 {
     
     /// <inheritdoc />
-    public ConstValueAttribute(System.Single value, MUnique.OpenMU.AttributeSystem.AttributeDefinition definition, MUnique.OpenMU.AttributeSystem.AggregateType aggregateType)
+    public ConstValueAttribute(System.Single value, HNMO.AttributeSystem.AttributeDefinition definition, HNMO.AttributeSystem.AggregateType aggregateType)
         : base(value, definition, aggregateType)
     {
     }
@@ -43,7 +43,7 @@ public partial class ConstValueAttribute : MUnique.OpenMU.AttributeSystem.ConstV
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition Definition
+    public override HNMO.AttributeSystem.AttributeDefinition Definition
     {
         get => base.Definition;
         protected set => base.Definition = value;

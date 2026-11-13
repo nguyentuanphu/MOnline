@@ -1,8 +1,8 @@
-﻿// <copyright file="InputShortBase.cs" company="MUnique">
+﻿// <copyright file="InputShortBase.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.Form;
+namespace HNMO.Web.Shared.Components.Form;
 
 using System.Globalization;
 using Microsoft.AspNetCore.Components;
@@ -19,7 +19,7 @@ public abstract class InputShortBase<TShort> : InputBase<TShort>
     /// Gets or sets the error message used when displaying an a parsing error.
     /// </summary>
     [Parameter]
-    public string ParsingErrorMessage { get; set; } = string.Format(MUnique.OpenMU.Web.Shared.Properties.Resources.NumberRangeError, "{0}", short.MinValue, short.MaxValue);
+    public string ParsingErrorMessage { get; set; } = string.Format(HNMO.Web.Shared.Properties.Resources.NumberRangeError, "{0}", short.MinValue, short.MaxValue);
 
     /// <inheritdoc />
     protected override void BuildRenderTree(RenderTreeBuilder builder)

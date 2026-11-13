@@ -1,14 +1,14 @@
-﻿// <copyright file="ConnectServerHostedServiceWrapper.cs" company="MUnique">
+﻿// <copyright file="ConnectServerHostedServiceWrapper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Threading;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.Dapr.Common;
-using ConnectServer = MUnique.OpenMU.ConnectServer.ConnectServer;
+using HNMO.Dapr.Common;
+using ConnectServer = HNMO.ConnectServer.ConnectServer;
 
 /// <summary>
 /// A wrapper which takes the <see cref="ConnectServerCollection"/> and wraps it as <see cref="IHostedLifecycleService"/>,

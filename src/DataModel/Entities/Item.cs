@@ -1,14 +1,14 @@
-﻿// <copyright file="Item.cs" company="MUnique">
+﻿// <copyright file="Item.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 using System.Globalization;
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Properties;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Properties;
 
 /// <summary>
 /// The item.

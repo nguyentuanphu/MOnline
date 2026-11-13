@@ -1,15 +1,15 @@
-﻿// <copyright file="NormalPathsSerializer.cs" company="MUnique">
+﻿// <copyright file="NormalPathsSerializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Pathfinding.PreCalculation;
+namespace HNMO.Pathfinding.PreCalculation;
 
 using System.IO;
 
 /// <summary>
 /// Serializes the path infos into the normal format. Every point uses exactly 2 bytes.
 /// </summary>
-/// <seealso cref="OpenMU.Pathfinding.PreCalculation.IPathsSerializer" />
+/// <seealso cref="HNMO.Pathfinding.PreCalculation.IPathsSerializer" />
 internal class NormalPathsSerializer : IPathsSerializer
 {
     /// <inheritdoc/>

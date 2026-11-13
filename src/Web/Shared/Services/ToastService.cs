@@ -1,14 +1,14 @@
-// <copyright file="ToastService.cs" company="MUnique">
+// <copyright file="ToastService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Components.Toast;
 
 /// <summary>
 /// Default implementation of <see cref="IToastService"/>.

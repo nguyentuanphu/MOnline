@@ -1,20 +1,20 @@
-﻿// <copyright file="Program.cs" company="MUnique">
+﻿// <copyright file="Program.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 using Microsoft.Extensions.DependencyInjection;
-using MUnique.OpenMU.CentralServer.Host;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Dapr.Common.HealthChecks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.FriendServer;
-using MUnique.OpenMU.GuildServer;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Telemetry;
-using ChatServer = MUnique.OpenMU.ChatServer.ChatServer;
-using FriendServer = MUnique.OpenMU.FriendServer.FriendServer;
-using GuildServer = MUnique.OpenMU.GuildServer.GuildServer;
+using HNMO.CentralServer.Host;
+using HNMO.Dapr.Common;
+using HNMO.Dapr.Common.HealthChecks;
+using HNMO.DataModel.Configuration;
+using HNMO.FriendServer;
+using HNMO.GuildServer;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
+using HNMO.Telemetry;
+using ChatServer = HNMO.ChatServer.ChatServer;
+using FriendServer = HNMO.FriendServer.FriendServer;
+using GuildServer = HNMO.GuildServer.GuildServer;
 
 // The central server hosts the login, guild, friend, chat and connect servers of the distributed deployment.
 // They all exist just once per deployment and keep their state in memory, so they wouldn't scale

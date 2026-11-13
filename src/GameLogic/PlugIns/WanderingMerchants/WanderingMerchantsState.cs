@@ -1,10 +1,10 @@
-﻿// <copyright file="WanderingMerchantsState.cs" company="MUnique">
+﻿// <copyright file="WanderingMerchantsState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.WanderingMerchants;
+namespace HNMO.GameLogic.PlugIns.WanderingMerchants;
 
-using MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+using HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// Keeps track of the state of the wandering merchants of a game server.

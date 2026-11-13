@@ -1,10 +1,10 @@
-// <copyright file="GensPlayerExtensions.cs" company="MUnique">
+// <copyright file="GensPlayerExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Gens;
+namespace HNMO.GameLogic.Gens;
 
-using MUnique.OpenMU.GameLogic.Views.Gens;
+using HNMO.GameLogic.Views.Gens;
 
 /// <summary>
 /// Extensions for the gens of a <see cref="Player"/>.

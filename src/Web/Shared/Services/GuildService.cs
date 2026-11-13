@@ -1,16 +1,16 @@
-// <copyright file="GuildService.cs" company="MUnique">
+// <copyright file="GuildService.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Components;
-using MUnique.OpenMU.Web.Shared.Models;
+using HNMO.DataModel.Entities;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Components;
+using HNMO.Web.Shared.Models;
 
-using GuildPositionComparer = MUnique.OpenMU.Interfaces.GuildPositionComparer;
+using GuildPositionComparer = HNMO.Interfaces.GuildPositionComparer;
 
 /// <summary>
 /// Service for guild information in the admin panel.

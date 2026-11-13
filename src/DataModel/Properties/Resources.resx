@@ -119,10 +119,10 @@ or behind a firewall) and you want to use it within your computer or private net
 		<value>Auto Start</value>
 	</data>
 	<data name="SystemConfiguration_AutoStart_Description" xml:space="preserve">
-		<value>Defines, if the (sub-)servers should be automatically started then when server process starts. This setting applies only to the all-in-one server (MUnique.OpenMU.Startup).</value>
+		<value>Defines, if the (sub-)servers should be automatically started then when server process starts. This setting applies only to the all-in-one server (HNMO.Startup).</value>
 	</data>
 	<data name="SystemConfiguration_ReadConsoleInput_Description" xml:space="preserve">
-		<value>Defines, if the user can enter commands in the console of the server process. This setting applies only to the all-in-one server (MUnique.OpenMU.Startup). It replaces the '-deamon' start parameter.</value>
+		<value>Defines, if the user can enter commands in the console of the server process. This setting applies only to the all-in-one server (HNMO.Startup). It replaces the '-deamon' start parameter.</value>
 	</data>
 	<data name="SystemConfiguration_ReadConsoleInput_Name" xml:space="preserve">
 		<value>Read console input</value>
@@ -143,7 +143,7 @@ or behind a firewall) and you want to use it within your computer or private net
 		<value>Auto Update Database Schema</value>
 	</data>
 	<data name="SystemConfiguration_AutoUpdateSchema_Description" xml:space="preserve">
-		<value>Defines, if the all-in-one server (MUnique.OpenMU.Startup) automatically updates the database schema and applies the mandatory configuration updates when the server process starts. In a distributed deployment, the user must start the updates manually over the admin panel.</value>
+		<value>Defines, if the all-in-one server (HNMO.Startup) automatically updates the database schema and applies the mandatory configuration updates when the server process starts. In a distributed deployment, the user must start the updates manually over the admin panel.</value>
 	</data>
     <data name="Slot" xml:space="preserve">
       <value>Slot</value>

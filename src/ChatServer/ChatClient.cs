@@ -1,15 +1,15 @@
-﻿// <copyright file="ChatClient.cs" company="MUnique">
+﻿// <copyright file="ChatClient.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ChatServer;
+namespace HNMO.ChatServer;
 
 using System.Buffers;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.Packets.ChatServer;
-using MUnique.OpenMU.Network.Xor;
+using HNMO.Network;
+using HNMO.Network.Packets;
+using HNMO.Network.Packets.ChatServer;
+using HNMO.Network.Xor;
 
 /// <summary>
 /// ChatClient implementation, uses socket connections.

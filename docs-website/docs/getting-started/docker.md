@@ -1,12 +1,12 @@
 ---
 title: Run with Docker
 sidebar_position: 2
-description: Start an OpenMU server on your machine with docker compose.
+description: Start an HNMO server on your machine with docker compose.
 ---
 
 # Run with Docker
 
-This is the fastest way to get a running server. All OpenMU subsystems
+This is the fastest way to get a running server. All HNMO subsystems
 (connect server, game servers, chat server, login server, admin panel) run in one
 container, next to a PostgreSQL container and an nginx container.
 
@@ -18,8 +18,8 @@ container, next to a PostgreSQL container and an nginx container.
 ## Clone the repository
 
 ```bash
-git clone https://github.com/MUnique/OpenMU.git
-cd OpenMU/deploy/all-in-one
+git clone https://github.com/nguyentuanphu/HNMO.git
+cd HNMO/deploy/all-in-one
 ```
 
 ## Start it

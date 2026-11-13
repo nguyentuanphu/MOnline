@@ -1,14 +1,14 @@
-// <copyright file="CastleSiegeJoinSidePlugIn.cs" company="MUnique">
+// <copyright file="CastleSiegeJoinSidePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.CastleSiege;
+namespace HNMO.GameServer.RemoteView.CastleSiege;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.CastleSiege;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.PlugIns;
-using JoinSide = MUnique.OpenMU.DataModel.Configuration.CastleSiegeJoinSide;
+using HNMO.GameLogic.Views.CastleSiege;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.PlugIns;
+using JoinSide = HNMO.DataModel.Configuration.CastleSiegeJoinSide;
 
 /// <summary>
 /// The default implementation of the <see cref="ICastleSiegeJoinSidePlugIn"/>

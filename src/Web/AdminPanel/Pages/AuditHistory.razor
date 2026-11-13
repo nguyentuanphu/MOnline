@@ -2,9 +2,9 @@
 @using System.Text.Json.Nodes
 @using Microsoft.AspNetCore.Authorization
 @using Microsoft.Extensions.Localization
-@using MUnique.OpenMU.Web.AdminPanel.Auth
-@using MUnique.OpenMU.Web.AdminPanel.Operations
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Web.AdminPanel.Auth
+@using HNMO.Web.AdminPanel.Operations
+@using HNMO.Web.AdminPanel.Properties
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
 @inject AuditReadOperations Audit
 @inject IStringLocalizer<Resources> Text

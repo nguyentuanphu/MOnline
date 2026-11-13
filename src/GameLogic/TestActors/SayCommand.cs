@@ -1,8 +1,8 @@
-// <copyright file="SayCommand.cs" company="MUnique">
+// <copyright file="SayCommand.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
 /// <summary>
 /// Says something, including the chat commands a client can send (e.g. <c>/ver</c>).

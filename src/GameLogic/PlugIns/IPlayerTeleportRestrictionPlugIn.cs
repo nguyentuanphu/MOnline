@@ -1,13 +1,13 @@
-// <copyright file="IPlayerTeleportRestrictionPlugIn.cs" company="MUnique">
+// <copyright file="IPlayerTeleportRestrictionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns;
+namespace HNMO.GameLogic.PlugIns;
 
 using System.ComponentModel;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Plugins which can prevent a player from being teleported by a skill to a target on the same map,

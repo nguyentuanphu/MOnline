@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     /// <inheritdoc />
     public partial class AddAttributeRequirementMinimumItemLevel : Migration

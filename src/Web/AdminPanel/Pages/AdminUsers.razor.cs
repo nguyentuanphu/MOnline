@@ -1,12 +1,12 @@
-// <copyright file="AdminUsers.razor.cs" company="MUnique">
+// <copyright file="AdminUsers.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>
 /// The page which manages the users of the admin panel.

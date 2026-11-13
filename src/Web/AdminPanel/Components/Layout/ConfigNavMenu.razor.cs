@@ -1,12 +1,12 @@
-﻿// <copyright file="ConfigNavMenu.razor.cs" company="MUnique">
+﻿// <copyright file="ConfigNavMenu.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.Layout;
+namespace HNMO.Web.AdminPanel.Components.Layout;
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Navigation menu of the admin panel.

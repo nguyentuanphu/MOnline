@@ -1,13 +1,13 @@
-﻿// <copyright file="AddCrywolfEventUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="AddCrywolfEventUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Adds the data of the crywolf event: the monsters of the army of Balgass and their spawns on the crywolf map.
@@ -15,7 +15,7 @@ using MUnique.OpenMU.PlugIns;
 /// the fortress can be warped to, and the map has the terrains of the occupation states.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCrywolfEventUpdatePlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddCrywolfEventUpdatePlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCrywolfEventUpdatePlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddCrywolfEventUpdatePlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("9C4E1A73-2F58-4B6D-8E09-5A3D7C1F2B84")]
 public class AddCrywolfEventUpdatePlugIn : UpdatePlugInBase
 {

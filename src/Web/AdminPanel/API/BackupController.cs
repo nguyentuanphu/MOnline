@@ -1,15 +1,15 @@
-﻿// <copyright file="BackupController.cs" company="MUnique">
+﻿// <copyright file="BackupController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.IO;
 using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
 
 /// <summary>
 /// API controller to download a backup archive or a database snapshot.

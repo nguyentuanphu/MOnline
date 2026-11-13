@@ -1,10 +1,10 @@
-﻿// <copyright file="MiniGameTerrainChange.cs" company="MUnique">
+﻿// <copyright file="MiniGameTerrainChange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines a terrain change of the mini game map.
@@ -51,13 +51,13 @@ public partial class MiniGameTerrainChange
     public override string ToString()
     {
         return string.Format(
-            MUnique.OpenMU.DataModel.Properties.Resources.TerrainChangeSummary,
-            this.SetTerrainAttribute ? MUnique.OpenMU.DataModel.Properties.Resources.TerrainSet : MUnique.OpenMU.DataModel.Properties.Resources.TerrainRemove,
+            HNMO.DataModel.Properties.Resources.TerrainChangeSummary,
+            this.SetTerrainAttribute ? HNMO.DataModel.Properties.Resources.TerrainSet : HNMO.DataModel.Properties.Resources.TerrainRemove,
             ModelResourceProvider.GetEnumCaption(this.TerrainAttribute.GetType(), this.TerrainAttribute),
             this.StartX,
             this.StartY,
             this.EndX,
             this.EndY,
-            this.IsClientUpdateRequired ? MUnique.OpenMU.DataModel.Properties.Resources.TerrainWithClientUpdate : MUnique.OpenMU.DataModel.Properties.Resources.TerrainWithoutClientUpdate);
+            this.IsClientUpdateRequired ? HNMO.DataModel.Properties.Resources.TerrainWithClientUpdate : HNMO.DataModel.Properties.Resources.TerrainWithoutClientUpdate);
     }
 }

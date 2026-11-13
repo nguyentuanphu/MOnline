@@ -1,12 +1,12 @@
-﻿// <copyright file="ItemRepairAction.cs" company="MUnique">
+﻿// <copyright file="ItemRepairAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.GameLogic.Views.Inventory;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Views;
+using HNMO.GameLogic.Views.Inventory;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to repair an item from the inventory.

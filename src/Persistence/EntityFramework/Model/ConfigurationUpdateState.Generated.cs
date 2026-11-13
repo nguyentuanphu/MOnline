@@ -1,4 +1,4 @@
-// <copyright file="ConfigurationUpdateState.Generated.cs" company="MUnique">
+// <copyright file="ConfigurationUpdateState.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.ConfigurationUpdateState"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.ConfigurationUpdateState"/>.
 /// </summary>
 [Table(nameof(ConfigurationUpdateState), Schema = SchemaNames.Configuration)]
-internal partial class ConfigurationUpdateState : MUnique.OpenMU.DataModel.Configuration.ConfigurationUpdateState, IIdentifiable
+internal partial class ConfigurationUpdateState : HNMO.DataModel.Configuration.ConfigurationUpdateState, IIdentifiable
 {
     
     

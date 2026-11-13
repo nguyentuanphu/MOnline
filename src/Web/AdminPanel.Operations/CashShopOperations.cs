@@ -1,14 +1,14 @@
-// <copyright file="CashShopOperations.cs" company="MUnique">
+// <copyright file="CashShopOperations.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>Reads balances and issues idempotent grants through the existing cash shop service.</summary>
 /// <param name="coins">The shared coin service.</param>

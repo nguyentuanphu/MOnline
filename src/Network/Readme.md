@@ -1,11 +1,11 @@
 ﻿# Network
 
-MUnique.OpenMU.Network contains all what's required to connect from and to a
-MU Online game, connect or chat server, using the MU Online network protocol.
+HNMO.Network contains all what's required to connect from and to a
+HNMO game, connect or chat server, using the game network protocol.
 
 ## Packet structure
 
-As you might know, every MU Online data packet has the following structure:
+As you might know, every game data packet has the following structure:
 
 * The first byte contains the type of the packet
 
@@ -34,7 +34,7 @@ As you might know, every MU Online data packet has the following structure:
   difficult. However, this counter is not included in the packet given to the
   PacketReceived-EventHandler.
 
-There are two 'flavours' of packet structs in the ```MUnique.OpenMU.Network.Packets```
+There are two 'flavours' of packet structs in the ```HNMO.Network.Packets```
 project:
   * ref-structs with names ending with 'Ref', which wrap ```Span<byte>```. They
     are more of a help when sending packets. The benefit is, that they never
@@ -80,7 +80,7 @@ the next packet, is activated.
 ## Sending data
 
 There are extension methods for all known and "simple" network packets
-in the ```MUnique.OpenMU.Network.Packets``` project and their sub-namespaces 
+in the ```HNMO.Network.Packets``` project and their sub-namespaces 
 (e.g. ClientToServer) to make it as easy as possible to send data thread-safe.
 
 A simple example of the usage:
@@ -144,7 +144,7 @@ public async ValueTask HandlePacketAsync(Player player, Memory<byte> packet)
 
 This project contains the encryption algorithms and client and server keys
 which were used from 0.75 until Season 6 Episode 3.
-Please note, that these are not up-to-date and are known to the MU Online
+Please note, that these are not up-to-date and are known to the HNMO
 server (and cheater) community since over 10 years, so they're not secure at
 all. The keys can be calculated based on known packet content or bruteforced in
 a fraction of a second.

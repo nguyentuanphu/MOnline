@@ -1,17 +1,17 @@
-﻿// <copyright file="DiscordIntegrationAction.cs" company="MUnique">
+﻿// <copyright file="DiscordIntegrationAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Discord;
+namespace HNMO.GameLogic.PlayerActions.Discord;
 
 using System.Runtime.CompilerServices;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.GameLogic.Discord;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.PlugIns.GameEvents;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.GameLogic.Discord;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.PlugIns.GameEvents;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// The actions of the Discord integration of the game client: the integration info, and linking and unlinking

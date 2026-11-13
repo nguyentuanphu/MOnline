@@ -1,14 +1,14 @@
-﻿// <copyright file="PacketAnalyzer.cs" company="MUnique">
+﻿// <copyright file="PacketAnalyzer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Network.Analyzer;
+namespace HNMO.Network.Analyzer;
 
 using System.Globalization;
 using System.IO;
 using System.Text.RegularExpressions;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.Network.PlugIns;
+using HNMO.Network.Packets;
+using HNMO.Network.PlugIns;
 using static System.Buffers.Binary.BinaryPrimitives;
 
 /// <summary>

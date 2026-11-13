@@ -1,8 +1,8 @@
-﻿// <copyright file="DoppelgangerMonsterScaling.cs" company="MUnique">
+﻿// <copyright file="DoppelgangerMonsterScaling.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.MiniGames.Doppelganger;
+namespace HNMO.GameLogic.MiniGames.Doppelganger;
 
 /// <summary>
 /// The multipliers for the monsters of the doppelganger event, which apply up to a player level.

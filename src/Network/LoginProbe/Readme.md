@@ -15,7 +15,7 @@ change.
 ## Usage
 
 ```text
-MUnique.OpenMU.Network.LoginProbe --account <name> [--host 127.0.0.1]
+HNMO.Network.LoginProbe --account <name> [--host 127.0.0.1]
                                  [--connect-port 44406] [--server 0]
                                  [--hold <seconds>]
 ```

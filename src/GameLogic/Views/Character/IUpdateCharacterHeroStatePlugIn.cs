@@ -1,10 +1,10 @@
-﻿// <copyright file="IUpdateCharacterHeroStatePlugIn.cs" company="MUnique">
+﻿// <copyright file="IUpdateCharacterHeroStatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Views.Character;
+namespace HNMO.GameLogic.Views.Character;
 
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Interface of a view whose implementation informs about a change in the <see cref="Character.State"/>.

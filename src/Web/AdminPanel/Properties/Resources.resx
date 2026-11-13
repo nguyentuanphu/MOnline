@@ -259,10 +259,10 @@
     <value>Game Server</value>
   </data>
   <data name="WelcomeMessage" xml:space="preserve">
-    <value>Welcome to the admin panel of OpenMU.</value>
+    <value>Welcome to the admin panel of HNMO.</value>
   </data>
-  <data name="OpenMUAdminPanel" xml:space="preserve">
-    <value>OpenMU AdminPanel</value>
+  <data name="HNMOAdminPanel" xml:space="preserve">
+    <value>HNMO AdminPanel</value>
   </data>
   <data name="About" xml:space="preserve">
     <value>About</value>
@@ -1823,7 +1823,7 @@
     <value>Link the built-in captions</value>
   </data>
   <data name="CaptionsNotLinkedDescription" xml:space="preserve">
-    <value>The captions of this configuration don't know their sources yet. That's the case for configurations which were created with an older version of OpenMU. Linking is required once; afterwards this page shows which translations can be added or updated.</value>
+    <value>The captions of this configuration don't know their sources yet. That's the case for configurations which were created with an older version of HNMO. Linking is required once; afterwards this page shows which translations can be added or updated.</value>
   </data>
   <data name="CaptionsLinkedCount" xml:space="preserve">
     <value>{0} captions are linked to their sources.</value>
@@ -1877,7 +1877,7 @@
     <value>Link new built-in captions</value>
   </data>
   <data name="CaptionsLinkableDescription" xml:space="preserve">
-    <value>{0} built-in captions are not linked to their sources yet, so their translations can't be reviewed here: {1}. That's usually the case after an update of OpenMU added translations, e.g. for item names. Linking doesn't change any texts.</value>
+    <value>{0} built-in captions are not linked to their sources yet, so their translations can't be reviewed here: {1}. That's usually the case after an update of HNMO added translations, e.g. for item names. Linking doesn't change any texts.</value>
   </data>
   <data name="CaptionsCheckingLinkable" xml:space="preserve">
     <value>Checking for built-in captions which are not linked yet ...</value>
@@ -2351,7 +2351,7 @@
     <value>Create channels and roles</value>
   </data>
   <data name="DiscordSetUpServerText" xml:space="preserve">
-    <value>Creates the roles, categories and channels which the bot uses, like /openmu setup in Discord. What already exists is kept, so you can do it again at any time. The bot needs the permissions Manage Channels and Manage Roles for it.</value>
+    <value>Creates the roles, categories and channels which the bot uses, like /hnmo setup in Discord. What already exists is kept, so you can do it again at any time. The bot needs the permissions Manage Channels and Manage Roles for it.</value>
   </data>
   <data name="DiscordSetUpServerNeedsBot" xml:space="preserve">
     <value>The bot has to be connected and in the Discord server.</value>

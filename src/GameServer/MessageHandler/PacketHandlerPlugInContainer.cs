@@ -1,18 +1,18 @@
-﻿// <copyright file="PacketHandlerPlugInContainer.cs" company="MUnique">
+﻿// <copyright file="PacketHandlerPlugInContainer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler;
+namespace HNMO.GameServer.MessageHandler;
 
 using System.Collections.Concurrent;
 using System.ComponentModel.Design;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameServer.RemoteView;
-using MUnique.OpenMU.Network.Packets;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameServer.RemoteView;
+using HNMO.Network.Packets;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A plugin container which provides the effective packet handler plugins for the specified version.

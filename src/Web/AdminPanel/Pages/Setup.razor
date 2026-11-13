@@ -1,9 +1,9 @@
 ﻿@page "/setup"
 @attribute [Authorize(Policy = AdminPolicies.Administrator)]
-@using MUnique.OpenMU.Persistence
-@using MUnique.OpenMU.Web.AdminPanel.Properties
+@using HNMO.Persistence
+@using HNMO.Web.AdminPanel.Properties
 
-<PageTitle>OpenMU: @Resources.Setup</PageTitle>
+<PageTitle>HNMO: @Resources.Setup</PageTitle>
 <Breadcrumb IsFirstFromRoot="true" Caption="@Resources.Setup"/>
 
 @if (this._updateErrorMessage is { } updateErrorMessage)

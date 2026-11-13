@@ -1,19 +1,19 @@
-﻿// <copyright file="MapInitializer.cs" company="MUnique">
+﻿// <copyright file="MapInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
 using System.Collections.Concurrent;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.Pathfinding;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.NPC;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.Pathfinding;
+using HNMO.PlugIns;
 
 /// <summary>
 /// A basic map initializer.
 /// </summary>
-/// <seealso cref="MUnique.OpenMU.GameLogic.IMapInitializer" />
+/// <seealso cref="HNMO.GameLogic.IMapInitializer" />
 public class MapInitializer : IMapInitializer
 {
     private readonly IDropGenerator _dropGenerator;

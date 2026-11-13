@@ -1,4 +1,4 @@
-// <copyright file="QuestReward.Generated.cs" company="MUnique">
+// <copyright file="QuestReward.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="QuestReward"/>.
 /// </summary>
-public partial class QuestReward : MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward, IIdentifiable, IConvertibleTo<QuestReward>
+public partial class QuestReward : HNMO.DataModel.Configuration.Quests.QuestReward, IIdentifiable, IConvertibleTo<QuestReward>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class QuestReward : MUnique.OpenMU.DataModel.Configuration.Quests
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Entities.Item ItemReward
+    public override HNMO.DataModel.Entities.Item ItemReward
     {
         get => base.ItemReward;
         set => base.ItemReward = value;
@@ -55,7 +55,7 @@ public partial class QuestReward : MUnique.OpenMU.DataModel.Configuration.Quests
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.AttributeSystem.AttributeDefinition AttributeReward
+    public override HNMO.AttributeSystem.AttributeDefinition AttributeReward
     {
         get => base.AttributeReward;
         set => base.AttributeReward = value;
@@ -73,14 +73,14 @@ public partial class QuestReward : MUnique.OpenMU.DataModel.Configuration.Quests
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill SkillReward
+    public override HNMO.DataModel.Configuration.Skill SkillReward
     {
         get => base.SkillReward;
         set => base.SkillReward = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.Quests.QuestReward Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new QuestReward();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -88,7 +88,7 @@ public partial class QuestReward : MUnique.OpenMU.DataModel.Configuration.Quests
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.Quests.QuestReward other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.Quests.QuestReward other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

@@ -1,8 +1,8 @@
-﻿// <copyright file="MetricsRegistry.cs" company="MUnique">
+﻿// <copyright file="MetricsRegistry.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Telemetry;
+namespace HNMO.Telemetry;
 
 /// <summary>
 /// Registry for metrics which should be exposed by the application.
@@ -42,6 +42,6 @@ public class MetricsRegistry
     /// </summary>
     public void AddNetworkMeters()
     {
-        this.AddMeters(MUnique.OpenMU.Network.Metrics.Meters);
+        this.AddMeters(HNMO.Network.Metrics.Meters);
     }
 }

@@ -1,10 +1,10 @@
-﻿// <copyright file="MasterSkillExtensions.cs" company="MUnique">
+﻿// <copyright file="MasterSkillExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// Extension methods regarding master skills.
@@ -363,7 +363,7 @@ public static class MasterSkillExtensions
     /// by an index. Each root has 36 slots (4 * 9), and roots are indexed one after another,
     /// that means left root starts at index 1, middle root at 37, right root at 73.
     /// As this display can differ between character classes, we have to pass it in here.
-    /// To me, it's a mystery why Webzen can't work with the skill number alone and determine
+    /// To me, it's a mystery why the original developers can't work with the skill number alone and determine
     /// this index on client side.
     /// I decided to put this indexes into code since it would pollute the data model too much.
     /// </remarks>

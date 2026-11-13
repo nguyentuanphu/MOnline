@@ -1,8 +1,8 @@
-// <copyright file="AdminActor.cs" company="MUnique">
+// <copyright file="AdminActor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Identifies a caller independently of a UI framework.</summary>
 /// <param name="Id">The stable user or API key identifier.</param>

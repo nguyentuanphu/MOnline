@@ -1,4 +1,4 @@
-// <copyright file="SkillEntry.Generated.cs" company="MUnique">
+// <copyright file="SkillEntry.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.SkillEntry"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.SkillEntry"/>.
 /// </summary>
 [Table(nameof(SkillEntry), Schema = SchemaNames.AccountData)]
-internal partial class SkillEntry : MUnique.OpenMU.DataModel.Entities.SkillEntry, IIdentifiable
+internal partial class SkillEntry : HNMO.DataModel.Entities.SkillEntry, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class SkillEntry : MUnique.OpenMU.DataModel.Entities.SkillEntry
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Skill
+    public override HNMO.DataModel.Configuration.Skill Skill
     {
         get => base.Skill;set
         {

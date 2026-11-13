@@ -1,12 +1,12 @@
-// <copyright file="ShopPrices.cs" company="MUnique">
+// <copyright file="ShopPrices.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Views.PlayerShop;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Views.PlayerShop;
 
 /// <summary>
 /// Functions about the prices of items in player shops: which prices are allowed, how they're paid, shown and

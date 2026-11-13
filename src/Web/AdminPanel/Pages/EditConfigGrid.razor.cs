@@ -1,8 +1,8 @@
-// <copyright file="EditConfigGrid.razor.cs" company="MUnique">
+// <copyright file="EditConfigGrid.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Collections;
 using System.ComponentModel;
@@ -11,15 +11,15 @@ using System.Threading;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.QuickGrid;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.AdminPanel.Auth;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
-using MUnique.OpenMU.Web.Shared.Components.Toast;
-using MUnique.OpenMU.Web.Shared.Services;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence;
+using HNMO.Web.AdminPanel.Auth;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
+using HNMO.Web.Shared.Components.Toast;
+using HNMO.Web.Shared.Services;
 
 /// <summary>
 /// Razor page which shows objects of the specified type in a grid.
@@ -167,7 +167,7 @@ public partial class EditConfigGrid : ComponentBase, IAsyncDisposable
         cancellationToken.ThrowIfCancellationRequested();
         if (this.Type is null)
         {
-            throw new InvalidOperationException($"Only types of namespace {nameof(MUnique)} can be edited on this page.");
+            throw new InvalidOperationException($"Only types of namespace {nameof(HNMO)} can be edited on this page.");
         }
 
         IEnumerable data;
@@ -201,7 +201,7 @@ public partial class EditConfigGrid : ComponentBase, IAsyncDisposable
 
     private Type? DetermineTypeByTypeString()
     {
-        return AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.FullName?.StartsWith(nameof(MUnique)) ?? false)
+        return AppDomain.CurrentDomain.GetAssemblies().Where(assembly => assembly.FullName?.StartsWith(nameof(HNMO)) ?? false)
             .Select(assembly => assembly.GetType(this.TypeString)).FirstOrDefault(t => t != null);
     }
 

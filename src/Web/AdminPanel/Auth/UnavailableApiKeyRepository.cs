@@ -1,11 +1,11 @@
-// <copyright file="UnavailableApiKeyRepository.cs" company="MUnique">
+// <copyright file="UnavailableApiKeyRepository.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Auth;
+namespace HNMO.Web.AdminPanel.Auth;
 
 using System.Threading;
-using MUnique.OpenMU.Persistence.AdminAuth;
+using HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// A fallback <see cref="IApiKeyRepository"/> which is used when the hosting application didn't

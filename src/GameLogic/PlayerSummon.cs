@@ -1,12 +1,12 @@
-// <copyright file="PlayerSummon.cs" company="MUnique">
+// <copyright file="PlayerSummon.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.NPC;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The summoned monster of a <see cref="Player"/>, which fights for it until it dies.

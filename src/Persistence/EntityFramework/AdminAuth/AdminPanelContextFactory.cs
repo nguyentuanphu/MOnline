@@ -1,8 +1,8 @@
-// <copyright file="AdminPanelContextFactory.cs" company="MUnique">
+// <copyright file="AdminPanelContextFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.AdminAuth;
+namespace HNMO.Persistence.EntityFramework.AdminAuth;
 
 using Microsoft.EntityFrameworkCore.Design;
 

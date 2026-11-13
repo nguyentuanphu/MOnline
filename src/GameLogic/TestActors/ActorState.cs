@@ -1,10 +1,10 @@
-// <copyright file="ActorState.cs" company="MUnique">
+// <copyright file="ActorState.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Turns an actor and its surroundings into the flat dictionaries the control endpoint answers with.

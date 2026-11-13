@@ -1,18 +1,18 @@
-﻿// <copyright file="ServerController.cs" company="MUnique">
+﻿// <copyright file="ServerController.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API
+namespace HNMO.Web.AdminPanel.API
 {
     using System.Text.Json;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using MUnique.OpenMU.GameLogic;
-    using MUnique.OpenMU.GameServer;
-    using MUnique.OpenMU.Interfaces;
-    using MUnique.OpenMU.Persistence;
-    using MUnique.OpenMU.Web.AdminPanel.Auth;
-    using MUnique.OpenMU.Web.AdminPanel.Operations;
+    using HNMO.GameLogic;
+    using HNMO.GameServer;
+    using HNMO.Interfaces;
+    using HNMO.Persistence;
+    using HNMO.Web.AdminPanel.Auth;
+    using HNMO.Web.AdminPanel.Operations;
 
     /// <summary>
     /// Server API controller.

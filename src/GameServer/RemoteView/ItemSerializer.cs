@@ -1,18 +1,18 @@
-﻿// <copyright file="ItemSerializer.cs" company="MUnique">
+﻿// <copyright file="ItemSerializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView;
+namespace HNMO.GameServer.RemoteView;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence;
+using HNMO.PlugIns;
 
 using static ItemSerializerHelper;
 
@@ -58,7 +58,7 @@ public class ItemSerializer : IItemSerializer
             // Fixed options (e.g. of the dinorant) are coded as bits in the item option level.
             var optionLevel = itemOption?.Level ?? fixedOptionBits;
 
-            // The item option level is splitted into 2 parts. Webzen... :-/
+            // The item option level is splitted into 2 parts. the original developers... :-/
             target[1] += (byte)(optionLevel & 3); // setting the first 2 bits
             target[3] = (byte)((optionLevel & 4) << 4); // The highest bit is placed into the 2nd bit of the exc byte (0x40).
 

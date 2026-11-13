@@ -1,8 +1,8 @@
-﻿// <copyright file="DevilSquareStartConfiguration.cs" company="MUnique">
+﻿// <copyright file="DevilSquareStartConfiguration.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlugIns.PeriodicTasks;
+namespace HNMO.GameLogic.PlugIns.PeriodicTasks;
 
 /// <summary>
 /// The devil square start configuration.

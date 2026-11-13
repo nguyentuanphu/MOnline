@@ -1,8 +1,8 @@
-﻿// <copyright file="IDiscordServer.cs" company="MUnique">
+﻿// <copyright file="IDiscordServer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.Provisioning;
+namespace HNMO.Discord.Provisioning;
 
 /// <summary>
 /// A Discord server (guild), as far as the <see cref="DiscordServerProvisioner"/> needs it.

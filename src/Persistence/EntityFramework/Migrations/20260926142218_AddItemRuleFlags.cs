@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Migrations
+namespace HNMO.Persistence.EntityFramework.Migrations
 {
     /// <summary>
     /// Adds the item rule flags. Existing items allow everything; the

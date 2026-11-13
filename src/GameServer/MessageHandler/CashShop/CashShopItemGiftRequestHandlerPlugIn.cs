@@ -1,14 +1,14 @@
-// <copyright file="CashShopItemGiftRequestHandlerPlugIn.cs" company="MUnique">
+// <copyright file="CashShopItemGiftRequestHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.CashShop;
+namespace HNMO.GameServer.MessageHandler.CashShop;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.CashShop;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.CashShop;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Packet handler for cash shop gift requests (0xD2, 0x04 identifier).

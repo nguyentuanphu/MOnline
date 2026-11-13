@@ -1,8 +1,8 @@
-// <copyright file="ReferenceResolvingConverterGenerator.cs" company="MUnique">
+// <copyright file="ReferenceResolvingConverterGenerator.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Generators;
+namespace HNMO.Persistence.Generators;
 
 using System.Collections.Immutable;
 using Microsoft.CodeAnalysis;
@@ -26,13 +26,13 @@ using Microsoft.CodeAnalysis.Text;
 [Generator]
 public class ReferenceResolvingConverterGenerator : IIncrementalGenerator
 {
-    private const string IdentifiableFullName = "MUnique.OpenMU.Persistence.IIdentifiable";
+    private const string IdentifiableFullName = "HNMO.Persistence.IIdentifiable";
 
     private const string JsonIgnoreAttributeFullName = "System.Text.Json.Serialization.JsonIgnoreAttribute";
 
     private const string JsonPropertyNameAttributeFullName = "System.Text.Json.Serialization.JsonPropertyNameAttribute";
 
-    private const string ConverterBaseName = "global::MUnique.OpenMU.Persistence.Json.ReferenceResolvingConverterBase";
+    private const string ConverterBaseName = "global::HNMO.Persistence.Json.ReferenceResolvingConverterBase";
 
     private const string RawPrefix = "Raw";
 
@@ -294,7 +294,7 @@ public class ReferenceResolvingConverterGenerator : IIncrementalGenerator
     {
         return type is { TypeKind: TypeKind.Class, IsAbstract: false, IsStatic: false, IsGenericType: false }
                && GetContainingTypes(type).All(t => !t.IsGenericType)
-               && type.ContainingNamespace.ToDisplayString().StartsWith("MUnique.OpenMU.", StringComparison.Ordinal)
+               && type.ContainingNamespace.ToDisplayString().StartsWith("HNMO.", StringComparison.Ordinal)
                && type.AllInterfaces.Contains(identifiable, SymbolEqualityComparer.Default)
                && type.InstanceConstructors.Any(c => c.Parameters.IsEmpty && c.DeclaredAccessibility == Accessibility.Public)
                && compilation.IsSymbolAccessibleWithin(type, compilation.Assembly);
@@ -470,10 +470,10 @@ public class ReferenceResolvingConverterGenerator : IIncrementalGenerator
         }
 
         builder.Append("/// <summary>Reads and resolves the references of <see cref=\"").Append(model.TypeName).AppendLine("\"/>.</summary>");
-        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"MUnique.OpenMU.Persistence.Generators\", \"1.0\")]");
+        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"HNMO.Persistence.Generators\", \"1.0\")]");
         builder.Append("internal sealed class ").Append(model.ConverterName).Append(" : ").Append(ConverterBaseName).Append('<').Append(model.TypeName).AppendLine(">");
         builder.AppendLine("{");
-        builder.AppendLine("    private static readonly global::MUnique.OpenMU.Persistence.Json.ReferenceResolvingProperty[] PropertyDescriptions =");
+        builder.AppendLine("    private static readonly global::HNMO.Persistence.Json.ReferenceResolvingProperty[] PropertyDescriptions =");
         builder.AppendLine("    [");
         foreach (var property in properties)
         {
@@ -608,7 +608,7 @@ public class ReferenceResolvingConverterGenerator : IIncrementalGenerator
         }
 
         builder.AppendLine("/// <summary>Registers the generated reference resolving json converters of this assembly.</summary>");
-        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"MUnique.OpenMU.Persistence.Generators\", \"1.0\")]");
+        builder.AppendLine("[global::System.CodeDom.Compiler.GeneratedCode(\"HNMO.Persistence.Generators\", \"1.0\")]");
         builder.AppendLine("internal static class GeneratedReferenceResolvingConverters");
         builder.AppendLine("{");
         builder.AppendLine("    /// <summary>Registers the converters.</summary>");
@@ -617,14 +617,14 @@ public class ReferenceResolvingConverterGenerator : IIncrementalGenerator
         builder.AppendLine("    {");
         foreach (var valueType in models.SelectMany(m => m.ValueTypes).GroupBy(t => t.TypeName).Select(g => g.First()).OrderBy(t => t.TypeName, StringComparer.Ordinal))
         {
-            builder.Append("        global::MUnique.OpenMU.Persistence.Json.ReferenceResolvingTypeInfoResolver.Register<").Append(valueType.TypeName).Append(">(")
+            builder.Append("        global::HNMO.Persistence.Json.ReferenceResolvingTypeInfoResolver.Register<").Append(valueType.TypeName).Append(">(")
                 .Append(valueType.BuiltInConverter is null ? "null" : "static options => " + valueType.BuiltInConverter).AppendLine(");");
         }
 
         foreach (var model in models)
         {
             var converterName = model.Namespace is null ? "global::" + model.ConverterName : "global::" + model.Namespace + "." + model.ConverterName;
-            builder.Append("        global::MUnique.OpenMU.Persistence.Json.ReferenceResolvingConverterRegistry.Register<").Append(model.TypeName)
+            builder.Append("        global::HNMO.Persistence.Json.ReferenceResolvingConverterRegistry.Register<").Append(model.TypeName)
                 .Append(">(static ignoredTypes => new ").Append(converterName).AppendLine("(ignoredTypes));");
         }
 

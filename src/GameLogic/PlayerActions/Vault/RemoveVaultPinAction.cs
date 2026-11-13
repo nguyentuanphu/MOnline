@@ -1,10 +1,10 @@
-﻿// <copyright file="RemoveVaultPinAction.cs" company="MUnique">
+﻿// <copyright file="RemoveVaultPinAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Vault;
+namespace HNMO.GameLogic.PlayerActions.Vault;
 
-using MUnique.OpenMU.GameLogic.Views.Vault;
+using HNMO.GameLogic.Views.Vault;
 
 /// <summary>
 /// Action which removes the pin for the vault of a player, if the correct account password is provided.

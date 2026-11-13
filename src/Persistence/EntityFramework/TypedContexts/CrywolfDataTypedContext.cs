@@ -1,11 +1,11 @@
-// <copyright file="CrywolfDataTypedContext.cs" company="MUnique">
+// <copyright file="CrywolfDataTypedContext.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.TypedContexts;
+namespace HNMO.Persistence.EntityFramework.TypedContexts;
 
 /// <summary>
-/// The <see cref="TypedContext"/> for <see cref="MUnique.OpenMU.DataModel.Entities.CrywolfData"/>, which uses a compiled model.
+/// The <see cref="TypedContext"/> for <see cref="HNMO.DataModel.Entities.CrywolfData"/>, which uses a compiled model.
 /// </summary>
 internal sealed class CrywolfDataTypedContext : TypedContext
 {
@@ -13,7 +13,7 @@ internal sealed class CrywolfDataTypedContext : TypedContext
     /// Initializes a new instance of the <see cref="CrywolfDataTypedContext"/> class.
     /// </summary>
     public CrywolfDataTypedContext()
-        : base(typeof(MUnique.OpenMU.DataModel.Entities.CrywolfData))
+        : base(typeof(HNMO.DataModel.Entities.CrywolfData))
     {
     }
 }

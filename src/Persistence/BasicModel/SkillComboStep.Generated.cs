@@ -1,4 +1,4 @@
-// <copyright file="SkillComboStep.Generated.cs" company="MUnique">
+// <copyright file="SkillComboStep.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="SkillComboStep"/>.
 /// </summary>
-public partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.SkillComboStep, IIdentifiable, IConvertibleTo<SkillComboStep>
+public partial class SkillComboStep : HNMO.DataModel.Configuration.SkillComboStep, IIdentifiable, IConvertibleTo<SkillComboStep>
 {
     
     /// <summary>
@@ -37,14 +37,14 @@ public partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.Ski
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Skill
+    public override HNMO.DataModel.Configuration.Skill Skill
     {
         get => base.Skill;
         set => base.Skill = value;
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.SkillComboStep Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.SkillComboStep Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new SkillComboStep();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -52,7 +52,7 @@ public partial class SkillComboStep : MUnique.OpenMU.DataModel.Configuration.Ski
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.SkillComboStep other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.SkillComboStep other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

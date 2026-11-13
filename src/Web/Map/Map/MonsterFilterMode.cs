@@ -1,8 +1,8 @@
-﻿// <copyright file="MonsterFilterMode.cs" company="MUnique">
+﻿// <copyright file="MonsterFilterMode.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Map.Map;
+namespace HNMO.Web.Map.Map;
 
 /// <summary>
 /// Defines how the monster filter of the live map compares the name of a monster with its text.

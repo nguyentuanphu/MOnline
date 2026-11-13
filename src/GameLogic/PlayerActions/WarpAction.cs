@@ -1,15 +1,15 @@
-﻿// <copyright file="WarpAction.cs" company="MUnique">
+﻿// <copyright file="WarpAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions;
+namespace HNMO.GameLogic.PlayerActions;
 
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.GameLogic.Views;
-using MUnique.OpenMU.Interfaces;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlugIns;
+using HNMO.GameLogic.Views;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Action to warp to another place.

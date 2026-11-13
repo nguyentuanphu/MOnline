@@ -1,12 +1,12 @@
-﻿// <copyright file="CheckMaximumConnectionsPlugin.cs" company="MUnique">
+﻿// <copyright file="CheckMaximumConnectionsPlugin.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.ConnectServer;
+namespace HNMO.ConnectServer;
 
 using System.Net.Sockets;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// Plugin which checks if the maximum number of connections got exceeded. Refuses the connection to new clients, if that happens.

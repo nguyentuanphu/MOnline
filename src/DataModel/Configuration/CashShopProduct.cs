@@ -1,11 +1,11 @@
-// <copyright file="CashShopProduct.cs" company="MUnique">
+// <copyright file="CashShopProduct.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration;
+namespace HNMO.DataModel.Configuration;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.DataModel.Configuration.Items;
+using HNMO.Annotations;
+using HNMO.DataModel.Configuration.Items;
 
 /// <summary>
 /// A product of a <see cref="CashShopPackage"/>, which is one price option of the

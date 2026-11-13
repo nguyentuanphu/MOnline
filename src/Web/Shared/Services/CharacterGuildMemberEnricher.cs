@@ -1,15 +1,15 @@
-// <copyright file="CharacterGuildMemberEnricher.cs" company="MUnique">
+// <copyright file="CharacterGuildMemberEnricher.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.Web.Shared.Models;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
+using HNMO.GameLogic.Attributes;
+using HNMO.Persistence;
+using HNMO.Web.Shared.Models;
 
 /// <summary>
 /// Enriches guild members with character and account data by resolving them through a player context.

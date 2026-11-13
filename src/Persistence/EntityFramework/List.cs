@@ -1,8 +1,8 @@
-﻿// <copyright file="List.cs" company="MUnique">
+﻿// <copyright file="List.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 /// <summary>
 /// A generic list which implements additional required interfaces for the usage as list and collection in the object model.

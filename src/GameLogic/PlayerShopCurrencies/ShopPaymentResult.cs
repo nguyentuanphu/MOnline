@@ -1,8 +1,8 @@
-// <copyright file="ShopPaymentResult.cs" company="MUnique">
+// <copyright file="ShopPaymentResult.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerShopCurrencies;
+namespace HNMO.GameLogic.PlayerShopCurrencies;
 
 /// <summary>
 /// The result of paying the price of an item of a player shop.

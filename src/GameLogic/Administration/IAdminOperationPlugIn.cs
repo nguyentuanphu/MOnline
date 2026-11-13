@@ -1,14 +1,14 @@
-// <copyright file="IAdminOperationPlugIn.cs" company="MUnique">
+// <copyright file="IAdminOperationPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Administration;
+namespace HNMO.GameLogic.Administration;
 
 using System.Runtime.InteropServices;
 using System.Text.Json.Nodes;
 using System.Threading;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
 
 /// <summary>Contributes one discoverable, validated administration operation from an active plugin.</summary>
 /// <remarks>Implementations validate input against their schema and return only safe scalar projections, never secrets. Preview must have no side effects. Read-only execution must have no side effects. Writes must serialize with their own gameplay state and atomically compare the approved preview before applying in ExecuteAsync.</remarks>

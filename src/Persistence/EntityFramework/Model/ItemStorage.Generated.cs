@@ -1,4 +1,4 @@
-// <copyright file="ItemStorage.Generated.cs" company="MUnique">
+// <copyright file="ItemStorage.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Entities.ItemStorage"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Entities.ItemStorage"/>.
 /// </summary>
 [Table(nameof(ItemStorage), Schema = SchemaNames.AccountData)]
-internal partial class ItemStorage : MUnique.OpenMU.DataModel.Entities.ItemStorage, IIdentifiable
+internal partial class ItemStorage : HNMO.DataModel.Entities.ItemStorage, IIdentifiable
 {
     
     
@@ -35,10 +35,10 @@ internal partial class ItemStorage : MUnique.OpenMU.DataModel.Entities.ItemStora
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Entities.Item> Items => base.Items ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Entities.Item, Item>(this.RawItems);
+    public override ICollection<HNMO.DataModel.Entities.Item> Items => base.Items ??= new CollectionAdapter<HNMO.DataModel.Entities.Item, Item>(this.RawItems);
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Entities.ItemStorage Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Entities.ItemStorage Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new ItemStorage();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -46,7 +46,7 @@ internal partial class ItemStorage : MUnique.OpenMU.DataModel.Entities.ItemStora
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Entities.ItemStorage other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Entities.ItemStorage other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

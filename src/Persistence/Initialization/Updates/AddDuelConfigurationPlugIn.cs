@@ -1,21 +1,21 @@
-﻿// <copyright file="AddDuelConfigurationPlugIn.cs" company="MUnique">
+﻿// <copyright file="AddDuelConfigurationPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Persistence.Initialization.Skills;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Persistence.Initialization.Skills;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This updates adds the data for the duel system.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddDuelConfigurationPlugIn_Name), Description = nameof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources.AddDuelConfigurationPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.Persistence.Initialization.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddDuelConfigurationPlugIn_Name), Description = nameof(HNMO.Persistence.Initialization.Properties.PlugInResources.AddDuelConfigurationPlugIn_Description), ResourceType = typeof(HNMO.Persistence.Initialization.Properties.PlugInResources))]
 [Guid("5DC5638E-581E-4ACC-81E4-D565C625649B")]
 public class AddDuelConfigurationPlugIn : UpdatePlugInBase
 {

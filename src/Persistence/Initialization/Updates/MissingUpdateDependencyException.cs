@@ -1,8 +1,8 @@
-// <copyright file="MissingUpdateDependencyException.cs" company="MUnique">
+// <copyright file="MissingUpdateDependencyException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 /// <summary>
 /// Exception that is thrown when an update depends on other updates which are neither installed nor available.

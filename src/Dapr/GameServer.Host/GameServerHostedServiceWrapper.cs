@@ -1,17 +1,17 @@
-﻿// <copyright file="GameServerHostedServiceWrapper.cs" company="MUnique">
+﻿// <copyright file="GameServerHostedServiceWrapper.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.Host;
+namespace HNMO.GameServer.Host;
 
 using System.Collections.Generic;
 using System.Threading;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MUnique.OpenMU.Dapr.Common;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.PlugIns;
-using MUnique.OpenMU.Web.Map;
+using HNMO.Dapr.Common;
+using HNMO.Interfaces;
+using HNMO.PlugIns;
+using HNMO.Web.Map;
 
 /// <summary>
 /// A wrapper which takes a <see cref="Interfaces.IGameServer"/> and wraps it as <see cref="IHostedLifecycleService"/>,

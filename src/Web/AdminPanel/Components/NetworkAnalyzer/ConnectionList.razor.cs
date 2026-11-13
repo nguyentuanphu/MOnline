@@ -1,12 +1,12 @@
-// <copyright file="ConnectionList.razor.cs" company="MUnique">
+// <copyright file="ConnectionList.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.NetworkAnalyzer;
+namespace HNMO.Web.AdminPanel.Components.NetworkAnalyzer;
 
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network.Analyzer;
+using HNMO.Interfaces;
+using HNMO.Network.Analyzer;
 
 /// <summary>
 /// The list of the connections which can be analyzed, grouped by their server.

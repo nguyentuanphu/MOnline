@@ -1,9 +1,9 @@
-// <copyright file="MainForm.cs" company="MUnique">
+// <copyright file="MainForm.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
 #pragma warning disable CA1416 // This project is compiled for windows
-namespace MUnique.OpenMU.ClientLauncher;
+namespace HNMO.ClientLauncher;
 
 using System.ComponentModel;
 using System.IO;
@@ -45,7 +45,7 @@ public partial class MainForm : Form
     private BindingList<ClientResolution> Resolutions { get; set; } = new(LauncherSettings.DefaultResolutions);
 
     /// <summary>
-    /// Launches the MU Online client (main.exe) to connect to the configured address.
+    /// Launches the game client (main.exe) to connect to the configured address.
     /// </summary>
     /// <param name="sender">The sender.</param>
     /// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>

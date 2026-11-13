@@ -1,14 +1,14 @@
-// <copyright file="ItemStatProfiles.cs" company="MUnique">
+// <copyright file="ItemStatProfiles.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Items;
+namespace HNMO.Persistence.Initialization.Items;
 
 using System.Globalization;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Creates the item stat profiles of a configuration and gives its items their profile.

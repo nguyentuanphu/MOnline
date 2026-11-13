@@ -252,7 +252,7 @@ introduced later, and activate it again when you want to offer it.
 
 Each entry knows in which version of the original game it was introduced, from
 the early version numbers before Season 1 (like 0.34, 0.95k or 0.99G+, as listed
-by the [MU Online history](https://github.com/Khdoop/mu-online-history)) up to
+by the [HNMO history](https://github.com/Khdoop/mu-online-history)) up to
 Season 6 Episode 3. Content of patches without a known version number counts
 as introduced in the next version with a known number.
 Select a version at the top and click **Restrict to game version** to activate
@@ -264,7 +264,7 @@ The page shows how many entries will be activated and deactivated, and changes
 them after you confirm.
 
 :::note[The versions are best effort]
-The versions were compiled from the original patch notes and OpenMU's data of
+The versions were compiled from the original patch notes and HNMO's data of
 the older versions. Some entries, like a few event items, are *Unknown*. You can
 correct the version of an entry with *Introduced In* on its edit page.
 :::

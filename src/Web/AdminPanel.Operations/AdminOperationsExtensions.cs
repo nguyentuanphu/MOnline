@@ -1,15 +1,15 @@
-// <copyright file="AdminOperationsExtensions.cs" company="MUnique">
+// <copyright file="AdminOperationsExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using MUnique.OpenMU.Persistence.AdminAuth;
-using MUnique.OpenMU.Web.AdminPanel.Operations.ItemExchange;
-using MUnique.OpenMU.Web.AdminPanel.Services;
+using HNMO.Persistence.AdminAuth;
+using HNMO.Web.AdminPanel.Operations.ItemExchange;
+using HNMO.Web.AdminPanel.Services;
 
 /// <summary>Registers UI independent admin read operations.</summary>
 public static class AdminOperationsExtensions

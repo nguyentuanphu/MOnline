@@ -1,4 +1,4 @@
-// <copyright file="SkillEntry.Generated.cs" company="MUnique">
+// <copyright file="SkillEntry.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="SkillEntry"/>.
 /// </summary>
-public partial class SkillEntry : MUnique.OpenMU.DataModel.Entities.SkillEntry, IIdentifiable, IConvertibleTo<SkillEntry>
+public partial class SkillEntry : HNMO.DataModel.Entities.SkillEntry, IIdentifiable, IConvertibleTo<SkillEntry>
 {
     
     /// <summary>
@@ -37,7 +37,7 @@ public partial class SkillEntry : MUnique.OpenMU.DataModel.Entities.SkillEntry, 
 
     /// <inheritdoc/>
     [System.Text.Json.Serialization.JsonIgnore]
-    public override MUnique.OpenMU.DataModel.Configuration.Skill Skill
+    public override HNMO.DataModel.Configuration.Skill Skill
     {
         get => base.Skill;
         set => base.Skill = value;

@@ -1,7 +1,7 @@
 ---
 title: Requirements
 sidebar_position: 1
-description: What you need before you start an OpenMU server.
+description: What you need before you start an HNMO server.
 ---
 
 # Requirements
@@ -15,7 +15,7 @@ database and can all be changed later in the [admin panel](../admin-panel/server
 |---|---|
 | 80 | Admin panel |
 | 44405 | Connect server — default connection port for the original client |
-| 44406 | Connect server — port for the [open source client](https://github.com/sven-n/MuMain) |
+| 44406 | Connect server — port for the HNMO desktop client |
 | 45901 – 45906 | Game servers |
 | 45980 | Chat server |
 
@@ -38,13 +38,13 @@ be the case.
 
 ## A game client
 
-OpenMU is a server — it does not ship a game client. Check the FAQs of
-[our Discord](https://discord.gg/2u5Agkd) for where to get a client.
+HNMO is a server — it does not ship a game client. Check the FAQs of
+the project's issue tracker for where to get a client.
 
 You also need a way to start the client so that it connects to your server. Our
 launcher does that for you:
 
-* [MUnique.OpenMU.ClientLauncher v0.9.6.zip](https://github.com/MUnique/OpenMU/releases/download/v0.9.0/MUnique.OpenMU.ClientLauncher_0.9.6.zip)
+* [HNMO.ClientLauncher v0.9.6.zip](https://github.com/nguyentuanphu/HNMO/releases/download/v0.9.0/HNMO.ClientLauncher_0.9.6.zip)
 * It requires the [.NET 10 runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
   or higher.
 
@@ -60,6 +60,6 @@ choice, and it is also what the `loopback` IP resolver reports.
 |---|---|---|
 | Want to play around | ✅ recommended | |
 | Want to host for others | ✅ recommended, see [Deployment](../deployment/overview.md) | |
-| Want to develop or debug OpenMU | | ✅ recommended |
+| Want to develop or debug HNMO | | ✅ recommended |
 | Needs a .NET SDK | no | yes |
 | Needs a PostgreSQL installation | no (container) | yes |

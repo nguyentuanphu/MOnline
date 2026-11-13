@@ -1,14 +1,14 @@
-// <copyright file="NetworkObservationExtensions.cs" company="MUnique">
+// <copyright file="NetworkObservationExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer;
+namespace HNMO.GameServer;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Network.Analyzer.Archive;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Configuration;
+using HNMO.Network.Analyzer.Archive;
+using HNMO.Persistence;
 using Nito.AsyncEx.Synchronous;
 
 /// <summary>

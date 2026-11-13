@@ -1,15 +1,15 @@
-﻿// <copyright file="DiscordDirectMessages.cs" company="MUnique">
+﻿// <copyright file="DiscordDirectMessages.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
-using MUnique.OpenMU.DataModel.Entities;
-using MUnique.OpenMU.Discord.Properties;
-using MUnique.OpenMU.GameLogic.AccountLinking;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
+using HNMO.DataModel.Entities;
+using HNMO.Discord.Properties;
+using HNMO.GameLogic.AccountLinking;
+using HNMO.Interfaces;
+using HNMO.Persistence;
 
 /// <summary>
 /// Determines the direct messages which the bot sends to linked users because of game events, if they turned them on.

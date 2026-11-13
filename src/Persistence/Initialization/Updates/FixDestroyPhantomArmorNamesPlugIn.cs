@@ -1,17 +1,17 @@
-﻿// <copyright file="FixDestroyPhantomArmorNamesPlugIn.cs" company="MUnique">
+﻿// <copyright file="FixDestroyPhantomArmorNamesPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Linq.Expressions;
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.Items;
-using MUnique.OpenMU.Persistence.Initialization.Properties;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.Items;
+using HNMO.Persistence.Initialization.Properties;
+using HNMO.PlugIns;
 
 /// <summary>
 /// This update gives the armor sets 47 and 48 their names: 47 is Phantom and 48 is Destroy.

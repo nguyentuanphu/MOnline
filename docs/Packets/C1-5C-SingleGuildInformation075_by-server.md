@@ -2,7 +2,7 @@
 
 ## Is sent when
 
-After a guild has been created. However, in OpenMU, we just send the GuildInformations075 message, because it works just the same.
+After a guild has been created. However, in HNMO, we just send the GuildInformations075 message, because it works just the same.
 
 ## Causes the following actions on the client side
 

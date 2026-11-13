@@ -1,10 +1,10 @@
-// <copyright file="ActorPathHeuristic.cs" company="MUnique">
+// <copyright file="ActorPathHeuristic.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.TestActors;
+namespace HNMO.GameLogic.TestActors;
 
-using MUnique.OpenMU.Pathfinding;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// The straight-line estimate which steers the actor's path finder towards its target.

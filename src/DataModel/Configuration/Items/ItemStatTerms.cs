@@ -1,11 +1,11 @@
-// <copyright file="ItemStatTerms.cs" company="MUnique">
+// <copyright file="ItemStatTerms.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
-using MUnique.OpenMU.Annotations;
-using MUnique.OpenMU.AttributeSystem;
+using HNMO.Annotations;
+using HNMO.AttributeSystem;
 
 /// <summary>
 /// The terms of one attribute in an <see cref="ItemStatProfile"/>: its level bonus table, and what an excellent and an

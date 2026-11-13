@@ -1,8 +1,8 @@
-// <copyright file="MiniGameRankingSummary.cs" company="MUnique">
+// <copyright file="MiniGameRankingSummary.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence;
+namespace HNMO.Persistence;
 
 /// <summary>
 /// The summarized mini game results of a character, e.g. for the leaderboards of the admin panel.

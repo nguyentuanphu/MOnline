@@ -1,8 +1,8 @@
-﻿// <copyright file="BridgedChatSender.cs" company="MUnique">
+﻿// <copyright file="BridgedChatSender.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Discord;
+namespace HNMO.GameLogic.Discord;
 
 /// <summary>
 /// The sender of a chat message which was written outside of the game, e.g. in Discord, and bridged into it.

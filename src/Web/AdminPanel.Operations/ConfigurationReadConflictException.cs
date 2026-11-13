@@ -1,8 +1,8 @@
-// <copyright file="ConfigurationReadConflictException.cs" company="MUnique">
+// <copyright file="ConfigurationReadConflictException.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Operations;
+namespace HNMO.Web.AdminPanel.Operations;
 
 /// <summary>Signals that a shared configuration collection changed while it was read.</summary>
 /// <param name="innerException">The collection enumeration failure.</param>

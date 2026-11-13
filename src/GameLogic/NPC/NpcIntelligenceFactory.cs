@@ -1,10 +1,10 @@
-// <copyright file="NpcIntelligenceFactory.cs" company="MUnique">
+// <copyright file="NpcIntelligenceFactory.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.NPC;
+namespace HNMO.GameLogic.NPC;
 
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Creates the npc intelligences by their type name, see <see cref="DataModel.Configuration.MonsterDefinition.IntelligenceTypeName"/>.

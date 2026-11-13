@@ -1,10 +1,10 @@
-﻿// <copyright file="IMapInitializer.cs" company="MUnique">
+﻿// <copyright file="IMapInitializer.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic;
+namespace HNMO.GameLogic;
 
-using MUnique.OpenMU.GameLogic.NPC;
+using HNMO.GameLogic.NPC;
 
 /// <summary>
 /// An interface for a map initializer which is responsible to create new instances of <see cref="GameMap"/>s

@@ -114,10 +114,10 @@
 		<value>自动启动</value>
 	</data>
 	<data name="SystemConfiguration_AutoStart_Description" xml:space="preserve">
-		<value>服务器进程启动时自动启动各子服务。此设置仅适用于一体化服务器（MUnique.OpenMU.Startup）。</value>
+		<value>服务器进程启动时自动启动各子服务。此设置仅适用于一体化服务器（HNMO.Startup）。</value>
 	</data>
 	<data name="SystemConfiguration_ReadConsoleInput_Description" xml:space="preserve">
-		<value>允许在服务器控制台中输入命令。此设置仅适用于一体化服务器（MUnique.OpenMU.Startup），用于替代“-deamon”启动参数。</value>
+		<value>允许在服务器控制台中输入命令。此设置仅适用于一体化服务器（HNMO.Startup），用于替代“-deamon”启动参数。</value>
 	</data>
 	<data name="SystemConfiguration_ReadConsoleInput_Name" xml:space="preserve">
 		<value>读取控制台输入</value>
@@ -138,7 +138,7 @@
 		<value>自动更新数据库结构</value>
 	</data>
 	<data name="SystemConfiguration_AutoUpdateSchema_Description" xml:space="preserve">
-		<value>一体化服务器（MUnique.OpenMU.Startup）启动时自动更新数据库结构，并应用必需的配置更新。分布式部署需要通过管理后台手动执行更新。</value>
+		<value>一体化服务器（HNMO.Startup）启动时自动更新数据库结构，并应用必需的配置更新。分布式部署需要通过管理后台手动执行更新。</value>
 	</data>
     <data name="Slot" xml:space="preserve">
       <value>栏位</value>

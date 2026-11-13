@@ -1,10 +1,10 @@
-﻿// <copyright file="MiniGameDefinitionExtensions.cs" company="MUnique">
+﻿// <copyright file="MiniGameDefinitionExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.MiniGames;
+namespace HNMO.GameLogic.PlayerActions.MiniGames;
 
-using MUnique.OpenMU.GameLogic.Attributes;
+using HNMO.GameLogic.Attributes;
 
 /// <summary>
 /// Extensions regarding the <see cref="MiniGameDefinition"/>s.

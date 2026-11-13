@@ -1,12 +1,12 @@
-// <copyright file="CashShopCoinGrantRequest.cs" company="MUnique">
+// <copyright file="CashShopCoinGrantRequest.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.DataModel.Configuration;
+using HNMO.DataModel.Configuration;
 
 /// <summary>
 /// A request to grant cash shop coins to an account through the public API.

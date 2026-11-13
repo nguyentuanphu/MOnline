@@ -1,12 +1,12 @@
 ---
 title: Run from source
 sidebar_position: 3
-description: Build, run and debug OpenMU from the source code.
+description: Build, run and debug HNMO from the source code.
 ---
 
 # Run from source
 
-Use this way if you want to develop or debug OpenMU. It works on Windows,
+Use this way if you want to develop or debug HNMO. It works on Windows,
 Linux and macOS. Where the steps differ per operating system, both variants
 are shown.
 
@@ -36,7 +36,7 @@ are shown.
 
 ## Steps
 
-1. Open the OpenMU solution in your IDE.
+1. Open the HNMO solution in your IDE.
 2. Restore the NuGet packages: Visual Studio offers *Restore NuGet Packages* on
    right click of the solution, or run this from the repository root:
 
@@ -74,11 +74,11 @@ are shown.
 
    Whichever option you picked, if you run postgres in Docker instead of
    installing it, start it with a matching user, password and database
-   name (`openmu`):
+   name (`hnmo`):
 
     ```bash
-    docker run -d --name openmu-db \
-      -e POSTGRES_USER=postgres -e POSTGRES_DB=openmu \
+    docker run -d --name hnmo-db \
+      -e POSTGRES_USER=postgres -e POSTGRES_DB=hnmo \
       -e POSTGRES_PASSWORD='s3cret' \
       -p 5432:5432 postgres
     ```
@@ -86,15 +86,15 @@ are shown.
 4. Build the solution, in your IDE or from the repository root with:
 
    ```bash
-   dotnet build src/MUnique.OpenMU.sln
+   dotnet build src/HNMO.sln
    ```
 
-5. Start `MUnique.OpenMU.Startup`. The environment variables from step 3 must
+5. Start `HNMO.Startup`. The environment variables from step 3 must
    be set wherever you start it (same terminal, or your Debug launch profile).
    From a terminal:
 
    ```bash
-   dotnet run --project src/Startup/MUnique.OpenMU.Startup.csproj -- -autostart
+   dotnet run --project src/Startup/HNMO.Startup.csproj -- -autostart
    ```
 
    (The `--` passes `-autostart` to the server instead of to `dotnet`.)
@@ -149,11 +149,11 @@ quick test, but player progress is **not saved**.
 ## Building from the command line
 
 ```bash
-dotnet publish src/Startup/MUnique.OpenMU.Startup.csproj --configuration Release
+dotnet publish src/Startup/HNMO.Startup.csproj --configuration Release
 ```
 
 The tests are run with `dotnet test`. This builds before testing, so if you run
 them several times without changing code, build once with
-`dotnet build src/MUnique.OpenMU.sln` and add `--no-build` to the later runs,
+`dotnet build src/HNMO.sln` and add `--no-build` to the later runs,
 keeping the same `-c` configuration. Build again after any code change; see
-[Building and running tests](https://github.com/MUnique/OpenMU/blob/master/AGENTS.md#building-and-running-tests).
+[Building and running tests](https://github.com/nguyentuanphu/HNMO/blob/master/AGENTS.md#building-and-running-tests).

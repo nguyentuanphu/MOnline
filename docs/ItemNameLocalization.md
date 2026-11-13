@@ -86,7 +86,7 @@ reviewed resource set and retain their existing neutral names.
 ## German names
 
 `ItemNames.de.resx` uses the same German item names as the open source game
-client ([sven-n/MuMain](https://github.com/sven-n/MuMain), the `"de"` names in
+client ([the HNMO desktop client](https://github.com/nguyentuanphu/HNMO), the `"de"` names in
 `src/bin/Data/Items/*.json`), so players see the same names in server messages
 and in the client. Names which are equal in German (e.g. *Kris*, *Zen*, *Rena*)
 are left out and fall back to the neutral name.

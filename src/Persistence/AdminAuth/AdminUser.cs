@@ -1,8 +1,8 @@
-// <copyright file="AdminUser.cs" company="MUnique">
+// <copyright file="AdminUser.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.AdminAuth;
+namespace HNMO.Persistence.AdminAuth;
 
 /// <summary>
 /// A user which is allowed to log into the admin panel.

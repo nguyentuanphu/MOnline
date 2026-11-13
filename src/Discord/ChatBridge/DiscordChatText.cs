@@ -1,12 +1,12 @@
-﻿// <copyright file="DiscordChatText.cs" company="MUnique">
+﻿// <copyright file="DiscordChatText.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.ChatBridge;
+namespace HNMO.Discord.ChatBridge;
 
 using System.Text;
 using System.Text.RegularExpressions;
-using MUnique.OpenMU.GameLogic.Discord;
+using HNMO.GameLogic.Discord;
 
 /// <summary>
 /// Converts the texts of chat messages between the game and Discord.

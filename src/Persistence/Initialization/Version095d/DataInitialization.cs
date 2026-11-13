@@ -1,15 +1,15 @@
-﻿// <copyright file="DataInitialization.cs" company="MUnique">
+﻿// <copyright file="DataInitialization.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Version095d;
+namespace HNMO.Persistence.Initialization.Version095d;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Persistence.Initialization.Version075.TestAccounts;
-using MUnique.OpenMU.PlugIns;
+using HNMO.DataModel.Configuration;
+using HNMO.Network.PlugIns;
+using HNMO.Persistence.Initialization.Version075.TestAccounts;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Data initialization plugin for Version 0.95d.

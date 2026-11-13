@@ -1,18 +1,18 @@
-// <copyright file="GoldenArcherWindowHandlerPlugIn.cs" company="MUnique">
+// <copyright file="GoldenArcherWindowHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Items;
+namespace HNMO.GameServer.MessageHandler.Items;
 
 using System;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.GameLogic.PlayerActions.Items.ItemRegistration;
-using MUnique.OpenMU.GameLogic.Views.NPC;
-using MUnique.OpenMU.Network.Packets.ClientToServer;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.GameLogic.PlayerActions.Items.ItemRegistration;
+using HNMO.GameLogic.Views.NPC;
+using HNMO.Network.Packets.ClientToServer;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Handler for the Golden Archer registration window.

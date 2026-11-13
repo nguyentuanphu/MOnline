@@ -8,7 +8,7 @@
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
   </PropertyGroup>
   <PropertyGroup>
-    <DockerServiceName>openmu-distributed</DockerServiceName>
+    <DockerServiceName>hnmo-distributed</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="dapr-components\config.yaml" />

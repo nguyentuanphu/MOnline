@@ -1,12 +1,12 @@
-// <copyright file="KalimaGate.cs" company="MUnique">
+// <copyright file="KalimaGate.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Items;
+namespace HNMO.GameLogic.PlayerActions.Items;
 
-using MUnique.OpenMU.GameLogic.NPC;
-using MUnique.OpenMU.Pathfinding;
-using MonsterSpawnArea = MUnique.OpenMU.Persistence.BasicModel.MonsterSpawnArea;
+using HNMO.GameLogic.NPC;
+using HNMO.Pathfinding;
+using MonsterSpawnArea = HNMO.Persistence.BasicModel.MonsterSpawnArea;
 
 /// <summary>
 /// Opens a gate to Kalima, as the lost map and the kalima ticket do.

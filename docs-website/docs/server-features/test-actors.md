@@ -63,10 +63,10 @@ follow the stream live.
 
 ## The control endpoint
 
-The server opens a TCP port when the environment variable `OPENMU_ACTOR_PORT`
+The server opens a TCP port when the environment variable `HNMO_ACTOR_PORT`
 is set to a port number, and does not open it otherwise. It binds the loopback
 address (`127.0.0.1`), so the endpoint is reachable from the same machine
-only, unless `OPENMU_ACTOR_ADDRESS` explicitly names another address
+only, unless `HNMO_ACTOR_ADDRESS` explicitly names another address
 (`0.0.0.0`, `::1`) — inside a container, for instance, whose port publishing
 then decides who can reach it. An invalid port or address is logged and
 ignored, and the endpoint stays off. The protocol is newline-delimited JSON:
@@ -78,7 +78,7 @@ mode for following events.
 {"ok":true,"id":"1","actor":{"actor":"test1","character":"test1Dk","map":"Lorencia","x":125,"y":132,"alive":true}}
 ```
 
-The endpoint is registered by the all-in-one `MUnique.OpenMU.Startup` host
+The endpoint is registered by the all-in-one `HNMO.Startup` host
 only; the distributed (Dapr) game server host does not open it.
 
 The endpoint has **no authentication**. Keep it on a loopback address, never

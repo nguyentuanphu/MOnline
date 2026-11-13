@@ -1,12 +1,12 @@
-// <copyright file="AccountStateChange.cs" company="MUnique">
+// <copyright file="AccountStateChange.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.API;
+namespace HNMO.Web.AdminPanel.API;
 
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Entities;
 
 /// <summary>An offline account state change and its mandatory audit reason.</summary>
 public sealed class AccountStateChange

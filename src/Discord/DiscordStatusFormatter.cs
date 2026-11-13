@@ -1,11 +1,11 @@
-﻿// <copyright file="DiscordStatusFormatter.cs" company="MUnique">
+﻿// <copyright file="DiscordStatusFormatter.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord;
+namespace HNMO.Discord;
 
 using System.Globalization;
-using MUnique.OpenMU.Discord.Properties;
+using HNMO.Discord.Properties;
 
 /// <summary>
 /// Formats the status of the game servers, for the status message and the presence of the bot.

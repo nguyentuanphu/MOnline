@@ -1,11 +1,11 @@
-// <copyright file="MovementHandler.cs" company="MUnique">
+// <copyright file="MovementHandler.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Offline;
+namespace HNMO.GameLogic.Offline;
 
-using MUnique.OpenMU.GameLogic.MuHelper;
-using MUnique.OpenMU.Pathfinding;
+using HNMO.GameLogic.MuHelper;
+using HNMO.Pathfinding;
 
 /// <summary>
 /// Handles movement logic including walking, regrouping, and return-to-origin.

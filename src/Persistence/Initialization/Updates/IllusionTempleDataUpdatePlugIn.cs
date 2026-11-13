@@ -1,18 +1,18 @@
-﻿// <copyright file="IllusionTempleDataUpdatePlugIn.cs" company="MUnique">
+﻿// <copyright file="IllusionTempleDataUpdatePlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.Initialization.Updates;
+namespace HNMO.Persistence.Initialization.Updates;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Attributes;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence.Initialization.VersionSeasonSix.Events;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Attributes;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.GameLogic.Attributes;
+using HNMO.Interfaces;
+using HNMO.Persistence.Initialization.VersionSeasonSix.Events;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The illusion temple update plugin. Brings an existing database up to date with everything the event
@@ -289,7 +289,7 @@ public class IllusionTempleDataUpdatePlugIn : UpdatePlugInBase
 
     /// <summary>
     /// Adds the sacred relic item ("Cursed Castle Water", Group 14, Number 64), if it doesn't exist yet -
-    /// <see cref="MUnique.OpenMU.GameLogic.MiniGames.IllusionTempleContext.TalkToNpcStoneStatueAsync"/>
+    /// <see cref="HNMO.GameLogic.MiniGames.IllusionTempleContext.TalkToNpcStoneStatueAsync"/>
     /// looks it up by Group/Number.
     /// </summary>
     private void AddRelicItem(IContext context, GameConfiguration gameConfiguration)

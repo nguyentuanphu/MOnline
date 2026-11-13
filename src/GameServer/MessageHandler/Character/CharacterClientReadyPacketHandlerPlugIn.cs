@@ -1,12 +1,12 @@
-﻿// <copyright file="CharacterClientReadyPacketHandlerPlugIn.cs" company="MUnique">
+﻿// <copyright file="CharacterClientReadyPacketHandlerPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.MessageHandler.Character;
+namespace HNMO.GameServer.MessageHandler.Character;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Sub packet handler for 'client ready' packets which are sent by the client after map changes.

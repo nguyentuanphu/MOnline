@@ -1,8 +1,8 @@
-﻿// <copyright file="DiscordChannelLayout.cs" company="MUnique">
+﻿// <copyright file="DiscordChannelLayout.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Discord.Provisioning;
+namespace HNMO.Discord.Provisioning;
 
 /// <summary>
 /// A text channel of the <see cref="DiscordServerLayout"/>.

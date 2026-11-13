@@ -1,4 +1,4 @@
-// <copyright file="GuildMember.Generated.cs" company="MUnique">
+// <copyright file="GuildMember.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,14 +10,14 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.BasicModel;
+namespace HNMO.Persistence.BasicModel;
 
-using MUnique.OpenMU.Persistence.Json;
+using HNMO.Persistence.Json;
 
 /// <summary>
 /// A plain implementation of <see cref="GuildMember"/>.
 /// </summary>
-public partial class GuildMember : MUnique.OpenMU.DataModel.Entities.GuildMember, IIdentifiable, IConvertibleTo<GuildMember>
+public partial class GuildMember : HNMO.DataModel.Entities.GuildMember, IIdentifiable, IConvertibleTo<GuildMember>
 {
     /// <inheritdoc />
     public GuildMember()

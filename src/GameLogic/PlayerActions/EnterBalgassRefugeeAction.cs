@@ -1,8 +1,8 @@
-﻿// <copyright file="EnterBalgassRefugeeAction.cs" company="MUnique">
+﻿// <copyright file="EnterBalgassRefugeeAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions;
+namespace HNMO.GameLogic.PlayerActions;
 
 /// <summary>
 /// Action to enter the barracks of balgass through an npc.

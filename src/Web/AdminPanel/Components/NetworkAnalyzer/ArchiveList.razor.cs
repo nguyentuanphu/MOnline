@@ -1,12 +1,12 @@
-// <copyright file="ArchiveList.razor.cs" company="MUnique">
+// <copyright file="ArchiveList.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Components.NetworkAnalyzer;
+namespace HNMO.Web.AdminPanel.Components.NetworkAnalyzer;
 
 using System.Globalization;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Network.Analyzer.Archive;
+using HNMO.Network.Analyzer.Archive;
 
 /// <summary>
 /// The list of the archived sessions of the observed accounts, grouped by their account.

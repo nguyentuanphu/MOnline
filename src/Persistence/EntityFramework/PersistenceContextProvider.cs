@@ -1,14 +1,14 @@
-﻿// <copyright file="PersistenceContextProvider.cs" company="MUnique">
+﻿// <copyright file="PersistenceContextProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
 using System.Diagnostics;
 using System.Threading;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.Persistence.EntityFramework.Model;
+using HNMO.Persistence.EntityFramework.Model;
 using Nito.Disposables;
 using Npgsql;
 

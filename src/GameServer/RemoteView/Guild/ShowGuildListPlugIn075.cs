@@ -1,16 +1,16 @@
-﻿// <copyright file="ShowGuildListPlugIn075.cs" company="MUnique">
+﻿// <copyright file="ShowGuildListPlugIn075.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameServer.RemoteView.Guild;
+namespace HNMO.GameServer.RemoteView.Guild;
 
 using System.Runtime.InteropServices;
-using MUnique.OpenMU.GameLogic.Views.Guild;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Network;
-using MUnique.OpenMU.Network.Packets.ServerToClient;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.GameLogic.Views.Guild;
+using HNMO.Interfaces;
+using HNMO.Network;
+using HNMO.Network.Packets.ServerToClient;
+using HNMO.Network.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// The default implementation of the <see cref="IShowGuildListPlugIn"/> which is forwarding everything to the game client with specific data packets.

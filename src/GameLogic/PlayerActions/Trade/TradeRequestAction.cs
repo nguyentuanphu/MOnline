@@ -1,10 +1,10 @@
-﻿// <copyright file="TradeRequestAction.cs" company="MUnique">
+﻿// <copyright file="TradeRequestAction.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.PlayerActions.Trade;
+namespace HNMO.GameLogic.PlayerActions.Trade;
 
-using MUnique.OpenMU.GameLogic.Views.Trade;
+using HNMO.GameLogic.Views.Trade;
 
 /// <summary>
 /// Action to request a trade with another player.

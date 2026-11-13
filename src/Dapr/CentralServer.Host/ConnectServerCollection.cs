@@ -1,17 +1,17 @@
-// <copyright file="ConnectServerCollection.cs" company="MUnique">
+// <copyright file="ConnectServerCollection.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.CentralServer.Host;
+namespace HNMO.CentralServer.Host;
 
 using System.Collections;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.Interfaces;
-using MUnique.OpenMU.Persistence;
-using MUnique.OpenMU.ServerClients;
+using HNMO.DataModel.Configuration;
+using HNMO.Interfaces;
+using HNMO.Persistence;
+using HNMO.ServerClients;
 using Nito.AsyncEx.Synchronous;
-using ConnectServer = MUnique.OpenMU.ConnectServer.ConnectServer;
+using ConnectServer = HNMO.ConnectServer.ConnectServer;
 
 /// <summary>
 /// The connect servers of the central server, one for each <see cref="ConnectServerDefinition"/>,

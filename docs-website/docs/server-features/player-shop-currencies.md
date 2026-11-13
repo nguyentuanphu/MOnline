@@ -19,7 +19,7 @@ clients.
 
 ## Clients
 
-Only the open source client ([MuMain](https://github.com/sven-n/MuMain)) shows
+Only the open source client ([the desktop client](https://github.com/nguyentuanphu/HNMO)) shows
 and buys items with prices in other currencies than zen. When the plugin is
 active, the server tells it which price items and coins are allowed, so it
 offers them when the player sets the prices of the store.

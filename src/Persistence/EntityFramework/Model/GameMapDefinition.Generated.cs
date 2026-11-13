@@ -1,4 +1,4 @@
-// <copyright file="GameMapDefinition.Generated.cs" company="MUnique">
+// <copyright file="GameMapDefinition.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.GameMapDefinition"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.GameMapDefinition"/>.
 /// </summary>
 [Table(nameof(GameMapDefinition), Schema = SchemaNames.Configuration)]
-internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuration.GameMapDefinition, IIdentifiable
+internal partial class GameMapDefinition : HNMO.DataModel.Configuration.GameMapDefinition, IIdentifiable
 {
     /// <inheritdoc />
     public GameMapDefinition()
@@ -40,7 +40,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant> TerrainVariants => base.TerrainVariants ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.GameMapTerrainVariant, GameMapTerrainVariant>(this.RawTerrainVariants);
+    public override ICollection<HNMO.DataModel.Configuration.GameMapTerrainVariant> TerrainVariants => base.TerrainVariants ??= new CollectionAdapter<HNMO.DataModel.Configuration.GameMapTerrainVariant, GameMapTerrainVariant>(this.RawTerrainVariants);
 
     /// <summary>
     /// Gets the raw collection of <see cref="MonsterSpawns" />.
@@ -49,7 +49,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea> MonsterSpawns => base.MonsterSpawns ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.MonsterSpawnArea, MonsterSpawnArea>(this.RawMonsterSpawns);
+    public override ICollection<HNMO.DataModel.Configuration.MonsterSpawnArea> MonsterSpawns => base.MonsterSpawns ??= new CollectionAdapter<HNMO.DataModel.Configuration.MonsterSpawnArea, MonsterSpawnArea>(this.RawMonsterSpawns);
 
     /// <summary>
     /// Gets the raw collection of <see cref="EnterGates" />.
@@ -58,7 +58,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.EnterGate> EnterGates => base.EnterGates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.EnterGate, EnterGate>(this.RawEnterGates);
+    public override ICollection<HNMO.DataModel.Configuration.EnterGate> EnterGates => base.EnterGates ??= new CollectionAdapter<HNMO.DataModel.Configuration.EnterGate, EnterGate>(this.RawEnterGates);
 
     /// <summary>
     /// Gets the raw collection of <see cref="ExitGates" />.
@@ -67,7 +67,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.ExitGate> ExitGates => base.ExitGates ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.ExitGate, ExitGate>(this.RawExitGates);
+    public override ICollection<HNMO.DataModel.Configuration.ExitGate> ExitGates => base.ExitGates ??= new CollectionAdapter<HNMO.DataModel.Configuration.ExitGate, ExitGate>(this.RawExitGates);
 
     /// <summary>
     /// Gets the raw collection of <see cref="MapRequirements" />.
@@ -76,7 +76,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement> MapRequirements => base.MapRequirements ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawMapRequirements);
+    public override ICollection<HNMO.DataModel.Configuration.Items.AttributeRequirement> MapRequirements => base.MapRequirements ??= new CollectionAdapter<HNMO.DataModel.Configuration.Items.AttributeRequirement, AttributeRequirement>(this.RawMapRequirements);
 
     /// <summary>
     /// Gets the raw collection of <see cref="CharacterPowerUpDefinitions" />.
@@ -85,7 +85,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     
     /// <inheritdoc/>
     [NotMapped]
-    public override ICollection<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition> CharacterPowerUpDefinitions => base.CharacterPowerUpDefinitions ??= new CollectionAdapter<MUnique.OpenMU.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawCharacterPowerUpDefinitions);
+    public override ICollection<HNMO.DataModel.Attributes.PowerUpDefinition> CharacterPowerUpDefinitions => base.CharacterPowerUpDefinitions ??= new CollectionAdapter<HNMO.DataModel.Attributes.PowerUpDefinition, PowerUpDefinition>(this.RawCharacterPowerUpDefinitions);
 
     /// <summary>
     /// Gets or sets the identifier of <see cref="SafezoneMap"/>.
@@ -104,7 +104,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition SafezoneMap
+    public override HNMO.DataModel.Configuration.GameMapDefinition SafezoneMap
     {
         get => base.SafezoneMap;set
         {
@@ -130,7 +130,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.BattleZoneDefinition BattleZone
+    public override HNMO.DataModel.Configuration.BattleZoneDefinition BattleZone
     {
         get => base.BattleZone;set
         {
@@ -140,7 +140,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.GameMapDefinition Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.GameMapDefinition Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new GameMapDefinition();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -148,7 +148,7 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.GameMapDefinition other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.GameMapDefinition other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();
@@ -174,6 +174,6 @@ internal partial class GameMapDefinition : MUnique.OpenMU.DataModel.Configuratio
 
     protected void InitJoinCollections()
     {
-        this.DropItemGroups = new ManyToManyCollectionAdapter<MUnique.OpenMU.DataModel.Configuration.DropItemGroup, GameMapDefinitionDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new GameMapDefinitionDropItemGroup { GameMapDefinition = this, GameMapDefinitionId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
+        this.DropItemGroups = new ManyToManyCollectionAdapter<HNMO.DataModel.Configuration.DropItemGroup, GameMapDefinitionDropItemGroup>(this.JoinedDropItemGroups, joinEntity => joinEntity.DropItemGroup, entity => new GameMapDefinitionDropItemGroup { GameMapDefinition = this, GameMapDefinitionId = this.Id, DropItemGroup = (DropItemGroup)entity, DropItemGroupId = ((DropItemGroup)entity).Id});
     }
 }

@@ -1,4 +1,4 @@
-// <copyright file="EnterGate.Generated.cs" company="MUnique">
+// <copyright file="EnterGate.Generated.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
@@ -10,16 +10,16 @@
 
 // ReSharper disable All
 
-namespace MUnique.OpenMU.Persistence.EntityFramework.Model;
+namespace HNMO.Persistence.EntityFramework.Model;
 
 using System.ComponentModel.DataAnnotations.Schema;
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
-/// The Entity Framework Core implementation of <see cref="MUnique.OpenMU.DataModel.Configuration.EnterGate"/>.
+/// The Entity Framework Core implementation of <see cref="HNMO.DataModel.Configuration.EnterGate"/>.
 /// </summary>
 [Table(nameof(EnterGate), Schema = SchemaNames.Configuration)]
-internal partial class EnterGate : MUnique.OpenMU.DataModel.Configuration.EnterGate, IIdentifiable
+internal partial class EnterGate : HNMO.DataModel.Configuration.EnterGate, IIdentifiable
 {
     
     
@@ -45,7 +45,7 @@ internal partial class EnterGate : MUnique.OpenMU.DataModel.Configuration.EnterG
 
     /// <inheritdoc/>
     [NotMapped]
-    public override MUnique.OpenMU.DataModel.Configuration.ExitGate TargetGate
+    public override HNMO.DataModel.Configuration.ExitGate TargetGate
     {
         get => base.TargetGate;set
         {
@@ -55,7 +55,7 @@ internal partial class EnterGate : MUnique.OpenMU.DataModel.Configuration.EnterG
     }
 
     /// <inheritdoc />
-    public override MUnique.OpenMU.DataModel.Configuration.EnterGate Clone(MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override HNMO.DataModel.Configuration.EnterGate Clone(HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         var clone = new EnterGate();
         clone.AssignValuesOf(this, gameConfiguration);
@@ -63,7 +63,7 @@ internal partial class EnterGate : MUnique.OpenMU.DataModel.Configuration.EnterG
     }
     
     /// <inheritdoc />
-    public override void AssignValuesOf(MUnique.OpenMU.DataModel.Configuration.EnterGate other, MUnique.OpenMU.DataModel.Configuration.GameConfiguration gameConfiguration)
+    public override void AssignValuesOf(HNMO.DataModel.Configuration.EnterGate other, HNMO.DataModel.Configuration.GameConfiguration gameConfiguration)
     {
         base.AssignValuesOf(other, gameConfiguration);
         this.Id = other.GetId();

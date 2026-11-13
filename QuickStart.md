@@ -1,4 +1,4 @@
-# Quick Start OpenMU
+# Quick Start HNMO
 
 This guide moved to the documentation website, where it is split into one page
 per step:

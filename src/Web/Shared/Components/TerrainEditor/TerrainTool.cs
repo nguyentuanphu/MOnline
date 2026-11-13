@@ -1,8 +1,8 @@
-// <copyright file="TerrainTool.cs" company="MUnique">
+// <copyright file="TerrainTool.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Components.TerrainEditor;
+namespace HNMO.Web.Shared.Components.TerrainEditor;
 
 /// <summary>
 /// The tool of the <see cref="TerrainEditor"/>, which defines which tiles are edited by a click.

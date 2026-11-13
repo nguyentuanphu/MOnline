@@ -1,14 +1,14 @@
-﻿// <copyright file="GenericControllerFeatureProvider.cs" company="MUnique">
+﻿// <copyright file="GenericControllerFeatureProvider.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
 using System.Reflection;
 using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.AspNetCore.Mvc.Controllers;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Configuration;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// A feature to create generic <see cref="JsonDownloadController{T,TSerializable}"/> for supported types.

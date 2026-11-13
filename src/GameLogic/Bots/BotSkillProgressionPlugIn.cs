@@ -1,17 +1,17 @@
-// <copyright file="BotSkillProgressionPlugIn.cs" company="MUnique">
+// <copyright file="BotSkillProgressionPlugIn.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.GameLogic.Bots;
+namespace HNMO.GameLogic.Bots;
 
 using System.Runtime.InteropServices;
 using Microsoft.Extensions.Logging;
-using MUnique.OpenMU.AttributeSystem;
-using MUnique.OpenMU.DataModel.Configuration;
-using MUnique.OpenMU.GameLogic.Attributes;
-using MUnique.OpenMU.GameLogic.PlayerActions.Character;
-using MUnique.OpenMU.GameLogic.PlugIns;
-using MUnique.OpenMU.PlugIns;
+using HNMO.AttributeSystem;
+using HNMO.DataModel.Configuration;
+using HNMO.GameLogic.Attributes;
+using HNMO.GameLogic.PlayerActions.Character;
+using HNMO.GameLogic.PlugIns;
+using HNMO.PlugIns;
 
 /// <summary>
 /// Grows a server-side bot like a real player when it levels up during play: the earned stat points are
@@ -23,7 +23,7 @@ using MUnique.OpenMU.PlugIns;
 /// same requirements the game enforces for human players.
 /// </summary>
 [PlugIn]
-[Display(Name = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotSkillProgressionPlugIn_Name), Description = nameof(MUnique.OpenMU.GameLogic.Properties.PlugInResources.BotSkillProgressionPlugIn_Description), ResourceType = typeof(MUnique.OpenMU.GameLogic.Properties.PlugInResources))]
+[Display(Name = nameof(HNMO.GameLogic.Properties.PlugInResources.BotSkillProgressionPlugIn_Name), Description = nameof(HNMO.GameLogic.Properties.PlugInResources.BotSkillProgressionPlugIn_Description), ResourceType = typeof(HNMO.GameLogic.Properties.PlugInResources))]
 [Guid("D1F4A7C2-6B3E-4A59-8E71-9C0D2F5B6A84")]
 public class BotSkillProgressionPlugIn : ICharacterLevelUpPlugIn
 {

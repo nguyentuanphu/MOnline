@@ -1,11 +1,11 @@
-﻿// <copyright file="ItemExtensions.cs" company="MUnique">
+﻿// <copyright file="ItemExtensions.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel;
+namespace HNMO.DataModel;
 
-using MUnique.OpenMU.DataModel.Configuration.Items;
-using MUnique.OpenMU.DataModel.Entities;
+using HNMO.DataModel.Configuration.Items;
+using HNMO.DataModel.Entities;
 
 /// <summary>
 /// Extensions for <see cref="Item"/>.

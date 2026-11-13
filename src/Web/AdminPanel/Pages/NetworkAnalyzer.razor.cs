@@ -1,17 +1,17 @@
-// <copyright file="NetworkAnalyzer.razor.cs" company="MUnique">
+// <copyright file="NetworkAnalyzer.razor.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.AdminPanel.Pages;
+namespace HNMO.Web.AdminPanel.Pages;
 
 using System.Threading;
 using Microsoft.AspNetCore.Components;
-using MUnique.OpenMU.Network.Analyzer;
-using MUnique.OpenMU.Network.Analyzer.Archive;
-using MUnique.OpenMU.Network.PlugIns;
-using MUnique.OpenMU.Web.AdminPanel.Properties;
-using MUnique.OpenMU.Web.Shared;
-using MUnique.OpenMU.Web.Shared.Components.Modal;
+using HNMO.Network.Analyzer;
+using HNMO.Network.Analyzer.Archive;
+using HNMO.Network.PlugIns;
+using HNMO.Web.AdminPanel.Properties;
+using HNMO.Web.Shared;
+using HNMO.Web.Shared.Components.Modal;
 
 /// <summary>
 /// The page which shows the network traffic of the connections of our servers.

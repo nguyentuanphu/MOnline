@@ -1,10 +1,10 @@
-﻿// <copyright file="CharacterRankingRow.cs" company="MUnique">
+﻿// <copyright file="CharacterRankingRow.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Persistence.EntityFramework;
+namespace HNMO.Persistence.EntityFramework;
 
-using MUnique.OpenMU.Interfaces;
+using HNMO.Interfaces;
 
 /// <summary>
 /// A row of the query of the character ranking.

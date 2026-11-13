@@ -1,8 +1,8 @@
-// <copyright file="CastleSiegePendingReward.cs" company="MUnique">
+// <copyright file="CastleSiegePendingReward.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Entities;
+namespace HNMO.DataModel.Entities;
 
 /// <summary>
 /// Stores an item reward which could not yet be delivered to a Castle Siege participant.

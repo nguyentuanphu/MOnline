@@ -1,11 +1,11 @@
-// <copyright file="IncreasableItemOption.cs" company="MUnique">
+// <copyright file="IncreasableItemOption.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.DataModel.Configuration.Items;
+namespace HNMO.DataModel.Configuration.Items;
 
 using System.Linq;
-using MUnique.OpenMU.Annotations;
+using HNMO.Annotations;
 
 /// <summary>
 /// Defines by which "level" the option is increased with <see cref="IncreasableItemOption.LevelDependentOptions"/>.

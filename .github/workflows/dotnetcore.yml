@@ -14,6 +14,6 @@ jobs:
       with:
         dotnet-version: 10.0.x
     - name: Build with dotnet
-      run: dotnet publish src/Startup/MUnique.OpenMU.Startup.csproj --configuration Release -p:ci=true
+      run: dotnet publish src/Startup/HNMO.Startup.csproj --configuration Release -p:ci=true
     - name: Test with dotnet
-      run: dotnet test src/MUnique.OpenMU.sln --configuration Release -p:ci=true
+      run: dotnet test src/HNMO.sln --configuration Release -p:ci=true

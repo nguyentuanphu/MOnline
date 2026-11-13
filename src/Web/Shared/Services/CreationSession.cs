@@ -1,10 +1,10 @@
-// <copyright file="CreationSession.cs" company="MUnique">
+// <copyright file="CreationSession.cs" company="HNMO">
 // Licensed under the MIT License. See LICENSE file in the project root for full license information.
 // </copyright>
 
-namespace MUnique.OpenMU.Web.Shared.Services;
+namespace HNMO.Web.Shared.Services;
 
-using MUnique.OpenMU.Persistence;
+using HNMO.Persistence;
 
 /// <summary>
 /// Describes a single "create new object" interaction which is rendered in the
